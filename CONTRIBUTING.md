@@ -1,6 +1,6 @@
 **No Focus Trees** there is a sub mod for this.
 
-## You want to contribute?? Here is how:
+## Want to help out? Here is how:
 You have a feature you want to add? A Bug that *bugs* you? Or a General you want to add?
 Join our discord (https://discord.gg/z8Rru4X9SM) and become a developer. Things are moving a bit fast for you?
 You can also directly commit it do this repo. **However** it will not be instantly part of the mod!
