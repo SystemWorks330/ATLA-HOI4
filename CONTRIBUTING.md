@@ -12,6 +12,5 @@ You can also directly commit it do this repo. **However** it will not be instant
 - If your changes are as big as the phoenix kings powers open an issue on git and explain there
 
 #### What happens once you commited?
-- There is no garuantee your changes will be approved by the developement team!
 - In order to improve your odds of success make sure to carefully exlpain your changes to the dev in the discord or git
 - Your contribution will be mentioned in case it is more than minor bug fixes and similar small changes
