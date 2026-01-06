@@ -1,0 +1,234 @@
+capital = 205
+
+OOB = "OMS_12"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "OMS_12_naval_mtg"
+	else = {
+		set_naval_oob = "OMS_12_naval_legacy"
+	}
+}
+
+ 
+set_country_flag = EARTH_special_forces
+
+EAR_generic_starting_tech = yes
+
+set_technology = {
+	wall_2 = 1
+	road_2 = 1
+	tech_supply_wagons2 = 1
+}
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		galley_ship_tech_1 = 1
+		barque_ship_tech_1 = 1
+		junk_ship_tech_1 = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		oars_tech_1 = 1
+		sails_tech_1 = 1
+		galley_tech_1 = 1
+		barque_tech_1 = 1
+		light_armor_tech_1 = 1
+		junk_tech_1 = 1
+		explorer_tech = 1
+		generic_hunter_tech = 1
+		naval_weaponry = 1
+		maintenance_1 = 1
+	}
+
+}
+
+#set_research_slots = 2
+
+set_convoys = 84
+ 
+
+
+set_politics = {
+	ruling_party = earth_culture
+	last_election = "10.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 5
+	pluralist_culture = 15
+	fire_culture = 0
+	earth_culture = 70
+	air_culture = 10
+}
+
+
+omashu_puppet_12 = yes
+
+
+add_ideas = {
+	volunteer_earth_nation
+	earth_benders_only
+	intercontinental_trade
+	construction_efforts_law
+	family_support_3
+	no_education
+
+	cavalry_tradition
+}
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Combat Class"
+		type = junk_hull_1
+		#parent_version = 0
+		modules = {
+			fixed_ship_crew_slot = ship_archers_1
+			fixed_ship_armor_slot = light_hull_reinforcement_1
+			fixed_ship_mast_slot = crows_nest_1
+			fixed_ship_sails_slot = sails_1
+			aftercastle_custom_slot = boarding_crew_1
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "Trading Class"
+		type = barque_hull_1
+		#parent_version = 0
+		modules = {
+			fixed_ship_crew_slot = ship_archers_1
+			fixed_ship_armor_slot = light_hull_reinforcement_1
+			fixed_ship_mast_slot = sails_1
+			fixed_ship_storage_slot = supplies_1
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "Raider Class"
+		type = galley_hull_1
+		#parent_version = 0
+		modules = {
+			fixed_ship_crew_slot = boarding_crew_1
+			fixed_ship_armor_slot = light_hull_reinforcement_1
+			fixed_ship_mast_slot = sails_1
+    	}
+	}
+
+}
+
+#
+
+
+
+recruit_character = OMS_iuri
+recruit_character = OMS_bumi
+recruit_character = EAR_cabagge_merchant
+
+
+
+12.1.1 = {
+	country_event = {
+		id = omashu.2
+		days = 24837
+	}
+}
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 = {
+	country_event = {
+		id = omashu.2
+		days = 10227
+	}
+	OOB = "OMS_52"
+
+	#add_to_war = {
+	#	targeted_alliance = EAR
+	#	enemy = FIR
+	#}
+	retire_character = OMS_iuri
+}
+
+
+
+
+ ## #####  ##  ###  #####       #  ##    #
+#     #   #  # #  #   #        ## #  #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
+##    #   #  # #  #   #         #  ##   ##
+
+
+
+106.2.4 ={
+
+	OOB = "OMS_106"
+
+set_technology = {
+
+}
+OMS_bumi = {
+	set_portraits = {
+		civilian = {
+			large="gfx/leaders/OMS/Portrait_Omashu_Bumi.dds"
+		}
+	}
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		
+	}
+
+}
+}
+
+ ## #####  ##  ###  #####       #   #   #
+#     #   #  # #  #   #        ##  ##  ##
+ #    #   #### ###    #       # # # # # #
+  #   #   #  # #  #   #         #   #   #
+##    #   #  # #  #   #         #   #   #
+
+
+
+
+111.10.30 ={
+	
+	OOB = "OMS_111"
+
+}
+
+# Different Ideology Leaders
+recruit_character = OMS_generic

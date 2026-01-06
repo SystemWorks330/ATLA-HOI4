@@ -1,0 +1,1274 @@
+characters={
+
+	SAT_monk_pasang={
+		name="Pasang"
+		portraits={
+			civilian={
+			 large = "GFX_Portrait_Southernairtemple_Pasang"
+			 small = "GFX_Portrait_Southernairtemple_Pasang_small"
+			}
+		}
+		country_leader={
+			
+			ideology=active_pacifism
+			expire="35.2.14"
+			id=-1
+		}
+		field_marshal = {
+			traits = { 
+				defensive_infantry 
+				fast_planner 
+			}
+			skill = 5
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id=-1
+
+		}
+	}
+	SAT_monk_gyatso={
+		name = SAT_monk_gyatso
+		portraits={
+			civilian={
+				large="gfx/leaders/SAT/Portrait_Southernairtemple_Gyatso.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=active_pacifism
+			expire="35.2.14"
+			id=-1
+		}
+		field_marshal = {
+			traits = { 
+				defensive_infantry 
+				fast_planner 
+			}
+			skill = 5
+			attack_skill = 4
+			defense_skill = 5
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id=-1
+
+		}
+	}
+	SAT_aang = {
+		name = SAT_aang
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_SAT_aang"
+			}
+			army = {
+				large = "GFX_Portrait_SAT_aang"
+				small = "GFX_Portrait_SAT_aang_small"
+			}
+		}
+		field_marshal = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = character_general
+				NOT = { has_character_flag = character_death } 
+			}
+		}
+		
+	}
+	SAT_appa = {
+		name = SAT_appa
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_SAT_appa"
+			}
+			army = {
+				large = "GFX_Portrait_SAT_appa"
+				small = "GFX_Portrait_SAT_appa_small"
+			}
+		}
+		field_marshal = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = character_general
+				NOT = { has_character_flag = character_death } 
+			}
+		}
+	}
+	SAT_momo = {
+		name = SAT_momo
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_SAT_momo"
+			}
+			army = {
+				large = "GFX_Portrait_SAT_momo"
+				small = "GFX_Portrait_SAT_momo_small"
+			}
+		}
+		field_marshal = {
+			traits = {
+				
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = character_general
+				NOT = { has_character_flag = character_death } 
+			}
+		}
+	}
+	
+	SAT_extinct_nation={
+		name= "Extinct Nation"
+		portraits={
+			civilian={
+				large="gfx/leaders/SAT/Portrait_Southernairtemple_Extinct.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=active_pacifism
+			expire = "120.1.1"
+			traits = {
+				extinguished_population
+			}
+			id=-1
+		}
+	}
+	SAT_council = {
+		name = "Council of Elders"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SAT/Portrait_Southernairtemple_Council.dds"
+			}
+		}
+		country_leader = {
+			ideology = active_pacifism
+			expire = "120.1.1"
+			id = -1
+		}
+	}
+	
+
+
+	SAT_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/SAT/Portrait_Southernairtemple_colonialism.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=colonialism
+			expire="120.4.7"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=absolute_monarchie
+			expire="120.4.7"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=elective_chiefdom
+			expire="120.4.7"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=republican
+			expire="120.4.7"
+			id=-1
+		}
+	}
+	##############
+	## Advisors ##
+	##############
+	SAT_minister_of_personnel_1 = { 
+		name = sat_minister_of_personnel_1
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_personnel_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = sat_minister_of_personnel_1
+			cost = 100
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { gifted_speaker }
+		}		
+	}
+	SAT_minister_of_personnel_2 = { 
+		name = sat_minister_of_personnel_2
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_personnel_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = sat_minister_of_personnel_2
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { close_to_the_people_1 }
+		}		
+	}
+	SAT_minister_of_personnel_3 = { 
+		name = sat_minister_of_personnel_3
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_personnel_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = sat_minister_of_personnel_3
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { military_organiser }
+		}		
+	}
+	SAT_minister_of_personnel_4 = { 
+		name = sat_minister_of_personnel_4
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_personnel_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = sat_minister_of_personnel_4
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { administrator }
+		}		
+	}
+	SAT_minister_of_personnel_5 = { 
+		name = sat_minister_of_personnel_5
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_personnel_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = sat_minister_of_personnel_5
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { lawgiver }
+		}		
+	}
+	SAT_minister_of_personnel_6 = { 
+		name = sat_minister_of_personnel_6
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_personnel_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = sat_minister_of_personnel_6
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { prime_minister }
+		}		
+	}
+	SAT_minister_of_finance_1 = { 
+		name = sat_minister_of_finance_1
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_finance_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = sat_minister_of_finance_1
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { fiscal_conservative }
+		}		
+	}
+	SAT_minister_of_finance_2 = { 
+		name = sat_minister_of_finance_2
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_finance_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = sat_minister_of_finance_2
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { regulation_proponent }
+		}		
+	}
+	SAT_minister_of_finance_3 = { 
+		name = sat_minister_of_finance_3
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_finance_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = sat_minister_of_finance_3
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { architect }
+		}		
+	}
+	SAT_minister_of_finance_4 = { 
+		name = sat_minister_of_finance_4
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_finance_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = sat_minister_of_finance_4
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { local_investor }
+		}		
+	}
+	SAT_minister_of_finance_5 = { 
+		name = sat_minister_of_finance_5
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_finance_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = sat_minister_of_finance_5
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { experienced_merchant }
+		}		
+	}
+	SAT_minister_of_finance_6 = { 
+		name = sat_minister_of_finance_6
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_finance_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = sat_minister_of_finance_6
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { agrarian_reformer }
+		}		
+	}
+
+	SAT_minister_of_culture_1 = { 
+		name = sat_minister_of_culture_1
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_culture_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = sat_minister_of_culture_1
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { chauvinist }
+		}		
+	}
+	SAT_minister_of_culture_2 = { 
+		name = sat_minister_of_culture_2
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_culture_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = sat_minister_of_culture_2
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { royalist }
+		}		
+	}
+	SAT_minister_of_culture_3 = { 
+		name = sat_minister_of_culture_3
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_culture_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = sat_minister_of_culture_3
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { naturalist }
+		}		
+	}
+	SAT_minister_of_culture_4 = { 
+		name = sat_minister_of_culture_4
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_culture_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = sat_minister_of_culture_4
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { pacifist }
+		}		
+	}
+	SAT_minister_of_culture_5 = { 
+		name = sat_minister_of_culture_5
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_culture_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = sat_minister_of_culture_5
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { multiculturalist }
+		}		
+	}
+	SAT_minister_of_culture_6 = { 
+		name = sat_minister_of_culture_6
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_culture_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = sat_minister_of_culture_6
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { personality_cultist }
+		}		
+	}
+
+	SAT_minister_of_justice_1 = { 
+		name = sat_minister_of_justice_1
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_justice_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = sat_minister_of_justice_1
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { neutral_judge }
+		}		
+	}
+	SAT_minister_of_justice_2 = { 
+		name = sat_minister_of_justice_2
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_justice_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = sat_minister_of_justice_2
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { corrupt_judge }
+		}		
+	}
+	SAT_minister_of_justice_3 = { 
+		name = sat_minister_of_justice_3
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_justice_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = sat_minister_of_justice_3
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { tough_on_crime }
+		}		
+	}
+	SAT_minister_of_justice_4 = { 
+		name = sat_minister_of_justice_4
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_justice_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = sat_minister_of_justice_4
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { non_bender_activist }
+		}		
+	}
+	SAT_minister_of_justice_5 = { 
+		name = sat_minister_of_justice_5
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_justice_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = sat_minister_of_justice_5
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { feminist }
+		}		
+	}
+	SAT_minister_of_justice_6 = { 
+		name = sat_minister_of_justice_6
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_justice_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = sat_minister_of_justice_6
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { colonial_activist }
+		}		
+	}
+
+	SAT_minister_of_works_1 = { 
+		name = sat_minister_of_works_1
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_works_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = sat_minister_of_works_1
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { cruel_supervisor }
+		}		
+	}
+	SAT_minister_of_works_2 = { 
+		name = sat_minister_of_works_2
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_works_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = sat_minister_of_works_2
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { motivated_pioneer }
+		}		
+	}
+	SAT_minister_of_works_3 = { 
+		name = sat_minister_of_works_3
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_works_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = sat_minister_of_works_3
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { workers_syndicat }
+		}		
+	}
+	SAT_minister_of_works_4 = { 
+		name = sat_minister_of_works_4
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_works_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = sat_minister_of_works_4
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { low_standards }
+		}		
+	}
+	SAT_minister_of_works_5 = { 
+		name = sat_minister_of_works_5
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_works_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = sat_minister_of_works_5
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { unemployment_benefits }
+		}		
+	}
+	SAT_minister_of_works_6 = { 
+		name = sat_minister_of_works_6
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_works_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = sat_minister_of_works_6
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { outsourcer }
+		}		
+	}
+
+	SAT_minister_of_rites_1 = { 
+		name = sat_minister_of_rites_1
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_rites_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = sat_minister_of_rites_1
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { warrior_culture }
+		}		
+	}
+	SAT_minister_of_rites_2 = { 
+		name = sat_minister_of_rites_2
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_rites_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = sat_minister_of_rites_2
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { materialist }
+		}		
+	}
+	SAT_minister_of_rites_3 = { 
+		name = sat_minister_of_rites_3
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_rites_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = sat_minister_of_rites_3
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { orthodox }
+		}		
+	}
+	SAT_minister_of_rites_4 = { 
+		name = sat_minister_of_rites_4
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_rites_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = sat_minister_of_rites_4
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { xenophobe }
+		}		
+	}
+	SAT_minister_of_rites_5 = { 
+		name = sat_minister_of_rites_5
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_rites_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = sat_minister_of_rites_5
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jingoist }
+		}		
+	}
+	SAT_minister_of_rites_6 = { 
+		name = sat_minister_of_rites_6
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_minister_of_rites_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = sat_minister_of_rites_6
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { fanatic }
+		}		
+	}
+
+	SAT_head_of_intelligence_1 = { 
+		name = sat_head_of_intelligence_1
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_head_of_intelligence_1"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = sat_head_of_intelligence_1
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { spymaster }
+		}		
+	}
+	SAT_head_of_intelligence_2 = { 
+		name = sat_head_of_intelligence_2
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_head_of_intelligence_2"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = sat_head_of_intelligence_2
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { constable }
+		}		
+	}
+	SAT_head_of_intelligence_3 = { 
+		name = sat_head_of_intelligence_3
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_head_of_intelligence_3"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = sat_head_of_intelligence_3
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { head_censor }
+		}		
+	}
+	SAT_head_of_intelligence_4 = { 
+		name = sat_head_of_intelligence_4
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_head_of_intelligence_4"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = sat_head_of_intelligence_4
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_torturer }
+		}		
+	}
+	SAT_head_of_intelligence_5 = { 
+		name = sat_head_of_intelligence_5
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_head_of_intelligence_5"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = sat_head_of_intelligence_5
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_assassin }
+		}		
+	}
+	SAT_head_of_intelligence_6 = { 
+		name = sat_head_of_intelligence_6
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_head_of_intelligence_6"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = sat_head_of_intelligence_6
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { astrologist }
+		}		
+	}
+
+	SAT_quartermaster_1 = { 
+		name = sat_quartermaster_1
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_quartermaster_1"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = sat_quartermaster_1
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { logistician_2 }
+		}		
+	}
+	SAT_quartermaster_2 = { 
+		name = sat_quartermaster_2
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_quartermaster_2"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = sat_quartermaster_2
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { forager_2 }
+		}		
+	}
+	SAT_quartermaster_3 = { 
+		name = sat_quartermaster_3
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_quartermaster_3"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = sat_quartermaster_3
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jungle_specialist_2 }
+		}		
+	}
+	SAT_quartermaster_4 = { 
+		name = sat_quartermaster_4
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_quartermaster_4"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = sat_quartermaster_4
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { amphibious_specialist_2 }
+		}		
+	}
+	SAT_quartermaster_5 = { 
+		name = sat_quartermaster_5
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_quartermaster_5"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = sat_quartermaster_5
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { winter_specialist_2 }
+		}		
+	}
+	SAT_quartermaster_6 = { 
+		name = sat_quartermaster_6
+		portraits = {
+			army = {
+				small = "GFX_idea_sat_quartermaster_6"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = sat_quartermaster_6
+			cost = 200
+			allowed = {
+				original_tag = SAT
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { garrison_master_1 }
+		}		
+	}
+}

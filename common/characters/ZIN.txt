@@ -1,0 +1,1118 @@
+characters={
+	ZIN_kuei={
+		name="Moku"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZIN/Portrait_Tu-Zin_Kuei.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_Kuei_DESC"
+			ideology=constitutional_monarchy
+			expire="130.1.1.1"
+			id=-1
+		}
+	}
+	ZIN_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/ZIN/Portrait_Tu-Zin_nationalism.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=nationalism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=martial_chiefdom
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=active_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=republican
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+	
+	 ###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+
+
+	ZIN_minister_of_personnel_1 = { 
+		name = zin_minister_of_personnel_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = zin_minister_of_personnel_1
+			cost = 100
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { gifted_speaker }
+		}		
+	}
+	ZIN_minister_of_personnel_2 = { 
+		name = zin_minister_of_personnel_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = zin_minister_of_personnel_2
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { close_to_the_people_1 }
+		}		
+	}
+	ZIN_minister_of_personnel_3 = { 
+		name = zin_minister_of_personnel_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = zin_minister_of_personnel_3
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { military_organiser }
+		}		
+	}
+	ZIN_minister_of_personnel_4 = { 
+		name = zin_minister_of_personnel_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = zin_minister_of_personnel_4
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { administrator }
+		}		
+	}
+	ZIN_minister_of_personnel_5 = { 
+		name = zin_minister_of_personnel_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = zin_minister_of_personnel_5
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { lawgiver }
+		}		
+	}
+	ZIN_minister_of_personnel_6 = { 
+		name = zin_minister_of_personnel_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = zin_minister_of_personnel_6
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { prime_minister }
+		}		
+	}
+	ZIN_minister_of_finance_1 = { 
+		name = zin_minister_of_finance_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = zin_minister_of_finance_1
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { fiscal_conservative }
+		}		
+	}
+	ZIN_minister_of_finance_2 = { 
+		name = zin_minister_of_finance_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = zin_minister_of_finance_2
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { regulation_proponent }
+		}		
+	}
+	ZIN_minister_of_finance_3 = { 
+		name = zin_minister_of_finance_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = zin_minister_of_finance_3
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { architect }
+		}		
+	}
+	ZIN_minister_of_finance_4 = { 
+		name = zin_minister_of_finance_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = zin_minister_of_finance_4
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { local_investor }
+		}		
+	}
+	ZIN_minister_of_finance_5 = { 
+		name = zin_minister_of_finance_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = zin_minister_of_finance_5
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { experienced_merchant }
+		}		
+	}
+	ZIN_minister_of_finance_6 = { 
+		name = zin_minister_of_finance_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = zin_minister_of_finance_6
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { agrarian_reformer }
+		}		
+	}
+
+	ZIN_minister_of_culture_1 = { 
+		name = zin_minister_of_culture_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = zin_minister_of_culture_1
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { chauvinist }
+		}		
+	}
+	ZIN_minister_of_culture_2 = { 
+		name = zin_minister_of_culture_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = zin_minister_of_culture_2
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { royalist }
+		}		
+	}
+	ZIN_minister_of_culture_3 = { 
+		name = zin_minister_of_culture_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = zin_minister_of_culture_3
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { naturalist }
+		}		
+	}
+	ZIN_minister_of_culture_4 = { 
+		name = zin_minister_of_culture_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = zin_minister_of_culture_4
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { pacifist }
+		}		
+	}
+	ZIN_minister_of_culture_5 = { 
+		name = zin_minister_of_culture_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = zin_minister_of_culture_5
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { multiculturalist }
+		}		
+	}
+	ZIN_minister_of_culture_6 = { 
+		name = zin_minister_of_culture_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = zin_minister_of_culture_6
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { personality_cultist }
+		}		
+	}
+
+	ZIN_minister_of_justice_1 = { 
+		name = zin_minister_of_justice_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = zin_minister_of_justice_1
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { neutral_judge }
+		}		
+	}
+	ZIN_minister_of_justice_2 = { 
+		name = zin_minister_of_justice_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = zin_minister_of_justice_2
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { corrupt_judge }
+		}		
+	}
+	ZIN_minister_of_justice_3 = { 
+		name = zin_minister_of_justice_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = zin_minister_of_justice_3
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { tough_on_crime }
+		}		
+	}
+	ZIN_minister_of_justice_4 = { 
+		name = zin_minister_of_justice_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = zin_minister_of_justice_4
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { non_bender_activist }
+		}		
+	}
+	ZIN_minister_of_justice_5 = { 
+		name = zin_minister_of_justice_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = zin_minister_of_justice_5
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { feminist }
+		}		
+	}
+	ZIN_minister_of_justice_6 = { 
+		name = zin_minister_of_justice_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = zin_minister_of_justice_6
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { colonial_activist }
+		}		
+	}
+
+	ZIN_minister_of_works_1 = { 
+		name = zin_minister_of_works_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = zin_minister_of_works_1
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { cruel_supervisor }
+		}		
+	}
+	ZIN_minister_of_works_2 = { 
+		name = zin_minister_of_works_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = zin_minister_of_works_2
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { motivated_pioneer }
+		}		
+	}
+	ZIN_minister_of_works_3 = { 
+		name = zin_minister_of_works_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = zin_minister_of_works_3
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { workers_syndicat }
+		}		
+	}
+	ZIN_minister_of_works_4 = { 
+		name = zin_minister_of_works_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = zin_minister_of_works_4
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { low_standards }
+		}		
+	}
+	ZIN_minister_of_works_5 = { 
+		name = zin_minister_of_works_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = zin_minister_of_works_5
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { unemployment_benefits }
+		}		
+	}
+	ZIN_minister_of_works_6 = { 
+		name = zin_minister_of_works_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = zin_minister_of_works_6
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { outsourcer }
+		}		
+	}
+
+	ZIN_minister_of_rites_1 = { 
+		name = zin_minister_of_rites_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = zin_minister_of_rites_1
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { warrior_culture }
+		}		
+	}
+	ZIN_minister_of_rites_2 = { 
+		name = zin_minister_of_rites_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = zin_minister_of_rites_2
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { genericerialist }
+		}		
+	}
+	ZIN_minister_of_rites_3 = { 
+		name = zin_minister_of_rites_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = zin_minister_of_rites_3
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { orthodox }
+		}		
+	}
+	ZIN_minister_of_rites_4 = { 
+		name = zin_minister_of_rites_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = zin_minister_of_rites_4
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { xenophobe }
+		}		
+	}
+	ZIN_minister_of_rites_5 = { 
+		name = zin_minister_of_rites_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = zin_minister_of_rites_5
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jingoist }
+		}		
+	}
+	ZIN_minister_of_rites_6 = { 
+		name = zin_minister_of_rites_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = zin_minister_of_rites_6
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { fanatic }
+		}		
+	}
+
+	ZIN_head_of_intelligence_1 = { 
+		name = zin_head_of_intelligence_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_1"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = zin_head_of_intelligence_1
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { spymaster }
+		}		
+	}
+	ZIN_head_of_intelligence_2 = { 
+		name = zin_head_of_intelligence_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_2"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = zin_head_of_intelligence_2
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { constable }
+		}		
+	}
+	ZIN_head_of_intelligence_3 = { 
+		name = zin_head_of_intelligence_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_3"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = zin_head_of_intelligence_3
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { head_censor }
+		}		
+	}
+	ZIN_head_of_intelligence_4 = { 
+		name = zin_head_of_intelligence_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_4"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = zin_head_of_intelligence_4
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_torturer }
+		}		
+	}
+	ZIN_head_of_intelligence_5 = { 
+		name = zin_head_of_intelligence_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_5"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = zin_head_of_intelligence_5
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_assassin }
+		}		
+	}
+	ZIN_head_of_intelligence_6 = { 
+		name = zin_head_of_intelligence_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_6"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = zin_head_of_intelligence_6
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { astrologist }
+		}		
+	}
+
+	ZIN_quartermaster_1 = { 
+		name = zin_quartermaster_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_1"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = zin_quartermaster_1
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { logistician_2 }
+		}		
+	}
+	ZIN_quartermaster_2 = { 
+		name = zin_quartermaster_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_2"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = zin_quartermaster_2
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { forager_2 }
+		}		
+	}
+	ZIN_quartermaster_3 = { 
+		name = zin_quartermaster_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_3"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = zin_quartermaster_3
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jungle_specialist_2 }
+		}		
+	}
+	ZIN_quartermaster_4 = { 
+		name = zin_quartermaster_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_4"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = zin_quartermaster_4
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { amphibious_specialist_2 }
+		}		
+	}
+	ZIN_quartermaster_5 = { 
+		name = zin_quartermaster_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_5"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = zin_quartermaster_5
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { winter_specialist_2 }
+		}		
+	}
+	ZIN_quartermaster_6 = { 
+		name = zin_quartermaster_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_6"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = zin_quartermaster_6
+			cost = 200
+			allowed = {
+				original_tag = ZIN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { garrison_master_1 }
+		}		
+	}
+}

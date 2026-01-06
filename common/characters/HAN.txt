@@ -1,0 +1,321 @@
+characters={
+	HAN_gambu={
+		name="Gambu"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAN/Portrait_Han-Tui_Gambu.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_Gambu_DESC"
+			ideology=constitutional_monarchy
+			expire="130.1.1.1"
+			id=-1
+		}
+	}
+	HAN_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/HAN/Portrait_Han-Tui_nationalism.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=nationalism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=liberalism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=absolute_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=sovereign_monarchy
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+	
+	 ###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+
+
+	HAN_head_of_intelligence_1 = { 
+		name = han_head_of_intelligence_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_1"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = han_head_of_intelligence_1
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { spymaster }
+		}		
+	}
+	HAN_head_of_intelligence_2 = { 
+		name = han_head_of_intelligence_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_2"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = han_head_of_intelligence_2
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { constable }
+		}		
+	}
+	HAN_head_of_intelligence_3 = { 
+		name = han_head_of_intelligence_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_3"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = han_head_of_intelligence_3
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { head_censor }
+		}		
+	}
+	HAN_head_of_intelligence_4 = { 
+		name = han_head_of_intelligence_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_4"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = han_head_of_intelligence_4
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_torturer }
+		}		
+	}
+	HAN_head_of_intelligence_5 = { 
+		name = han_head_of_intelligence_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_5"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = han_head_of_intelligence_5
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_assassin }
+		}		
+	}
+	HAN_head_of_intelligence_6 = { 
+		name = han_head_of_intelligence_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_6"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = han_head_of_intelligence_6
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { astrologist }
+		}		
+	}
+
+	HAN_quartermaster_1 = { 
+		name = han_quartermaster_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_1"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = han_quartermaster_1
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { logistician_2 }
+		}		
+	}
+	HAN_quartermaster_2 = { 
+		name = han_quartermaster_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_2"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = han_quartermaster_2
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { forager_2 }
+		}		
+	}
+	HAN_quartermaster_3 = { 
+		name = han_quartermaster_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_3"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = han_quartermaster_3
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jungle_specialist_2 }
+		}		
+	}
+	HAN_quartermaster_4 = { 
+		name = han_quartermaster_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_4"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = han_quartermaster_4
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { amphibious_specialist_2 }
+		}		
+	}
+	HAN_quartermaster_5 = { 
+		name = han_quartermaster_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_5"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = han_quartermaster_5
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { winter_specialist_2 }
+		}		
+	}
+	HAN_quartermaster_6 = { 
+		name = han_quartermaster_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_6"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = han_quartermaster_6
+			cost = 200
+			allowed = {
+				original_tag = HAN
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { garrison_master_1 }
+		}		
+	}
+}

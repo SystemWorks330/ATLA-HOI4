@@ -1,0 +1,130 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = spirit_event
+
+
+#country_event = {
+#	id = dac_event.1
+#	title = dac_event.1.t
+#	desc = dac_event.1.d
+#	picture = GFX_dac_event_001
+#
+#	trigger = {
+#		ROOT = {
+#			check_variable = { conciousness > 80 }
+#			has_idea = state_5
+#		}
+#		NOT = { 
+#			check_variable = { conciousness < 80 }
+#		}
+#	}
+#
+#	immediate = {
+#		hidden_effect = {
+#			
+#		}
+#	}
+#
+#	option = {
+#		name = dac_event.1.a
+#		trigger = { 
+#
+#		}
+#
+#		set_temp_variable = { temp_ideology = token:current_party_ideology_group }
+#		set_temp_variable = { temp_fire_culture = party_popularity_100@fire_culture }
+#		set_temp_variable = { temp_earth_culture = party_popularity_100@earth_culture }
+#		set_temp_variable = { temp_water_culture = party_popularity_100@water_culture }
+#		set_temp_variable = { temp_air_culture = party_popularity_100@air_culture }
+#		set_temp_variable = { temp_pluralist_culture = party_popularity_100@pluralist_culture }
+#
+#		create_dynamic_country = {
+#			original_tag = ROOT
+#			
+#			every_core_state = {
+#				limit = {
+#					NOT = {
+#						THIS = {
+#							is_capital = yes
+#						}
+#					}
+#				}
+#				transfer_state_to = FROM
+#			}
+#			ROOT = {
+#				transfer_units_fraction= {
+#					target = PREV
+#					size = 0.1
+#					stockpile_ratio = 0.7
+#					army_ratio = 0.7
+#					navy_ratio = 0.2
+#					air_ratio = 0.2
+#					keep_unit_leaders_trigger = {
+#						always = yes
+#					}
+#				}
+#			}
+#			set_popularities = {
+#				fire_culture = var:temp_fire_culture
+#				earth_culture = var:temp_earth_culture
+#				water_culture = var:temp_water_culture
+#				air_culture = var:temp_air_culture
+#				pluralist_culture = var:temp_pluralist_culture
+#			}
+#			declare_war_on = {
+#				target = ROOT
+#				type = civil_war
+#			}
+#		}
+#
+#	}
+#
+#}
+
+
+#country_event = {
+#	id = spirit_event.1
+#	title = spirit_event.1.t
+#	desc = spirit_event.1.d
+#	picture = GFX_spirit_event_001
+#
+#	is_triggered_only = yes
+#
+#	immediate = {
+#		hidden_effect = {
+#			
+#		}
+#	}
+#
+#	option = {
+#		name = spirit_event.1.a
+#		trigger = { 
+#
+#		}
+#
+#		every_state = {
+#			add_core_of = SPI
+#		}
+#		every_country = {
+#			if = {
+#				limit = {
+#					#has_added_tension_amount > 0
+#				}
+#				random_owned_controlled_state = {
+#					limit = {
+#						is_in_home_area = yes
+#					}
+#					transfer_state_to = SPI
+#				}
+#				declare_war_on = {
+#					target = SPI
+#					type = annex_everything
+#				}
+#			}
+#		}
+#
+#	}
+#
+#}

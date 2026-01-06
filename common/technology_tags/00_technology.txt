@@ -1,0 +1,353 @@
+# Do not change tags in here without changing every other reference to them.
+# If adding new technology, make sure they are uniquely named.
+
+technology_categories = {
+
+	age_1
+	age_2
+	age_3
+	age_4
+	age_5
+	age_6
+	
+	military_doctrine
+	cat_power
+	cat_substance
+	cat_change
+	cat_freedom
+	bender
+	infantry_weapons
+	basic_weapons
+	ranged_weapons
+	sword_tech
+	spear_tech
+	pike_tech
+	light_armor
+	heavy_armor
+	cavalry
+	archer_tech
+
+	nav_patrol
+	nav_raid
+	nav_screen
+	nav_capital
+	nav_wooden
+	nav_ironclad
+	nav_wooden_armor
+	nav_ironclad_armor
+	nav_tactics
+	nav_heavy_weapons
+	nav_light_weapons
+	nav_support
+	nav_navigation
+	nav_crew
+	nav_mines
+	nav_invasion
+	
+	cat_light_cavalry
+	motorisation
+	birb_tech
+	air_tech
+	aircraft
+	air_balloon
+	light_airship
+	heavy_airship
+	train_tech
+
+	inventions
+	
+	construction
+	infra_construction
+	civil_construction
+	fort_construction
+	resource_construction
+	farm_construction
+	ranch_construction
+	mill_construction
+	wood_construction
+	stone_construction
+	iron_construction
+	factory_construction
+	air_construction
+
+	society_reforms
+	society_conservative
+	society_progressive
+	society_domestication
+
+	industry_tech
+	industry_construction
+	industry_production
+	cat_smithy_output
+	industry_resources
+	cat_farm_output
+	ranch_tech
+
+	###### vanilla
+
+	light_air
+	medium_air
+	heavy_air
+	armor
+	cat_light_armor
+	cat_medium_armor
+	cat_heavy_armor
+	artillery
+	cat_anti_tank
+	naval_air
+	motorized_equipment
+	cat_mechanized_equipment
+	naval_equipment
+	rocketry
+	nuclear
+	industry
+	electronics
+	land_doctrine
+	air_doctrine
+	naval_doctrine
+	strategic_destruction_tree
+	battlefield_support_tree
+	operational_integrity_tree
+	jet_technology
+	trade_interdiction_tree
+	convoy_defense_tree
+	light_fighter
+	cat_heavy_fighter
+	tactical_bomber
+	cat_strategic_bomber
+	naval_bomber
+	cas_bomber
+	dd_tech
+	cl_tech
+	ca_tech
+	cv_tech
+	bc_tech
+	bb_tech
+	shbb_tech
+	ss_tech
+	tp_tech
+	synth_resources
+	fleet_in_being_tree
+	encryption_tech
+	decryption_tech
+	computing_tech
+	radar_tech
+	infantry_tech
+	marine_tech
+	construction_tech
+	excavation_tech
+	submarine_doctrine
+	air_equipment
+	cat_mobile_warfare
+	cat_superior_firepower
+	cat_grand_battle_plan
+	cat_mass_assault
+	cat_base_strike
+	cat_trade_interdiction
+	cat_fleet_in_being
+	cat_strategic_destruction
+	cat_battlefield_support
+	cat_operational_integrity
+	night_vision
+	base_strike_main
+	mot_rockets
+	support_tech
+	para_tech
+	engineers_tech
+	recon_tech
+	mountaineers_tech
+	military_police_tech
+	hospital_tech
+	logistics_tech
+	signal_company_tech
+	maintenance_company_tech
+	naval_mines
+	concentrated_industry_category
+	dispersed_industry_category
+	asw_tech
+	naval_minesweeping
+	naval_minelaying
+	cat_scout_plane
+}
+
+technology_folders = {
+	infantry_folder = {
+		ledger = army
+		available = {
+			not = {
+				and = {
+					has_dynamic_modifier = { modifier = air_nation }
+					has_idea = pacifist_detachment
+				}
+			}
+		}
+	}
+	artillery_folder = {
+		ledger = army
+		available = {
+			not = {
+				and = {
+					has_dynamic_modifier = { modifier = air_nation }
+					has_idea = pacifist_detachment
+				}
+			}
+		}
+	}
+	support_folder = {
+		ledger = army
+	}
+	armour_folder = { 
+		ledger = army
+		available = {
+			not = {
+				and = {
+					has_dynamic_modifier = { modifier = air_nation }
+					has_idea = pacifist_detachment
+				}
+			}
+		}
+	}
+
+	special_forces_folder = { 
+		available = { 
+			not = { 
+				has_dynamic_modifier = { modifier = fire_nation }
+				has_dynamic_modifier = { modifier = air_nation }
+				has_dynamic_modifier = { modifier = water_nation }
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+		ledger = army
+	}
+	fir_special_forces_folder = { 
+		available = { 
+			has_dynamic_modifier = { modifier = fire_nation }
+		}
+		ledger = army
+	}
+	#snw_special_forces_folder = { 
+	#	available = { 
+	#		has_country_flag = SNW_special_forces
+	#	}
+	#	ledger = army
+	#}
+	air_special_forces_folder = { 
+		available = { 
+			has_dynamic_modifier = { modifier = air_nation }
+		}
+		ledger = army
+	}
+	earth_special_forces_folder = { 
+		available = { 
+			has_dynamic_modifier = { modifier = earth_nation }
+		}
+		ledger = army
+	}
+	water_special_forces_folder = { 
+		available = { 
+			has_dynamic_modifier = { modifier = water_nation }
+		}
+		ledger = army
+	}
+
+	air_techs_folder = {
+		available = { 
+			not = { 
+				has_dynamic_modifier = { modifier = air_nation }
+			}
+		}
+		ledger = air
+	}
+	AIR_air_techs_folder = { 
+		available = { 
+			has_dynamic_modifier = { modifier = air_nation }
+		}
+		ledger = air
+	}
+
+	naval_folder = {
+		available = {
+			not = { 
+				has_dlc = "Man the Guns" 
+				has_country_flag = FIR_navy
+				has_country_flag = WAT_navy
+			}
+		}
+		ledger = navy
+	}
+	mtgnavalfolder = {
+		available = {
+			has_dlc = "Man the Guns"
+			not = { 
+				has_country_flag = FIR_navy
+				has_country_flag = WAT_navy
+			}
+		}
+		ledger = navy
+	}
+	fire_naval_folder = {
+		available = {
+			has_country_flag = FIR_navy
+			not = { 
+				has_dlc = "Man the Guns" 
+			}
+		}
+		ledger = navy
+	}
+	firemtgnavalfolder = {
+		available = {
+			has_dlc = "Man the Guns"
+			has_country_flag = FIR_navy
+		}
+		ledger = navy
+	}
+	water_naval_folder = {
+		available = {
+			has_country_flag = WAT_navy
+			not = { 
+				has_dlc = "Man the Guns" 
+			}
+		}
+		ledger = navy
+	}
+	watermtgnavalfolder = {
+		available = {
+			has_dlc = "Man the Guns"
+			has_country_flag = WAT_navy
+		}
+		ledger = navy
+	}
+
+	special_forces_doctrine_folder = {
+		ledger = army
+		ledger = navy
+		ledger = air
+		doctrine = yes
+	}
+
+	industry_folder = {
+		ledger = civilian
+	}
+	electronics_folder = {
+		ledger = civilian
+	}
+	construction_folder = {
+		ledger = civilian
+	}
+
+
+	land_doctrine_folder = {
+		ledger = army
+		doctrine = yes
+	}
+	naval_doctrine_folder = {
+		ledger = navy
+		doctrine = yes
+	}
+	air_doctrine_folder = {
+		ledger = air
+		doctrine = yes
+	}
+}
+
+  

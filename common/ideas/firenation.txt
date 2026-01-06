@@ -1,0 +1,1347 @@
+ideas = {
+	
+	hidden_ideas = {
+		fire_supremacy_spirit = {
+			
+			removal_cost = -1
+
+			on_add = {
+				set_variable = { victory_condition = token:fire_supremacy_spirit }
+			}
+
+			cancel = {
+				NOT = {
+					check_variable = { victory_condition = token:fire_supremacy_spirit }
+				}
+			}
+
+			modifier = {
+				fire_culture_drift = 0.02
+				army_morale_factor = 0.5
+				offensive_war_stability_factor = 0.35
+				tech_share_modifier = 1
+			}
+			
+		}
+
+		fire_supremacy_spirit_hidden= {
+			removal_cost = -1
+
+			cancel = {
+				check_variable = { global.fire_pop > 25 }
+			}
+			on_remove = {
+				add_ideas = { fire_supremacy_idea }
+			}
+		}
+
+
+		fire_imperialism_spirit = {
+			
+			removal_cost = -1
+
+			on_add = {
+				set_variable = { victory_condition = token:fire_imperialism_spirit }
+			}
+
+			cancel = {
+				NOT = {
+					check_variable = { victory_condition = token:fire_imperialism_spirit }
+				}
+			}
+			
+		}
+
+		fire_imperialism_spirit_hidden= {
+			removal_cost = -1
+
+			cancel = {
+				check_variable = { global.fire_pop > 25 }
+			}
+			on_remove = {
+				add_ideas = { fire_supremacy_idea }
+			}
+		}
+	}
+
+	country = {
+
+		fire_supremacy_idea = {
+			
+			removal_cost = -1
+
+			cancel = {
+				check_variable = { global.fire_pop < 25 }
+			}
+			on_remove = {
+				add_ideas = { fire_supremacy_spirit_hidden }
+			}
+			
+			modifier = {
+				fire_culture_drift = 0.02
+				army_morale_factor = 0.5
+				offensive_war_stability_factor = 0.35
+				tech_share_modifier = 1
+			}
+		}
+
+		fire_imperialism_idea = {
+			
+			removal_cost = -1
+
+			### temporarily deactivated until better remove mechanic found
+			cancel = {
+				check_variable = { num_controlled_states < 200 }
+			}
+			on_remove = {
+				add_ideas = { fire_imperialism_spirit_hidden }
+			}
+			
+			modifier = {
+				fire_culture_drift = 0.05
+				colonise_state_cost_factor = -0.75
+				core_state_cost_factor = -0.25
+			}
+		}
+
+		national_prosperity = {
+
+			cancel = {
+				has_war = yes
+			}
+
+			removal_cost = -1
+
+			on_remove = {
+				if = {
+					limit = {
+						has_idea = FIR_propaganda_1
+					}
+					remove_ideas = FIR_propaganda_1
+					add_ideas = FIR_propaganda_2
+				}
+				if = {
+					limit = {
+						has_start_date < 13.01.01
+					}
+					add_ideas = national_prosperity_decline_1
+				}
+			}
+
+			research_bonus = {
+				society_reforms = 1.5
+			}
+			
+			modifier = {
+				#bad
+				war_support_factor = -0.4
+				war_support_weekly = -0.002
+				consumer_demand = 0.1
+				unit_quality_target = -0.5
+
+				#good
+				#research_speed_factor = 0.15
+				#currency_amount = -0.2
+				prosperity = 0.1
+				prosperity_factor = 0.1
+				income = 1
+				#production_speed_infrastructure_factor = 0.15
+				#production_speed_consumer_good_factory_factor = 0.15
+				#production_speed_luxury_good_factory_factor = 0.15
+				#industrial_capacity_factory = 0.1
+			}
+		}
+
+		national_prosperity_decline_1 = {
+
+			picture = national_prosperity
+			name = national_prosperity
+
+			removal_cost = -1
+
+			cancel = {
+				check_variable = { war_exhaustion_variable > 10 }
+			}
+			on_remove = {
+				add_ideas = national_prosperity_decline_2
+			}
+
+			research_bonus = {
+				society_reforms = 1.0
+			}
+			
+			modifier = {
+				#bad
+				consumer_demand = 0.1
+				unit_quality_target = -0.25
+
+				#good
+				#currency_amount = -0.1
+				prosperity = 0.075
+				prosperity_factor = 0.075
+				income = 0.5
+				#production_speed_infrastructure_factor = 0.1
+				#production_speed_consumer_good_factory_factor = 0.1
+				#production_speed_luxury_good_factory_factor = 0.1
+				#industrial_capacity_factory = 0.1
+			}
+		}
+
+		national_prosperity_decline_2 = {
+
+			picture = national_prosperity
+			name = national_prosperity
+
+			removal_cost = -1
+
+			cancel = {
+				check_variable = { war_exhaustion_variable > 50 }
+			}
+			on_remove = {
+				
+			}
+
+			research_bonus = {
+				society_reforms = 0.5
+			}
+			
+			modifier = {
+				#bad
+				consumer_demand = 0.05
+				unit_quality_target = -0.1
+
+				#good
+				#currency_amount = -0.05
+				prosperity = 0.05
+				prosperity_factor = 0.05
+				income = 0.2
+				#production_speed_infrastructure_factor = 0.05
+				#production_speed_consumer_good_factory_factor = 0.05
+				#production_speed_luxury_good_factory_factor = 0.05
+				#industrial_capacity_factory = 0.05
+			}
+		}
+
+		legacy_of_roku_and_sozin = {
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = 0.1
+				generate_wargoal_tension = 0.5
+				justify_war_goal_time = 0.5
+				opinion_of_avatar_modifier = 20
+			}
+		}
+		ruthless_expansionism = {
+
+			removal_cost = -1
+
+			modifier = {
+				max_command_power_mult = -0.25
+				amphibious_invasion = 0.1 
+			}
+		}
+
+		evacuation_expenses = {
+
+			removal_cost = -1
+
+			modifier = {
+				income = -2
+				stability_factor = 0.05
+				political_power_gain = 0.1
+			}
+
+			traits = {
+				expensive_convoys
+			}
+		}
+
+		FIR_propaganda_1 = {
+
+			name = promote_war_support
+			picture = promote_war_support
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_weekly = 0.002
+			}
+		}
+
+		FIR_propaganda_2 = {
+
+			name = promote_war_support
+			picture = promote_war_support
+
+			removal_cost = -1
+
+			modifier = {
+				war_support_factor = 0.15
+			}
+		}
+
+		spirit_prince_azulon = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_azulon
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_azulon
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		spirit_princess_rhya = {
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		spirit_prince_ozai = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_ozai
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_ozai
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		spirit_ozai_representative_prince = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_ozai
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_ozai
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				peasant_opinion = 10
+			}
+		}
+
+		spirit_prince_iroh = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_iroh
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_iroh
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		spirit_prince_lu_ten = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_lu_ten
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_lu_ten
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		spirit_prince_zuko = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_zuko
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_zuko
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+		spirit_princess_azula = {
+
+			cancel = {
+				OR = {
+					has_country_leader = {
+						character = FIR_azula
+						ruling_only = yes
+					}
+					NOT = {
+						has_character = FIR_azula
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+
+
+		
+		FIR_first_invasion = {
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = EAR
+
+				attack_bonus_against = 0.10
+				#defense_bonus_against = 0.05
+			}
+		}
+
+		FIR_northern_plan = {
+			
+			cancel = {
+				AND = {
+					WUL = { has_capitulated = yes }
+					NOW = { has_capitulated = yes }
+					XIN = { has_capitulated = yes }
+					NIX = { has_capitulated = yes }
+					YUE = { has_capitulated = yes }
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+
+			targeted_modifier = {
+				tag = WUL
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = NOW
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = XIN
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = NIX
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = YUE
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+		}
+
+		FIR_central_plan = {
+			
+			cancel = {
+				AND = {
+					POH = { has_capitulated = yes }
+					TAK = { has_capitulated = yes }
+					HAN = { has_capitulated = yes }
+					MAK = { has_capitulated = yes }
+					MER = { has_capitulated = yes }
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+
+			targeted_modifier = {
+				tag = POH
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = TAK
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = HAN
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = MAK
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = MER
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+		}
+
+		FIR_southern_plan = {
+			
+			cancel = {
+				AND = {
+					HEB = { has_capitulated = yes }
+					OMS = { has_capitulated = yes }
+					CHN = { has_capitulated = yes }
+					ZAO = { has_capitulated = yes }
+					GAO = { has_capitulated = yes }
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+
+			targeted_modifier = {
+				tag = HEB
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = OMS
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = CHN
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = ZAO
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+			targeted_modifier = {
+				tag = GAO
+				attack_bonus_against = 0.10
+				naval_invasion_prep_speed = 0.75
+			}
+		}
+
+		FIR_600_days_siege = {
+
+			name = FIR_600_days_siege
+			picture = FIR_600_days_siege
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = EAR
+				attack_bonus_against = -1
+				defense_bonus_against = -1
+			}
+			modifier = {
+				stability_factor = -0.1
+				war_weariness_factor = 0.2
+			}
+
+		}
+
+		FIR_600_days_siege_2 = {
+
+			name = FIR_600_days_siege
+			picture = FIR_600_days_siege
+
+			removal_cost = -1
+
+			modifier = {
+				max_command_power = -10
+				experience_gain_army_factor = 0.1
+			}
+
+		}
+
+		FIR_earthkingdom_operation_bases_1 = {
+
+			name = earthkingdom_operation_bases
+			picture = earthkingdom_operation_bases
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				custom_modifier_tooltip = earthkingdom_operation_bases_1_tt
+				supply_node_range = 0.1
+			}
+		}
+
+		FIR_earthkingdom_operation_bases_2 = {
+
+			name = earthkingdom_operation_bases
+			picture = earthkingdom_operation_bases
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				custom_modifier_tooltip = earthkingdom_operation_bases_2_tt
+				supply_node_range = 0.2
+			}
+		}
+
+		FIR_earthkingdom_operation_bases_3 = {
+
+			name = earthkingdom_operation_bases
+			picture = earthkingdom_operation_bases
+
+			removal_cost = -1
+
+			modifier = {
+				production_speed_buildings_factor = -0.3
+				custom_modifier_tooltip = earthkingdom_operation_bases_3_tt
+				supply_node_range = 0.3
+			}
+		}
+
+		FIR_industrial_nation = {
+			
+			removal_cost = -1
+
+			modifier = {
+				industrialist_opinion = 10
+				urbanisation_country_factor = 0.1
+				consumer_demand = 0.2
+				steel_upkeep_factor = 0.5
+				peasant_output_factor = -1
+			}
+
+		}
+
+		FIR_private_investors = {
+			
+			removal_cost = -1
+
+			modifier = {
+				peoples_initiative = 0.2
+			}
+
+		}
+
+		FIR_modern_agriculture = {
+			
+			removal_cost = -1
+
+			modifier = {
+				farmer_factor = -0.20
+				rancher_factor = -0.20
+				steel_demand = 0.05
+				fossile_fuels_demand = 0.05
+				harvesting_factor = 0.05
+			}
+
+		}
+
+		FIR_colonial_administration = {
+			
+			removal_cost = -1
+
+			modifier = {
+				allow_colony_modifier = 1
+				overlord_influence = 0.25
+			}
+
+		}
+
+		banished_prince = {
+			
+			removal_cost = -1
+
+			modifier = {
+				avatar_influence_modifier = 0.05
+				opinion_of_avatar_modifier = -10
+				avatar_opinion_modifier = -50
+			}
+
+		}
+
+		FIR_cultural_change = {
+			
+			removal_cost = -1
+
+			modifier = {
+				available_missions = 1
+				political_power_factor = 0.25
+				political_power_cap = 50
+			}
+
+		}
+
+		dragon_hunt_poacher = {
+
+			name = idea_dragon_hunts
+			picture = FIR_dragon_hunt_poacher
+
+			modifier = {
+				experience_gain_army = 0.2
+				experience_gain_air = 0.2
+				custom_modifier_tooltip = gain_xp_chance_tt
+			}
+		}
+
+		dragon_hunt_neutral = {
+
+			name = idea_dragon_hunts
+			picture = FIR_dragon_hunt_neutral
+
+			modifier = {
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
+				max_command_power = 20
+				nobility_opinion = 5
+			}
+		}
+
+		banned_poaching = {
+			
+			name = banned_poaching
+			picture = FIR_banned_poaching
+
+			modifier = {
+				experience_gain_army = -0.15
+				nobility_opinion = -1
+				experience_gain_air = 0.3
+			}
+		}
+
+		dragon_hunt_nobles = {
+
+			name = idea_dragon_hunts
+			picture = FIR_dragon_hunt_noble
+
+			modifier = {
+				max_command_power = 100
+				nobility_opinion = 20
+				custom_modifier_tooltip = gain_dragon_chance_tt
+			}
+		}
+
+		FIR_military_school = {	
+			picture = usa_war_department
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 25	
+			}
+		}
+
+		FIR_guiding_wind_opposition = {
+			allowed = {
+				original_tag = FIR
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				air_culture_drift = 0.02
+				stability_factor = -0.05
+				political_power_cost = 0.2
+			}
+		}
+		FIR_army_navy_balanced = {
+			allowed = {
+				original_tag = FIR
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.05
+			}
+		}
+		FIR_army_strengthened = {
+			allowed = {
+				original_tag = FIR
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = 0.1
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_dockyard_factor = -0.1
+				industrial_capacity_dockyard = -0.1
+				naval_invasion_prep_speed = -0.2
+				max_planning = 0.1
+				planning_speed = 0.1
+				naval_invasion_capacity = -5
+			}
+		}
+		FIR_army_superior = {
+			allowed = {
+				original_tag = FIR
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_dockyard_factor = -0.2
+				industrial_capacity_dockyard = -0.2
+				naval_invasion_prep_speed = -0.4
+				max_planning = 0.2
+				planning_speed = 0.2
+				naval_invasion_capacity = -8
+			}
+		}
+		FIR_navy_strengthened = {
+			allowed = {
+				original_tag = FIR
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.1
+				production_speed_arms_factory_factor = -0.1
+				production_speed_industrial_complex_factor = -0.1
+				production_speed_dockyard_factor = 0.1
+				industrial_capacity_dockyard = 0.1
+				naval_invasion_prep_speed = 0.2
+				max_planning = -0.1
+				planning_speed = -0.1
+				naval_invasion_capacity = 5
+			}
+		}
+
+		FIR_navy_superior = {
+			allowed = {
+				original_tag = FIR
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				industrial_capacity_factory = -0.2
+				production_speed_arms_factory_factor = -0.2
+				production_speed_industrial_complex_factor = -0.2
+				production_speed_dockyard_factor = 0.2
+				industrial_capacity_dockyard = 0.2
+				naval_invasion_prep_speed = 0.4
+				max_planning = -0.2
+				planning_speed = -0.2
+				naval_invasion_capacity = 10
+			}
+		}
+
+	}
+
+	academia = {
+		use_list_view = yes
+
+		fir_academia_1 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { research_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		fir_academia_2 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { officer_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		fir_academia_3 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { special_forces_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		fir_academia_4 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { recruit_drilling }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+
+	}
+
+	army = {
+		use_list_view = yes
+
+		fir_army_1 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_power = 0.1
+			}
+			
+			traits = { land_school_of_aggression }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		fir_army_2 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_freedom = 0.1
+			}
+			
+			traits = { land_school_of_defense }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		fir_army_3 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_change = 0.1
+			}
+			
+			traits = { land_school_of_logistics }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		fir_army_4 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_substance = 0.1
+			}
+			
+			traits = { land_school_of_planning }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	navy = {
+		use_list_view = yes
+
+		fir_navy_1 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_power = 0.1
+			}
+			
+			traits = { naval_school_of_aggression }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		fir_navy_2 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_freedom = 0.1
+			}
+			
+			traits = { naval_school_of_defense }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		fir_navy_3 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_change = 0.1
+			}
+			
+			traits = { naval_school_of_maneuvre }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		fir_navy_4 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_substance = 0.1
+			}
+			
+			traits = { naval_school_of_coordination }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	
+	law_enforcement = {
+		use_list_view = yes
+
+		fir_law_enforcement_1 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { royal_decree }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		fir_law_enforcement_2 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { spiritual_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		fir_law_enforcement_3 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { civil_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		fir_law_enforcement_4 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { custumary_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	martial_art = {
+		use_list_view = yes
+
+		fir_martial_art_1 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { long_fist }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		fir_martial_art_2 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { seven_stars }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	
+		fir_martial_art_3 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { dancing_dragon }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+
+	clergy = {
+		use_list_view = yes
+
+		fir_clergy_1 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { philosophical_principles }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+
+		fir_clergy_2 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { alms_and_pacification }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		fir_clergy_3 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			modifier = {
+				political_power_cost = 0.1
+				stability_factor = 0.1
+			}
+			
+			traits = { service_to_the_avatar }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		fir_clergy_4 = {
+
+			cost = 250
+
+			allowed = {
+				tag = FIR
+			}
+			available = { }
+			
+			
+			traits = { indoctrinal_service }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+}

@@ -1,0 +1,1118 @@
+characters={
+	MPO_shamo={
+		name="Sha-Mo"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Misty_Palm_Sha_Mo"
+			}
+		}
+		country_leader={
+			
+			ideology=earth_tribe
+			expire="110.1.1.1"
+			id=-1
+		}
+	}
+	MPO_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="GFX_Portrait_Misty_Palm_Generic_1"
+			}
+		}
+		country_leader={
+			
+			ideology=fire_tribes
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=liberalism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=active_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=republican
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+	
+	 ###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+
+
+	MPO_minister_of_personnel_1 = { 
+		name = mpo_minister_of_personnel_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = mpo_minister_of_personnel_1
+			cost = 100
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { gifted_speaker }
+		}		
+	}
+	MPO_minister_of_personnel_2 = { 
+		name = mpo_minister_of_personnel_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = mpo_minister_of_personnel_2
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { close_to_the_people_1 }
+		}		
+	}
+	MPO_minister_of_personnel_3 = { 
+		name = mpo_minister_of_personnel_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = mpo_minister_of_personnel_3
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { military_organiser }
+		}		
+	}
+	MPO_minister_of_personnel_4 = { 
+		name = mpo_minister_of_personnel_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = mpo_minister_of_personnel_4
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { administrator }
+		}		
+	}
+	MPO_minister_of_personnel_5 = { 
+		name = mpo_minister_of_personnel_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = mpo_minister_of_personnel_5
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { lawgiver }
+		}		
+	}
+	MPO_minister_of_personnel_6 = { 
+		name = mpo_minister_of_personnel_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = mpo_minister_of_personnel_6
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { prime_minister }
+		}		
+	}
+	MPO_minister_of_finance_1 = { 
+		name = mpo_minister_of_finance_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = mpo_minister_of_finance_1
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { fiscal_conservative }
+		}		
+	}
+	MPO_minister_of_finance_2 = { 
+		name = mpo_minister_of_finance_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = mpo_minister_of_finance_2
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { regulation_proponent }
+		}		
+	}
+	MPO_minister_of_finance_3 = { 
+		name = mpo_minister_of_finance_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = mpo_minister_of_finance_3
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { architect }
+		}		
+	}
+	MPO_minister_of_finance_4 = { 
+		name = mpo_minister_of_finance_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = mpo_minister_of_finance_4
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { local_investor }
+		}		
+	}
+	MPO_minister_of_finance_5 = { 
+		name = mpo_minister_of_finance_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = mpo_minister_of_finance_5
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { experienced_merchant }
+		}		
+	}
+	MPO_minister_of_finance_6 = { 
+		name = mpo_minister_of_finance_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = mpo_minister_of_finance_6
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { agrarian_reformer }
+		}		
+	}
+
+	MPO_minister_of_culture_1 = { 
+		name = mpo_minister_of_culture_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = mpo_minister_of_culture_1
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { chauvinist }
+		}		
+	}
+	MPO_minister_of_culture_2 = { 
+		name = mpo_minister_of_culture_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = mpo_minister_of_culture_2
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { royalist }
+		}		
+	}
+	MPO_minister_of_culture_3 = { 
+		name = mpo_minister_of_culture_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = mpo_minister_of_culture_3
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { naturalist }
+		}		
+	}
+	MPO_minister_of_culture_4 = { 
+		name = mpo_minister_of_culture_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = mpo_minister_of_culture_4
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { pacifist }
+		}		
+	}
+	MPO_minister_of_culture_5 = { 
+		name = mpo_minister_of_culture_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = mpo_minister_of_culture_5
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { multiculturalist }
+		}		
+	}
+	MPO_minister_of_culture_6 = { 
+		name = mpo_minister_of_culture_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = mpo_minister_of_culture_6
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { personality_cultist }
+		}		
+	}
+
+	MPO_minister_of_justice_1 = { 
+		name = mpo_minister_of_justice_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = mpo_minister_of_justice_1
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { neutral_judge }
+		}		
+	}
+	MPO_minister_of_justice_2 = { 
+		name = mpo_minister_of_justice_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = mpo_minister_of_justice_2
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { corrupt_judge }
+		}		
+	}
+	MPO_minister_of_justice_3 = { 
+		name = mpo_minister_of_justice_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = mpo_minister_of_justice_3
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { tough_on_crime }
+		}		
+	}
+	MPO_minister_of_justice_4 = { 
+		name = mpo_minister_of_justice_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = mpo_minister_of_justice_4
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { non_bender_activist }
+		}		
+	}
+	MPO_minister_of_justice_5 = { 
+		name = mpo_minister_of_justice_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = mpo_minister_of_justice_5
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { feminist }
+		}		
+	}
+	MPO_minister_of_justice_6 = { 
+		name = mpo_minister_of_justice_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = mpo_minister_of_justice_6
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { colonial_activist }
+		}		
+	}
+
+	MPO_minister_of_works_1 = { 
+		name = mpo_minister_of_works_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = mpo_minister_of_works_1
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { cruel_supervisor }
+		}		
+	}
+	MPO_minister_of_works_2 = { 
+		name = mpo_minister_of_works_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = mpo_minister_of_works_2
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { motivated_pioneer }
+		}		
+	}
+	MPO_minister_of_works_3 = { 
+		name = mpo_minister_of_works_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = mpo_minister_of_works_3
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { workers_syndicat }
+		}		
+	}
+	MPO_minister_of_works_4 = { 
+		name = mpo_minister_of_works_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = mpo_minister_of_works_4
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { low_standards }
+		}		
+	}
+	MPO_minister_of_works_5 = { 
+		name = mpo_minister_of_works_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = mpo_minister_of_works_5
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { unemployment_benefits }
+		}		
+	}
+	MPO_minister_of_works_6 = { 
+		name = mpo_minister_of_works_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = mpo_minister_of_works_6
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { outsourcer }
+		}		
+	}
+
+	MPO_minister_of_rites_1 = { 
+		name = mpo_minister_of_rites_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = mpo_minister_of_rites_1
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { warrior_culture }
+		}		
+	}
+	MPO_minister_of_rites_2 = { 
+		name = mpo_minister_of_rites_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = mpo_minister_of_rites_2
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { genericerialist }
+		}		
+	}
+	MPO_minister_of_rites_3 = { 
+		name = mpo_minister_of_rites_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = mpo_minister_of_rites_3
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { orthodox }
+		}		
+	}
+	MPO_minister_of_rites_4 = { 
+		name = mpo_minister_of_rites_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = mpo_minister_of_rites_4
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { xenophobe }
+		}		
+	}
+	MPO_minister_of_rites_5 = { 
+		name = mpo_minister_of_rites_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = mpo_minister_of_rites_5
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jingoist }
+		}		
+	}
+	MPO_minister_of_rites_6 = { 
+		name = mpo_minister_of_rites_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = mpo_minister_of_rites_6
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { fanatic }
+		}		
+	}
+
+	MPO_head_of_intelligence_1 = { 
+		name = mpo_head_of_intelligence_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_1"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = mpo_head_of_intelligence_1
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { spymaster }
+		}		
+	}
+	MPO_head_of_intelligence_2 = { 
+		name = mpo_head_of_intelligence_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_2"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = mpo_head_of_intelligence_2
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { constable }
+		}		
+	}
+	MPO_head_of_intelligence_3 = { 
+		name = mpo_head_of_intelligence_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_3"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = mpo_head_of_intelligence_3
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { head_censor }
+		}		
+	}
+	MPO_head_of_intelligence_4 = { 
+		name = mpo_head_of_intelligence_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_4"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = mpo_head_of_intelligence_4
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_torturer }
+		}		
+	}
+	MPO_head_of_intelligence_5 = { 
+		name = mpo_head_of_intelligence_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_5"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = mpo_head_of_intelligence_5
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_assassin }
+		}		
+	}
+	MPO_head_of_intelligence_6 = { 
+		name = mpo_head_of_intelligence_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_6"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = mpo_head_of_intelligence_6
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { astrologist }
+		}		
+	}
+
+	MPO_quartermaster_1 = { 
+		name = mpo_quartermaster_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_1"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = mpo_quartermaster_1
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { logistician_2 }
+		}		
+	}
+	MPO_quartermaster_2 = { 
+		name = mpo_quartermaster_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_2"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = mpo_quartermaster_2
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { forager_2 }
+		}		
+	}
+	MPO_quartermaster_3 = { 
+		name = mpo_quartermaster_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_3"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = mpo_quartermaster_3
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jungle_specialist_2 }
+		}		
+	}
+	MPO_quartermaster_4 = { 
+		name = mpo_quartermaster_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_4"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = mpo_quartermaster_4
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { amphibious_specialist_2 }
+		}		
+	}
+	MPO_quartermaster_5 = { 
+		name = mpo_quartermaster_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_5"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = mpo_quartermaster_5
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { winter_specialist_2 }
+		}		
+	}
+	MPO_quartermaster_6 = { 
+		name = mpo_quartermaster_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_6"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = mpo_quartermaster_6
+			cost = 200
+			allowed = {
+				original_tag = MPO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { garrison_master_1 }
+		}		
+	}
+}

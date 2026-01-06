@@ -1,0 +1,71 @@
+##############
+#### Chin ####
+##############
+
+CHN_tradition_category = {
+	icon = chin_tradition
+
+	picture = GFX_decision_cat_chin_tradition
+
+	allowed = {
+		tag = CHN
+	}
+
+	visible = {
+		original_tag = CHN
+		NOT = { has_country_flag = hide_country_decisions }
+	}
+
+	priority = {
+		base = 500
+	}
+}
+
+CHN_take_power_category = {
+
+	icon = chin_empire
+
+	allowed = {
+		tag = CHN
+	}
+
+	scripted_gui = chin_support_ui
+
+	visible = {
+		original_tag = CHN
+		NOT = { has_country_flag = hide_mission_decisions }
+		has_country_flag = {
+			flag = take_power_category_active
+			value < 2
+		}
+	}
+
+	visible_when_empty = yes
+
+	priority = {
+		base = 500
+	}
+}
+
+CHN_empire_category = {
+	icon = chin_empire
+
+	picture = GFX_decision_cat_chin_empire
+
+	allowed = {
+		tag = CHN
+	}
+
+	visible = {
+		original_tag = CHN
+		NOT = { has_country_flag = hide_mission_decisions }
+		has_country_flag = {
+			flag = CHN_empire_category_active
+			value < 2
+		}
+	}
+
+	priority = {
+		base = 600
+	}
+}

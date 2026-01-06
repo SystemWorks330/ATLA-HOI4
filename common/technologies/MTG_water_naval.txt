@@ -1,0 +1,4984 @@
+technologies = {
+
+	water_light_armor_tech_1 = {
+
+		enable_equipment_modules = {
+			light_hull_reinforcement_1
+		}
+		path = {
+			leads_to_tech = water_light_armor_tech_2
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 7
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -3 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	water_light_armor_tech_2 = {
+
+		enable_equipment_modules = {
+			light_hull_reinforcement_2
+		}
+		path = {
+			leads_to_tech = water_light_armor_tech_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 28
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -3 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	water_light_armor_tech_3 = {
+
+		enable_equipment_modules = {
+			light_hull_reinforcement_3
+		}
+		path = {
+			leads_to_tech = water_light_armor_tech_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 49
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -3 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	water_light_armor_tech_4 = {
+
+		enable_equipment_modules = {
+			light_hull_reinforcement_4
+		}
+		path = {
+			leads_to_tech = water_light_armor_tech_5
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 70
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -3 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	water_light_armor_tech_5 = {
+
+		enable_equipment_modules = {
+			light_hull_reinforcement_5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 91
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -3 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	water_oars_tech_1 = {
+
+		enable_equipment_modules = { 
+			oars_1
+		}
+		path = {
+			leads_to_tech = water_oars_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = canoe_tech_1
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 1
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -9 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_oars_tech_2 = {
+		dependencies = {
+			kinectics = 1
+		}
+
+		enable_equipment_modules = { 
+			oars_2
+		}
+		path = {
+			leads_to_tech = water_oars_tech_3
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 21
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -9 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_oars_tech_3 = {
+
+		enable_equipment_modules = { 
+			oars_3
+		}
+		path = {
+			leads_to_tech = water_oars_tech_4
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 42
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -9 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_oars_tech_4 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipment_modules = { 
+			oars_4
+		}
+		path = {
+			leads_to_tech = water_oars_tech_5
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 63
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -9 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_oars_tech_5 = {
+
+		enable_equipment_modules = { 
+			oars_5
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -9 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+
+	canoe_tech_1 = {
+
+		enable_equipments = {
+			watertribe_canoe_hull_1
+		}
+		path = {
+			leads_to_tech = canoe_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = canoe_strength_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_light_armor_tech_1
+			research_cost_coeff = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 1
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -6 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_patrol
+		}
+	}
+	
+	canoe_tech_2 = {
+		dependencies = {
+			kinectics = 1
+		}
+
+		enable_equipments = {
+			watertribe_canoe_hull_2
+		}
+		path = {
+			leads_to_tech = canoe_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = canoe_strength_tech_2
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 14
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -6 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_patrol
+		}
+	}
+	
+	canoe_tech_3 = {
+		dependencies = {
+			astronomy = 1
+		}
+
+		enable_equipments = {
+			watertribe_canoe_hull_3
+		}
+		path = {
+			leads_to_tech = canoe_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = canoe_strength_tech_3
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 35
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -6 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_patrol
+		}
+	}
+	
+	canoe_tech_4 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipments = {
+			watertribe_canoe_hull_4
+		}
+		path = {
+			leads_to_tech = canoe_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = canoe_strength_tech_4
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 56
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -6 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_patrol
+		}
+	}
+	
+	canoe_tech_5 = {
+		dependencies = {
+			magnetism = 1
+		}
+
+		enable_equipments = {
+			watertribe_canoe_hull_5
+		}
+		path = {
+			leads_to_tech = canoe_strength_tech_5
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 77
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -6 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_patrol
+		}
+	}
+	canoe_strength_tech_1 = {
+
+		watertribe_canoe = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 7
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -7 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	canoe_strength_tech_2 = {
+
+		watertribe_canoe = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 21
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -7 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	canoe_strength_tech_3 = {
+
+		watertribe_canoe = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 42
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -7 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	canoe_strength_tech_4 = {
+
+		watertribe_canoe = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 63
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -7 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	canoe_strength_tech_5 = {
+
+		watertribe_canoe = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -7 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	water_sails_tech_1 = {
+
+		enable_equipment_modules = { 
+			sails_1
+		}
+		path = {
+			leads_to_tech = water_sails_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = raft_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_ship_tech_1
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 1
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_sails_tech_2 = {
+		dependencies = {
+			wind_manipulation = 1
+		}
+
+		enable_equipment_modules = { 
+			sails_2
+		}
+		path = {
+			leads_to_tech = water_sails_tech_3
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 21
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_sails_tech_3 = {
+
+		enable_equipment_modules = { 
+			sails_3
+		}
+		path = {
+			leads_to_tech = water_sails_tech_4
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 42
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_sails_tech_4 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipment_modules = { 
+			sails_4
+		}
+		path = {
+			leads_to_tech = water_sails_tech_5
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 63
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_sails_tech_5 = {
+
+		enable_equipment_modules = { 
+			sails_5
+		}
+		path = {
+			leads_to_tech = water_sails_tech_6
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_sails_tech_6 = {
+		dependencies = {
+			aerodynamics = 1
+		}
+
+		enable_equipment_modules = { 
+			sails_6
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	
+	raft_tech_1 = {
+
+		enable_equipments = {
+			watertribe_raft_hull_1
+		}
+		path = {
+			leads_to_tech = raft_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = raft_strength_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_light_armor_tech_1
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 1
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_raid
+		}
+	}
+	
+	raft_tech_2 = {
+		dependencies = {
+			wind_manipulation = 1
+		}
+
+		enable_equipments = {
+			watertribe_raft_hull_2
+		}
+		path = {
+			leads_to_tech = raft_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = raft_strength_tech_2
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 21
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_raid
+		}
+	}
+	
+	raft_tech_3 = {
+		dependencies = {
+			astronomy = 1
+		}
+
+		enable_equipments = {
+			watertribe_raft_hull_3
+		}
+		path = {
+			leads_to_tech = raft_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = raft_strength_tech_3
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 42
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_raid
+		}
+	}
+	
+	raft_tech_4 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipments = {
+			watertribe_raft_hull_4
+		}
+		path = {
+			leads_to_tech = raft_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = raft_strength_tech_4
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 63
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_raid
+		}
+	}
+	
+	raft_tech_5 = {
+		dependencies = {
+			magnetism = 1
+		}
+
+		enable_equipments = {
+			watertribe_raft_hull_5
+		}
+		path = {
+			leads_to_tech = raft_strength_tech_5
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_raid
+		}
+	}
+	raft_strength_tech_1 = {
+
+		watertribe_raft = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 7
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	raft_strength_tech_2 = {
+
+		watertribe_raft = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 28
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	raft_strength_tech_3 = {
+
+		watertribe_raft = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 49
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	raft_strength_tech_4 = {
+
+		watertribe_raft = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 70
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	raft_strength_tech_5 = {
+
+		watertribe_raft = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 91
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	cutter_ship_tech_1 = {
+
+		enable_equipments = {
+			watertribe_cutter_hull_1
+		}
+		path = {
+			leads_to_tech = cutter_ship_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_armor_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_strength_tech_1
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 7
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 6 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_screen
+			nav_wooden
+		}
+	}
+	
+	cutter_ship_tech_2 = {
+		dependencies = {
+			wind_manipulation = 1
+		}
+
+		enable_equipments = {
+			watertribe_cutter_hull_2
+		}
+		path = {
+			leads_to_tech = cutter_ship_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_main_sail_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_armor_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_strength_tech_2
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 28
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 6 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_screen
+			nav_wooden
+		}
+	}
+	
+	cutter_ship_tech_3 = {
+		dependencies = {
+			astronomy = 1
+		}
+
+		enable_equipments = {
+			watertribe_cutter_hull_3
+		}
+		path = {
+			leads_to_tech = cutter_ship_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_armor_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_strength_tech_3
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 49
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 6 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_screen
+			nav_wooden
+		}
+	}
+	
+	cutter_ship_tech_4 = {
+		dependencies = {
+			architecture = 1
+		}
+
+		enable_equipments = {
+			watertribe_cutter_hull_4
+		}
+		path = {
+			leads_to_tech = cutter_ship_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_armor_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_strength_tech_4
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 70
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 6 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_screen
+			nav_wooden
+		}
+	}
+	
+	cutter_ship_tech_5 = {
+		dependencies = {
+			magnetism = 1
+		}
+
+		enable_equipments = {
+			watertribe_cutter_hull_5
+		}
+		path = {
+			leads_to_tech = cutter_ship_tech_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_armor_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_strength_tech_5
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 91
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 6 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_screen
+			nav_wooden
+		}
+	}
+	
+	cutter_ship_tech_6 = {
+		dependencies = {
+			scientific_method = 1
+		}
+
+		enable_equipments = {
+			watertribe_cutter_hull_6
+		}
+		path = {
+			leads_to_tech = cutter_armor_tech_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = cutter_strength_tech_6
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 6 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_screen
+			nav_wooden
+		}
+	}
+	
+	cutter_strength_tech_1 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 21
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 7 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	cutter_strength_tech_2 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 42
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 7 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	cutter_strength_tech_3 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 63
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 7 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	cutter_strength_tech_4 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 7 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	cutter_strength_tech_5 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 7 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	cutter_strength_tech_6 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 7 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	cutter_armor_tech_1 = {
+
+		enable_equipment_modules = {
+			medium_hull_reinforcement_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 14
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 5 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	cutter_armor_tech_2 = {
+
+		enable_equipment_modules = {
+			medium_hull_reinforcement_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 35
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 5 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	cutter_armor_tech_3 = {
+
+		enable_equipment_modules = {
+			medium_hull_reinforcement_3
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 56
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 5 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	cutter_armor_tech_4 = {
+
+		enable_equipment_modules = {
+			medium_hull_reinforcement_4
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 77
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 5 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	cutter_armor_tech_5 = {
+
+		enable_equipment_modules = {
+			medium_hull_reinforcement_5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 98
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 5 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	cutter_armor_tech_6 = {
+
+		enable_equipment_modules = {
+			medium_hull_reinforcement_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 5 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	water_main_sail_1 = {
+
+		enable_equipment_modules = {
+			main_sails_1
+		}
+		path = {
+			leads_to_tech = water_warship_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_main_sail_2
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 28
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 9 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_main_sail_2 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipment_modules = {
+			main_sails_2
+		}
+		path = {
+			leads_to_tech = water_main_sail_3
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 56
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 9 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_main_sail_3 = {
+
+		enable_equipment_modules = {
+			main_sails_3
+		}
+		path = {
+			leads_to_tech = water_main_sail_4
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 9 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_main_sail_4 = {
+		dependencies = {
+			aerodynamics = 1
+		}
+
+		enable_equipment_modules = {
+			main_sails_4
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 9 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	
+	water_warship_tech_1 = {
+		dependencies = {
+			astronomy = 1
+		}
+
+		enable_equipments = {
+			watertribe_warship_hull_1
+		}
+		path = {
+			leads_to_tech = water_warship_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_warship_armor_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = warship_strength_tech_1
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 28
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 12 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_capital
+		}
+	}
+	
+	water_warship_tech_2 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipments = {
+			watertribe_warship_hull_2
+		}
+		path = {
+			leads_to_tech = water_warship_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_warship_armor_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = warship_strength_tech_2
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 56
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 12 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_capital
+		}
+	}
+	
+	water_warship_tech_3 = {
+		dependencies = {
+			magnetism = 1
+		}
+
+		enable_equipments = {
+			watertribe_warship_hull_3
+		}
+		path = {
+			leads_to_tech = water_warship_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_warship_armor_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = warship_strength_tech_3
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 12 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden
+			nav_capital
+		}
+	}
+	
+	water_warship_tech_4 = {
+		dependencies = {
+			scientific_method = 1
+		}
+
+		enable_equipments = {
+			watertribe_warship_hull_4
+		}
+		path = {
+			leads_to_tech = water_warship_armor_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = warship_strength_tech_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 12 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad
+			nav_capital
+		}
+	}
+
+	water_warship_armor_tech_1 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipment_modules = {
+			heavy_hull_reinforcement_1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 35
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 13 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	water_warship_armor_tech_2 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipment_modules = {
+			heavy_hull_reinforcement_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 63
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 13 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	water_warship_armor_tech_3 = {
+		dependencies = {
+			alchemy = 1
+		}
+
+		enable_equipment_modules = {
+			heavy_hull_reinforcement_3
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 91
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 13 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	water_warship_armor_tech_4 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = {
+			heavy_hull_reinforcement_4
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 13 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_wooden_armor
+		}
+	}
+	
+	warship_strength_tech_1 = {
+
+		watertribe_warship = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 42
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 11 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	warship_strength_tech_2 = {
+
+		watertribe_warship = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 70
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 11 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	warship_strength_tech_3 = {
+
+		watertribe_warship = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 98
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 11 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	warship_strength_tech_4 = {
+
+		watertribe_warship = {
+			max_organisation = 5
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 11 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_tactics
+		}
+	}
+	
+	hunter_tech = {
+
+		enable_equipment_modules = { 
+			boarding_crew_1
+		}
+		enable_equipment_modules = { 
+			ship_archers_1
+		}
+		path = {
+			leads_to_tech = water_boarding_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_archers_tech_1
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 1
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+	
+	water_boarding_tech_1 = {
+
+		enable_equipment_modules = { 
+			boarding_crew_2
+		}
+		path = {
+			leads_to_tech = water_boarding_tech_2
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 14
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+	water_boarding_tech_2 = {
+		dependencies = {
+			metaphysics = 1
+		}
+
+		enable_equipment_modules = { 
+			boarding_crew_3
+		}
+		path = {
+			leads_to_tech = water_boarding_tech_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 35
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+
+	water_boarding_tech_3 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipment_modules = { 
+			boarding_crew_4
+		}
+		path = {
+			leads_to_tech = water_boarding_tech_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 56
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+	
+	water_boarding_tech_4 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			boarding_crew_5
+		}
+		path = {
+			leads_to_tech = water_boarding_tech_5
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 77
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+	
+	water_boarding_tech_5 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			boarding_crew_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 98
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+
+	water_archers_tech_1 = {
+
+		enable_equipment_modules = { 
+			ship_archers_2
+		}
+
+		path = {
+			leads_to_tech = water_archers_tech_2
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 21
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+	water_archers_tech_2 = {
+		dependencies = {
+			kinectics = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_archers_3
+		}
+
+		path = {
+			leads_to_tech = water_archers_tech_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 42
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+	water_archers_tech_3 = {
+		dependencies = {
+			geometry = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_archers_4
+		}
+
+		path = {
+			leads_to_tech = water_archers_tech_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 63
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+	
+	water_archers_tech_4 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_archers_5
+		}
+
+		path = {
+			leads_to_tech = water_archers_tech_5
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+	
+	water_archers_tech_5 = {
+		dependencies = {
+			alchemy = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_archers_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_crew
+		}
+	}
+
+	water_explorer_tech = {
+
+		enable_equipment_modules = { 
+			supplies_1
+		}
+		enable_equipment_modules = { 
+			crows_nest_1
+		}
+		path = {
+			leads_to_tech = water_supplies_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_crows_nest_tech_1
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 7
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_supplies_tech_1 = {
+		dependencies = {
+			domestication = 1
+		}
+
+		enable_equipment_modules = { 
+			supplies_2
+		}
+
+		path = {
+			leads_to_tech = water_supplies_tech_2
+			research_cost_coeff = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 21
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_supplies_tech_2 = {
+		dependencies = {
+			agriculture = 1
+		}
+
+		enable_equipment_modules = { 
+			supplies_3
+		}
+
+		path = {
+			leads_to_tech = water_supplies_tech_3
+			research_cost_coeff = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 42
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_supplies_tech_3 = {
+		dependencies = {
+			surgery = 1
+		}
+
+		enable_equipment_modules = { 
+			supplies_4
+		}
+
+		path = {
+			leads_to_tech = water_supplies_tech_4
+			research_cost_coeff = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 63
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_supplies_tech_4 = {
+		dependencies = {
+			botanics = 1
+		}
+
+		enable_equipment_modules = { 
+			supplies_5
+		}
+
+		path = {
+			leads_to_tech = water_supplies_tech_5
+			research_cost_coeff = 1
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 2 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_supplies_tech_5 = {
+		dependencies = {
+			genetics = 1
+		}
+
+		enable_equipment_modules = { 
+			supplies_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 2 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_crows_nest_tech_1 = {
+		dependencies = {
+			measurements = 1
+		}
+
+		enable_equipment_modules = { 
+			crows_nest_2
+		}
+
+		path = {
+			leads_to_tech = water_crows_nest_tech_2
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 28
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_crows_nest_tech_2 = {
+		dependencies = {
+			astronomy = 1
+		}
+
+		enable_equipment_modules = { 
+			crows_nest_3
+		}
+
+		path = {
+			leads_to_tech = water_crows_nest_tech_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 49
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_crows_nest_tech_3 = {
+		dependencies = {
+			natural_philosophy = 1
+		}
+
+		enable_equipment_modules = { 
+			crows_nest_4
+		}
+
+		path = {
+			leads_to_tech = water_crows_nest_tech_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 70
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_crows_nest_tech_4 = {
+		dependencies = {
+			magnetism = 1
+		}
+
+		enable_equipment_modules = { 
+			crows_nest_5
+		}
+
+		path = {
+			leads_to_tech = water_crows_nest_tech_5
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 91
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_crows_nest_tech_5 = {
+		dependencies = {
+			laws_of_nature = 1
+		}
+
+		enable_equipment_modules = { 
+			crows_nest_6
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 3 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	
+	water_maintenance_1 = {
+
+		enable_equipment_modules = { 
+			maintenance_crew_1
+		}
+
+		path = {
+			leads_to_tech = water_maintenance_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_fisher_net
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_mine_tech_1
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 1
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+
+	
+	water_maintenance_2 = {
+		dependencies = {
+			kinectics = 1
+		}
+
+		enable_equipment_modules = { 
+			maintenance_crew_2
+		}
+
+		path = {
+			leads_to_tech = water_maintenance_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 21
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	
+	water_maintenance_3 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipment_modules = { 
+			maintenance_crew_3
+		}
+
+		path = {
+			leads_to_tech = water_maintenance_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 42
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_maintenance_4 = {
+		dependencies = {
+			architecture = 1
+		}
+
+		enable_equipment_modules = { 
+			maintenance_crew_4
+		}
+
+		path = {
+			leads_to_tech = water_maintenance_5
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 63
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	water_maintenance_5 = {
+		dependencies = {
+			statistics = 1
+		}
+
+		enable_equipment_modules = { 
+			maintenance_crew_5
+		}
+
+		path = {
+			leads_to_tech = water_maintenance_6
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+	
+	water_maintenance_6 = {
+		dependencies = {
+			scientific_method = 1
+		}
+
+		enable_equipment_modules = { 
+			maintenance_crew_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_support
+		}
+	}
+
+	water_fisher_net = {
+		dependencies = {
+			astronomy = 1
+		}
+
+		enable_equipment_modules = { 
+			fishing_net_1
+		}
+		path = {
+			leads_to_tech = water_fisher_net_2
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 35
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_mines
+		}
+	}
+	water_fisher_net_2 = {
+		dependencies = {
+			magnetism = 1
+		}
+
+		enable_equipment_modules = { 
+			fishing_net_2
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 91
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 4 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_mines
+		}
+	}
+
+	water_mine_tech_1 = {
+		dependencies = {
+			agriculture = 1
+		}
+
+		enable_equipment_modules = { 
+			mine_layer_1
+		}
+		path = {
+			leads_to_tech = water_mine_tech_2
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 28
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_mines
+		}
+	}
+	water_mine_tech_2 = {
+		dependencies = {
+			natural_philosophy = 1
+		}
+
+		enable_equipment_modules = { 
+			mine_layer_2
+		}
+		path = {
+			leads_to_tech = water_mine_tech_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 56
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 2 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_mines
+		}
+	}
+	water_mine_tech_3 = {
+		dependencies = {
+			alchemy = 1
+		}
+
+		enable_equipment_modules = { 
+			mine_layer_3
+		}
+		path = {
+			leads_to_tech = water_mine_tech_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 2 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_mines
+		}
+	}
+	water_mine_tech_4 = {
+		dependencies = {
+			scientific_method = 1
+		}
+
+		enable_equipment_modules = { 
+			mine_layer_4
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 2 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_mines
+		}
+	}
+
+	water_naval_weaponry = {
+
+		enable_equipment_modules = { 
+			ship_catapult_1
+		}
+		enable_equipment_modules = { 
+			ship_ballista_1
+		}
+		enable_equipment_modules = { 
+			ship_heavy_ballista_1
+		}
+
+		path = {
+			leads_to_tech = water_ship_catapult_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_ship_ballista_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_ship_heavy_ballista_2
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 7
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_heavy_weapons
+			nav_light_weapons
+		}
+	}
+
+	water_ship_catapult_2 = {
+		dependencies = {
+			kinectics = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_catapult_2
+		}
+
+		path = {
+			leads_to_tech = water_ship_catapult_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 21
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_light_weapons
+		}
+	}
+	water_ship_ballista_2 = {
+		dependencies = {
+			kinectics = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_ballista_2
+		}
+
+		path = {
+			leads_to_tech = water_ship_ballista_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 28
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_light_weapons
+		}
+	}
+	water_ship_heavy_ballista_2 = {
+		dependencies = {
+			kinectics = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_ballista_2
+		}
+
+		path = {
+			leads_to_tech = water_ship_heavy_ballista_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 35
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_heavy_weapons
+		}
+	}
+	water_ship_catapult_3 = {
+		dependencies = {
+			geometry = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_catapult_3
+		}
+
+		path = {
+			leads_to_tech = water_ship_catapult_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 42
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_light_weapons
+		}
+	}
+	water_ship_ballista_3 = {
+		dependencies = {
+			geometry = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_ballista_3
+		}
+
+		path = {
+			leads_to_tech = water_ship_ballista_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 49
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_light_weapons
+		}
+	}
+	water_ship_heavy_ballista_3 = {
+		dependencies = {
+			geometry = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_ballista_3
+		}
+
+		path = {
+			leads_to_tech = water_ship_heavy_ballista_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 56
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_heavy_weapons
+		}
+	}
+	water_ship_catapult_4 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_catapult_4
+		}
+
+		path = {
+			leads_to_tech = water_ship_catapult_5
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 63
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_light_weapons
+		}
+	}
+	water_ship_ballista_4 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_ballista_4
+		}
+
+		path = {
+			leads_to_tech = water_ship_ballista_5
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 70
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_light_weapons
+		}
+	}
+	water_ship_heavy_ballista_4 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_ballista_4
+		}
+
+		path = {
+			leads_to_tech = water_ship_heavy_ballista_5
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 77
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_heavy_weapons
+		}
+	}
+	water_ship_catapult_5 = {
+		dependencies = {
+			printing_press = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_catapult_5
+		}
+
+		path = {
+			leads_to_tech = water_ship_catapult_6
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 84
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -1 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_light_weapons
+		}
+	}
+	water_ship_ballista_5 = {
+		dependencies = {
+			printing_press = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_ballista_5
+		}
+
+		path = {
+			leads_to_tech = water_ship_ballista_6
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 91
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_light_weapons
+		}
+	}
+	water_ship_heavy_ballista_5 = {
+		dependencies = {
+			printing_press = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_ballista_5
+		}
+
+		path = {
+			leads_to_tech = water_ship_heavy_ballista_6
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 98
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_heavy_weapons
+		}
+	}
+	water_ship_catapult_6 = {
+		dependencies = {
+			scientific_method = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_catapult_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -1 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_light_weapons
+		}
+	}
+	water_ship_ballista_6 = {
+		dependencies = {
+			scientific_method = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_ballista_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_light_weapons
+		}
+	}
+	water_ship_heavy_ballista_6 = {
+		dependencies = {
+			scientific_method = 1
+		}
+
+		enable_equipment_modules = { 
+			ship_heavy_ballista_6
+		}
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 1 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_heavy_weapons
+		}
+	}
+	water_invasion_capacity_1 = {
+
+		naval_invasion_capacity = 20
+		amphibious_invasion_defence = 0.1
+		path = {
+			leads_to_tech = water_invasion_capacity_2
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 7
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_invasion
+		}
+	}
+	water_invasion_capacity_2 = {
+		dependencies = {
+			metaphysics = 1
+		}
+
+		naval_invasion_capacity = 20
+		amphibious_invasion_defence = 0.1
+		path = {
+			leads_to_tech = water_invasion_capacity_3
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 28
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_invasion
+		}
+	}
+	water_invasion_capacity_3 = {
+		dependencies = {
+			astronomy = 1
+		}
+
+		naval_invasion_capacity = 20
+		amphibious_invasion_defence = 0.1
+		path = {
+			leads_to_tech = water_invasion_capacity_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 56
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_invasion
+		}
+	}
+	water_invasion_capacity_4 = {
+		dependencies = {
+			surgery = 1
+		}
+
+		naval_invasion_capacity = 20
+		amphibious_invasion_defence = 0.1
+		path = {
+			leads_to_tech = water_invasion_capacity_5
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 77
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_invasion
+		}
+	}
+	water_invasion_capacity_5 = {
+		dependencies = {
+			botanics = 1
+		}
+
+		naval_invasion_capacity = 20
+		amphibious_invasion_defence = 0.1
+		path = {
+			leads_to_tech = water_invasion_capacity_6
+			research_cost_coeff = 1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 98
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_invasion
+		}
+	}
+	water_invasion_capacity_6 = {
+		dependencies = {
+			genetics = 1
+		}
+
+		naval_invasion_capacity = 20
+		amphibious_invasion_defence = 0.1
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_invasion
+		}
+	}
+	water_heavy_engine_1 = {
+		dependencies = {
+			steam_engine = 1
+		}
+
+		enable_equipment_modules = { 
+			heavy_steam_engine_1
+		}
+		path = {
+			leads_to_tech = water_heavy_engine_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_heavy_plates_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_medium_plates_1
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 98
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -2 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_heavy_engine_2 = {
+
+		enable_equipment_modules = { 
+			heavy_steam_engine_2
+		}
+		path = {
+			leads_to_tech = water_heavy_engine_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_heavy_plates_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_medium_plates_2
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -2 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_heavy_engine_3 = {
+		dependencies = {
+			gas_turbine = 1
+		}
+
+		enable_equipment_modules = { 
+			heavy_steam_engine_3
+		}
+		path = {
+			leads_to_tech = water_heavy_engine_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_heavy_plates_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_medium_plates_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -2 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_heavy_engine_4 = {
+
+		enable_equipment_modules = { 
+			heavy_steam_engine_4
+		}
+		path = {
+			leads_to_tech = water_heavy_plates_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_medium_plates_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -2 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_heavy_plates_1 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			heavy_armor_plates_1
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 98
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	water_heavy_plates_2 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			heavy_armor_plates_2
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	water_heavy_plates_3 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			heavy_armor_plates_3
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	water_heavy_plates_4 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			heavy_armor_plates_4
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = 0 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	water_medium_plates_1 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			medium_armor_plates_3
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 98
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -4 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	water_medium_plates_2 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			medium_armor_plates_4
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -4 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	water_medium_plates_3 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			medium_armor_plates_5
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		#start_year =112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -4 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	water_medium_plates_4 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			medium_armor_plates_6
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -4 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	
+	water_light_engine_1 = {
+		dependencies = {
+			steam_engine = 1
+		}
+
+		enable_equipment_modules = { 
+			steam_engine_5
+		}
+		path = {
+			leads_to_tech = water_light_engine_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_light_plates_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_medium_plates_1
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 98
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -6 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_light_engine_2 = {
+
+		enable_equipment_modules = { 
+			steam_engine_6
+		}
+		path = {
+			leads_to_tech = water_light_engine_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_light_plates_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_medium_plates_2
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -6 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_light_engine_3 = {
+		dependencies = {
+			gas_turbine = 1
+		}
+
+		enable_equipment_modules = { 
+			steam_engine_7
+		}
+		path = {
+			leads_to_tech = water_light_engine_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_light_plates_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_medium_plates_3
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -6 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	water_light_engine_4 = {
+
+		
+
+		enable_equipment_modules = { 
+			steam_engine_8
+		}
+		path = {
+			leads_to_tech = water_light_plates_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_medium_plates_4
+			research_cost_coeff = 1
+		}
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -6 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_navigation
+		}
+	}
+	
+	water_light_plates_1 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			light_armor_plates_3
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 98
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -8 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	water_light_plates_2 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			light_armor_plates_4
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 105
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -8 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	water_light_plates_3 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			light_armor_plates_5
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 112
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -8 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+	water_light_plates_4 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipment_modules = { 
+			light_armor_plates_6
+		}
+		
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+		
+		research_cost = 1.5
+
+		##start_year = 119
+		
+		folder = {
+			name = watermtgnavalfolder
+			position = { x = -8 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			nav_ironclad_armor
+		}
+	}
+}

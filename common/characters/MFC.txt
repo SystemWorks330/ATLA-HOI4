@@ -1,0 +1,40 @@
+characters={
+	MFC_generic={
+		name="Masu"
+		portraits={
+			civilian={
+				large="gfx/leaders/MFC/Portrait_Makapu_Fire_Colony_generic.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=nationalism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=earth_tribe
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=martial_chiefdom
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=active_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+        country_leader={
+			
+			ideology=theocracy
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+}

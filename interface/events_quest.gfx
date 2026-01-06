@@ -1,0 +1,47 @@
+spriteTypes = { 
+
+	SpriteType = { 
+		name = "GFX_news_event_quest_001"
+		texturefile = "gfx/event_pictures/show_events/news_event_quest_001.dds"
+	}
+
+	SpriteType = { 
+		name = "GFX_report_event_quest_001"
+		texturefile = "gfx/event_pictures/show_events/report_event_quest_001.dds"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_quest_002"
+		texturefile = "gfx/event_pictures/show_events/report_event_quest_002.dds"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_quest_003"
+		texturefile = "gfx/event_pictures/show_events/report_event_quest_003.dds"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_quest_004"
+		texturefile = "gfx/event_pictures/show_events/report_event_quest_004.dds"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_quest_005"
+		texturefile = "gfx/event_pictures/show_events/report_event_quest_005.dds"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_quest_006"
+		texturefile = "gfx/event_pictures/show_events/report_event_quest_006.dds"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_quest_007"
+		texturefile = "gfx/event_pictures/show_events/report_event_quest_007.dds"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_quest_008"
+		texturefile = "gfx/event_pictures/show_events/report_event_quest_008.dds"
+	}
+	SpriteType = { 
+		name = "GFX_report_event_quest_009"
+		texturefile = "gfx/event_pictures/show_events/report_event_quest_009.dds"
+	}
+
+
+ 
+ }

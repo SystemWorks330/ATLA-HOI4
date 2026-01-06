@@ -1,0 +1,15 @@
+
+SWT_tribe_union = {
+	icon = GFX_decision_category_water_unity
+
+	visible = {
+		TAG = SWT
+	}
+	visible_when_empty = yes
+
+	scripted_gui = water_unity_ui
+
+	priority = {
+		base = 1000
+	}
+}

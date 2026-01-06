@@ -1,0 +1,446 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+
+				set_variable = { grain_variable = 0 }
+				set_variable = { animal_products_variable = 0 }
+				set_variable = { textile_variable = 0 }
+				set_variable = { wood_variable = 0 }
+				set_variable = { minerals_variable = 0 }
+				set_variable = { iron_variable = 0 }
+				set_variable = { steel_variable = 0 }
+				set_variable = { consumer_goods_variable = 0 }
+				set_variable = { luxury_goods_variable = 0 }
+				set_variable = { planks_variable = 0 }
+				set_variable = { bricks_variable = 0 }
+				set_variable = { steel_beams_variable = 0 }
+
+				set_variable = { national_prosperity_const = 1 }
+
+				country_event = { id = population_calc.1 }
+
+				country_event = { id = economy.1 }
+
+				every_controlled_state = {
+					set_variable = { local_prosperity = state_population_k }
+					multiply_variable = { local_prosperity = 2 }
+					if = {
+						limit = {
+							owner = {
+								tag = FIR
+							}
+						}
+						multiply_variable = { local_prosperity = 0.6 }
+					}
+					else_if = {
+						limit = {
+							owner = {
+								is_earth_kingdom = yes
+							}
+						}
+						multiply_variable = { local_prosperity = 0.1 }
+					}
+					else = {
+						multiply_variable = { local_prosperity = 0.05 }
+					}
+
+					set_variable = { actual_urbanisation = urbanisation_cap }
+				}
+
+				set_variable = { civ_buy_factor = 0.5 }
+				set_variable = { deposit_percentage = 0.5 }
+
+				recalc_civ_buy_clamp = yes
+				recalc_increase_factory_clamp = yes
+
+				country_event = { id = economy.2 }
+				country_event = { id = economy.3 hours = 1 }
+
+				force_update_dynamic_modifier = yes
+
+				
+
+				set_variable = { army_medium_prio_var = 3 }
+				set_variable = { population_medium_prio_var = 3 }
+				set_variable = { workers_medium_prio_var = 3 }
+				set_variable = { occupied_medium_prio_var = 3 }
+
+				set_variable = { army_priority_var = 2 }
+				set_variable = { population_priority_var = 2 }
+				set_variable = { workers_priority_var = 2 }
+				set_variable = { occupied_priority_var = 2 }
+				ration_distribution = yes
+
+
+				if = {
+					limit = {
+						has_tech = farm_1
+					}
+					set_variable = { farm_level = 2 }
+					if = {
+						limit = {
+							has_tech = farm_united
+						}
+						set_variable = { farm_level = 4 }
+						if = {
+							limit = {
+								has_tech = farm_2
+							}
+							set_variable = { farm_level = 6 }
+							if = {
+								limit = {
+									has_tech = farm_3
+								}
+								set_variable = { farm_level = 10 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = ranch_1
+					}
+					set_variable = { ranch_level = 5 }
+					if = {
+						limit = {
+							has_tech = farm_united
+						}
+						set_variable = { ranch_level = 10 }
+						if = {
+							limit = {
+								has_tech = ranch_2
+							}
+							set_variable = { farm_level = 25 }
+							if = {
+								limit = {
+									has_tech = ranch_3
+								}
+								set_variable = { farm_level = 50 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = mill_1
+					}
+					set_variable = { mill_level = 5 }
+					if = {
+						limit = {
+							has_tech = mill_2
+						}
+						set_variable = { mill_level = 10 }
+						if = {
+							limit = {
+								has_tech = mill_3
+							}
+							set_variable = { mill_level = 25 }
+							if = {
+								limit = {
+									has_tech = mill_4
+								}
+								set_variable = { mill_level = 50 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = crop_weaving_1
+					}
+					set_variable = { crop_weaving_level = 5 }
+					if = {
+						limit = {
+							has_tech = crop_weaving_2
+						}
+						set_variable = { crop_weaving_level = 10 }
+						if = {
+							limit = {
+								has_tech = crop_weaving_3
+							}
+							set_variable = { crop_weaving_level = 25 }
+							if = {
+								limit = {
+									has_tech = crop_weaving_4
+								}
+								set_variable = { crop_weaving_level = 50 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = animal_weaving_1
+					}
+					set_variable = { animal_weaving_level = 5 }
+					if = {
+						limit = {
+							has_tech = animal_weaving_2
+						}
+						set_variable = { animal_weaving_level = 10 }
+						if = {
+							limit = {
+								has_tech = animal_weaving_3
+							}
+							set_variable = { animal_weaving_level = 25 }
+							if = {
+								limit = {
+									has_tech = animal_weaving_4
+								}
+								set_variable = { animal_weaving_level = 50 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = fishing_stand_1
+					}
+					set_variable = { fishing_stand_level = 5 }
+					if = {
+						limit = {
+							has_tech = fishing_stand_2
+						}
+						set_variable = { fishing_stand_level = 10 }
+						if = {
+							limit = {
+								has_tech = fishing_stand_3
+							}
+							set_variable = { fishing_stand_level = 25 }
+							if = {
+								limit = {
+									has_tech = fishing_stand_4
+								}
+								set_variable = { fishing_stand_level = 50 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = lumber_1
+					}
+					set_variable = { lumber_mill_level = 5 }
+					if = {
+						limit = {
+							has_tech = lumber_2
+						}
+						set_variable = { lumber_mill_level = 10 }
+						if = {
+							limit = {
+								has_tech = lumber_3
+							}
+							set_variable = { lumber_mill_level = 25 }
+							if = {
+								limit = {
+									has_tech = lumber_4
+								}
+								set_variable = { lumber_mill_level = 50 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = carpentry_1
+					}
+					set_variable = { carpentry_level = 5 }
+					if = {
+						limit = {
+							has_tech = carpentry_2
+						}
+						set_variable = { carpentry_level = 10 }
+						if = {
+							limit = {
+								has_tech = carpentry_3
+							}
+							set_variable = { carpentry_level = 25 }
+							if = {
+								limit = {
+									has_tech = carpentry_4
+								}
+								set_variable = { carpentry_level = 50 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = masonry_1
+					}
+					set_variable = { masonry_level = 5 }
+					if = {
+						limit = {
+							has_tech = masonry_2
+						}
+						set_variable = { masonry_level = 10 }
+						if = {
+							limit = {
+								has_tech = masonry_3
+							}
+							set_variable = { masonry_level = 25 }
+							if = {
+								limit = {
+									has_tech = masonry_4
+								}
+								set_variable = { masonry_level = 50 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = quarry_1
+					}
+					set_variable = { quarry_level = 5 }
+					if = {
+						limit = {
+							has_tech = quarry_2
+						}
+						set_variable = { quarry_level = 10 }
+						if = {
+							limit = {
+								has_tech = quarry_3
+							}
+							set_variable = { quarry_level = 25 }
+							if = {
+								limit = {
+									has_tech = quarry_4
+								}
+								set_variable = { quarry_level = 50 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = mine_1
+					}
+					set_variable = { mine_level = 5 }
+					if = {
+						limit = {
+							has_tech = mine_2
+						}
+						set_variable = { mine_level = 10 }
+						if = {
+							limit = {
+								has_tech = mine_3
+							}
+							set_variable = { mine_level = 25 }
+							if = {
+								limit = {
+									has_tech = mine_4
+								}
+								set_variable = { mine_level = 50 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = steelworks_1
+					}
+					set_variable = { steelworks_level = 1 }
+					if = {
+						limit = {
+							has_tech = steelworks_2
+						}
+						set_variable = { steelworks_level = 5 }
+						if = {
+							limit = {
+								has_tech = steelworks_3
+							}
+							set_variable = { steelworks_level = 10 }
+							if = {
+								limit = {
+									has_tech = steelworks_4
+								}
+								set_variable = { steelworks_level = 25 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = factory_1
+					}
+					set_variable = { factory_level = 1 }
+					if = {
+						limit = {
+							has_tech = factory_2
+						}
+						set_variable = { factory_level = 5 }
+						if = {
+							limit = {
+								has_tech = factory_3
+							}
+							set_variable = { factory_level = 10 }
+							if = {
+								limit = {
+									has_tech = factory_4
+								}
+								set_variable = { factory_level = 25 }
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_tech = dockyard_1
+					}
+					set_variable = { dockyard_level = 10 }
+					if = {
+						limit = {
+							has_tech = dockyard_2
+						}
+						set_variable = { dockyard_level = 50 }
+					}
+				}
+				if = {
+					limit = {
+						has_tech = steel_beam_factory_1
+					}
+					set_variable = { steel_beam_factory_level = 1 }
+					if = {
+						limit = {
+							has_tech = steel_beam_factory_2
+						}
+						set_variable = { steel_beam_factory_level = 5 }
+						if = {
+							limit = {
+								has_tech = steel_beam_factory_3
+							}
+							set_variable = { steel_beam_factory_level = 10 }
+							if = {
+								limit = {
+									has_tech = steel_beam_factory_4
+								}
+								set_variable = { steel_beam_factory_level = 25 }
+							}
+						}
+					}
+				}
+
+				if = {
+					limit = {
+						has_tech = shops_1
+					}
+					set_variable = { consumer_good_factory_level = 5 }
+					set_variable = { luxury_good_factory_level = 5 }
+					if = {
+						limit = {
+							has_tech = shops_2
+						}
+						set_variable = { consumer_good_factory_level = 10 }
+						set_variable = { luxury_good_factory_level = 10 }
+					}
+				}
+
+
+			}
+		}
+	}
+
+}

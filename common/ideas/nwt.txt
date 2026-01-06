@@ -1,0 +1,763 @@
+ideas = {
+
+	hidden_ideas = {
+		northern_spirit_spirit = {
+			
+			removal_cost = -1
+
+			on_add = {
+				set_variable = { victory_condition = token:northern_spirit_spirit }
+			}
+
+			cancel = {
+				NOT = {
+					check_variable = { victory_condition = token:northern_spirit_spirit }
+				}
+			}
+			
+			modifier = {
+				water_culture_drift = 0.02
+				navy_leader_start_level = 2
+				acclimatization_cold_climate_gain_factor = 0.5
+				winter_attrition_factor = -0.5
+			}
+		}
+	}
+
+	country = {
+
+	    NWT_Research_Modifier = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_army_manpower = { size > 1 }
+				}
+			}
+
+			picture = wt_research_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.07
+			}
+		}
+		
+		remote_isolation = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.3
+				stability_factor = 0.1
+				trade_opinion_factor = -0.25
+				min_export = -0.5
+			}
+
+			rule = {
+				can_join_factions = no
+				
+			}
+		}
+
+		remote_isolation_1 = {
+			picture = remote_isolation_1
+			name = remote_isolation
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.2
+				stability_factor = 0.05
+				trade_opinion_factor = -0.25
+				min_export = -0.25
+			}
+			rule = {
+				can_join_factions = no
+			}
+		}
+
+		remote_isolation_2 = {
+			picture = remote_isolation_2
+			name = remote_isolation
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.1
+				stability_factor = 0.025
+				min_export = -0.1
+			}
+			rule = {
+				can_join_factions = yes
+			}
+		}
+		remote_isolation_3 = {
+			picture = remote_isolation_3
+			name = remote_isolation
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+
+			}
+		}
+		remote_isolation_4 = {
+			picture = protective_isolation
+			name = protective_isolation
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+			}
+		}
+		remote_isolation_5 = {
+			picture = water_intervention
+			name = water_intervention
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.2
+				army_attack_factor = 0.1
+				army_core_defence_factor = 0.1				
+			}
+		}
+		NWT_northern_passage_crisis_modifier = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_cost = 0.1
+				war_support_factor = -0.05
+			}
+		}
+
+		waterbender_ice_construction = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				ice_construction_cost = -0.8
+				animal_product_upkeep_factor = 1
+				planks_demand = -0.8
+			}
+		}
+
+		water_debts = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			on_remove = {
+				if = {
+					limit = {
+						has_idea = remote_isolation_2
+					}
+					swap_ideas = {
+						remove_idea = remote_isolation_2
+						add_idea = remote_isolation_3
+					}
+				}
+			}
+			
+			modifier = {
+				income = -0.1
+			}
+		}
+		
+		loose_confederation = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				#political_advisor_cost_factor = -0.3
+				political_power_factor = -0.40
+				planning_speed = -0.4
+				conscription_factor_new = -0.2
+				#land_reinforce_rate = -0.02
+				peasant_output_factor = 0.4
+				centralisation_target_modifier = -0.2
+			}
+
+			traits = { loose_confederation_trait }
+		}
+		united_confederation = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.30
+				planning_speed = -0.3
+				conscription_factor_new = -0.15
+				peasant_output_factor = 0.3
+				centralisation_target_modifier = -0.15
+			}
+
+			traits = { united_confederation_trait }
+		}
+		loose_federation = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = -0.2
+				planning_speed = -0.2
+				conscription_factor_new = -0.1
+				peasant_output_factor = 0.2
+				centralisation_target_modifier = -0.1
+			}
+
+			traits = { loose_federation_trait }
+		}
+		united_federation = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.1
+				planning_speed = -0.1
+				conscription_factor_new = -0.05
+				peasant_output_factor = 0.1
+				centralisation_target_modifier = -0.05
+			}
+
+			traits = { united_federation_trait }
+		}
+		one_tribe = {
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				land_reinforce_rate = 0.01
+				centralisation_target_modifier = 0.05
+			}
+		}
+
+	}
+
+	academia = {
+		use_list_view = yes
+
+		wt_academia_1 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { research_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		wt_academia_2 = {
+
+			cost = 200
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { officer_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		wt_academia_3 = {
+
+			cost = 200
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { special_forces_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		wt_academia_4 = {
+
+			cost = 200
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { recruit_drilling }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+
+	army = {
+		use_list_view = yes
+
+		wt_army_1 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_power = 0.1
+			}
+			
+			traits = { land_school_of_aggression }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		wt_army_2 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_freedom = 0.1
+			}
+			
+			traits = { land_school_of_defense }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		wt_army_3 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_change = 0.1
+			}
+			
+			traits = { land_school_of_logistics }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		wt_army_4 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_substance = 0.1
+			}
+			
+			traits = { land_school_of_planning }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	navy = {
+		use_list_view = yes
+
+		wt_navy_1 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_power = 0.1
+			}
+			
+			traits = { naval_school_of_aggression }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		wt_navy_2 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_freedom = 0.1
+			}
+			
+			traits = { naval_school_of_defense }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		wt_navy_3 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_change = 0.1
+			}
+			
+			traits = { naval_school_of_maneuvre }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		wt_navy_4 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_substance = 0.1
+			}
+			
+			traits = { naval_school_of_coordination }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	
+	law_enforcement = {
+		use_list_view = yes
+
+		wt_law_enforcement_1 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { royal_decree }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		wt_law_enforcement_2 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { spiritual_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		wt_law_enforcement_3 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { civil_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		wt_law_enforcement_4 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { custumary_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	martial_art = {
+		use_list_view = yes
+
+		wt_martial_art_1 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { arctic_style }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		wt_martial_art_2 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { tropical_style }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		wt_martial_art_3 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { antarctic_style }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	
+	}
+	clergy = {
+		use_list_view = yes
+
+		wt_clergy_1 = {
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { philosophical_principles }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+
+		wt_clergy_2  = {
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { alms_and_pacification }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		wt_clergy_3  = {
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { service_to_the_avatar }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		wt_clergy_4  = {
+
+			allowed = {
+				OR = { tag = NWT tag = SWT }
+			}
+			available = { }
+			
+			
+			traits = { indoctrinal_service }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+}

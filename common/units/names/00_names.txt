@@ -1,0 +1,110 @@
+﻿# Names are based on equipment types (picking equipment with highest amount from the pool)
+# Generic are used for countries that are not scripted in.
+generic = {
+	# Ships
+	firenation_frigate = {
+		prefix = ""
+		generic = { "Frigate" }
+		unique = {}
+	}
+	firenation_cruiser = {
+		prefix = ""
+		generic = { "Cruiser" }
+		unique = {}
+	}
+	firenation_heavy_cruiser = {
+		prefix = ""
+		generic = { "Heavy Cruiser" }
+		unique = {}
+	}
+	firenation_battleship = {
+		prefix = ""
+		generic = { "Battleship" }
+		unique = {}
+	}
+	river_boat = {
+		prefix = ""
+		generic = { "River Boat" }
+		unique = {}
+	}
+
+	galley = {
+		prefix = ""
+		generic = { "Galley" }
+		unique = {}
+	}
+	barque = {
+		prefix = ""
+		generic = { "Barque" }
+		unique = {}
+	}
+	junk = {
+		prefix = ""
+		generic = { "Junk" }
+		unique = {}
+	}
+	heavy_junk = {
+		prefix = ""
+		generic = { "Heavy Junk" }
+		unique = {}
+	}
+	warship = {
+		prefix = ""
+		generic = { "Warship" }
+		unique = {}
+	}
+
+	watertribe_canoe = {
+		prefix = ""
+		generic = { "Canoe" }
+		unique = {}
+	}
+	watertribe_raft = {
+		prefix = ""
+		generic = { "Raft" }
+		unique = {}
+	}
+	watertribe_cutter_ship = {
+		prefix = ""
+		generic = { "Cutter" }
+		unique = {}
+	}
+	watertribe_cutter_flagship = {
+		prefix = ""
+		generic = { "Cutter Flagship" }
+		unique = {}
+	}
+	watertribe_warship = {
+		prefix = ""
+		generic = { "Warship" }
+		unique = {}
+	}
+	watertribe_submarine = {
+		prefix = ""
+		generic = { "Submarine" }
+		unique = {}
+	}
+
+	
+	# Land units
+	infantry = {
+		prefix = ""
+		generic = { "Infantry Division" }
+		generic_pattern = "UNIT_GENERIC_NAME_GENERIC_INFANTRY"
+		unique = {}
+	}
+
+	# Operative code names
+	codename = {
+		prefix = ""
+		generic = { "Agent" }
+		generic_pattern = "OPERATIVE_GENERIC_CODENAME_PATTERN"
+		unique = { "Agent 007" }
+	}
+}
+
+# Country specific names.
+# Prefix is always appended at the begin of each generated name.
+# Unique - only one unit can carry it at a time.
+# Generic - are used when all unique are used. Those have numbers appended at the end.
+

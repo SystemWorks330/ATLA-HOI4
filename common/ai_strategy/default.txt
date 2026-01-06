@@ -1,0 +1,235 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+# contain
+# area_priority
+
+
+
+default_pp_spend_amount = {
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = idea
+		value = 100
+	}
+	
+	ai_strategy = {
+		type = pp_spend_amount
+		id = decision
+		value = 150
+	}
+}
+
+#deploy_some_units = {
+#	enable = {
+#		date > 20.1.1
+#		NOT = { original_tag = FIR }
+#		manpower_per_military_factory > 650
+#	}
+#
+#	ai_strategy = {
+#		type = force_build_armies
+#		value = 100
+#	}
+#	
+#}
+
+
+#default_area_priority = {
+#	enable = {
+#		NOT = { original_tag = FIR } 
+#	}
+#
+#	ai_strategy = {
+#		type = area_priority
+#		id = earth_plate
+#		value = 100
+#	}
+#}
+
+
+save_admiral_pp_for_later = {
+	enable = {
+		has_war = no
+		threat < 0.3
+		has_political_power < 200		
+	}
+	abort = {
+		OR = {
+			has_war = yes	
+			threat > 0.3
+			has_political_power > 200
+		}
+	}
+
+	ai_strategy = { # dont burn PP on admirals (can still get free ones)
+		type = pp_spend_priority
+		id = admiral
+		value = -100
+	}
+}
+
+do_not_waste_pp_if_saving_for_manpower_laws = {
+
+	enable = {
+		manpower_per_military_factory < 50
+		has_war = yes
+	}
+	abort = {
+		OR = {
+			manpower_per_military_factory > 50
+			has_war = no
+		}
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = -9999
+	}
+}
+obtain_relation_research_slot = {
+	allowed = {
+		NOT = {
+			tag = EBA
+		}
+	}
+	enable = {
+		NOT = {
+			has_country_flag = has_relation_tech_slot
+			any_other_country = {
+				has_opinion = {
+					target = ROOT
+					value > 84
+				}
+			}
+		}
+	}
+	abort = {
+		has_country_flag = has_relation_tech_slot
+		any_other_country = {
+			has_opinion = {
+				target = ROOT
+				value = 100
+			}
+		}
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = 90
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = 95
+	}
+	
+}
+EBA_befriend_EAR = {
+	allowed = {tag = EBA}
+	enable = {always = yes}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = befriend
+		id = EAR
+		value = 70
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = 90
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = 95
+	}
+}
+DIN_befriend_EBA = {
+	allowed = {tag = DIN}
+	enable = {always = yes}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = befriend
+		id = EBA
+		value = 70
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = 90
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = 95
+	}
+}
+ECB_befriend_EBA = {
+	allowed = {tag = ECB}
+	enable = {always = yes}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = befriend
+		id = EBA
+		value = 70
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = 90
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = 95
+	}
+}	
+	EAR_befriend_DAW = {
+		allowed = {tag = EAR}
+		enable = {always = yes}
+		abort = {
+			always = no
+		}
+		ai_strategy = {
+			type = befriend
+			id = DAW
+			value = 70
+		}
+		ai_strategy = {
+			type = pp_spend_priority
+			id = relation
+			value = 90
+		}
+		ai_strategy = {
+			type = pp_spend_priority
+			id = guarantee
+			value = 95
+		}	
+}

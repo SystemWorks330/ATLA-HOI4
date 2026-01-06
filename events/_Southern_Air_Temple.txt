@@ -1,0 +1,166 @@
+###########################
+# Southern Air Nomads Events
+###########################
+
+add_namespace = southern
+
+#Firenation Attack
+country_event = {
+	id = southern.1
+	title = southern.1.t
+	desc = southern.1.d
+	picture = GFX_report_event_south_temple
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	immediate = {
+		set_country_flag = meetings_disrupted
+	}
+
+	option = {
+		name = southern.1.a
+		ai_chance = { 
+			factor = 99
+		}
+		#hidden_effect = {
+		#	load_oob = "southern_airbender_defenders_0_5"
+		#}
+	}
+
+	option = {
+		name = southern.1.b
+		ai_chance = { 
+			factor = 1
+		}
+		#hidden_effect = {
+		#	load_oob = "southern_airbender_defenders_1"
+		#}
+	}
+}
+
+#Gyatso and Aang
+country_event = {
+	id = southern.2
+	title = southern.2.t
+	desc = southern.2.d
+	picture = GFX_report_event_gyatso_and_aang
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = southern.2.a
+		ai_chance = { 
+			factor = 100
+		}
+		trigger = { 
+			NOT = {
+				has_global_flag = aang_ran_away
+			}
+		}
+		set_global_flag = gyatso_and_aang_flee
+
+		#clr_global_flag = avatar_sat
+		#set_global_flag = avatar_unknown
+		clr_country_flag = COUNTRY_avatar_sat
+		set_country_flag = COUNTRY_avatar_location_unknown
+		clr_global_flag = avatar_team_gyatso
+		set_global_flag = avatar_iceberg
+		set_variable = {
+			var = global.avatar_location
+			value = 293.id
+		}
+
+	}
+
+	option = {
+		name = southern.2.b
+		ai_chance = { 
+			factor = 0
+		}
+		trigger = { 
+			has_global_flag = aang_ran_away
+		}
+		clr_country_flag = COUNTRY_avatar_sat
+		set_country_flag = COUNTRY_avatar_location_unknown
+	}
+}
+
+add_namespace = AIR_council
+
+# council initiation
+country_event = {
+	id = AIR_council.0
+	title = AIR_council.0.t
+	desc = AIR_council.0.d
+	picture = GFX_council_meeting
+	
+	is_triggered_only = yes
+	
+
+	immediate = {
+ 		hidden_effect = {
+ 			AIR_generate_missions = yes
+ 			AIR_recalc_council_support = yes
+
+ 			activate_mission = upcoming_meeting
+ 		}
+	}
+	
+	option = {
+		name = AIR_council.0.a
+		ai_chance = {
+			factor = 100
+		}
+
+	}
+	option = {
+		name = AIR_council.0.b
+		ai_chance = {
+			factor = 0
+		}
+
+		### add mission path to slowly dissolve the council
+
+		### flag can be used to disable mechanic
+		#set_country_flag = air_council_dissolved
+	}
+}
+# council meeting
+country_event = {
+	id = AIR_council.1
+	title = AIR_council.1.t
+	desc = AIR_council.1.desc
+	picture = GFX_council_meeting
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			activate_mission = upcoming_meeting
+		}
+	}
+	
+	option = {
+		name = AIR_council.1.a
+		set_temp_variable = { AIR_choosen_mission = 1 }
+		AIR_start_mission = yes
+	}
+	option = {
+		name = AIR_council.1.b
+		set_temp_variable = { AIR_choosen_mission = 2 }
+		AIR_start_mission = yes
+	}
+	option = {
+		name = AIR_council.1.c
+		set_temp_variable = { AIR_choosen_mission = 3 }
+		AIR_start_mission = yes
+	}
+	option = {
+		name = AIR_council.1.d
+		set_temp_variable = { AIR_choosen_mission = 4 }
+		AIR_start_mission = yes
+	}
+}

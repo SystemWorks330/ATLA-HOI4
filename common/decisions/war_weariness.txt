@@ -1,0 +1,180 @@
+war_weariness_category = {
+	add_100 = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = weekly_accumulated_exhaustion
+				value = 10
+				tooltip = war_weariness_add_tooltip
+			}
+		}
+	}
+	set_0 = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			set_variable = {
+				var = weekly_accumulated_exhaustion
+				value = 0
+				tooltip = war_weariness_set_tooltip
+			}
+			set_variable = {
+				var = casualty_accumulated_exhaustion
+				value = 0
+				tooltip = casualty_war_weariness_set_tooltip
+			}
+			set_variable = {
+				var = occupation_accumulated_exhaustion
+				value = 0
+				tooltip = occupation_war_weariness_set_tooltip
+			}
+		}
+	}
+
+	rotate_frontlines = {
+
+		available = {
+			meta_trigger = {
+				text = {
+					has_army_manpower = { size < [field_manpower] }
+				}
+				field_manpower = "[?manpower]"
+			}
+		}
+
+		days_remove = 30
+		days_re_enable = 150
+
+		modifier = {
+			army_attack_factor = -0.10
+			army_defence_factor = -0.15
+			land_reinforce_rate =  -0.015
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = casualty_accumulated_exhaustion
+				value = -15
+				tooltip = casualty_war_weariness_remove_tooltip
+			}
+			add_to_variable = {
+				var = unit_quality_variable
+				value = -0.05
+				tooltip = unit_quality_remove_tooltip
+			}
+		}
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { casualty_accumulated_exhaustion > 50 }
+				}
+				add = 50
+			}
+		}
+	}
+
+
+	occupation_department = {
+
+		visible = {
+			num_occupied_states > 9
+		}
+		available = {
+			check_variable = { 
+				occupation_accumulated_exhaustion >=20
+				tooltip = at_least_occupation_war_weariness_tooltip
+			}
+		}
+
+		days_remove = -1
+		#days_re_enable = 10
+
+		modifier = {
+			weekly_occupation_war_weariness = -0.5
+			garrison_factor_modifier = 0.1
+		}
+
+		remove_trigger = {
+			check_variable = { 
+				occupation_accumulated_exhaustion <=20
+				tooltip = at_most_occupation_war_weariness_tooltip
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = occupation_accumulated_exhaustion
+				value = -15
+				tooltip = occupation_war_weariness_remove_tooltip
+			}
+		}
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { occupation_accumulated_exhaustion > 20 }
+				}
+				add = 50
+			}
+			modifier = {
+				stockpile_ratio = {
+					archetype = spear_equipment
+					ratio < 0.1
+				}
+				stockpile_ratio = {
+					archetype = heavy_armor_equipment
+					ratio < 0.1
+				}
+				factor = 0
+			}
+		}
+	}
+
+	public_war_propaganda = {
+
+		visible = {
+			
+		}
+		available = {
+			check_variable = {
+				current_authority >= 60
+				tooltip = check_authority_tooltip
+			}
+		}
+
+		days_remove = -1
+		#days_re_enable = 10
+
+		modifier = {
+			war_weariness_factor = -0.05
+			income = -0.1
+		}
+
+		remove_trigger = {
+			check_variable = {
+				current_authority <= 60
+				tooltip = check_liberty_tooltip
+			}
+		}
+		remove_effect = {
+			add_political_power = -50
+		}
+
+		cost = 100
+
+		ai_will_do = {
+			factor = 50
+		}
+	}
+}

@@ -1,0 +1,785 @@
+
+
+AIR_choose_council_members = {
+	if = {
+		limit = {
+			NOT = { any_character = { has_character_flag = appointed_to_council_1 } }
+		}
+		random_character = {
+			limit = {
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
+			}
+			set_variable = { PREV.council_name_1 = THIS.id }
+			set_character_flag = appointed_to_council_1
+			set_character_flag = appointed_to_council
+		}
+	}
+	if = {
+		limit = {
+			NOT = { any_character = { has_character_flag = appointed_to_council_2 } }
+		}
+		random_character = {
+			limit = {
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
+			}
+			set_variable = { PREV.council_name_2 = THIS.id }
+			set_character_flag = appointed_to_council_2
+			set_character_flag = appointed_to_council
+		}
+	}
+	if = {
+		limit = {
+			NOT = { any_character = { has_character_flag = appointed_to_council_3 } }
+		}
+		random_character = {
+			limit = {
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
+			}
+			set_variable = { PREV.council_name_3 = THIS.id }
+			set_character_flag = appointed_to_council_3
+			set_character_flag = appointed_to_council
+		}
+	}
+	if = {
+		limit = {
+			NOT = { any_character = { has_character_flag = appointed_to_council_4 } }
+		}
+		random_character = {
+			limit = {
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
+			}
+			set_variable = { PREV.council_name_4 = THIS.id }
+			set_character_flag = appointed_to_council_4
+			set_character_flag = appointed_to_council
+		}
+	}
+	if = {
+		limit = {
+			NOT = { any_character = { has_character_flag = appointed_to_council_5 } }
+		}
+		random_character = {
+			limit = {
+				has_character_flag = airbender_monk
+				NOT = { has_character_flag = appointed_to_council }
+			}
+			set_variable = { PREV.council_name_5 = THIS.id }
+			set_character_flag = appointed_to_council_5
+			set_character_flag = appointed_to_council
+		}
+	}
+}
+
+### recalc
+
+AIR_recalc_council_support = {
+	set_temp_variable = { support_temp = council_name_1:harmony }
+	add_to_temp_variable = { support_temp = council_name_2:harmony }
+	add_to_temp_variable = { support_temp = council_name_3:harmony }
+	add_to_temp_variable = { support_temp = council_name_4:harmony }
+	add_to_temp_variable = { support_temp = council_name_5:harmony }
+	divide_temp_variable = { support_temp = 5}
+	round_temp_variable = support_temp
+	if = {
+		limit = { check_variable = { support_temp > 0 } }
+		clamp_temp_variable = {
+			var = support_temp
+			min = 1
+			max = 5
+		}
+	}
+	else = { set_temp_variable = { support_temp = 1 } }
+	set_variable = { AIR_council_support = support_temp }
+	set_variable = { sat_current_member_4_frame = 2 }
+	if = {
+		limit = { tag = SAT }
+		set_variable = { sat_current_council_symbol_frame = AIR_council_support }
+		set_variable = { sat_current_member_1_frame = council_name_1:harmony }
+		set_variable = { sat_current_member_2_frame = council_name_2:harmony }
+		set_variable = { sat_current_member_3_frame = council_name_3:harmony }
+		set_variable = { sat_current_member_4_frame = council_name_4:harmony }
+		set_variable = { sat_current_member_5_frame = council_name_5:harmony }
+	}
+	if = {
+		limit = { tag = NAT }
+		set_variable = { nat_current_council_symbol_frame = AIR_council_support }
+		set_variable = { nat_current_member_1_frame = council_name_1:harmony }
+		set_variable = { nat_current_member_2_frame = council_name_2:harmony }
+		set_variable = { nat_current_member_3_frame = council_name_3:harmony }
+		set_variable = { nat_current_member_4_frame = council_name_4:harmony }
+		set_variable = { nat_current_member_5_frame = council_name_5:harmony }
+	}
+	if = {
+		limit = { tag = WAT }
+		set_variable = { wat_current_council_symbol_frame = AIR_council_support }
+		set_variable = { wat_current_member_1_frame = council_name_1:harmony }
+		set_variable = { wat_current_member_2_frame = council_name_2:harmony }
+		set_variable = { wat_current_member_3_frame = council_name_3:harmony }
+		set_variable = { wat_current_member_4_frame = council_name_4:harmony }
+		set_variable = { wat_current_member_5_frame = council_name_5:harmony }
+	}
+	if = {
+		limit = { tag = EAT }
+		set_variable = { eat_current_council_symbol_frame = AIR_council_support }
+		set_variable = { eat_current_member_1_frame = council_name_1:harmony }
+		set_variable = { eat_current_member_2_frame = council_name_2:harmony }
+		set_variable = { eat_current_member_3_frame = council_name_3:harmony }
+		set_variable = { eat_current_member_4_frame = council_name_4:harmony }
+		set_variable = { eat_current_member_5_frame = council_name_5:harmony }
+	}
+	AIR_recalc_council_spirit = yes
+}
+
+AIR_recalc_council_spirit = {
+	if = {
+		limit = { check_variable = { AIR_council_support = 1 }}
+		add_ideas = council_harsh_opposition
+	}
+	if = {
+		limit = { check_variable = { AIR_council_support = 2 }}
+		add_ideas = council_opposition
+	}
+	if = {
+		limit = { check_variable = { AIR_council_support = 3 }}
+		add_ideas = council_neutral
+	}
+	if = {
+		limit = { check_variable = { AIR_council_support = 4 }}
+		add_ideas = council_support
+	}
+	if = {
+		limit = { check_variable = { AIR_council_support = 5 }}
+		add_ideas = council_substancial_support
+	}
+}
+
+### type of mission generator
+
+AIR_mission_type_generator = {
+	set_temp_variable = { max_probability = 1 }
+	add_to_temp_variable = { max_probability = AIR_council_army }
+	add_to_temp_variable = { max_probability = AIR_council_navy }
+	add_to_temp_variable = { max_probability = AIR_council_air }
+	add_to_temp_variable = { max_probability = AIR_council_research }
+	add_to_temp_variable = { max_probability = AIR_council_construction }
+	add_to_temp_variable = { max_probability = AIR_council_politics }
+	
+	randomize_temp_variable = {
+		var = probability_temp
+		distribution = uniform
+		min = 1
+		max = max_probability
+	}
+	round_temp_variable = probability_temp
+	set_variable = { probability = probability_temp }
+	set_variable = { AIR_mission_type = 1 }
+	subtract_from_variable = { probability = AIR_council_army }
+	if = {
+		limit = { check_variable = { probability > 0} }
+		set_variable = { AIR_mission_type = 2}
+	}
+	subtract_from_variable = { probability = AIR_council_navy }
+	if = {
+		limit = { check_variable = { probability > 0} }
+		set_variable = { AIR_mission_type = 3}
+	}
+	subtract_from_variable = { probability = AIR_council_air }
+	if = {
+		limit = { check_variable = { probability > 0} }
+		set_variable = { AIR_mission_type = 4}
+	}
+	subtract_from_variable = { probability = AIR_council_research }
+	if = {
+		limit = { check_variable = { probability > 0} }
+		set_variable = { AIR_mission_type = 5}
+	}
+	subtract_from_variable = { probability = AIR_council_construction }
+	if = {
+		limit = { check_variable = { probability > 0} }
+		set_variable = { AIR_mission_type = 6}
+	}
+}
+
+
+AIR_generate_specific_mission = {
+	set_variable = { air_specific_mission = 0 }
+	if = {
+		limit = { check_variable = { AIR_mission_type = 1}}
+			
+			randomize_temp_variable = {
+				var = specific_mission
+				distribution = uniform
+				min = 0.6
+				max = 3.4
+			}
+			round_temp_variable = specific_mission
+			if = {
+				limit = { AND = {
+					check_variable = { specific_mission = 1 }
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr1 }}
+				}}
+				set_variable = { air_specific_mission = 1 }
+			}
+			if = {
+				limit = { AND = {
+					check_variable = { specific_mission = 2 }
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr2 }}
+				}}
+				set_variable = { air_specific_mission = 2 }
+			}
+			if = {
+            	limit = { AND = {
+            		check_variable = { specific_mission = 3 }
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr3 }}
+            	}}
+            	set_variable = { air_specific_mission = 3 }
+            }
+			if = {
+            	limit = { AND = {
+            		check_variable = { specific_mission = 4 }
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr4 }}
+            	}}
+            	set_variable = { air_specific_mission = 4 }
+            }
+			if = {
+				limit = {
+				OR = {
+					check_variable = { repeat = 3}
+					AND = {
+						is_in_array = { air_current_missions = token:AIR_mission_nr1 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr2 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr3 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr4 }
+					}
+				}
+				}
+				set_variable = { air_specific_mission = 5 }
+			}
+	}
+	if = {
+		limit = { check_variable = { AIR_mission_type = 2}}
+
+			randomize_temp_variable = {
+				var = specific_mission
+				distribution = uniform
+				min = 0.6
+				max = 2.4
+			}
+			round_temp_variable = specific_mission
+			if = {
+				limit = { AND = {
+					check_variable = { specific_mission = 1 }
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr6 }}
+				}}
+				set_variable = { air_specific_mission = 6 }
+			}
+			if = {
+				limit = { AND = {
+					check_variable = { specific_mission = 2 }
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr8 }}
+				}}
+				set_variable = { air_specific_mission = 8 }
+			}
+			if = {
+				limit = {
+				OR = {
+					check_variable = { repeat = 3}
+					AND = {
+						is_in_array = { air_current_missions = token:AIR_mission_nr6 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr8 }
+					}
+				}
+				}
+				set_variable = { air_specific_mission = 9 }
+			}
+	}
+	if = {
+		limit = { check_variable = { AIR_mission_type = 3}}
+			
+			randomize_temp_variable = {
+				var = specific_mission
+				distribution = uniform
+				min = 0.6
+				max = 2.4
+			}
+			round_temp_variable = specific_mission
+			if = {
+				limit = { AND = {
+					check_variable = { specific_mission = 1 }
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr11 }}
+				}}
+				set_variable = { air_specific_mission = 11 }
+			}
+			if = {
+				limit = { AND = {
+					check_variable = { specific_mission = 2 }
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr12 }}
+				}}
+				set_variable = { air_specific_mission = 12 }
+			}
+			if = {
+				limit = {
+				OR = {
+					check_variable = { repeat = 3}
+					AND = {
+						is_in_array = { air_current_missions = token:AIR_mission_nr11 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr12 }
+					}
+				}
+				}
+				set_variable = { air_specific_mission = 13 }
+			}
+	}
+	if = {
+		limit = { check_variable = { AIR_mission_type = 4}}
+			
+			randomize_temp_variable = {
+				var = specific_mission
+				distribution = uniform
+				min = 0.6
+				max = 2.4
+			}
+			round_temp_variable = specific_mission
+			if = {
+				limit = { AND = {
+					check_variable = { specific_mission = 1 }
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr16 }}
+				}}
+				set_variable = { air_specific_mission = 16 }
+			}
+            if = {
+				limit = { AND = {
+					check_variable = { specific_mission = 2 }
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr17 }}
+				}}
+				set_variable = { air_specific_mission = 17 }
+			}
+			if = {
+				limit = {
+				OR = {
+					check_variable = { repeat = 3 }
+					AND = {
+						is_in_array = { air_current_missions = token:AIR_mission_nr16 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr17 }
+					}
+				}
+				}
+				set_variable = { air_specific_mission = 18 }
+			}
+	}
+	if = {
+		limit = { check_variable = { AIR_mission_type = 5}}
+			
+			randomize_temp_variable = {
+				var = specific_mission
+				distribution = uniform
+				min = 0.6
+				max = 1.4
+			}
+			round_temp_variable = specific_mission
+			if = {
+				limit = { AND = {
+					check_variable = { specific_mission = 1 }
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr21 }}
+				}}
+				set_variable = { air_specific_mission = 21 }
+			}
+		if = {
+				limit = {
+				OR = {
+					check_variable = { repeat = 3}
+					AND = {
+						is_in_array = { air_current_missions = token:AIR_mission_nr21 }
+					}
+				}
+				}
+				set_variable = { air_specific_mission = 5 }
+		}
+	}
+	if = {
+		limit = { check_variable = { AIR_mission_type = 6}}
+			
+			randomize_temp_variable = {
+				var = specific_mission
+				distribution = uniform
+				min = 0.6
+				max = 3.4
+			}
+			round_temp_variable = specific_mission
+			if = {
+				limit = { AND = {
+					check_variable = { specific_mission = 1 }
+					Not = { is_in_array = { air_current_missions = token:AIR_mission_nr26 }}
+				}}
+				set_variable = { air_specific_mission = 26 }
+			}
+			if = {
+            	limit = { AND = {
+            		check_variable = { specific_mission = 2 }
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr28 }}
+            	}}
+            	set_variable = { air_specific_mission = 28 }
+            }
+            if = {
+            	limit = { AND = {
+            		check_variable = { specific_mission = 3 }
+            		Not = { is_in_array = { air_current_missions = token:AIR_mission_nr29 }}
+            	}}
+            	set_variable = { air_specific_mission = 29 }
+            }
+		if = {
+				limit = {
+				OR = {
+					check_variable = { repeat = 3}
+					AND = {
+						is_in_array = { air_current_missions = token:AIR_mission_nr26 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr28 }
+						is_in_array = { air_current_missions = token:AIR_mission_nr29 }
+					}
+				}
+				}
+				set_variable = { air_specific_mission = 5 }
+			}
+	}
+	if = {
+		limit = { AND = {
+			check_variable = { air_specific_mission = 0 }
+			check_variable = { repeat < 3}
+			}}
+		add_to_variable = { repeat = 1}
+		AIR_generate_specific_mission = yes
+	}
+}
+
+AIR_generate_missions = {
+	AIR_mission_type_generator = yes
+	set_variable = { repeat = 0 }
+	AIR_generate_specific_mission = yes
+	set_variable = { air_mission_1 = air_specific_mission }
+	
+	AIR_mission_type_generator = yes
+	set_variable = { repeat = 0 }
+	AIR_generate_specific_mission = yes
+	set_variable = { air_mission_2 = air_specific_mission }
+	
+	AIR_mission_type_generator = yes
+	set_variable = { repeat = 0 }
+	AIR_generate_specific_mission = yes
+	set_variable = { air_mission_3 = air_specific_mission }
+	
+	AIR_mission_type_generator = yes
+	set_variable = { repeat = 0 }
+	AIR_generate_specific_mission = yes
+	set_variable = { air_mission_4 = air_specific_mission }
+}
+
+AIR_start_mission = {
+	if = {
+		limit = { check_variable = { AIR_choosen_mission = 1 }}
+		set_temp_variable = { air_new_mission = air_mission_1 }
+	}
+	if = {
+		limit = { check_variable = { AIR_choosen_mission = 2 }}
+		set_temp_variable = { air_new_mission = air_mission_2 }
+	}
+	if = {
+		limit = { check_variable = { AIR_choosen_mission = 3 }}
+		set_temp_variable = { air_new_mission = air_mission_3 }
+	}
+	if = {
+		limit = { check_variable = { AIR_choosen_mission = 4 }}
+		set_temp_variable = { air_new_mission = air_mission_4 }
+	}
+	
+	if = {
+		limit = { check_variable = { air_new_mission = 1 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr1 }
+		activate_mission = AIR_mission_nr1
+	}
+	if = {
+		limit = { check_variable = { air_new_mission = 2 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr2 }
+		activate_mission = AIR_mission_nr2
+	}
+	if = {
+    	limit = { check_variable = { air_new_mission = 3 }}
+    	add_to_array = { air_current_missions = token:AIR_mission_nr3 }
+		activate_mission = AIR_mission_nr3
+    }
+	if = {
+    	limit = { check_variable = { air_new_mission = 4 }}
+    	add_to_array = { air_current_missions = token:AIR_mission_nr4 }
+		activate_mission = air_mission_nr4
+    }
+	if = {
+    	limit = { check_variable = { air_new_mission = 5 }}
+    	add_to_array = { air_current_missions = token:AIR_mission_nr5 }
+		activate_mission = AIR_mission_nr5
+    }
+	if = {
+		limit = { check_variable = { air_new_mission = 6 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr6 }
+		activate_mission = AIR_mission_nr6
+	}
+	if = {
+		limit = { check_variable = { air_new_mission = 8 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr8 }
+		activate_mission = AIR_mission_nr8
+	}
+	if = {
+		limit = { check_variable = { air_new_mission = 9 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr9 }
+		activate_mission = AIR_mission_nr9
+	}
+	if = {
+		limit = { check_variable = { air_new_mission = 11 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr11 }
+		activate_mission = AIR_mission_nr11
+	}
+	if = {
+		limit = { check_variable = { air_new_mission = 12 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr12 }
+		activate_mission = AIR_mission_nr12
+	}
+	if = {
+		limit = { check_variable = { air_new_mission = 13 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr13 }
+		activate_mission = AIR_mission_nr13
+	}
+	if = {
+		limit = { check_variable = { air_new_mission = 16 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr16 }
+		activate_mission = AIR_mission_nr16
+	}
+    if = {
+		limit = { check_variable = { air_new_mission = 17 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr17 }
+		activate_mission = AIR_mission_nr17
+	}
+	if = {
+		limit = { check_variable = { air_new_mission = 18 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr18 }
+		activate_mission = AIR_mission_nr18
+	}
+	if = {
+		limit = { check_variable = { air_new_mission = 21 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr21 }
+		activate_mission = AIR_mission_nr21
+	}
+	if = {
+		limit = { check_variable = { air_new_mission = 26 }}
+		add_to_array = { air_current_missions = token:AIR_mission_nr26 }
+		activate_mission = AIR_mission_nr26
+	}
+	if = {
+    	limit = { check_variable = { air_new_mission = 28 }}
+    	add_to_array = { air_current_missions = token:AIR_mission_nr28 }
+		activate_mission = AIR_mission_nr28
+    }
+    if = {
+       limit = { check_variable = { air_new_mission = 29 }}
+       add_to_array = { air_current_missions = token:AIR_mission_nr29 }
+	   activate_mission = AIR_mission_nr29
+    }
+}
+
+##### council support calculations
+
+AIR_council_support_calc = {
+	randomize_temp_variable = {
+		var = temp_member
+		distribution = uniform
+		min = 1
+		max = 6
+	}
+	round_temp_variable = temp_member
+	if = {
+		limit = { 
+			AND = {
+				check_variable = { temp_member = 1 }
+				check_variable = { council_name_1:harmony < 5 }
+				}
+			}
+		add_to_variable = { council_name_1:harmony = 1 }
+	}
+	if = {
+		limit = { 
+			AND = {
+				check_variable = { temp_member = 2 }
+				check_variable = { council_name_2:harmony < 5 }
+				}
+			}
+		add_to_variable = { council_name_2:harmony = 1 }
+	}
+	if = {
+		limit = { 
+			AND = {
+				check_variable = { temp_member = 3 }
+				check_variable = { council_name_3:harmony < 5 }
+				}
+			}
+		add_to_variable = { council_name_3:harmony = 1 }
+	}
+	if = {
+		limit = { 
+			AND = {
+				check_variable = { temp_member = 4 }
+				check_variable = { council_name_4:harmony < 5 }
+				}
+			}
+		add_to_variable = { council_name_4:harmony = 1 }
+	}
+	if = {
+		limit = { 
+			AND = {
+				check_variable = { temp_member = 5 }
+				check_variable = { council_name_5:harmony < 5 }
+				}
+			}
+		add_to_variable = { council_name_5:harmony = 1 }
+	}
+}
+
+AIR_council_opposition_calc = {
+	randomize_temp_variable = {
+		var = temp_member
+		distribution = uniform
+		min = 1
+		max = 5.5
+	}
+	round_temp_variable = temp_member
+	if = {
+		limit = { 
+			AND = {
+				check_variable = { temp_member = 1 }
+				check_variable = { council_name_1:harmony > 1 }
+				}
+			}
+		subtract_from_variable = { council_name_1:harmony = 1 }
+	}
+	if = {
+		limit = { 
+			AND = {
+				check_variable = { temp_member = 2 }
+				check_variable = { council_name_2:harmony > 1 }
+				}
+			}
+		subtract_from_variable = { council_name_2:harmony = 1 }
+	}
+	if = {
+		limit = { 
+			AND = {
+				check_variable = { temp_member = 3 }
+				check_variable = { council_name_3:harmony > 1 }
+				}
+			}
+		subtract_from_variable = { council_name_3:harmony = 1 }
+	}
+	if = {
+		limit = { 
+			AND = {
+				check_variable = { temp_member = 4 }
+				check_variable = { council_name_4:harmony > 1 }
+				}
+			}
+		subtract_from_variable = { council_name_4:harmony = 1 }
+	}
+	if = {
+		limit = { 
+			AND = {
+				check_variable = { temp_member = 5 }
+				check_variable = { council_name_5:harmony > 1 }
+				}
+			}
+		subtract_from_variable = { council_name_5:harmony = 1 }
+	}
+}
+
+AIR_council_small_support = {
+	AIR_council_support_calc = yes
+	AIR_recalc_council_support = yes
+}
+
+AIR_council_small_opposition = {
+	AIR_council_opposition_calc = yes
+	AIR_recalc_council_support = yes
+}
+
+AIR_council_medium_support = {
+	AIR_council_support_calc = yes
+	AIR_council_support_calc = yes
+	AIR_recalc_council_support = yes
+}
+
+AIR_council_medium_opposition = {
+	AIR_council_opposition_calc = yes
+	AIR_council_opposition_calc = yes
+	AIR_recalc_council_support = yes
+}
+
+AIR_council_large_support = {
+	AIR_council_support_calc = yes
+	AIR_council_support_calc = yes
+	AIR_council_support_calc = yes
+	AIR_council_support_calc = yes
+	AIR_recalc_council_support = yes
+}
+
+AIR_council_large_opposition = {
+	AIR_council_opposition_calc = yes
+	AIR_council_opposition_calc = yes
+	AIR_council_opposition_calc = yes
+	AIR_council_opposition_calc = yes
+	AIR_recalc_council_support = yes
+}
+
+AIR_council_extreme_support = {
+	if = {
+		limit = { check_variable = { council_name_1:harmony < 5 }}
+		add_to_variable = { council_name_1:harmony = 1}
+	}
+	if = {
+		limit = { check_variable = { council_name_2:harmony < 5 }}
+		add_to_variable = { council_name_2:harmony = 1}
+	}
+	if = {
+		limit = { check_variable = { council_name_3:harmony < 5 }}
+		add_to_variable = { council_name_3:harmony = 1}
+	}
+	if = {
+		limit = { check_variable = { council_name_4:harmony < 5 }}
+		add_to_variable = { council_name_4:harmony = 1}
+	}
+	if = {
+		limit = { check_variable = { council_name_5:harmony < 5 }}
+		add_to_variable = { council_name_5:harmony = 1}
+	}
+	AIR_recalc_council_support = yes
+}
+
+AIR_council_extreme_opposition = {
+	if = {
+		limit = { check_variable = { council_name_1:harmony > 1 }}
+		subtract_from_variable = { council_name_1:harmony = 1}
+	}
+	if = {
+		limit = { check_variable = { council_name_2:harmony > 1 }}
+		subtract_from_variable = { council_name_2:harmony = 1}
+	}
+	if = {
+		limit = { check_variable = { council_name_3:harmony > 1 }}
+		subtract_from_variable = { council_name_3:harmony = 1}
+	}
+	if = {
+		limit = { check_variable = { council_name_4:harmony > 1 }}
+		subtract_from_variable = { council_name_4:harmony = 1}
+	}
+	if = {
+		limit = { check_variable = { council_name_5:harmony > 1 }}
+		subtract_from_variable = { council_name_5:harmony = 1}
+	}
+	AIR_recalc_council_support = yes
+}

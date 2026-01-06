@@ -1,0 +1,160 @@
+
+steal_extra_intel = {
+	random = {
+		chance = var:ROOT.modifier@civil_infiltration_factor
+		
+		ROOT = {
+			if = {
+				limit = {
+					has_operation_token = {
+						tag = PREV
+						token = token_civilian
+					}
+				}
+			}
+			add_operation_token = {
+				tag = PREV
+				token = token_civilian
+			}
+		}
+	}
+	random = {
+		chance = var:ROOT.modifier@army_infiltration_factor
+		
+		ROOT = {
+			if = {
+				limit = {
+					has_operation_token = {
+						tag = PREV
+						token = token_army
+					}
+				}
+			}
+			add_operation_token = {
+				tag = PREV
+				token = token_army
+			}
+		}
+	}
+	random = {
+		chance = var:ROOT.modifier@navy_infiltration_factor
+		
+		ROOT = {
+			if = {
+				limit = {
+					has_operation_token = {
+						tag = PREV
+						token = token_navy
+					}
+				}
+			}
+			add_operation_token = {
+				tag = PREV
+				token = token_navy
+			}
+		}
+	}
+	random = {
+		chance = var:ROOT.modifier@air_infiltration_factor
+		
+		ROOT = {
+			if = {
+				limit = {
+					has_operation_token = {
+						tag = PREV
+						token = token_airforce
+					}
+				}
+			}
+			add_operation_token = {
+				tag = PREV
+				token = token_airforce
+			}
+		}
+	}
+}
+
+
+trade_influence_mission = {
+
+
+	#### better trade opinion is always gained
+
+	THIS = {
+		add_opinion_modifier = {
+			target = ROOT
+			modifier = infiltrated_trade
+		}
+	}
+
+
+	random = {
+		chance = var:ROOT.modifier@cheaper_trade_chance_factor
+		
+		add_operation_token = {
+			tag = ROOT
+			token = token_cheaper_trade_deal
+		}
+	}
+
+	random = {
+		chance = var:ROOT.modifier@more_trade_chance_factor
+		
+		add_operation_token = {
+			tag = ROOT
+			token = token_trade_deal_more_resources
+		}
+	}
+
+}
+
+
+steal_tech_mission = {
+	
+	if = {
+		limit = {
+			check_variable = { ROOT.tech_age < THIS.tech_age }
+			NOT = {
+				check_variable = { THIS.modifier@tech_share_modifier > 0 }
+			}
+		}
+		random = {
+			chance = var:ROOT.modifier@steal_invention_chance
+			
+			ROOT = {
+				steal_random_tech_bonus = {
+					category = inventions
+					instant = yes
+					target = PREV
+				}
+			}
+		}
+	}
+}
+
+spread_unrest_mission = {
+
+	random = {
+		chance = var:ROOT.modifier@spy_destabilisation_chance
+		
+		set_temp_variable = { destabilisation_added = ROOT.modifier@spy_destabilisation }
+		add_to_temp_variable = { destabilisation_added = THIS.spy_destabilisation }
+		clamp_temp_variable = {
+			var = destabilisation_added
+			min = 0
+		}
+		multiply_temp_variable = { destabilisation_added = -1 }
+
+		add_to_variable = { THIS.spy_destabilisation = destabilisation_added }
+
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = { modifier = destabilisation_from_spies }
+				}
+			}
+			add_dynamic_modifier = { modifier = destabilisation_from_spies }
+		}
+	}
+
+}

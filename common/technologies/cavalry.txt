@@ -1,0 +1,2092 @@
+technologies = {
+
+	light_cavalry_1 = {
+
+		dependencies = {
+			domestication = 1
+		}
+
+		enable_equipments = {
+			light_cavalry_equipment_1
+		}
+
+		enable_subunits = {
+			eel_hound
+			cat_deer
+			mongooze_lizards
+			buffalo_yaks
+		}
+
+		path = {
+			leads_to_tech = light_cavalry_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = lc_update_s_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = lc_update_h_1
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@eel_hound_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@mongooze_lizard_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@cat_deer_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@buffalo_yak_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
+		}
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_s_1 = {
+
+		category_all_light_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	lc_update_h_1 = {
+
+		category_all_light_cavalry = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	light_cavalry_2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			light_cavalry_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = light_cavalry_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = lc_update_s_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = lc_update_h_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = water_sledges
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@eel_hound_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@mongooze_lizard_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@cat_deer_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@buffalo_yak_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_s_2 = {
+
+		category_all_light_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = lc_update_s_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 6 }
+		}
+		
+		ai_will_do = {
+			base = 20
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	lc_update_s_3 = {
+
+		category_all_light_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_h_2 = {
+
+		category_all_light_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = lc_update_h_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_h_3 = {
+
+		category_all_light_cavalry = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	light_cavalry_3 = {
+		dependencies = {
+			surgery = 1
+		}
+
+		enable_equipments = {
+			light_cavalry_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = light_cavalry_4
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = lc_update_s_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = lc_update_h_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 42
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@eel_hound_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@mongooze_lizard_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@cat_deer_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@buffalo_yak_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_s_4 = {
+
+		category_all_light_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = lc_update_s_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	lc_update_s_5 = {
+
+		category_all_light_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_h_4 = {
+
+		category_all_light_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = lc_update_h_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_h_5 = {
+
+		category_all_light_cavalry = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	light_cavalry_4 = {
+		dependencies = {
+			botanics = 1
+		}
+
+		enable_equipments = {
+			light_cavalry_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = light_cavalry_5
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = lc_update_s_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = lc_update_h_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 58
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@eel_hound_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@mongooze_lizard_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@cat_deer_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@buffalo_yak_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
+		}
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_s_6 = {
+
+		category_all_light_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = lc_update_s_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	lc_update_s_7 = {
+
+		category_all_light_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_h_6 = {
+
+		category_all_light_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = lc_update_h_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_h_7 = {
+
+		category_all_light_cavalry = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	light_cavalry_5 = {
+		dependencies = {
+			genetics = 1
+		}
+
+		enable_equipments = {
+			light_cavalry_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = lc_update_s_8
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = lc_update_h_8
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 58
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 22 }
+		}
+		
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@eel_hound_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@mongooze_lizard_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@cat_deer_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@buffalo_yak_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_s_8 = {
+
+		category_all_light_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = lc_update_s_9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	lc_update_s_9 = {
+
+		category_all_light_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_h_8 = {
+
+		category_all_light_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = lc_update_h_9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	lc_update_h_9 = {
+
+		category_all_light_cavalry = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = -1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	medium_cavalry_1 = {
+
+		dependencies = {
+			domestication = 1
+		}
+
+		enable_equipments = {
+			medium_cavalry_equipment_1
+		}
+
+		enable_subunits = {
+			ostrich_horses
+			polar_dogs
+			dragon_moose
+			giant_beetles
+		}
+		
+		
+		path = {
+			leads_to_tech = medium_cavalry_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = mc_update_h_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mc_update_s_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 0 }
+		}
+		
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@ostrich_horse_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@polar_dog_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@dragon_moose_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@desert_bug_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	mc_update_h_1 = {
+
+		category_all_medium_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = mc_update_h_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 7 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	mc_update_s_1 = {
+
+		category_all_medium_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = mc_update_s_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 9 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	mc_update_h_2 = {
+
+		category_all_medium_cavalry = {
+			hard_attack = 0.05
+		}
+
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 7 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	mc_update_s_2 = {
+
+		category_all_medium_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 9 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	medium_cavalry_2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			medium_cavalry_equipment_2
+		}
+
+		path = {
+			leads_to_tech = medium_cavalry_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = mc_update_h_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mc_update_s_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	mc_update_h_3 = {
+
+		category_all_medium_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = mc_update_h_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 7 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	mc_update_s_3 = {
+
+		category_all_medium_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = mc_update_s_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 9 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	mc_update_h_4 = {
+
+		category_all_medium_cavalry = {
+			hard_attack = 0.05
+		}
+
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 7 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	mc_update_s_4 = {
+
+		category_all_medium_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 9 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	medium_cavalry_3 = {
+		dependencies = {
+			surgery = 1
+		}
+
+		enable_equipments = {
+			medium_cavalry_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = medium_cavalry_4
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = mc_update_h_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mc_update_s_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	mc_update_h_5 = {
+
+		category_all_medium_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = mc_update_h_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 7 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	mc_update_s_5 = {
+
+		category_all_medium_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = mc_update_s_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 9 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	mc_update_h_6 = {
+
+		category_all_medium_cavalry = {
+			hard_attack = 0.05
+		}
+
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 7 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	mc_update_s_6 = {
+
+		category_all_medium_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 9 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	medium_cavalry_4 = {
+		dependencies = {
+			botanics = 1
+		}
+
+		enable_equipments = {
+			medium_cavalry_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = medium_cavalry_5
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = mc_update_h_7
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mc_update_s_7
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	mc_update_h_7 = {
+
+		category_all_medium_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = mc_update_h_8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 7 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	mc_update_s_7 = {
+
+		category_all_medium_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = mc_update_s_8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 9 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	mc_update_h_8 = {
+
+		category_all_medium_cavalry = {
+			hard_attack = 0.05
+		}
+
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 7 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	mc_update_s_8 = {
+
+		category_all_medium_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 9 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	medium_cavalry_5 = {
+		dependencies = {
+			genetics = 1
+		}
+
+		enable_equipments = {
+			medium_cavalry_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = mc_update_h_9
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mc_update_s_9
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	mc_update_h_9 = {
+
+		category_all_medium_cavalry = {
+			hard_attack = 0.05
+		}
+
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 7 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	mc_update_s_9 = {
+
+		category_all_medium_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 9 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+
+	heavy_cavalry_1 = {
+		dependencies = {
+			domestication = 1
+		}
+
+		enable_equipments = {
+			heavy_cavalry_equipment_1
+		}
+
+		enable_subunits = {
+			komodo_rhinos
+			walrus_yak
+			camelophant
+		}
+		
+
+		path = {
+			leads_to_tech = heavy_cavalry_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = hc_update_s_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = hc_update_h_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 16 y = 0 }
+		}
+		
+		ai_will_do = {		
+			base = 0
+			modifier = {
+				OR = {
+					check_variable = {
+						THIS.num_equipment@komodo_rhino_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@walrus_yak_animal > 20	
+					}
+					check_variable = {
+						THIS.num_equipment@elephant_camel_animal > 20	
+					}
+				}
+				num_of_military_factories > 6	
+				add = 40				
+			}  		
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	hc_update_s_1 = {
+
+		category_all_heavy_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = hc_update_s_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 17 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	hc_update_h_1 = {
+
+		category_all_heavy_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = hc_update_h_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 15 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	hc_update_s_2 = {
+
+		category_all_heavy_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = hc_update_s_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 17 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	hc_update_h_2 = {
+
+		category_all_heavy_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = hc_update_h_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 15 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	hc_update_s_3 = {
+
+		category_all_heavy_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 17 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	hc_update_h_3 = {
+
+		category_all_heavy_cavalry = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 15 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+
+	heavy_cavalry_2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			heavy_cavalry_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = heavy_cavalry_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = hc_update_s_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = hc_update_h_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 16 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	hc_update_s_4 = {
+
+		category_all_heavy_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = hc_update_s_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 17 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	hc_update_h_4 = {
+
+		category_all_heavy_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = hc_update_h_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 15 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	hc_update_s_5 = {
+
+		category_all_heavy_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 17 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	hc_update_h_5 = {
+
+		category_all_heavy_cavalry = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 15 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	heavy_cavalry_3 = {
+		dependencies = {
+			surgery = 1
+		}
+
+		enable_equipments = {
+			heavy_cavalry_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = heavy_cavalry_4
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = hc_update_s_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = hc_update_h_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 16 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	hc_update_s_6 = {
+
+		category_all_heavy_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = hc_update_s_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 17 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	hc_update_h_6 = {
+
+		category_all_heavy_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = hc_update_h_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 15 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	hc_update_s_7 = {
+
+		category_all_heavy_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 17 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	hc_update_h_7 = {
+
+		category_all_heavy_cavalry = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 15 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	heavy_cavalry_4 = {
+		dependencies = {
+			botanics = 1
+		}
+
+		enable_equipments = {
+			heavy_cavalry_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = heavy_cavalry_5
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = hc_update_s_8
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = hc_update_h_8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 16 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	hc_update_s_8 = {
+
+		category_all_heavy_cavalry = {
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = hc_update_s_9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 17 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	hc_update_h_8 = {
+
+		category_all_heavy_cavalry = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = hc_update_h_9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 15 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	hc_update_s_9 = {
+
+		category_all_heavy_cavalry = {
+			soft_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 17 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+	hc_update_h_9 = {
+
+		category_all_heavy_cavalry = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 2
+		#start_year = 18
+		folder = {
+			name = armour_folder
+			position = { x = 15 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+	heavy_cavalry_5 = {
+		dependencies = {
+			genetics = 1
+		}
+
+		enable_equipments = {
+			heavy_cavalry_equipment_5
+		}
+		
+		#path = {
+		#	leads_to_tech = heavy_cavalry_5
+		#	research_cost_coeff = 1
+		#}
+		
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = armour_folder
+			position = { x = 16 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			cavalry
+			cat_light_cavalry
+		}
+	}
+
+
+}

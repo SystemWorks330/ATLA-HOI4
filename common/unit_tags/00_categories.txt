@@ -1,0 +1,49 @@
+sub_unit_categories = {
+	category_front_army
+
+	category_all_foot
+	category_melee
+	category_ranged
+
+	category_all_spear
+	category_all_arrow
+	category_all_projectile
+
+	category_support
+	category_support_offensive
+	category_support_defensive
+	category_scout
+	category_healer
+	category_siege
+
+	category_bender
+	category_firebender
+	category_earthbender
+	category_waterbender
+	category_airbender
+
+	category_all_mechanized
+	category_all_tanks
+	category_all_transport
+
+	category_all_cavalry
+	category_all_light_cavalry
+	category_all_medium_cavalry
+	category_all_heavy_cavalry
+	category_all_mounted
+	category_all_rhinos
+	category_all_ostrich
+	category_all_buffalo
+
+	category_birb
+	category_small_birb
+	category_medium_birb
+	category_heavy_birb
+	category_dragon
+	category_bison
+	category_glider
+
+	category_air_balloon
+	category_light_airship
+	category_heavy_airship
+}

@@ -1,0 +1,431 @@
+ideas = {
+
+	academia = {
+		use_list_view = yes
+
+		swa_academia_1 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { research_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		swa_academia_2 = {
+
+			cost = 200
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { officer_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		swa_academia_3 = {
+
+			cost = 200
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { special_forces_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		swa_academia_4 = {
+
+			cost = 200
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { recruit_drilling }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+
+	army = {
+		use_list_view = yes
+
+		swa_army_1 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_power = 0.1
+			}
+			
+			traits = { land_school_of_aggression }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		swa_army_2 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_freedom = 0.1
+			}
+			
+			traits = { land_school_of_defense }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		swa_army_3 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_change = 0.1
+			}
+			
+			traits = { land_school_of_logistics }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		swa_army_4 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_substance = 0.1
+			}
+			
+			traits = { land_school_of_planning }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	navy = {
+		use_list_view = yes
+
+		swa_navy_1 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_power = 0.1
+			}
+			
+			traits = { naval_school_of_aggression }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		swa_navy_2 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_freedom = 0.1
+			}
+			
+			traits = { naval_school_of_defense }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		swa_navy_3 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_change = 0.1
+			}
+			
+			traits = { naval_school_of_maneuvre }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		swa_navy_4 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_substance = 0.1
+			}
+			
+			traits = { naval_school_of_coordination }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	
+	law_enforcement = {
+		use_list_view = yes
+
+		swa_law_enforcement_1 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { royal_decree }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		swa_law_enforcement_2 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { spiritual_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		swa_law_enforcement_3 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { civil_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		swa_law_enforcement_4 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { custumary_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	martial_art = {
+		use_list_view = yes
+
+		swa_martial_art_1 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { arctic_style }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		swa_martial_art_2 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { antarctic_style }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	
+		swa_martial_art_3 = {
+
+			cost = 200
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { tropical_style }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+
+	clergy = {
+		use_list_view = yes
+
+		swa_clergy_1 = {
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { philosophical_principles }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+
+		swa_clergy_2 = {
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { alms_and_pacification }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		swa_clergy_3 = {
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { service_to_the_avatar }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		swa_clergy_4 = {
+
+			allowed = {
+				 tag = SWA
+			}
+			available = { }
+			
+			
+			traits = { indoctrinal_service }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+
+}

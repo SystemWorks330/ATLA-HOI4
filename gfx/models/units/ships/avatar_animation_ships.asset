@@ -1,0 +1,54 @@
+
+############
+# SHIPS
+############
+
+####
+# TRANSPORT
+####
+animation = {
+	name = "sail_transport_idle_animation"
+	file = "sail_transport_idle.anim"
+}
+animation = {
+	name = "sail_transport_walk_animation"
+	file = "sail_transport_walk.anim"
+}
+animation = {
+	name = "sail_transport_attack_animation"
+	file = "sail_transport_attack.anim"
+}
+
+####
+# GALLEY
+####
+animation = {
+	name = "galley_idle_animation"
+	file = "galley_idle.anim"
+}
+
+animation = {
+	name = "galley_attack_animation"
+	file = "galley_attack.anim"
+}
+
+animation = {
+	name = "galley_walk_animation"
+	file = "galley_walk.anim"
+}
+
+
+####
+# FIRENATION CRUISER
+####
+animation = {
+	name = "firenation_cruiser_idle_animation"
+	file = "firenation_cruiser_idle.anim"
+}
+
+animation = {
+	name = "firenation_cruiser_walk_animation"
+	file = "firenation_cruiser_walk.anim"
+}
+
+

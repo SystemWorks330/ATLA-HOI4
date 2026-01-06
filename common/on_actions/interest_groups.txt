@@ -1,0 +1,166 @@
+on_actions = {
+
+	on_startup = {
+
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						NOT = {
+							check_variable = { epmployed_percentage > 0.5 }
+						}
+						NOT = {
+							has_dynamic_modifier = { modifier = peasant_dynamic_modifier }
+						}
+					}
+					add_dynamic_modifier = { modifier = peasant_dynamic_modifier }
+				}
+				if = {
+					limit = {
+						check_variable = { epmployed_percentage > 0.5 }
+						NOT = {
+							has_dynamic_modifier = { modifier = labourers_dynamic_modifier }
+						}
+					}
+					add_dynamic_modifier = { modifier = labourers_dynamic_modifier }
+				}
+
+				if = {
+					limit = {
+						NOT = {
+							AND = {
+								check_variable = { centralisation_variable < 50 }
+								check_variable = { production_employed_constant > resource_employed_constant }
+							}
+						}
+						NOT = {
+							has_dynamic_modifier = { modifier = nobility_dynamic_modifier }
+						}
+					}
+					add_dynamic_modifier = { modifier = nobility_dynamic_modifier }
+				}
+				if = {
+					limit = {
+						AND = {
+							check_variable = { centralisation_variable < 50 }
+							check_variable = { production_employed_constant > resource_employed_constant }
+						}
+						NOT = {
+							has_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+						}
+					}
+					add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+				}
+
+				if = {
+					limit = {
+						AND = {
+							amount_research_slots > 3
+							check_variable = { literacy_variable > 50 }
+						}
+						NOT = {
+							has_dynamic_modifier = { modifier = academics_dynamic_modifier }
+						}
+					}
+					add_dynamic_modifier = { modifier = academics_dynamic_modifier }
+				}
+				if = {
+					limit = {
+						NOT = {
+							AND = {
+								amount_research_slots > 3
+								check_variable = { literacy_variable > 50 }
+							}
+						}
+						NOT = {
+							has_dynamic_modifier = { modifier = clergy_dynamic_modifier }
+						}
+					}
+					add_dynamic_modifier = { modifier = clergy_dynamic_modifier }
+				}
+			}
+		}
+	}
+
+	on_monthly = {
+
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						check_variable = { epmployed_percentage > 0.5 }
+					}
+					NOT = {
+						has_dynamic_modifier = { modifier = peasant_dynamic_modifier }
+					}
+				}
+				add_dynamic_modifier = { modifier = peasant_dynamic_modifier }
+			}
+			if = {
+				limit = {
+					check_variable = { epmployed_percentage > 0.5 }
+					NOT = {
+						has_dynamic_modifier = { modifier = labourers_dynamic_modifier }
+					}
+				}
+				add_dynamic_modifier = { modifier = labourers_dynamic_modifier }
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							check_variable = { centralisation_variable < 50 }
+							check_variable = { production_employed_constant > resource_employed_constant }
+						}
+					}
+					NOT = {
+						has_dynamic_modifier = { modifier = nobility_dynamic_modifier }
+					}
+				}
+				add_dynamic_modifier = { modifier = nobility_dynamic_modifier }
+			}
+			if = {
+				limit = {
+					AND = {
+						check_variable = { centralisation_variable < 50 }
+						check_variable = { production_employed_constant > resource_employed_constant }
+					}
+					NOT = {
+						has_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+					}
+				}
+				add_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+			}
+
+			if = {
+				limit = {
+					AND = {
+						amount_research_slots > 3
+						check_variable = { literacy_variable > 50 }
+					}
+					NOT = {
+						has_dynamic_modifier = { modifier = academics_dynamic_modifier }
+					}
+				}
+				add_dynamic_modifier = { modifier = academics_dynamic_modifier }
+			}
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							amount_research_slots > 3
+							check_variable = { literacy_variable > 50 }
+						}
+					}
+					NOT = {
+						has_dynamic_modifier = { modifier = clergy_dynamic_modifier }
+					}
+				}
+				add_dynamic_modifier = { modifier = clergy_dynamic_modifier }
+			}
+		}
+	}
+
+	
+}

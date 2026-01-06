@@ -1,0 +1,59 @@
+areas = {
+
+	firelands = {
+
+		continents = { 
+			australia
+		}
+	}
+
+	earth_kingdom_ai_area = {
+
+		continents = { 
+			europe
+			north_america 
+			south_america
+		}
+	}
+
+	earth_plate = {
+
+		continents = { 
+			europe
+		}
+	}
+	north_plate = {
+
+		continents = { 
+			north_america
+		}
+	}
+	south_plate = {
+
+		continents = { 
+			south_america
+		}
+	}
+
+	northpole = {
+
+		continents = { 
+			africa
+		}
+	}
+
+	southpole = {
+
+		continents = { 
+			asia
+		}
+	}
+
+	ba_sing_se = {
+
+		strategic_regions = {
+			118
+		}
+	}
+
+}

@@ -1,0 +1,191 @@
+
+
+peoples_initiative_available = {
+	NOT = {
+		has_idea = no_ruler
+	}
+}
+
+lumber_mill_investment_allowed = {
+	NOT = {
+		has_idea = no_ruler
+	}
+}
+
+crop_weaving_investment_allowed = {
+	NOT = {
+		has_idea = no_ruler
+	}
+}
+
+is_valid_migration_target_low_calculation = {
+	NOT = {
+		state = PREV
+	}
+	OR = {
+		### neighbour state with friendly controller
+		AND = {
+			any_neighbor_state = {
+				state = event_target:migration_origin
+			}
+			PREV.owner = {
+				NOT = {
+					has_war_with = var:PREV.controller
+				}
+			}
+		}
+		### friendly border state of controller
+		AND = {
+			controller = {
+				tag = PREV.owner
+				has_war_with = PREV.PREV.controller
+			}
+			any_neighbor_state = {
+				controller = {
+					has_war_with = PREV.PREV.controller
+				}
+			}
+		}
+	}
+}
+
+is_valid_migration_target = {
+	NOT = {
+		state = PREV
+	}
+	OR = {
+		### neighbour state with friendly controller
+		AND = {
+			any_neighbor_state = {
+				state = event_target:migration_origin
+			}
+			PREV.owner = {
+				NOT = {
+					has_war_with = var:PREV.controller
+				}
+			}
+		}
+		### friendly border state of controller
+		AND = {
+			controller = {
+				tag = PREV.owner
+				has_war_with = PREV.PREV.controller
+			}
+			any_neighbor_state = {
+				controller = {
+					has_war_with = PREV.PREV.controller
+				}
+			}
+		}
+		### same country or faction, small harbour or path and friendly controller
+		AND = {
+			PREV.owner = {
+				NOT = {
+					has_war_with = var:PREV.controller
+				}
+			}
+			OR = {
+				controller = { tag = PREV.PREV.controller }
+				controller = {
+					is_in_faction_with = PREV.PREV.controller
+				}
+			}
+			OR = {
+				has_railway_connection = {
+					start_state = THIS
+					target_state = PREV
+				}
+				AND = {
+					any_province_building_level = {
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						building = naval_base
+						level > 0
+					}
+					PREV = {
+						any_province_building_level = {
+							province = {
+								all_provinces = yes
+								limit_to_coastal = yes
+							}
+							building = naval_base
+							level > 0
+						}
+					}
+				}
+			}
+		}
+		### same continent with good port connection and good attraction and friendly controller
+		AND = {
+			PREV.owner = {
+				NOT = {
+					has_war_with = var:PREV.controller
+				}
+			}
+			if = {
+				limit = { PREV = { is_on_continent = europe }}
+				is_on_continent = europe
+			}
+			if = {
+				limit = { PREV = { is_on_continent = africa }}
+				is_on_continent = africa
+			}
+			if = {
+				limit = { PREV = { is_on_continent = asia }}
+				is_on_continent = asia
+			}
+			if = {
+				limit = { PREV = { is_on_continent = australia }}
+				is_on_continent = australia
+			}
+			if = {
+				limit = { PREV = { is_on_continent = north_america }}
+				is_on_continent = north_america
+			}
+			if = {
+				limit = { PREV = { is_on_continent = south_america }}
+				is_on_continent = south_america
+			}
+			any_province_building_level = {
+				province = {
+					all_provinces = yes
+					limit_to_coastal = yes
+				}
+				building = naval_base
+				level > 9
+			}
+			PREV = {
+				any_province_building_level = {
+					province = {
+						all_provinces = yes
+						limit_to_coastal = yes
+					}
+					building = naval_base
+					level > 9
+				}
+			}
+		}
+	}
+}
+adding_10_percent_taxation_will_make_ROOTs_tax_balance_positive = {
+	set_temp_variable = {
+		var = taxation_with_10_percent_increase
+		value = 0
+	}
+	add_to_temp_variable = {
+		var = taxation_with_10_percent_increase
+		value = ROOT.taxation_var
+	}
+	multiply_temp_variable = {
+		var = taxation_with_10_percent_increase
+		value = 1.1
+	}
+	subtract_from_temp_variable = {
+		var = taxation_with_10_percent_increase
+		value = ROOT.tax_balance
+	}
+	check_variable = {taxation_with_10_percent_increase > 0}
+			
+}

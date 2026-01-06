@@ -1,0 +1,80 @@
+###########################
+# Northern Air Nomads Events
+###########################
+
+add_namespace = northern
+
+#Firenation Attack
+country_event = {
+	id = northern.1
+	title = northern.1.t
+	desc = northern.1.d
+	picture = GFX_report_event_north_temple
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+	immediate = {
+		set_country_flag = meetings_disrupted
+	}
+
+	option = {
+		name = northern.1.a
+		ai_chance = { 
+			factor = 99
+		}
+		#hidden_effect = {
+		#	load_oob = "northern_airbender_defenders_0_5"
+		#}
+	}
+
+	option = {
+		name = northern.1.b
+		ai_chance = { 
+			factor = 1
+		}
+		#hidden_effect = {
+		#	load_oob = "northern_airbender_defenders_1"
+		#}
+	}
+}
+#Repopulation by earth settlers
+country_event = {
+	id = northern.2
+	title = northern.2.t
+	desc = northern.2.d
+	trigger = {
+		original_tag = NAT
+		has_global_flag = air_nomad_genocide
+		has_idea = no_ruler
+		has_country_leader = {
+			character = NAT_extinct_nation
+			ruling_only = yes
+		}
+		date >105.1.1
+	}
+	fire_only_once = yes
+	option = {
+		name = northern.2.a
+		set_politics = {
+			ruling_party = pluralist_culture
+			elections_allowed = yes
+		}
+		promote_character = NAT_mechanist
+		#set_research_slots = 4
+		set_cosmetic_tag = NAT_mechanist_temple
+		every_owned_state = {
+			limit = {
+				has_dynamic_modifier = {
+					modifier = genocide_state
+				}
+			}
+			remove_dynamic_modifier = {
+				modifier = genocide_state
+			}
+		}
+		clr_country_flag = AIR_special_forces
+		clr_country_flag = AIR_nation
+		clr_country_flag = AIR_air_techs
+	}
+}

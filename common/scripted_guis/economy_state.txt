@@ -1,0 +1,342 @@
+
+scripted_gui = {
+
+	economy_state_ui = {
+		context_type = selected_state_context
+		
+		window_name = "economy_state_ui_window"
+		parent_window_token = selected_state_view
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			open_construction_click = {
+				if = {
+					limit = {
+						ROOT = {
+						check_variable = { close_construction = 0 }
+						}
+					}
+					ROOT = {
+					set_variable = { close_construction = 1 }
+					}
+				}
+				else = {
+					ROOT = {
+					set_variable = { close_construction = 0 }
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+						check_variable = { show_construction < 1 }
+						}
+					}
+					ROOT = {
+						set_variable = { show_construction = 1 }
+					}
+				}
+			}
+			
+			send_settlers_click = {
+
+				ROOT = {
+					transfer_state = PREV
+
+					set_temp_variable = { pp_cost_colony = mtth:colonise_state_pp_cost }
+					multiply_temp_variable = { pp_cost_colony = -1 }
+					add_political_power = var:pp_cost_colony
+
+					set_temp_variable = { money_cost_colony = mtth:colonise_state_cost }
+					multiply_temp_variable = { money_cost_colony = -1 }
+					subtract_from_variable = { var = money_variable value = money_cost_colony tooltip = money_add_tooltip }
+
+					add_timed_idea = { idea = colonial_investments  days = 365 }
+
+				}
+
+				THIS = {
+					add_dynamic_modifier = { modifier = new_settlement }
+
+					set_variable = {
+						var = fire_pop
+						value = ROOT.party_popularity_100@fire_culture
+						tooltip = set_fire_pop_tt
+					}
+					set_variable = {
+						var = earth_pop
+						value = ROOT.party_popularity_100@earth_culture
+						tooltip = set_earth_pop_tt
+					}
+					set_variable = {
+						var = water_pop
+						value = ROOT.party_popularity_100@water_culture
+						tooltip = set_water_pop_tt
+					}
+					set_variable = {
+						var = air_pop
+						value = ROOT.party_popularity_100@air_culture
+						tooltip = set_air_pop_tt
+					}
+					set_variable = {
+						var = nonbender_pop
+						value = ROOT.party_popularity_100@pluralist_culture
+						tooltip = set_nonbender_pop_tt
+					}
+
+					state_culture_pie_chart_recalc = yes
+
+					set_building_level = {
+					    type = naval_base
+					    level = 5
+					    province = {
+					        all_provinces = yes
+					        limit_to_coastal = yes
+					        level < 5
+					        level > 0
+					    }
+					}
+				}
+			}
+
+			build_farm_click = {
+				add_farm_here = yes
+			}
+			build_lumber_mill_click = {
+				add_lumber_mill_here = yes
+			}
+			build_ranch_click = {
+				add_ranch_here = yes
+			}
+			build_mine_click = {
+				add_mine_here = yes
+			}
+			build_quarry_click = {
+				add_quarry_here = yes
+			}
+			build_fishing_stand_click = {
+				add_fishing_stand_here = yes
+			}
+		}
+
+		triggers = {
+
+			send_settlers_click_enabled = {
+
+				ROOT = {
+					NOT = {
+						has_idea = colonial_investments
+					}
+					has_political_power > mtth:colonise_state_pp_cost
+					check_variable = {
+						var = money_variable
+						value = mtth:colonise_state_cost
+						compare = greater_than_or_equals
+						tooltip = check_money_tooltip
+					}
+					check_variable = {
+						var = modifier@allow_colony_modifier
+						value = 0
+						compare = greater_than
+						tooltip = allow_colony_modifier
+					}
+				}
+
+				NOT = {
+					has_dynamic_modifier = { modifier = new_settlement }
+				}
+
+				OR = {
+					any_province_building_level = {
+						province = {
+							all_provinces = yes
+							limit_to_coastal = yes
+						}
+						building = naval_base
+						level > 0
+					}
+					any_neighbor_state = {
+						is_controlled_by = ROOT
+					}
+				}
+			}
+
+			send_settlers_visible = {
+				NOT = {
+					is_core_of = ROOT
+					is_controlled_by = ROOT
+				}
+				OR = {
+					has_dynamic_modifier = { modifier = genocide_state }
+					state_population < 1
+				}
+			}
+
+			open_construction_visible = {
+				OR = {
+					is_controlled_by = ROOT
+					controller = {
+						is_puppet_of = ROOT
+					}
+				}
+			}
+
+		#	build_farm_click_enabled = {
+		#		is_controlled_by = ROOT
+		#		set_temp_variable = { farms = building_level@farm }
+		#		add_to_temp_variable = { farms = farm_construction_que }
+		#		check_variable = { field > farms }
+		#		check_variable = {
+		#			var = ROOT:modifier@farm_level_max
+		#			value = farms
+		#			compare = greater_than
+		#		}
+		#	}
+		#	build_lumber_mill_click_enabled = {
+		#		is_controlled_by = ROOT
+		#		set_temp_variable = { lumber_mills = building_level@lumber_mill }
+		#		add_to_temp_variable = { lumber_mills = lumber_mill_construction_que }
+		#		check_variable = { forest > lumber_mills }
+		#		check_variable = {
+		#			var = ROOT:modifier@lumber_mill_level_max
+		#			value = lumber_mills
+		#			compare = greater_than
+		#		}
+		#	}
+		#	build_ranch_click_enabled = {
+		#		is_controlled_by = ROOT
+		#		set_temp_variable = { ranches = building_level@ranch }
+		#		add_to_temp_variable = { ranches = ranch_construction_que }
+		#		check_variable = { animal > ranches }
+		#		check_variable = {
+		#			var = ROOT:modifier@ranch_level_max
+		#			value = ranches
+		#			compare = greater_than
+		#		}
+		#	}
+		#	build_mine_click_enabled = {
+		#		is_controlled_by = ROOT
+		#		set_temp_variable = { mines = building_level@mine }
+		#		add_to_temp_variable = { mines = mine_construction_que }
+		#		check_variable = { mountain > mines }
+		#		check_variable = {
+		#			var = ROOT:modifier@mine_level_max
+		#			value = mines
+		#			compare = greater_than
+		#		}
+		#	}
+		#	build_quarry_click_enabled = {
+		#		is_controlled_by = ROOT
+		#		set_temp_variable = { quarries = building_level@quarry }
+		#		add_to_temp_variable = { quarries = quarry_construction_que }
+		#		check_variable = { stonefield > quarries }
+		#		check_variable = {
+		#			var = ROOT:modifier@quarry_level_max
+		#			value = quarries
+		#			compare = greater_than
+		#		}
+		#	}
+		#	build_fishing_stand_click_enabled = {
+		#		is_controlled_by = ROOT
+		#		set_temp_variable = { fishing_stands = building_level@fishing_stand }
+		#		add_to_temp_variable = { fishing_stands = fishing_stand_construction_que }
+		#		check_variable = { water > fishing_stands }
+		#		check_variable = {
+		#			var = ROOT:modifier@fishing_stand_level_max
+		#			value = fishing_stands
+		#			compare = greater_than
+		#		}
+		#	}
+
+
+		farm_progress_visible = {
+				check_variable = { farm_construction_que > 0 }
+			}
+			lumber_mill_progress_visible = {
+				check_variable = { lumber_mill_construction_que > 0 }
+			}
+			ranch_progress_visible = {
+				check_variable = { ranch_construction_que > 0 }
+			}
+			mine_progress_visible = {
+				check_variable = { mine_construction_que > 0 }
+			}
+			quarry_progress_visible = {
+				check_variable = { quarry_construction_que > 0 }
+			}
+			fishing_stand_progress_visible = {
+				check_variable = { fishing_stand_construction_que > 0 }
+			}
+		}
+
+		properties = {
+			farm_progress = {
+				frame = farm_progress_var
+			}
+			lumber_mill_progress = {
+				frame = lumber_mill_progress_var
+			}
+			ranch_progress = {
+				frame = ranch_progress_var
+			}
+			mine_progress = {
+				frame = mine_progress_var
+			}
+			quarry_progress = {
+				frame = quarry_progress_var
+			}
+			fishing_stand_progress = {
+				frame = fishing_stand_progress_var
+			}
+		}
+
+		ai_test_interval = 8000
+		ai_test_variance = 0.1
+		
+		ai_enabled = {
+			always = yes
+		}
+		
+		ai_check = {
+			check_variable = { ai_irrationality > 0 }
+		}
+		
+		ai_max_weight_taken_per_test = 2
+		ai_weights = {
+			open_construction_click = {
+				ai_will_do = {
+					base = 100
+				}
+			}
+		#	build_farm_click = {
+		#		ai_will_do = {
+		#			base = 0
+		#			modifier = {
+		#				set_temp_variable = {
+		#					d = ROOT.ai_build_farm_desire
+		#				}
+		#				set_temp_variable = {
+		#					q = ROOT.farm_construction_que
+		#				}
+		#				subtract_from_temp_variable = {
+		#					var = d
+		#					value = q
+		#				}
+		#				add = d
+		#			}
+		#		}
+		#	}
+			send_settlers_click = {
+				ai_will_do = {
+					base = 10
+					
+				}
+			}
+
+		}
+
+	}
+	
+}

@@ -1,0 +1,53 @@
+
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				#add_to_array = {
+				#	array = global.leaderboard
+				#	value = THIS.id
+				#}
+
+				if = {
+					limit = {
+						has_variable = victory_condition
+					}
+					meta_effect = {
+						text = {
+							add_ideas = {
+								[MAJOR_SPIRIT]
+							}
+						}
+						MAJOR_SPIRIT = "[?victory_condition.GetTokenKey]"
+					}
+				}
+				else = {
+					set_variable = { victory_condition = token:spiritless_nation_spirit }
+					add_ideas = {
+						spiritless_nation_spirit
+					}
+				}
+			}
+		}
+	}
+
+#	on_monthly = {
+#		effect = {
+#			if = {
+#				limit = {
+#					NOT = {
+#						is_in_array = { leaderboard = THIS.id }
+#					}
+#				}
+#				add_to_array = {
+#					array = global.leaderboard
+#					value = THIS.id
+#				}
+#			}
+#		}
+#	}
+
+
+
+}

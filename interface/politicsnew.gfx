@@ -1,0 +1,84 @@
+spriteTypes = {
+
+
+	spriteType = {
+		name = "GFX_intel_info_bg"
+		textureFile = "gfx/interface/intel_info_bg.dds"
+	}
+
+
+	#spriteType = {
+	#	name = "GFX_fundings"
+	#	textureFile = "gfx/interface/avatar/_00fundings.dds"
+	#	noOfFrames = 2
+	#}
+
+	spriteType = {
+		name = "GFX_faction_icon"
+		textureFile = "gfx/interface/faction_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_state_target"
+		textureFile = "gfx/interface/legitimacy/state_target.dds"
+	}
+	spriteType = {
+		name = "GFX_state_target_large"
+		textureFile = "gfx/interface/legitimacy/state_target_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_loyalty_icon"
+		textureFile = "gfx/interface/state_view/loyalty_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_revolt_icon"
+		textureFile = "gfx/interface/state_view/revolt_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_uprising_bar_state_bg"
+		textureFile = "gfx/interface/state_view/uprising_bar_state_bg.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_loyalty_bar"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\state_view\\loyalty_bar_state.dds"
+		textureFile2 = "gfx\\interface\\state_view\\uprising_bar_state.dds"
+		size = { x = 81 y = 14 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+
+
+	spriteType = {
+		name = "GFX_academics_ig"
+		textureFile = "gfx/interface/legitimacy/academics_ig.dds"
+	}
+
+	spriteType = {
+		name = "GFX_peasant_ig"
+		textureFile = "gfx/interface/legitimacy/peasant_ig.dds"
+	}
+
+	spriteType = {
+		name = "GFX_nobility_ig"
+		textureFile = "gfx/interface/legitimacy/nobility_ig.dds"
+	}
+
+	spriteType = {
+		name = "GFX_labourers_ig"
+		textureFile = "gfx/interface/legitimacy/labourers_ig.dds"
+	}
+
+	spriteType = {
+		name = "GFX_industrialist_ig"
+		textureFile = "gfx/interface/legitimacy/industrialist_ig.dds"
+	}
+
+	spriteType = {
+		name = "GFX_clergy_ig"
+		textureFile = "gfx/interface/legitimacy/clergy_ig.dds"
+	}
+	
+}

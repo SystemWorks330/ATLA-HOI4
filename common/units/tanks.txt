@@ -1,0 +1,509 @@
+
+sub_units = {
+	
+#####  ##  #   # #  #  ###
+  #   #  # ##  # # #  #
+  #   #### # # # ##    ##
+  #   #  # #  ## # #     #
+  #   #  # #   # #  # ###
+
+
+
+	tundra_tank = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 599
+		ai_priority = 200
+		active = no
+		special_forces = yes
+
+		type = { infantry }
+		
+		group = mobile
+		
+		categories = {
+			category_bender
+			category_firebender
+			category_all_mounted
+			category_all_tanks
+		}
+
+		
+		combat_width = 4
+		
+		#Size Definitions
+		max_organisation = 10
+		max_strength = 50
+		default_morale = 0.05
+		manpower = 8
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 0.08
+
+		#Offensive Abilities
+		suppression = 2
+	
+		need = {
+			tank_equipment = 4
+		}
+
+		plains = {
+			attack = 0.25
+		}
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	siege_tundra_tank = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 599
+		ai_priority = 200
+		active = no
+		special_forces = yes
+
+		type = { infantry }
+		
+		group = mobile
+		
+		categories = {
+			category_bender
+			category_firebender
+			category_all_mounted
+			category_all_tanks
+		}
+
+		
+		combat_width = 4
+		
+		#Size Definitions
+		max_organisation = 10
+		max_strength = 60
+		default_morale = 0.05
+		manpower = 8
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 0.08
+
+		#Offensive Abilities
+		suppression = 2
+	
+		need = {
+			tank_equipment = 4
+		}
+
+		plains = {
+			attack = 0.25
+		}
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	siege_tank = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 599
+		ai_priority = 200
+		active = no
+		special_forces = no
+
+		type = { infantry }
+		
+		group = mobile
+		
+		categories = {
+			category_bender
+			category_firebender
+			category_all_mounted
+			category_all_tanks
+		}
+
+		
+		combat_width = 4
+		
+		#Size Definitions
+		max_organisation = 10
+		max_strength = 40
+		default_morale = 0.3
+		manpower = 8
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 0.08
+
+		#Offensive Abilities
+		suppression = 2
+	
+		need = {
+			tank_equipment = 4
+		}
+
+		plains = {
+			attack = 0.25
+		}
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+
+	fire_tank = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 599
+		ai_priority = 200
+		active = no
+		special_forces = yes
+
+		type = { infantry }
+		
+		group = mobile
+		
+		categories = {
+			category_bender
+			category_firebender
+			category_all_mounted
+			category_all_tanks
+		}
+
+		
+		combat_width = 4
+		
+		#Size Definitions
+		max_organisation = 10
+		max_strength = 80
+		default_morale = 0.05
+		manpower = 8
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 0.08
+
+		#Offensive Abilities
+		suppression = 2
+	
+		need = {
+			tank_equipment = 4
+		}
+
+		plains = {
+			attack = 0.25
+		}
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	earth_tank = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 599
+		ai_priority = 200
+		active = no
+		special_forces = yes
+
+		type = { infantry }
+		
+		group = mobile
+		
+		categories = {
+			category_bender
+			category_earthbender
+			category_all_mounted
+			category_all_tanks
+		}
+
+		
+		combat_width = 4
+		
+		#Size Definitions
+		max_organisation = 10
+		max_strength = 100
+		default_morale = 0.05
+		manpower = 8
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 0.08
+
+		#Offensive Abilities
+		suppression = 2
+	
+		need = {
+			earth_tank_equipment = 4
+		}
+
+		plains = {
+			attack = 0.25
+		}
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+
+	armored_train = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 599
+		ai_priority = 200
+		active = no
+		special_forces = yes
+
+		type = { infantry }
+		
+		group = mobile
+		
+		categories = {
+			category_bender
+			category_firebender
+			category_all_mounted
+			category_all_tanks
+		}
+
+		
+		combat_width = 4
+		
+		#Size Definitions
+		max_organisation = 10
+		max_strength = 120
+		default_morale = 0.3
+		manpower = 40
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 0.08
+
+		#Offensive Abilities
+		suppression = 2
+	
+		need = {
+			train_equipment = 1
+		}
+
+		plains = {
+			attack = 0.25
+		}
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+
+
+
+
+	the_drill = {
+		sprite = heavy_armor
+		map_icon_category = armored
+		priority = 599
+		ai_priority = 200
+		active = no
+		special_forces = yes
+
+		type = { infantry }
+		
+		group = mobile
+		
+		categories = {
+			category_bender
+			category_firebender
+			category_all_mounted
+			category_all_tanks
+		}
+
+		
+		combat_width = 4
+		
+		#Size Definitions
+		max_organisation = 10
+		max_strength = 200
+		default_morale = 0.3
+		manpower = 80
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 0.08
+
+		#Offensive Abilities
+		suppression = 2
+	
+		need = {
+			drill_equipment = 1
+		}
+
+		plains = {
+			attack = 0.25
+		}
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+
+}

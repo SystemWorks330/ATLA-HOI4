@@ -1,0 +1,358 @@
+
+add_namespace = calendar
+add_namespace = nature
+add_namespace = watertribe_barbarians
+add_namespace = calendar_event
+
+news_event = {
+	id = calendar.1
+	hidden = yes
+		
+	is_triggered_only = yes
+	
+	immediate = {
+		swap_ideas = {
+			remove_idea = full_moon
+			add_idea = half_moon
+		}
+	}
+}
+
+### spring begin
+news_event = {
+	id = calendar.2
+	hidden = yes
+		
+	is_triggered_only = yes
+	
+	immediate = {
+		set_variable = { global.season_frame_1 = 1 }
+		set_variable = { global.season_frame_2 = 2 }
+		set_variable = { global.season_frame_3 = 3 }
+		set_variable = { global.season_frame_4 = 4 }
+
+		every_state = {
+			limit = {
+				has_state_flag = northern_hemisphere
+			}
+			if = {
+				limit = { has_dynamic_modifier = { modifier = winter_modifier } }
+				remove_dynamic_modifier = { modifier = winter_modifier }
+			}
+			add_dynamic_modifier = { modifier = spring_modifier }
+		}
+		every_state = {
+			limit = {
+				has_state_flag = southern_hemisphere
+			}
+			if = {
+				limit = { has_dynamic_modifier = { modifier = summer_modifier } }
+				remove_dynamic_modifier = { modifier = summer_modifier }
+			}
+			add_dynamic_modifier = { modifier = fall_modifier }
+		}
+	}
+	
+}
+
+### summer begin
+news_event = {
+	id = calendar.3
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_variable = { global.season_frame_1 = 2 }
+		set_variable = { global.season_frame_2 = 3 }
+		set_variable = { global.season_frame_3 = 4 }
+		set_variable = { global.season_frame_4 = 1 }
+
+		every_state = {
+			limit = {
+				has_state_flag = northern_hemisphere
+			}
+			if = {
+				limit = { has_dynamic_modifier = { modifier = spring_modifier } }
+				remove_dynamic_modifier = { modifier = spring_modifier }
+			}
+			add_dynamic_modifier = { modifier = summer_modifier }
+		}
+		every_state = {
+			limit = {
+				has_state_flag = southern_hemisphere
+			}
+			if = {
+				limit = { has_dynamic_modifier = { modifier = fall_modifier } }
+				remove_dynamic_modifier = { modifier = fall_modifier }
+			}
+			add_dynamic_modifier = { modifier = winter_modifier }
+		}
+	}
+}
+
+### fall begin
+news_event = {
+	id = calendar.4
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_variable = { global.season_frame_1 = 3 }
+		set_variable = { global.season_frame_2 = 4 }
+		set_variable = { global.season_frame_3 = 1 }
+		set_variable = { global.season_frame_4 = 2 }
+
+		every_state = {
+			limit = {
+				has_state_flag = northern_hemisphere
+			}
+			if = {
+				limit = { has_dynamic_modifier = { modifier = summer_modifier } }
+				remove_dynamic_modifier = { modifier = summer_modifier }
+			}
+			add_dynamic_modifier = { modifier = fall_modifier }
+		}
+		every_state = {
+			limit = {
+				has_state_flag = southern_hemisphere
+			}
+			if = {
+				limit = { has_dynamic_modifier = { modifier = winter_modifier } }
+				remove_dynamic_modifier = { modifier = winter_modifier }
+			}
+			add_dynamic_modifier = { modifier = spring_modifier }
+		}
+	}
+}
+
+### winter begin
+news_event = {
+	id = calendar.5
+	hidden = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		set_variable = { global.season_frame_1 = 4 }
+		set_variable = { global.season_frame_2 = 1 }
+		set_variable = { global.season_frame_3 = 2 }
+		set_variable = { global.season_frame_4 = 3 }
+
+		every_state = {
+			limit = {
+				has_state_flag = northern_hemisphere
+			}
+			if = {
+				limit = { has_dynamic_modifier = { modifier = fall_modifier } }
+				remove_dynamic_modifier = { modifier = fall_modifier }
+			}
+			add_dynamic_modifier = { modifier = winter_modifier }
+		}
+		every_state = {
+			limit = {
+				has_state_flag = southern_hemisphere
+			}
+			if = {
+				limit = { has_dynamic_modifier = { modifier = spring_modifier } }
+				remove_dynamic_modifier = { modifier = spring_modifier }
+			}
+			add_dynamic_modifier = { modifier = summer_modifier }
+		}
+	}
+}
+
+
+
+#Volcano erruption
+country_event = {
+	id = nature.1
+	title = nature.1.t
+	desc = nature.1.d
+	picture = GFX_report_event_volcano
+
+	is_triggered_only = yes
+
+	immediate = { 
+		hidden_effect = {
+			var:global.volcano_state = {
+				THIS = {
+					add_to_variable = {
+						var = stonefield
+						value = 0.2
+						tooltip = add_stonefield_tooltip
+					}
+					damage_all_building = yes
+					damage_units = {
+						state = THIS
+						org_damage = 0.5
+						str_damage = 0.25
+						ratio = yes
+						army = yes
+						navy = yes
+					}
+				}
+				random_neighbor_state = {
+					add_to_variable = {
+						var = stonefield
+						value = 0.1
+						tooltip = add_stonefield_tooltip
+					}
+					damage_all_building = yes
+				}
+				random_neighbor_state = {
+					add_to_variable = {
+						var = stonefield
+						value = 0.1
+						tooltip = add_stonefield_tooltip
+					}
+					damage_all_building = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = nature.1.a
+
+		
+	}
+}
+
+# Sozins Comet
+news_event = {
+	id = calendar_event.1
+	title = calendar_event.1.t
+	desc = calendar_event.1.d
+	picture = GFX_avatar_news_event_001
+	is_triggered_only = yes
+
+	major = yes
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = sozins_comet_first
+
+			random_country = {
+				news_event = {
+					id = hidden.1
+					days = 100
+				}
+			}
+
+			every_country = {
+				add_dynamic_modifier = {
+					modifier = great_comet
+					days = 100
+				}
+			}
+
+			if = {
+				limit = {
+					EAR = {
+						has_country_flag = genocide_active
+					}
+				}
+				EAR = {
+					country_event = { id = air_gen.2 days = 1 }
+				}
+			}
+			if = {
+				limit = {
+					FIR = {
+						has_country_flag = genocide_active
+						NOT = { has_country_flag = hired_dai_li }
+					}
+				}
+				FIR = {
+					country_event = { id = air_gen.8 days = 1 }
+				}
+			}
+
+			create_entity = { 
+				entity = great_comet_entity
+				id = great_comet
+				x = 0
+				y = 0
+				z = 200
+				province = 10785
+				rotation = 4
+				scale = 1.0
+				min_zoom = 5000.0
+			}
+	
+			scoped_sound_effect = "great_comet_sound"
+		}
+	}
+
+	option = {
+		name = calendar_event.1.a
+		trigger = { 
+			TAG = FIR
+			NOT = {
+				has_country_flag = genocide_active
+			}
+		}
+	}
+	option = {
+		name = calendar_event.1.b
+		trigger = { 
+			OR = {
+				TAG = FIR
+				TAG = EAR
+			}
+			has_country_flag = genocide_active
+		}
+	}
+	option = {
+		name = calendar_event.1.c
+		trigger = {
+			NOT = {
+				TAG = FIR
+			}
+			OR = {
+				AND = {
+					TAG = EAR
+					NOT = {
+						has_country_flag = genocide_active
+					}
+				}
+				NOT = {
+					TAG = FIR
+				}
+			}
+		}
+	}
+}
+
+
+country_event = {
+	id = watertribe_barbarians.1
+	title = watertribe_barbarians.1.t
+	desc = watertribe_barbarians.1.d
+	picture = GFX_report_event_water_birth
+
+	is_triggered_only = yes
+	trigger = {
+		tag = NWT 	#temporary 		- Polar Bear Dog
+	}
+	immediate = { 
+		
+	}
+
+	option = {
+		name = watertribe_barbarians.1.a
+		every_state = {
+			limit = {
+				has_state_flag = watertribe_barbarians_flag
+			}
+			damage_building = {
+				type = infrastructure
+				damage = 1
+			}
+			clr_state_flag = watertribe_barbarians_flag
+		}
+	}
+}
+

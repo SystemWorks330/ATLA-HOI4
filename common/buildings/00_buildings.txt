@@ -1,0 +1,892 @@
+buildings = {
+
+#	copy paste for stuff
+
+#	infrastructure
+#	farm
+#	ranch
+#	fishing_stand
+#	lumber_mill
+#	quarry
+#	crop_weaving
+#	animal_weaving
+#	mine
+#	mill
+#	steelworks
+#	arms_factory
+#	factory
+#	harbour
+#	dockyard
+#	consumer_good_factory
+#	luxury_good_factory
+#	industrial_complex
+#	carpentry
+#	masonry
+#	steel_beam_factory
+#	fuel_repository
+#	granary
+#	scout_tower
+#	anti_air_building
+#	air_base
+#	rail_way
+#	supply_node
+#	wall
+#	naval_base
+#	coastal_fortress
+
+	# show_on_map:
+	#    if provincial = yes, then show_on_map = X is amount per each province
+	#    if provincial = no, then show_on_map = X is amount per state
+
+
+	#settlement = {
+	#	show_on_map = 3
+	#	base_cost = 10000
+	#	per_level_extra_cost = 5000
+	#	icon_frame = 2
+#
+	#	#experience_gain_army = 0.001
+	#	#local_manpower = 0.05
+	#	local_non_core_manpower = 0.05
+	#	#compliance_growth = 0.01
+#
+	#	show_modifier = yes
+	#	disabled_in_dmz = yes
+	#	max_level = 10 # This is the max unlock level
+	#	value = 10
+	#}
+
+
+
+
+	###### resource buidlings
+
+
+	farm = {
+		show_on_map = 2
+		base_cost = 3700
+		icon_frame = 3
+		level_cap = {
+			state_max = 50
+		}
+		#shares_slots = yes
+		value = 9
+		infrastructure_construction_effect = yes
+
+		#local_resources_oil = 2
+		#local_resources_food_resource = 1
+		country_modifiers = {
+			modifiers = { 
+				building_upkeep_cost = 1
+				max_grain_building_k = 0.5
+	
+			}
+		}
+		state_modifiers = {
+			farmer_k = 0.60
+			local_supplies_for_controller = 0.05
+			urbanisation = -0.1
+		}
+		show_modifier = yes
+	}
+
+	ranch = {
+		show_on_map = 1
+		base_cost = 4000
+		icon_frame = 6
+		level_cap = {
+			state_max = 50
+		} 
+		#shares_slots = yes
+		value = 6
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = {
+				building_upkeep_cost = 1
+				max_grain_building_k = 0.2
+			}
+		}
+		state_modifiers = {
+			rancher_k = 0.10
+			local_supplies_for_controller = 0.025
+			urbanisation = -0.1
+		}
+		show_modifier = yes
+	}
+
+	fishing_stand = {
+		show_on_map = 1
+		base_cost = 3500
+		icon_frame = 11
+		level_cap = {
+			state_max = 50
+		}
+		#shares_slots = yes
+		value = 7
+		infrastructure_construction_effect = yes
+		only_costal = yes
+		#local_resources_food_resource = 2
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = { 		
+				building_upkeep_cost = 1
+			}
+		}
+		state_modifiers = {
+			fisher_k = 0.075
+			local_supplies_for_controller = 0.025
+		}
+	}
+
+	lumber_mill = {
+		show_on_map = 1
+		base_cost = 5200
+		#per_level_extra_cost = 540
+		icon_frame = 4
+		level_cap = {
+			state_max = 50	# This is the max unlock level
+		}
+		#shares_slots = yes
+		value = 12
+		infrastructure_construction_effect = yes
+		
+
+		#local_resources_aluminium = 10
+
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				building_upkeep_cost = 1
+			}
+		}
+		state_modifiers = {
+			lumberjack_k = 0.1
+			urbanisation = -0.1
+		}
+	}
+	
+	quarry = {
+		show_on_map = 1
+		base_cost = 5800
+		#per_level_extra_cost = 640
+		icon_frame = 5
+		##local_resources_aluminium = -1000
+		level_cap = {
+			state_max = 50	# This is the max unlock level
+		}
+		#shares_slots = yes
+		value = 16
+		infrastructure_construction_effect = yes
+		
+
+		#local_resources_stone = 6
+
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = { 
+				building_upkeep_cost = 2
+			}
+		}
+		state_modifiers = {
+			miner_k = 0.160
+			urbanisation = -0.1
+		}
+	}
+
+	mine = {
+		show_on_map = 1
+		base_cost = 9000
+		#per_level_extra_cost = 380
+		icon_frame = 7
+		level_cap = {
+			state_max = 50	# This is the max unlock level
+		} 
+		#shares_slots = yes
+		value = 8
+		infrastructure_construction_effect = yes
+		
+
+		#local_resources_iron = 9
+		#local_resources_rubber = 1
+
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = { 
+				building_upkeep_cost = 2
+			}
+		}
+		state_modifiers = {
+			miner_k = 0.180
+			urbanisation = -0.1
+		}
+	}
+
+
+
+	###### state buildings
+
+	industrial_complex = {
+		hide_if_missing_tech = yes
+		show_on_map = 6
+		base_cost = 8000
+		base_cost_conversion = 16000
+		general_production = 1
+		icon_frame = 32
+		#shares_slots = yes
+		value = 6
+
+		level_cap = {
+			state_max = 10000000
+		}
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = { 
+				civilian_capacity_modifier = 1
+				building_upkeep_cost = 2
+			}
+		}
+		state_modifiers = {
+			craftsman_k = 0.1
+		}
+	}
+
+	infrastructure = {
+		base_cost = 10000
+		per_level_extra_cost = 1000
+		icon_frame = 1
+		infrastructure = yes
+		level_cap = {
+			state_max = 10
+		}
+		value = 10
+		damage_factor = 0.1
+		allied_build = yes
+
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = { 		
+				max_fuel_building = 1.5 #k
+				#local_manpower = 0.01
+				#local_building_slots = 1
+				army_speed_factor_for_controller = 0.1
+			}
+		}
+		state_modifiers = {
+			urbanisation_factor = 0.02
+			max_planks_building_k = 0.01
+			max_bricks_building_k = 0.01
+			max_steel_beams_building_k = 0.01
+			local_trade_network = 0.02
+		}
+	}
+	rail_way = {
+		base_cost = 200
+		per_level_extra_cost = 200
+		disabled_in_dmz = yes
+		icon_frame = 16
+		level_cap = {
+			province_max = 1
+		}
+	}
+
+
+
+
+	#### province buildings
+
+
+	supply_node = {
+		show_on_map = 1
+		base_cost = 12000
+		disabled_in_dmz = yes
+		icon_frame = 15
+		centered = yes
+		level_cap = {
+			province_max = 1
+		}
+		supply_node = yes
+		damage_factor = 0.1
+		allied_build = yes
+		always_shown = yes
+	}
+
+	wall = {
+		show_on_map = 1
+		has_destroyed_mesh = yes
+		show_on_map_meshes = 2
+		icon_frame = 13
+
+		base_cost = 1500
+		per_level_extra_cost = 1500
+		disabled_in_dmz = yes
+		land_fort = 1
+		level_cap = {
+			province_max = 40
+		}
+		value = 2
+	}
+
+	naval_base = {
+		show_on_map = 1
+		show_on_map_meshes = 6
+		always_shown = yes
+		icon_frame = 12
+
+		base_cost = 1100
+		per_level_extra_cost = 600
+		spawn_point = naval_base_spawn 
+		only_costal = yes
+		is_port = yes
+		level_cap = {
+			province_max = 40
+		}
+		value = 2
+	}
+
+	coastal_fortress = {
+		show_on_map = 1
+		has_destroyed_mesh = yes
+		show_on_map_meshes = 3
+		icon_frame = 14
+
+		base_cost = 1200
+		per_level_extra_cost = 1200
+		disabled_in_dmz = yes
+		only_costal = yes
+		naval_fort = 1
+		level_cap = {
+			province_max = 40
+		}
+		value = 1
+	}
+
+
+
+	#### shared buildings
+
+	arms_factory = {
+		show_on_map = 6
+		base_cost = 22000
+		#per_level_extra_cost = -20
+		base_cost_conversion = 4000
+		military_production = 1
+		icon_frame = 21
+		level_cap = {
+			state_max = 1000000000
+			shares_slots = yes
+		}
+		value = 6
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				#military_capacity_modifier = 4
+			}
+		}
+		state_modifiers = {
+			#fuel_gain_from_states = -1.0 #per hour
+			building_upkeep_cost = 2
+			urbanisation = 0.8
+			smith_k = 0.10
+		}
+	}
+
+	factory = {
+		show_on_map = 1
+		base_cost = 60000
+		icon_frame = 22
+		value = 5
+		infrastructure_construction_effect = yes
+
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		#military_capacity_modifier = 1
+		#naval_capacity_modifier = 1
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				#fuel_gain_from_states = -5.0 #per hour
+			 }
+		}
+		state_modifiers = {
+			building_upkeep_cost = 4
+			urbanisation = 1
+			industrial_worker_k = 1.500
+		}
+	}
+
+	harbour = {
+		show_on_map = 1
+		show_on_map_meshes = 3
+		base_cost = 14000
+		only_costal = yes
+		naval_production = 1
+		icon_frame = 23
+		level_cap = {
+			state_max = 10000000
+			shares_slots = yes
+		}
+		value = 3
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				#naval_capacity_modifier = 10
+			}
+		}
+		state_modifiers = {
+			building_upkeep_cost = 2
+			urbanisation = 1.4
+			local_trade_network = 0.02
+			harbour_worker_k = 0.400
+		}
+	}
+
+	dockyard = {
+		show_on_map = 1
+		show_on_map_meshes = 3
+		base_cost = 20000
+		only_costal = yes
+		naval_production = 1
+		icon_frame = 24
+		value = 4
+		infrastructure_construction_effect = yes
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = { 
+				#naval_capacity_modifier = 20
+			}
+		}
+		state_modifiers = {
+			building_upkeep_cost = 3
+			urbanisation = 0.7
+			industrial_worker_k = 1.000
+			harbour_worker_k = 0.200
+		}
+	}
+
+	crop_weaving = {
+		show_on_map = 1
+		base_cost = 4100
+		icon_frame = 8
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		value = 4
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = { 
+				max_grain_building_k = 0.25
+				#country_resource_cost_oil = 6
+			}
+		}
+		state_modifiers = {
+			#local_resources_tungsten = 10
+			building_upkeep_cost = 1
+			urbanisation = 0.1
+			weaver_k = 0.10
+		}
+	}
+
+	animal_weaving = {
+		show_on_map = 1
+		base_cost = 4100
+		icon_frame = 9
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		value = 4
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				#country_resource_cost_chromium = 5 
+				max_animal_products_building_k = 0.25
+			}
+		}
+		state_modifiers = {
+			#local_resources_tungsten = 10
+			building_upkeep_cost = 1
+			urbanisation = 0.1
+			weaver_k = 0.10
+		}
+	}
+
+	mill = {
+		show_on_map = 6
+		base_cost = 4600
+		icon_frame = 30
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		value = 3
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = { 
+				max_grain_building_k = 0.5
+				#country_resource_cost_oil = 4
+			}
+		}
+		state_modifiers = {
+			building_upkeep_cost = 1
+			urbanisation = 0.1
+			#local_resources_food_resource = 4
+			miller_k = 0.060
+		}
+	}
+
+	steelworks = {
+		show_on_map = 1
+		base_cost = 18000
+		icon_frame = 10
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		value = 5
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				#country_resource_cost_iron = 20
+				#country_resource_cost_stone = 1
+				building_upkeep_cost = 3
+				max_iron_building_k = 0.5
+			}
+			#custom_modifier_tooltip = steelworks_tt
+		}
+		state_modifiers = {
+			#local_resources_steel = 10
+			#fuel_gain_from_states = -10.0 #per hour
+			urbanisation = 0.6
+			industrial_worker_k = 0.400
+		}
+	}
+
+	consumer_good_factory = {
+		show_on_map = 6
+		base_cost = 8000
+		icon_frame = 28
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		value = 4
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = {
+				#country_resource_cost_aluminium = 2
+				#country_resource_cost_tungsten = 2 
+				max_consumer_goods_building_k = 0.1
+			}
+		}
+		state_modifiers = {
+			building_upkeep_cost = 2
+			urbanisation = 0.8
+			shopkeeper_k = 0.120
+			#local_resources_consumer_goods_resource = 4
+		}
+		show_modifier = yes
+	}
+	luxury_good_factory = {
+		show_on_map = 6
+		base_cost = 12000
+		icon_frame = 27
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		value = 4
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = {
+				#country_resource_cost_iron = 2
+				#country_resource_cost_stone = 1
+				max_luxury_goods_building_k = 0.1				
+			}
+		}
+		state_modifiers = {
+			building_upkeep_cost = 2
+			urbanisation = 1.2
+			shopkeeper_k = 0.080		
+			#local_resources_luxury_goods_resource = 4			
+		}
+		show_modifier = yes
+	}
+
+	carpentry = {
+		show_on_map = 6
+		base_cost = 14000
+		icon_frame = 26
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		value = 6
+		infrastructure_construction_effect = yes
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				#country_resource_cost_aluminium = 2 
+				max_wood_building_k = 0.5
+			}
+		}
+		state_modifiers = {
+			urbanisation = 0.5
+			building_upkeep_cost = 2
+			craftsman_k = 0.12
+			#local_resources_planks_resource = 6
+		}
+	}
+
+	masonry = {
+		show_on_map = 6
+		base_cost = 14000
+		icon_frame = 25
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		value = 7
+		infrastructure_construction_effect = yes
+		country_modifiers = {
+			modifiers = {
+				#country_resource_cost_stone = 2	 
+				max_stone_building_k = 0.5
+			}
+		}
+		state_modifiers = {
+			building_upkeep_cost = 2
+			urbanisation = 0.7
+			craftsman_k = 0.24
+			#local_resources_bricks_resource = 6			
+		}
+		show_modifier = yes
+	}
+	steel_beam_factory = {
+		show_on_map = 6
+		base_cost = 24000
+		icon_frame = 29
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		value = 6
+		infrastructure_construction_effect = yes
+
+		#country_resource_cost_steel = 6
+		#local_resources_steel_beams_resource = 6
+
+		#fuel_gain_from_states = -2.0 #per hour
+
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = { 
+				max_steel_building_k = 1			
+			}
+		}
+		state_modifiers = {
+			industrial_worker_k = 2.400
+			building_upkeep_cost = 3
+			urbanisation = 0.9	
+		}
+	}
+
+	fuel_repository = {
+		show_on_map = 1
+		base_cost = 20000
+		icon_frame = 20
+		level_cap = {
+			state_max = 5
+			shares_slots = yes
+		}
+		value = 1
+		infrastructure_construction_effect = yes
+		fuel_silo = yes
+		
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				max_animal_products_building_k = 0.5
+				max_textile_building_k = 0.5
+				max_wood_building_k = 0.5
+				max_stone_building_k = 0.5
+				max_iron_building_k = 0.5
+				max_steel_building_k = 0.5
+				max_fuel_building = 100.0 #k
+				prosperity_building = 0.05
+			 }
+		}
+		state_modifiers = {
+			building_upkeep_cost = 2
+			urbanisation_factor = 0.03
+		}
+	}
+
+	granary = {
+		show_on_map = 1
+		show_on_map_meshes = 1
+		base_cost = 12000
+		icon_frame = 31
+		level_cap = {
+			state_max = 50
+			shares_slots = yes
+		}
+		value = 1
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = {
+				max_rations_building_k = 10 #1m
+				max_grain_building_k = 2
+			}
+		}
+		state_modifiers = {
+			building_upkeep_cost = 2
+			local_supplies_for_controller = 0.1
+			urbanisation_factor = 0.03
+		}
+	}
+
+	scout_tower = {
+		show_on_map = 1
+		base_cost = 1200
+		per_level_extra_cost = 1200
+		icon_frame = 17
+		radar = yes
+		#max_level = 50 # max: 5
+		damage_factor = 0.5
+		level_cap = {
+			state_max = 5
+			shares_slots = yes
+		}
+		value = 2
+		show_modifier = yes
+		state_modifiers = {
+			building_upkeep_cost = 1
+		}
+	}
+
+	anti_air_building = {
+		show_on_map = 3
+		base_cost = 2000
+		icon_frame = 18
+		anti_air = yes
+		disabled_in_dmz = yes
+		air_defence = 1
+		damage_factor = 0.1
+		value = 1
+		level_cap = {
+			state_max = 5
+			shares_slots = yes
+		}
+		show_modifier = yes
+		state_modifiers = {
+			building_upkeep_cost = 1
+		}
+	}
+
+	air_base = {
+		show_on_map = 1
+		base_cost = 2400
+		icon_frame = 19
+		air_base = yes
+		value = 1
+		damage_factor = 0.5
+		show_modifier = yes
+		country_modifiers = {
+			modifiers = { 
+				max_grain_building_k = 0.1
+			}
+		}
+		state_modifiers = {
+			building_upkeep_cost = 1
+		}
+		level_cap = {
+			state_max = 20
+			shares_slots = yes
+		}
+	}
+
+	#trainingscamp = {
+	#	show_on_map = 1
+	#	base_cost = 12000
+	#	icon_frame = 33
+	#	max_level = 5
+	#	value = 1
+	#	shares_slots = yes
+#
+	#	show_modifier = yes
+	#	building_upkeep_cost = 3
+	#	mobilization_speed = 0.1
+	#	#experience_gain_army = 0.01
+	#	local_non_core_manpower = 0.05
+	#}
+#
+	#garrison_building = {
+	#	show_on_map = 1
+	#	base_cost = 8000
+	#	per_level_extra_cost = 4000
+	#	icon_frame = 34
+	#	max_level = 5
+	#	value = 1
+	#	shares_slots = yes
+#
+	#	show_modifier = yes
+	#	building_upkeep_cost = 3
+	#	resistance_target = -0.05
+	#	resistance_damage_to_garrison = -0.1
+	#	resistance_decay = 0.1
+	#}
+
+}
+
+spawn_points = {
+
+	nuclear_reactor_spawn = {
+		type = state
+		max = 1
+	}
+
+	special_project_facility_spawn = {
+		type = province
+		max = 1
+	}
+
+	rocket_site_spawn = {
+		type = state
+		max = 1
+		hide_if_missing_tech = yes
+	}
+
+	naval_base_spawn = {
+		type = province
+		max = 1
+		only_costal = yes
+	}
+
+	dam_spawn = {
+		type = province
+		max = 1
+		disable_auto_nudging = yes
+	}
+
+	locks_spawn = {
+		type = province
+		max = 1
+		disable_auto_nudging = yes
+	}
+}

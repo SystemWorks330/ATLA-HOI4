@@ -1,0 +1,186 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				set_variable = { war_exhaustion_percentage = war_exhaustion_variable }
+				set_variable = { war_exhaustion_check = 0 }
+				divide_variable = { war_exhaustion_percentage = 100 }
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+
+			set_variable = { war_weariness_peanalty = mtth:war_weariness_peanalty }
+			set_variable = { war_weariness_peanalty_half = mtth:war_weariness_peanalty }
+			divide_variable = { war_weariness_peanalty_half = 2 }
+
+			# factor
+			set_variable = { war_exhaustion_factor_calc = 1 }
+			add_to_variable = { war_exhaustion_factor_calc = modifier@war_weariness_factor }
+			clamp_variable = { 
+				var = war_exhaustion_factor_calc 
+				min = 0 
+				#max = 0
+			}
+
+			# negative factor
+			set_variable = { war_exhaustion_negative_factor_calc = 1 }
+			subtract_from_variable = { war_exhaustion_negative_factor_calc = modifier@war_weariness_factor }
+			clamp_variable = { 
+				var = war_exhaustion_negative_factor_calc 
+				min = 0 
+				#max = 0
+			}
+			
+			set_variable = { war_exhaustion_variable = war_exhaustion_variable }
+			clamp_variable = { var = war_exhaustion_variable min = 0 max = 100 }
+
+			set_variable = { war_exhaustion_percentage = war_exhaustion_variable }
+			divide_variable = { war_exhaustion_percentage = 100 }
+
+			if = {
+				limit = {
+					check_variable = { war_exhaustion_variable > 0 }
+					NOT = {
+						has_dynamic_modifier = { modifier = war_weariness_dynamic_modifier }
+					}
+				}
+				add_dynamic_modifier = { modifier = war_weariness_dynamic_modifier }
+			}
+
+		}
+	}
+
+	on_weekly = {
+		effect = {
+
+			#### weekly addition
+
+			set_variable = { war_exhaustion_weekly = 0 }
+			add_to_variable = { war_exhaustion_weekly = modifier@weekly_war_weariness }
+
+			if = {
+				limit = {
+					check_variable = { war_exhaustion_weekly > 0 }
+				}
+				multiply_variable = { war_exhaustion_weekly = war_exhaustion_factor_calc }
+			}
+			if = {
+				limit = {
+					check_variable = { war_exhaustion_weekly < 0 }
+				}
+				multiply_variable = { war_exhaustion_weekly = war_exhaustion_negative_factor_calc }
+			}
+
+			add_to_variable = { weekly_accumulated_exhaustion = war_exhaustion_weekly }
+			clamp_variable = { var = weekly_accumulated_exhaustion min = 0 max = 100 }
+
+			################## end weekly addition
+
+
+			################## casualties
+
+			set_variable = { weariness_casualties = casualties }
+			subtract_from_variable = { weariness_casualties = already_accounted_casualties }
+			add_to_variable = { already_accounted_casualties = weariness_casualties }
+
+			clamp_variable = { var = already_accounted_casualties min = 0 }
+
+			divide_variable = { weariness_casualties = 500 }
+
+			add_to_variable = { weariness_casualties = modifier@weekly_casualty_war_weariness }
+			if = {
+				limit = {
+					check_variable = { weariness_casualties > 0 }
+				}
+				multiply_variable = { weariness_casualties = war_exhaustion_factor_calc }
+			}
+			if = {
+				limit = {
+					check_variable = { weariness_casualties < 0 }
+				}
+				multiply_variable = { weariness_casualties = war_exhaustion_negative_factor_calc }
+			}
+
+			add_to_variable = { casualty_accumulated_exhaustion = weariness_casualties }
+			clamp_variable = { var = casualty_accumulated_exhaustion min = 0 max = 100 }
+
+			################## end casualties
+
+
+			#### occupation ###
+
+			set_variable = { occupation_war_exhaustion = 0 }
+			add_to_variable = { occupation_war_exhaustion = modifier@weekly_occupation_war_weariness }
+
+			set_temp_variable = { occupied_states_variable = num_of_controlled_states }
+			subtract_from_temp_variable = { occupied_states_variable = num_core_states }
+			multiply_temp_variable = { 
+				occupied_states_variable = 0.005 
+			}	### severeness modifier
+
+			add_to_variable = { occupation_war_exhaustion = occupied_states_variable }
+
+			if = {
+				limit = {
+					check_variable = { occupation_war_exhaustion > 0 }
+				}
+				multiply_variable = { occupation_war_exhaustion = war_exhaustion_factor_calc }
+			}
+			if = {
+				limit = {
+					check_variable = { occupation_war_exhaustion < 0 }
+				}
+				multiply_variable = { occupation_war_exhaustion = war_exhaustion_negative_factor_calc }
+			}
+
+			add_to_variable = { occupation_accumulated_exhaustion = occupation_war_exhaustion }
+			clamp_variable = { var = occupation_accumulated_exhaustion min = 0 max = 100 }
+
+			################## end occupation
+
+			
+
+			################## add up
+
+			set_variable = { war_exhaustion_variable = 0 }
+
+			add_to_variable = { war_exhaustion_variable = weekly_accumulated_exhaustion }
+			add_to_variable = { war_exhaustion_variable = casualty_accumulated_exhaustion }
+			add_to_variable = { war_exhaustion_variable = occupation_accumulated_exhaustion }
+
+			set_variable = { war_exhaustion_check = war_exhaustion_weekly }
+			add_to_variable = { war_exhaustion_check = weariness_casualties }
+			add_to_variable = { war_exhaustion_check = occupation_war_exhaustion }
+			if = {
+				limit = {
+					check_variable = { war_exhaustion_variable = 0 }
+				}
+				clamp_variable = {
+					var = war_exhaustion_check
+					min = 0
+				}
+			}
+			if = {
+				limit = {
+					check_variable = { war_exhaustion_variable = 100 }
+				}
+				clamp_variable = {
+					var = war_exhaustion_check
+					max = 0
+				}
+			}
+
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			WAR_WAERINESS_add_point_to_line = yes
+		}
+	}
+
+
+}

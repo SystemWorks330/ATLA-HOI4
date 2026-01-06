@@ -1,0 +1,110 @@
+sub_units = {
+	watertribe_canoe = {
+		sprite = watertribe_canoe
+		map_icon_category = ship
+		priority = 1
+		active = yes
+		type = { screen_ship }
+		need = { watertribe_canoe_hull = 1 }
+		
+		max_organisation = 40
+
+		supply_consumption = 0
+		
+		critical_parts = { destroyed_sails on_fire rudder_jammed }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	
+	watertribe_raft = {
+		sprite = watertribe_raft
+		map_icon_category = ship
+		priority = 4
+		active = yes
+		type = { screen_ship }
+		need = { watertribe_raft_hull = 1 }
+		
+		max_organisation = 30
+
+		supply_consumption = 0
+		
+		critical_parts = { destroyed_sails on_fire rudder_jammed }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+	
+	watertribe_cutter_ship = {
+		sprite = watertribe_cutter_ship
+		map_icon_category = ship
+		priority = 6
+		active = yes
+		type = { screen_ship }
+		need = { watertribe_cutter_hull = 1 }
+		
+		max_organisation = 20
+
+		supply_consumption = 0
+		
+		critical_parts = { destroyed_sails on_fire rudder_jammed }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+	watertribe_cutter_flagship = {
+		sprite = watertribe_cutter_flagship
+		map_icon_category = ship
+		priority = 8
+		active = yes
+		type = { capital_ship }
+		need = { watertribe_cutter_hull = 1 }
+		
+		max_organisation = 20
+
+		
+		supply_consumption = 0
+		critical_parts = { destroyed_sails on_fire rudder_jammed }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+	watertribe_warship = {
+		sprite = warship
+		map_icon_category = ship
+		priority = 12
+		active = yes
+		type = { capital_ship }
+		need = { watertribe_warship_hull = 1 }
+		
+		max_organisation = 10
+
+		supply_consumption = 0
+		
+		critical_parts = { destroyed_sails on_fire rudder_jammed }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+	watertribe_submarine = {
+		sprite = watertribe_submarine
+		map_icon_category = ship
+		priority = 100
+		active = yes
+		type = { submarine }
+		need = { watertribe_submarine = 1 }
+		
+		max_organisation = 30
+
+		supply_consumption = 0
+		
+		critical_parts = { burning_engine on_fire rudder_jammed }
+		critical_part_damage_chance_mult = 1
+		
+		hit_profile_mult = 1.0
+	}
+
+}

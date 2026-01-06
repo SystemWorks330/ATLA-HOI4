@@ -1,0 +1,566 @@
+# Extra modifiers can be defined here. Although the game itself won't use those, 
+# you can access those modifiers using modifier@modifier_token in state & country scope 
+# or leader_modifier@modifier_token/unit_modifier@modifier_token in unit leader scope
+# modifier_token will be used for tooltip localization
+
+#modifier_token = {
+#
+#	# the tooltips will be colored accordingly depending if value is positive or not
+#	# one of "good neutral bad". default is bad
+#	color_type = bad 
+#	
+#	# type of values in tooltip. 
+#	# one of "number percentage percentage_in_hundred yes_no". default is number.
+#	value_type = number
+#	
+#	# number of precision for tooltips
+#	precision = 2
+#	
+#	# post fix for values in tooltip
+#	# one of "none days hours daily". default is none
+#	postfix = none
+#	
+#	# cateogies can be defined if wanted. some tooltips only display certain categories
+#	# multiple cateogies can be defined for a single modifier@modifier_token
+#	# categories:
+#	# none all naval air unit_leader country state army peace politics ai defensive aggressive 
+#	# war_production military_advancements military_equipment autonomy government_in_exile intelligence_agency
+#	# default is all, which includes every category
+#	category = army
+#	category = air
+#	category = country
+#}
+
+
+civilian_capacity_modifier = {				#### does nothing
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+}
+
+military_capacity_modifier = {				#### does nothing
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+}
+naval_capacity_modifier = {					#### does nothing
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+}
+
+farmer_k = {								#### base farmers employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+miller_k = {								#### base millers employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+fisher_k = {								#### base fishers employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+rancher_k = {								#### base ranchers employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+lumberjack_k = {							#### base lumber jacks employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+miner_k = {									#### base miners employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+weaver_k = {								#### base weavers employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+smith_k = {									#### base smiths employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+smith_fake = {								#### base smiths but with no effect
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+harbour_worker_k = {						#### base harbour workers employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+shopkeeper_k = {							#### base shopkeepers employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+craftsman_k = {								#### base craftsman employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+craftsman_fake = {							#### base craftsmen with no effect
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+industrial_worker_k = {						#### base industrial workers employed in a building
+	color_type = neutral
+	value_type = number
+	precision = 2
+	postfix = none
+	category = country
+}
+
+building_upkeep_cost = {					#### upkeep resource cost of a building
+	color_type = bad
+	value_type = number
+	precision = 0
+	postfix = none
+}
+
+max_rations_building_k = {					#### ration storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+
+max_grain_building_k = {					#### grain storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_animal_products_building_k = {					#### animal products storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_textile_building_k = {					#### textile storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_wood_building_k = {					#### wood storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_stone_building_k = {					#### stone storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_iron_building_k = {					#### iron storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_steel_building_k = {					#### steel storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+
+max_consumer_goods_building_k = {					#### consumer goods storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_luxury_goods_building_k = {					#### luxury goods storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_planks_building_k = {					#### planks storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_bricks_building_k = {					#### bricks storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+max_steel_beams_building_k = {					#### steel beams storage
+	color_type = good
+	value_type = number
+	precision = 2
+	postfix = none
+}
+
+
+
+farm_output = {								#### base grain output of farms
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+farm_output_2 = {							#### base food output of farms
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+fishing_stand_output = {					#### base food output of fishing stands
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+fishing_stand_output_2 = {					#### base animal products output of fishing stands
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+ranch_output = {							#### base animal products output of ranches
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+ranch_output_2 = {							#### base food output of ranches
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+lumber_mill_output = {						#### base wood output of lumber mills
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+quarry_output = {							#### base mineral output of quarries
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+quarry_output_2 = {							#### base metal output of quarries
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+quarry_output_3 = {							#### base fossile fuel output of quarries
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+mine_output1 = {							#### base metal output of mines
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+mine_output2 = {							#### base fossile fuels output of miens
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+crop_weaving_output = {						#### base textile output of crop weavings
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+crop_weaving_output_2 = {					#### base consumer good output of crop weavings
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+crop_weaving_output_3 = {					#### base luxury good output of crop weavings
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+animal_weaving_output = {					#### base textile output of animal weavings
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+animal_weaving_output_2 = {					#### base consumer good output of animal weavings
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+animal_weaving_output_3 = {					#### base luxury good output of animal weavings
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+mill_output = {								#### base food output of mills
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+steelworks_output = {						#### base steel output of steelworks
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+smithy_output = {							#### base military capacity output of smithies
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+smithy_output_2 = {							#### base steel output of smithies
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+factory_output = {							#### base military capacity output of factories
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+consumer_good_factory_output = {			#### base consumer good output of shops
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+luxury_good_factory_output = {				#### base luxury good output of luxury stores
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+carpentry_output = {						#### base plank output of carpentries
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+carpentry_output_2 = {						#### base consumer good output of carpentries
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+carpentry_output_3 = {						#### base luxury good output of carpentries
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+masonry_output = {							#### base brick output of masonries
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+steel_beam_factory_output = {				#### base steel beam output of steel beam factories
+	color_type = good
+	value_type = number
+	precision = 1
+	postfix = none
+}
+
+
+
+smithy_fuel = {								#### smithy fuel consumption 
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+steelworks_fuel = {							#### steelwork fuel consumption
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+factory_fuel = {							#### factory fuel consumption
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+dockyard_fuel = {							#### dockyard fuel consumption
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+steel_beam_factory_fuel = {					#### steel beam factory fuel consumption
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+crop_weaving_need = {						#### grain need of crop weaving
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+mill_need = {								#### grain need of mills
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+animal_weaving_need = {						#### animal products need of animal weavings
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+steelworks_need1 = {						#### metals need of steelworks
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+steelworks_need2 = {						#### minerals need of steelworks
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+consumer_good_factory_need1 = {				#### wood need of shops
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+consumer_good_factory_need2 = {				#### textile need of shops
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+luxury_good_factory_need1 = {				#### minerals need of luxury shops
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+luxury_good_factory_need2 = {				#### metals need of luxury shops
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+carpentry_need = {							#### wood need of carpentries
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+masonry_need = {							#### minerals need of masonries
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+steel_beam_factory_need = {					#### steel need of steel beam factories
+	color_type = bad
+	value_type = number
+	precision = 1
+	postfix = none
+}
+
+
+farm_level_max = {							#### maximal farm building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+ranch_level_max = {							#### maximal ranch building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+lumber_mill_level_max = {					#### maximal lumber mill  building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+quarry_level_max = {						#### maximal quarry building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+mine_level_max = {							#### maximal mine building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+fishing_stand_level_max = {					#### maximal fishing stand building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}

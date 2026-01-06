@@ -1,0 +1,881 @@
+
+
+#############################################################
+
+###################### generic for all ######################
+
+#############################################################
+
+
+every_possible_country = {
+	limit = {
+		is_dynamic_country = no
+	}
+
+
+	generate_character = {
+		token_base = minister_of_personnel_1
+		advisor = {
+			slot = minister_of_personnel
+			traits = { gifted_speaker }
+			cost = 130
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_1"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_personnel_2
+		advisor = {
+			slot = minister_of_personnel
+			traits = { close_to_the_people_1 }
+			cost = 140
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_2"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_personnel_3
+		advisor = {
+			slot = minister_of_personnel
+			traits = { military_organiser }
+			cost = 160
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_3"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_personnel_4
+		advisor = {
+			slot = minister_of_personnel
+			traits = { administrator }
+			cost = 187
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_4"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_personnel_5
+		advisor = {
+			slot = minister_of_personnel
+			traits = { lawgiver }
+			cost = 168
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_5"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_personnel_6
+		advisor = {
+			slot = minister_of_personnel
+			traits = { prime_minister }
+			cost = 192
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_6"
+			}
+		}
+	}
+
+
+	generate_character = {
+		token_base = minister_of_finance_1
+		advisor = {
+			slot = minister_of_finance
+			traits = { fiscal_conservative }
+			cost = 196
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_1"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_finance_2
+		advisor = {
+			slot = minister_of_finance
+			traits = { regulation_proponent }
+			cost = 182
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_2"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_finance_3
+		advisor = {
+			slot = minister_of_finance
+			traits = { architect }
+			cost = 100
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_3"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_finance_4
+		advisor = {
+			slot = minister_of_finance
+			traits = { local_investor }
+			cost = 146
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_4"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_finance_5
+		advisor = {
+			slot = minister_of_finance
+			traits = { experienced_merchant }
+			cost = 137
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_5"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_finance_6
+		advisor = {
+			slot = minister_of_finance
+			traits = { money_wizard }
+			cost = 142
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_6"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_finance_7
+		advisor = {
+			slot = minister_of_finance
+			traits = { experienced_architect }
+			cost = 167
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_7"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_finance_8
+		advisor = {
+			slot = minister_of_finance
+			traits = { national_investor }
+			cost = 148
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_8"
+			}
+		}
+	}
+
+
+	generate_character = {
+		token_base = minister_of_culture_1
+		advisor = {
+			slot = minister_of_culture
+			traits = { chauvinist }
+			cost = 123
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_1"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_culture_2
+		advisor = {
+			slot = minister_of_culture
+			traits = { royalist }
+			cost = 131
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_2"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_culture_3
+		advisor = {
+			slot = minister_of_culture
+			traits = { naturalist }
+			cost = 146
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_3"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_culture_4
+		advisor = {
+			slot = minister_of_culture
+			traits = { pacifist }
+			cost = 164
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_4"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_culture_5
+		advisor = {
+			slot = minister_of_culture
+			traits = { multiculturalist }
+			cost = 178
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_5"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_culture_6
+		advisor = {
+			slot = minister_of_culture
+			traits = { personality_cultist }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_6"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_culture_7
+		advisor = {
+			slot = minister_of_culture
+			traits = { authoritarian }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_7"
+			}
+		}
+	}
+
+
+	generate_character = {
+		token_base = minister_of_justice_1
+		advisor = {
+			slot = minister_of_justice
+			traits = { neutral_judge }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_1"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_justice_2
+		advisor = {
+			slot = minister_of_justice
+			traits = { corrupt_judge }
+			cost = 126
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_2"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_justice_3
+		advisor = {
+			slot = minister_of_justice
+			traits = { tough_on_crime }
+			cost = 115
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_3"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_justice_4
+		advisor = {
+			slot = minister_of_justice
+			traits = { non_bender_activist }
+			cost = 142
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_4"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_justice_5
+		advisor = {
+			slot = minister_of_justice
+			traits = { feminist }
+			cost = 152
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_5"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_justice_6
+		advisor = {
+			slot = minister_of_justice
+			traits = { colonial_activist }
+			cost = 170
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_6"
+			}
+		}
+	}
+
+
+	generate_character = {
+		token_base = minister_of_works_1
+		advisor = {
+			slot = minister_of_works
+			traits = { cruel_supervisor }
+			cost = 142
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_works_1"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_works_2
+		advisor = {
+			slot = minister_of_works
+			traits = { motivated_pioneer }
+			cost = 163
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_works_2"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_works_3
+		advisor = {
+			slot = minister_of_works
+			traits = { workers_syndicat }
+			cost = 168
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_works_3"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_works_4
+		advisor = {
+			slot = minister_of_works
+			traits = { low_standards }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_works_4"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_works_5
+		advisor = {
+			slot = minister_of_works
+			traits = { unemployment_benefits }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_works_5"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_works_6
+		advisor = {
+			slot = minister_of_works
+			traits = { outsourcer }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_works_6"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_works_7
+		advisor = {
+			slot = minister_of_works
+			traits = { agrarian_reformer }
+			cost = 100
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_works_7"
+			}
+		}
+	}
+
+
+	generate_character = {
+		token_base = minister_of_rites_1
+		advisor = {
+			slot = minister_of_rites
+			traits = { warrior_culture }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_1"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_rites_2
+		advisor = {
+			slot = minister_of_rites
+			traits = { materialist }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_2"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_rites_3
+		advisor = {
+			slot = minister_of_rites
+			traits = { orthodox }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_3"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_rites_4
+		advisor = {
+			slot = minister_of_rites
+			traits = { xenophobe }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_4"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_rites_5
+		advisor = {
+			slot = minister_of_rites
+			traits = { jingoist }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_5"
+			}
+		}
+	}
+	generate_character = {
+		token_base = minister_of_rites_6
+		advisor = {
+			slot = minister_of_rites
+			traits = { fanatic }
+			cost = 200
+			visible = {
+				NOT = { has_character_flag = advisor_retired }
+			}
+			
+		}
+		corps_commander = {
+			traits = { not_a_real_officer }
+			visible = { always = no }
+		}
+		portraits = { 
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_6"
+			}
+		}
+	}
+}
+
+
+
+
+######################################################################
+
+###################  generics for earth only  ########################
+
+######################################################################
+
+every_possible_country = {
+	limit = {
+		is_earth_kingdom = yes
+	}
+}

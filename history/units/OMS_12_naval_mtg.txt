@@ -1,0 +1,42 @@
+units = {
+	fleet = {
+		name = "Omashu Navy"			
+		naval_base = 8591  #capital harbour
+		task_force = {
+			name = "Main Fleet"
+			location = 8591  #capital harbour
+			ship = { name = "Oms" definition = junk start_experience_factor = 0.1 equipment = { junk_hull_1 = { amount = 1 owner = OMS version_name = "Combat Class" } } }
+			ship = { name = "Peter Griffin" definition = junk start_experience_factor = 0.1 equipment = { junk_hull_1 = { amount = 1 owner = OMS version_name = "Combat Class" } } }
+			ship = { name = "Lois" definition = junk start_experience_factor = 0.1 equipment = { junk_hull_1 = { amount = 1 owner = OMS version_name = "Combat Class" } } }
+			ship = { name = "Stewie" definition = junk start_experience_factor = 0.1 equipment = { junk_hull_1 = { amount = 1 owner = OMS version_name = "Combat Class" } } }
+			ship = { name = "Kangfao" definition = barque start_experience_factor = 0.1 equipment = { barque_hull_1 = { amount = 1 owner = OMS version_name = "Trading Class" } } }
+			ship = { name = "Crane" definition = barque start_experience_factor = 0.1 equipment = { barque_hull_1 = { amount = 1 owner = OMS version_name = "Trading Class" } } }
+			ship = { name = "Monkey" definition = barque start_experience_factor = 0.1 equipment = { barque_hull_1 = { amount = 1 owner = OMS version_name = "Trading Class" } } }
+			ship = { name = "Snake" definition = barque start_experience_factor = 0.1 equipment = { barque_hull_1 = { amount = 1 owner = OMS version_name = "Trading Class" } } }
+			ship = { name = "Lion" definition = barque start_experience_factor = 0.1 equipment = { barque_hull_1 = { amount = 1 owner = OMS version_name = "Trading Class" } } }
+			ship = { name = "Shi Xue" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+			ship = { name = "Zeng Wen" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+			ship = { name = "Chang Guiying" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+			ship = { name = "Xia Huang" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+		}
+		task_force = {
+			name = "Shinobi Fleet"
+			location = 8591  #capital harbour
+			ship = { name = "Naruto" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+			ship = { name = "Shikamaru" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+			ship = { name = "Kakashi" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+			ship = { name = "Gara" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+			ship = { name = "Killer Bee" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+		}
+		task_force = {
+			name = "Screen Fleet 2"
+			location = 8591  #capital harbour
+			ship = { name = "Xuan Xinyi" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+			ship = { name = "Zhang He" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+			ship = { name = "Zi Ruogang" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+			ship = { name = "Ye Li" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = OMS version_name = "Raider Class" } } }
+		}
+		
+	}
+
+}

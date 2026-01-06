@@ -1,0 +1,136 @@
+
+generic_debug_view = {
+
+	visible = {
+		is_debug = yes
+
+		NOT = { has_country_flag = hide_generic_decisions }
+
+	}
+	priority = 100000
+
+}
+
+refugees_category = {
+	icon = GFX_decision_category_refugees
+
+	picture = GFX_decision_cat_refugees
+
+	visible = {
+		has_country_flag = refugee_crisis
+	}
+}
+
+reoccupy_category = {
+	icon = generic_propaganda
+
+	picture = GFX_decision_cat_reoccupation
+
+	visible = {
+		always = no
+
+
+		NOT = {
+			has_idea = no_ruler
+		}
+		any_state = {
+			has_dynamic_modifier = {
+				modifier = genocide_state
+			}
+		}
+		NOT = { has_country_flag = hide_generic_decisions }
+	}
+}
+
+war_measures_category = {
+	icon = generic_propaganda
+
+	picture = GFX_decision_cat_war_weariness
+
+	visible = {
+		has_war = yes
+		NOT = { has_country_flag = hide_generic_decisions }
+	}
+}
+
+recruitment_decision_category = {
+	icon = GFX_decision_category_recruiting
+
+	picture = GFX_decision_cat_recruitment
+
+	visible = {
+		check_variable = { modifier@women_recruitment_modifier > 0 }
+		NOT = { has_country_flag = hide_generic_decisions }
+	}
+
+	priority = {
+		base = -10
+		modifier = {
+			add = 11
+			has_manpower < 2000
+		}
+		modifier = {
+			factor = 10
+			has_war = yes
+		}
+	}
+
+}
+
+taxation_category = {
+	icon = GFX_decision_category_taxation
+
+	picture = GFX_decision_cat_taxation
+
+	visible = {
+		NOT = {
+			has_idea = no_ruler
+		}
+		OR = {
+			has_idea = family_support_1
+			has_idea = family_support_2
+			has_idea = family_support_3
+			has_idea = family_support_4
+			has_idea = family_support_5
+		}
+		NOT = { has_country_flag = hide_generic_decisions }
+	}
+
+	priority = {
+		base = 15
+	}
+
+}
+
+political_category = {
+
+	scripted_gui = politics_decisions_ui
+
+	visible = {
+		NOT = { has_country_flag = hide_generic_decisions }
+
+		always = no
+	}
+	visible_when_empty = yes
+	priority = 25
+
+}
+
+generic_research_slot_category = {
+	icon = GFX_decision_category_research
+
+	picture = GFX_decision_cat_research
+
+	visible = {
+		NOT = {
+			has_idea = no_ruler
+		}
+		amount_research_slots < 5
+		NOT = { has_country_flag = hide_generic_decisions }
+	}
+
+	priority = {
+		base = 10
+	}
+
+}

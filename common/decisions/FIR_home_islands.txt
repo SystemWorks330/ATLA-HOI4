@@ -1,0 +1,266 @@
+
+
+FIR_civil_decision_category = {
+
+	cultural_change = {
+
+		icon = research_boost
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			hidden_trigger = {
+				has_start_date < 13.1.1
+			}
+			NOT = {
+				has_country_flag = fire_industrialisation
+			}
+		}
+		available = {
+			hidden_trigger = {
+				has_start_date < 13.1.1
+			}
+			NOT = {
+				has_country_flag = fire_industrialisation
+			}
+		}
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "mysterious" }
+
+			add_tech_bonus = {
+				name = FIR_cultural_change
+				bonus = 1
+				uses = 10
+				category = society_reforms
+			}
+		}
+
+		modifier = {
+			earth_culture_drift = 0.02
+			air_culture_drift = 0.02
+			water_culture_drift = 0.02
+			pluralist_culture_drift = 0.02
+
+			stability_weekly = -0.005
+		}
+
+		remove_effect = {
+			add_ideas = FIR_cultural_change
+		}
+
+		custom_cost_trigger = {
+			has_stability > 0.7
+		}
+		custom_cost_text = stability_70
+		fire_only_once = yes
+		days_remove = 700
+
+		ai_will_do = {
+			base = 0
+
+			modifier = {
+				add = 100
+				check_variable = { modifier@stability_factor > 1.20 }  ### more than 120% extra stability
+			}
+		}
+	}
+	
+	increase_war_support_with_prosperity = {
+
+		icon = fir_propaganda
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_idea = national_prosperity
+			has_start_date < 13.1.1
+		}
+		available = {
+			OR = {
+				has_war = yes
+				has_idea = ruthless_expansionism
+			}
+			has_idea = national_prosperity
+		}
+
+		days_remove = 30
+
+		modifier = {
+			war_support_weekly = 0.007
+		}
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "wardrums" }
+		}
+
+		remove_effect = {
+			add_ideas = FIR_propaganda_1
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+	
+	}
+
+	increase_war_support_without_prosperity = {
+
+		icon = fir_propaganda
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_start_date < 13.1.1
+			NOT = {
+				has_idea = national_prosperity
+				has_idea = FIR_propaganda_1
+				has_idea = FIR_propaganda_2
+			}
+		}
+		available = {
+			has_war = yes
+		}
+
+		days_remove = 30
+
+		modifier = {
+			war_support_weekly = 0.007
+		}
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "wardrums" }
+		}
+
+		remove_effect = {
+			add_ideas = FIR_propaganda_2
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			factor = 100
+		}
+	
+	}
+
+	the_great_gates = {
+
+		icon = mission_gates
+
+		allowed = {
+			tag = FIR
+		}
+		available = {
+			fire_culture > 0.5
+			has_country_leader_with_trait = personality_cult
+		}
+		visible = {
+			fire_culture > 0.4
+			NOT = {
+				has_global_flag = great_gates_constructed
+			}
+		}
+
+		days_remove = 168
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
+		}
+		custom_cost_text = expenses_50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 50 }
+		}
+
+		remove_effect = {
+			set_global_flag = great_gates_constructed
+			390 = {
+				add_building_construction = {
+					type = coastal_fortress
+					level = 4
+					instant_build = yes
+					province = 8118
+				}
+				add_building_construction = {
+					type = coastal_fortress
+					level = 4
+					instant_build = yes
+					province = 10519
+				}
+			}
+			428 = {
+				add_building_construction = {
+					type = coastal_fortress
+					level = 4
+					instant_build = yes
+					province = 8229
+				}
+			}
+			418 = {
+				add_building_construction = {
+					type = coastal_fortress
+					level = 4
+					instant_build = yes
+					province = 10519
+				}
+			}
+		}
+
+		cost = 200
+		fire_only_once = yes
+	
+	}
+
+
+	fire_academy = {
+
+		icon = research_slot
+
+		allowed = {
+			tag = FIR
+		}
+
+		visible = {
+			
+		}
+
+		available = {
+			
+		}
+
+		fire_only_once = yes
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 1000 }
+		}
+		custom_cost_text = expenses_1000
+
+		days_remove = 90
+
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 1000 }
+
+			417 = {
+				add_dynamic_modifier = { modifier = fire_academy }
+			}
+		}
+
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+
+}

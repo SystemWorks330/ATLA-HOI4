@@ -1,0 +1,751 @@
+technologies = {
+
+	###  # ###  ###
+	#  # # #  # #  #
+	###  # ###  ###
+	#  # # #  # #  #
+	###  # #  # ###
+
+	air_birb_tech_1 = {
+		dependencies = {
+			domestication = 1
+			writing = 1
+		}
+
+		enable_equipments = {
+			small_birb_equipment_1
+		}
+
+		path = {
+			leads_to_tech = air_birb_training
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 1
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	air_birb_training = {
+		dependencies = {
+			wind_manipulation = 1
+		}
+
+		category_birb = {
+			air_agility = 0.1
+		}
+
+		path = {
+			leads_to_tech = air_birb_message
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = air_birb_intercept
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 1
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	air_birb_intercept = {
+
+		category_birb = {
+			air_attack = 0.5
+		}
+
+		path = {
+			leads_to_tech = air_birb_range
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 1
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = -1 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	air_birb_message = {
+
+		category_birb = {
+			air_range = 0.2
+		}
+
+		path = {
+			leads_to_tech = air_birb_range
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 1
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 1 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	air_birb_range = {
+		dependencies = {
+			natural_philosophy = 1
+		}
+
+		category_birb = {
+			air_range = 0.2
+			maximum_speed = 0.1
+		}
+
+		path = {
+			leads_to_tech = air_birb_seeb
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 1
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	air_birb_seeb = {
+		dependencies = {
+			alchemy = 1
+		}
+
+		category_birb = {
+			air_defence = 1
+		}
+
+		research_cost = 2
+		#start_year = 1
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+	bender_glider = {
+		dependencies = {
+			wind_manipulation = 1
+		}
+
+		enable_equipments = {
+			bender_glider_equipment_1
+		}
+
+		path = {
+			leads_to_tech = glider_a_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	glider_a_1 = {
+
+		category_glider = {
+			air_agility = 0.1
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = bender_glider_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = glider_b_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = glider_c_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 20
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	glider_b_1 = {
+
+		category_glider = {
+			air_attack = 0.1
+		}
+
+		research_cost = 2
+		#start_year = 30
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = -2 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	glider_c_1 = {
+
+		category_glider = {
+			air_defence = 0.2
+		}
+
+		research_cost = 2
+		#start_year = 30
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bender_glider_2 = {
+		dependencies = {
+			geometry = 1
+		}
+
+		enable_equipments = {
+			bender_glider_equipment_2
+		}
+
+		path = {
+			leads_to_tech = glider_a_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 40
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	glider_a_2 = {
+
+		category_glider = {
+			air_agility = 0.1
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = bender_glider_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = glider_b_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = glider_c_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 50
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	glider_b_2 = {
+
+		category_glider = {
+			air_attack = 0.1
+		}
+
+		research_cost = 2
+		#start_year = 60
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = -2 y = 10 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	glider_c_2 = {
+
+		category_glider = {
+			air_defence = 0.2
+		}
+
+		research_cost = 2
+		#start_year = 60
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bender_glider_3 = {
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipments = {
+			bender_glider_equipment_3
+		}
+
+		path = {
+			leads_to_tech = glider_a_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 70
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	glider_a_3 = {
+
+		category_glider = {
+			air_agility = 0.1
+			maximum_speed = 0.05
+		}
+
+		path = {
+			leads_to_tech = bender_glider_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = glider_b_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = glider_c_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 80
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	glider_b_3 = {
+
+		category_glider = {
+			air_attack = 0.1
+		}
+
+		research_cost = 2
+		#start_year = 90
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = -2 y = 16 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	glider_c_3 = {
+
+		category_glider = {
+			air_defence = 0.2
+		}
+
+		research_cost = 2
+		#start_year = 90
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 2 y = 16 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bender_glider_4 = {
+		dependencies = {
+			magnetism = 1
+		}
+
+		enable_equipments = {
+			bender_glider_equipment_4
+		}
+
+		path = {
+			leads_to_tech = glider_for_noobs_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 100
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	glider_for_noobs_1 = {
+		dependencies = {
+			laws_of_nature = 1
+		}
+
+		enable_equipments = {
+			glider_equipment_1
+		}
+
+		path = {
+			leads_to_tech = glider_for_noobs_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 100
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 4 y = 18 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	glider_for_noobs_2 = {
+		dependencies = {
+			aerodynamics = 1
+		}
+
+		enable_equipments = {
+			glider_equipment_2
+		}
+
+		path = {
+			leads_to_tech = glider_for_noobs_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 110
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 4 y = 20 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+
+	flying_bisons = {
+
+		enable_equipments = {
+			bison_equipment_1
+		}
+
+		path = {
+			leads_to_tech = flying_bisons_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bison_training_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	flying_bisons_2 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipments = {
+			bison_equipment_2
+		}
+
+		path = {
+			leads_to_tech = flying_bisons_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 4 y = 0 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	bison_training_1 = {
+		dependencies = {
+			surgery = 1
+		}
+		category_bison = {
+			air_agility = 0.1
+		}
+
+		path = {
+			leads_to_tech = bison_update_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 20
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bison_update_1 = {
+		dependencies = {
+			genetics = 1
+		}
+
+		category_bison = {
+			air_ground_attack = 0.25
+		}
+
+		path = {
+			leads_to_tech = bison_update_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 20
+		folder = {
+			name = AIR_air_techs_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

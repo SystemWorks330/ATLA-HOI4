@@ -1,0 +1,260 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+genocide_state = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		state_population > 100
+	}
+
+	icon = GFX_modifiers_genocide_state
+
+	#local_manpower = -1.0
+	local_resources = -0.75 
+	state_production_speed_buildings_factor = -0.5
+	resistance_target = -1.0
+	resistance_activity = -1.0
+	#garrison_factor_modifier = -1
+	compliance_gain = 10
+	resistance_decay = 1
+}
+
+new_settlement = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		state_population > 2000
+	}
+
+	icon = GFX_modifiers_new_settlement
+
+	migration_attraction = 1.0
+}
+
+brave_pioneers = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_brave_pioneers
+
+	monthly_migration_state = -0.01
+}
+
+destroyed_city = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_destroyed_city
+
+	local_factories = -0.4
+	local_manpower = -0.4
+	local_resources = -0.2 
+	resistance_target = -0.6
+	resistance_activity = -0.6
+	resistance_decay = -0.75
+	#garrison_factor_modifier = -0.5  ### will be reduced by migration
+	monthly_migration_state = -0.05
+	prosperity = -0.5
+}
+
+devestated_state = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_devestated_state
+
+	migration_attraction = -0.5
+	prosperity = -0.2
+}
+
+
+refugee_node = {
+	enable = { always = yes }
+	remove_trigger = {
+		check_variable = { refugees_accepted_last_month < 100 }
+	}
+
+	icon = GFX_modifiers_refugees
+	
+	monthly_migration_state = mtth:refugee_supplies
+	local_supplies = mtth:refugee_supplies
+}
+
+migration_target = {
+	enable = { always = yes }
+	remove_trigger = {
+		check_variable = { refugees_accepted_last_month < 100 }
+		check_variable = { local_prosperity_ratio < 0.1 }
+	}
+
+	icon = GFX_modifiers_refugees
+	
+	migration_attraction = 0.75
+	prosperity = mtth:refugee_supplies
+}
+
+relocate_fire_population  = {
+	enable = { always = yes }
+	remove_trigger = {
+		THIS.CONTROLLER = {
+			has_government = fire_culture
+		}
+	}
+
+	icon = GFX_modifiers_relocate_fire_population
+	
+	settler_defiance = 1
+	monthly_fire_culture_in_state = -2.5
+	monthly_migration_state = mtth:fire_relocate_migration
+}
+
+
+watertribe_riots = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_watertribe_riots
+	
+	state_resources_factor = -0.75
+	state_production_speed_buildings_factor = -0.75
+	army_speed_factor_for_controller = -0.25
+	attrition_for_controller = 0.75
+	local_org_regain = -0.75
+	disable_strategic_redeployment = 1
+}
+
+focused_construction = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_focused_construction
+	
+	state_production_speed_buildings_factor = 1
+}
+
+hebai_coal_mines = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_hebai_coal_mines
+	
+	fossile_fuels_throughput = 0.5
+}
+
+volcano = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_volcano
+	
+	custom_modifier_tooltip = volcano_tooltip
+}
+
+gold_vein = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_gold_vein
+	
+	local_building_slots = 4
+	iron_throughput = 0.5
+	prosperity = 0.1
+}
+
+watertribe_barbarians = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_watertribe_barbarians
+	
+	local_factories = -0.15
+	state_resources_factor = -0.25
+	state_production_speed_buildings_factor = -0.25
+	attrition_for_controller = 0.2
+}
+
+dragon_hunters = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		
+	}
+
+	icon = GFX_modifiers_dragon_hunters
+
+	attrition_for_controller = -0.5
+}
+
+fire_academy = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		
+	}
+
+	icon = GFX_modifiers_fire_academy
+
+	research_slots_num = 1
+}
+
+omashu_delivery_system = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		
+	}
+
+	icon = GFX_modifiers_omashu_delivery_system
+
+	consumer_cost = -0.2
+	prosperity = 0.1
+	urbanisation_factor = 0.1
+	local_trade_network = 0.5
+}
+
+firenation_war_camp = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		NOT = {
+			is_controlled_by = FIR
+		}
+	}
+
+	icon = GFX_modifiers_firenation_war_camp
+
+	#local_non_core_supply_impact_factor = -0.5
+	local_supplies_for_controller = 0.25
+}
+
+organised_retreat = {
+	enable = { always = yes }
+
+	attacker_modifier = yes
+
+	remove_trigger = {
+		THIS.OWNER = {
+			has_full_control_of_state = PREV.THIS
+		}
+	}
+
+	icon = GFX_modifiers_organised_retreat
+
+	army_speed_factor = 1
+	max_dig_in_factor = -1
+}

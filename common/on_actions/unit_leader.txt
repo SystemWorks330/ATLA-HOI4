@@ -1,0 +1,628 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+
+			every_country = {
+				limit = {
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
+				}
+				every_character = {
+					limit = {
+						has_trait = not_a_real_airbender
+					}
+					remove_unit_leader_role = yes
+					set_character_flag = generic_advisor
+					set_character_flag = airbender_monk
+				}
+			}
+
+			every_country = {
+
+				every_character = {
+					limit = {
+						has_trait = not_a_real_officer
+					}
+					remove_unit_leader_role = yes
+					set_character_flag = generic_advisor
+				}
+				
+				generic_minister_recalc = yes
+			}
+
+			SAT = {
+				set_variable = { council_name_1:harmony = 1 }
+				set_variable = { council_name_2:harmony = 3 }
+				set_variable = { council_name_3:harmony = 4 }
+				set_variable = { council_name_4:harmony = 1 }
+				set_variable = { council_name_5:harmony = 5 }
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+			generic_minister_recalc = yes
+			every_character = {
+
+				#### advisor retires
+				if = {
+					limit = {
+						has_character_flag = generic_advisor
+
+						###	some nice math
+						#
+						#	p1 = 1%, p2 = 0.01%, p3 = 0.0001%
+						#
+						#	Probability of A occuring = 1 - (1 - 0.0001)25000 = 0.91792526204365
+						#
+						#	25000 days = 68,5 years
+						#
+						#	after 68,5 years the leader retired with a 92% certainty
+
+
+						check_variable = { random < 0.01 }
+						check_variable = { random < 0.01 }
+						check_variable = { random < 0.01 }
+					}
+					set_character_flag = advisor_retired
+				}
+			}
+		}
+	}
+
+	on_host_changed_from_capitulation = {
+		effect = {
+			#Transfer exile leaders to new host
+			From.From = {
+				every_army_leader = {
+					limit = { is_exiled_leader_from = Root }
+					set_nationality = Root.From
+				}
+			}
+		}
+	}
+
+	#Root is exile
+	#From is old host 
+	on_exile_government_reinstated = {
+		effect = {
+			From = {
+				every_army_leader = {
+					limit = { is_exiled_leader_from = Root }
+					set_nationality = Root
+				}
+			}
+			Root = {
+				every_army_leader = {
+					limit = { is_exiled_leader_from = Root }
+					remove_unit_leader_trait = exiled_leader
+					remove_exile_tag = yes
+				}
+			}
+		}
+	}
+
+	on_unit_leader_created = {
+		effect = {
+			if = {
+				limit = { is_exiled_leader = yes }
+				From.From = { save_event_target_as = exile_nation }
+				add_unit_leader_trait = exiled_leader
+				
+				add_random_trait = {
+					stupid
+					intelligent
+					calm
+					energetic
+					brave
+					craven
+					reckless
+					cautious
+					stubborn
+					open_minded
+					ruthless
+					gentle
+					stoic
+					arrogant
+					fickle
+					determined
+					arbitrary
+					rational
+				}
+
+				add_random_trait = {
+					offensive_infantry
+					defensive_infantry
+					tactical_mind
+					trait_engineer
+					supply_organisation
+					naval_invader
+					besieger
+					skilled_staffer
+				}
+
+				unit_leader_event = { id =  unit_leader.1 }
+			}
+		}
+	}
+
+
+	# From is owner country
+
+	on_army_leader_daily = {
+
+		### sick
+
+		effect = {
+			if = {
+				limit = {
+					check_variable = { random < 0.02 }
+					NOT = { has_trait = sick }
+					set_temp_variable = { temp = sum_unit_terrain_modifier@sickness_chance }
+					divide_temp_variable = { temp = num_units }
+					check_variable = { temp > 0.75 }
+					NOT = { has_unit_leader_flag = recently_sick }
+				}
+				add_timed_unit_leader_trait = {
+					trait = sick
+					days = 30
+				}
+				unit_leader_event = { id = unit_leader.17 }
+			}
+		}
+
+
+		# retired
+	
+		effect = {
+			if = {
+				limit = {
+					has_trait = generic
+
+					###	some nice math
+					#
+					#	p1 = 1%, p2 = 0.01%, p3 = 0.0001%
+					#
+					#	Probability of A occuring = 1 - (1 - 0.0001)25000 = 0.91792526204365
+					#
+					#	25000 days = 68,5 years
+					#
+					#	after 68,5 years the leader retired with a 92% certainty
+
+
+					check_variable = { random < 0.01 }
+					check_variable = { random < 0.01 }
+					check_variable = { random < 0.01 }
+				}
+				unit_leader_event = { id = unit_leader.21 }
+				remove_unit_leader = yes
+			}
+		}
+
+		# died
+
+		effect = {
+			if = {
+				limit = {
+					has_trait = generic
+
+					###	some nice math
+					#
+					#	p1 = 5%, p2 = 0.25%, p3 = 0.0125%, p4 = 0.0006%, p4 = 0.00003%
+					#
+					#	Probability of B occuring = 1 - (1 - 0.00003)25000 = 0.52763876145879
+					#
+					#	25000 days = 68,5 years
+					#
+					#	after 68,5 years the leader died with a 52% certainty
+
+
+					check_variable = { random < 0.05 }
+					check_variable = { random < 0.05 }
+					check_variable = { random < 0.05 }
+					check_variable = { random < 0.05 }
+					check_variable = { random < 0.05 }
+				}
+				unit_leader_event = { id = unit_leader.19 }
+				remove_unit_leader = yes
+			}
+		}
+	}
+
+	on_army_leader_won_combat = {
+
+		# Killed in battle
+
+		effect = {
+			if = {
+				limit = {
+					has_trait = generic
+
+					set_temp_variable = { chance = 0.001 }
+					set_temp_variable = { factor = 1.0 }
+					add_to_temp_variable = { factor = leader_modifier@killed_chance_factor } 
+					multiply_temp_variable = { chance = factor }
+					
+					set_temp_variable_to_random = trigger_var
+					multiply_temp_variable = { trigger_var = 2 }
+					multiply_temp_variable = { trigger_var = skill_level }
+
+					check_variable = { trigger_var < chance }
+				}
+				unit_leader_event = { id = unit_leader.20 }
+				remove_unit_leader = yes
+			}
+
+			# wounded in battle
+
+			else_if = {
+				limit = {
+					set_temp_variable = { chance = 0.001 }
+					set_temp_variable = { factor = 1.0 }
+					add_to_temp_variable = { factor = leader_modifier@wounded_chance_factor } 
+					multiply_temp_variable = { chance = factor }
+					
+					set_temp_variable_to_random = trigger_var
+					multiply_temp_variable = { trigger_var = skill_level }
+
+					check_variable = { trigger_var < chance }
+
+					NOT = { has_trait = wounded }
+				}
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 90
+				}
+				unit_leader_event = { id = unit_leader.18 }
+			}
+		}
+	}
+
+	on_army_leader_lost_combat = {
+
+
+		effect = {
+
+			# Killed in battle
+
+			if = {
+				limit = {
+					has_trait = generic
+
+					set_temp_variable = { chance = 0.005 }
+					set_temp_variable = { factor = 1.0 }
+					add_to_temp_variable = { factor = leader_modifier@killed_chance_factor } 
+					multiply_temp_variable = { chance = factor }
+					
+					set_temp_variable_to_random = trigger_var
+					multiply_temp_variable = { trigger_var = 2 }
+					multiply_temp_variable = { trigger_var = skill_level }
+
+					check_variable = { trigger_var < chance }
+				}
+				unit_leader_event = { id = unit_leader.20 }
+				remove_unit_leader = yes
+			}
+
+			if = {
+				limit = {
+					has_unit_leader_flag = lu_ten
+					FROM = {
+						has_country_flag = lu_ten_can_die
+					}
+
+					##### 25% chance 
+					set_temp_variable = { chance = 0.25 }
+					set_temp_variable_to_random = trigger_var
+					check_variable = { trigger_var < chance }
+				}
+
+				add_unit_leader_trait = mortally_wounded
+				
+				FROM = { country_event = { id = fir_character.lu_ten.4 days = 15 } }
+				
+			}
+
+			# wounded in battle
+
+			else_if = {
+				limit = {
+					set_temp_variable = { chance = 0.005 }
+					set_temp_variable = { factor = 1.0 }
+					add_to_temp_variable = { factor = leader_modifier@wounded_chance_factor } 
+					multiply_temp_variable = { chance = factor }
+
+					set_temp_variable_to_random = trigger_var
+					multiply_temp_variable = { trigger_var = skill_level }
+
+					check_variable = { trigger_var < chance }
+
+					NOT = { has_trait = wounded }
+				}
+				add_timed_unit_leader_trait = {
+					trait = wounded
+					days = 90
+				}
+				unit_leader_event = { id = unit_leader.18 }
+			}
+		}
+	}
+	
+	on_army_leader_promoted = {
+		effect = {
+			add_timed_unit_leader_trait = {
+				trait = recently_promoted
+				days = 100
+			}
+		}
+	}
+
+	#FROM - Country (owner)
+	#ROOT - leader
+	#FROMFROM - original owner for exiled leaders
+
+	on_unit_leader_level_up = {
+		effect = {
+			
+		}
+	}
+
+	on_unit_leader_created = { 
+
+	# This uses the UNIT LEADER sub scope of a character, FROM == country
+
+		effect = {
+
+
+			##### broken dlc mechanics
+			if = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
+				#### starting level 10 or higher
+				character = {
+					if = { 
+						limit = {
+							is_army_leader = yes
+							FROM = { 
+								check_variable = { 
+									var = modifier@army_leader_start_level
+									value = 10
+									compare = greater_than_or_equals
+								}
+							}
+						}
+						unit_leader_event = {
+							id = unit_leader.2
+							hours = 1
+						}
+					}
+				}
+			}
+
+
+			character = {
+				#### make character generic
+				root = {
+					add_unit_leader_trait = generic
+				}
+			}
+
+
+			#### extra trait chances
+			character = {
+				if = { 
+					limit = {
+						is_army_leader = yes
+					}
+
+				#	if = {
+				#		limit = {	
+				#			FROM = { has_idea = bold_attack_spirit }
+				#		}
+				#		root = {
+				#			random_list = {
+				#				50 = { 
+				#					add_random_trait = { 
+				#						reckless
+				#						brave
+				#					}
+				#				}
+				#				50 = {  }
+				#			}
+				#		}
+				#	}
+				#	if = {
+				#		limit = {	
+				#			FROM = { has_idea = academy_scholarships_spirit }
+				#		}
+				#		root = {
+				#			random_list = {
+				#				50 = { 
+				#					add_random_trait = { 
+				#						rational intelligent
+				#					}
+				#				}
+				#				50 = {  }
+				#			}
+				#		}
+				#	}
+
+					if = {
+						limit = {	
+							FROM = { 
+								capital_scope = { 
+									OR = {
+										region = 106
+										region = 128
+										region = 94
+										region = 129
+										region = 130
+									}
+								}
+							}
+						}
+						root = {
+							random_list = {
+								50 = { 
+									add_unit_leader_trait = cactus_juice_abuser
+								}
+								100 = {  }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+	######################################
+	################### trait developments
+	######################################
+
+
+	on_unit_leader_level_up = {
+		effect = {
+			
+			if = { 
+				limit = { 
+					has_trait = stupid
+					NOT = {
+						has_trait = dark_horse
+						has_trait = ignorant
+					}
+				}
+				if = { 
+					limit = { 
+						OR = {
+							skill > 3
+							has_trait = brave
+							has_trait = determined
+						}
+					}
+					random = {
+						chance = 50
+						character = { unit_leader_event = { id = character_development.1 } }
+					}
+				}
+				else = {
+					random = {
+						chance = 50
+						character = { unit_leader_event = { id = character_development.2 } }
+					}
+				}
+			}
+
+			if = { 
+				limit = { 
+					has_trait = arrogant
+					NOT = {
+						has_trait = politically_connected
+						has_trait = overbearing
+					}
+				}
+				if = { 
+					limit = { 
+						OR = {
+							skill > 3
+							has_trait = energetic
+							has_trait = determined
+						}
+					}
+					random_list = {
+						90 = { unit_leader_event = { id = character_development.3 } }
+						10 = { unit_leader_event = { id = character_development.4 } }
+					}
+				}
+				else = {
+					random = {
+						chance = 25
+						character = { unit_leader_event = { id = character_development.4 } }
+					}
+				}
+			}
+		}
+	}
+
+	on_army_leader_won_combat = {
+		effect = {
+			if = {
+				limit = {
+					has_trait = intelligent
+					NOT = {
+						has_trait = brilliant_tactician
+					}
+
+					set_temp_variable = { chance = 0.05 }
+					set_temp_variable_to_random = trigger_var
+					check_variable = { trigger_var < chance }
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_trait = arrogant
+							has_trait = stoic
+						}
+					}
+					random_list = {
+						50 = { unit_leader_event = { id = character_development.5 } }
+						50 = { unit_leader_event = { id = character_development.6 } }
+						100 = {  }
+					}
+				}
+				else = {
+					random = {
+						chance = 10
+						character = { unit_leader_event = { id = character_development.5 } }
+					}
+				}
+			}
+		}
+	}
+
+	on_army_leader_lost_combat = {
+		effect = {
+			if = {
+				limit = {
+					has_trait = fickle
+					NOT = {
+						has_trait = resolute
+						has_trait = insecure
+						has_trait = consumed_by_grief
+					}
+
+					set_temp_variable = { chance = 0.05 }
+					set_temp_variable_to_random = trigger_var
+					check_variable = { trigger_var < chance }
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_trait = rational
+						}
+					}
+					random_list = {
+						50 = { unit_leader_event = { id = character_development.7 } }
+						50 = { unit_leader_event = { id = character_development.8 } }
+						100 = {  }
+					}
+				}
+				else = {
+					random = {
+						chance = 100
+						character = { unit_leader_event = { id = character_development.7 } }
+					}
+				}
+			}
+		}
+	}
+
+}

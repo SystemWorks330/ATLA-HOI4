@@ -1,0 +1,734 @@
+add_namespace = quest
+
+add_namespace = season_1.team
+add_namespace = season_1.zuko
+add_namespace = season_1.news
+add_namespace = season_2.team
+add_namespace = season_2.zuko
+add_namespace = season_3.team
+add_namespace = season_3.zuko
+
+add_namespace = avatar_calc
+add_namespace = avatar_hidden
+add_namespace = avatar_hidden_news
+
+
+country_event = {
+	id = avatar_calc.1
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			set_temp_variable = { opinion_of_avatar = global.base_avatar_opinion }
+			set_temp_variable = { opinion_of_avatar_modifier = modifier@opinion_of_avatar_modifier }
+			add_to_temp_variable = { opinion_of_avatar = opinion_of_avatar_modifier }
+			clamp_temp_variable = {
+				var = opinion_of_avatar
+				min = -100
+				max = 100
+			}
+
+			set_temp_variable = { avatar_opinion = 50 }
+			set_temp_variable = { avatar_opinion_tension = ROOT.has_added_tension_amount }
+			multiply_temp_variable = { avatar_opinion_tension = -2 }
+			set_temp_variable = { avatar_opinion_modifier = modifier@avatar_opinion_modifier }
+			add_to_temp_variable = { avatar_opinion = avatar_opinion_tension }
+			add_to_temp_variable = { avatar_opinion = avatar_opinion_modifier }
+			clamp_temp_variable = {
+				var = avatar_opinion
+				min = -100
+				max = 100
+			}
+
+			set_variable = { opinion_of_avatar = opinion_of_avatar }
+			set_variable = { avatar_opinion = avatar_opinion }
+
+			set_variable = { avatar_influence = global.avatar_influence }
+
+			set_temp_variable = { avatar_influence_modifier = 1 }
+			add_to_temp_variable = { avatar_influence_modifier = modifier@avatar_influence_modifier }
+			clamp_temp_variable = {
+				var = avatar_influence_modifier
+				min = 0
+			}
+
+			multiply_variable = { avatar_influence = avatar_influence_modifier }
+
+			clamp_variable = {
+				var = avatar_influence
+				min = 0
+				max = 100
+			}
+
+
+			if = {
+				limit = {
+					has_country_flag = calculator
+				}
+
+
+				set_variable = { global.avatar_influence = 0 }
+
+				every_country = {
+					set_variable = { avatar_influence_impact = mtth:opinion_of_avatar }
+					set_variable = { population_of_global_percent = max_population_k }
+					multiply_variable = { population_of_global_percent = 1000 }
+					divide_variable = { population_of_global_percent = global.total_population_k }
+					multiply_variable = { avatar_influence_impact = population_of_global_percent }
+					multiply_variable = { avatar_influence_impact = 0.001 }
+					clamp_variable = { var = avatar_influence_impact min = 0 }
+
+					add_to_variable = { global.avatar_influence = avatar_influence_impact }
+				}
+
+			}
+		}	
+	}
+
+}
+
+
+
+country_event = {
+	id = avatar_hidden.1
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		tag = SWT
+		SWT = {
+			SWT_katara = {
+				has_character_flag = character_born
+				check_variable = { mtth:katara_age > 13 }
+			}
+			SWT_sokka = {
+				has_character_flag = character_born
+				check_variable = { mtth:sokka_age > 14 }
+			}
+		}
+	}
+
+
+	immediate = {
+		hidden_effect = {
+			SWT = {
+				country_event = {
+					id = season_1.team.1
+					days = 0
+				}
+			}
+		}	
+	}
+}
+
+
+##Event: The boy in the Iceberg
+country_event = {
+	id = season_1.team.1
+	title = season_1.team.1.title
+	desc = season_1.team.1.desc
+	picture = GFX_report_event_quest_001
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_variable = { global.avatar_location = 85.id }
+
+			FIR = {
+				if = {
+					limit = {
+						has_idea = banished_prince
+					}
+					country_event = { id = season_1.zuko.1 days = 1 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = season_1.team.1.a
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.team.1.b
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+##Event: The Avatars Hideout
+country_event = {
+	id = season_1.zuko.1
+	title = season_1.zuko.1.title
+	desc = season_1.zuko.1.desc
+	picture = GFX_report_event_quest_002
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	timeout_days = 2
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = season_1.zuko.1.a
+
+		clear_variable = global.avatar_location
+		set_global_flag = avatar_captured
+		set_global_flag = avatar_on_ship
+
+
+		SWT = {
+			country_event = { id = season_1.team.2 days = 1 }
+		}
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.zuko.1.b
+		trigger = {
+			85 = {
+				is_controlled_by = FIR
+			}
+		}
+
+		clear_variable = global.avatar_location
+		set_global_flag = avatar_captured
+		set_global_flag = avatar_on_ship
+
+
+		SWT = {
+			country_event = { id = season_1.team.2 days = 1 }
+		}
+
+		var:global.avatar_location = {
+			damage_building = {
+				type = infrastructure
+				damage = 10
+			}
+		}
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+}
+
+##Event: Rescuing Aang
+country_event = {
+	id = season_1.team.2
+	title = season_1.team.2.title
+	desc = season_1.team.2.desc
+	picture = GFX_report_event_quest_003
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	timeout_days = 2
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = season_1.team.2.a
+		trigger = {
+			85 = {
+				is_controlled_by = owner
+			}
+		}
+		FIR = {
+			country_event = { id = season_1.zuko.2 days = 2 }
+		}
+
+		###add Sokka and Katara to the team, Update location
+		SWT_katara = {
+			add_to_array = { global.avatar_team = token:SWT_katara }
+			custom_effect_tooltip = add_to_avatar_team_tooltip
+		}
+		SWT_sokka = {
+			add_to_array = { global.avatar_team = token:SWT_sokka }
+			custom_effect_tooltip = add_to_avatar_team_tooltip
+		}
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.team.2.b
+
+		FIR = {
+			country_event = { id = season_1.zuko.2 days = 2 }
+		}
+
+		###add Katara to the team, Update location
+		SWT_katara = {
+			add_to_array = { global.avatar_team = token:SWT_katara }
+			custom_effect_tooltip = add_to_avatar_team_tooltip
+		}
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+##Event: Zukos ship is damaged
+country_event = {
+	id = season_1.zuko.2
+	title = season_1.zuko.2.title
+	desc = season_1.zuko.2.desc
+	picture = GFX_report_event_quest_004
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	timeout_days = 2
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = season_1.zuko.2.a
+
+		clr_global_flag = avatar_captured
+		clr_global_flag = avatar_on_ship
+
+		set_global_flag = avatar_en_route
+		set_variable = { global.avatar_destination = 329.id }
+
+		329 = {
+			owner = {
+				country_event = { id = avatar_hidden.2 days = 2 }
+			}
+		}
+
+		damage_units = {
+			region = 157
+			limit = { tag = FIR }
+			org_damage = 0.5
+			str_damage = 0.1
+			ratio = yes
+			army = no
+			navy = yes
+		}
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.zuko.2.b
+		
+		clr_global_flag = avatar_captured
+		clr_global_flag = avatar_on_ship
+
+		set_global_flag = avatar_en_route
+		set_variable = { global.avatar_destination = 329.id }
+
+		329 = {
+			owner = {
+				country_event = { id = avatar_hidden.2 days = 2 }
+			}
+		}
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+country_event = {
+	id = avatar_hidden.2
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = avatar_en_route
+			set_variable = { global.avatar_location = 329.id }
+
+			##### historical air temple
+			if = {
+				limit = {
+					has_global_flag = south_temple_fallen
+				}
+				add_to_array = { global.avatar_team = token:SAT_momo }
+				country_event = { id = avatar_hidden_news.1 days = 2 }
+			}
+		}
+	}
+}
+
+country_event = {
+	id = avatar_hidden_news.1
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			news_event = { id = season_1.news.1 }
+
+			347 = {
+				owner = {
+					country_event = { id = season_1.team.3 days = 2 }
+				}
+			}
+			
+			clear_variable = global.avatar_location
+			set_global_flag = avatar_en_route
+			set_variable = { global.avatar_destination = 347.id }
+			
+			add_to_variable = { global.base_avatar_opinion = 5 }
+		}
+	}
+}
+
+
+##Event: The avatar returns
+news_event = {
+	id = season_1.news.1
+	title = season_1.news.1.title
+	desc = season_1.news.1.desc
+	picture = GFX_news_event_quest_001
+
+	major = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = season_1.news.1.a
+
+		trigger = {
+			check_variable = {
+				var = mtth:opinion_of_avatar
+				value = 0
+				compare = greater_than_or_equals
+			}
+		}
+
+		effect_tooltip = {
+			add_to_variable = { 
+				var = global.base_avatar_opinion
+				value = 5
+				tooltip = global_avatar_base_opinion
+			}
+		}
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.news.1.b
+
+		trigger = {
+			check_variable = {
+				var = mtth:opinion_of_avatar
+				value = 0
+				compare = less_than
+			}
+		}
+
+		effect_tooltip = {
+			add_to_variable = { 
+				var = global.base_avatar_opinion
+				value = 5
+				tooltip = global_avatar_base_opinion
+			}
+		}
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+
+##Event: Arriving on kyoshi island
+country_event = {
+	id = season_1.team.3
+	title = season_1.team.3.title
+	desc = season_1.team.3.desc
+	picture = GFX_report_event_quest_005
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	timeout_days = 2
+
+	immediate = {
+		hidden_effect = {
+			clear_variable = global.avatar_destination
+			clr_global_flag = avatar_en_route
+			set_variable = { global.avatar_location = 347.id }
+		}
+	}
+
+	option = {
+		name = season_1.team.3.a
+		trigger = {
+			85 = {
+				is_controlled_by = owner
+			}
+		}
+
+		FIR = {
+			country_event = { id = season_1.zuko.3 days = 2 }
+		}
+
+		every_country = {
+			limit = {
+				has_character = SWT_sokka
+			}
+			SWT_sokka = {
+				add_skill_level = 1
+			}
+		}
+		
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.team.3.b
+
+		FIR = {
+			country_event = { id = season_1.zuko.3 days = 2 }
+		}
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+
+##Event: Zukos attacks kyoshi
+country_event = {
+	id = season_1.zuko.3
+	title = season_1.zuko.3.title
+	desc = season_1.zuko.3.desc
+	picture = GFX_report_event_quest_006
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	timeout_days = 2
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = season_1.zuko.3.a
+
+		set_global_flag = avatar_en_route
+		set_variable = { global.avatar_destination = 205.id }
+
+		205 = {
+			owner = {
+				country_event = { id = avatar_hidden.3 days = 3 }
+			}
+		}
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.zuko.3.b
+		
+		set_global_flag = avatar_en_route
+		set_variable = { global.avatar_destination = 205.id }
+
+		205 = {
+			owner = {
+				country_event = { id = avatar_hidden.3 days = 3 }
+			}
+		}
+
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+
+country_event = {
+	id = avatar_hidden.3
+	is_triggered_only = yes
+	fire_only_once = yes
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = avatar_en_route
+			set_variable = { global.avatar_location = 205.id }
+
+			##### historical air temple
+			if = {
+				limit = {
+					has_country_leader = {
+						character = OMS_bumi
+					}
+				}
+				country_event = { id = season_1.team.4 days = 2 }
+			}
+			else = {
+				country_event = { id = season_1.team.5 days = 2 }
+			}
+		}
+	}
+}
+
+##Event: The King of Omashu Bumi
+country_event = {
+	id = season_1.team.4
+	title = season_1.team.4.title
+	desc = season_1.team.4.desc
+	picture = GFX_report_event_quest_007
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	timeout_days = 2
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = season_1.team.4.a
+
+		set_global_flag = avatar_en_route
+		set_variable = { global.avatar_destination = 400.id }
+		clear_variable = global.avatar_location
+
+		400 = {
+			owner = {
+				country_event = { id = season_1.team.6 days = 2 }
+			}
+		}
+		
+		ai_chance = { 
+			base = 100
+		}
+	}
+	option = {
+		name = season_1.team.4.b
+
+		trigger = {
+			has_war = no
+		}
+
+		set_global_flag = avatar_en_route
+		set_variable = { global.avatar_destination = 400.id }
+		clear_variable = global.avatar_location
+
+		400 = {
+			owner = {
+				country_event = { id = season_1.team.6 days = 2 }
+			}
+		}
+	
+		ai_chance = { 
+			base = 0
+		}
+	}
+}
+
+##Event: Visit to Omashu
+country_event = {
+	id = season_1.team.5
+	title = season_1.team.5.title
+	desc = season_1.team.5.desc
+	picture = GFX_report_event_quest_008
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = season_1.team.5.a
+		
+		set_global_flag = avatar_en_route
+		set_variable = { global.avatar_destination = 400.id }
+		clear_variable = global.avatar_location
+
+		400 = {
+			owner = {
+				country_event = { id = season_1.team.6 days = 2 }
+			}
+		}
+
+		ai_chance = { 
+			base = 100
+		}
+	}
+
+}
+
+##Event: The Mining Village
+country_event = {
+	id = season_1.team.6
+	title = season_1.team.6.title
+	desc = season_1.team.6.desc
+	picture = GFX_report_event_quest_009
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = avatar_en_route
+			set_variable = { global.avatar_location = 400.id }
+			clear_variable = global.avatar_destination
+
+		}
+	}
+
+	option = {
+		name = season_1.team.6.a
+		
+		
+		ai_chance = { 
+			base = 100
+		}
+	}
+
+}
+

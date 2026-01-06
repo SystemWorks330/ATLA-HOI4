@@ -1,0 +1,613 @@
+
+add_namespace = centralisation
+add_namespace = population
+
+
+#### invention
+country_event = {
+	id = centralisation.1
+	title = centralisation.1.title
+	desc = centralisation.1.desc
+	
+	picture = GFX_investment_1
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+	
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	option = {
+		name = centralisation.1.a
+
+		add_tech_bonus = {
+			name = invention_tech_bonus
+			bonus = 0.1
+			uses = 1
+			category = industry_tech
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+
+
+#### carpentry
+country_event = {
+	id = centralisation.2
+	title = centralisation.2.title
+	desc = centralisation.2.desc
+	
+	picture = GFX_investment_2
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_carpentry_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.2.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### masonry
+country_event = {
+	id = centralisation.3
+	title = centralisation.3.title
+	desc = centralisation.3.desc
+	
+	picture = GFX_investment_3
+	
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_masonry_random_instant = yes
+		}
+	}
+
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	option = {
+		name = centralisation.3.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### farm
+country_event = {
+	id = centralisation.4
+	title = centralisation.4.title
+	desc = centralisation.4.desc
+	
+	picture = GFX_investment_4
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_farm_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.4.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### ranch
+country_event = {
+	id = centralisation.5
+	title = centralisation.5.title
+	desc = centralisation.5.desc
+	
+	picture = GFX_investment_5
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_ranch_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.5.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### mill
+country_event = {
+	id = centralisation.6
+	title = centralisation.6.title
+	desc = centralisation.6.desc
+	
+	picture = GFX_investment_6
+	
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	immediate = {
+		hidden_effect = {
+			add_mill_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.6.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### lumber mill
+country_event = {
+	id = centralisation.7
+	title = centralisation.7.title
+	desc = centralisation.7.desc
+	
+	picture = GFX_investment_7
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_lumber_mill_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.7.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### quarry
+country_event = {
+	id = centralisation.8
+	title = centralisation.8.title
+	desc = centralisation.8.desc
+	
+	picture = GFX_investment_8
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_quarry_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.8.a
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### weaving
+country_event = {
+	id = centralisation.9
+	title = centralisation.9.title
+	desc = centralisation.9.desc
+	
+	picture = GFX_investment_9
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					check_variable = { ai_priority_animal_products > ai_priority_grain }
+					crop_weaving_investment_allowed = yes
+				}
+				add_crop_weaving_random_instant = yes
+			}
+			else = {
+				add_animal_weaving_random_instant = yes
+			}
+		}
+	}
+
+	option = {
+		name = centralisation.9.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### shop
+country_event = {
+	id = centralisation.10
+	title = centralisation.10.title
+	desc = centralisation.10.desc
+	
+	picture = GFX_investment_10
+	
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	immediate = {
+		hidden_effect = {
+			add_consumer_good_factory_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.10.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+
+
+#### luxury store
+country_event = {
+	id = centralisation.11
+	title = centralisation.11.title
+	desc = centralisation.11.desc
+	
+	picture = GFX_investment_11
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_luxury_good_factory_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.11.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### wagons
+country_event = {
+	id = centralisation.12
+	title = centralisation.12.title
+	desc = centralisation.12.desc
+	
+	picture = GFX_investment_12
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	option = {
+		name = centralisation.12.a
+
+		add_equipment_to_stockpile = {
+			type = transport_equipment_1
+			amount = 100
+			producer = ROOT
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+#### political power
+country_event = {
+	id = centralisation.13
+	title = centralisation.13.title
+	desc = centralisation.13.desc
+	
+	picture = GFX_investment_13
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	option = {
+		name = centralisation.13.a
+
+		add_political_power = 200
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+
+#### smelting
+country_event = {
+	id = centralisation.14
+	title = centralisation.14.title
+	desc = centralisation.14.desc
+	
+	picture = GFX_investment_14
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_steelworks_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.14.a
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### mine
+country_event = {
+	id = centralisation.15
+	title = centralisation.15.title
+	desc = centralisation.15.desc
+	
+	picture = GFX_investment_15
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_mine_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.15.a
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+
+#### steel beam factory
+country_event = {
+	id = centralisation.16
+	title = centralisation.16.title
+	desc = centralisation.16.desc
+	
+	picture = GFX_investment_16
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_steel_beam_factory_random_instant = yes
+		}
+	}
+
+
+	option = {
+		name = centralisation.16.a
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### manufactory
+country_event = {
+	id = centralisation.17
+	title = centralisation.17.title
+	desc = centralisation.17.desc
+	
+	picture = GFX_investment_17
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	option = {
+		name = centralisation.17.a
+
+		
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+#### fishing stands
+country_event = {
+	id = centralisation.18
+	title = centralisation.18.title
+	desc = centralisation.18.desc
+	
+	picture = GFX_investment_18
+	
+	is_triggered_only = yes
+	minor_flavor = yes
+
+	trigger = {
+		peoples_initiative_available = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			add_fishing_stand_random_instant = yes
+		}
+	}
+
+	option = {
+		name = centralisation.18.a
+
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+
+
+#### child labour
+country_event = {
+	id = population.1
+	title = population.1.title
+	desc = population.1.desc
+	
+	picture = GFX_report_event_child_labour
+	
+	is_triggered_only = yes
+	trigger = {
+		check_variable = { max_manpower_k > 1 }
+		NOT = {
+			has_country_flag = child_labour_event
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = child_labour_event
+			add_ideas = child_labour
+		}
+	}
+
+	option = {
+		name = population.1.a
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+
+	option = {
+		name = population.1.b
+		
+		ai_chance = {
+			base = 100
+		}
+	}
+
+}

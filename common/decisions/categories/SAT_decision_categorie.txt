@@ -1,0 +1,17 @@
+#############################
+#### Southern Air Temple ####
+#############################
+
+SAT_upcoming_war_category = {
+	icon = generic_propaganda
+
+	picture = GFX_decision_cat_troubling_signs
+
+	visible = {
+		has_start_date < 20.1.1
+	}
+
+	priority = {
+		base = 100
+	}
+}

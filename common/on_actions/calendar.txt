@@ -1,0 +1,132 @@
+on_actions = {
+
+	on_annex = {
+	    effect = {
+	    	if = {
+	    		limit = {
+	    			FROM = {
+	    				has_country_flag = calculator
+	    			}
+	    		}
+	    		FROM = {
+	    			clr_country_flag = calculator
+	    		}
+	    		random_country = {
+	    			set_country_flag = calculator
+	    		}
+	    	}
+	    }
+	}
+
+	on_monthly = {
+		effect = {
+
+			### calendar
+
+			if = {
+				limit = {
+					has_country_flag = calculator
+				}
+
+#### weird af barbarian system
+
+#				random_list = {
+#					70 = { }
+#					30 = {
+#						random_state = {
+#							limit = {
+#								THIS.OWNER =  {
+#									OR = {
+#										tag = NWT
+#										# tag = SWT
+#									}
+#								}
+#								NOT = { 
+#								has_state_flag = watertribe_barbarians_flag
+#								has_dynamic_modifier = { modifier = watertribe_barbarians }
+#								}
+#							}
+#							set_state_flag = watertribe_barbarians_flag
+#							set_state_flag = show_barbarian_territories
+#							add_dynamic_modifier = { modifier = watertribe_barbarians	}
+#							THIS.OWNER = { country_event = watertribe_barbarians.1 }
+#						}
+#					}
+#				}
+
+
+
+				### great comet
+
+				if = {
+					limit = {
+						check_variable = { global.year = global.great_comet_year }
+						check_variable = { global.calendar_month = global.great_comet_month }
+					}
+					news_event = { id = calendar_event.1 days = global.great_comet_day }
+				}
+
+				### volcano
+
+				if = {
+					limit = {
+						check_variable = { global.year = global.volcano_year }
+						check_variable = { global.calendar_month = global.volcano_month }
+					}
+					var:global.volcano_state@OWNER = { country_event = { id = nature.1  days = global.volcano_day } }
+
+				}
+				
+				### months and years
+
+
+				### counter
+				if = {
+					limit = {
+						NOT = {
+							check_variable = { global.calendar_month = 12 }
+						}
+					}
+					add_to_variable = { global.calendar_month = 1 }
+
+					else = {
+						set_variable = { global.calendar_month = 1 }
+						add_to_variable = { global.calendar_year = 1 }
+						add_to_variable = { global.after_genocide_year = 1 }
+					}
+				}
+
+
+				### spring event
+				if = {
+					limit = {
+						check_variable = { global.calendar_month = 3 }
+					}
+					news_event = { id = calendar.2 days = 20 }
+				}
+				### summer event
+				if = {
+					limit = {
+						check_variable = { global.calendar_month = 6 }
+					}
+					news_event = { id = calendar.3 days = 21 }
+				}
+				### fall event
+				if = {
+					limit = {
+						check_variable = { global.calendar_month = 9 }
+					}
+					news_event = { id = calendar.4 days = 23 }
+				}
+				### winter event
+				if = {
+					limit = {
+						check_variable = { global.calendar_month = 12 }
+					}
+					news_event = { id = calendar.5 days = 21 }
+				}
+			}
+		}
+	}
+
+}

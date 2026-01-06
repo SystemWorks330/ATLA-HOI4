@@ -1,0 +1,2692 @@
+technologies = {
+
+	watertribe_canoe_tech_1 = {
+
+		enable_equipments = {
+			watertribe_canoe_1
+		}
+
+		dependencies = {
+			kinectics = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_canoe_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_canoe_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_canoe_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_canoe_1 = {
+
+		watertribe_canoe = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_canoe_1 = {
+		
+		watertribe_canoe = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_canoe_tech_2 = {
+
+		enable_equipments = {
+			watertribe_canoe_2
+		}
+		
+		dependencies = {
+			geometry = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_canoe_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_canoe_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_canoe_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_canoe_2 = {
+
+		watertribe_canoe = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_canoe_2 = {
+
+		watertribe_canoe = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_canoe_tech_3 = {
+
+		dependencies = {
+			leverage = 1
+		}
+
+		enable_equipments = {
+			watertribe_canoe_3
+		}
+		path = {
+			leads_to_tech = watertribe_canoe_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_canoe_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_canoe_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_canoe_3 = {
+
+		watertribe_canoe = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_canoe_3 = {
+
+		watertribe_canoe = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_canoe_tech_4 = {
+
+		enable_equipments = {
+			watertribe_canoe_4
+		}
+		
+		dependencies = {
+			alchemy = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_canoe_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_canoe_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_canoe_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_canoe_4 = {
+
+		watertribe_canoe = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_canoe_4 = {
+
+		watertribe_canoe = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_canoe_tech_5 = {
+
+		enable_equipments = {
+			watertribe_canoe_5
+		}
+		
+		dependencies = {
+			steam_engine = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_canoe_tech_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_canoe_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_canoe_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_canoe_5 = {
+	
+		path = {
+			leads_to_tech = left_bonus_canoe_6
+			research_cost_coeff = 1
+		}
+
+		watertribe_canoe = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_canoe_5 = {
+		
+		path = {
+			leads_to_tech = right_bonus_canoe_6
+			research_cost_coeff = 1
+		}
+		watertribe_canoe = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	left_bonus_canoe_6 = {
+
+		watertribe_canoe = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+
+		path = {
+			leads_to_tech = mid_bonus_canoe_6
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_canoe_6 = {
+
+		watertribe_canoe = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+		
+		path = {
+			leads_to_tech = mid_bonus_canoe_6
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	mid_bonus_canoe_6 = {
+
+		watertribe_canoe = {
+			max_organisation = 15
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_raft_tech_1 = {
+
+		enable_equipments = {
+			watertribe_raft_1
+		}
+		
+		dependencies = {
+			wind_manipulation = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_raft_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_raft_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_raft_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_raft_1 = {
+
+		naval_invasion_capacity = 20
+		watertribe_raft = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_raft_1 = {
+	
+		watertribe_raft = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_raft_tech_2 = {
+
+		enable_equipments = {
+			watertribe_raft_2
+		}
+		
+		dependencies = {
+			astronomy = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_raft_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_raft_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_raft_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_raft_2 = {
+
+		naval_invasion_capacity = 20
+		watertribe_raft = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_raft_2 = {
+	
+		watertribe_raft = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_raft_tech_3 = {
+
+		enable_equipments = {
+			watertribe_raft_3
+		}
+		
+		dependencies = {
+			architecture = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_raft_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_raft_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_raft_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_raft_3 = {
+
+		naval_invasion_capacity = 20
+		watertribe_raft = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_raft_3 = {
+
+		watertribe_raft = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_raft_tech_4 = {
+
+		enable_equipments = {
+			watertribe_raft_4
+		}
+		
+		dependencies = {
+			magnetism = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_raft_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_raft_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_raft_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_raft_4 = {
+
+		naval_invasion_capacity = 20
+		watertribe_raft = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_raft_4 = {
+
+		watertribe_raft = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_raft_tech_5 = {
+
+		enable_equipments = {
+			watertribe_raft_5
+		}
+		
+		dependencies = {
+			steam_engine = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_raft_tech_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_raft_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_raft_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_raft_5 = {
+
+		naval_invasion_capacity = 20
+		watertribe_raft = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		path = {
+			leads_to_tech = left_bonus_raft_6
+			research_cost_coeff = 1
+		}
+
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_raft_5 = {
+
+		watertribe_raft = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		path = {
+			leads_to_tech = right_bonus_raft_6
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	left_bonus_raft_6 = {
+
+		naval_invasion_capacity = 20
+		watertribe_raft = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		path = {
+			leads_to_tech = mid_bonus_raft_6
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_raft_6 = {
+
+		watertribe_raft = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		path = {
+			leads_to_tech = mid_bonus_raft_6
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 1 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	mid_bonus_raft_6 = {
+
+		watertribe_raft = {
+			max_organisation = 15	
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_ship_tech_1 = {
+
+		enable_equipments = {
+			watertribe_cutter_ship_1
+		}
+		
+		dependencies = {
+			wind_manipulation = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_cutter_ship_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = watertribe_cutter_flagship_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_cutter_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cutter_1 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 10
+			surface_detection = 0.05	
+		}
+		strike_force_movement_org_loss = -0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_ship_tech_2 = {
+
+		enable_equipments = {
+			watertribe_cutter_ship_2
+		}
+		
+		dependencies = {
+			astronomy = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_cutter_ship_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_cutter_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cutter_2 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 10
+			surface_detection = 0.05	
+		}
+		strike_force_movement_org_loss = -0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_ship_tech_3 = {
+
+		enable_equipments = {
+			watertribe_cutter_ship_3
+		}
+		
+		dependencies = {
+			leverage = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_cutter_ship_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_cutter_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cutter_3 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 10
+			surface_detection = 0.05	
+		}
+		strike_force_movement_org_loss = -0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_ship_tech_4 = {
+
+		enable_equipments = {
+			watertribe_cutter_ship_4
+		}
+		
+		dependencies = {
+			magnetism = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_cutter_ship_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_cutter_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cutter_4 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 10
+			surface_detection = 0.05	
+		}
+		strike_force_movement_org_loss = -0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_ship_tech_5 = {
+
+		enable_equipments = {
+			watertribe_cutter_ship_5
+		}
+		
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_cutter_ship_tech_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_cutter_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cutter_5 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 10
+			surface_detection = 0.05	
+		}
+		strike_force_movement_org_loss = -0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_ship_tech_6 = {
+
+		enable_equipments = {
+			watertribe_cutter_ship_6
+		}
+
+		dependencies = {
+			gas_turbine = 1
+		}
+
+		path = {
+			leads_to_tech = left_bonus_cutter_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cutter_6 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 10	
+		}
+		watertribe_cutter_flagship = {
+			max_organisation = 10	
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = -1 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_flagship_tech_1 = {
+
+		enable_equipments = {
+			watertribe_cutter_flagship_1
+		}
+		
+		dependencies = {
+			measurements = 1
+			kinectics = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_cutter_flagship_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = watertribe_warship_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mid_bonus_cutter_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_cutter_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	mid_bonus_cutter_1 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		watertribe_cutter_flagship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05
+		}
+		naval_retreat_speed = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_cutter_1 = {
+
+		watertribe_cutter_flagship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_flagship_tech_2 = {
+
+		enable_equipments = {
+			watertribe_cutter_flagship_2
+		}
+		
+		dependencies = {
+			astronomy = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_cutter_flagship_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_cutter_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mid_bonus_cutter_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	mid_bonus_cutter_2 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		watertribe_cutter_flagship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05
+		}
+		naval_retreat_speed = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_cutter_2 = {
+
+		watertribe_cutter_flagship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 4 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_flagship_tech_3 = {
+
+		enable_equipments = {
+			watertribe_cutter_flagship_3
+		}
+		
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_cutter_flagship_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_cutter_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mid_bonus_cutter_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 3 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	mid_bonus_cutter_3 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		watertribe_cutter_flagship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05
+		}
+		naval_retreat_speed = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_cutter_3 = {
+
+		watertribe_cutter_flagship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 4 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_flagship_tech_4 = {
+
+		enable_equipments = {
+			watertribe_cutter_flagship_4
+		}
+		
+		dependencies = {
+			magnetism = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_cutter_flagship_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mid_bonus_cutter_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_cutter_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 3 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	mid_bonus_cutter_4 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		watertribe_cutter_flagship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05
+		}
+		naval_retreat_speed = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 2 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_cutter_4 = {
+
+		watertribe_cutter_flagship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 4 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_flagship_tech_5 = {
+
+		enable_equipments = {
+			watertribe_cutter_flagship_5
+		}
+		
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_cutter_flagship_tech_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mid_bonus_cutter_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_cutter_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 3 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	mid_bonus_cutter_5 = {
+
+		watertribe_cutter_ship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		watertribe_cutter_flagship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05
+		}
+		naval_retreat_speed = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 2 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_cutter_5 = {
+
+		watertribe_cutter_flagship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 4 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_cutter_flagship_tech_6 = {
+
+		enable_equipments = {
+			watertribe_cutter_flagship_6
+		}
+		
+		dependencies = {
+			gas_turbine = 1
+		}
+
+
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 3 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	watertribe_warship_tech_1 = {
+
+		enable_equipments = {
+			watertribe_warship_1
+		}
+		path = {
+			leads_to_tech = watertribe_warship_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_watertribe_warship_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_watertribe_warship_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 8 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_watertribe_warship_1 = {
+
+		watertribe_warship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+
+		
+		dependencies = {
+			smelting = 1
+		}
+
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 7 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_watertribe_warship_1 = {
+
+		watertribe_warship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		critical_receive_chance = -0.05
+		naval_critical_effect_factor = -0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 9 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_warship_tech_2 = {
+
+		enable_equipments = {
+			watertribe_warship_2
+		}
+
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+
+		path = {
+			leads_to_tech = watertribe_warship_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_watertribe_warship_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_watertribe_warship_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 8 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_watertribe_warship_2 = {
+
+		watertribe_warship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 7 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_watertribe_warship_2 = {
+
+		watertribe_warship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		critical_receive_chance = -0.05
+		naval_critical_effect_factor = -0.05
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 9 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_warship_tech_3 = {
+
+		enable_equipments = {
+			watertribe_warship_3
+		}
+
+		dependencies = {
+			alchemy = 1
+		}
+
+		path = {
+			leads_to_tech = watertribe_warship_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_watertribe_warship_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_watertribe_warship_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 8 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_watertribe_warship_3 = {
+
+		watertribe_warship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 7 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_watertribe_warship_3 = {
+
+		watertribe_warship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		critical_receive_chance = -0.05
+		naval_critical_effect_factor = -0.05
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 9 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	watertribe_warship_tech_4 = {
+
+		enable_equipments = {
+			watertribe_warship_4
+		}
+		
+		dependencies = {
+			steam_engine = 1
+			steel_alloy = 1
+		}
+		
+		path = {
+			leads_to_tech = mid_bonus_watertribe_warship_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_watertribe_warship_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_watertribe_warship_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 8 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_watertribe_warship_4 = {
+
+		watertribe_warship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 7 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_watertribe_warship_4 = {
+
+		watertribe_warship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		critical_receive_chance = -0.05
+		naval_critical_effect_factor = -0.05
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 9 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	mid_bonus_watertribe_warship_4 = {
+
+		watertribe_warship = {
+			max_organisation = 15	
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 8 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	water_mine_warfare_1 = {
+
+		dependencies = {
+			kinectics = 1
+		}
+		
+		naval_mines_damage_factor = 0.1
+		mines_planting_by_fleets_factor = 0.05
+		
+		path = {
+			leads_to_tech = water_mine_warfare_2
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	water_mine_warfare_2 = {
+		
+		dependencies = {
+			smelting = 1
+		}
+
+		naval_mines_damage_factor = 0.1
+		mines_planting_by_fleets_factor = 0.05
+
+		path = {
+			leads_to_tech = water_mine_warfare_3
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	water_mine_warfare_3 = {
+
+		dependencies = {
+			natural_philosophy = 1
+		}
+
+		naval_mines_damage_factor = 0.1
+		mines_planting_by_fleets_factor = 0.05
+
+		path = {
+			leads_to_tech = water_mine_warfare_4
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	water_mine_warfare_4 = {
+
+		dependencies = {
+			magnetism = 1
+		}
+
+		naval_mines_damage_factor = 0.1
+		mines_planting_by_fleets_factor = 0.05
+
+		path = {
+			leads_to_tech = water_mine_warfare_5
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	water_mine_warfare_5 = {
+
+		dependencies = {
+			chemistry = 1
+		}
+
+		naval_mines_damage_factor = 0.1
+		mines_planting_by_fleets_factor = 0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = water_naval_folder
+			position = { x = 0 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+}

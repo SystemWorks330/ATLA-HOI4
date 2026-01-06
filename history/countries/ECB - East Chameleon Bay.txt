@@ -1,0 +1,124 @@
+capital = 333
+
+OOB = "ECB_12"
+
+ 
+set_country_flag = EARTH_special_forces
+
+EAR_generic_starting_tech = yes
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		oars_tech_1 = 1
+		sails_tech_1 = 1
+		galley_tech_1 = 1
+		barque_tech_1 = 1
+		light_armor_tech_1 = 1
+	}
+
+}
+
+#set_research_slots = 2
+set_convoys = 10
+set_stability = 0.55
+set_war_support = 0.6
+
+
+ 
+
+set_politics = {
+	ruling_party = earth_culture
+	last_election = "2.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 25
+	pluralist_culture = 25
+	fire_culture = 0
+	earth_culture = 50
+	air_culture = 0
+}
+
+add_ideas = {
+	limited_earth_conscription
+	earth_auxiliary
+	city_markets
+	buildup_focus_law
+	family_support_3
+}
+
+recruit_character = ECB_sung
+
+#set_cosmetic_tag = ECB_puppet
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 ={
+
+	#set_cosmetic_tag = ECB_puppet
+
+	#add_to_war = {
+	#	targeted_alliance = EAR
+	#	enemy = FIR
+	#}
+}
+
+
+
+
+ ## #####  ##  ###  #####       #  ##    #
+#     #   #  # #  #   #        ## #  #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
+##    #   #  # #  #   #         #  ##   ##
+
+
+
+106.2.4 ={
+
+	#set_cosmetic_tag = ECB_puppet
+	OOB = "ECB_106"
+	
+}
+
+ ## #####  ##  ###  #####       #   #   #
+#     #   #  # #  #   #        ##  ##  ##
+ #    #   #### ###    #       # # # # # #
+  #   #   #  # #  #   #         #   #   #
+##    #   #  # #  #   #         #   #   #
+
+
+
+
+111.10.30 ={
+
+	#set_cosmetic_tag = ECB_puppet
+
+}
+
+# Different Ideology Leaders
+recruit_character = ECB_generic

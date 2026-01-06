@@ -1,0 +1,159 @@
+
+
+get_emergencies = {
+	base = 0
+	modifier = {
+		has_country_flag = active_peasant_revolt
+		add = 1
+	}
+
+	modifier = {
+		has_country_flag = {
+			flag = resistance_category_active
+			value < 2
+		}
+		add = 1
+	}
+
+	modifier = {
+		OR = {
+			has_dynamic_modifier = { modifier = famine }
+			has_dynamic_modifier = { modifier = food_shortages }
+		}
+		add = 1
+	}
+
+	modifier = {
+		OR = {
+			check_variable = { war_exhaustion_variable > 10 }
+			has_war = yes
+		}
+		add = 1
+	}
+
+	modifier = {
+		OR = {
+			has_active_mission = taku_conquest_expectations
+			has_active_mission = yudao_conquest_expectations
+			has_active_mission = garsai_conquest_expectations
+			has_active_mission = ba_sing_se_conquest_expectations
+		}
+		add = 1
+	}
+}
+
+get_mission_cap = {
+	base = 1
+	modifier = {
+		set_temp_variable = { missions = modifier@available_missions }
+		
+		add = missions
+	}
+}
+
+get_missions = {
+	base = 0
+
+	### fir missions
+
+	modifier = {
+		has_country_flag = {
+			flag = colonies_category_active
+			value < 2
+		}
+		add = 1
+	}
+	modifier = {
+		tag = FIR
+		has_country_flag = genocide_active
+		NOT = {
+			has_country_flag = hunting_the_avatar
+			AND = {
+				has_global_flag = air_nomad_genocide
+				has_global_flag = avatar_cycle_broken
+			}
+		}
+		add = 1
+	}
+	modifier = {
+		tag = FIR
+		has_country_flag = {
+			flag = hunting_the_avatar
+			value < 2
+		}
+		add = 1
+	}
+	modifier = {
+		has_country_flag = {
+			flag = civil_category_active
+			value < 2
+		}
+		add = 1
+	}
+	modifier = {
+		has_country_flag = {
+			flag = industrialisation_active
+			value < 2
+		}
+		add = 1
+	}
+	modifier = {
+		has_country_flag = {
+			flag = conquest_category_active
+			value < 2
+		}
+		add = 1
+	}
+	modifier = {
+		has_country_flag = {
+			flag = dragon_active
+			value < 2
+		}
+		add = 1
+	}
+
+	### ear missions
+	modifier = {
+		has_country_flag = {
+			flag = dai_li_category_active
+			value < 2
+		}
+		add = 1
+	}
+	modifier = {
+		has_country_flag = fire_threat_category_active
+		add = 1
+	}
+	modifier = {
+		has_country_flag = economy_category_active
+		add = 1
+	}
+	modifier = {
+		has_country_flag = defense_category_active
+		add = 1
+	}
+	modifier = {
+		has_country_flag = {
+			flag = cabbage_corp_expansion_active
+			value < 3
+		}
+		add = 1
+	}
+
+	# chn
+	modifier = {
+		has_country_flag = {
+			flag = take_power_category_active
+			value < 2
+		}
+		add = 1
+	}
+	modifier = {
+		has_country_flag = {
+			flag = CHN_empire_category_active
+			value < 2
+		}
+		add = 1
+	}
+
+}

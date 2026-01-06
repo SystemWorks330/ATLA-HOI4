@@ -1,0 +1,294 @@
+﻿
+
+ ## #####  ##  ###  #####       #   ##
+#     #   #  # #  #   #        ##  #  #
+ #    #   #### ###    #       # #    #
+  #   #   #  # #  #   #         #   #
+##    #   #  # #  #   #         #  ####
+
+
+capital = 179
+
+OOB = "EAR_12"
+
+ 
+set_country_flag = EARTH_special_forces
+
+set_variable = { legitimacy_var = 180 }
+
+starting_train_buffer = 2
+
+EAR_generic_starting_tech = yes
+set_technology = { dai_li_tech = 1 }
+
+set_variable = { EAR_max_dai_li_influence = 100 }
+set_variable = { EAR_dai_li_cap = 4 }
+set_variable = { EAR_max_dai_li_cap = 50 }
+set_variable = { dai_li_small_influence_cost = 5 }
+set_variable = { dai_li_medium_influence_cost = 25 }
+set_variable = { dai_li_large_influence_cost = 50 }
+
+#set_research_slots = 2
+set_convoys = 12
+
+set_politics = {
+	ruling_party = earth_culture
+	last_election = "10.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 0
+	pluralist_culture = 0
+	fire_culture = 0
+	earth_culture = 100
+	air_culture = 0
+}
+
+set_stability = 0.6
+set_war_support = 0.7
+
+set_variable = { victory_condition = token:heart_of_the_kingdom_spirit }
+
+add_ideas = {
+	kyoshi_constitution
+	weak_legitimacy
+	corrupt_bureaucracy
+	the_dai_li
+
+	volunteer_earth_nation
+	earth_benders_only
+	city_markets
+	construction_efforts_law
+	family_support_2
+	no_education
+}
+
+ba_sing_se_walls = yes
+
+add_timed_idea = {
+	idea = 	humiliated_in_battle
+	days = 3600
+}
+
+recruit_character = EAR_zaifeng
+recruit_character = EAR_kuei
+
+recruit_character = EAR_dai_li_government
+
+recruit_character = EAR_quon
+recruit_character = EAR_hiroshi
+recruit_character = EAR_juno
+recruit_character = EAR_moku
+recruit_character = EAR_saiful
+recruit_character = EAR_cam
+
+
+# DIPLOMACY
+
+
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 = {
+	
+	OOB = "EAR_52"
+
+	add_political_power = 1198
+
+	add_ideas = earth_exceptional
+	remove_ideas = humiliated_in_battle
+
+
+	set_country_flag = {
+		flag = dai_li_category_active
+		value = 1
+	}
+	add_ideas = {
+		dai_li_headquaters
+		dai_li_training_rooms
+		dai_li_prisons
+	}
+
+	set_country_flag = extremist_dai_li
+	set_country_flag = dai_li_ministers
+
+
+}
+
+106.2.4 = {
+	
+	OOB = "EAR_106"
+
+	add_political_power = 1198
+
+	set_variable = { victory_condition = token:no_war_in_ba_sing_se_spirit }
+	
+
+	retire_character = EAR_zaifeng
+
+
+	activate_advisor = ear_quon
+	activate_advisor = ear_hiroshi
+	activate_advisor = ear_juno
+	activate_advisor = ear_moku
+	activate_advisor = ear_saiful
+	activate_advisor = ear_cam
+
+	remove_ideas = {
+		corrupt_bureaucracy
+		the_dai_li
+	}
+	add_ideas = {
+		extensive_conscription
+		earth_exceptional
+		dai_li_government
+		heart_of_the_kingdom_idea
+	}
+
+
+	add_ideas = {
+		dai_li_jo_dee
+		dai_li_surveillance
+		dai_li_brainwashing_room
+		dai_li_politics_department
+		dai_li_grand_secretary_office
+	}
+	add_to_variable = {
+		dai_li_influence = 50
+		dai_li_disloyalty = 95
+	}
+	178 = {
+		add_building_construction = {
+			type = infrastructure
+			level = 2
+		}
+	}
+
+}
+
+ ## #####  ##  ###  #####       #   #   #
+#     #   #  # #  #   #        ##  ##  ##
+ #    #   #### ###    #       # # # # # #
+  #   #   #  # #  #   #         #   #   #
+##    #   #  # #  #   #         #   #   #
+
+
+
+
+111.10.30 ={
+	
+	OOB = "EAR_106"
+
+	add_political_power = 1198
+
+
+}
+
+
+
+#############################################
+#############################################
+#				HISTORY SETUP				#
+#############################################
+#############################################
+
+
+##############################################   year 12 after rokus death
+
+if = {
+	limit = {
+		has_start_date < 13.01.01
+	}
+	EAR = {
+		earth_puppets_12 = yes
+	}
+}
+
+##############################################   year 52 after rokus death
+
+if = {
+	limit = {
+		has_start_date > 13.01.01
+		has_start_date < 53.01.01
+	}
+
+	###### war declaration
+
+
+	###### diplomatic relations
+	EAR = {
+		ear_exiles_52 = yes
+		earth_puppets_52 = yes
+	}
+
+	###### alliances
+
+	EAR = {
+		earth_faction_52 = yes
+	}
+
+}
+
+##############################################   year 106 after rokus death
+
+if = {
+	limit = {
+		has_start_date > 53.01.01
+		has_start_date < 107.01.01
+	}
+
+	###### war declaration
+
+
+	###### diplomatic relations
+	EAR = {
+		ear_exiles_52 = yes
+		ear_exiles_106 = yes
+		earth_puppets_106 = yes
+	}
+
+	###### alliances
+
+	EAR = {
+		earth_faction_106 = yes
+	}
+}
+
+##############################################   year 111 after rokus death
+
+if = {
+	limit = {
+		has_start_date > 107.01.01
+	}
+
+	###### war declaration
+
+
+	###### diplomatic relations
+	EAR = {
+		ear_exiles_52 = yes
+		ear_exiles_106 = yes
+		earth_puppets_111 = yes
+	}
+
+	###### alliances
+
+	EAR = {
+		earth_faction_111 = yes
+	}
+
+
+}

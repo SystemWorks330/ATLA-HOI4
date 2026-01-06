@@ -1,0 +1,166 @@
+capital = 329
+
+OOB = "SAT_12"
+
+AIR_generic_starting_tech = yes
+
+#set_research_slots = 2
+
+set_convoys = 100
+
+ 
+set_country_flag = AIR_special_forces
+set_country_flag = AIR_air_techs
+set_country_flag = air_council_waiting_for_players_decision
+
+set_politics = {
+	ruling_party = air_culture
+	last_election = "10.5.8"
+	election_frequency = 120
+	elections_allowed = yes
+}
+
+set_popularities = {
+	water_culture = 0
+	pluralist_culture = 30
+	fire_culture = 0
+	earth_culture = 0
+	air_culture = 70
+}
+
+set_stability = 0.8 
+set_war_support = 0.8
+
+
+add_ideas = {
+
+	pacifist_detachment
+	nomadic_lifestyle
+	home_of_the_avatar
+
+	international_trade
+	construction_efforts_law
+	disarmed_air_nation
+	air_benders_only
+	family_support_3
+	mandatory_education
+}
+
+recruit_character = SAT_monk_pasang
+recruit_character = SAT_monk_gyatso
+
+recruit_character = SAT_head_of_intelligence_1
+recruit_character = SAT_head_of_intelligence_2
+recruit_character = SAT_head_of_intelligence_3
+recruit_character = SAT_head_of_intelligence_4
+recruit_character = SAT_head_of_intelligence_5
+recruit_character = SAT_head_of_intelligence_6
+
+recruit_character = SAT_quartermaster_1
+recruit_character = SAT_quartermaster_2
+recruit_character = SAT_quartermaster_3
+recruit_character = SAT_quartermaster_4
+recruit_character = SAT_quartermaster_5
+recruit_character = SAT_quartermaster_6
+
+every_character = {
+	set_character_flag = airbender_monk
+}
+
+### important to recruit non monks after this effect
+
+recruit_character = SAT_aang
+recruit_character = SAT_appa
+recruit_character = SAT_momo
+
+
+recruit_character = SAT_extinct_nation
+recruit_character = SAT_council
+
+SAT_monk_gyatso = {
+	set_variable = { PREV.council_name_2 = THIS.id }
+	set_character_flag = appointed_to_council_2
+	set_character_flag = appointed_to_council
+}
+SAT_monk_pasang = {
+	set_variable = { PREV.council_name_3 = THIS.id }
+	set_character_flag = appointed_to_council_3
+	set_character_flag = appointed_to_council
+}
+
+
+
+AIR_choose_council_members = yes
+
+set_variable = { council_name_1:harmony = 1 }
+set_variable = { council_name_2:harmony = 3 }
+set_variable = { council_name_3:harmony = 4 }
+set_variable = { council_name_4:harmony = 1 }
+set_variable = { council_name_5:harmony = 5 }
+set_variable = { AIR_council_army = 50 }
+set_variable = { AIR_council_navy = 25 }
+set_variable = { AIR_council_air = 175 }
+set_variable = { AIR_council_construction = 75 }
+set_variable = { AIR_council_research = 75 }
+set_variable = { AIR_council_politics = 200 }
+
+AIR_recalc_council_support = yes
+
+
+
+if = {
+	limit = {
+		has_start_date < 13.1.1
+	}
+	
+	activate_mission = troubling_signs
+
+}
+
+create_faction = Air_Nomads
+add_to_faction = WAT
+add_to_faction = EAT
+add_to_faction = SAT
+add_to_faction = NAT
+
+
+
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 ={
+	set_politics = {
+		ruling_party = air_culture
+		elections_allowed = no
+	}
+	#set_cosmetic_tag = SAT_exterminated
+	OOB = "empty"
+	retire_character = SAT_monk_pasang
+	retire_character = SAT_monk_gyatso
+	clr_country_flag = air_council_active
+	add_popularity = {
+		ideology = air_culture
+		popularity = -0.35
+	}
+	add_ideas = {
+		no_ruler
+		local_markets
+	}
+	country_lock_all_division_template = yes
+	remove_ideas = {
+		pacifist_detachment
+	}
+	
+	dismantle_faction = yes
+}

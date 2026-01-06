@@ -1,0 +1,82 @@
+on_actions = {
+
+#	on_puppet = {
+#		effect = {
+#			ROOT = {
+#				set_variable = { autonomy_var = 500 }
+#
+#				autonomy_state_recalc = yes
+#			}
+#		}
+#	}
+#
+#	on_startup = {
+#
+#		effect = {
+#			every_country = {
+#				autonomy_state_recalc = yes
+#
+#				set_variable = { autonomy_min = 0 }
+#				set_variable = { autonomy_max = 1000 }
+#			}
+#		}
+#	}
+
+	on_subject_annexed = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						check_variable = {
+							mtth:overlord_influence < 1
+							tooltip = overlord_influence_check
+						}
+					}
+				}
+
+				every_state = {
+					limit = {
+						is_core_of = PREV.ROOT
+					}
+					set_temp_variable = { temp_missing_influence = 1 }
+					ROOT = { subtract_from_temp_variable = { temp_missing_influence = mtth:overlord_influence } }
+					multiply_temp_variable = { temp_missing_influence = 100 }
+					clamp_temp_variable = {
+						var = temp_missing_influence
+						min = 0
+						max = 100
+					}
+					add_resistance = var:temp_missing_influence
+					transfer_state_to = PREV.ROOT
+				}
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+
+			if = {
+				limit = {
+					is_puppet = yes
+				}
+
+				set_variable = { influence_variable = mtth:overlord_influence }
+				multiply_variable = { influence_variable = -1 }
+
+				meta_effect = {
+					text = {
+						add_autonomy_score = {
+							value = [INFLUENCE]
+							localization = master_influence
+						}
+					}
+					INFLUENCE = "[?influence_variable]"
+				}
+			}
+			
+		}
+	}
+
+	
+}

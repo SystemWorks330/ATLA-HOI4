@@ -1,0 +1,207 @@
+division_template = {
+	name = "Chin Banner"
+	regiments = {
+		swordsmen = {
+			x = 0
+			y = 0
+		}
+		swordsmen = {
+			x = 0
+			y = 1
+		}
+		swordsmen = {
+			x = 0
+			y = 2
+		}
+		spearmen = {
+			x = 1
+			y = 0
+		}
+		spearmen = {
+			x = 1
+			y = 1
+		}
+		spearmen = {
+			x = 1
+			y = 2
+		}
+		earthbender = {
+			x = 2
+			y = 0
+		}
+		earthbender = {
+			x = 2
+			y = 1
+		}
+		earthbender = {
+			x = 2
+			y = 2
+		}
+	}
+}
+division_template = {
+	name = "Chin Banner - Ranged"
+	regiments = {
+		archers = {
+			x = 0
+			y = 0
+		}
+		archers = {
+			x = 0
+			y = 1
+		}
+		archers = {
+			x = 0
+			y = 2
+		}
+		pikemen = {
+			x = 1
+			y = 0
+		}
+		pikemen = {
+			x = 1
+			y = 1
+		}
+		pikemen = {
+			x = 1
+			y = 2
+		}
+		earthbender = {
+			x = 2
+			y = 0
+		}
+		earthbender = {
+			x = 2
+			y = 1
+		}
+		earthbender = {
+			x = 2
+			y = 2
+		}
+	}
+}
+division_template = {
+	name = "Town Guard"
+	regiments = {
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		spearmen = {
+			x = 0
+			y = 1
+		}
+		swordsmen = {
+			x = 1
+			y = 0
+		}
+		swordsmen = {
+			x = 1
+			y = 1
+		}
+	}
+}
+division_template = {
+	name = "Earthbender Brigade"
+	regiments = {
+		earthbender = {
+			x = 0
+			y = 0
+		}
+		earthbender = {
+			x = 0
+			y = 1
+		}
+		earthbender = {
+			x = 0
+			y = 2
+		}
+		earthbender = {
+			x = 1
+			y = 0
+		}
+		earthbender = {
+			x = 1
+			y = 1
+		}
+		earthbender = {
+			x = 1
+			y = 2
+		}
+	}
+}
+division_template = {
+	name = "Infantry Banner"
+	regiments = {
+		swordsmen = {
+			x = 0
+			y = 0
+		}
+		swordsmen = {
+			x = 0
+			y = 1
+		}
+		pikemen = {
+			x = 0
+			y = 2
+		}
+		spearmen = {
+			x = 1
+			y = 0
+		}
+		spearmen = {
+			x = 1
+			y = 1
+		}
+		pikemen = {
+			x = 1
+			y = 2
+		}
+	}
+}
+units = {
+	division = {
+		location = 3112
+		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+	}
+	division = {
+		location = 3524
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 9036
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 3093
+		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+	}
+}
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = earthbender_equipment_1
+			creator = "CHN"
+		}
+		requested_factories = 1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = {
+			type = sword_equipment_0
+			creator = "CHN"
+		}
+		requested_factories = 1
+		efficiency = 50
+	}
+	add_equipment_production = {
+		equipment = { 
+			type = spear_equipment_0
+			creator = "CHN"
+		}
+		requested_factories = 1
+		efficiency = 50
+	}
+}

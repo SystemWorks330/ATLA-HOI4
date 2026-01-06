@@ -1,0 +1,55 @@
+# AI Ship Designs for Generic Nations
+
+destroyers = {
+	category = naval
+	
+	blocked_for = {
+		FIR
+	}
+	
+	roles = {
+		naval_screen
+	}
+	
+	priority = {
+		factor = 2500
+		modifier = {
+			factor = 10
+			is_major = no
+		}
+	}
+	
+	screen_default = {
+	
+		priority = {
+			factor = 250
+			modifier = {
+				factor = 10
+				is_major = no
+			}
+		}
+		
+		role_icon_index = 2
+		
+		target_variant = {
+			match_value = 2000.0
+			
+			type = galley_hull
+			modules = {
+				fixed_sails_slot = sails_1
+			}
+		}
+		
+		allowed_modules = {
+			ship_depth_charge
+			ship_light_battery
+			ship_torpedo
+			ship_anti_air
+			light_ship_engine
+			ship_sonar
+			ship_fire_control_system
+			ship_radar
+		}
+	}
+
+}

@@ -1,0 +1,816 @@
+spriteTypes = {
+
+###################################################
+# Contains GFX for the equipment modules and slots shown on top of the blue print
+#
+# Names of the modules are normalized and *must* obey the following naming
+# convention.
+#
+# "GFX_EMI_" MODULE_KEY
+# "GFX_EMSI_" MODULE_SLOT_KEY
+#
+# MODULE_KEY is either the specific key used to define the module in script, or
+#   the module's gfx attribute, if a matching graphics entry cannot be found
+#   with the module's specific key.
+# MODULE_SLOT_KEY is either the specific key used to define the module slot in
+#   the equipment type script, or the module slot's gfx attribute, if a matching
+#   graphics entry cannot be found with the slot's specific key.
+###################################################
+
+######## Fallback icons
+
+	spriteType = {
+		name = "GFX_EMI_unknown"
+		textureFile = "gfx/interface/equipmentdesigner/module_icon_unknown.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMSI_empty"
+		textureFile = "gfx/interface/equipmentdesigner/module_slot_icon_empty.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_EMSI_locked"
+		textureFile = "gfx/interface/equipmentdesigner/module_slot_icon_locked.dds"
+	}
+	
+######## Ship module slot icons
+
+	spriteType = {
+		name = "GFX_EMSI_fixed_ship_sail_slot"
+		textureFile = "gfx/interface/equipmentdesigner/naval/module_slots/icons/sail.dds"
+	}
+
+
+######## Storage icons
+
+	spriteType = {
+		name = "GFX_EMI_supplies"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_supplies.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_storage_room"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_storage.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_storage_room_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_storage_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_storage_room_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_storage_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_storage_room_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_storage_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_storage_room_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_storage_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_storage_room_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_storage_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_storage_room_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_storage_6.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_supplies_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_supplies_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_supplies_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_supplies_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_supplies_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_supplies_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_supplies_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_supplies_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_supplies_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_supplies_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_supplies_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_supplies_6.dds"
+	}
+
+######## Outlook icons
+
+	spriteType = {
+		name = "GFX_EMI_bridge"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_bridge.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_lookout_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_bridge_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_lookout_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_bridge_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_lookout_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_bridge_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_lookout_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_bridge_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_lookout_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_bridge_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_lookout_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_bridge_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_crows_nest_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/crows_nest_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_crows_nest_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/crows_nest_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_crows_nest_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/crows_nest_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_crows_nest_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/crows_nest_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_crows_nest_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/crows_nest_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_crows_nest_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/crows_nest_6.dds"
+	}
+
+######## Crew icons
+
+	spriteType = {
+		name = "GFX_EMI_maintenance_crew"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_maintenance_crew.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_maintenance_crew_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_maintenance_crew_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_maintenance_crew_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_maintenance_crew_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_maintenance_crew_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_maintenance_crew_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_maintenance_crew_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_maintenance_crew_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_maintenance_crew_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_maintenance_crew_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_maintenance_crew_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_maintenance_crew_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_ship_crew"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_crew.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_firebender_crew"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_firebender_crew.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_firebender_crew_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_firebender_crew_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_firebender_crew_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_firebender_crew_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_firebender_crew_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_firebender_crew_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_firebender_crew_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_firebender_crew_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_ship_waterbender_crew"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_waterbender_crew.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_waterbender_crew_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_waterbender_crew_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_waterbender_crew_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_waterbender_crew_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_waterbender_crew_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_waterbender_crew_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_waterbender_crew_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_waterbender_crew_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_ship_earthbender_crew"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_earthbender_crew.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_earthbender_crew_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_earthbender_crew_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_earthbender_crew_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_earthbender_crew_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_earthbender_crew_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_earthbender_crew_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_earthbender_crew_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_earthbender_crew_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_ship_airbender_crew"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_airbender_crew.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_airbender_crew_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_airbender_crew_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_airbender_crew_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_airbender_crew_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_airbender_crew_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_airbender_crew_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_airbender_crew_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_airbender_crew_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_ship_boarding"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_boarding.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_boarding_crew_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_boarding_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_boarding_crew_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_boarding_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_boarding_crew_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_boarding_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_boarding_crew_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_boarding_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_boarding_crew_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_boarding_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_boarding_crew_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_boarding_6.dds"
+	}
+
+######## Engine icons
+
+	spriteType = {
+		name = "GFX_EMI_steam_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/steam_engine.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_steam_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/steam_engine_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_steam_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/steam_engine_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_steam_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/steam_engine_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_steam_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/steam_engine_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_steam_engine_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/steam_engine_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_steam_engine_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/steam_engine_6.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_steam_engine_7"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/steam_engine_7.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_steam_engine_8"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/steam_engine_8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_heavy_steam_engine"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_steam_engine.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_steam_engine_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_steam_engine_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_steam_engine_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_steam_engine_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_steam_engine_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_steam_engine_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_steam_engine_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_steam_engine_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_sails"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sails.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_sails_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/small_sail_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_sails_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/small_sail_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_sails_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/small_sail_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_sails_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/small_sail_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_sails_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/small_sail_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_sails_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/small_sail_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_main_sails_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sails_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_main_sails_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sails_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_main_sails_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sails_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_main_sails_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sails_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_oars"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/oars.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_oars_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/oars_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_oars_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/oars_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_oars_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/oars_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_oars_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/oars_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_oars_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/oars_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_oars_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/oars_6.dds"
+	}
+
+######## Mine icons
+
+	spriteType = {
+		name = "GFX_EMI_ship_mine_warfare"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_mine_warfare.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fishing_net_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/fishing_net_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_fishing_net_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/fishing_net_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_mine_layer_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mine_layer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_mine_layer_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mine_layer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_mine_layer_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mine_layer_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_mine_layer_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/mine_layer_4.dds"
+	}
+
+######## Weapon Icons
+
+	spriteType = {
+		name = "GFX_EMI_ship_trebuchet"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_trebuchet.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_trebuchet_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_trebuchet_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_trebuchet_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_trebuchet_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_trebuchet_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_trebuchet_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_trebuchet_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_trebuchet_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_trebuchet_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_trebuchet_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_trebuchet_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_trebuchet_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_ship_catapult"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_catapult.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_catapult_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_catapult_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_catapult_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_catapult_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_catapult_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_catapult_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_catapult_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_catapult_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_catapult_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_catapult_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_catapult_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_catapult_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_ship_ballista"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_ballista.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_ballista_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_ballista_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_ballista_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_ballista_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_ballista_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_ballista_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_ballista_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_ballista_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_ballista_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_ballista_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_ballista_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_ballista_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_ship_heavy_ballista"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_heavy_ballista.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_heavy_ballista_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_heavy_ballista_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_heavy_ballista_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_heavy_ballista_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_heavy_ballista_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_heavy_ballista_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_heavy_ballista_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_heavy_ballista_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_heavy_ballista_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_heavy_ballista_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_heavy_ballista_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_heavy_ballista_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_ship_archers"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_archers.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_archers_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_archers_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_archers_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_archers_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_archers_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_archers_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_archers_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_archers_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_archers_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_archers_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_ship_archers_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/ship_archers_6.dds"
+	}
+
+######## armor
+
+	spriteType = {
+		name = "GFX_EMI_light_hull_reinforcement"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_hull_reinforcement.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_hull_reinforcement_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_hull_reinforcement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_hull_reinforcement_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_hull_reinforcement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_hull_reinforcement_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_hull_reinforcement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_hull_reinforcement_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_hull_reinforcement_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_hull_reinforcement_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_hull_reinforcement_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_hull_reinforcement_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_hull_reinforcement_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_medium_hull_reinforcement"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_hull_reinforcement.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_hull_reinforcement_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_hull_reinforcement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_hull_reinforcement_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_hull_reinforcement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_hull_reinforcement_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_hull_reinforcement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_hull_reinforcement_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_hull_reinforcement_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_hull_reinforcement_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_hull_reinforcement_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_hull_reinforcement_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_hull_reinforcement_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_heavy_hull_reinforcement"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_hull_reinforcement.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_hull_reinforcement_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_hull_reinforcement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_hull_reinforcement_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_hull_reinforcement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_hull_reinforcement_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_hull_reinforcement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_hull_reinforcement_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_hull_reinforcement_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_hull_reinforcement_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_hull_reinforcement_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_hull_reinforcement_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_hull_reinforcement_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_light_armor_plates"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_armor_plates.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_armor_plates_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_armor_plates_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_armor_plates_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_armor_plates_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_armor_plates_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_armor_plates_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_armor_plates_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_armor_plates_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_armor_plates_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_armor_plates_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_light_armor_plates_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/light_armor_plates_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_medium_armor_plates"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_armor_plates.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_armor_plates_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_armor_plates_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_armor_plates_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_armor_plates_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_armor_plates_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_armor_plates_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_armor_plates_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_armor_plates_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_armor_plates_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_armor_plates_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_medium_armor_plates_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/medium_armor_plates_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_heavy_armor_plates"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_armor_plates.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_armor_plates_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_armor_plates_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_armor_plates_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_armor_plates_2.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_armor_plates_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_armor_plates_3.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_armor_plates_4"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_armor_plates_4.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_armor_plates_5"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_armor_plates_5.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_heavy_armor_plates_6"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/heavy_armor_plates_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_EMI_super_heavy_armor_plates"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/super_heavy_armor_plates.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_super_heavy_armor_plates_1"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/super_heavy_armor_plates_1.dds"
+	}
+	spriteType = {
+		name = "GFX_EMI_super_heavy_armor_plates_2"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/super_heavy_armor_plates_2.dds"
+	}
+	
+	
+}
+
+
+
+
+

@@ -1,0 +1,720 @@
+default = {
+
+	operative = {
+		male = {
+			"GFX_portrait_operative_unknown"
+		}
+		female = {
+			"GFX_portrait_operative_unknown"
+		}
+	}
+
+	male = {
+		"GFX_portrait_unknown"
+	}
+	female = {
+		"GFX_portrait_unknown_female"
+	}
+}
+
+continent = {
+	name = south_america
+	army = {
+		male = {
+			"GFX_Portrait_Earthkingdom_Generic_1"
+			"GFX_Portrait_Earthkingdom_Generic_2"
+			"GFX_Portrait_Earthkingdom_Generic_3"
+			"GFX_Portrait_Earthkingdom_Generic_4"
+			"GFX_Portrait_Earthkingdom_Generic_5"
+			"GFX_Portrait_Earthkingdom_Generic_6"
+			"GFX_Portrait_Earthkingdom_Generic_7"
+			"GFX_Portrait_Earthkingdom_Generic_8"
+			"GFX_Portrait_Earthkingdom_Generic_9"
+			"GFX_Portrait_Earthkingdom_Generic_10"
+			"GFX_Portrait_Earthkingdom_Generic_11"
+			"GFX_Portrait_Earthkingdom_Generic_12"
+			"GFX_Portrait_Earthkingdom_Generic_13"
+			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Earthkingdom_Generic_1"
+			"GFX_Portrait_Earthkingdom_Generic_2"
+			"GFX_Portrait_Earthkingdom_Generic_3"
+			"GFX_Portrait_Earthkingdom_Generic_4"
+			"GFX_Portrait_Earthkingdom_Generic_5"
+			"GFX_Portrait_Earthkingdom_Generic_6"
+			"GFX_Portrait_Earthkingdom_Generic_7"
+			"GFX_Portrait_Earthkingdom_Generic_8"
+			"GFX_Portrait_Earthkingdom_Generic_9"
+			"GFX_Portrait_Earthkingdom_Generic_10"
+			"GFX_Portrait_Earthkingdom_Generic_11"
+			"GFX_Portrait_Earthkingdom_Generic_12"
+			"GFX_Portrait_Earthkingdom_Generic_13"
+			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
+		}
+	}
+
+}
+
+continent = {
+	name = europe
+	army = {
+		male = {
+			"GFX_Portrait_Earthkingdom_Generic_1"
+			"GFX_Portrait_Earthkingdom_Generic_2"
+			"GFX_Portrait_Earthkingdom_Generic_3"
+			"GFX_Portrait_Earthkingdom_Generic_4"
+			"GFX_Portrait_Earthkingdom_Generic_5"
+			"GFX_Portrait_Earthkingdom_Generic_6"
+			"GFX_Portrait_Earthkingdom_Generic_7"
+			"GFX_Portrait_Earthkingdom_Generic_8"
+			"GFX_Portrait_Earthkingdom_Generic_9"
+			"GFX_Portrait_Earthkingdom_Generic_10"
+			"GFX_Portrait_Earthkingdom_Generic_11"
+			"GFX_Portrait_Earthkingdom_Generic_12"
+			"GFX_Portrait_Earthkingdom_Generic_13"
+			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Earthkingdom_Generic_1"
+			"GFX_Portrait_Earthkingdom_Generic_2"
+			"GFX_Portrait_Earthkingdom_Generic_3"
+			"GFX_Portrait_Earthkingdom_Generic_4"
+			"GFX_Portrait_Earthkingdom_Generic_5"
+			"GFX_Portrait_Earthkingdom_Generic_6"
+			"GFX_Portrait_Earthkingdom_Generic_7"
+			"GFX_Portrait_Earthkingdom_Generic_8"
+			"GFX_Portrait_Earthkingdom_Generic_9"
+			"GFX_Portrait_Earthkingdom_Generic_10"
+			"GFX_Portrait_Earthkingdom_Generic_11"
+			"GFX_Portrait_Earthkingdom_Generic_12"
+			"GFX_Portrait_Earthkingdom_Generic_13"
+			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
+		}
+	}
+
+}
+
+continent = {
+	name = north_america
+	army = {
+		male = {
+			"GFX_Portrait_Earthkingdom_Generic_1"
+			"GFX_Portrait_Earthkingdom_Generic_2"
+			"GFX_Portrait_Earthkingdom_Generic_3"
+			"GFX_Portrait_Earthkingdom_Generic_4"
+			"GFX_Portrait_Earthkingdom_Generic_5"
+			"GFX_Portrait_Earthkingdom_Generic_6"
+			"GFX_Portrait_Earthkingdom_Generic_7"
+			"GFX_Portrait_Earthkingdom_Generic_8"
+			"GFX_Portrait_Earthkingdom_Generic_9"
+			"GFX_Portrait_Earthkingdom_Generic_10"
+			"GFX_Portrait_Earthkingdom_Generic_11"
+			"GFX_Portrait_Earthkingdom_Generic_12"
+			"GFX_Portrait_Earthkingdom_Generic_13"
+			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Earthkingdom_Generic_1"
+			"GFX_Portrait_Earthkingdom_Generic_2"
+			"GFX_Portrait_Earthkingdom_Generic_3"
+			"GFX_Portrait_Earthkingdom_Generic_4"
+			"GFX_Portrait_Earthkingdom_Generic_5"
+			"GFX_Portrait_Earthkingdom_Generic_6"
+			"GFX_Portrait_Earthkingdom_Generic_7"
+			"GFX_Portrait_Earthkingdom_Generic_8"
+			"GFX_Portrait_Earthkingdom_Generic_9"
+			"GFX_Portrait_Earthkingdom_Generic_10"
+			"GFX_Portrait_Earthkingdom_Generic_11"
+			"GFX_Portrait_Earthkingdom_Generic_12"
+			"GFX_Portrait_Earthkingdom_Generic_13"
+			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
+		}
+	}
+
+}
+
+FIR = {
+	army = {
+		male = {
+			"GFX_Portrait_Firenation_Generic_1"
+			"GFX_Portrait_Firenation_Generic_2"
+			"GFX_Portrait_Firenation_Generic_3"
+			"GFX_Portrait_Firenation_Generic_4"
+			"GFX_Portrait_Firenation_Generic_5"
+			"GFX_Portrait_Firenation_Generic_6"
+			"GFX_Portrait_Firenation_Generic_7"
+			"GFX_Portrait_Firenation_Generic_10"
+			"GFX_Portrait_Firenation_Generic_11"
+			"GFX_Portrait_Firenation_Generic_12"
+			"GFX_Portrait_Firenation_Generic_13"
+			"GFX_Portrait_Firenation_Generic_14"
+			"GFX_Portrait_Firenation_Generic_15"
+			"GFX_Portrait_Firenation_Generic_16"
+			"GFX_Portrait_Firenation_Generic_17"
+			"GFX_Portrait_Firenation_Generic_18"
+			"GFX_Portrait_Firenation_Generic_19"
+			"GFX_Portrait_Firenation_Generic_20"
+			"GFX_Portrait_Firenation_Generic_21"
+			"GFX_Portrait_Firenation_Generic_22"
+			"GFX_Portrait_Firenation_Generic_23"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Firenation_Generic_4"
+			"GFX_Portrait_Firenation_Generic_8"
+			"GFX_Portrait_Firenation_Generic_9"
+			"GFX_Portrait_Firenation_Generic_11"
+			"GFX_Portrait_Firenation_Generic_12"
+		}
+	}
+
+	operative = {
+		male = {
+			"gfx/leaders/_SPY/fir_spy_1.dds"
+			"gfx/leaders/_SPY/fir_spy_2.dds"
+			"gfx/leaders/_SPY/fir_spy_3.dds"
+		}
+		female = {
+			"gfx/leaders/_SPY/generic_spy_1.dds"
+		}
+	}
+}
+
+SNW = {
+	army = {
+		male = {
+			"gfx/leaders/SNW/snw_face_1.dds"
+			"gfx/leaders/SNW/snw_face_2.dds"
+			"gfx/leaders/SNW/snw_face_3.dds"
+			"gfx/leaders/SNW/snw_face_4.dds"
+			"gfx/leaders/SNW/snw_face_5.dds"
+			"gfx/leaders/SNW/snw_face_6.dds"
+			"gfx/leaders/SNW/snw_face_7.dds"
+			"gfx/leaders/SNW/snw_face_8.dds"
+		}
+	}
+	navy = {
+		male = {
+			"gfx/leaders/SNW/snw_face_9.dds"
+			"gfx/leaders/SNW/snw_face_10.dds"
+			"gfx/leaders/SNW/snw_face_11.dds"
+			"gfx/leaders/SNW/snw_face_12.dds"
+			"gfx/leaders/SNW/snw_face_13.dds"
+		}
+	}
+	operative = {
+			male = {
+			"gfx/leaders/SNW/snw_face_14.dds"
+			"gfx/leaders/SNW/snw_face_16.dds"
+			"gfx/leaders/SNW/snw_face_17.dds"
+			"gfx/leaders/SNW/snw_face_18.dds"
+		}
+	}
+}
+EAR = {
+	army = {
+		male = {
+			"GFX_Portrait_Earthkingdom_Generic_1"
+			"GFX_Portrait_Earthkingdom_Generic_2"
+			"GFX_Portrait_Earthkingdom_Generic_3"
+			"GFX_Portrait_Earthkingdom_Generic_4"
+			"GFX_Portrait_Earthkingdom_Generic_5"
+			"GFX_Portrait_Earthkingdom_Generic_6"
+			"GFX_Portrait_Earthkingdom_Generic_7"
+			"GFX_Portrait_Earthkingdom_Generic_8"
+			"GFX_Portrait_Earthkingdom_Generic_9"
+			"GFX_Portrait_Earthkingdom_Generic_10"
+			"GFX_Portrait_Earthkingdom_Generic_11"
+			"GFX_Portrait_Earthkingdom_Generic_12"
+			"GFX_Portrait_Earthkingdom_Generic_13"
+			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Earthkingdom_Generic_1"
+			"GFX_Portrait_Earthkingdom_Generic_2"
+			"GFX_Portrait_Earthkingdom_Generic_3"
+			"GFX_Portrait_Earthkingdom_Generic_4"
+			"GFX_Portrait_Earthkingdom_Generic_5"
+			"GFX_Portrait_Earthkingdom_Generic_6"
+			"GFX_Portrait_Earthkingdom_Generic_7"
+			"GFX_Portrait_Earthkingdom_Generic_8"
+			"GFX_Portrait_Earthkingdom_Generic_9"
+			"GFX_Portrait_Earthkingdom_Generic_10"
+			"GFX_Portrait_Earthkingdom_Generic_11"
+			"GFX_Portrait_Earthkingdom_Generic_12"
+			"GFX_Portrait_Earthkingdom_Generic_13"
+			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
+		}
+	}
+
+	operative = {
+		male = {
+			"gfx/leaders/_SPY/ear_spy_1.dds"
+			"gfx/leaders/_SPY/ear_spy_2.dds"
+			"gfx/leaders/_SPY/ear_spy_3.dds"
+		}
+		female = {
+			"gfx/leaders/_SPY/generic_spy_1.dds"
+		}
+	}
+
+}
+
+EAR_united = {
+	army = {
+		male = {
+			"GFX_Portrait_Earthkingdom_Generic_1"
+			"GFX_Portrait_Earthkingdom_Generic_2"
+			"GFX_Portrait_Earthkingdom_Generic_3"
+			"GFX_Portrait_Earthkingdom_Generic_4"
+			"GFX_Portrait_Earthkingdom_Generic_5"
+			"GFX_Portrait_Earthkingdom_Generic_6"
+			"GFX_Portrait_Earthkingdom_Generic_7"
+			"GFX_Portrait_Earthkingdom_Generic_8"
+			"GFX_Portrait_Earthkingdom_Generic_9"
+			"GFX_Portrait_Earthkingdom_Generic_10"
+			"GFX_Portrait_Earthkingdom_Generic_11"
+			"GFX_Portrait_Earthkingdom_Generic_12"
+			"GFX_Portrait_Earthkingdom_Generic_13"
+			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Earthkingdom_Generic_1"
+			"GFX_Portrait_Earthkingdom_Generic_2"
+			"GFX_Portrait_Earthkingdom_Generic_3"
+			"GFX_Portrait_Earthkingdom_Generic_4"
+			"GFX_Portrait_Earthkingdom_Generic_5"
+			"GFX_Portrait_Earthkingdom_Generic_6"
+			"GFX_Portrait_Earthkingdom_Generic_7"
+			"GFX_Portrait_Earthkingdom_Generic_8"
+			"GFX_Portrait_Earthkingdom_Generic_9"
+			"GFX_Portrait_Earthkingdom_Generic_10"
+			"GFX_Portrait_Earthkingdom_Generic_11"
+			"GFX_Portrait_Earthkingdom_Generic_12"
+			"GFX_Portrait_Earthkingdom_Generic_13"
+			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
+		}
+	}
+
+	operative = {
+		male = {
+			"gfx/leaders/_SPY/ear_spy_1.dds"
+			"gfx/leaders/_SPY/ear_spy_2.dds"
+			"gfx/leaders/_SPY/ear_spy_3.dds"
+		}
+		female = {
+			"gfx/leaders/_SPY/generic_spy_1.dds"
+		}
+	}
+}
+
+
+OMS = {
+	army = {
+		male = {
+			"GFX_Portrait_Omashu_Generic_1"
+			"GFX_Portrait_Omashu_Generic_2"
+			"GFX_Portrait_Omashu_Generic_3"
+			"GFX_Portrait_Omashu_Generic_4"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Omashu_Generic_1"
+			"GFX_Portrait_Omashu_Generic_2"
+			"GFX_Portrait_Omashu_Generic_3"
+			"GFX_Portrait_Omashu_Generic_4"
+		}
+	}
+}
+
+
+MPO = {
+	army = {
+		male = {
+			"GFX_Portrait_Misty_Palm_Generic_1"
+			"GFX_Portrait_Misty_Palm_Generic_2"
+			"GFX_Portrait_Misty_Palm_Generic_3"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Misty_Palm_Generic_1"
+			"GFX_Portrait_Misty_Palm_Generic_2"
+			"GFX_Portrait_Misty_Palm_Generic_3"
+		}
+	}
+}
+
+SWA = {
+	army = {
+		male = {
+			"GFX_Portrait_Swamp_Generic_1"
+			"GFX_Portrait_Swamp_Generic_2"
+			"GFX_Portrait_Swamp_Generic_3"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Swamp_Generic_1"
+			"GFX_Portrait_Swamp_Generic_2"
+			"GFX_Portrait_Swamp_Generic_3"
+		}
+	}
+}
+
+
+KYI = {
+	army = {
+		female = {
+			"GFX_Portrait_Kyoshi_Generic_1"
+			"GFX_Portrait_Kyoshi_Generic_2"
+			"GFX_Portrait_Kyoshi_Generic_3"
+			"GFX_Portrait_Kyoshi_Generic_4"
+			"GFX_Portrait_Kyoshi_Generic_5"
+		}
+	}
+	
+	navy = {
+		female = {
+			"GFX_Portrait_Kyoshi_Generic_1"
+			"GFX_Portrait_Kyoshi_Generic_2"
+			"GFX_Portrait_Kyoshi_Generic_3"
+			"GFX_Portrait_Kyoshi_Generic_4"
+			"GFX_Portrait_Kyoshi_Generic_5"
+		}
+	}
+}
+
+
+NWT = {
+	army = {
+		male = {
+			"GFX_Portrait_Watertribe_Generic_1"
+			"GFX_Portrait_Watertribe_Generic_2"
+			"GFX_Portrait_Watertribe_Generic_3"
+			"GFX_Portrait_Watertribe_Generic_4"
+			"GFX_Portrait_Watertribe_Generic_5"
+			"GFX_Portrait_Watertribe_Generic_6"
+			"GFX_Portrait_Watertribe_Generic_7"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Watertribe_Generic_1"
+			"GFX_Portrait_Watertribe_Generic_2"
+			"GFX_Portrait_Watertribe_Generic_3"
+			"GFX_Portrait_Watertribe_Generic_4"
+			"GFX_Portrait_Watertribe_Generic_6"
+			"GFX_Portrait_Watertribe_Generic_7"
+		}
+	}
+
+}
+
+NWT_tribes = {
+	army = {
+		male = {
+			"GFX_Portrait_Watertribe_Generic_1"
+			"GFX_Portrait_Watertribe_Generic_2"
+			"GFX_Portrait_Watertribe_Generic_3"
+			"GFX_Portrait_Watertribe_Generic_4"
+			"GFX_Portrait_Watertribe_Generic_5"
+			"GFX_Portrait_Watertribe_Generic_6"
+			"GFX_Portrait_Watertribe_Generic_7"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Watertribe_Generic_1"
+			"GFX_Portrait_Watertribe_Generic_2"
+			"GFX_Portrait_Watertribe_Generic_3"
+			"GFX_Portrait_Watertribe_Generic_4"
+			"GFX_Portrait_Watertribe_Generic_6"
+			"GFX_Portrait_Watertribe_Generic_7"
+		}
+	}
+
+}
+
+SWT = {
+	army = {
+		male = {
+			"GFX_Portrait_Southern_Watertribe_Generic_1"
+			"GFX_Portrait_Southern_Watertribe_Generic_2"
+			"GFX_Portrait_Southern_Watertribe_Generic_3"
+			"GFX_Portrait_Southern_Watertribe_Generic_4"
+			"GFX_Portrait_Southern_Watertribe_Generic_5"
+			"GFX_Portrait_Southern_Watertribe_Generic_6"
+			"GFX_Portrait_Southern_Watertribe_Generic_7"
+			"GFX_Portrait_Southern_Watertribe_Generic_8"
+			"GFX_Portrait_Southern_Watertribe_Generic_9"
+			"GFX_Portrait_Southern_Watertribe_Generic_10"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Southern_Watertribe_Generic_1"
+			"GFX_Portrait_Southern_Watertribe_Generic_2"
+			"GFX_Portrait_Southern_Watertribe_Generic_3"
+			"GFX_Portrait_Southern_Watertribe_Generic_4"
+			"GFX_Portrait_Southern_Watertribe_Generic_5"
+			"GFX_Portrait_Southern_Watertribe_Generic_6"
+			"GFX_Portrait_Southern_Watertribe_Generic_7"
+			"GFX_Portrait_Southern_Watertribe_Generic_8"
+			"GFX_Portrait_Southern_Watertribe_Generic_9"
+			"GFX_Portrait_Southern_Watertribe_Generic_10"
+		}
+	}
+
+}
+
+SWT_tribes = {
+	army = {
+		male = {
+			"GFX_Portrait_Southern_Watertribe_Generic_1"
+			"GFX_Portrait_Southern_Watertribe_Generic_2"
+			"GFX_Portrait_Southern_Watertribe_Generic_3"
+			"GFX_Portrait_Southern_Watertribe_Generic_4"
+			"GFX_Portrait_Southern_Watertribe_Generic_5"
+			"GFX_Portrait_Southern_Watertribe_Generic_6"
+			"GFX_Portrait_Southern_Watertribe_Generic_7"
+			"GFX_Portrait_Southern_Watertribe_Generic_8"
+			"GFX_Portrait_Southern_Watertribe_Generic_9"
+			"GFX_Portrait_Southern_Watertribe_Generic_10"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Southern_Watertribe_Generic_1"
+			"GFX_Portrait_Southern_Watertribe_Generic_2"
+			"GFX_Portrait_Southern_Watertribe_Generic_3"
+			"GFX_Portrait_Southern_Watertribe_Generic_4"
+			"GFX_Portrait_Southern_Watertribe_Generic_5"
+			"GFX_Portrait_Southern_Watertribe_Generic_6"
+			"GFX_Portrait_Southern_Watertribe_Generic_7"
+			"GFX_Portrait_Southern_Watertribe_Generic_8"
+			"GFX_Portrait_Southern_Watertribe_Generic_9"
+			"GFX_Portrait_Southern_Watertribe_Generic_10"
+		}
+	}
+
+}
+
+
+
+EAT = {
+	army = {
+		male = {
+			"GFX_Portrait_airnomad_generic_1"
+			"GFX_Portrait_airnomad_generic_2"
+			"GFX_Portrait_airnomad_generic_3"
+			"GFX_Portrait_airnomad_generic_4"
+			"GFX_Portrait_airnomad_generic_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_airnomad_generic_1"
+			"GFX_Portrait_airnomad_generic_2"
+			"GFX_Portrait_airnomad_generic_3"
+			"GFX_Portrait_airnomad_generic_4"
+			"GFX_Portrait_airnomad_generic_5"
+		}
+	}
+	operative = {
+		female = {
+			"gfx/leaders/_SPY/AIR_spy_1.dds"
+			"gfx/leaders/_SPY/AIR_spy_2.dds"
+			"gfx/leaders/_SPY/AIR_spy_3.dds"
+		}
+	}
+}
+
+
+NAT = {
+	army = {
+		male = {
+			"GFX_Portrait_airnomad_generic_1"
+			"GFX_Portrait_airnomad_generic_2"
+			"GFX_Portrait_airnomad_generic_3"
+			"GFX_Portrait_airnomad_generic_4"
+			"GFX_Portrait_airnomad_generic_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_airnomad_generic_1"
+			"GFX_Portrait_airnomad_generic_2"
+			"GFX_Portrait_airnomad_generic_3"
+			"GFX_Portrait_airnomad_generic_4"
+			"GFX_Portrait_airnomad_generic_5"
+		}
+	}
+	operative = {
+		female = {
+			"gfx/leaders/_SPY/AIR_spy_1.dds"
+			"gfx/leaders/_SPY/AIR_spy_2.dds"
+			"gfx/leaders/_SPY/AIR_spy_3.dds"
+		}
+	}
+}
+
+
+WAT = {
+	army = {
+		male = {
+			"GFX_Portrait_airnomad_generic_1"
+			"GFX_Portrait_airnomad_generic_2"
+			"GFX_Portrait_airnomad_generic_3"
+			"GFX_Portrait_airnomad_generic_4"
+			"GFX_Portrait_airnomad_generic_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_airnomad_generic_1"
+			"GFX_Portrait_airnomad_generic_2"
+			"GFX_Portrait_airnomad_generic_3"
+			"GFX_Portrait_airnomad_generic_4"
+			"GFX_Portrait_airnomad_generic_5"
+		}
+	}
+	operative = {
+		female = {
+			"gfx/leaders/_SPY/AIR_spy_1.dds"
+			"gfx/leaders/_SPY/AIR_spy_2.dds"
+			"gfx/leaders/_SPY/AIR_spy_3.dds"
+		}
+	}
+}
+
+
+SAT = {
+	army = {
+		male = {
+			"GFX_Portrait_airnomad_generic_1"
+			"GFX_Portrait_airnomad_generic_2"
+			"GFX_Portrait_airnomad_generic_3"
+			"GFX_Portrait_airnomad_generic_4"
+			"GFX_Portrait_airnomad_generic_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_airnomad_generic_1"
+			"GFX_Portrait_airnomad_generic_2"
+			"GFX_Portrait_airnomad_generic_3"
+			"GFX_Portrait_airnomad_generic_4"
+			"GFX_Portrait_airnomad_generic_5"
+		}
+	}
+	operative = {
+		female = {
+			"gfx/leaders/_SPY/AIR_spy_1.dds"
+			"gfx/leaders/_SPY/AIR_spy_2.dds"
+			"gfx/leaders/_SPY/AIR_spy_3.dds"
+		}
+	}
+}
+
+
+PIR = {
+	army = {
+		male = {
+			"GFX_Portrait_Pirates_Generic_1"
+			"GFX_Portrait_Pirates_Generic_2"
+			"GFX_Portrait_Pirates_Generic_3"
+			"GFX_Portrait_Pirates_Generic_4"
+			"GFX_Portrait_Pirates_Generic_5"
+			"GFX_Portrait_Pirates_Generic_6"
+			"GFX_Portrait_Pirates_Generic_7"
+			"GFX_Portrait_Pirates_Generic_8"
+			"GFX_Portrait_Pirates_Generic_9"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Pirates_Generic_1"
+			"GFX_Portrait_Pirates_Generic_2"
+			"GFX_Portrait_Pirates_Generic_3"
+			"GFX_Portrait_Pirates_Generic_4"
+			"GFX_Portrait_Pirates_Generic_5"
+			"GFX_Portrait_Pirates_Generic_6"
+			"GFX_Portrait_Pirates_Generic_7"
+			"GFX_Portrait_Pirates_Generic_8"
+			"GFX_Portrait_Pirates_Generic_9"
+		}
+	}
+
+}

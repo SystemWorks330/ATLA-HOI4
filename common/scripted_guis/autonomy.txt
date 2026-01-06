@@ -1,0 +1,56 @@
+scripted_gui = {
+
+	autonomy_diplo_view = {
+		context_type = selected_country_context
+
+		window_name = "autonomy_diplo_view"
+		parent_window_token = selected_country_view_diplomacy
+
+		visible = {
+			is_subject = yes
+		}
+
+		triggers = {
+			kingdom_icon_visible = {
+				has_autonomy_state = autonomy_kingdom
+			}
+			county_icon_visible = {
+				has_autonomy_state = autonomy_county
+			}
+			vassalage_icon_visible = {
+				has_autonomy_state = autonomy_vassalage
+			}
+			royal_domain_icon_visible = {
+				has_autonomy_state = autonomy_royal_domain
+			}
+			tributary_icon_visible = {
+				has_autonomy_state = autonomy_tributary
+			}
+			satelit_state_icon_visible = {
+				has_autonomy_state = autonomy_satelit_state
+			}
+			imperial_dominion_icon_visible = {
+				has_autonomy_state = autonomy_imperial_dominion
+			}
+			imperial_colony_icon_visible = {
+				has_autonomy_state = autonomy_imperial_colony
+			}
+		}
+
+		properties = {
+			autonomy_progress_bar = {
+				frame = mtth:autonomy_frame
+			}
+			tax_icon = {
+				frame = mtth:vassal_tax_icon
+			}
+			war_tribute_icon = {
+				frame = mtth:vassal_war_tribute_icon
+			}
+			territorial_integration_icon = {
+				frame = mtth:vassal_territorial_integration_icon
+			}
+		}
+	}
+	
+}

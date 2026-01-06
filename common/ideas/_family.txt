@@ -1,0 +1,281 @@
+ideas = {
+
+	family_support = { 
+		law = yes
+		use_list_view = yes
+
+		family_support_1 = {
+		
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			available = {
+				check_variable = {
+					var = current_authority 
+					value = 60
+					compare = greater_than_or_equals
+					tooltip = check_authority_tooltip
+				}
+			}
+
+			modifier = {
+				#weekly_centralisation = 0.1
+
+				taxation = 0.1
+				stability_factor = -0.3
+				war_support_factor = -0.3
+				MONTHLY_POPULATION = -0.4
+				research_speed_factor = -0.1
+				production_speed_buildings_factor = -0.2
+				#industry_free_repair_factor = -0.4
+
+				peoples_initiative = -0.05
+				centralisation_target_modifier = 0.5
+
+				min_treasury_percentage = 0.5
+				money_capacity = 250
+			}
+			
+			cancel_if_invalid = no
+
+		}
+		
+		family_support_2 = {
+		
+			cost = 150
+			removal_cost = -1
+			level = 4
+			
+			available = {
+				check_variable = {
+					var = current_authority
+					value = 40
+					compare = greater_than_or_equals
+					tooltip = check_authority_tooltip
+				}
+			}
+
+			modifier = {
+				#weekly_centralisation = 0.075
+
+				taxation = 0.08
+				stability_factor = -0.2
+				war_support_factor = -0.2
+				MONTHLY_POPULATION = -0.2
+				research_speed_factor = -0.075
+				production_speed_buildings_factor = -0.15
+				#industry_free_repair_factor = -0.3
+
+				peoples_initiative = -0.03
+				centralisation_target_modifier = 0.4
+
+				min_treasury_percentage = 0.4
+				money_capacity = 200
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		family_support_3 = {
+		
+			cost = 150
+			removal_cost = -1
+			default = yes
+			level = 3
+			
+			available = {
+				check_variable = {
+					var = current_authority
+					value = 80
+					compare = less_than_or_equals
+					tooltip = check_liberty_tooltip
+				}
+				check_variable = {
+					var = current_authority
+					value = 20
+					compare = greater_than_or_equals
+					tooltip = check_authority_tooltip
+				}
+			}
+
+			modifier = {
+				#weekly_centralisation = 0.05
+
+				taxation = 0.06
+				stability_factor = -0.1
+				war_support_factor = -0.1
+				research_speed_factor = -0.05
+				production_speed_buildings_factor = -0.1
+				#industry_free_repair_factor = -0.2
+
+				#peoples_initiative = 0.01
+				centralisation_target_modifier = 0.3
+
+				min_treasury_percentage = 0.3
+				money_capacity = 150
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		family_support_4 = {
+		
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			available = {
+				check_variable = {
+					var = current_authority
+					value = 60
+					compare = less_than_or_equals
+					tooltip = check_liberty_tooltip
+				}
+			}
+
+			modifier = {
+				#weekly_centralisation = 0.025
+
+				taxation = 0.04
+				MONTHLY_POPULATION = 0.2
+				research_speed_factor = -0.025
+				production_speed_buildings_factor = -0.05
+				#industry_free_repair_factor = -0.1
+
+				peoples_initiative = 0.03
+				centralisation_target_modifier = 0.2
+
+				min_treasury_percentage = 0.2
+				money_capacity = 100
+			}
+			
+			cancel_if_invalid = no
+			ai_will_do = {
+				base = 0
+				modifier = {
+					has_stability < 0.4
+					NOT = { has_idea = family_support_5}
+					NOT = {
+						has_war = yes
+						surrender_progress > 0.45
+						OR = {
+							stockpile_ratio = {
+								archetype = heavy_armor_equipment
+								ratio < -0.2
+							}
+							stockpile_ratio = {
+								archetype = light_armor_equipment
+								ratio < -0.2
+							}
+							stockpile_ratio = {
+								archetype = bow_equipment
+								ratio < -0.2
+							}
+							stockpile_ratio = {
+								archetype = spear_equipment
+								ratio < -0.2
+							}	
+							stockpile_ratio = {
+								archetype = sword_equipment
+								ratio < -0.2
+							}
+							AND = {
+								has_country_flag = FIR_special_forces
+								stockpile_ratio = {
+									archetype = firebender_equipment
+									ratio < -0.2
+								}
+							}
+							AND = {
+								has_country_flag = AIR_special_forces
+								stockpile_ratio = {
+									archetype = airbender_equipment
+									ratio < -0.2
+								}
+							}																					
+							AND = {
+								has_country_flag = EARTH_special_forces
+								stockpile_ratio = {
+									archetype = earthbender_equipment
+									ratio < -0.2
+								}
+							}
+							AND = {
+								has_country_flag = WATER_special_forces
+								stockpile_ratio = {
+									archetype = waterbender_equipment
+									ratio < -0.2
+								}
+							}
+							AND = {
+								has_country_flag = SAND_special_forces
+								stockpile_ratio = {
+									archetype = sandbender_equipment
+									ratio < -0.2
+								}
+							}																								
+						}
+					}
+				add = 10	
+				}
+			}
+		}
+
+		family_support_5 = {
+		
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			available = {
+				check_variable = {
+					var = current_authority
+					value = 40
+					compare = less_than_or_equals
+					tooltip = check_liberty_tooltip
+				}
+			}
+
+			modifier = {
+				
+
+				taxation = 0.02
+				war_support_factor = 0.05
+				stability_factor = 0.05
+				MONTHLY_POPULATION = 0.4
+				#fuel_gain_factor = -0.3
+
+				peoples_initiative = 0.05
+				centralisation_target_modifier = 0.1
+
+				min_treasury_percentage = 0.1
+				money_capacity = 50
+			}
+			
+			cancel_if_invalid = no
+			ai_will_do = {
+				base = 0
+				modifier = {
+					check_variable = {
+						peasant_revolt_risk_variable > 45
+					}
+					add = 10
+				}
+				modifier = {
+					check_variable = {
+						worker_deficit_k > 3
+					}
+					add = 10
+				}
+				modifier = {
+					check_variable = {
+						tax_balance < 0
+					}
+					factor = 0	
+				}
+			}
+		}
+
+	}
+}

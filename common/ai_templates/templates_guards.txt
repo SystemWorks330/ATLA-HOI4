@@ -1,0 +1,62 @@
+
+template_garrisons = {
+	role = {
+		garrison
+	}
+	
+	upgrade_prio = {
+		factor = 2
+		modifier = {
+			factor = 5
+		}
+	}
+	garrison_1 = {
+		upgrade_prio = {
+			base = 2
+		}
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				spearmen = 4
+			}
+		}
+		
+		replace_at_match = 0.4
+		replace_with = garrison_2
+		target_min_match = 0.5
+	}
+
+	garrison_2 = {
+		upgrade_prio = {
+			base = 1
+			modifier = {
+				factor = 0
+				num_of_military_factories < 100
+			}
+			modifier = {
+				factor = 0.5
+				num_of_military_factories < 150
+			}
+			modifier = {
+				factor = 2.0
+				num_of_military_factories > 250
+			}
+			modifier = {
+				factor = 2.0
+				num_occupied_states > 10
+			}
+			modifier = {
+				factor = 0.0
+				num_occupied_states < 1
+			}
+		}
+		target_template = {
+			regiments = {
+				spearmen = 8
+			}
+			support = {
+				infantry_guards = 1
+			}
+		}
+	}
+}

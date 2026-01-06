@@ -1,0 +1,94 @@
+sub_units = {
+
+	small_birb = {
+		sprite = small_birb_sprite
+		priority = 1
+		active = yes
+		type = { scout_plane }
+		need = { small_birb_equipment = 1 }
+		categories = { category_small_birb category_birb }
+		land_air_wing_size = 10
+	}
+
+	medium_birb = {
+		sprite = medium_birb_sprite
+		priority = 2
+		active = yes
+		type = { fighter cas scout_plane }
+		need = { medium_birb_equipment = 1 }
+		categories = { category_medium_birb category_birb }
+		land_air_wing_size = 10
+	}
+
+	heavy_birb = {
+		sprite = heavy_birb_sprite
+		priority = 3
+		active = yes
+		type = { fighter }
+		need = { heavy_birb_equipment = 1 }
+		categories = { category_heavy_birb category_birb }
+		land_air_wing_size = 10
+	}
+
+	dragon = {
+		sprite = dragon_sprite
+		priority = 10
+		active = yes
+		type = { fighter tactical_bomber scout_plane }
+		need = { dragon_equipment = 1 }
+		categories = { category_dragon }
+		land_air_wing_size = 1
+	}
+
+	bison = {
+		sprite = bison_sprite
+		priority = 5
+		active = yes
+		type = { cas air_transport scout_plane }
+		need = { bison_equipment = 1 }
+		categories = { category_bison }
+		land_air_wing_size = 10
+	}
+
+	glider = {
+		sprite = glider_sprite
+		priority = 4
+		active = yes
+		type = { fighter scout_plane }
+		need = { glider_equipment = 1 }
+		categories = { category_glider }
+		land_air_wing_size = 10
+	}
+
+	air_balloon = {
+		sprite = balloon_sprite
+		priority = 6
+		active = yes
+		type = { fighter cas scout_plane }
+		need = { air_balloon_equipment = 1 }
+		categories = { category_air_balloon }
+		land_air_wing_size = 10
+	}
+
+	light_airship = {
+		sprite = airship_sprite
+		priority = 7
+		active = yes
+		type = { fighter tactical_bomber }
+		need = { light_airship_equipment = 1 }
+		categories = { category_light_airship }
+		land_air_wing_size = 10
+	}
+
+	heavy_airship = {
+		sprite = airship_heavy_sprite
+		priority = 8
+		active = yes
+		type = { fighter strategic_bomber air_transport }
+		need = { heavy_airship_equipment = 1 }
+		categories = { category_heavy_airship }
+		land_air_wing_size = 10
+	}
+	
+
+}

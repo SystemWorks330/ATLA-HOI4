@@ -1,0 +1,251 @@
+
+
+ ## #####  ##  ###  #####       #   ##
+#     #   #  # #  #   #        ##  #  #
+ #    #   #### ###    #       # #    #
+  #   #   #  # #  #   #         #   #
+##    #   #  # #  #   #         #  ####
+
+
+capital = 17
+
+OOB = "NWT_12"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "NWT_12_naval_mtg"
+	else = {
+		set_naval_oob = "NWT_12_naval_legacy"
+	}
+}
+
+set_country_flag = WAT_navy
+ 
+set_country_flag = WATER_special_forces
+
+#set_cosmetic_tag = NWT_tribes
+
+set_variable = { legitimacy_var = 180 }
+
+water_generic_starting_tech = yes
+
+#set_research_slots = 2
+
+set_convoys = 60
+
+set_politics = {
+	ruling_party = water_culture
+	last_election = "11.5.8"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 85
+	pluralist_culture = 15
+	fire_culture = 0
+	earth_culture = 0
+	air_culture = 0
+}
+
+set_technology = {
+	water_bender_healer = 1
+}
+
+recruit_character = NWT_rundak
+recruit_character = NWT_arnook
+recruit_character = NWT_pakku
+
+set_stability = 0.5 
+set_war_support = 0.4
+
+army_experience = 10
+navy_experience = 120
+air_experience = 0
+
+set_variable = { var = NWT_unity_support value = 15 }
+set_variable = { var = NWT_unity_total value = 100 }
+NWT_recalc_unity_icon_frames = yes
+
+set_variable = { victory_condition = token:northern_spirit_spirit }
+
+add_ideas = {
+	waterbender_ice_construction
+
+	local_markets
+	water_exceptional
+	construction_efforts_law
+	volunteer_water_nation
+	family_support_4
+	tribal_education
+
+	remote_isolation
+	loose_confederation
+}
+
+
+recruit_character = NWT_head_of_intelligence_1
+recruit_character = NWT_head_of_intelligence_2
+recruit_character = NWT_head_of_intelligence_3
+recruit_character = NWT_head_of_intelligence_4
+recruit_character = NWT_head_of_intelligence_5
+recruit_character = NWT_head_of_intelligence_6
+
+recruit_character = NWT_unification_minister
+
+recruit_character = NWT_buthaka
+recruit_character = NWT_sangok
+
+create_faction = Water_Tribes
+add_to_faction = SWT
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Fisher Canoe"
+		type = watertribe_canoe_hull_1
+		#parent_version = 0
+		modules = {
+			fixed_ship_crew_slot = boarding_crew_1
+			fixed_ship_oars_slot = oars_1
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "Expedition Cutter"
+		type = watertribe_cutter_hull_1
+		#parent_version = 0
+		modules = {
+			fixed_ship_crew_slot = ship_waterbender_crew_1
+			fixed_ship_sails_slot = sails_1
+			fixed_ship_armor_slot = medium_hull_reinforcement_1
+			fixed_ship_storage_slot = supplies_1
+    	}
+	}
+
+	create_equipment_variant = {
+		name = "Transport Raft"
+		type = watertribe_raft_hull_1
+		#parent_version = 0
+		modules = {
+			fixed_ship_crew_slot = ship_waterbender_crew_1
+    	}
+	}
+
+}
+
+
+
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 ={
+	oob = "NWT_52"
+	
+	set_variable = { var = NWT_unity_support value = 47 }
+	set_variable = { var = NWT_unity_total value = 100 }
+	NWT_recalc_unity_icon_frames = yes
+
+	add_ideas = {
+		intercontinental_trade
+		water_exceptional
+		construction_efforts_law
+		limited_water_conscription
+		family_support_3
+		tribal_education
+
+		loose_federation
+	}
+	remove_ideas = {
+		loose_confederation
+		remote_isolation
+	}
+	set_technology = {
+		light_cavalry_1 = 1
+		medium_cavalry_1 = 1
+		heavy_cavalry_1 = 1
+	}
+
+}
+
+
+
+ ## #####  ##  ###  #####       #  ##    #
+#     #   #  # #  #   #        ## #  #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
+##    #   #  # #  #   #         #  ##   ##
+
+
+
+
+ ## #####  ##  ###  #####       #  ##    #
+#     #   #  # #  #   #        ## #  #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
+##    #   #  # #  #   #         #  ##   ##
+
+
+
+106.2.4 ={
+
+	remove_from_faction = SWT
+	drop_cosmetic_tag = yes
+	retire_character = NWT_rundak
+	
+	add_ideas = {
+		city_markets
+		water_exceptional
+		construction_efforts_law
+		limited_water_conscription
+		family_support_3
+		tribal_education
+		one_tribe
+	}
+	remove_ideas = {
+		loose_federation
+	}
+	
+	set_variable = { var = NWT_unity_support value = 85 }
+	set_variable = { var = NWT_unity_total value = 100 }
+	NWT_recalc_unity_icon_frames = yes
+
+
+}
+
+
+
+ ## #####  ##  ###  #####       #   #   #
+#     #   #  # #  #   #        ##  ##  ##
+ #    #   #### ###    #       # # # # # #
+  #   #   #  # #  #   #         #   #   #
+##    #   #  # #  #   #         #   #   #
+
+
+
+
+111.10.30 = {
+
+
+	drop_cosmetic_tag = yes
+
+	set_variable = { var = NWT_unity_support value = 98 }
+	set_variable = { var = NWT_unity_total value = 100 }
+	NWT_recalc_unity_icon_frames = yes
+
+
+}
+
+# Different Ideology Leaders
+recruit_character = NWT_generic

@@ -1,0 +1,32 @@
+units = {
+	fleet = {
+		name = "Han Navy"			
+		naval_base = 7273  #capital harbour
+		task_force = {
+			name = "Main Fleet"
+			location = 7273  #capital harbour
+			ship = { name = "Han" definition = junk start_experience_factor = 0.1 equipment = { junk_hull_1 = { amount = 1 owner = HAN version_name = "Combat Class" } } }
+			ship = { name = "Hannover" definition = junk start_experience_factor = 0.1 equipment = { junk_hull_1 = { amount = 1 owner = HAN version_name = "Combat Class" } } }
+			ship = { name = "Kangfao" definition = barque start_experience_factor = 0.1 equipment = { barque_hull_1 = { amount = 1 owner = HAN version_name = "Trading Class" } } }
+			ship = { name = "Crane" definition = barque start_experience_factor = 0.1 equipment = { barque_hull_1 = { amount = 1 owner = HAN version_name = "Trading Class" } } }
+			ship = { name = "Monkey" definition = barque start_experience_factor = 0.1 equipment = { barque_hull_1 = { amount = 1 owner = HAN version_name = "Trading Class" } } }
+			ship = { name = "Snake" definition = barque start_experience_factor = 0.1 equipment = { barque_hull_1 = { amount = 1 owner = HAN version_name = "Trading Class" } } }
+			ship = { name = "Lion" definition = barque start_experience_factor = 0.1 equipment = { barque_hull_1 = { amount = 1 owner = HAN version_name = "Trading Class" } } }
+		}
+		task_force = {
+			name = "Escort"
+			location = 7545  #capital harbour
+			ship = { name = "Shen Xieren" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = HAN version_name = "Raider Class" } } }
+			ship = { name = "Xia Li" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = HAN version_name = "Raider Class" } } }
+			ship = { name = "Duan Hua" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = HAN version_name = "Raider Class" } } }
+			ship = { name = "Lian Gengxin" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = HAN version_name = "Raider Class" } } }
+			ship = { name = "Qian Delan" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = HAN version_name = "Raider Class" } } }
+			ship = { name = "Lang De" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = HAN version_name = "Raider Class" } } }
+			ship = { name = "Dong Zhi" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = HAN version_name = "Raider Class" } } }
+			ship = { name = "Lei Ming" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = HAN version_name = "Raider Class" } } }
+			ship = { name = "Yu Guanyu" definition = galley start_experience_factor = 0.1 equipment = { galley_hull_1 = { amount = 1 owner = HAN version_name = "Raider Class" } } }
+		}
+		
+	}
+
+}

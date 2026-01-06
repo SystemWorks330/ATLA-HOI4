@@ -1,0 +1,100 @@
+scripted_gui = {
+
+	earth_kingdom_ui = {
+		context_type = decision_category
+		window_name = "earth_kingdom_ui_window"
+
+		properties = {
+			member_country_flag = {
+				image = [THIS.GetFlag]
+			}
+		}
+
+		dynamic_lists = {
+			earth_kingdom_members_gridbox = {
+				array = global.earth_kingdom
+				entry_container = earth_kingdom_member_list_entry
+				change_scope = yes
+			}
+		}
+	}
+
+	western_alliance_ui = {
+		context_type = decision_category
+		window_name = "western_alliance_ui_window"
+
+		properties = {
+			member_country_flag = {
+				image = [THIS.GetFlag]
+			}
+		}
+
+		dynamic_lists = {
+			western_alliance_members_gridbox = {
+				array = global.western_alliance
+				entry_container = western_alliance_member_list_entry
+				change_scope = yes
+			}
+		}
+	}
+
+
+	dai_li_ui = {
+		context_type = decision_category
+		window_name = "dai_li_ui_window"
+
+
+		triggers = {
+			dai_li_headquaters_icon_visible = {
+				has_idea = dai_li_headquaters
+			}
+			connection_1_visible = {
+				OR = {
+					has_idea = dai_li_training_rooms
+					has_idea = dai_li_prisons
+				}
+			}
+			dai_li_training_rooms_icon_visible = {
+				has_idea = dai_li_training_rooms
+			}
+			dai_li_prisons_icon_visible = {
+				has_idea = dai_li_prisons
+			}
+			connection_2_visible = {
+				OR = {
+					has_idea = dai_li_jo_dee
+					has_idea = dai_li_surveillance
+				}
+			}
+			dai_li_jo_dee_icon_visible = {
+				has_idea = dai_li_jo_dee
+			}
+			dai_li_surveillance_icon_visible = {
+				has_idea = dai_li_surveillance
+			}
+			connection_3_visible = {
+				OR = {
+					has_idea = dai_li_brainwashing_room
+					has_idea = dai_li_politics_department
+					has_idea = dai_li_grand_secretary_office
+				}
+			}
+			dai_li_brainwashing_room_icon_visible = {
+				has_idea = dai_li_brainwashing_room
+			}
+			dai_li_politics_department_icon_visible = {
+				has_idea = dai_li_politics_department
+			}
+			dai_li_grand_secretary_office_icon_visible = {
+				has_idea = dai_li_grand_secretary_office
+			}
+		}
+
+		properties = {
+			
+		}
+
+	}
+	
+}
+

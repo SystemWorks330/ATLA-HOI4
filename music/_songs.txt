@@ -1,0 +1,549 @@
+
+music_station = "base_music"
+
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "jet"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "general_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "axis_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "comintern_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "allies_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "general_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "general_peace_3"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}
+}
+
+music = {
+	song = "general_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "avatars_love"
+	
+	chance = {
+		modifier = {
+			factor = 3
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "allies_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+		}		
+	}	
+}
+
+
+music = {
+	song = "axis_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "general_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "axis_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "axis_war_3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "axis_war_4"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "allies_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "allies_war_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "comintern_peace_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "comintern_peace_2"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "comintern_peace_3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+		}		
+	}	
+}
+
+
+music = {
+	song = "comintern_war_1"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "comintern_war_3"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+
+##################
+
+music = {
+	song = "the_sun_warriors"
+	
+	chance = {
+		base = 0
+		modifier = {
+			add = 40
+			tag = SNW
+		}		
+	}	
+}
+
+music = {
+	song = "last_agni_kai"
+	
+	chance = {
+		base = 0
+		modifier = {
+			tag = FIR
+			has_country_flag = earth_war_path
+			add = 80
+		}
+	}
+}
+
+music = {
+	song = "the_promise"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "final_blow"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "aang_vs_ozai"
+	
+	chance = {
+		base = 0
+		modifier = {
+			has_global_flag = avatar_aang
+			FIR = {
+				any_enemy_country = {
+					417 = {
+						any_neighbor_state = {
+							is_controlled_by = PREV.PREV
+						}
+					}
+				}
+			}
+			FIR_ozai = {
+				is_country_leader = yes
+			}
+			add = 100
+		}		
+	}	
+}
+
+music = {
+	song = "the_plan"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+music = {
+	song = "the_invasion"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+music = {
+	song = "sozins_comet"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = yes
+		}		
+	}	
+}
+music = {
+	song = "the_avatar"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "final"
+	
+	chance = {
+		modifier = {
+			factor = 2
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "divinity"
+	
+	chance = {
+		modifier = {
+			factor = 1
+
+			has_war = yes
+		}		
+	}	
+}
+
+music = {
+	song = "peace"
+	
+	chance = {
+		modifier = {
+			factor = 4
+
+			has_war = no
+		}		
+	}	
+}
+
+music = {
+	song = "fire_victory"
+	
+	chance = {
+		modifier = {
+			factor = 4
+			tag = FIR
+			has_war = no
+		}		
+	}	
+}
+music = {
+	song = "earth_victory"
+	
+	chance = {
+		modifier = {
+			factor = 4
+			tag = earth_nation
+			has_war = no
+		}		
+	}	
+}
+music = {
+	song = "water_victory"
+	
+	chance = {
+		modifier = {
+			factor = 4
+			OR = {
+				tag = SWT
+				tag = NWT 
+			}
+			has_war = no
+		}		
+	}	
+}
+music = {
+	song = "air_victory"
+	
+	chance = {
+		base = 0
+		modifier = {
+			add = 100
+			OR = {
+				AND = {
+					tag = SAT
+					has_global_flag = south_temple_survived
+				}
+				AND = {
+					tag = NAT
+					has_global_flag = north_temple_survived
+				}
+				AND = {
+					tag = WAT
+					has_global_flag = west_temple_survived
+				}
+				AND = {
+					tag = EAT
+					has_global_flag = east_temple_survived
+				}
+			}
+			has_war = no
+		}		
+	}	
+}
+music = {
+	song = "ominous"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+		}		
+	}	
+}
+music = {
+	song = "lion_turtle"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+		}		
+	}	
+}
+music = {
+	song = "white_lotus"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+		}		
+	}	
+}
+music = {
+	song = "vanished"
+	
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = no
+		}		
+	}	
+}
+music = {
+	song = "maintheme_metal"
+
+	chance = {
+		modifier = {
+			factor = 1
+			has_war = yes
+		}
+	}
+}

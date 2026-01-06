@@ -1,0 +1,74 @@
+capital = 426
+
+OOB = "TEJ_12"
+
+ 
+set_country_flag = EARTH_special_forces
+
+EAR_generic_starting_tech = yes
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		oars_tech_1 = 1
+		sails_tech_1 = 1
+		galley_tech_1 = 1
+		barque_tech_1 = 1
+		light_armor_tech_1 = 1
+	}
+
+}
+
+#set_research_slots = 2
+set_convoys = 10
+set_stability = 0.6
+set_war_support = 0.6
+
+ 
+
+
+
+set_politics = {
+	ruling_party = pluralist_culture
+	last_election = "2.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 6
+	pluralist_culture = 44
+	fire_culture = 5
+	earth_culture = 45
+	air_culture = 0
+}
+
+
+
+#set_variable = { victory_condition = token:teji_legacy_spirit }
+
+add_ideas = {
+	volunteer_earth_nation
+	earth_benders_only
+	local_markets
+	construction_efforts_law
+	family_support_3
+	mandatory_education
+
+
+}
+
+recruit_character = TEJ_council
+recruit_character = TEJ_generic
+
+

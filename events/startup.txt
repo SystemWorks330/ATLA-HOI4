@@ -1,0 +1,259 @@
+
+add_namespace = economy
+add_namespace = culture
+add_namespace = legitimacy_event
+add_namespace = population_calc
+
+country_event = {
+	id = culture.1
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+
+		culture_pie_chart_recalc = yes
+	}
+}
+
+country_event = {
+	id = population_calc.1
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		population_counter = yes
+	}
+}
+
+country_event = {
+	id = economy.1
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+
+		### modifiers for factory output
+		factory_output_calc = yes
+
+		### set variables to zero for states to add to it
+		reset_var_to_zero = yes
+
+		### 
+		employment_calculation_country = yes
+
+
+
+		every_controlled_state = {
+			
+
+			#### view employed number
+			worker_counting_states = yes
+
+			#### taxation and prosperity
+			taxation_state_calc = yes
+
+
+
+			set_temp_variable = { temp_worker_deficit = mtth:workers_needed }
+			subtract_from_temp_variable = { temp_worker_deficit = mtth:state_workforce_k }
+			clamp_temp_variable = { 
+				var = temp_worker_deficit
+				min = 0
+			}
+			set_variable = { worker_deficit_k = temp_worker_deficit }
+			add_to_variable = { ROOT.worker_deficit_k = temp_worker_deficit }
+
+
+
+			#### count buildings in states
+			count_buildings_in_states = yes
+		}
+
+		if = {
+			limit = {
+				has_capitulated = yes
+			}
+			every_core_state = {
+
+				set_temp_variable = { occupied_smithy_count = building_level@arms_factory }
+				multiply_temp_variable = { occupied_smithy_count = 2 }    #### because base output of 1 wouldnt be counted so it has to be duplicated to 2
+				set_temp_variable = { occupied_factory_count = building_level@factory }
+				set_temp_variable = { occupied_harbour_count = building_level@harbour }
+				set_temp_variable = { occupied_dockyard_count = building_level@dockyard }
+
+				multiply_temp_variable = { occupied_smithy_count = resistance }
+				multiply_temp_variable = { occupied_factory_count = resistance }
+				multiply_temp_variable = { occupied_harbour_count = resistance }
+				multiply_temp_variable = { occupied_dockyard_count = resistance }
+
+				multiply_temp_variable = { occupied_smithy_count = 0.01 }
+				multiply_temp_variable = { occupied_factory_count = 0.01 }
+				multiply_temp_variable = { occupied_harbour_count = 0.01 }
+				multiply_temp_variable = { occupied_dockyard_count = 0.01 }
+
+				add_to_variable = { ROOT.smithy_count = occupied_smithy_count }
+				add_to_variable = { ROOT.factory_count = occupied_factory_count }
+				add_to_variable = { ROOT.harbour_count = occupied_harbour_count }
+				add_to_variable = { ROOT.dockyard_count = occupied_dockyard_count }
+			}
+		}
+
+
+		set_variable = { building_count = 0 }
+		add_to_variable = { building_count = farm_count }
+		add_to_variable = { building_count = mill_count }
+		add_to_variable = { building_count = fishing_stand_count }
+		add_to_variable = { building_count = ranch_count }
+		add_to_variable = { building_count = lumber_mill_count }
+		add_to_variable = { building_count = quarry_count }
+		add_to_variable = { building_count = crop_weaving_count }
+		add_to_variable = { building_count = animal_weaving_count }
+		add_to_variable = { building_count = mine_count }
+		add_to_variable = { building_count = steelworks_count }
+		add_to_variable = { building_count = smithy_count }
+		add_to_variable = { building_count = factory_count }
+		add_to_variable = { building_count = harbour_count }
+		add_to_variable = { building_count = dockyard_count }
+		add_to_variable = { building_count = consumer_good_factory_count }
+		add_to_variable = { building_count = luxury_good_factory_count }
+		add_to_variable = { building_count = carpentry_count }
+		add_to_variable = { building_count = masonry_count }
+		add_to_variable = { building_count = steel_beam_factory_count }
+		
+		add_to_variable = { building_count = fuel_repository_count }
+		add_to_variable = { building_count = scout_tower_count }
+		add_to_variable = { building_count = anti_air_building_count }
+		add_to_variable = { building_count = air_base_count }
+		add_to_variable = { building_count = granary_count }
+
+
+
+		### wages and taxes
+		wages_and_taxes = yes
+
+
+
+		###view food
+		set_variable = { food_supply = resource@food_resource }
+		set_variable = { food_supply_real = resource@food_resource }
+		set_variable = { food_traded_away = food_supply_real }
+		subtract_from_variable = { food_traded_away = food_supply }
+
+
+
+		##### prices and wealth
+		prices_and_demand = yes
+
+
+		### investment pool
+
+		set_variable = { initiative_chance = modifier@peoples_initiative }
+		clamp_variable = { 
+			var = initiative_chance
+			min = 0
+			max = 1
+		}
+		clamp_variable = { 
+			var = weekly_peoples_investment_ic
+			min = 0
+		}
+		
+		add_to_variable = { peoples_investment_ic = weekly_peoples_investment_ic }
+
+		set_variable = { peoples_ic_points = peoples_investment_ic }
+		multiply_variable = { peoples_ic_points = 10 }
+
+
+
+		employment_calculation_country = yes
+
+
+
+		### cost of maintaining buildings
+		building_upkeep_calc = yes
+
+
+		### factory variable calcualted
+		factory_calculations = yes
+		
+
+		### replaced by donations dynamic modifier
+			
+		#### factories added offmap
+		#civil_factory_output = yes
+		#extra_factory_output = yes
+		#extra_dockyard_output = yes
+
+
+
+		ration_calculation = yes
+
+		###ration filling dont remove
+		set_variable = { ration_variable = ration_max }
+		multiply_variable = { ration_variable = 0.5 }
+
+		clamp_variable = { 
+			var = ration_variable 
+			min = 0 
+			max = ration_max
+		}
+
+		ration_calculation = yes
+
+		ratio_effects_and_interface = yes
+
+	}
+
+	option = {
+		name = economy.1.a
+	}	
+}
+
+
+country_event = {
+	id = economy.2
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+
+		every_controlled_state = {
+			taxation_state_calc = yes
+		}
+
+		national_wealth_calc = yes
+
+		### wages and taxes
+		wages_and_taxes = yes
+
+		force_update_dynamic_modifier = yes
+	}
+
+	option = {
+		name = economy.2.a
+	}	
+}
+
+country_event = {
+	id = economy.3
+	hidden = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		every_state = {
+			clamp_variable = {
+				var = global.max_local_prosperity
+				min = local_prosperity
+			}
+		}
+	}
+
+	option = {
+		name = economy.3.a
+	}	
+}

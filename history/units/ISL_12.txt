@@ -1,0 +1,116 @@
+division_template = {
+	name = "Town Guard"
+	regiments = {
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		spearmen = {
+			x = 0
+			y = 1
+		}
+		spearmen = {
+			x = 1
+			y = 0
+		}
+		spearmen = {
+			x = 1
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Militia Brigade"
+	regiments = {
+		spearmen = {
+			x = 0
+			y = 0
+		}
+		swordsmen = {
+			x = 1
+			y = 0
+		}
+		swordsmen = {
+			x = 1
+			y = 1
+		}
+	}
+}
+
+division_template = {
+	name = "Earthbender Brigade"
+	regiments = {
+		earthbender = {
+			x = 0
+			y = 0
+		}
+		earthbender = {
+			x = 0
+			y = 1
+		}
+		earthbender = {
+			x = 0
+			y = 2
+		}
+		earthbender = {
+			x = 0
+			y = 3
+		}
+	}
+}
+
+#############################################
+units = {
+	division = {
+		location = 9881
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 45
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 9664
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 5597
+		division_template = "Town Guard"
+	}
+	division = {
+		location = 5597
+		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+	}
+	division = {
+		location = 374
+		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+	}
+	division = {
+		location = 985
+		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+	}
+	division = {
+		location = 3059
+		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+	}
+	division = {
+		location = 9804
+		division_template = "Earthbender Brigade"
+		force_equipment_variants = { earthbender_equipment_1 = { owner = "EAR" } }
+	}
+}
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = earthbender_equipment_1
+			creator = "ISL"
+		}
+		requested_factories = 2
+	}
+}

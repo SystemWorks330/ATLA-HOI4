@@ -1,0 +1,148 @@
+scripted_gui = {
+
+	fire_family_ui = {
+		context_type = decision_category
+		window_name = "fire_family_ui_window"
+
+		triggers = {
+			sozin_visible = {
+				has_country_leader = {
+					character = FIR_sozin
+					ruling_only = yes
+				}
+			}
+			sozin_wife_visible = {
+				has_character = FIR_elua
+				has_country_leader = {
+					character = FIR_sozin
+					ruling_only = yes
+				}
+			}
+
+			rhya_young_visible = {
+				check_variable = { mtth:rhya_age > 15 }
+				check_variable = { mtth:rhya_age < 55 }
+				OR = {
+					has_character = FIR_rhya
+					has_idea = spirit_princess_rhya
+					has_country_leader = {
+						character = FIR_rhya
+						ruling_only = yes
+					}
+				}
+			}
+
+			azulon_visible = {
+				has_character = FIR_azulon
+				FIR_azulon = {
+					has_character_flag = character_born
+					NOT = { has_character_flag = FIR_character_death }
+				}
+			}
+			azulon_wife_visible = {
+				has_character = FIR_ilah
+				has_country_leader = {
+					character = FIR_azulon
+					ruling_only = yes
+				}
+				FIR_ilah = {
+					has_character_flag = married_to_azulon
+				}
+			}
+
+
+			iroh_visible = {
+				has_character = FIR_iroh
+				FIR_iroh = {
+					has_character_flag = character_born
+					NOT = { has_character_flag = FIR_character_death }
+				}
+			}
+
+			ozai_visible = {
+				has_character = FIR_ozai
+				FIR_ozai = {
+					has_character_flag = character_born
+					NOT = { has_character_flag = FIR_character_death }
+				}
+			}
+			ozai_wife_visible = {
+				has_character = FIR_ursa
+				has_country_leader = {
+					character = FIR_ozai
+					ruling_only = yes
+				}
+				FIR_ursa = {
+					has_character_flag = married_to_ozai
+					NOT = {
+						has_character_flag = in_exile
+					}
+				}
+			}
+
+			lu_ten_visible = {
+				has_character = FIR_lu_ten
+				FIR_lu_ten = {
+					has_character_flag = character_born
+					NOT = { has_character_flag = FIR_character_death }
+				}
+			}
+
+			zuko_visible = {
+				has_character = FIR_zuko
+				FIR_zuko = {
+					has_character_flag = character_born
+					NOT = { has_character_flag = FIR_character_death }
+				}
+			}
+
+			azula_visible = {
+				has_character = FIR_azula
+				FIR_azula = {
+					has_character_flag = character_born
+					NOT = { has_character_flag = FIR_character_death }
+				}
+			}
+		}
+
+		properties = {
+			azulon = {
+				x = azulon_x
+				y = azulon_y
+				image = "[GetAzulonIcon]"
+			}
+
+			iroh = {
+				x = iroh_x
+				y = iroh_y
+				image = "[GetIrohIcon]"
+			}
+
+			ozai = {
+				x = ozai_x
+				y = ozai_y
+				image = "[GetOzaiIcon]"
+			}
+
+			lu_ten = {
+				x = lu_ten_x
+				y = lu_ten_y
+				image = "[GetLuTenIcon]"
+			}
+
+			zuko = {
+				x = zuko_x
+				y = zuko_y
+				image = "[GetZukoIcon]"
+			}
+
+			azula = {
+				x = azula_x
+				y = azula_y
+				image = "[GetAzulaIcon]"
+			}
+		}
+	}
+	
+}
+

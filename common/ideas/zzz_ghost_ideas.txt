@@ -1,0 +1,124 @@
+ideas = {
+	
+	minister_of_personnel = {
+		hidden_minister_of_personnel_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+	minister_of_finance = {
+		hidden_minister_of_finance_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+	minister_of_culture = {
+		hidden_minister_of_culture_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+	minister_of_justice = {
+		hidden_minister_of_justice_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+	minister_of_works = {
+		hidden_minister_of_works_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+	minister_of_rites = {
+		hidden_minister_of_rites_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+	war_minister = {
+		hidden_war_minister_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+	field_marshal = {
+		hidden_field_marshal_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+	grand_admiral = {
+		hidden_grand_admiral_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+	head_of_intelligence = {
+		hidden_head_of_intelligence_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+	head_of_weaponry = {
+		hidden_head_of_weaponry_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+
+	quartermaster = {
+		hidden_quartermaster_1 = {
+			cost = 200
+			allowed = {	always = no }
+			available = { }
+			modifier = { }
+			traits = { }
+		}
+	}
+
+}

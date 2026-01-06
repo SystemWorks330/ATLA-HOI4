@@ -1,0 +1,1133 @@
+ideas = {
+
+	bender_laws = { 
+		law = yes
+		use_list_view = yes
+		
+		air_benders_only = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			visible = {
+				has_dynamic_modifier = { modifier = air_nation }
+			}
+
+			modifier = {
+				nonbender_factor = -1
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		swamp_siwong_benders_only = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			visible = {
+				OR = {
+					tag = SWA
+					tag = MPO
+				}
+			}
+
+			modifier = {
+				nonbender_factor = -1
+				#conscription_factor = -0.4
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+			}
+
+			ai_will_do = {
+				factor = 10
+
+				modifier = {
+					factor = 0
+					NOT = { has_idea = swamp_siwong_exceptional }
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		swamp_siwong_exceptional = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 4
+
+			visible = {
+				OR = {
+					tag = SWA
+					tag = MPO
+				}
+			}
+
+			modifier = {
+				nonbender_factor = -0.75
+				#conscription_factor = -0.3
+				pluralist_culture_drift = 0.01
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					# Ignore if high on manpower
+					factor = 0.5
+					manpower_per_military_factory > 200
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  40
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = swamp_siwong_benders_only
+							has_idea = swamp_siwong_volunteers
+						}
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		swamp_siwong_volunteers = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+
+			visible = {
+				OR = {
+					tag = SWA
+					tag = MPO
+				}
+			}
+
+			modifier = {
+				nonbender_factor = -0.5
+				#conscription_factor = -0.2
+				pluralist_culture_drift = 0.02
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = swamp_siwong_exceptional
+							has_idea = swamp_siwong_auxiliary
+						}
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		swamp_siwong_auxiliary = {
+			cost = 150
+			removal_cost = -1
+			level = 2
+
+			visible = {
+				OR = {
+					tag = SWA
+					tag = MPO
+				}
+			}
+
+			modifier = {
+				nonbender_factor = -0.25
+				#conscription_factor = -0.1
+				pluralist_culture_drift = 0.03
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = swamp_siwong_volunteers
+							has_idea = swamp_siwong_indiscriminate
+						}
+					}
+				}
+
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		swamp_siwong_indiscriminate = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 1
+
+			visible = {
+				OR = {
+					tag = SWA
+					tag = MPO
+				}
+			}
+
+			modifier = {
+				nonbender_factor = -0.0
+				pluralist_culture_drift = 0.04
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { has_idea = swamp_siwong_auxiliary}
+				}
+
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		water_benders_only = {
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			visible = {
+				has_dynamic_modifier = { modifier = water_nation }
+				NOT = {
+					tag = SWA
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -1
+				#conscription_factor = -0.6
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+
+				weekly_centralisation = 0.03
+			}
+
+			ai_will_do = {
+				factor = 10
+
+				modifier = {
+					factor = 0
+					NOT = { has_idea = water_exceptional }
+				}
+			}
+
+			cancel_if_invalid = no
+		}
+
+		water_exceptional = {
+			cost = 150
+			removal_cost = -1
+			level = 4
+
+			visible = {
+				has_dynamic_modifier = { modifier = water_nation }
+				NOT = {
+					tag = SWA
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.75
+				#conscription_factor = -0.45
+				pluralist_culture_drift  = 0.01
+
+				weekly_centralisation = 0.02
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					# Ignore if high on manpower
+					factor = 0.5
+					manpower_per_military_factory > 200
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  40
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = water_benders_only
+							has_idea = water_volunteers
+						}
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		water_volunteers = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+
+			visible = {
+				has_dynamic_modifier = { modifier = water_nation }
+				NOT = {
+					tag = SWA
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.5
+				#conscription_factor = -0.3
+				pluralist_culture_drift  = 0.02
+
+				weekly_centralisation = 0.01
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = water_exceptional
+							has_idea = water_auxiliary
+						}
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		water_auxiliary = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 2
+
+			visible = {
+				has_dynamic_modifier = { modifier = water_nation }
+				NOT = {
+					tag = SWA
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.25
+				#conscription_factor = -0.15
+				pluralist_culture_drift = 0.03
+
+				weekly_centralisation = -0.01
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = water_volunteers
+							has_idea = water_indiscriminate
+						}
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		water_indiscriminate = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			visible = {
+				has_dynamic_modifier = { modifier = water_nation }
+				NOT = {
+					tag =  MPO
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.0
+				pluralist_culture_drift = 0.04
+
+				weekly_centralisation = -0.02
+			}
+
+			ai_will_do = {
+				factor = 10
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						has_idea = water_indiscriminate
+					}
+				}
+			}
+
+			cancel_if_invalid = no
+		}
+
+		earth_benders_only = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 5
+			visible = {
+				has_dynamic_modifier = { modifier = earth_nation }
+				NOT = {
+					OR = {
+						tag = MPO
+						tag = KYI
+					}
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -1
+				#conscription_factor = -0.7
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+
+				weekly_centralisation = 0.03
+			}
+
+			ai_will_do = {
+				factor = 10
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						has_idea = earth_exceptional
+					}
+				}
+			}
+
+			cancel_if_invalid = no
+		}
+		earth_exceptional = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 4
+
+			visible = {
+				has_dynamic_modifier = { modifier = earth_nation }
+				NOT = {
+					OR = {
+						tag = MPO
+						tag = KYI
+					}
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.75
+				#conscription_factor = -0.525
+				pluralist_culture_drift = 0.01
+
+				weekly_centralisation = 0.02
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					# Ignore if high on manpower
+					factor = 0.5
+					manpower_per_military_factory > 200
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  40
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = earth_benders_only
+							has_idea = earth_volunteers
+						}
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		earth_volunteers = {
+			cost = 150
+			removal_cost = -1
+			level = 3
+
+			visible = {
+				has_dynamic_modifier = { modifier = earth_nation }
+				NOT = {
+					OR = {
+						tag = MPO
+						tag = KYI
+					}
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.5
+				#conscription_factor = -0.35
+				pluralist_culture_drift = 0.02
+
+				weekly_centralisation = 0.01
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = earth_exceptional
+							has_idea = earth_auxiliary
+						}
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		earth_auxiliary = {
+			cost = 150
+			removal_cost = -1
+			level = 2
+
+			visible = {
+				has_dynamic_modifier = { modifier = earth_nation }
+				NOT = {
+					OR = {
+						tag = MPO
+						tag = KYI
+					}
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.25
+				#conscription_factor = -0.175
+				pluralist_culture_drift = 0.03
+
+				weekly_centralisation = -0.01
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = earth_volunteers
+							has_idea = earth_indiscriminate
+						}
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		earth_indiscriminate = {
+			cost = 150
+			removal_cost = -1
+			level = 1
+
+			visible = {
+				has_dynamic_modifier = { modifier = earth_nation }
+				NOT = {
+					OR = {
+						tag = MPO
+						tag = KYI
+					}
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.0
+				pluralist_culture_drift = 0.04
+
+				weekly_centralisation = -0.02
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						has_idea = earth_auxiliary
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		fire_benders_only = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 5
+			visible = {
+				has_dynamic_modifier = { modifier = fire_nation }
+				NOT = {
+					tag =  SNW
+				}
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -1
+				#conscription_factor = -0.75
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+
+				weekly_centralisation = 0.03
+			}
+
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					NOT = { 
+						has_idea = fire_exceptional
+					}
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		fire_exceptional = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 4
+
+			visible = {
+				has_dynamic_modifier = { modifier = fire_nation }
+				NOT = {
+					tag = SNW
+				}
+			}
+
+			available = {
+				
+			}
+						
+			modifier = {
+				nonbender_factor = -0.75
+				#conscription_factor = -0.55
+				pluralist_culture_drift = 0.01
+
+				weekly_centralisation = 0.02
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					# Ignore if high on manpower
+					factor = 0.5
+					manpower_per_military_factory > 200
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  40
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 100
+					manpower_per_military_factory <  10
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = fire_benders_only
+							has_idea = fire_volunteers
+						}
+					}
+				}
+
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		fire_volunteers = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 3
+
+			visible = {
+				has_dynamic_modifier = { modifier = fire_nation }
+				NOT = {
+					tag = SNW
+				}
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				nonbender_factor = -0.5
+				#conscription_factor = -0.35
+				pluralist_culture_drift = 0.02
+
+				weekly_centralisation = 0.01
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = fire_exceptional
+							has_idea = fire_auxiliary
+						}
+					}
+				}
+
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		fire_auxiliary = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 2
+
+			visible = {
+				has_dynamic_modifier = { modifier = fire_nation }
+				NOT = {
+					tag = SNW
+				}
+			}	
+
+			available = {
+
+			}
+
+			modifier = {
+				nonbender_factor = -0.25
+				#conscription_factor = -0.15
+				pluralist_culture_drift = 0.03
+
+				weekly_centralisation = -0.01
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = fire_exceptional
+							has_idea = fire_auxiliary
+						}
+					}
+				}
+
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		fire_indiscriminate = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 1
+
+			visible = {
+				has_dynamic_modifier = { modifier = fire_nation }
+				NOT = {
+					tag = SNW
+				}
+			}
+
+			available = {
+
+			}
+			
+			modifier = {
+				nonbender_factor = -0.0
+				pluralist_culture_drift = 0.04
+
+				weekly_centralisation = -0.02
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						has_idea = fire_auxiliary
+					}
+				}
+
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		sun_benders_only = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			visible = {
+				tag = SNW
+			}
+
+			available = {
+
+			}
+
+			modifier = {
+				nonbender_factor = -1
+				#conscription_factor = -0.30
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				air_culture_drift = 0.02
+				water_culture_drift = 0.01
+
+				weekly_centralisation = 0.03
+			}
+
+			ai_will_do = {
+				factor = 10
+				modifier = {
+					factor = 0
+					NOT = { 
+						has_idea = sun_auxiliary
+					}
+				}
+			}
+			
+			cancel_if_invalid = no
+		}
+		
+		sun_auxiliary = {
+						
+			cost = 150
+			removal_cost = -1
+			level = 2
+
+			visible = {
+				tag = SNW
+			}	
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.25
+				air_culture_drift = 0.02
+				water_culture_drift = 0.01
+				pluralist_culture_drift = 0.02
+
+				weekly_centralisation = 0.02
+			}
+			
+			cancel_if_invalid = no
+		}
+
+		kyoshi_benders_only = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 5
+
+			visible = {	
+				tag = KYI
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -1
+				#conscription_factor = -0.9
+				industrial_capacity_factory = 0.1
+				production_speed_buildings_factor = 0.1
+				pluralist_culture_drift = 0.02
+
+				weekly_centralisation = 0.03
+			}
+
+			ai_will_do = {
+				factor = 10
+			}
+
+			cancel_if_invalid = no
+		}
+
+		kyoshi_exceptional = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 4
+
+			visible = {
+				tag = KYI
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.75
+				#conscription_factor = -0.675
+				pluralist_culture_drift = 0.03
+
+				weekly_centralisation = 0.02
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					# Ignore if high on manpower
+					factor = 0.5
+					manpower_per_military_factory > 200
+				}
+				modifier = {
+					#Prio if low on manpower
+					factor = 20
+					manpower_per_military_factory <  40
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { has_idea = kyoshi_benders_only }
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		kyoshi_volunteers = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 3
+
+			visible = {
+				tag = KYI
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.5
+				#conscription_factor = -0.225
+				pluralist_culture_drift = 0.04
+
+				weekly_centralisation = 0.01
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = kyoshi_exceptional
+							has_idea = kyoshi_auxiliary
+						}
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		kyoshi_auxiliary = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 2
+
+			visible = {
+				tag = KYI
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.25
+				pluralist_culture_drift = 0.04
+
+				weekly_centralisation = -0.01
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = kyoshi_exceptional
+							has_idea = kyoshi_auxiliary
+						}
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+
+		kyoshi_indiscriminate = {
+			
+			cost = 150
+			removal_cost = -1
+			level = 1
+
+			visible = {
+				tag = KYI
+			}
+
+			available = {
+				
+			}
+
+			modifier = {
+				nonbender_factor = -0.0
+				pluralist_culture_drift = 0.05
+
+				weekly_centralisation = -0.02
+			}
+
+			ai_will_do = {
+				factor = 1
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						has_idea = kyoshi_exceptional
+					}
+				}
+
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+}

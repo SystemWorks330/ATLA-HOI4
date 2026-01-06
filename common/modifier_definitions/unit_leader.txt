@@ -1,0 +1,31 @@
+leader_battle_chance = {				#### chance of leader inducing in battle
+	color_type = neutral
+	value_type = number
+	precision = 1
+	postfix = none
+	category = unit_leader 
+}
+
+leader_battle_chance_factor = {			#### factor on chance of leader inducing a battle
+	color_type = neutral
+	value_type = percentage
+	precision = 0
+	postfix = none
+	category = unit_leader 
+}
+
+killed_chance_factor = {				#### chance of leader dying in battle
+	color_type = bad
+	value_type = percentage
+	precision = 0
+	postfix = none
+	category = unit_leader 
+}
+
+captured_chance_factor = {				#### chance of leader being captured in battle. currently unused
+	color_type = good
+	value_type = percentage
+	precision = 0
+	postfix = none
+	category = unit_leader 
+}

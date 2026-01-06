@@ -1,0 +1,168 @@
+capital = 316
+
+OOB = "NAT_12"
+
+AIR_generic_starting_tech = yes
+
+
+#set_research_slots = 2
+
+set_convoys = 100
+
+ 
+set_country_flag = AIR_special_forces
+set_country_flag = AIR_air_techs
+set_country_flag = air_council_waiting_for_players_decision
+
+set_politics = {
+	ruling_party = air_culture
+	last_election = "10.5.8"
+	election_frequency = 120
+	elections_allowed = yes
+}
+
+set_popularities = {
+	water_culture = 0
+	pluralist_culture = 30
+	fire_culture = 0
+	earth_culture = 0
+	air_culture = 70
+}
+
+set_stability = 0.8 
+set_war_support = 0.8
+
+
+add_ideas = {
+	NAT_bison_polo
+	pacifist_detachment
+
+	international_trade
+	construction_efforts_law
+	disarmed_air_nation
+	air_benders_only
+	family_support_3
+	mandatory_education
+}
+
+recruit_character = NAT_northern_monk
+recruit_character = NAT_generic
+
+
+recruit_character = NAT_head_of_intelligence_1
+recruit_character = NAT_head_of_intelligence_2
+recruit_character = NAT_head_of_intelligence_3
+recruit_character = NAT_head_of_intelligence_4
+recruit_character = NAT_head_of_intelligence_5
+recruit_character = NAT_head_of_intelligence_6
+
+recruit_character = NAT_quartermaster_1
+recruit_character = NAT_quartermaster_2
+recruit_character = NAT_quartermaster_3
+recruit_character = NAT_quartermaster_4
+recruit_character = NAT_quartermaster_5
+recruit_character = NAT_quartermaster_6
+
+
+every_character = {
+	set_character_flag = airbender_monk
+}
+
+recruit_character = NAT_extinct_nation
+recruit_character = NAT_mechanist
+
+
+
+AIR_choose_council_members = yes
+
+set_variable = { council_name_1:harmony = 3 }
+set_variable = { council_name_2:harmony = 1 }
+set_variable = { council_name_3:harmony = 4 }
+set_variable = { council_name_4:harmony = 2 }
+set_variable = { council_name_5:harmony = 4 }
+set_variable = { AIR_council_army = 150 }
+set_variable = { AIR_council_navy = 25 }
+set_variable = { AIR_council_air = 125 }
+set_variable = { AIR_council_construction = 100 }
+set_variable = { AIR_council_research = 75 }
+set_variable = { AIR_council_politics = 125 }
+
+AIR_recalc_council_support = yes
+
+
+
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 ={
+	set_politics = {
+		ruling_party = air_culture
+		elections_allowed = no
+	}
+	OOB = "empty"
+	clr_country_flag = air_council_active
+	#set_cosmetic_tag = NAT_exterminated
+	retire_character = NAT_northern_monk
+	country_lock_all_division_template = yes
+	add_popularity = {
+		ideology = air_culture
+		popularity = -0.35
+	}
+	add_ideas = {
+		no_ruler
+		local_markets
+	}
+	remove_ideas = {
+		pacifist_detachment
+	}
+
+
+}
+
+
+
+
+
+106.2.4 = {
+	# set_rule = {
+	# 	can_join_factions = yes
+	# }
+	country_lock_all_division_template = no
+	OOB = "NAT_106"
+	remove_ideas = no_ruler
+	remove_ideas = NAT_bison_polo
+	#set_cosmetic_tag = NAT_mechanist
+	add_political_power = 650
+
+	#set_research_slots = 4
+
+	clr_country_flag = air_nation
+	clr_country_flag = AIR_special_forces
+
+	set_politics = {
+		ruling_party = pluralist_culture
+		last_election = "105.2.2"
+		election_frequency = 12
+		elections_allowed = yes
+	}
+
+	set_popularities = {
+		water_culture = 0
+		pluralist_culture = 70
+		fire_culture = 5
+		earth_culture = 15
+		air_culture = 10
+	}
+
+}

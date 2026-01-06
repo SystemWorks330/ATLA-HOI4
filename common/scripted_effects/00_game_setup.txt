@@ -1,0 +1,616 @@
+
+instant_resource_calc = {
+
+	#resource_state_calc = yes
+
+	add_dynamic_modifier = { modifier = additional_scripted_resources }
+	add_dynamic_modifier = { modifier = missing_workers_state }
+	add_dynamic_modifier = { modifier = urbanisation_modifiers }
+	add_dynamic_modifier = { modifier = prosperity_modifiers }
+	
+	add_dynamic_modifier = { modifier = farm_scripted_resources }
+	add_dynamic_modifier = { modifier = ranch_scripted_resources }
+	add_dynamic_modifier = { modifier = fishing_stand_scripted_resources }
+	add_dynamic_modifier = { modifier = lumber_mill_scripted_resources }
+	add_dynamic_modifier = { modifier = quarry_scripted_resources }
+	add_dynamic_modifier = { modifier = mine_scripted_resources }
+	add_dynamic_modifier = { modifier = crop_weaving_scripted_resources }
+	add_dynamic_modifier = { modifier = animal_weaving_scripted_resources }
+	add_dynamic_modifier = { modifier = mill_scripted_resources }
+	add_dynamic_modifier = { modifier = steelworks_scripted_resources }
+
+	add_dynamic_modifier = { modifier = consumer_good_factory_scripted_resources }
+	add_dynamic_modifier = { modifier = luxury_good_factory_scripted_resources }
+	add_dynamic_modifier = { modifier = carpentry_scripted_resources }
+	add_dynamic_modifier = { modifier = masonry_scripted_resources }
+	add_dynamic_modifier = { modifier = steel_beam_factory_scripted_resources }
+
+
+	add_dynamic_modifier = { modifier = needed_garrison_modifier }
+
+	taxation_state_calc = yes
+
+	force_update_dynamic_modifier = yes
+}
+
+permanent_spirits_and_modifiers = {
+	add_ideas = {
+		strategic_redeployment_blocker
+	}
+	add_dynamic_modifier = { modifier = stored_scripted_resources }
+	add_dynamic_modifier = { modifier = animal_resource_consumption }
+	add_dynamic_modifier = { modifier = exported_resources_dynamic }
+	add_dynamic_modifier = { modifier = factory_resource_consumption }
+	add_dynamic_modifier = { modifier = population_resource_bought_on_market }
+	add_dynamic_modifier = { modifier = building_upkeep_resources }
+	add_dynamic_modifier = { modifier = civs_from_tax_buy }
+	add_dynamic_modifier = { modifier = civs_from_self_employed }
+	add_dynamic_modifier = { modifier = civs_from_conversion }
+	add_dynamic_modifier = { modifier = mils_and_dockyards_extra }
+	add_dynamic_modifier = { modifier = logistics_and_orga_spirit }
+	add_dynamic_modifier = { modifier = wages_and_professionalism_spirit }
+	add_dynamic_modifier = { modifier = unit_leader_spirit }
+	add_dynamic_modifier = { modifier = avatar_effects }
+	set_variable = { spirit_army_orga = logistic_spirit_var }
+	multiply_variable = { spirit_army_orga = 0.015 }
+	subtract_from_variable = { spirit_army_orga = 0.1 }
+
+	add_dynamic_modifier = { modifier = full_moon }
+
+	set_variable = { civ_buy_factor = 0.5 }
+	set_variable = { deposit_percentage = 0.5 }
+
+	force_update_dynamic_modifier = yes
+}
+
+
+bender_conscription_effect = {
+	if = { 
+		limit = {
+			has_government = fire_culture
+		}
+		add_dynamic_modifier = { modifier = fire_nation }
+	}
+	if = { 
+		limit = {
+			has_government = earth_culture
+		}
+		add_dynamic_modifier = { modifier = earth_nation }
+	}
+	if = { 
+		limit = {
+			has_government = water_culture
+		}
+		add_dynamic_modifier = { modifier = water_nation }
+	}
+	if = { 
+		limit = {
+			has_government = air_culture
+		}
+		add_dynamic_modifier = { modifier = air_nation }
+	}
+	if = { 
+		limit = {
+			has_government = pluralist_culture
+		}
+		add_dynamic_modifier = { modifier = pluralist_nation }
+	}
+
+	set_variable = { bender_target = modifier@bender_target}
+	set_variable = { bender_percentage = modifier@bender_target}
+
+	clamp_variable = {
+		var = bender_percentage
+		min = 0
+		max = bender_target
+	}
+
+
+
+	#### bender conscription law factor
+
+	set_variable = { var_nonbender_factor = -1 }
+	add_to_variable = { var_nonbender_factor = bender_percentage }
+
+	set_variable = { nonbender_modifier = modifier@nonbender_factor }
+	multiply_variable = { nonbender_modifier = -1 }
+	clamp_variable = {
+		var = nonbender_modifier
+		min = 0
+		max = 1
+	}
+
+	multiply_variable = { var_nonbender_factor = nonbender_modifier }
+
+	add_dynamic_modifier = { modifier = dynamic_bender_capacity }
+	add_dynamic_modifier = { modifier = dynamic_conscription_factor }
+}
+
+hemisphere_setup = {
+	every_state = {
+		limit = {
+			OR = {
+				is_on_continent = north_america
+				is_on_continent = africa
+				region = 96
+				region = 97
+				region = 98
+				region = 99
+				region = 114
+				region = 116
+				region = 117
+				region = 118
+				region = 121
+				region = 126
+			}
+		}
+		set_state_flag = northern_hemisphere
+	}
+
+	every_state = {
+		limit = {
+			OR = {
+				is_on_continent = south_america
+				is_on_continent = asia
+				region = 129
+				region = 105
+				region = 102
+				region = 115
+				region = 106
+			}
+			NOT = {
+				state = 394
+				state = 367
+			}
+		}
+		set_state_flag = southern_hemisphere
+	}
+	
+}
+
+
+fire_puppets_52 = {
+	set_autonomy = { target = KFC autonomy_state = autonomy_imperial_colony }
+	set_autonomy = { target = YFC autonomy_state = autonomy_imperial_colony }
+}
+
+fire_puppets_106 = {
+	set_autonomy = { target = PFC autonomy_state = autonomy_imperial_colony }
+	set_autonomy = { target = HFC autonomy_state = autonomy_imperial_colony }
+	set_autonomy = { target = MFC autonomy_state = autonomy_imperial_colony }
+	set_autonomy = { target = GFC autonomy_state = autonomy_imperial_colony }
+}
+
+fire_puppets_111 = {
+	set_autonomy = { target = NAT autonomy_state = autonomy_tributary }
+}
+
+fire_faction_52 = {
+	FIR = {
+		create_faction = Alliance_of_Fire
+		add_to_faction = FIR
+		add_to_faction = YFC
+		add_to_faction = KFC
+	}
+}
+fire_faction_106 = {
+	FIR = {
+		create_faction = Alliance_of_Fire
+		add_to_faction = FIR
+		add_to_faction = YFC
+		add_to_faction = KFC
+		add_to_faction = PFC
+		add_to_faction = HFC
+		add_to_faction = MFC
+		add_to_faction = GFC
+	}
+}
+fire_faction_111 = {
+	FIR = {
+		create_faction = Alliance_of_Fire
+		add_to_faction = FIR
+		add_to_faction = YFC
+		add_to_faction = KFC
+		add_to_faction = PFC
+		add_to_faction = HFC
+		add_to_faction = MFC
+		add_to_faction = GFC
+		add_to_faction = NAT
+	}
+}
+
+war_setup_52 = {
+	KFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+	YFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+
+}
+war_setup_106 = {
+	
+	PFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+	HFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+	MFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+	GFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+
+}
+
+taku_puppet_12 = {
+	if = {
+		limit = {
+			has_start_date < 13.1.1
+		}
+		set_autonomy = { target = POH autonomy_state = autonomy_county }
+		set_autonomy = { target = HAN autonomy_state = autonomy_county }
+	}
+}
+
+omashu_puppet_12 = {
+	if = {
+		limit = {
+			has_start_date < 13.1.1
+		}
+		set_autonomy = { target = MPO autonomy_state = autonomy_tributary }
+		set_autonomy = { target = GOU autonomy_state = autonomy_county }
+	}
+}
+
+earth_faction_52 = {
+
+	EAR = {
+		create_faction = Earth_Kingdom
+		add_to_faction = EAR
+		add_to_faction = POH
+		add_to_faction = TAK
+		add_to_faction = HAN
+		add_to_faction = MAK
+		add_to_faction = NIX
+		add_to_faction = YUE
+		add_to_faction = XIN
+		add_to_faction = GAR
+		add_to_faction = WUL
+		add_to_faction = NOW
+
+		add_to_faction = HEB
+		add_to_faction = ISL
+		add_to_faction = NCB
+		add_to_faction = ECB
+		add_to_faction = EBA
+		add_to_faction = WBA
+		add_to_faction = LAM
+		add_to_faction = GDD
+		add_to_faction = FMB
+		add_to_faction = MER
+
+		add_to_faction = OMS
+		add_to_faction = MPO
+		add_to_faction = SWA
+		add_to_faction = ZAO
+		add_to_faction = CHN
+		add_to_faction = GAO
+		add_to_faction = NAN
+		add_to_faction = ZIN
+		add_to_faction = YII
+		add_to_faction = BAI
+
+		add_to_faction = YON
+		add_to_faction = FUJ
+		add_to_faction = SHE
+		add_to_faction = XIL
+		add_to_faction = GOU
+		add_to_faction = DAW
+		add_to_faction = DIN
+
+		remove_from_faction = WUL
+		remove_from_faction = MAK
+		remove_from_faction = POH
+		remove_from_faction = TAK
+		remove_from_faction = HAN
+		remove_from_faction = YUE
+	}
+}
+
+earth_faction_106 = {
+
+	EAR = {
+		create_faction = Earth_Kingdom
+		add_to_faction = EAR
+		add_to_faction = POH
+		add_to_faction = TAK
+		add_to_faction = HAN
+		add_to_faction = MAK
+		add_to_faction = NIX
+		add_to_faction = YUE
+		add_to_faction = XIN
+		add_to_faction = GAR
+		add_to_faction = WUL
+		add_to_faction = NOW
+
+		add_to_faction = HEB
+		add_to_faction = ISL
+		add_to_faction = NCB
+		add_to_faction = ECB
+		add_to_faction = EBA
+		add_to_faction = WBA
+		add_to_faction = LAM
+		add_to_faction = GDD
+		add_to_faction = FMB
+		add_to_faction = MER
+
+		add_to_faction = OMS
+		add_to_faction = MPO
+		add_to_faction = SWA
+		add_to_faction = ZAO
+		add_to_faction = CHN
+		add_to_faction = GAO
+		add_to_faction = NAN
+		add_to_faction = ZIN
+		add_to_faction = YII
+		add_to_faction = BAI
+
+		add_to_faction = YON
+		add_to_faction = FUJ
+		add_to_faction = SHE
+		add_to_faction = XIL
+		add_to_faction = GOU
+		add_to_faction = DAW
+		add_to_faction = DIN
+		
+		remove_from_faction = WUL
+		remove_from_faction = MAK
+		remove_from_faction = POH
+		remove_from_faction = TAK
+		remove_from_faction = HAN
+		remove_from_faction = YUE
+
+		remove_from_faction = MER
+		remove_from_faction = NOW
+		remove_from_faction = NIX
+		remove_from_faction = XIN
+		remove_from_faction = GDD
+
+		remove_from_faction = FUJ
+		remove_from_faction = SHE
+		remove_from_faction = XIL
+	}
+}
+
+
+earth_faction_111 = {
+	EAR = {
+		create_faction = Earth_Kingdom
+		add_to_faction = EAR
+		add_to_faction = POH
+		add_to_faction = TAK
+		add_to_faction = HAN
+		add_to_faction = MAK
+		add_to_faction = NIX
+		add_to_faction = YUE
+		add_to_faction = XIN
+		add_to_faction = GAR
+		add_to_faction = WUL
+		add_to_faction = NOW
+
+		add_to_faction = HEB
+		add_to_faction = ISL
+		add_to_faction = NCB
+		add_to_faction = ECB
+		add_to_faction = EBA
+		add_to_faction = WBA
+		add_to_faction = LAM
+		add_to_faction = GDD
+		add_to_faction = FMB
+		add_to_faction = MER
+
+		add_to_faction = OMS
+		add_to_faction = MPO
+		add_to_faction = SWA
+		add_to_faction = ZAO
+		add_to_faction = CHN
+		add_to_faction = GAO
+		add_to_faction = NAN
+		add_to_faction = ZIN
+		add_to_faction = YII
+		add_to_faction = BAI
+
+		add_to_faction = YON
+		add_to_faction = FUJ
+		add_to_faction = SHE
+		add_to_faction = XIL
+		add_to_faction = GOU
+		add_to_faction = DAW
+		add_to_faction = DIN
+		
+		remove_from_faction = WUL
+		remove_from_faction = MAK
+		remove_from_faction = POH
+		remove_from_faction = TAK
+		remove_from_faction = HAN
+		remove_from_faction = YUE
+
+		remove_from_faction = WUL
+		remove_from_faction = MAK
+		remove_from_faction = POH
+		remove_from_faction = TAK
+		remove_from_faction = HAN
+		remove_from_faction = YUE
+
+		remove_from_faction = MER
+		remove_from_faction = NOW
+		remove_from_faction = NIX
+		remove_from_faction = XIN
+		remove_from_faction = GDD
+
+		remove_from_faction = FUJ
+		remove_from_faction = SHE
+		remove_from_faction = XIL
+	}
+}
+
+earth_puppets_12 = {
+	set_autonomy = { target = WBA autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = EBA autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = DIN autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = DAW autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = BAI autonomy_state = autonomy_county }
+	set_autonomy = { target = FMB autonomy_state = autonomy_county }
+	set_autonomy = { target = LAM autonomy_state = autonomy_county }
+	set_autonomy = { target = ECB autonomy_state = autonomy_county }
+	set_autonomy = { target = GDD autonomy_state = autonomy_county }
+	set_autonomy = { target = MER autonomy_state = autonomy_county }
+	set_autonomy = { target = NIX autonomy_state = autonomy_county }
+	set_autonomy = { target = XIN autonomy_state = autonomy_county }
+	set_autonomy = { target = WUL autonomy_state = autonomy_county }
+	set_autonomy = { target = HEB autonomy_state = autonomy_county }
+	set_autonomy = { target = MAK autonomy_state = autonomy_county }
+	set_autonomy = { target = YUE autonomy_state = autonomy_county }
+	set_autonomy = { target = NOW autonomy_state = autonomy_county }
+	set_autonomy = { target = NCB autonomy_state = autonomy_county }
+	set_autonomy = { target = FUJ autonomy_state = autonomy_county }
+	set_autonomy = { target = SHE autonomy_state = autonomy_county }
+	set_autonomy = { target = XIL autonomy_state = autonomy_county }
+	set_autonomy = { target = YON autonomy_state = autonomy_county }
+}
+
+
+earth_puppets_52 = {
+	
+	earth_puppets_111 = yes
+	
+}
+
+earth_puppets_106 = {
+	
+	earth_puppets_111 = yes
+	
+}
+
+earth_puppets_111 = {
+	
+	set_autonomy = { target = OMS autonomy_state = autonomy_kingdom }
+	set_autonomy = { target = GAO autonomy_state = autonomy_kingdom }
+	set_autonomy = { target = YII autonomy_state = autonomy_county }
+	set_autonomy = { target = YUE autonomy_state = autonomy_county }
+	set_autonomy = { target = MPO autonomy_state = autonomy_tributary }
+	set_autonomy = { target = SWA autonomy_state = autonomy_tributary }
+	set_autonomy = { target = TAK autonomy_state = autonomy_kingdom }
+	set_autonomy = { target = ZAO autonomy_state = autonomy_county }
+	set_autonomy = { target = CHN autonomy_state = autonomy_county }
+	set_autonomy = { target = ISL autonomy_state = autonomy_county }
+	set_autonomy = { target = NAN autonomy_state = autonomy_county }
+	set_autonomy = { target = ZIN autonomy_state = autonomy_county }
+	set_autonomy = { target = GAR autonomy_state = autonomy_county }
+	set_autonomy = { target = POH autonomy_state = autonomy_county }
+	set_autonomy = { target = WBA autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = EBA autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = BAI autonomy_state = autonomy_county }
+	set_autonomy = { target = FMB autonomy_state = autonomy_county }
+	set_autonomy = { target = LAM autonomy_state = autonomy_county }
+	set_autonomy = { target = ECB autonomy_state = autonomy_county }
+	set_autonomy = { target = GDD autonomy_state = autonomy_county }
+	set_autonomy = { target = MER autonomy_state = autonomy_county }
+	set_autonomy = { target = NIX autonomy_state = autonomy_county }
+	set_autonomy = { target = XIN autonomy_state = autonomy_county }
+	set_autonomy = { target = WUL autonomy_state = autonomy_county }
+	set_autonomy = { target = HEB autonomy_state = autonomy_county }
+	set_autonomy = { target = MAK autonomy_state = autonomy_county }
+	set_autonomy = { target = NOW autonomy_state = autonomy_county }
+	set_autonomy = { target = NCB autonomy_state = autonomy_county }
+	set_autonomy = { target = HAN autonomy_state = autonomy_county }
+	set_autonomy = { target = FUJ autonomy_state = autonomy_county }
+	set_autonomy = { target = SHE autonomy_state = autonomy_county }
+	set_autonomy = { target = XIL autonomy_state = autonomy_county }
+	set_autonomy = { target = YON autonomy_state = autonomy_county }
+	set_autonomy = { target = GOU autonomy_state = autonomy_county }
+	set_autonomy = { target = DIN autonomy_state = autonomy_royal_domain }
+	set_autonomy = { target = DAW autonomy_state = autonomy_royal_domain }
+	
+}
+
+ear_exiles_52 = {
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		WUL = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		TAK = {
+			become_exiled_in = { target = EAR legitimacy = 40 }
+		}
+		YUE = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		MAK = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		POH = {
+			become_exiled_in = { target = EAR legitimacy = 35 }
+		}
+		HAN = {
+			become_exiled_in = { target = EAR legitimacy = 35 }
+		}
+	}
+}
+
+ear_exiles_106 = {
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		MER = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		GDD = {
+			become_exiled_in = { target = EAR legitimacy = 20 }
+		}
+		NOW = {
+			become_exiled_in = { target = EAR legitimacy = 35 }
+		}
+		XIN = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		NIX = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		FUJ = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		SHE = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		XIL = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		
+		
+	}
+}

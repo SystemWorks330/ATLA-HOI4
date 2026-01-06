@@ -1,0 +1,166 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "autonomy_diplo_view"
+		position = { x = 140 y = 242 }
+		size = { width = 255 height = 60 }
+		clipping = no
+
+		#background = {
+		#	name = "Background"
+		#	quadTextureSprite = "GFX_subjects_entry_bg"
+		#}
+		
+		containerWindowType = {
+			name = "autonomy_progress_view"
+			position = { x = 42 y = 12 }
+			size = { width = 255 height = 60 }
+			clipping = no
+			
+			instantTextboxType = {
+				name = "current_autonomy_name"
+				position = { x = 134 y = -12 }
+				font = "hoi_16mbs"
+				text = "autonomy_ttp"
+				maxWidth = 200
+				maxHeight = 20
+				format = left		
+			}
+			
+			iconType = {
+				name = "prev_autonomy_level"
+				position = { x = 82 y = -5 }
+				quadTextureSprite = "GFX_occupation_policy_button_selected"
+				pdx_tooltip = "autonomy_text"
+			}
+
+			iconType = {
+				name = "prev_level_glow"
+				position = { x = 70 y = -12 }
+				quadTextureSprite = "GFX_ongoing_focus_goal_polview"
+				alwaystransparent = yes				
+				scale = 0.5
+			}
+			
+			#iconType = {
+			#	name = "prev_autonomy_level_icon"
+			#	position = { x = 87 y = 0 }
+			#	quadTextureSprite = "GFX_puppet_icon"
+			#	alwaystransparent = yes
+			#}
+
+			iconType = {
+				name = "kingdom_icon"
+				position = { x = 87 y = 0 }
+				quadTextureSprite = "GFX_autonomy_kingdom_icon"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "county_icon"
+				position = { x = 87 y = 0 }
+				quadTextureSprite = "GFX_autonomy_county_icon"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "vassalage_icon"
+				position = { x = 87 y = 0 }
+				quadTextureSprite = "GFX_autonomy_vassalage_icon"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "royal_domain_icon"
+				position = { x = 87 y = 0 }
+				quadTextureSprite = "GFX_autonomy_royal_domain_icon"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "tributary_icon"
+				position = { x = 87 y = 0 }
+				quadTextureSprite = "GFX_autonomy_tributary_icon"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "satelit_state_icon"
+				position = { x = 87 y = 0 }
+				quadTextureSprite = "GFX_autonomy_satelit_state_icon"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "imperial_dominion_icon"
+				position = { x = 87 y = 0 }
+				quadTextureSprite = "GFX_autonomy_imperial_dominion_icon"
+				alwaystransparent = yes
+			}
+			iconType = {
+				name = "imperial_colony_icon"
+				position = { x = 87 y = 0 }
+				quadTextureSprite = "GFX_autonomy_imperial_colony_icon"
+				alwaystransparent = yes
+			}
+
+			background = {
+				name = "Background"		
+				quadTextureSprite ="GFX_mini_bg"
+				position = { x = 77 y = -14 }
+			}
+			
+			iconType = {
+				name = "autonomy_progress_bar"
+				spriteType = "GFX_subject_progressbar"
+				position = { x = 129 y = 9 }
+				frame = 100
+
+				pdx_tooltip = "autonomy_tooltip"
+			}
+			
+#			iconType = {
+#				name = "next_autonomy_level"
+#				position = { x = 214 y = -5 }
+#				quadTextureSprite = "GFX_occupation_policy_button_selected"
+#			}
+#			
+#			iconType = {
+#				name = "next_level_glow"
+#				position = { x = 202 y = -12 }
+#				quadTextureSprite = "GFX_ongoing_generic_glow_yellow"
+#				alwaystransparent = yes				
+#				scale = 0.5
+#			}
+#			
+#			iconType = {
+#				name = "next_autonomy_level_icon"
+#				position = { x = 219 y = 0 }
+#				quadTextureSprite = "GFX_master_icon"
+#			}
+			
+			#iconType = {
+			#	name = "current_autonomy_level_icon"
+			#	position = { x = 111 y = -62 }
+			#	quadTextureSprite = "GFX_autonomy_unknown_icon"
+			#}
+		}
+
+
+		iconType = {
+			name = "tax_icon"
+			position = { x = 260 y = 17 }
+			quadTextureSprite = "GFX_vassal_tax_icon"
+			pdx_tooltip = "vassal_tax_tooltip"
+		}
+
+		iconType = {
+			name = "war_tribute_icon"
+			position = { x = 336 y = 17 }
+			quadTextureSprite = "GFX_vassal_war_tribute_icon"
+			pdx_tooltip = "vassal_war_tribute_tooltip"
+		}
+
+		iconType = {
+			name = "territorial_integration_icon"
+			position = { x = 298 y = 17 }
+			quadTextureSprite = "GFX_vassal_territorial_integration_icon"
+			pdx_tooltip = "vassal_territorial_integration_tooltip"
+		}
+	}
+
+}

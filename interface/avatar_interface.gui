@@ -1,0 +1,628 @@
+guiTypes = {
+  
+	############## avatar #################
+
+	containerWindowType = {
+		name = "avatar_container"
+		position = { x = -285 y = 46 }
+		Orientation = UPPER_RIGHT
+
+		buttonType ={
+			name ="avatar_button"
+			spriteType = "GFX_topbar_avatar"
+			position = { x=10 y=0 }
+			Orientation = "UPPER_RIGHT"
+			shortcut = "shift+a"
+			clicksound = click_default
+			scale = 1.0
+
+			pdx_tooltip = "AVATAR_TOOLTIP"
+		}
+	}
+
+	containerWindowType = {
+		name = "countryavatarview"
+		position = { x=-520 y=-340 }	
+		size = { width =1040 height=660 }
+		orientation= center
+		moveable = yes
+		fade_time = 200
+		fade_type = linear
+		click_to_front = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window"
+		}
+
+		#iconType ={
+		#	name ="avatar_bg"
+		#	spriteType = "GFX_avatar_background"
+		#	position = { x= 10 y = 10 }
+		#	Orientation = "UPPER_LEFT"
+		#	alwaystransparent = yes
+		#}
+
+		#iconType ={
+		#	name ="avatar_header_bg"
+		#	spriteType = "GFX_header_bg"
+		#	position = { x= -550 y = 07 }
+		#	Orientation = "UPPER_RIGHT"
+		#}
+
+		iconType ={
+			name ="title_bg"
+			spriteType = "GFX_ink_1"
+			position = { x= 100 y = 16 }
+			scale = 0.8
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "avatar_title"
+			position = { x = 150 y = 38 }
+			textureFile = ""
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			Orientation = "UPPER_LEFT"
+			text = "AVATAR_TITLE"
+			format = left
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		buttonType ={
+			name ="avatar_close"
+			position = { x = -40 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+			Orientation = "UPPER_RIGHT"
+		}
+
+		containerWindowType = {
+			name = "avatar_portrait_window"
+			position = { x=55 y=40}
+			size = { width = 535 height = 100%% }
+
+			iconType = {
+				name ="avatar_portrait"
+				#spriteType = "GFX_avatar_aang"
+				position = { x= 80 y = 74 }
+				pdx_tooltip = "AVATAR_TOOLTIP"
+			}
+			iconType = {
+				name = "leader_frame2"
+				spriteType = "GFX_pol_leader_frame"
+				position = { x = 72 y = 64 }		
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "aang_name"
+				position = { x = 80 y = 291 }
+				font = "hoi_18mbs"
+				text = "AVATAR_NAME"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+
+		}
+
+		containerWindowType = {
+			name = "avatarstatistics"
+			position = { x=-125 y=280}
+			size = { width = 535 height = 100%% }
+
+	
+			#iconType ={
+			#	name ="title_bg"
+			#	spriteType = "GFX_ink_1"
+			#	position = { x= 288 y = 40 }
+			#	scale = 0.5
+			#	alwaystransparent = yes
+			#}
+			#instantTextboxType = {
+			#	name = "avatar_stats_title"
+			#	position = { x = 278 y = 56 }
+			#	font = "hoi_16mbs"
+			#	text = "AVATAR_STATS_TITLE"
+			#	maxWidth = 155
+			#	maxHeight = 20
+			#	format = center
+			#	vertical_alignment = center
+			#}
+	
+			iconType ={
+				name ="avatar_age_bg"
+				spriteType = "GFX_ink_2"
+				position = { x= 216 y = 82 }
+				scale = 0.45
+				alwaystransparent = yes
+			}
+			iconType ={
+				name ="avatar_age_wax"
+				spriteType = "GFX_wax"
+				position = { x= 326 y = 92 }
+				scale = 0.65
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "avatar_age"
+				position = { x = 176 y = 96 }
+				font = "hoi_16mbs"
+				text = "AVATAR_AGE"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "AVATAR_AGE_TOOLTIP"
+			}
+			instantTextboxType = {
+				name = "avatarage"
+				position = { x = 270 y = 98 }
+				font = "hoi_18mbs"
+				text = "AVATAR_AGE_TEXT"
+				maxWidth = 150
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "AVATAR_AGE_AGE"
+			}
+	
+			iconType ={
+				name ="avatar_homecountry_bg"
+				spriteType = "GFX_ink_2"
+				position = { x= 216 y = 122 }
+				scale = 0.45
+				alwaystransparent = yes
+			}
+			iconType ={
+				name ="avatar_homecountry_wax"
+				spriteType = "GFX_wax"
+				position = { x= 326 y = 129 }
+				scale = 0.65
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "avatar_homecountry"
+				position = { x = 176 y = 136 }
+				font = "hoi_16mbs"
+				text = "AVATAR_HOMECOUNTRY"
+				maxWidth = 160
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "AVATAR_HOMECOUNTRY_TOOLTIP"
+			}
+			iconType ={
+				name ="avatar_air_home"
+				spriteType = "GFX_avatar_air"
+				position = { x= 330 y = 126 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "AVATAR_AIRNOMADS"
+				pdx_tooltip_delayed = "AVATAR_AIR_ELEMENT_TOOLTIP"
+				scale = 0.5
+			}
+			iconType ={
+				name ="avatar_water_home"
+				spriteType = "GFX_avatar_water"
+				position = { x= 330 y = 126 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "AVATAR_WATERTRIBES"
+				pdx_tooltip_delayed = "AVATAR_WATER_ELEMENT_TOOLTIP"
+				scale = 0.5
+			}
+			iconType ={
+				name ="avatar_fire_home"
+				spriteType = "GFX_avatar_fire"
+				position = { x= 330 y = 126 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "AVATAR_FIRENATION"
+				pdx_tooltip_delayed = "AVATAR_FIRE_ELEMENT_TOOLTIP"
+				scale = 0.5
+			}
+			iconType ={
+				name ="avatar_earth_home"
+				spriteType = "GFX_avatar_earth"
+				position = { x= 330 y = 126 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "AVATAR_EARTHKINGDOM"
+				pdx_tooltip_delayed = "AVATAR_EARTH_ELEMENT_TOOLTIP"
+				scale = 0.5
+			}
+	
+			iconType ={
+				name ="avatar_influence_bg"
+				spriteType = "GFX_ink_2"
+				position = { x= 216 y = 160 }
+				scale = 0.45
+				alwaystransparent = yes
+			}
+			iconType ={
+				name ="avatar_influence_wax"
+				spriteType = "GFX_wax"
+				position = { x= 326 y = 166 }
+				scale = 0.65
+				alwaystransparent = yes
+			}
+			instantTextboxType = {
+				name = "avatar_influence"
+				position = { x = 176 y = 172 }
+				font = "hoi_16mbs"
+				text = "AVATAR_INFLUENCE"
+				maxWidth = 160
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "AVATAR_INFLUENCE_TOOLTIP"
+			}
+			instantTextboxType = {
+				name = "avatar_influence_value"
+				position = { x = 268 y = 173 }
+				font = "hoi_16mbs"
+				text = "AVATAR_INFLUENCE_TEXT"
+				maxWidth = 155
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+				pdx_tooltip = "AVATAR_INFLUENCE_VALUE_TOOLTIP"
+			}
+
+			iconType = {
+				name ="avatar_influence_icon"
+				spriteType = "GFX_avatar_influence_icon"
+				position = { x= 400 y = 170 }
+				pdx_tooltip = "AVATAR_EFFECTS_TOOLTIP"
+				pdx_tooltip_delayed = "AVATAR_EFFECTS_TOOLTIP_DELAYED"
+			}
+
+			containerWindowType = {
+				name = "opinion_container"
+				position = { x=275 y=0}
+				size = { width = 535 height = 100%% }
+
+				iconType ={
+					name ="avatar_opinion_bg"
+					spriteType = "GFX_diplo_opinion_bg"
+					position = { x= 106 y = 98 }
+					alwaystransparent = yes
+				}
+
+				iconType ={
+					name ="avatar_icon"
+					spriteType = "GFX_avatar_icon"
+					position = { x= 150 y = 128 }
+					alwaystransparent = yes
+				}
+
+				instantTextboxType = {
+					name = "we"
+					position = { x = 44 y = 106 }
+					font = "hoi_16mbs"
+					text = "[ROOT.GetFlag]"
+					maxWidth = 160
+					maxHeight = 20
+					format = center
+				}
+				instantTextboxType = {
+					name = "avatar_opinion_value"
+					position = { x = 94 y = 142 }
+					font = "hoi_16mbs"
+					text = "AVATAR_OPINION_TEXT"
+					maxWidth = 60
+					maxHeight = 20
+					format = center
+					vertical_alignment = center
+					pdx_tooltip = "AVATAR_OPINION_TOOLTIP"
+				}
+				instantTextboxType = {
+					name = "our_opinion_value"
+					position = { x = 124 y = 96 }
+					font = "hoi_16mbs"
+					text = "AVATAR_SUPPORT_TEXT"
+					maxWidth = 60
+					maxHeight = 20
+					format = center
+					vertical_alignment = center
+					pdx_tooltip = "AVATAR_SUPPORT_TOOLTIP"
+				}
+			}
+	
+			iconType ={
+				name ="avatar_location_unknown"
+				spriteType = "GFX_terrain_unknown"
+				position = { x= 200 y = -160 }
+				Orientation = "LOWER_LEFT"
+				pdx_tooltip = "AVATAR_ICEBERG"
+			}
+			iconType ={
+				name ="avatar_location_captured"
+				spriteType = "GFX_terrain_prison"
+				position = { x= 200 y = -160 }
+				Orientation = "LOWER_LEFT"
+				pdx_tooltip = "AVATAR_PRISON"
+			}
+			iconType ={
+				name ="avatar_location_ship"
+				spriteType = "GFX_terrain_fire_ship"
+				position = { x= 200 y = -160 }
+				Orientation = "LOWER_LEFT"
+				pdx_tooltip = "AVATAR_ON_BOAT"
+			}
+			iconType ={
+				name ="avatar_location"
+				#spriteType = "GFX_terrain_unknown"
+				position = { x= 200 y = -160 }
+				Orientation = "LOWER_LEFT"
+				pdx_tooltip = "AVATAR_LOCATION_NAME"
+			}
+			iconType ={
+				name ="avatar_location_appa"
+				spriteType = "GFX_terrain_airbison"
+				position = { x= 200 y = -160 }
+				Orientation = "LOWER_LEFT"
+				pdx_tooltip = "AVATAR_EN_ROUTE"
+			}
+
+		}
+
+		containerWindowType = {
+			name = "skill_avatar_entry"
+			position = { x = 720 y = 76 }
+			size = { width = 550 height = 100%% }
+			verticalScrollbar = "right_vertical_slider"
+			clipping = no
+			
+			iconType ={
+				name ="category_header"
+				spriteType = "GFX_ink_2"
+				position = { x=5 y=-24 }
+				Orientation = "UPPER_LEFT"
+				scale = 0.9
+			}
+			instantTextboxType = {
+				name = "name"
+				position = { x = 40 y = 14 }
+				font = "hoi_20b"
+				text = "AVATAR_MASTERY"
+				maxWidth = 300
+				maxHeight = 20
+			}
+
+		}
+
+		containerWindowType = {
+			name = "benderstatistics"
+			position = { x=825 y=20}
+			size = { width = 535 height = 100%% }
+
+			containerWindowType = {
+				name = "spirit_container"
+				position = { x=0 y=370}
+				size = { width = 535 height = 100%% }
+				iconType = {
+					name ="spirituality_bg"
+					spriteType = "GFX_spirit_stat"
+					position = { x= 1 y = 124 }
+					pdx_tooltip = "AVATAR_SPIRITUALITY_TOOLTIP"
+				}
+				iconType = {
+					name ="spirituality_logo"
+					spriteType = "GFX_avatar_spirit"
+					position = { x= -80 y = 104 }
+					pdx_tooltip = "AVATAR_SPIRITUALITY"
+					pdx_tooltip_delayed = "AVATAR_SPIRIT_TOOLTIP"
+				}
+				iconType = {
+					name ="spirituality"
+					spriteType = "GFX_avatar_indicator"
+					position = { x= 0 y = 125 }
+					pdx_tooltip = "AVATAR_SPIRITUALITY_TOOLTIP"
+				}
+			}
+			containerWindowType = {
+				name = "avatar_container"
+				position = { x=0 y=448}
+				size = { width = 535 height = 100%% }
+				iconType = {
+					name ="avatar_state_bg"
+					spriteType = "GFX_avatar_stat"
+					position = { x= 1 y = 124 }
+					pdx_tooltip = "AVATAR_STATE_TOOLTIP"
+				}
+				iconType = {
+					name ="avatar_logo"
+					spriteType = "GFX_avatar_avatar"
+					position = { x= -80 y = 104 }
+					pdx_tooltip = "AVATAR_STATE"
+					pdx_tooltip_delayed = "AVATAR_AVATAR_TOOLTIP"
+				}
+				iconType = {
+					name ="avatar_state"
+					spriteType = "GFX_avatar_indicator"
+					position = { x= 0 y = 125 }
+					pdx_tooltip = "AVATAR_STATE_TOOLTIP"
+				}
+			}
+
+			containerWindowType = {
+				name = "water_container"
+				position = { x=0 y=10}
+				size = { width = 535 height = 100%% }
+				iconType = {
+					name ="water_bg"
+					spriteType = "GFX_water_stat"
+					position = { x= 1 y = 124 }
+					pdx_tooltip = "AVATAR_WATER_TOOLTIP"
+				}
+				iconType = {
+					name ="water_logo"
+					spriteType = "GFX_avatar_water"
+					position = { x= -80 y = 104 }
+					pdx_tooltip = "AVATAR_WATER"
+					pdx_tooltip_delayed = "AVATAR_WATER_ELEMENT_TOOLTIP"
+				}
+				iconType = {
+					name ="water_skill"
+					spriteType = "GFX_avatar_indicator"
+					position = { x= 0 y = 125 }
+					pdx_tooltip = "AVATAR_WATER_TOOLTIP"
+				}
+			}
+			containerWindowType = {
+				name = "earth_container"
+				position = { x=0 y=0}
+				size = { width = 535 height = 100%% }
+				iconType = {
+					name ="earth_bg"
+					spriteType = "GFX_earth_stat"
+					position = { x= 1 y = 210 }
+					pdx_tooltip = "AVATAR_EARTH_TOOLTIP"
+				}
+				iconType = {
+					name ="earth_logo"
+					spriteType = "GFX_avatar_earth"
+					position = { x= -80 y = 190 }
+					pdx_tooltip = "AVATAR_EARTH"
+					pdx_tooltip_delayed = "AVATAR_EARTH_ELEMENT_TOOLTIP"
+				}
+				iconType = {
+					name ="earth_skill"
+					spriteType = "GFX_avatar_indicator"
+					position = { x= 0 y = 211 }
+					pdx_tooltip = "AVATAR_EARTH_TOOLTIP"
+				}
+			}
+			containerWindowType = {
+				name = "fire_container"
+				position = { x=0 y=-10}
+				size = { width = 535 height = 100%% }
+				iconType = {
+					name ="fire_bg"
+					spriteType = "GFX_fire_stat"
+					position = { x= 1 y = 296 }
+					pdx_tooltip = "AVATAR_FIRE_TOOLTIP"
+				}
+				iconType = {
+					name ="fire_logo"
+					spriteType = "GFX_avatar_fire"
+					position = { x= -80 y = 276 }
+					pdx_tooltip = "AVATAR_FIRE"
+					pdx_tooltip_delayed = "AVATAR_FIRE_ELEMENT_TOOLTIP"
+				}
+				iconType = {
+					name ="fire_skill"
+					spriteType = "GFX_avatar_indicator"
+					position = { x= 0 y = 297 }
+					pdx_tooltip = "AVATAR_FIRE_TOOLTIP"
+				}
+			}
+			containerWindowType = {
+				name = "air_container"
+				position = { x=0 y=-20}
+				size = { width = 535 height = 100%% }
+				iconType = {
+					name ="air_logo"
+					spriteType = "GFX_avatar_air"
+					position = { x= -80 y = 370 }
+					pdx_tooltip = "AVATAR_AIR"
+					pdx_tooltip_delayed = "AVATAR_AIR_ELEMENT_TOOLTIP"
+				}
+				iconType = {
+					name ="air_bg"
+					spriteType = "GFX_air_stat"
+					position = { x= 1 y = 390 }
+					pdx_tooltip = "AVATAR_AIR_TOOLTIP"
+				}
+				iconType = {
+					name ="air_skill"
+					spriteType = "GFX_avatar_indicator"
+					position = { x= 0 y = 391 }
+					pdx_tooltip = "AVATAR_AIR_TOOLTIP"
+				}
+			}
+		}
+
+		containerWindowType = {
+			name = "team_avatar_entry"
+			position = { x = 420 y = 76 }
+			size = { width = 550 height = 100%% }
+			verticalScrollbar = "right_vertical_slider"
+			clipping = no
+			
+			iconType ={
+				name ="category_header"
+				spriteType = "GFX_ink_2"
+				position = { x=5 y=-24 }
+				Orientation = "UPPER_LEFT"
+				scale = 0.9
+			}
+			instantTextboxType = {
+				name = "name"
+				position = { x = 40 y = 14 }
+				font = "hoi_20b"
+				text = "AVATAR_TEAM"
+				maxWidth = 300
+				maxHeight = 20
+			}
+
+			iconType ={
+				name ="team_header"
+				spriteType = "GFX_avatar_team_header"
+				position = { x=-15 y=55 }
+				Orientation = "UPPER_LEFT"
+				pdx_tooltip = "AVATAR_TEAM_TOOLTIP"
+			}
+		}
+
+		containerWindowType = {
+			name = "avatarteam"
+			position = { x=420 y=-160}
+
+			iconType = {
+				name ="team_1_portrait"
+				#spriteType = "GFX_appa"
+				position = { x= -10 y = 390 }
+				pdx_tooltip = "AVATAR_TEAM_1_TOOLTIP"
+			}
+			iconType = {
+				name ="team_2_portrait"
+				position = { x= 70 y = 390 }
+				pdx_tooltip = "AVATAR_TEAM_2_TOOLTIP"
+			}
+			iconType = {
+				name ="team_3_portrait"
+				position = { x= 150 y = 390 }
+				pdx_tooltip = "AVATAR_TEAM_3_TOOLTIP"
+			}
+
+			iconType = {
+				name ="team_4_portrait"
+				position = { x= -10 y = 460 }
+				pdx_tooltip = "AVATAR_TEAM_4_TOOLTIP"
+			}
+			iconType = {
+				name ="team_5_portrait"
+				position = { x= 70 y = 460 }
+				pdx_tooltip = "AVATAR_TEAM_5_TOOLTIP"
+			}
+			iconType = {
+				name ="team_6_portrait"
+				position = { x= 150 y = 460 }
+				pdx_tooltip = "AVATAR_TEAM_6_TOOLTIP"
+			}
+
+			
+
+		}
+
+	}
+
+
+}

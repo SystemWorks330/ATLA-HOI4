@@ -1,0 +1,443 @@
+ideas = {
+
+	country = {
+		home_of_the_avatar = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				avatar_opinion_modifier = 100
+			}
+		}
+
+
+		protecting_the_avatar = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				army_defence_factor = 0.5
+			}
+		}
+		
+	}
+
+	academia = {
+		use_list_view = yes
+
+		mat_academia_1 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { research_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		mat_academia_2 = {
+
+			cost = 200
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { officer_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		mat_academia_3 = {
+
+			cost = 200
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { special_forces_academia }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		mat_academia_4 = {
+
+			cost = 200
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { recruit_drilling }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+
+	army = {
+		use_list_view = yes
+
+		mat_army_1 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_power = 0.1
+			}
+			
+			traits = { land_school_of_aggression }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mat_army_2 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_freedom = 0.1
+			}
+			
+			traits = { land_school_of_defense }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mat_army_3 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_change = 0.1
+			}
+			
+			traits = { land_school_of_logistics }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mat_army_4 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_substance = 0.1
+			}
+			
+			traits = { land_school_of_planning }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	navy = {
+		use_list_view = yes
+
+		mat_navy_1 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_power = 0.1
+			}
+			
+			traits = { naval_school_of_aggression }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		mat_navy_2 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_freedom = 0.1
+			}
+			
+			traits = { naval_school_of_defense }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		mat_navy_3 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_change = 0.1
+			}
+			
+			traits = { naval_school_of_maneuvre }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		mat_navy_4 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			research_bonus = {
+				cat_substance = 0.1
+			}
+			
+			traits = { naval_school_of_coordination }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	
+	law_enforcement = {
+		use_list_view = yes
+
+		mat_law_enforcement_1 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { royal_decree }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mat_law_enforcement_2 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { spiritual_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mat_law_enforcement_3 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { civil_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mat_law_enforcement_4 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { custumary_law }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+	martial_art = {
+		use_list_view = yes
+
+		mat_martial_art_1 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { shape_will_fist }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mat_martial_art_2 = {
+
+			cost = 200
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { circle_walking }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+
+	}
+
+	clergy = {
+		use_list_view = yes
+
+		mat_clergy_1 = {
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { philosophical_principles }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+
+		mat_clergy_2 = {
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { alms_and_pacification }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mat_clergy_3 = {
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { service_to_the_avatar }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		mat_clergy_4 = {
+
+			allowed = {
+				OR = { tag = NAT tag = SAT }
+			}
+			available = { }
+			
+			
+			traits = { indoctrinal_service }
+
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+
+}

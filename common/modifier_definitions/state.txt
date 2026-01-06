@@ -1,0 +1,70 @@
+harvesting_factor = {					#### farm and field output factor in state or country 
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+	#category = state 
+}
+
+revolt_target = {						#### target of revolt in state
+	color_type = bad
+	value_type = percentage_in_hundred
+	precision = 0
+	postfix = none
+	category = state 
+}
+revolt_growth = {						#### monthly revolt growth in state
+	color_type = bad
+	value_type = percentage_in_hundred
+	precision = 3
+	postfix = none
+	category = state 
+}
+
+culture_resource_effect = {				#### modifier effect for resource gain of culture settlers in a state
+	color_type = bad 
+	value_type = percentage
+	precision = 2
+	postfix = none
+	category = state 
+}
+
+monthly_fire_culture_in_state = {		#### monthly growth of fire culture in state
+	color_type = neutral 
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = state 
+}
+
+monthly_earth_culture_in_state = {		#### monthly growth of earth culture in state
+	color_type = neutral 
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = state 
+}
+
+monthly_water_culture_in_state = {		#### monthly growth of water culture in state
+	color_type = neutral 
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = state 
+}
+
+monthly_air_culture_in_state = {		#### monthly growth of air culture in state
+	color_type = neutral 
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = state 
+}
+
+monthly_pluralist_culture_in_state = {	#### monthly growth of pluralist culture in state
+	color_type = neutral 
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = state 
+}

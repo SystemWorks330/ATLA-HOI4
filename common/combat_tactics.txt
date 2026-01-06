@@ -1,0 +1,3067 @@
+#### COMBAT TACTICS ###########################################################
+#
+# NOTE: tactics must start with "tactic_" in their name to work with techs.
+###############################################################################
+
+# phase = no is the standard phase
+# default = skirmish
+
+phases = {
+	battle
+	disband
+	siege
+	siege_combat
+	siege_defense
+	take_bridge
+	hold_bridge
+	destroyed_bridge
+	naval_invasion
+	hold_bridgehead
+}
+
+tactic_live_of_the_land = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = live_of_the_land
+	
+	countered_by = tactic_scorched_earth
+
+	defender = -0.2
+}
+
+tactic_scorched_earth = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = scorched_earth
+	
+	countered_by = tactic_establish_supply_routes
+
+	attacker = -0.2
+}
+
+tactic_establish_supply_routes = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = establish_supply_routes
+	
+	countered_by = tactic_harass_supply_routes
+
+	attacker = 0.05
+}
+
+tactic_harass_supply_routes = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = harass_supply_routes
+	
+	countered_by = tactic_live_of_the_land
+
+	defender = 0.05
+}
+
+tactic_offer_bait = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = offer_bait
+	
+	countered_by = tactic_avoid_confrontation
+
+	attacker = 0.15
+	defender = 0.05
+}
+
+tactic_avoid_confrontation = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = avoid_confrontation
+	
+	countered_by = tactic_mounted_raid
+
+	attacker = -0.15
+	defender = -0.1
+}
+
+tactic_mounted_raid = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+		plain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = mounted_raid
+	
+	countered_by = tactic_tight_formation
+
+	attacker = 0.15
+	attacker_movement_speed = 0.5
+}
+
+tactic_tight_formation = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+		plain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = tight_formation
+	
+	countered_by = tactic_skirmish_harassment
+
+	defender = 0.15
+}
+
+tactic_skirmish_harassment = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+		plain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = skirmish_harassment
+	
+	countered_by = tactic_spread_formation
+
+	attacker = 0.05
+	defender = -0.05
+}
+
+tactic_spread_formation = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+		plain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = spread_formation
+	
+	countered_by = tactic_mounted_raid
+
+	attacker = -0.05
+	defender = 0.05
+}
+
+tactic_concentrated_advance = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+		forest_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = concentrated_advance
+	
+	countered_by = tactic_encircle_and_destroy
+
+	attacker = 0.15
+	defender = 0.05
+}
+
+tactic_encircle_and_destroy = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+		forest_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = encircle_and_destroy
+	
+	countered_by = tactic_dispersed_advance
+
+	defender = 0.05
+	combat_width = -0.2
+}
+
+tactic_dispersed_advance = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+		forest_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = dispersed_advance
+	
+	countered_by = tactic_lay_traps
+
+	attacker = 0.05
+	defender = -0.1
+}
+
+tactic_lay_traps = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+		forest_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = lay_traps
+	
+	countered_by = tactic_concentrated_advance
+
+	attacker = -0.1
+	defender = 0.05
+}
+
+tactic_valley_advance = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+		mountain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = valley_advance
+	
+	countered_by = tactic_valley_ambush
+
+	attacker = 0.1
+}
+
+tactic_valley_ambush = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+		mountain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = valley_ambush
+	
+	countered_by = tactic_highland_advance
+
+	defender = 0.1
+}
+
+tactic_highland_advance = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+		mountain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = highland_advance
+	
+	countered_by = tactic_hold_high_ground
+
+	attacker = 0.05
+}
+
+tactic_hold_high_ground = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+		mountain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = hold_high_ground
+	
+	countered_by = tactic_valley_advance
+
+	defender = 0.25
+}
+
+tactic_infiltration = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = infiltration
+	
+	countered_by = tactic_civilian_support
+
+	attacker = 0.15
+}
+
+tactic_civilian_support = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = civilian_support
+	
+	countered_by = tactic_sabotage
+
+	defender = 0.15
+}
+
+tactic_sabotage = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		no_special_terrain = yes
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = sabotage
+	
+	countered_by = tactic_sentry_guard
+
+	attacker = 0.05
+	defender = -0.1
+}
+
+tactic_sentry_guard = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		no_special_terrain = yes
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = sentry_guard
+	
+	countered_by = tactic_infiltration
+
+	defender = 0.25
+}
+
+
+
+
+###  #  #  ##   ### ### ###
+#  # #  # #  # #    #   #  #
+###  #### ####  ##  ##  #  #
+#    #  # #  #    # #   #  #
+#    #  # #  # ###  ### ###
+
+
+
+
+##### bridge combat
+
+tactic_approach_bridge = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		NOT = {
+			is_amphibious_invasion = yes
+		}
+		OR = {
+			has_combat_modifier = river_crossing
+			has_combat_modifier = amphibious_attack
+		}
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = approach_bridge
+
+	phase = take_bridge
+	
+	#countered_by = tactic_lay_traps
+
+	attacker = 0.05
+	attacker_movement_speed = 0.25
+}
+
+tactic_prepare_bridge_defense = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		NOT = {
+			is_amphibious_invasion = yes
+		}
+		OR = {
+			has_combat_modifier = river_crossing
+			has_combat_modifier = amphibious_attack
+		}
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = prepare_bridge_defense
+
+	phase = take_bridge
+	
+	#countered_by = tactic_lay_traps
+
+	defender = 0.1
+}
+
+tactic_take_bridge = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = take_bridge
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = take_bridge
+
+	phase = hold_bridge
+	
+	countered_by = tactic_hold_the_bridge
+
+	attacker = 0.25
+}
+
+tactic_hold_the_bridge = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = take_bridge
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = hold_the_bridge
+	
+	countered_by = tactic_attack_bridge
+
+	defender = 0.15
+}
+
+tactic_attack_bridge = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = take_bridge
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = attack_bridge
+	
+	countered_by = tactic_hold_the_bridge
+
+	attacker = 0.1
+}
+
+tactic_defend_bridge = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = take_bridge
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = defend_bridge
+	
+	countered_by = tactic_take_bridge
+
+	defender = 0.2
+}
+
+tactic_destroy_the_bridge = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = take_bridge
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = destroy_the_bridge
+	
+	countered_by = tactic_take_bridge
+
+	phase = destroyed_bridge
+
+	attacker = -0.75
+	defender = 0.05
+	attacker_movement_speed = -1
+}
+
+tactic_defend_bridge_attacker = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = hold_bridge
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = defend_bridge_attacker
+	
+	countered_by = tactic_retake_bridge
+
+	attacker = 0.2
+}
+
+tactic_retake_bridge = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = hold_bridge
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = retake_bridge
+
+	phase = take_bridge
+	
+	countered_by = tactic_hold_the_bridge_attacker
+
+	defender = 0.25
+}
+
+tactic_hold_the_bridge_attacker = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = hold_bridge
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = hold_the_bridge_attacker
+	
+	countered_by = tactic_reckless_assault
+
+	attacker = 0.15
+}
+
+tactic_reckless_assault = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = hold_bridge
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = reckless_assault
+	
+	countered_by = tactic_defend_bridge_attacker
+
+	attacker = 0.05
+	defender = 0.25
+}
+
+tactic_ford_the_river = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = destroyed_bridge
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = ford_the_river
+	
+	countered_by = tactic_fording_harassment
+
+	attacker = 0.1
+	defender = 0.05
+}
+
+tactic_fording_harassment = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = destroyed_bridge
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = fording_harassment
+	
+	countered_by = tactic_improvised_bridge
+
+	attacker = -0.05
+	defender = 0.15
+}
+
+tactic_improvised_bridge = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = destroyed_bridge
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = improvised_bridge
+
+	phase = hold_bridge
+	
+	countered_by = tactic_hold_the_riverbank
+
+	attacker = 0.05
+	defender = -0.2
+	attacker_movement_speed = 0.5
+}
+
+tactic_hold_the_riverbank = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = destroyed_bridge
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = hold_the_riverbank
+	
+	countered_by = tactic_ford_the_river
+
+	attacker = -0.05
+	defender = 0.15
+	attacker_movement_speed = -0.5
+}
+
+
+
+
+
+
+
+######## grand battle
+
+tactic_mass_an_army = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		battle_trigger = yes
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 1
+		modifier = {
+			add = unit_modifier@leader_battle_chance
+		}
+		modifier = {
+			factor = unit_modifier@leader_battle_chance_factor
+
+			engage_in_battle_trigger = yes
+		}
+	}
+	picture = mass_an_army
+
+	phase = battle
+	
+	countered_by = tactic_consolidate_defenses
+
+	attacker = -0.9
+	defender = -0.5
+	attacker_movement_speed = -0.9
+	combat_width = 1
+}
+
+tactic_consolidate_defenses = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = no
+		battle_trigger = yes
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 1
+		modifier = {
+			add = 1
+
+			is_winning = yes
+		}
+		modifier = {
+			add = 1
+
+			dig_in > 0.8
+		}
+		modifier = {
+			add = 1
+
+			less_combat_width_than_opponent = no
+		}
+		modifier = {
+			add = unit_modifier@leader_battle_chance
+		}
+		modifier = {
+			factor = unit_modifier@leader_battle_chance_factor
+
+			engage_in_battle_trigger = yes
+		}
+	}
+	picture = consolidate_defenses
+
+	phase = battle
+	
+	countered_by = tactic_surprise_attack
+
+	#attacker = 0.1
+	defender = 0.1
+	attacker_movement_speed = -0.9
+	combat_width = 1
+}
+
+tactic_surprise_attack = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		battle_trigger = yes
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 1
+		modifier = {
+			add = unit_modifier@leader_battle_chance
+		}
+		modifier = {
+			factor = unit_modifier@leader_battle_chance_factor
+
+			engage_in_battle_trigger = yes
+		}
+		modifier = {
+			factor = 0
+
+			NOT = {
+				recon_advantage > 0
+			}
+		}
+	}
+	picture = surprise_attack
+
+	phase = battle
+	
+	#countered_by = tactic_consolidate_defenses
+
+	attacker = 1
+	defender = -0.5
+	attacker_movement_speed = 2
+	combat_width = 2
+}
+
+tactic_advance_in_formation = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = advance_in_formation
+	
+	countered_by = tactic_hit_and_run
+
+	attacker = 1
+	defender = -0.5
+	combat_width = 4.5
+}
+
+tactic_hit_and_run = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = hit_and_run
+	
+	countered_by = tactic_frontal_charge
+
+	attacker = -0.8
+	defender = 2
+	combat_width = 3
+}
+
+tactic_frontal_charge = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = frontal_charge
+	
+	countered_by = tactic_hold_formation
+
+	attacker = 4.5
+	defender = 1
+	attacker_movement_speed = 0.5
+	combat_width = 4.5
+}
+
+tactic_hold_formation = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = hold_formation
+	
+	countered_by = tactic_volley_harassment
+
+	attacker = -0.5
+	defender = 3
+	attacker_movement_speed = -0.5
+	combat_width = 4.5
+}
+
+tactic_volley_harassment = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = volley_harassment
+	
+	countered_by = tactic_countercharge
+
+	attacker = 2
+	defender = -0.5
+	attacker_movement_speed = -1
+	combat_width = 4.5
+}
+
+tactic_countercharge = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = countercharge
+	
+	countered_by = tactic_envelop
+
+	attacker = 1
+	defender = 4.5
+	attacker_movement_speed = -1
+	combat_width = 4.5
+}
+
+tactic_envelop = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = envelop
+	
+	countered_by = tactic_feint_retreat
+
+	attacker = 4
+	defender = -0.5
+	combat_width = 6
+}
+
+tactic_feint_retreat = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = feint_retreat
+	
+	countered_by = tactic_advance_in_formation
+
+	attacker = -0.5
+	defender = 2
+	combat_width = 4.5
+}
+
+tactic_route_the_enemy = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = route_the_enemy
+
+	phase = disband
+	
+	#countered_by = tactic_evade_battle
+
+	attacker = 4.5
+	defender = -0.9
+	combat_width = 4.5
+}
+
+tactic_evade_battle = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = evade_battle
+
+	phase = no
+	
+	countered_by = tactic_stop_advance
+
+	attacker = -0.9
+	defender = -0.9
+	attacker_movement_speed = 1
+	combat_width = 1
+}
+
+tactic_stop_advance = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = stop_advance
+
+	phase = no
+	
+	countered_by = tactic_shattered_route
+
+	attacker = -0.9
+	defender = -0.9
+	attacker_movement_speed = -1
+	combat_width = 1
+}
+
+tactic_shattered_route = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = shattered_route
+
+	phase = disband
+	
+	#countered_by = tactic_shattered_route
+
+	attacker = 1
+	defender = -0.9
+	attacker_movement_speed = 1
+	combat_width = 10
+}
+
+tactic_cavalry_charge = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+		plain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = cavalry_charge
+	
+	countered_by = tactic_spearwall
+
+	attacker = 4.5
+	defender = -0.1
+	attacker_movement_speed = 1
+	combat_width = 4.5
+}
+
+tactic_spearwall = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+		plain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = spearwall
+	
+	countered_by = tactic_cavalry_flank
+
+	attacker = -0.9
+	defender = 2
+	combat_width = 4.5
+}
+
+tactic_cavalry_flank = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+		plain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = cavalry_flank
+	
+	countered_by = tactic_square_formation
+
+	attacker = 4.5
+	defender = -0.2
+	attacker_movement_speed = 1
+	combat_width = 5
+}
+
+tactic_square_formation = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+		plain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = square_formation
+	
+	countered_by = tactic_cavalry_charge
+
+	attacker = -1
+	defender = 1.5
+	combat_width = 4
+}
+
+tactic_invade_the_woodland = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+		forest_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = invade_the_woodland
+	
+	countered_by = tactic_woodland_ambush
+
+	attacker = 1
+	defender = 0.25
+	combat_width = 2.5
+}
+
+tactic_woodland_ambush = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+		forest_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = woodland_ambush
+	
+	countered_by = tactic_destroy_the_forest
+
+	attacker = -0.25
+	defender = 1
+	combat_width = 3
+}
+
+tactic_destroy_the_forest = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+		forest_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = destroy_the_forest
+	
+	countered_by = tactic_delay_tactics
+
+	attacker = 1.5
+	defender = -0.2
+	combat_width = 4
+}
+
+tactic_delay_tactics = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+		forest_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = delay_tactics
+	
+	countered_by = tactic_invade_the_woodland
+
+	attacker = -0.5
+	defender = 0.5
+	combat_width = 4.5
+}
+
+tactic_concentration_of_force = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+		mountain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = concentration_of_force
+	
+	countered_by = tactic_provoque_an_avalanche
+
+	attacker = 1
+	defender = -0.1
+	combat_width = 2.5
+}
+
+tactic_provoque_an_avalanche = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+		mountain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = provoque_an_avalanche
+	
+	countered_by = tactic_spread_of_force
+
+	attacker = -0.75
+	defender = 10
+	combat_width = -0.5
+}
+
+tactic_spread_of_force = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+		mountain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = spread_of_force
+	
+	countered_by = tactic_defeat_in_detail
+
+	attacker = 1
+	defender = -0.2
+	combat_width = 3
+}
+
+tactic_defeat_in_detail = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+		mountain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = defeat_in_detail
+	
+	countered_by = tactic_concentration_of_force
+
+	attacker = -0.2
+	defender = 1
+	combat_width = 1
+}
+
+tactic_take_the_streets = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = take_the_streets
+	
+	countered_by = tactic_hold_chokepoints
+
+	attacker = 1.75
+	defender = -0.2
+	combat_width = 2
+}
+
+tactic_hold_chokepoints = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = hold_chokepoints
+	
+	countered_by = tactic_take_the_buildings
+
+	attacker = -0.25
+	defender = 2.5
+	combat_width = 1.25
+}
+
+tactic_take_the_buildings = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = take_the_buildings
+	
+	countered_by = tactic_contest_the_buildings
+
+	attacker = 4
+	defender = 1
+	combat_width = 5
+}
+
+tactic_contest_the_buildings = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = contest_the_buildings
+	
+	countered_by = tactic_destroy_the_buildings
+
+	attacker = 1
+	defender = 2
+	combat_width = 5
+}
+
+tactic_destroy_the_buildings = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = destroy_the_buildings
+	
+	countered_by = tactic_rubble_barricades
+
+	attacker = 3
+	defender = 2
+	combat_width = 6
+}
+
+tactic_rubble_barricades = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = rubble_barricades
+	
+	countered_by = tactic_starve_out_defenders
+
+	attacker = 2
+	defender = 3
+	combat_width = 6
+}
+
+tactic_starve_out_defenders = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = battle
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = starve_out_defenders
+	
+	countered_by = tactic_open_supply_lines
+
+	attacker = -0.75
+	defender = -0.8
+	combat_width = 10
+}
+
+tactic_open_supply_lines = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = battle
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = open_supply_lines
+	
+	countered_by = tactic_take_the_streets
+
+	attacker = -0.75
+	defender = 1
+	combat_width = 1
+}
+
+
+
+########disband
+
+tactic_pursue_routers = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = disband
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = pursue_routers
+	
+	countered_by = tactic_tactical_retreat
+
+	attacker = 2
+	defender = -0.5
+	combat_width = 10
+}
+
+tactic_tactical_retreat = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = disband
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = tactical_retreat
+	
+	countered_by = tactic_corner_routers
+
+	attacker = -0.5
+	defender = -0.5
+	combat_width = 10
+}
+
+tactic_corner_routers = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = disband
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = corner_routers
+	
+	countered_by = tactic_negotiate_surrender
+
+	attacker = 2.5
+	defender = -0.75
+	combat_width = 15
+}
+
+tactic_negotiate_surrender = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = disband
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = negotiate_surrender
+	
+	countered_by = tactic_pursue_routers
+
+	attacker = -1
+	defender = -1
+	combat_width = 0.1
+}
+
+tactic_take_no_prisoners = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = disband
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = take_no_prisoners
+
+	attacker = 1
+	defender = 2.5
+	combat_width = 10
+}
+
+tactic_reorganise_the_army = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = disband
+		no_special_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = reorganise_the_army
+
+	phase = battle
+
+	attacker = -0.5
+	defender = 2
+	combat_width = 7.5
+}
+
+tactic_run_down_the_enemy = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = disband
+		no_special_terrain = yes
+		plain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = run_down_the_enemy
+
+	attacker = 10
+	defender = -1
+	combat_width = 10
+}
+
+tactic_retreat_to_the_forest = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = disband
+		no_special_terrain = yes
+		forest_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = retreat_to_the_forest
+
+	attacker = -0.5
+	defender = -0.5
+	combat_width = 10
+}
+
+tactic_last_stand = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = disband
+		no_special_terrain = yes
+		mountain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = last_stand
+
+	attacker = 6
+	defender = 9
+	combat_width = 10
+}
+
+tactic_send_refugee_wave = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = disband
+		no_special_terrain = yes
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = send_refugee_wave
+
+	attacker = -1
+	defender = -1
+	combat_width = 10
+	attacker_movement_speed = -1
+}
+
+
+
+#### siege
+
+
+tactic_approach_siege = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		is_amphibious_invasion = no
+		NOT = {
+			has_combat_modifier = river_crossing
+			has_combat_modifier = amphibious_attack
+		}
+		has_combat_modifier = fort_attack
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = approach_siege
+
+	phase = siege
+
+	attacker = -0.25
+	defender = -0.25
+	attacker_movement_speed = 0.1
+}
+
+
+
+tactic_dig_trenches = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = dig_trenches
+
+	countered_by = tactic_expell_civilians
+
+	attacker = -0.5
+	defender = -0.5
+	attacker_movement_speed = -0.5
+}
+
+tactic_sally_out = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = sally_out
+
+	countered_by = tactic_dig_trenches
+
+	defender = 0.2
+}
+
+tactic_artillery_bombardment = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = artillery_bombardment
+
+	countered_by = tactic_reinforce_defenses
+
+	attacker = 0.15
+}
+
+tactic_reinforce_defenses = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = reinforce_defenses
+
+	countered_by = tactic_siege_towers
+
+	attacker = -0.25
+}
+
+tactic_siege_towers = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = siege_towers
+
+	countered_by = tactic_elevated_towers
+
+	attacker = 0.2
+}
+
+tactic_elevated_towers = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = elevated_towers
+
+	countered_by = tactic_artillery_bombardment
+
+	defender = 0.15
+}
+
+tactic_send_forage_parties = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = send_forage_parties
+
+	countered_by = tactic_sally_out
+
+	defender = -0.1
+}
+
+tactic_expell_civilians = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = expell_civilians
+
+	countered_by = tactic_send_forage_parties
+
+	attacker = -0.5
+	defender = 0.05
+	attacker_movement_speed = -1
+}
+
+tactic_assault_the_walls = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = assault_the_walls
+
+	phase = siege_combat
+
+	attacker = 0.1
+}
+
+tactic_defend_the_walls = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = defend_the_walls
+
+	phase = siege_combat
+
+	defender = 0.1
+}
+
+
+### siege combat
+
+tactic_scale_the_walls = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege_combat
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = scale_the_walls
+
+	countered_by = tactic_missile_harassment
+
+	attacker = 0.15
+}
+
+tactic_missile_harassment = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege_combat
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = missile_harassment
+
+	countered_by = tactic_breach_the_wall
+
+	defender = 0.15
+}
+
+tactic_breach_the_wall = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege_combat
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = breach_the_wall
+
+	countered_by = tactic_hold_the_breach
+
+	attacker = 0.25
+	defender = -0.05
+}
+
+tactic_hold_the_breach = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege_combat
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = hold_the_breach
+
+	countered_by = tactic_ram_the_gates
+
+	attacker = -0.25
+	defender = 0.05
+}
+
+tactic_ram_the_gates = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege_combat
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = ram_the_gates
+
+	countered_by = tactic_reinforce_the_gates
+
+	attacker = 0.1
+}
+
+tactic_reinforce_the_gates = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege_combat
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = reinforce_the_gates
+
+	countered_by = tactic_scale_the_walls
+
+	attacker = -0.1
+	defender = 0.05
+}
+
+tactic_break_into_the_fortress = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege_combat
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = break_into_the_fortress
+
+	attacker = 0.2
+}
+
+tactic_retreat_to_the_fortress = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege_combat
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = retreat_to_the_fortress
+
+	phase = siege_defense
+
+	countered_by = tactic_break_into_the_fortress
+
+	attacker = -0.5
+	defender = 0.5
+}
+
+tactic_call_off_assault = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege_combat
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = call_off_assault
+
+	phase = siege
+
+	attacker = -0.75
+	defender = -0.5
+	attacker_movement_speed = -0.5
+}
+
+tactic_repel_assault = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege_combat
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = repel_assault
+
+	phase = siege
+
+	attacker = -0.15
+	defender = 0.15
+	attacker_movement_speed = -0.5
+}
+
+
+
+
+
+### siege defense
+
+tactic_secure_the_breach = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege_defense
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = secure_the_breach
+
+	countered_by = tactic_retake_the_breach
+
+	attacker = 0.05
+	defender = -0.15
+	attacker_movement_speed = 0.05
+}
+
+tactic_retake_the_breach = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege_defense
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = retake_the_breach
+
+	countered_by = tactic_secure_the_gates
+
+	defender = 0.25
+}
+
+tactic_secure_the_gates = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege_defense
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = secure_the_gates
+
+	countered_by = tactic_retake_the_gates
+
+	attacker = 0.1
+	defender = -0.2
+	attacker_movement_speed = 0.05
+}
+
+tactic_retake_the_gates = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege_defense
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = retake_the_gates
+
+	countered_by = tactic_secure_the_walls
+
+	attacker = -0.1
+	defender = 0.1
+}
+
+tactic_secure_the_walls = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege_defense
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = secure_the_walls
+
+	countered_by = tactic_retake_the_walls
+
+	attacker = 0.05
+	defender = -0.05
+	attacker_movement_speed = -0.05
+}
+
+tactic_retake_the_walls = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege_defense
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = retake_the_walls
+
+	countered_by = tactic_secure_the_breach
+
+	defender = 0.05
+}
+
+tactic_assault_the_fortress = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = siege_defense
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = assault_the_fortress
+
+	countered_by = tactic_fortress_last_stand
+
+	attacker = 0.25
+}
+
+tactic_fortress_last_stand = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege_defense
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = fortress_last_stand
+
+	defender = 0.75
+}
+
+tactic_repell_the_assault = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = siege_defense
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = repell_the_assault
+
+	phase = siege_combat
+
+	defender = 0.15
+}
+
+
+
+
+#### naval invasion
+
+
+tactic_approach_coastline = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = no
+		is_amphibious_invasion = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = approach_coastline
+
+	phase = naval_invasion
+
+	attacker = 0.05
+}
+
+tactic_naval_bombardment = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = naval_invasion
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = naval_bombardment
+
+	countered_by = tactic_coastal_dugouts
+
+	attacker = 0.5
+}
+
+tactic_artillery_salution = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = naval_invasion
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = artillery_salution
+
+	defender = 0.25
+}
+
+tactic_sail_up_the_river = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = naval_invasion
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = sail_up_the_river
+
+	phase = hold_bridgehead
+
+	countered_by = tactic_riverside_harassment
+
+	attacker = 0.15
+}
+
+tactic_riverside_harassment = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = naval_invasion
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = riverside_harassment
+
+	countered_by = tactic_naval_bombardment
+
+	defender = 0.1
+}
+
+tactic_beach_landing = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = naval_invasion
+		is_fighting_in_terrain = beach
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = beach_landing
+
+	phase = hold_bridgehead
+
+	countered_by = tactic_beach_defense
+
+	attacker = 0.15
+}
+
+tactic_beach_defense = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = naval_invasion
+		is_fighting_in_terrain = beach
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = beach_defense
+
+	countered_by = tactic_naval_bombardment
+
+	defender = 0.1
+}
+
+tactic_concealed_landing = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = naval_invasion
+		forest_terrain = yes
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = concealed_landing
+
+	phase = hold_bridgehead
+
+	countered_by = tactic_scout_the_coastlines
+
+	defender = -0.9
+}
+
+tactic_scout_the_coastlines = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = naval_invasion
+		forest_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = scout_the_coastlines
+
+	countered_by = tactic_naval_bombardment
+
+	defender = 0.1
+}
+
+tactic_climb_the_cliffs = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = naval_invasion
+		mountain_terrain = yes
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = climb_the_cliffs
+
+	phase = hold_bridgehead
+
+	countered_by = tactic_harass_cliff_climbers
+
+	attacker = -0.25
+	defender = -0.75
+}
+
+tactic_harass_cliff_climbers = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = naval_invasion
+		mountain_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = harass_cliff_climbers
+
+	countered_by = tactic_naval_bombardment
+
+	attacker = -0.5
+	defender = 0.25
+}
+
+tactic_take_the_harbour = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = naval_invasion
+		urban_terrain = yes
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = take_the_harbour
+
+	phase = hold_bridgehead
+
+	countered_by = tactic_destroy_the_harbour
+
+	attacker = 0.25
+	defender = -0.05
+}
+
+tactic_destroy_the_harbour = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = naval_invasion
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = destroy_the_harbour
+
+	countered_by = tactic_land_next_to_the_city
+
+	attacker = -0.05
+	defender = 0.25
+}
+
+tactic_land_next_to_the_city = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = naval_invasion
+		urban_terrain = yes
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = land_next_to_the_city
+
+	phase = hold_bridgehead
+
+	countered_by = tactic_protect_city_outskirts
+
+	attacker = 0.1
+}
+
+tactic_protect_city_outskirts = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = naval_invasion
+		urban_terrain = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = protect_city_outskirts
+
+	countered_by = tactic_take_the_harbour
+
+	defender = 0.1
+}
+
+tactic_coastal_dugouts = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = naval_invasion
+		NOT = {
+			urban_terrain = yes
+		}
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = beach_defense
+
+	attacker = -0.25
+	defender = 0.05
+	attacker_movement_speed = -0.15
+}
+
+
+
+
+#### hold bridgehead
+
+
+tactic_hold_the_landing_grounds = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = hold_bridgehead
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = hold_the_landing_grounds
+
+	countered_by = tactic_encircle_landed_troops
+
+	attacker = 0.1
+	combat_width = 0.25
+}
+
+tactic_encircle_landed_troops = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = hold_bridgehead
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = encircle_landed_troops
+
+	countered_by = tactic_coastal_breakthrough
+
+	defender = 0.1
+	combat_width = 0.5
+}
+
+tactic_coastal_breakthrough = {
+
+	is_attacker = yes
+	trigger = {
+		is_attacker = yes
+		phase = hold_bridgehead
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = coastal_breakthrough
+
+	countered_by = tactic_destroy_enemy_transports
+
+	attacker = 0.25
+	combat_width = 0.25
+}
+
+tactic_destroy_enemy_transports = {
+
+	is_attacker = no
+	trigger = {
+		is_attacker = no
+		phase = hold_bridgehead
+		has_initiative = yes
+	}
+	
+	active = yes
+
+	base = {
+		factor = 10
+	}
+	picture = destroy_enemy_transports
+
+	phase = naval_invasion
+
+	countered_by = tactic_hold_the_landing_grounds
+
+	defender = 0.1
+	combat_width = -0.1
+}

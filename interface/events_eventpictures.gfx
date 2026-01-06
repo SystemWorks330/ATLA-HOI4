@@ -1,0 +1,470 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_Iroh_Decided_To_Withdraw"
+		texturefile = "gfx/event_pictures/Iroh_Decided_To_Withdraw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_state_conflict_generic_1"
+		texturefile = "gfx/event_pictures/state_conflict_generic_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_volcano"
+		texturefile = "gfx/event_pictures/report_event_volcano.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_west_temple"
+		texturefile = "gfx/event_pictures/report_event_west_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_north_temple"
+		texturefile = "gfx/event_pictures/report_event_north_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_east_temple"
+		texturefile = "gfx/event_pictures/report_event_east_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_south_temple"
+		texturefile = "gfx/event_pictures/report_event_south_temple.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_gyatso_and_aang"
+		texturefile = "gfx/event_pictures/report_event_gyatso_and_aang.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fir_soldiers"
+		texturefile = "gfx/event_pictures/report_event_fir_soldiers.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fir_soldiers_2"
+		texturefile = "gfx/event_pictures/report_event_fir_soldiers_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fire_operation"
+		texturefile = "gfx/event_pictures/report_event_fire_operation.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fire_supremacy"
+		texturefile = "gfx/event_pictures/report_event_fire_supremacy.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fir_birth"
+		texturefile = "gfx/event_pictures/report_event_fir_birth.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_water_birth"
+		texturefile = "gfx/event_pictures/report_event_water_birth.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fir_uprising"
+		texturefile = "gfx/event_pictures/report_event_fir_uprising.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_read_a_book"
+		texturefile = "gfx/event_pictures/report_event_read_a_book.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fire_training"
+		texturefile = "gfx/event_pictures/report_event_fire_training.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fire_death"
+		texturefile = "gfx/event_pictures/report_event_fire_death.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fire_garden_walk"
+		texturefile = "gfx/event_pictures/report_event_fire_garden_walk.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fire_wedding"
+		texturefile = "gfx/event_pictures/report_event_fire_wedding.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ozais_request"
+		texturefile = "gfx/event_pictures/report_event_ozais_request.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ursas_conspiracy"
+		texturefile = "gfx/event_pictures/report_event_ursas_conspiracy.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ursas_conspiracy_2"
+		texturefile = "gfx/event_pictures/report_event_ursas_conspiracy_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_lu_ten_death"
+		texturefile = "gfx/event_pictures/report_event_lu_ten_death.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_zukos_war_meeting"
+		texturefile = "gfx/event_pictures/report_event_zukos_war_meeting.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_zukos_agni_kai"
+		texturefile = "gfx/event_pictures/report_event_zukos_agni_kai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fir_uprising"
+		texturefile = "gfx/event_pictures/report_event_fir_uprising.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_dragon_attack"
+		texturefile = "gfx/event_pictures/report_event_dragon_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fir_colony_request"
+		texturefile = "gfx/event_pictures/report_event_fir_colony_request.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fir_colony_compromise"
+		texturefile = "gfx/event_pictures/report_event_fir_colony_compromise.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fir_colony_failed"
+		texturefile = "gfx/event_pictures/report_event_fir_colony_failed.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_dai_li_proposal"
+		texturefile = "gfx/event_pictures/report_event_dai_li_proposal.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_air_genocide"
+		texturefile = "gfx/event_pictures/report_event_air_genocide.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_rally_ek"
+		texturefile = "gfx/event_pictures/report_event_rally_ek.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_anti_sozin_pact"
+		texturefile = "gfx/event_pictures/report_event_anti_sozin_pact.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_colony_atrocity"
+		texturefile = "gfx/event_pictures/report_event_colony_atrocity.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_ear_ek_join"
+		texturefile = "gfx/event_pictures/report_event_ear_ek_join.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ear_ek_join_accepted"
+		texturefile = "gfx/event_pictures/report_event_ear_ek_join_accepted.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ear_ek_join_denied"
+		texturefile = "gfx/event_pictures/report_event_ear_ek_join_denied.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ear_feast"
+		texturefile = "gfx/event_pictures/report_event_ear_feast.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ear_feast_no"
+		texturefile = "gfx/event_pictures/report_event_ear_feast_rejected.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ear_demand_kingdom"
+		texturefile = "gfx/event_pictures/report_event_ear_demand_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_ear_denied_kingdom"
+		texturefile = "gfx/event_pictures/report_event_ear_kingdom_denied.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_avatar_day"
+		texturefile = "gfx/event_pictures/report_event_avatar_day.dds"
+	}
+
+	spriteType = {
+		name = "GFX_struggles_ek_8"
+		texturefile = "gfx/event_pictures/struggles_ek_8.dds"
+	}
+	spriteType = {
+		name = "GFX_struggles_ek_9"
+		texturefile = "gfx/event_pictures/struggles_ek_9.dds"
+	}
+	spriteType = {
+		name = "GFX_struggles_ek_10"
+		texturefile = "gfx/event_pictures/struggles_ek_10.dds"
+	}
+	spriteType = {
+		name = "GFX_struggles_ek_11"
+		texturefile = "gfx/event_pictures/struggles_ek_11.dds"
+	}
+	spriteType = {
+		name = "GFX_struggles_ek_12"
+		texturefile = "gfx/event_pictures/struggles_ek_12.dds"
+	}
+	spriteType = {
+		name = "GFX_struggles_ek_13"
+		texturefile = "gfx/event_pictures/struggles_ek_13.dds"
+	}
+	spriteType = {
+		name = "GFX_struggles_ek_14"
+		texturefile = "gfx/event_pictures/struggles_ek_14.dds"
+	}
+	spriteType = {
+		name = "GFX_struggles_ek_15"
+		texturefile = "gfx/event_pictures/struggles_ek_15.dds"
+	}
+	spriteType = {
+		name = "GFX_struggles_ek_16"
+		texturefile = "gfx/event_pictures/struggles_ek_16.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_wa_betrail"
+		texturefile = "gfx/event_pictures/report_event_wa_betrail.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_wa_civil_war"
+		texturefile = "gfx/event_pictures/report_event_wa_civil_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_nwt_riots"
+		texturefile = "gfx/event_pictures/report_event_nwt_riots.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_nwt_support"
+		texturefile = "gfx/event_pictures/report_event_nwt_support.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_report_event_occupation"
+		texturefile = "gfx/event_pictures/report_event_occupation.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_rebells"
+		texturefile = "gfx/event_pictures/report_event_rebells.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_core_state"
+		texturefile = "gfx/event_pictures/report_event_core_state.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_report_event_child_labour"
+		texturefile = "gfx/event_pictures/report_event_child_labour.dds"
+	}
+
+
+
+	spriteType = {
+		name = "GFX_avatar_news_event_001"
+		texturefile = "gfx/event_pictures/avatar_news_event_001.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_002"
+		texturefile = "gfx/event_pictures/avatar_news_event_002.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_003"
+		texturefile = "gfx/event_pictures/avatar_news_event_003.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_004"
+		texturefile = "gfx/event_pictures/avatar_news_event_004.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_005"
+		texturefile = "gfx/event_pictures/avatar_news_event_005.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_006"
+		texturefile = "gfx/event_pictures/avatar_news_event_006.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_007"
+		texturefile = "gfx/event_pictures/avatar_news_event_007.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_008"
+		texturefile = "gfx/event_pictures/avatar_news_event_008.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_009"
+		texturefile = "gfx/event_pictures/avatar_news_event_009.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_010"
+		texturefile = "gfx/event_pictures/avatar_news_event_010.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_011"
+		texturefile = "gfx/event_pictures/avatar_news_event_011.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_012"
+		texturefile = "gfx/event_pictures/avatar_news_event_012.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_013"
+		texturefile = "gfx/event_pictures/avatar_news_event_013.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_014"
+		texturefile = "gfx/event_pictures/avatar_news_event_014.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_news_event_015"
+		texturefile = "gfx/event_pictures/avatar_news_event_015.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_fir_approach_city"
+		texturefile = "gfx/event_pictures/battles/report_event_fir_approach_city.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_people_concerned"
+		texturefile = "gfx/event_pictures/battles/report_event_people_concerned.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fir_approach_field"
+		texturefile = "gfx/event_pictures/battles/report_event_fir_approach_field.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_fir_approach_ba_sing_se"
+		texturefile = "gfx/event_pictures/battles/report_event_fir_approach_ba_sing_se.dds"
+	}
+
+	spriteType = {
+		name = "GFX_far_news_event_001"
+		texturefile = "gfx/event_pictures/battles/far_news_event_001.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_002"
+		texturefile = "gfx/event_pictures/battles/far_news_event_002.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_003"
+		texturefile = "gfx/event_pictures/battles/far_news_event_003.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_004"
+		texturefile = "gfx/event_pictures/battles/far_news_event_004.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_005"
+		texturefile = "gfx/event_pictures/battles/far_news_event_005.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_006"
+		texturefile = "gfx/event_pictures/battles/far_news_event_006.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_007"
+		texturefile = "gfx/event_pictures/battles/far_news_event_007.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_008"
+		texturefile = "gfx/event_pictures/battles/far_news_event_008.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_009"
+		texturefile = "gfx/event_pictures/battles/far_news_event_009.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_010"
+		texturefile = "gfx/event_pictures/battles/far_news_event_010.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_011"
+		texturefile = "gfx/event_pictures/battles/far_news_event_011.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_012"
+		texturefile = "gfx/event_pictures/battles/far_news_event_012.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_013"
+		texturefile = "gfx/event_pictures/battles/far_news_event_013.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_014"
+		texturefile = "gfx/event_pictures/battles/far_news_event_014.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_015"
+		texturefile = "gfx/event_pictures/battles/far_news_event_015.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_016"
+		texturefile = "gfx/event_pictures/battles/far_news_event_016.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_017"
+		texturefile = "gfx/event_pictures/battles/far_news_event_017.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_018"
+		texturefile = "gfx/event_pictures/battles/far_news_event_018.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_019"
+		texturefile = "gfx/event_pictures/battles/far_news_event_019.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_020"
+		texturefile = "gfx/event_pictures/battles/far_news_event_020.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_021"
+		texturefile = "gfx/event_pictures/battles/far_news_event_021.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_022"
+		texturefile = "gfx/event_pictures/battles/far_news_event_022.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_023"
+		texturefile = "gfx/event_pictures/battles/far_news_event_023.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_024"
+		texturefile = "gfx/event_pictures/battles/far_news_event_024.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_025"
+		texturefile = "gfx/event_pictures/battles/far_news_event_025.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_026"
+		texturefile = "gfx/event_pictures/battles/far_news_event_026.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_027"
+		texturefile = "gfx/event_pictures/battles/far_news_event_027.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_028"
+		texturefile = "gfx/event_pictures/battles/far_news_event_028.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_029"
+		texturefile = "gfx/event_pictures/battles/far_news_event_029.dds"
+	}
+	spriteType = {
+		name = "GFX_far_news_event_030"
+		texturefile = "gfx/event_pictures/battles/far_news_event_030.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Sun_Warriors_Revealed"
+		texturefile = "gfx/event_pictures/Sun_Warriors_Revealed.dds"
+	}
+
+}

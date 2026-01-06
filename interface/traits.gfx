@@ -1,0 +1,1218 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_unknown"
+		texturefile = "gfx/interface/traits/trait_unknown.dds"
+		legacy_lazy_load = no
+	}
+
+
+
+
+	### avatar land
+
+	spriteType = {
+		name = "GFX_trait_firebender_trait"
+		texturefile = "gfx/interface/traits/personal/trait_firebender.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_waterbender_trait"
+		texturefile = "gfx/interface/traits/personal/trait_waterbender.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_earthbender_trait"
+		texturefile = "gfx/interface/traits/personal/trait_earthbender.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_airbender_trait"
+		texturefile = "gfx/interface/traits/personal/trait_airbender.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_trait_experienced_general"
+		texturefile = "gfx/interface/traits/trait_experienced_general.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_expert_staffer"
+		texturefile = "gfx/interface/traits/trait_expert_staffer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_offensive_infantry"
+		texturefile = "gfx/interface/traits/trait_offensive_infantry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_fast_planner"
+		texturefile = "gfx/interface/traits/trait_fast_planner.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_aggressive_assaulter"
+		texturefile = "gfx/interface/traits/trait_aggressive_assaulter.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_resolute_defender"
+		texturefile = "gfx/interface/traits/trait_resolute_defender.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_powerful_attack"
+		texturefile = "gfx/interface/traits/trait_powerful_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_trait_swordsmen"
+		texturefile = "gfx/interface/traits/trait_swordsmen.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_skirmisher"
+		texturefile = "gfx/interface/traits/trait_skirmishers.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_archer"
+		texturefile = "gfx/interface/traits/trait_archer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_spearmen"
+		texturefile = "gfx/interface/traits/trait_spearmen.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_pikemen"
+		texturefile = "gfx/interface/traits/trait_pikemen.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_defensive_infantry"
+		texturefile = "gfx/interface/traits/trait_defensive_infantry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_entrenchment"
+		texturefile = "gfx/interface/traits/trait_entrenchment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_last_stand"
+		texturefile = "gfx/interface/traits/trait_last_stand.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_tactical_mind"
+		texturefile = "gfx/interface/traits/trait_tactical_mind.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_battlefield_observer"
+		texturefile = "gfx/interface/traits/trait_battlefield_observer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_strategical_genius"
+		texturefile = "gfx/interface/traits/trait_strategical_genius.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_sneak_attack"
+		texturefile = "gfx/interface/traits/trait_sneak_attack.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_bridge_builder"
+		texturefile = "gfx/interface/traits/trait_bridge_builder.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_rivercrossing_expert"
+		texturefile = "gfx/interface/traits/trait_rivercrossing_expert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_supply_organisation"
+		texturefile = "gfx/interface/traits/trait_supply_organisation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_endurance_general"
+		texturefile = "gfx/interface/traits/trait_endurance_general.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_light_cavalry"
+		texturefile = "gfx/interface/traits/trait_light_cavalry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_heavy_cavalry"
+		texturefile = "gfx/interface/traits/trait_heavy_cavalry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_silent_raider"
+		texturefile = "gfx/interface/traits/trait_silent_raider.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_blitz_expert"
+		texturefile = "gfx/interface/traits/trait_blitz_expert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_besieger"
+		texturefile = "gfx/interface/traits/trait_besieger.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_siege_expert"
+		texturefile = "gfx/interface/traits/trait_siege_expert.dds"
+	}
+
+
+
+
+
+	spriteType = {
+		name = "GFX_trait_generic"
+		texturefile = "gfx/interface/traits/personal/trait_generic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_dragon_of_the_west"
+		texturefile = "gfx/interface/traits/personal/trait_dragon_of_the_west.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_firelord"
+		texturefile = "gfx/interface/traits/personal/trait_firelord.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_prince"
+		texturefile = "gfx/interface/traits/personal/trait_prince.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_country_leader"
+		texturefile = "gfx/interface/traits/personal/trait_country_leader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_reckless"
+		texturefile = "gfx/interface/traits/personal/trait_reckless.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_calm"
+		texturefile = "gfx/interface/traits/personal/trait_calm.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_ruthless"
+		texturefile = "gfx/interface/traits/personal/trait_ruthless.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_stubborn"
+		texturefile = "gfx/interface/traits/personal/trait_stubborn.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_stoic"
+		texturefile = "gfx/interface/traits/personal/trait_stoic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_stupid"
+		texturefile = "gfx/interface/traits/personal/trait_stupid.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_intelligent"
+		texturefile = "gfx/interface/traits/personal/trait_intelligent.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_arrogant"
+		texturefile = "gfx/interface/traits/personal/trait_arrogant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_craven"
+		texturefile = "gfx/interface/traits/personal/trait_craven.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_open_minded"
+		texturefile = "gfx/interface/traits/personal/trait_open_minded.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_gentle"
+		texturefile = "gfx/interface/traits/personal/trait_gentle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_energetic"
+		texturefile = "gfx/interface/traits/personal/trait_energetic.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_determined"
+		texturefile = "gfx/interface/traits/personal/trait_determined.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_rational"
+		texturefile = "gfx/interface/traits/personal/trait_rational.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_arbitrary"
+		texturefile = "gfx/interface/traits/personal/trait_arbitrary.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_consumed_by_grief"
+		texturefile = "gfx/interface/traits/personal/trait_consumed_by_grief.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_loyal"
+		texturefile = "gfx/interface/traits/personal/trait_loyal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_brave"
+		texturefile = "gfx/interface/traits/personal/trait_brave.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_defeatist"
+		texturefile = "gfx/interface/traits/personal/trait_defeatist.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_brilliant_tactician"
+		texturefile = "gfx/interface/traits/personal/trait_brilliant_tactician.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_defensive_strategist"
+		texturefile = "gfx/interface/traits/personal/trait_defensive_strategist.dds"
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_trait_urban_assault_specialist"
+		texturefile = "gfx/interface/traits/trait_urban_assault_specialist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_urban_assault_expert"
+		texturefile = "gfx/interface/traits/trait_urban_assault_expert.dds"
+	}			
+		
+	spriteType = {
+		name = "GFX_trait_ranger"
+		texturefile = "gfx/interface/traits/trait_ranger.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_ranger_expert"
+		texturefile = "gfx/interface/traits/trait_ranger_expert.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_trait_hill_fighter"
+		texturefile = "gfx/interface/traits/trait_hill_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_hill_fighter_expert"
+		texturefile = "gfx/interface/traits/trait_hill_fighter_expert.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_jungle_rat"
+		texturefile = "gfx/interface/traits/trait_jungle_rat.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_jungle_expert"
+		texturefile = "gfx/interface/traits/trait_jungle_expert.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_trait_mountaineer"
+		texturefile = "gfx/interface/traits/trait_mountaineer.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_mountaineer_expert"
+		texturefile = "gfx/interface/traits/trait_mountaineer_expert.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_trait_swamp_fox"
+		texturefile = "gfx/interface/traits/trait_swamp_fox.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_swamp_expert"
+		texturefile = "gfx/interface/traits/trait_swamp_expert.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_trait_desert_fox"
+		texturefile = "gfx/interface/traits/trait_desert_fox.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_desert_expert"
+		texturefile = "gfx/interface/traits/trait_desert_expert.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_winter_specialist"
+		texturefile = "gfx/interface/traits/trait_winter_specialist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_winter_expert"
+		texturefile = "gfx/interface/traits/trait_winter_expert.dds"
+	}
+
+
+
+
+
+	### avatar navy 
+
+
+	spriteType = {
+		name = "GFX_trait_fleet_admiral"
+		texturefile = "gfx/interface/traits/trait_admiral_fleet_admiral.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_raiding_admiral"
+		texturefile = "gfx/interface/traits/trait_admiral_raiding_admiral.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_artillery_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_artillery_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_boarding_master"
+		texturefile = "gfx/interface/traits/trait_admiral_boarding_master.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_screening_specialist"
+		texturefile = "gfx/interface/traits/trait_admiral_screening_specialist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_invasion_supporter"
+		texturefile = "gfx/interface/traits/trait_admiral_invasion_supporter.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_fire_coordinator"
+		texturefile = "gfx/interface/traits/trait_admiral_fire_coordinator.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_grand_admiral"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_grand_admiral.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_poser"
+		texturefile = "gfx/interface/traits/trait_admiral_poser.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_sailor_by_heart"
+		texturefile = "gfx/interface/traits/trait_admiral_sailor_by_heart.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_bold_one"
+		texturefile = "gfx/interface/traits/trait_admiral_bold_one.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_ghost_captain"
+		texturefile = "gfx/interface/traits/trait_admiral_ghost_captain.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_silent_boarder"
+		texturefile = "gfx/interface/traits/trait_admiral_silent_boarder.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_the_hit"
+		texturefile = "gfx/interface/traits/trait_admiral_the_hit.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_the_run"
+		texturefile = "gfx/interface/traits/trait_admiral_the_run.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_and_the_repairmaster"
+		texturefile = "gfx/interface/traits/trait_admiral_and_the_repairmaster.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_naval_strategist"
+		texturefile = "gfx/interface/traits/trait_admiral_naval_strategist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_fleet_coordinator"
+		texturefile = "gfx/interface/traits/trait_admiral_fleet_coordinator.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_maneuver_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_maneuver_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_blockade_runner"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_blockade_runner.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_terror_of_the_sea"
+		texturefile = "gfx/interface/traits/trait_admiral_terror_of_the_sea.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_spotter"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_spotter.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_search_pattern_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_search_pattern_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_ship_detector"
+		texturefile = "gfx/interface/traits/trait_admiral_ship_detector.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_mine_sweeper"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_mine_sweeper.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_mine_layer"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_mine_layer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_arctic_water_specialist"
+		texturefile = "gfx/interface/traits/trait_admiral_arctic_water_specialist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_arctic_water_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_arctic_water_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_inshore_fighter"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_inshore_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_inshore_fighter_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_inshore_fighter_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_river_fighter"
+		texturefile = "gfx/interface/traits/trait_admiral_river_fighter.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_river_fighter_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_river_fighter_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_green_water_specialist"
+		texturefile = "gfx/interface/traits/trait_admiral_green_water_specialist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_green_water_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_green_water_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_blue_water_specialist"
+		texturefile = "gfx/interface/traits/trait_admiral_blue_water_specialist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_blue_water_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_blue_water_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_black_water_specialist"
+		texturefile = "gfx/interface/traits/trait_admiral_black_water_specialist.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_trait_black_water_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_trait_black_water_expert.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_explorer"
+		texturefile = "gfx/interface/traits/trait_admiral_explorer.dds"
+	}
+
+
+	
+
+
+	#### vanilla
+
+
+	spriteType = {
+		name = "GFX_trait_bearer_of_artillery"
+		texturefile = "gfx/interface/traits/trait_bearer_of_artillery.dds"
+	}			
+		
+	spriteType = {
+		name = "GFX_trait_naval_invader"
+		texturefile = "gfx/interface/traits/trait_naval_invader.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_inspirational_leader"
+		texturefile = "gfx/interface/traits/trait_inspirational_leader.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_add_new"
+		texturefile = "gfx/interface/traits/trait_add_new.dds"
+	}		
+	
+	spriteType = {
+		name = "GFX_trait_organisational_leader"
+		texturefile = "gfx/interface/traits/trait_organisational_leader.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_thorough_planner"
+		texturefile = "gfx/interface/traits/trait_thorough_planner.dds"
+	}			
+		
+	spriteType = {
+		name = "GFX_trait_air_controller"
+		texturefile = "gfx/interface/traits/trait_air_controller.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_ironside"
+		texturefile = "gfx/interface/traits/trait_ironside.dds"
+	}
+
+	spriteType = {
+		name = "GFX_skill_transparent"
+		texturefile = "gfx/interface/skill_transparent.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_trait_fly_swatter"
+		texturefile = "gfx/interface/traits/trait_fly_swatter.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_spotter"
+		texturefile = "gfx/interface/traits/trait_spotter.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_superior_tactician"
+		texturefile = "gfx/interface/traits/trait_superior_tactician.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_blockade_runner"
+		texturefile = "gfx/interface/traits/trait_blockade_runner.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_seawolf"
+		texturefile = "gfx/interface/traits/trait_seawolf.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_trait_commando"
+		texturefile = "gfx/interface/traits/trait_commando.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_trait_fortress_buster"
+		texturefile = "gfx/interface/traits/trait_fortress_buster.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_trait_engineer"
+		texturefile = "gfx/interface/traits/trait_engineer.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_logistics_wizard"
+		texturefile = "gfx/interface/traits/trait_logistics_wizard.dds"
+	}		
+		
+	spriteType = {
+		name = "GFX_trait_old_guard"
+		texturefile = "gfx/interface/traits/personal/trait_old_guard.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_old_guard_navy"
+		texturefile = "gfx/interface/traits/personal/trait_old_guard.dds"
+	}	
+		
+	spriteType = {
+		name = "GFX_trait_panzer_leader"
+		texturefile = "gfx/interface/traits/trait_panzer_leader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_trickster"
+		texturefile = "gfx/interface/traits/trait_trickster.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_offensive_doctrine"
+		texturefile = "gfx/interface/traits/trait_offensive_doctrine.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_defensive_doctrine"
+		texturefile = "gfx/interface/traits/trait_defensive_doctrine.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_cavalry_leader"
+		texturefile = "gfx/interface/traits/trait_cavalry_leader.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_infantry_leader"
+		texturefile = "gfx/interface/traits/trait_infantry_leader.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_skilled_staffer"
+		texturefile = "gfx/interface/traits/trait_skilled_staffer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_organizer"
+		texturefile = "gfx/interface/traits/trait_organizer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_unyielding_defender"
+		texturefile = "gfx/interface/traits/trait_unyielding_defender.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_expert_delegator"
+		texturefile = "gfx/interface/traits/trait_expert_delegator.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_wounded"
+		texturefile = "gfx/interface/traits/personal/trait_wounded.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_sick"
+		texturefile = "gfx/interface/traits/personal/trait_sick.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_disgruntled"
+		texturefile = "gfx/interface/traits/personal/trait_disgruntled.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_demoted"
+		texturefile = "gfx/interface/traits/personal/trait_demoted.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_recently_promoted"
+		texturefile = "gfx/interface/traits/personal/trait_recently_promoted.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_substance_abuser"
+		texturefile = "gfx/interface/traits/personal/trait_substance_abuser.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_substance_addict"
+		texturefile = "gfx/interface/traits/personal/trait_substance_addict.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_cactus_juice_abuser"
+		texturefile = "gfx/interface/traits/personal/trait_cactus_juice_abuser.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_cactus_juice_addict"
+		texturefile = "gfx/interface/traits/personal/trait_cactus_juice_addict.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_old_guard"
+		texturefile = "gfx/interface/traits/personal/trait_old_guard.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_brilliant_strategist"
+		texturefile = "gfx/interface/traits/personal/trait_brilliant_strategist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_inflexible_strategist"
+		texturefile = "gfx/interface/traits/personal/trait_inflexible_strategist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_politically_connected"
+		texturefile = "gfx/interface/traits/personal/trait_politically_connected.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_overbearing"
+		texturefile = "gfx/interface/traits/personal/trait_overbearing.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_ignorant"
+		texturefile = "gfx/interface/traits/personal/trait_ignorant.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_dark_horse"
+		texturefile = "gfx/interface/traits/personal/trait_dark_horse.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_resolute"
+		texturefile = "gfx/interface/traits/personal/trait_resolute.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_insecure"
+		texturefile = "gfx/interface/traits/personal/trait_insecure.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_trait_infantry_officer"
+		texturefile = "gfx/interface/traits/personal/trait_infantry_officer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_cavalry_officer"
+		texturefile = "gfx/interface/traits/personal/trait_cavalry_officer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_armor_officer"
+		texturefile = "gfx/interface/traits/personal/trait_armor_officer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_engineer_officer"
+		texturefile = "gfx/interface/traits/personal/trait_engineer_officer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_hidden_sympathies"
+		texturefile = "gfx/interface/traits/trait_hidden_sympathies.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_war_hero"
+		texturefile = "gfx/interface/traits/personal/trait_war_hero.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_career_officer"
+		texturefile = "gfx/interface/traits/personal/trait_career_officer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_cautious"
+		texturefile = "gfx/interface/traits/personal/trait_cautious.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_fickle"
+		texturefile = "gfx/interface/traits/personal/trait_fickle.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_aggressive_strategist"
+		texturefile = "gfx/interface/traits/personal/trait_aggressive_strategist.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_trait_reckless"
+		texturefile = "gfx/interface/traits/personal/trait_reckless.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_media_personality"
+		texturefile = "gfx/interface/traits/personal/trait_media_personality.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_harsh_leader"
+		texturefile = "gfx/interface/traits/personal/trait_harsh_leader.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_communist_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_communist_sympathizer.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_samurai_lineage"
+		texturefile = "gfx/interface/traits/personal/trait_samurai_lineage.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_trait_SPA_nationalist_sympathies"
+		texturefile = "gfx/interface/traits/personal/trait_SPA_nationalist_sympathies.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_trait_SPA_falangist_loyalties"
+		texturefile = "gfx/interface/traits/personal/trait_SPA_falangist_loyalties.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_trait_SPA_carlist_loyalties"
+		texturefile = "gfx/interface/traits/personal/trait_SPA_carlist_loyalties.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_trait_SPR_republican_loyalties"
+		texturefile = "gfx/interface/traits/personal/trait_SPR_republican_loyalties.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_trait_SPR_stalinist_loyalties"
+		texturefile = "gfx/interface/traits/personal/trait_SPR_stalinist_loyalties.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_trait_SPR_anti_stalinist_loyalties"
+		texturefile = "gfx/interface/traits/personal/trait_SPR_anti_stalinist_loyalties.dds"
+	}
+
+	spriteType = {
+		name = "GFX_trait_reassigned"
+		texturefile = "gfx/interface/traits/personal/trait_reassigned.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_trait_TUR_kemalist_champion"
+		texturefile = "gfx/interface/traits/personal/trait_tur_kemalist_champion.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_trait_trait_GRE_venezelist_loyalist"
+		texturefile = "gfx/interface/traits/personal/trait_gre_venezelist_loyalist.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_trait_trait_GRE_stauch_monarchist"
+		texturefile = "gfx/interface/traits/personal/trait_gre_stauch_monarchist.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_trait_trait_BUL_zveno_member"
+		texturefile = "gfx/interface/traits/personal/trait_bul_zveno_member.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_trait_trait_BUL_tsar_loyalist"
+		texturefile = "gfx/interface/traits/personal/trait_bul_tsar_loyalist.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_trait_trait_BUL_ff_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_bul_ff_sympathizer.dds"
+	}
+			
+	spriteType = {
+		name = "GFX_trait_trait_GRE_marxist_acolyte"
+		texturefile = "gfx/interface/traits/personal/trait_gre_marxist_acolyte.dds"
+	}
+			
+	spriteType = {
+		name = "GFX_trait_trait_GRE_fascist_sympathizer"
+		texturefile = "gfx/interface/traits/personal/trait_gre_fascist_sympathizer.dds"
+	}
+
+	#### Leader trait icons ####
+
+	spriteType = {
+		name = "GFX_trait_panzer_expert"
+		texturefile = "gfx/interface/traits/trait_panzer_expert.dds"
+	}	
+ 
+	spriteType = {
+		name = "GFX_trait_combined_arms_expert"
+		texturefile = "gfx/interface/traits/trait_combined_arms_expert.dds"
+	}			
+	
+	spriteType = {
+		name = "GFX_trait_cavalry_expert"
+		texturefile = "gfx/interface/traits/trait_cavalry_expert.dds"
+	}			
+	
+	spriteType = {
+		name = "GFX_trait_adaptable"
+		texturefile = "gfx/interface/traits/trait_adaptable.dds"
+	}			
+	
+	spriteType = {
+		name = "GFX_trait_scavenger"
+		texturefile = "gfx/interface/traits/trait_scavenger.dds"
+	}			
+	
+	spriteType = {
+		name = "GFX_trait_infantry_expert"
+		texturefile = "gfx/interface/traits/trait_infantry_expert.dds"
+	}			
+	
+	spriteType = {
+		name = "GFX_trait_ambusher"
+		texturefile = "gfx/interface/traits/trait_ambusher.dds"
+	}			
+	
+	spriteType = {
+		name = "GFX_trait_paratrooper"
+		texturefile = "gfx/interface/traits/trait_paratroopers.dds"
+	}			
+	
+	spriteType = {
+		name = "GFX_trait_camouflage_expert"
+		texturefile = "gfx/interface/traits/trait_camouflage_expert.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_trait_expert_improviser"
+		texturefile = "gfx/interface/traits/trait_improvisation_expert.dds"
+	}			
+	
+	spriteType = {
+		name = "GFX_trait_guerilla_fighter"
+		texturefile = "gfx/interface/traits/trait_guerilla_fighter.dds"
+	}			
+	
+	spriteType = {
+		name = "GFX_trait_invader_ii"
+		texturefile = "gfx/interface/traits/trait_amphibious.dds"
+	}			
+	
+	spriteType = {
+		name = "GFX_trait_naval_liason"
+		texturefile = "gfx/interface/traits/trait_naval_liason.dds"
+	}		
+
+	spriteType = {
+		name = "GFX_trait_winter_expert"
+		texturefile = "gfx/interface/traits/trait_winter_expert.dds"
+	}	
+
+	
+	# Admiral Traits
+	
+	
+	spriteType = {
+		name = "GFX_trait_admiral_arctic_waters_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_arctic_waters_expert.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_blue_water_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_blue_water_expert.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_brown_water_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_brown_water_expert.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_inshore_fighter"
+		texturefile = "gfx/interface/traits/trait_admiral_inshore_fighter.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_crisis_magician"
+		texturefile = "gfx/interface/traits/trait_admiral_crisis_magician.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_safety_first"
+		texturefile = "gfx/interface/traits/trait_admiral_safety_first.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_ground_pounder"
+		texturefile = "gfx/interface/traits/trait_admiral_ground_pounder.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_marksman"
+		texturefile = "gfx/interface/traits/trait_admiral_marksman.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_big_guns_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_big_guns_expert.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_search_pattern_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_search_pattern_expert.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_torpedo_bomber"
+		texturefile = "gfx/interface/traits/trait_admiral_torpedo_bomber.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_dive_bomber"
+		texturefile = "gfx/interface/traits/trait_admiral_dive_bomber.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_fighter_director"
+		texturefile = "gfx/interface/traits/trait_admiral_fighter_director.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_flight_deck_manager"
+		texturefile = "gfx/interface/traits/trait_admiral_flight_deck_manager.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_mine_layer"
+		texturefile = "gfx/interface/traits/trait_admiral_mine_layer.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_mine_sweeper"
+		texturefile = "gfx/interface/traits/trait_admiral_mine_sweeper.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_smoke_screen_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_smoke_screen_expert.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_concealment_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_concealment_expert.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_lone_wolf"
+		texturefile = "gfx/interface/traits/trait_admiral_lone_wolf.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_cruiser_captain"
+		texturefile = "gfx/interface/traits/trait_admiral_cruiser_captain.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_hunter_killer"
+		texturefile = "gfx/interface/traits/trait_admiral_hunter_killer.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_destroyer_leader"
+		texturefile = "gfx/interface/traits/trait_admiral_destroyer_leader.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_loading_drill_master"
+		texturefile = "gfx/interface/traits/trait_admiral_loading_drill_master.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_lancer"
+		texturefile = "gfx/interface/traits/trait_admiral_lancer.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_torpedo_expert"
+		texturefile = "gfx/interface/traits/trait_admiral_torpedo_expert.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_trait_admiral_silent_hunter"
+		texturefile = "gfx/interface/traits/trait_admiral_silent_hunter.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_trait_admiral_screening_master"
+		texturefile = "gfx/interface/traits/trait_admiral_screening_master.dds"
+	}	
+
+
+	# operatives
+	spriteType = {
+		name = "GFX_trait_operative_commando"
+		texturefile = "gfx/interface/traits/trait_operative_commando.dds"
+	}	
+
+	spriteType = {
+			name = "GFX_trait_operative_seducer"
+			texturefile = "gfx/interface/traits/trait_operative_seducer.dds"
+	}
+
+	spriteType = {
+			name = "GFX_trait_operative_infiltrator"
+			texturefile = "gfx/interface/traits/trait_operative_infiltrator.dds"
+	}
+
+	spriteType = {
+			name = "GFX_trait_operative_master_interrogator"
+			texturefile = "gfx/interface/traits/trait_operative_master_interrogator.dds"
+	}
+
+	spriteType = {
+			name = "GFX_trait_operative_linguist"
+			texturefile = "gfx/interface/traits/trait_operative_linguist.dds"
+	}
+
+	spriteType = {
+			name = "GFX_trait_operative_double_agent"
+			texturefile = "gfx/interface/traits/trait_operative_double_agent.dds"
+	}
+
+	spriteType = {
+			name = "GFX_trait_operative_tough"
+			texturefile = "gfx/interface/traits/trait_operative_tough.dds"
+	}
+
+	spriteType = {
+			name = "GFX_trait_operative_math_genius"
+			texturefile = "gfx/interface/traits/trait_operative_math_genius.dds"
+	}
+
+	spriteType = {
+			name = "GFX_trait_operative_well_groomed"
+			texturefile = "gfx/interface/traits/trait_operative_well_groomed.dds"
+	}
+	
+	spriteType = {
+			name = "GFX_trait_operative_natural_orator"
+			texturefile = "gfx/interface/traits/trait_operative_natural_orator.dds"
+	}
+	spriteType = {
+			name = "GFX_trait_operative_escape_artist"
+			texturefile = "gfx/interface/traits/trait_operative_escape_artist.dds"
+	}
+	spriteType = {
+			name = "GFX_trait_operative_safe_cracker"
+			texturefile = "gfx/interface/traits/trait_operative_safe_cracker.dds"
+	}
+	spriteType = {
+			name = "GFX_trait_operative_demolition_expert"
+			texturefile = "gfx/interface/traits/trait_operative_demolition_expert.dds"
+	}
+
+}

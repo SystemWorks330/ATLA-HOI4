@@ -1,0 +1,48 @@
+characters={
+	ISL_gombo={
+		name="Gombo"
+		portraits={
+			civilian={
+				large="gfx/leaders/ISL/Portrait_Islands_Gombo.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_Gombo_DESC"
+			ideology=constitutional_monarchy
+			expire="130.1.1.1"
+			id=-1
+		}
+	}
+	ISL_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/ISL/Portrait_Islands_colonialism.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=colonialism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=liberalism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=absolute_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=despotism
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+}

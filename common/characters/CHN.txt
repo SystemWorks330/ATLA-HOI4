@@ -1,0 +1,260 @@
+characters = {
+	CHN_mayor_wang = {
+		name = "Wang"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHN/wang.dds"
+			}
+		}
+		country_leader = {
+			desc = "Mayor of the Chin Village"
+			ideology = constitutional_monarchy
+			expire = "81.1.1.1"
+			id = -1
+		}
+	}
+	CHN_xiang = {
+		name = "Xiang"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Xiang_young"
+			}
+			army = {
+				large = "GFX_Portrait_Xiang_young"
+				small = "GFX_Portrait_Xiang_young_small"
+			}
+		}
+		country_leader = {
+			desc = "Mayor of the Chin Village"
+			ideology = constitutional_monarchy
+			expire = "78.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = {
+				skilled_staffer
+			}
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = -1
+			visible = {
+				has_character_flag = CHN_character_born
+				has_character_flag = CHN_character_general
+				NOT = {
+					has_character_flag = CHN_character_death
+				}
+			}
+		}
+	}
+	CHN_heir = {
+		name = "Torgo"
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_Chin_heir"
+			}
+			army = {
+				large = "GFX_Portrait_Xiang_young"
+				small = "GFX_Portrait_Xiang_young_small"
+			}
+		}
+		country_leader = {
+			desc = "Mayor of the Chin Village"
+			ideology = constitutional_monarchy
+			expire = "78.1.1.1"
+			traits = {
+				heir_of_chin
+			}
+			id = -1
+		}
+		field_marshal = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id = -1
+			visible = {
+				has_character_flag = CHN_character_born
+				has_character_flag = CHN_character_general
+				NOT = {
+					has_character_flag = CHN_character_death
+				}
+			}
+		}
+	}
+	CHN_mayor_tong = {
+		name = "Tong"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHN/tong.dds"
+			}
+		}
+		country_leader = {
+			desc = "Mayor of the Chin Village"
+			ideology = constitutional_monarchy
+			expire = "130.1.1.1"
+			id = -1
+		}
+	}
+	CHN_generic = {
+		name = "Generic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/CHN/Portrait_Chin_fire_tribes.dds"
+			}
+		}
+		country_leader = {
+						ideology = fire_tribes
+			expire = "120.4.7.1"
+			id = -1
+		}
+		country_leader = {
+						ideology = liberalism
+			expire = "120.4.7.1"
+			id = -1
+		}
+		country_leader = {
+						ideology = active_pacifism
+			expire = "120.4.7.1"
+			id = -1
+		}
+		country_leader = {
+						ideology = democracy
+			expire = "120.4.7.1"
+			id = -1
+		}
+	}
+	CHN_Ying_Sing = {
+		advisor = {
+			slot = minister_of_culture
+			idea_token = Ying_Sing
+			allowed = {
+				original_tag = CHN
+			}
+			available = {
+				#if = {
+				#	has_completed_focus  = CHN_pathtothekingdom
+				#}
+			}
+			traits = {
+				kingdom_advisor
+			}
+		}
+		name = "Ying_Sing"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_communist_revolutionary_western_european_2d"
+			}
+		}
+	}
+	CHN_Chen_Long = {
+		advisor = {
+			slot = minister_of_culture
+			idea_token = Chen_Long
+			allowed = {
+				original_tag = CHN
+			}
+			available = {
+				#if = {
+				#	has_completed_focus  = CHN_pathtoindependence
+				#}
+			}
+			traits = {
+				freedom_politician
+			}
+		}
+		name = "Chen_Long"
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_communist_revolutionary_western_european_2d"
+			}
+		}
+	}
+	###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+	CHN_Yuan = {
+		name = "Yuan"
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 4
+			planning_skill = 2
+			logistics_skill = 1
+			traits = {
+				generic
+				defensive_infantry
+			}
+		}
+		portraits = {
+			army = {
+				large = "gfx/leaders/CHN/Portrait_CHN_generic1.dds"
+			}
+		}
+		advisor = {
+			slot = field_marshal
+			idea_token = CHN_Yuan
+			traits = {
+				defensive_strategist_2
+			}
+		}
+	}
+	CHN_Qing = {
+		name = "Qing"
+		corps_commander = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				generic
+			}
+		}
+		portraits = {
+			army = {
+				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Generic_6.dds"
+			}
+		}
+		advisor = {
+			slot = head_of_weaponry
+			idea_token = x
+			traits = {
+				smithing_guildmaster_1
+			}
+		}
+	}
+	CHN_Li = {
+		name = "Li"
+		field_marshal = {
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 1
+			traits = {
+				generic
+				resolute_defender
+			}
+		}
+		portraits = {
+			army = {
+				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Kai.dds"
+			}
+		}
+		advisor = {
+			slot = war_minister
+			idea_token = CHN_Li
+			traits = {
+				unyielding_defender_2
+			}
+		}
+	}
+}

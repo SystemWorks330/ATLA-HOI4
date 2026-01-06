@@ -1,0 +1,165 @@
+
+political_power_cap = {
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			check_variable = { next_pp < mtth:pp_cap }
+		}
+	}
+
+	political_power_cost = pp_cap_remove
+}
+
+legitimacy_effects = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		AND = {
+			OR = {
+				original_tag = SAT
+				original_tag = EAT
+				original_tag = NAT
+				original_tag = WAT
+			}
+			NOT = { has_country_flag = air_council_dissolved }
+		}
+	}
+
+	#icon = GFX_fall
+
+
+	overlord_influence = mtth:legitimacy_autonomy
+
+	### high centralisation
+	political_power_cap = mtth:legitimacy_pp_cap
+	taxation_efficiency = mtth:legitimacy_tax_efficiency
+	war_support_factor = mtth:legitimacy_war_support
+	war_weariness_stability_impact = mtth:legitimacy_war_weariness_stability
+
+	### low centralisation
+	stability_factor = mtth:legitimacy_stability
+	peoples_initiative = mtth:legitimacy_peoples_initiative
+	local_resources_factor = mtth:legitimacy_resources
+}
+
+unit_quality_effects = {
+	enable = { always = yes }
+
+	#icon = GFX_fall
+
+	army_strength_factor = unit_quality_variable
+	army_morale_factor = unit_quality_variable
+	dig_in_speed_factor = unit_quality_variable
+	max_planning_factor = unit_quality_variable
+
+	#experience_loss_factor =  mtth:unit_quality_variable_bad
+
+	### high quality
+
+	### low quality
+
+}
+
+avatar_effects = {
+	enable = { always = yes }
+
+	#icon = GFX_fall
+
+	army_morale_factor = mtth:avatar_effect_modifier
+	stability_factor = mtth:avatar_effect_modifier
+
+}
+
+dynamic_bender_capacity = {
+	enable = { always = yes }
+
+	#icon = GFX_fall
+
+	special_forces_min = mtth:allowed_bender_units
+	conscription_factor = mtth:nonbender_factor
+
+}
+dynamic_conscription_factor = {
+	enable = { always = yes }
+
+	#icon = GFX_fall
+
+	conscription_factor = mtth:additional_conscription_factor
+
+}
+fast_manpower = {
+	enable = { always = yes }
+
+	#icon = GFX_fall
+
+	mobilization_speed = 1000
+
+}
+
+
+fire_nation = {
+
+	enable = { always = yes }
+
+	bender_target = 0.3
+	bender_growth = 0.005
+
+	steel_throughput = mtth:bender_pop_bonus
+	fuel_burning = mtth:bender_pop_bonus_negative
+
+}
+earth_nation = {
+
+	enable = { always = yes }
+
+	bender_target = 0.2
+	bender_growth = 0.005
+
+	minerals_throughput = mtth:bender_pop_bonus
+	fossile_fuels_throughput = mtth:bender_pop_bonus
+	iron_throughput = mtth:bender_pop_bonus
+	bricks_throughput = mtth:bender_pop_bonus
+	stone_upkeep_factor = mtth:bender_pop_bonus
+	
+}
+water_nation = {
+
+	enable = { always = yes }
+
+	bender_target = 0.4
+	bender_growth = 0.005
+
+	war_weariness_factor = mtth:bender_pop_bonus_negative
+
+}
+air_nation = {
+
+	enable = { always = yes }
+
+	bender_target = 0.5
+	bender_growth = 0.005
+
+	stability_factor = mtth:bender_pop_bonus
+	
+}
+pluralist_nation = {
+
+	enable = { always = yes }
+
+	bender_target = 0.25
+	bender_growth = 0.005
+	
+}
+
+
+destabilisation_from_spies = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			check_variable = { spy_destabilisation < 0 }
+		}
+	}
+
+	stability_factor = spy_destabilisation
+	
+}

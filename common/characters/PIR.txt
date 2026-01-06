@@ -1,0 +1,51 @@
+characters={
+	PIR_blackbeard={
+		name = "Gundao"
+		portraits={
+			civilian={
+				large="gfx/leaders/PIR/Portrait_Pirates_Blackbeard.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=despotism
+			expire="120.4.7.1"
+            traits = { pirate_king }
+			id=-1
+		}
+	}
+
+	PIR_generic = {
+		name = "Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/PIR/Portrait_Pirates_Blackbeard.dds"
+			}
+		}
+
+		country_leader={
+			
+			ideology=colonialism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=comunism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=liberalism
+			expire="120.4.7.1"
+			id=-1
+		}
+        country_leader={
+			
+			ideology=absolute_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+}

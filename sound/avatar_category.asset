@@ -1,0 +1,123 @@
+######################################
+category = {
+ name = "AVATAR_Effects"
+ soundeffects = {
+ 	pickaxe_hit
+ 	axe_hit
+ 	anvil_hit
+	settlement_ambient
+	minecart_ambient
+	hay_ambient
+	ranch_ambient
+
+	great_comet_sound
+ }
+ 
+ compressor = 
+ {
+	enabled = yes
+	pregain = 3.0
+	postgain = 0.0
+	ratio = 10.0
+	threshold = -15.0
+	attacktime = 0.030
+	releasetime = 1.2
+ }
+}
+######################################
+category = {
+ name = "AVATAR_Battle"
+ soundeffects = {
+ 	archer_draw_animation
+	archer_shot_animation
+	fire_animation
+	firebender_animation
+ }
+ 
+ compressor = 
+ {
+	enabled = yes
+	pregain = 4.0
+	postgain = 1.5
+	ratio = 10.0
+	threshold = -9.0
+	attacktime = 0.03
+	releasetime = 0.0
+ }
+}
+######################################
+category = {
+ name = "AVATAR_UI"
+ soundeffects = {
+	
+	political_tab
+	decision_tab
+	research_tab
+	diplomacy_tab
+	trade_tab
+	economy_tab
+	production_tab
+	deploy_tab
+	logisitcs_tab
+	war_council_tab
+	army_tab
+	navy_tab
+	air_tab
+
+	select_state
+
+	gain_gold
+	lose_gold
+	turning_page
+	wardrums
+	glory
+	citysound
+	mysterious
+	select_powerful
+	revolt
+
+ }
+ 
+ compressor = 
+ {
+	enabled = yes
+	pregain = 3.0
+	postgain = 1.0
+	ratio = 2.0
+	threshold = -10.0
+	attacktime = 0.03
+	releasetime = 0.0
+ }
+}
+
+category = {
+ name = "nonControllableEntities"
+ soundeffects = {
+
+ 	### Used largely in dlc for trains/planes/floating harbor
+	GEN_train_equipment_1
+ 	GEN_train_equipment_2
+	GEN_train_equipment_3
+	GEN_floating_harbour
+	train_horn_medium
+	train_horn_veryLarge
+ 	}
+}
+
+category = {
+ name = "AVATAR_Atmosphere"
+ soundeffects = {
+	
+	
+ }
+  compressor = 
+ {
+	enabled = yes
+	pregain = 5.0
+	postgain = 6.0
+	ratio = 15.0
+	threshold = -15.0
+	attacktime = 0.03
+	releasetime = 0.0
+ }
+}

@@ -1,0 +1,1222 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "country_decisions"
+		position = { x = 5 y = 35 }
+		Orientation = UPPER_LEFT
+
+		ButtonType ={
+			name ="country_main"
+			spriteType = "GFX_hide_decisions"
+			position = { x=160 y=8 }
+
+			pdx_tooltip = "COUNTRY_MAIN_TOOLTIP"
+			pdx_tooltip_delayed = "COUNTRY_MAIN_TOOLTIP_DELAYED"
+		}
+
+		ButtonType ={
+			name ="missions"
+			spriteType = "GFX_hide_decisions"
+			position = { x=214 y=8 }
+
+			pdx_tooltip = "MISSION_TOOLTIP"
+			pdx_tooltip_delayed = "MISSION_TOOLTIP_DELAYED"
+		}
+
+		iconType = {
+			name = "mission_count_bg"
+			spriteType = "GFX_topbar_alert_bg"
+			position = { x = 210 y = 38 }
+			frame = 1
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name ="available_missions_count"
+			position = { x= 210 y = 38 }
+			font = "hoi_16mbs"
+			text = "available_missions_count"
+			format = center
+			maxWidth = 20
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		ButtonType ={
+			name ="emergencies"
+			spriteType = "GFX_hide_decisions"
+			position = { x=268 y=8 }
+
+			pdx_tooltip = "EMERGENCY_TOOLTIP"
+			pdx_tooltip_delayed = "EMERGENCY_TOOLTIP_DELAYED"
+		}
+
+		iconType = {
+			name = "emergency_count_bg"
+			spriteType = "GFX_topbar_alert_bg"
+			position = { x = 300 y = 38 }
+			frame = 1
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name ="emergency_count"
+			position = { x= 300 y = 38 }
+			font = "hoi_16mbs"
+			text = "emergency_count"
+			format = center
+			maxWidth = 20
+			maxHeight = 24
+			fixedsize = yes
+		}
+
+		ButtonType ={
+			name ="show_hide"
+			spriteType = "GFX_hide_decisions"
+			position = { x=324 y=8 }
+
+			pdx_tooltip = "SHOW_HIDE_TOOLTIP"
+			pdx_tooltip_delayed = "SHOW_HIDE_TOOLTIP_DELAYED"
+		}
+
+	}
+
+	############# politics and advisors ##############
+
+	containerWindowType = {
+		name = "politics_decisions_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height = 188 }
+
+		
+		containerWindowType = {
+			name = "current_state"
+			position = { x = 70 y = 0 }
+
+			iconType = {
+				name = "ideology_icon"
+				spriteType = "GFX_ideology_unknown"
+				position = { x = 150 y = 4 }
+				pdx_tooltip = "main_ideology_ttp"
+			}
+
+			iconType = {
+				name ="legitimacy_level"
+				spriteType = "GFX_legit_bar_large"
+				position = { x= -4 y = 65 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name ="state_target"
+				spriteType = "GFX_state_target_large"
+				position = { x= 0 y = 65 }
+				Orientation = "UPPER_LEFT"
+
+			}
+			iconType = {
+				name ="state_indicator"
+				spriteType = "GFX_state_indicator"
+				position = { x= 0 y = 78 }
+				Orientation = "UPPER_LEFT"
+
+				pdx_tooltip = "indicator_tooltip"
+				pdx_tooltip_delayed = "indicator_tooltip_delayed"
+			}
+
+		}
+
+		containerWindowType = {
+			name = "available_states"
+			position = { x = 120 y = 100 }
+
+			buttonType = {
+				name = "colonialism"
+				spriteType = "GFX_ideology_colonialism"
+				position = { x = -50 y = 4 }
+				pdx_tooltip = "colonialism"
+				pdx_tooltip_delayed = "colonialism_desc"
+			}
+			buttonType = {
+				name = "nationalism"
+				spriteType = "GFX_ideology_nationalism"
+				position = { x = 90 y = 4 }
+				pdx_tooltip = "nationalism"
+				pdx_tooltip_delayed = "nationalism_desc"
+			}
+			buttonType = {
+				name = "fire_tribes"
+				spriteType = "GFX_ideology_fire_tribes"
+				position = { x = 230 y = 4 }
+				pdx_tooltip = "fire_tribes"
+				pdx_tooltip_delayed = "fire_tribes_desc"
+			}
+
+			buttonType = {
+				name = "absolute_monarchie"
+				spriteType = "GFX_ideology_absolute_monarchie"
+				position = { x = -50 y = 4 }
+				pdx_tooltip = "absolute_monarchie"
+				pdx_tooltip_delayed = "absolute_monarchie_desc"
+			}
+			buttonType = {
+				name = "constitutional_monarchy"
+				spriteType = "GFX_ideology_constitutional_monarchy"
+				position = { x = 20 y = 4 }
+				pdx_tooltip = "constitutional_monarchy"
+				pdx_tooltip_delayed = "constitutional_monarchy_desc"
+			}
+			buttonType = {
+				name = "elective_monarchy"
+				spriteType = "GFX_ideology_elective_monarchy"
+				position = { x = 90 y = 4 }
+				pdx_tooltip = "elective_monarchy"
+				pdx_tooltip_delayed = "elective_monarchy_desc"
+			}
+			buttonType = {
+				name = "earth_tribe"
+				spriteType = "GFX_ideology_earth_tribe"
+				position = { x = 160 y = 4 }
+				pdx_tooltip = "earth_tribe"
+				pdx_tooltip_delayed = "earth_tribe_desc"
+			}
+			buttonType = {
+				name = "comunism"
+				spriteType = "GFX_ideology_comunism"
+				position = { x = 230 y = 4 }
+				pdx_tooltip = "comunism"
+				pdx_tooltip_delayed = "comunism_desc"
+			}
+
+
+			buttonType = {
+				name = "martial_chiefdom"
+				spriteType = "GFX_ideology_martial_chiefdom"
+				position = { x = -50 y = 4 }
+				pdx_tooltip = "martial_chiefdom"
+				pdx_tooltip_delayed = "martial_chiefdom_desc"
+			}
+			buttonType = {
+				name = "theocratic_chiefdom"
+				spriteType = "GFX_ideology_theocratic_chiefdom"
+				position = { x = 40 y = 4 }
+				pdx_tooltip = "theocratic_chiefdom"
+				pdx_tooltip_delayed = "theocratic_chiefdom_desc"
+			}
+			buttonType = {
+				name = "elective_chiefdom"
+				spriteType = "GFX_ideology_elective_chiefdom"
+				position = { x = 140 y = 4 }
+				pdx_tooltip = "elective_chiefdom"
+				pdx_tooltip_delayed = "elective_chiefdom_desc"
+			}
+			buttonType = {
+				name = "liberalism"
+				spriteType = "GFX_ideology_liberalism"
+				position = { x = 230 y = 4 }
+				pdx_tooltip = "liberalism"
+				pdx_tooltip_delayed = "liberalism_desc"
+			}
+
+
+			buttonType = {
+				name = "spiritual_interventionism"
+				spriteType = "GFX_ideology_spiritual_interventionism"
+				position = { x = -50 y = 4 }
+				pdx_tooltip = "spiritual_interventionism"
+				pdx_tooltip_delayed = "spiritual_interventionism_desc"
+			}
+			buttonType = {
+				name = "active_pacifism"
+				spriteType = "GFX_ideology_active_pacifism"
+				position = { x = 90 y = 4 }
+				pdx_tooltip = "active_pacifism"
+				pdx_tooltip_delayed = "active_pacifism_desc"
+			}
+			buttonType = {
+				name = "absolute_pacifism"
+				spriteType = "GFX_ideology_absolute_pacifism"
+				position = { x = 230 y = 4 }
+				pdx_tooltip = "absolute_pacifism"
+				pdx_tooltip_delayed = "absolute_pacifism_desc"
+			}
+
+
+			buttonType = {
+				name = "despotism"
+				spriteType = "GFX_ideology_despotism"
+				position = { x = -70 y = 4 }
+				pdx_tooltip = "despotism"
+				pdx_tooltip_delayed = "despotism_desc"
+			}
+			buttonType = {
+				name = "sovereign_monarchy"
+				spriteType = "GFX_ideology_sovereign_monarchy"
+				position = { x = 00 y = 4 }
+				pdx_tooltip = "sovereign_monarchy"
+				pdx_tooltip_delayed = "sovereign_monarchy_desc"
+			}
+			buttonType = {
+				name = "theocracy"
+				spriteType = "GFX_ideology_theocracy"
+				position = { x = 70 y = 4 }
+				pdx_tooltip = "theocracy"
+				pdx_tooltip_delayed = "theocracy_desc"
+			}
+			buttonType = {
+				name = "republican"
+				spriteType = "GFX_ideology_republican"
+				position = { x = 140 y = 4 }
+				pdx_tooltip = "republican"
+				pdx_tooltip_delayed = "republican_desc"
+			}
+			buttonType = {
+				name = "democracy"
+				spriteType = "GFX_ideology_democracy"
+				position = { x = 210 y = 4 }
+				pdx_tooltip = "democracy"
+				pdx_tooltip_delayed = "democracy_desc"
+			}
+			buttonType = {
+				name = "anarchism"
+				spriteType = "GFX_ideology_anarchism"
+				position = { x = 280 y = 4 }
+				pdx_tooltip = "anarchism"
+				pdx_tooltip_delayed = "anarchism_desc"
+			}
+
+
+		}
+
+	}
+
+	############# peasant revolt ##############
+
+	containerWindowType = {
+		name = "peasant_uprising_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 150 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_peasant_bg"
+		}
+
+		
+		iconType = {
+			name = "peasant_head"
+			spriteType = "GFX_peasant_1"
+			position = { x = 30 y = -28 }
+			pdx_tooltip = "peasant_ttp"
+			pdx_tooltip_delayed = "peasant_ttp_delayed"
+		}
+
+		instantTextBoxType = {
+			name ="angry_level"
+			position = { x = 242 y = 17 }
+			font = "hoi_24header"
+			text = "PEASANT_ANGRY_LEVEL"
+			format = center
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name ="appeasement_level"
+			position = { x = 242 y = 42 }
+			font = "hoi_24header"
+			text = "PEASANT_APPEASEMENT_LEVEL"
+			format = center
+			maxHeight = 24
+			maxWidth = 200
+		}
+
+		instantTextBoxType = {
+			name ="strength_header"
+			position = { x = 242 y = 88 }
+			font = "hoi_24header"
+			text = "REVOLT_STRENGTH_HEADER"
+			format = center
+			maxHeight = 24
+			maxWidth = 200
+		}
+
+		iconType = {
+			name = "strength_icon"
+			spriteType = "GFX_revolt_icon"
+			position = { x = 240 y = 116 }
+			pdx_tooltip = "revolt_risk_tooltip"
+			pdx_tooltip_delayed = "revolt_risk_tooltip_delayed"
+		}
+		instantTextBoxType = {
+			name ="strength_level"
+			position = { x = 252 y = 120 }
+			font = "hoi_24header"
+			text = "PEASANT_SUPPORT_LEVEL"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
+			pdx_tooltip = "revolt_risk_tooltip"
+			pdx_tooltip_delayed = "revolt_risk_tooltip_delayed"
+		}
+
+		iconType = {
+			name = "states_icon"
+			spriteType = "GFX_icon_occupied_territories"
+			position = { x = 320 y = 116 }
+		}
+		instantTextBoxType = {
+			name ="states_level"
+			position = { x = 322 y = 120 }
+			font = "hoi_24header"
+			text = "PEASANT_STATE_LEVEL"
+			format = center
+			maxHeight = 24
+			maxWidth = 160
+		}
+
+
+	}
+
+
+	############# earth kingdom ##############
+
+	containerWindowType = {
+		name = "earth_kingdom_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 288 }
+
+		#iconType = {
+		#	name = "Background"
+		#	spriteType = "GFX_earthkingdom_bg"
+		#	position = { x = 0 y = 4 }
+		#	scale = 0.58
+		#}
+
+
+		gridboxtype = {
+			name = "earth_kingdom_members_gridbox"
+			position = { x = 18 y = 10 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 42 height = 56 }
+			max_slots_horizontal = 12
+			add_horizontal = yes
+		}
+
+
+	}
+
+	containerWindowType = {
+		name = "earth_kingdom_member_list_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 0 height= 0 }
+
+		iconType = {
+			name = "member_country_flag"
+			quadTextureSprite = "GFX_flag_small2"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "earth_country_name"
+		}
+		iconType = {
+			name = "member_country_flag_frame"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = { x = -4 y = -2 }
+			alwaystransparent = yes
+		}
+
+	}
+
+	############# western alliance ##############
+
+	containerWindowType = {
+		name = "western_alliance_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 140 }
+
+		#iconType = {
+		#	name = "Background"
+		#	spriteType = "GFX_earthkingdom_bg"
+		#	position = { x = 0 y = 4 }
+		#	scale = 0.58
+		#}
+
+		gridboxtype = {
+			name = "western_alliance_members_gridbox"
+			position = { x = 34 y = 10 }
+			size = { width = 0 height = 0 }
+			slotsize = { width = 44 height = 60 }
+			max_slots_horizontal = 11
+			add_horizontal = yes
+		}
+
+	}
+
+	containerWindowType = {
+		name = "western_alliance_member_list_entry"
+		position = { x = 0 y = 0 }
+		size = { width = 0 height= 0 }
+
+		iconType = {
+			name = "member_country_flag"
+			quadTextureSprite = "GFX_flag_small2"
+			position = { x = 0 y = 0 }
+			pdx_tooltip = "earth_country_name"
+		}
+		iconType = {
+			name = "member_country_flag_frame"
+			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+			position = { x = -4 y = -2 }
+			alwaystransparent = yes
+		}
+
+	}
+
+	############# dai_li ##############
+
+	containerWindowType = {
+		name = "dai_li_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 160 }
+
+		background = {
+			name = "Background"
+			position = { x = 0 y = 20 }
+			spriteType = "GFX_dai_li_bg"
+		}
+
+		instantTextBoxType = {
+			name ="dai_li_influence"
+			position = { x = 120 y = 5 }
+			font = "hoi_16mbs"
+			text = "dai_li_influence_text"
+			format = left
+			maxHeight = 24
+			maxWidth = 220
+			pdx_tooltip = "dai_li_influence_ttp"
+			pdx_tooltip_delayed = "dai_li_influence_ttpdelayed"
+		}
+		instantTextBoxType = {
+			name ="dai_li_disloyalty"
+			position = { x = 280 y = 5 }
+			font = "hoi_16mbs"
+			text = "dai_li_disloyalty_text"
+			format = left
+			maxHeight = 24
+			maxWidth = 220
+			pdx_tooltip = "dai_li_disloyalty_ttp"
+			pdx_tooltip_delayed = "dai_li_disloyalty_ttp_delayed"
+		}
+
+		iconType = {
+			name ="connection_1"
+			spriteType = "GFX_connection_1"
+			position = { x= 25 y = 30 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="connection_2"
+			spriteType = "GFX_connection_2"
+			position = { x= 153 y = 30 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name ="connection_3"
+			spriteType = "GFX_connection_2"
+			position = { x= 275 y = 30 }
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name ="dai_li_headquaters_icon"
+			spriteType = "GFX_dai_li_headquaters_large"
+			position = { x= 25 y = 30 }
+			pdx_tooltip = "dai_li_headquaters_ttp"
+			pdx_tooltip_delayed = "dai_li_headquaters_desc"
+		}
+
+		iconType = {
+			name ="dai_li_training_rooms_icon"
+			spriteType = "GFX_dai_li_training_rooms"
+			position = { x= 25 y = 30 }
+			pdx_tooltip = "dai_li_training_rooms_ttp"
+			pdx_tooltip_delayed = "dai_li_training_rooms_desc"
+		}
+		iconType = {
+			name ="dai_li_prisons_icon"
+			spriteType = "GFX_dai_li_prisons"
+			position = { x= 25 y = 110 }
+			pdx_tooltip = "dai_li_prisons_ttp"
+			pdx_tooltip_delayed = "dai_li_prisons_desc"
+		}
+
+		iconType = {
+			name ="dai_li_jo_dee_icon"
+			spriteType = "GFX_dai_li_jo_dee"
+			position = { x= 153 y = 30 }
+			pdx_tooltip = "dai_li_jo_dee_ttp"
+			pdx_tooltip_delayed = "dai_li_jo_dee_desc"
+		}
+		iconType = {
+			name ="dai_li_surveillance_icon"
+			spriteType = "GFX_dai_li_surveillance"
+			position = { x= 153 y = 110 }
+			pdx_tooltip = "dai_li_surveillance_ttp"
+			pdx_tooltip_delayed = "dai_li_surveillance_desc"
+		}
+
+		iconType = {
+			name ="dai_li_brainwashing_room_icon"
+			spriteType = "GFX_dai_li_brainwashing_room"
+			position = { x= 275 y = 30 }
+			pdx_tooltip = "dai_li_brainwashing_room_ttp"
+			pdx_tooltip_delayed = "dai_li_brainwashing_room_desc"
+		}
+		iconType = {
+			name ="dai_li_politics_department_icon"
+			spriteType = "GFX_dai_li_politics_department"
+			position = { x= 275 y = 110 }
+			pdx_tooltip = "dai_li_politics_department_ttp"
+			pdx_tooltip_delayed = "dai_li_politics_department_desc"
+		}
+
+		iconType = {
+			name ="dai_li_grand_secretary_office_icon"
+			spriteType = "GFX_dai_li_grand_secretary_office"
+			position = { x= 400 y = 30 }
+			pdx_tooltip = "dai_li_grand_secretary_office_ttp"
+			pdx_tooltip_delayed = "dai_li_grand_secretary_office_desc"
+		}
+
+	}
+
+	############# water unity ##############
+
+	containerWindowType = {
+		name = "water_unity_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 140 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_water_unity_bg"
+		}
+
+		iconType = {
+			name ="nwt_unity_icon"
+			spriteType = "GFX_decision_category_water_unity_ui"
+			position = { x= 245	 y = 5 }
+		}
+		iconType = {
+			name ="swt_unity_icon"
+			spriteType = "GFX_decision_category_water_unity_ui"
+			position = { x= 245	 y = 5 }
+		}
+
+		instantTextBoxType = {
+			name ="senate_support_header"
+			position = { x = 22 y = 37 }
+			font = "hoi_24header"
+			text = "WATER_unity_header"
+			format = center
+			maxHeight = 24
+		}
+
+		instantTextBoxType = {
+			name ="status_senate"
+			position = { x = 22 y = 22 }
+			font = "hoi_18mbs"
+			text = "WATER_unity_level"
+			format = center
+		}
+
+		instantTextBoxType = {
+			name ="unity_status"
+			position = { x = 22 y = 70 }
+			font = "hoi_24header"
+			text = "WATER_unity_status"
+			format = center
+			maxHeight = 24
+		}
+
+	}
+
+	############# chin support ##############
+
+	containerWindowType = {
+		name = "chin_support_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 140 }
+
+		#background = {
+		#	name = "Background"
+		#	spriteType = "GFX_water_unity_bg"
+		#}
+
+		iconType = {
+			name ="chin_support_icon"
+			spriteType = "GFX_decision_category_chin_support_ui"
+			position = { x= 40 y = 41 }
+		}
+
+		iconType = {
+			name ="chin_support_text_bg"
+			spriteType = "GFX_generic_box"
+			position = { x= 195 y = 20 }
+		}
+
+		instantTextBoxType = {
+			name ="chin_support_text"
+			position = { x = 199 y = 22 }
+			font = "hoi_22"
+			text = "CHIN_support_status"
+			format = left
+			maxHeight = 24
+		}
+
+	}
+
+	############# royal family ##############
+
+	containerWindowType = {
+		name = "fire_family_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 200 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_fire_family_bg"
+			position = { x = 6 y = 6 }
+		}
+
+		### characters #######
+
+		#iconType = {
+		#	name = "zeisan"
+		#	spriteType = "GFX_zeisan_portrait"
+		#	position = { x = 10 y = 6 }
+		#	pdx_tooltip = "zeisan_ttp"
+		#	pdx_tooltip_delayed = "zeisan_ttp_delayed"
+		#}
+
+		iconType = {
+			name = "sozin"
+			spriteType = "GFX_sozin_portrait"
+			position = { x = 100 y = 6 }
+			pdx_tooltip = "sozin_ttp"
+			pdx_tooltip_delayed = "sozin_ttp_delayed"
+		}
+
+		iconType = {
+			name = "sozin_wife"
+			spriteType = "GFX_sozin_wife_portrait"
+			position = { x = 290 y = 6 }
+			pdx_tooltip = "sozin_wife_ttp"
+			pdx_tooltip_delayed = "sozin_wife_ttp_delayed"
+		}
+
+		iconType = {
+			name = "rhya_young"
+			spriteType = "GFX_rhya_young_portrait"
+			position = { x = 10 y = 6 }
+			pdx_tooltip = "rhya_ttp"
+			pdx_tooltip_delayed = "rhya_ttp_delayed"
+		}
+
+		iconType = {
+			name = "azulon"
+			spriteType = "GFX_azulon_adult_portrait"
+			position = { x = 190 y = 6 }
+			pdx_tooltip = "azulon_ttp"
+			pdx_tooltip_delayed = "azulon_ttp_delayed"
+		}
+
+		iconType = {
+			name = "azulon_wife"
+			spriteType = "GFX_ilah_portrait"
+			position = { x = 290 y = 6 }
+			pdx_tooltip = "ilah_ttp"
+			pdx_tooltip_delayed = "ilah_ttp_delayed"
+		}
+
+		iconType = {
+			name = "iroh"
+			spriteType = "GFX_iroh_adult_portrait"
+			position = { x = 190 y = 6 }
+			pdx_tooltip = "iroh_ttp"
+			pdx_tooltip_delayed = "iroh_ttp_delayed"
+		}
+
+		iconType = {
+			name = "ozai"
+			spriteType = "GFX_ozai_adult_portrait"
+			position = { x = 190 y = 6 }
+			pdx_tooltip = "ozai_ttp"
+			pdx_tooltip_delayed = "ozai_ttp_delayed"
+		}
+
+		iconType = {
+			name = "ozai_wife"
+			spriteType = "GFX_ursa_portrait"
+			position = { x = 290 y = 6 }
+			pdx_tooltip = "ursa_ttp"
+			pdx_tooltip_delayed = "ursa_ttp_delayed"
+		}
+
+		iconType = {
+			name = "lu_ten"
+			spriteType = "GFX_lu_ten_young_portrait"
+			position = { x = 190 y = 6 }
+			pdx_tooltip = "lu_ten_ttp"
+			pdx_tooltip_delayed = "lu_ten_ttp_delayed"
+		}
+
+		iconType = {
+			name = "zuko"
+			spriteType = "GFX_zuko_young_portrait"
+			position = { x = 190 y = 6 }
+			pdx_tooltip = "zuko_ttp"
+			pdx_tooltip_delayed = "zuko_ttp_delayed"
+		}
+
+		iconType = {
+			name = "azula"
+			spriteType = "GFX_azula_young_portrait"
+			position = { x = 190 y = 6 }
+			pdx_tooltip = "azula_ttp"
+			pdx_tooltip_delayed = "azula_ttp_delayed"
+		}
+
+		######################
+
+
+		iconType = {
+			name = "Frame"
+			spriteType = "GFX_fire_family_frame"
+			position = { x = 6 y = 6 }
+			alwaystransparent = yes
+		}
+
+		#instantTextBoxType = {
+		#	name ="senate_support_header"
+		#	position = { x = 22 y = 37 }
+		#	font = "hoi_24header"
+		#	text = "WATER_unity_header"
+		#	format = center
+		#	maxHeight = 24
+		#}
+
+	}
+
+	############ air council ##############
+	
+	containerWindowType = {
+		name = "air_council_ui_window"
+		position = { x = 0 y = 0}
+		size = { width = 500 height = 200}
+		
+		background = {
+			name = "Background"
+			spriteType = "GFX_air_council_bg"
+			position = { x = 0 y = 0}
+		}
+		
+		iconType = {
+			name = "sat_council_symbol"
+			pdx_tooltip = air_council_support
+			spriteType = "GFX_air_council_symbol"
+		}
+		iconType = {
+			name = "nat_council_symbol"
+			pdx_tooltip = air_council_support
+			spriteType = "GFX_air_council_symbol"
+		}
+		iconType = {
+			name = "wat_council_symbol"
+			pdx_tooltip = air_council_support
+			spriteType = "GFX_air_council_symbol"
+		}
+		iconType = {
+			name = "eat_council_symbol"
+			pdx_tooltip = air_council_support
+			spriteType = "GFX_air_council_symbol"
+		}
+		#iconType = {
+		#	name = "air_council_support_bar"
+		#	spriteType = "GFX_air_council_support_bar"
+		#	position = { x = 470 y = 0}
+		#}
+		iconType = {
+			name = "air_council_probability_bar"
+			spriteType = "GFX_air_council_probability_bar"
+			position = { x = 10 y = 136}
+		}
+		iconType = {
+			name = "sat_council_member_1"
+			spriteType = "GFX_air_council_member_1"
+			position = { x = 105 y = 70}
+			pdx_tooltip = "council_member_1_tooltip"
+		}
+		iconType = {
+			name = "sat_council_member_2"
+			spriteType = "GFX_air_council_member_2"
+			position = { x = 175 y = 60}
+			pdx_tooltip = "council_member_2_tooltip"
+		}
+		iconType = {
+			name = "sat_council_member_3"
+			spriteType = "GFX_air_council_member_3"
+			position = { x = 255 y = 50}
+			pdx_tooltip = "council_member_3_tooltip"
+		}
+		iconType = {
+			name = "sat_council_member_4"
+			spriteType = "GFX_air_council_member_4"
+			position = { x = 330 y = 60}
+			pdx_tooltip = "council_member_4_tooltip"
+		}
+		iconType = {
+			name = "sat_council_member_5"
+			spriteType = "GFX_air_council_member_5"
+			position = { x = 405 y = 70}
+			pdx_tooltip = "council_member_5_tooltip"
+		}
+		iconType = {
+			name = "nat_council_member_1"
+			spriteType = "GFX_air_council_member_1"
+			position = { x = 105 y = 70}
+			pdx_tooltip = "council_member_1_tooltip"
+		}
+		iconType = {
+			name = "nat_council_member_2"
+			spriteType = "GFX_air_council_member_2"
+			position = { x = 175 y = 60}
+			pdx_tooltip = "council_member_2_tooltip"
+		}
+		iconType = {
+			name = "nat_council_member_3"
+			spriteType = "GFX_air_council_member_3"
+			position = { x = 255 y = 50}
+			pdx_tooltip = "council_member_3_tooltip"
+		}
+		iconType = {
+			name = "nat_council_member_4"
+			spriteType = "GFX_air_council_member_4"
+			position = { x = 330 y = 60}
+			pdx_tooltip = "council_member_4_tooltip"
+		}
+		iconType = {
+			name = "nat_council_member_5"
+			spriteType = "GFX_air_council_member_5"
+			position = { x = 405 y = 70}
+			pdx_tooltip = "council_member_5_tooltip"
+		}
+		iconType = {
+			name = "wat_council_member_1"
+			spriteType = "GFX_air_council_member_1"
+			position = { x = 105 y = 70}
+			pdx_tooltip = "council_member_1_tooltip"
+		}
+		iconType = {
+			name = "wat_council_member_2"
+			spriteType = "GFX_air_council_member_2"
+			position = { x = 175 y = 60}
+			pdx_tooltip = "council_member_2_tooltip"
+		}
+		iconType = {
+			name = "wat_council_member_3"
+			spriteType = "GFX_air_council_member_3"
+			position = { x = 255 y = 50}
+			pdx_tooltip = "council_member_3_tooltip"
+		}
+		iconType = {
+			name = "wat_council_member_4"
+			spriteType = "GFX_air_council_member_4"
+			position = { x = 330 y = 60}
+			pdx_tooltip = "council_member_4_tooltip"
+		}
+		iconType = {
+			name = "wat_council_member_5"
+			spriteType = "GFX_air_council_member_5"
+			position = { x = 405 y = 70}
+			pdx_tooltip = "council_member_5_tooltip"
+		}
+		iconType = {
+			name = "eat_council_member_1"
+			spriteType = "GFX_air_council_member_1"
+			position = { x = 105 y = 70}
+			pdx_tooltip = "council_member_1_tooltip"
+		}
+		iconType = {
+			name = "eat_council_member_2"
+			spriteType = "GFX_air_council_member_2"
+			position = { x = 175 y = 60}
+			pdx_tooltip = "council_member_2_tooltip"
+		}
+		iconType = {
+			name = "eat_council_member_3"
+			spriteType = "GFX_air_council_member_3"
+			position = { x = 255 y = 50}
+			pdx_tooltip = "council_member_3_tooltip"
+		}
+		iconType = {
+			name = "eat_council_member_4"
+			spriteType = "GFX_air_council_member_4"
+			position = { x = 330 y = 60}
+			pdx_tooltip = "council_member_4_tooltip"
+		}
+		iconType = {
+			name = "eat_council_member_5"
+			spriteType = "GFX_air_council_member_5"
+			position = { x = 405 y = 70}
+			pdx_tooltip = "council_member_5_tooltip"
+		}
+		instantTextBoxType = {
+			name ="member_1_name"
+			position = { x = 102 y = 35 }
+			font = "hoi_18mbs"
+			text = "air_council_member_1"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
+		}
+		instantTextBoxType = {
+			name ="member_2_name"
+			position = { x = 170 y = 25 }
+			font = "hoi_18mbs"
+			text = "air_council_member_2"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
+		}
+		instantTextBoxType = {
+			name ="member_3_name"
+			position = { x = 251 y = 15 }
+			font = "hoi_18mbs"
+			text = "air_council_member_3"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
+		}
+		instantTextBoxType = {
+			name ="member_4_name"
+			position = { x = 327 y = 25 }
+			font = "hoi_18mbs"
+			text = "air_council_member_4"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
+		}
+		instantTextBoxType = {
+			name ="member_5_name"
+			position = { x = 401 y = 35 }
+			font = "hoi_18mbs"
+			text = "air_council_member_5"
+			format = center
+			maxHeight = 24
+			maxWidth = 80
+		}
+
+		containerWindowType = {
+			name = "army_container"
+			position = { x = 20 y = 140 }
+
+			iconType = {
+				name = "council_army_mission"
+				spriteType = "council_army_mission_small"
+				position = { x = 35 y = 0 }
+				pdx_tooltip = "army_icon_tooltip"
+			}
+			instantTextBoxType = {
+				name ="air_council_army"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_army"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = "army_icon_tooltip"
+			}
+			buttonType = {
+				name = "decrease_army"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "army_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_army"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "army_increase_tooltip"
+			}
+
+		}
+
+		containerWindowType = {
+			name = "air_container"
+			position = { x = 175 y = 140 }
+
+			iconType = {
+				name = "council_air_mission"
+				spriteType = "council_air_mission_small"
+				position = { x = 35 y = 0}
+				pdx_tooltip = air_icon_tooltip
+			}
+			instantTextBoxType = {
+				name ="air_council_air"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_air"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = air_icon_tooltip
+			}
+			buttonType = {
+				name = "decrease_air"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "air_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_air"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "air_increase_tooltip"
+			}
+
+		}
+		
+		containerWindowType = {
+			name = "industry_container"
+			position = { x = 330 y = 140 }
+
+			iconType = {
+				name = "council_industry_mission"
+				spriteType = "council_industry_mission_small"
+				position = { x = 35 y = 0 }
+				pdx_tooltip = "industry_icon_tooltip"
+			}
+			instantTextBoxType = {
+				name ="air_council_industry"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_construction"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = "industry_icon_tooltip"
+			}
+			buttonType = {
+				name = "decrease_industry"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "industry_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_industry"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "industry_increase_tooltip"
+			}
+
+		}
+
+		containerWindowType = {
+			name = "navy_container"
+			position = { x = 20 y = 170 }
+
+			iconType = {
+				name = "council_navy_mission"
+				spriteType = "council_navy_mission_small"
+				position = { x = 35 y = 0 }
+				pdx_tooltip = "navy_icon_tooltip"
+			}
+			instantTextBoxType = {
+				name ="air_council_navy"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_navy"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = "navy_icon_tooltip"
+			}
+			buttonType = {
+				name = "decrease_navy"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "navy_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_navy"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "navy_increase_tooltip"
+			}
+
+		}
+		
+		containerWindowType = {
+			name = "research_container"
+			position = { x = 175 y = 170 }
+
+			iconType = {
+				name = "council_research_mission"
+				spriteType = "council_research_mission_small"
+				position = { x = 35 y = 0 }
+				pdx_tooltip = "research_icon_tooltip"
+			}
+			instantTextBoxType = {
+				name ="air_council_research"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_research"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = "research_icon_tooltip"
+			}
+			buttonType = {
+				name = "decrease_research"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "research_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_research"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "research_increase_tooltip"
+			}
+
+		}
+		
+		containerWindowType = {
+			name = "politics_container"
+			position = { x = 330 y = 170 }
+
+			iconType = {
+				name = "council_politics_mission"
+				spriteType = "council_politics_mission_small"
+				position = { x = 35 y = 0 }
+				pdx_tooltip = "politics_icon_tooltip"
+			}
+			instantTextBoxType = {
+				name ="air_council_politics"
+				position = { x = 60 y = 0 }
+				font = "hoi_24header"
+				text = "air_council_politics"
+				format = left
+				maxWidth = 60
+				pdx_tooltip = "politics_icon_tooltip"
+			}
+			buttonType = {
+				name = "decrease_politics"
+				spriteType = "GFX_arrow_down_small"
+				position = { x = 0 y = 0 }
+				pdx_tooltip = "politics_increase_tooltip"
+			}
+			buttonType = {
+				name = "increase_politics"
+				spriteType = "GFX_arrow_up_small"
+				position = { x = 110 y = 0 }
+				pdx_tooltip = "politics_increase_tooltip"
+			}
+
+		}
+	}
+
+
+}

@@ -1,0 +1,30 @@
+scripted_gui = {
+
+	loyalty_scripted_gui = {
+		context_type = selected_state_context
+		
+		window_name = "loyalty_state_ui_window"
+		parent_window_token = selected_state_view
+		
+		visible = {
+			THIS = {
+				has_resistance = no
+				is_controlled_by = ROOT
+			}
+		}
+		
+		triggers = {
+			
+		}
+
+		properties = {
+
+			uprising_bar = {
+				frame = state_loyalty_variable
+			}
+
+		}
+		
+	}
+
+}

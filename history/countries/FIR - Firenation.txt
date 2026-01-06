@@ -1,0 +1,786 @@
+
+
+ ## #####  ##  ###  #####       #   ##
+#     #   #  # #  #   #        ##  #  #
+ #    #   #### ###    #       # #    #
+  #   #   #  # #  #   #         #   #
+##    #   #  # #  #   #         #  ####
+
+
+capital = 417
+
+OOB = "FIR_12"
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_naval_oob = "FIR_12_naval_mtg"
+	else = {
+		set_naval_oob = "FIR_12_naval_legacy"
+	}
+}
+
+set_country_flag = FIR_armor
+set_country_flag = FIR_navy
+set_country_flag = FIR_air_techs
+set_country_flag = FIR_special_forces
+
+
+set_variable = { legitimacy_var = 120 }
+
+set_variable = { logistic_spirit_var = 25 }
+set_variable = { quality_spirit_var = 50 }
+set_variable = { unit_leader_spirit_var = 15 }
+
+
+FIR_starting_tech_12 = yes
+
+
+#set_research_slots = 3
+set_convoys = 260
+set_stability = 0.9 
+set_war_support = 0.9
+
+army_experience = 80
+navy_experience = 100
+air_experience = 0
+
+
+set_politics = {
+	ruling_party = fire_culture
+	last_election = "10.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 0
+	pluralist_culture = 8
+	fire_culture = 87
+	earth_culture = 5
+	air_culture = 0
+}
+
+set_variable = { victory_condition = token:fire_supremacy_spirit }
+
+add_ideas = {
+	limited_fire_conscription
+	fire_benders_only
+	international_trade
+	buildup_focus_law
+	family_support_2
+	elite_education
+
+	national_prosperity
+	legacy_of_roku_and_sozin
+}
+
+recruit_character = FIR_head_of_intelligence_1
+recruit_character = FIR_head_of_intelligence_2
+recruit_character = FIR_head_of_intelligence_3
+recruit_character = FIR_head_of_intelligence_4
+recruit_character = FIR_head_of_intelligence_5
+recruit_character = FIR_head_of_intelligence_6
+
+recruit_character = FIR_quartermaster_1
+recruit_character = FIR_quartermaster_2
+recruit_character = FIR_quartermaster_3
+recruit_character = FIR_quartermaster_4
+recruit_character = FIR_quartermaster_5
+recruit_character = FIR_quartermaster_6
+
+
+recruit_character = FIR_empty_throne
+
+recruit_character = FIR_sozin
+FIR_sozin = {
+	set_character_flag = character_born
+	set_character_flag = FIR_character_general
+	set_character_flag = firebending_training
+	set_character_flag = literate
+}
+recruit_character = FIR_elua
+FIR_elua = {
+	set_character_flag = character_available
+}
+recruit_character = FIR_zeisan
+FIR_zeisan = {
+	set_character_flag = character_available
+}
+
+recruit_character = FIR_rhya
+
+recruit_character = FIR_shaozu
+recruit_character = FIR_yotto
+recruit_character = FIR_arashi
+recruit_character = FIR_track
+recruit_character = FIR_konran
+recruit_character = FIR_waruidesu
+recruit_character = FIR_jeong
+recruit_character = FIR_lee
+recruit_character = FIR_ogodei
+recruit_character = FIR_generic
+
+recruit_character = FIR_azulon
+recruit_character = FIR_ilah
+
+recruit_character = FIR_iroh
+recruit_character = FIR_michi
+set_variable = { FIR.michi_birth_event = 57 }
+
+recruit_character = FIR_ozai
+recruit_character = FIR_ursa
+set_variable = { FIR.ursa_birth_event = 76 }
+
+recruit_character = FIR_lu_ten
+
+recruit_character = FIR_zuko
+recruit_character = FIR_azula
+
+recruit_character = FIR_ukano
+recruit_character = FIR_mai
+recruit_character = FIR_ty_lee
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" }
+
+	create_equipment_variant = {
+		name = "Patrol Class"
+		type = galley_hull_1
+		#name_group = GER_CA_HISTORICAL
+		#parent_version = 0
+		modules = {
+			fixed_ship_crew_slot = ship_archers_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Raider Class"
+		type = firenation_frigate_hull_1
+		#name_group = GER_CA_HISTORICAL
+		#parent_version = 0
+		modules = {
+			fixed_ship_engine_slot = steam_engine_1
+			fixed_ship_armor_slot = light_armor_plates_1
+			fixed_ship_crew_slot = ship_firebender_crew_1
+			fixed_ship_bridge_slot = lookout_1
+			fixed_ship_artillery_slot = ship_catapult_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Explorer Class"
+		type = firenation_cruiser_hull_1
+		#name_group = GER_CA_HISTORICAL
+		#parent_version = 0
+		modules = {
+			fixed_ship_engine_slot = steam_engine_1
+			fixed_ship_storage_slot = storage_room_1
+			fixed_ship_crew_slot = ship_firebender_crew_1
+			fixed_ship_armor_slot = light_armor_plates_1
+			fixed_ship_bridge_slot = lookout_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Destroyer Class"
+		type = firenation_cruiser_hull_1
+		#name_group = GER_CA_HISTORICAL
+		#parent_version = 0
+		modules = {
+			fixed_ship_engine_slot = steam_engine_1
+			fixed_ship_armor_slot = light_armor_plates_1
+			fixed_ship_crew_slot = boarding_crew_1
+			deck_1_custom_slot = ship_catapult_1
+			fixed_ship_artillery_slot = ship_catapult_1
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Capital Class"
+		type = firenation_cruiser_hull_1
+		#name_group = GER_CA_HISTORICAL
+		#parent_version = 0
+		modules = {
+			fixed_ship_engine_slot = steam_engine_1
+			fixed_ship_armor_slot = medium_armor_plates_1
+			fixed_ship_crew_slot = ship_firebender_crew_1
+			deck_1_custom_slot = ship_trebuchet_1
+			fixed_ship_artillery_slot = ship_trebuchet_1
+			fixed_ship_bridge_slot = lookout_1
+			fixed_ship_storage_slot = storage_room_1
+		}
+	}
+
+}
+
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 ={
+
+	#### army, tech and equipment
+	
+
+	OOB = "FIR_52"
+	FIR_starting_tech_52 = yes
+	set_convoys = 682
+
+
+
+	####################### decisions and event stuff
+
+	set_political_power = 200
+
+	set_country_flag = {
+		flag = colonies_category_active
+		value = 1
+	}
+	set_country_flag = {
+		flag = conquest_category_active
+		value = 1
+	}
+	set_variable = { war_meetings_var = 163 }
+	set_variable = { war_meeting_value = war_meetings_var }
+	multiply_variable = { war_meeting_value = 3 }
+
+	set_country_flag = hunting_dragons
+	clr_country_flag = arrival_of_the_great_comet_mission
+
+	add_ideas = {
+
+		### laws
+
+		extensive_conscription
+		fire_volunteers
+		international_trade
+		war_economy_law
+		family_support_3
+		indoctrination
+
+
+		### national spirit
+
+		fire_supremacy_idea
+		FIR_propaganda_2
+		FIR_cultural_change
+		FIR_modern_agriculture
+		FIR_private_investors
+		FIR_earthkingdom_operation_bases_3
+		FIR_colonial_administration
+	}
+
+	remove_ideas = {
+		national_prosperity
+		legacy_of_roku_and_sozin
+	}
+
+
+	set_variable = { logistic_spirit_var = 50 }
+	set_variable = { quality_spirit_var = 64 }
+	set_variable = { unit_leader_spirit_var = 30 }
+
+
+
+	set_politics = {
+		ruling_party = fire_culture
+		last_election = "10.1.1"
+		election_frequency = 120
+		elections_allowed = no
+	}
+
+	set_popularities = {
+		water_culture = 0
+		pluralist_culture = 0
+		fire_culture = 100
+		earth_culture = 0
+		air_culture = 0
+	}
+
+
+	set_variable = { weekly_accumulated_exhaustion = 2 }
+	set_variable = { casualty_accumulated_exhaustion = 4 }
+	set_variable = { occupation_accumulated_exhaustion = 3 }
+
+
+	set_variable = { victory_condition = token:fire_imperialism_spirit }
+	
+
+
+	set_variable = { azulon_x = 90 }
+
+	retire_character = FIR_sozin
+	retire_character = FIR_elua
+
+	promote_character = {
+		character = FIR_azulon
+		ideology = colonialism
+	}
+	add_country_leader_trait = firelord
+	add_country_leader_trait = personality_cult
+
+	FIR_azulon = {
+		set_character_flag = character_born
+		set_character_flag = FIR_character_general
+		set_character_flag = firebending_training
+		set_character_flag = literate
+
+		add_field_marshal_role = {
+			traits = { 
+				skilled_staffer 
+				offensive_infantry 
+				fast_planner 
+				aggressive_assaulter 
+				firelord 
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id=-1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
+	}
+
+	FIR_ilah = {
+		set_character_flag = married_to_azulon
+	}
+
+	FIR_iroh = {
+		set_character_flag = character_born
+	}
+	set_variable = { FIR.iroh_birth_event = 51 }
+	set_variable = { iroh_x = 300 }
+	set_variable = { iroh_y = 116 }
+
+
+}
+
+
+
+ ## #####  ##  ###  #####       #  ##    #
+#     #   #  # #  #   #        ## #  #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
+##    #   #  # #  #   #         #  ##   ##
+
+
+
+106.2.4 ={
+	
+	OOB = "FIR_106"
+
+	set_variable = { logistic_spirit_var = 80 }
+	set_variable = { quality_spirit_var = 70 }
+	set_variable = { unit_leader_spirit_var = 50 }
+
+	FIR_starting_tech_106 = yes
+
+	set_political_power = 250
+
+	set_variable = { weekly_accumulated_exhaustion = 4 }
+	set_variable = { casualty_accumulated_exhaustion = 12 }
+	set_variable = { occupation_accumulated_exhaustion = 17 }
+
+
+	set_variable = { war_meetings_var = 357 }
+	set_variable = { war_meeting_value = war_meetings_var }
+	multiply_variable = { war_meeting_value = 3 }
+
+
+	add_ideas = {
+
+		spirit_ozai_representative_prince
+
+		extensive_conscription
+		fire_volunteers
+		international_trade
+		war_economy_law
+		family_support_3
+		indoctrination
+	}
+
+	remove_ideas = {
+		
+	}
+
+
+	set_variable = { azulon_x = 180 }
+	set_variable = { azulon_y = 6 }
+	set_portraits = {
+		character = FIR_azulon
+		army = { large = "GFX_Portrait_Azulon_old" }
+		civilian = { large = "GFX_Portrait_Azulon_old" }
+	}
+
+	set_variable = { ozai_x = 40 }
+	set_variable = { ozai_y = 6 }
+
+	FIR_ilah = {
+		set_character_flag = married_to_azulon
+	}
+	retire_character = FIR_ilah
+
+	set_variable = { iroh_x = 320 }
+	set_variable = { iroh_y = 6 }
+
+	set_portraits = {
+		character = FIR_iroh
+		army = { large = "GFX_Portrait_Iroh_old" }
+		civilian = { large = "GFX_Portrait_Iroh_old" }
+	}
+
+	FIR_iroh = {
+		set_character_flag = character_born
+		set_character_flag = FIR_character_general
+		set_character_flag = firebending_training
+		set_character_flag = literate
+
+		add_field_marshal_role = {
+			traits = { 
+				prince
+				calm
+				skilled_staffer 
+				offensive_infantry 
+				tactical_mind
+				thorough_planner
+				besieger
+			}
+			skill = 6
+			attack_skill = 5
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 6
+			legacy_id=-1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
+	}
+	set_variable = { FIR.iroh_birth_event = 51 }
+
+	retire_character = FIR_michi
+
+	set_variable = { lu_ten_x = 360 }
+	set_variable = { lu_ten_y = 6 }
+
+	FIR_lu_ten = {
+		set_character_flag = character_born
+		set_character_flag = FIR_character_general
+		set_character_flag = firebending_training
+		set_character_flag = literate
+
+		set_unit_leader_flag = lu_ten
+
+		add_corps_commander_role = {
+			traits = { 
+				prince
+				brave
+				offensive_infantry 
+			}
+			skill = 3
+			attack_skill = 3
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id=-1
+
+			visible = { 
+				has_character_flag = character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
+	}
+	set_variable = { FIR.lu_ten_birth_event = 88 }
+
+	FIR_ozai = {
+		set_character_flag = character_born
+		set_character_flag = firebending_training
+		set_character_flag = literate
+	}
+	set_variable = { FIR.ozai_birth_event = 71 }
+
+	FIR_ursa = {
+		set_character_flag = married_to_ozai
+	}
+
+	set_variable = { zuko_x = 100 }
+	set_variable = { zuko_y = 6 }
+
+	FIR_zuko = {
+		set_character_flag = character_born
+		set_character_flag = literate
+	}
+	set_variable = { FIR.zuko_birth_event = 95 }
+
+	set_variable = { azula_x = 10 }
+	set_variable = { azula_y = 6 }
+
+	FIR_azula = {
+		set_character_flag = character_born
+		set_character_flag = literate
+	}
+	set_variable = { FIR.azula_birth_event = 97 }
+
+
+
+
+	###### irohs siege
+
+	activate_mission = ba_sing_se_conquest_expectations
+	activate_decision = encircle_ba_sing_se
+	activate_decision = breach_the_outer_wall
+
+	set_variable = { FIR.ba_sing_se_siege_days = 365 }
+
+	add_days_mission_timeout = {
+		mission = ba_sing_se_conquest_expectations
+		days = -300
+	}
+	set_country_flag = iroh_besieges_ba_sing_se
+	FIR_iroh = {
+		set_character_flag = away_from_home
+	}
+
+
+
+	if = {
+		limit = { has_dlc = "Man the Guns" }
+		set_naval_oob = "FIR_106_naval_mtg"
+		else = {
+			set_naval_oob = "FIR_106_naval_legacy"
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Steel Armor"
+		type = heavy_armor_equipment_6
+		upgrades = {
+
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Steel Armor with Backpack"
+		type = heavy_armor_equipment_6
+		upgrades = {
+			armor_backpack_upgrade = 7
+		}
+		#obsolete = yes
+	}
+
+}
+
+
+
+ ## #####  ##  ###  #####       #   #   #
+#     #   #  # #  #   #        ##  ##  ##
+ #    #   #### ###    #       # # # # # #
+  #   #   #  # #  #   #         #   #   #
+##    #   #  # #  #   #         #   #   #
+
+
+
+
+111.10.30 ={
+	
+	OOB = "FIR_111"
+	
+	FIR_starting_tech_111 = yes
+
+	set_political_power = 300
+
+	remove_mission = ba_sing_se_conquest_expectations
+
+	add_ideas = {
+		banished_prince
+
+	}
+
+	retire_character = FIR_azulon
+	retire_character = FIR_lu_ten
+
+	promote_character = {
+		character = FIR_ozai
+		ideology = colonialism
+	}
+	add_country_leader_trait = firelord
+	add_country_leader_trait = personality_cult
+
+	set_variable = { ozai_x = 160 }
+	set_variable = { ozai_y = 6 }
+
+	FIR_ursa = {
+		set_character_flag = in_exile
+	}
+
+	FIR_zuko = {
+		set_character_flag = burned_face
+		set_character_flag = in_exile
+	}
+
+	set_variable = { zuko_x = 300 }
+	set_variable = { zuko_y = 6 }
+
+	set_variable = { azula_x = 80 }
+	set_variable = { azula_y = 6 }
+
+	set_variable = { iroh_x = 350 }
+	set_variable = { iroh_y = 6 }
+		
+
+}
+
+
+
+
+
+
+#############################################
+#############################################
+#				HISTORY SETUP				#
+#############################################
+#############################################
+
+
+##############################################   year 12 after rokus death
+
+
+##############################################   year 52 after rokus death
+
+if = {
+	limit = {
+		has_start_date > 13.01.01
+		has_start_date < 53.01.01
+	}
+
+	###### war declaration
+
+	FIR = {
+		declare_war_on = {
+			target = EAR
+			type = annex_everything
+		}
+
+		declare_war_on = {
+			target = NWT
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SWT
+			type = annex_everything
+		}
+	}
+
+
+	###### diplomatic relations
+	FIR = {
+		fire_puppets_52 = yes
+	}
+
+	###### alliances
+	FIR = {
+		fire_faction_52 = yes
+	}
+
+
+}
+
+##############################################   year 106 after rokus death
+
+if = {
+	limit = {
+		has_start_date > 53.01.01
+		has_start_date < 107.01.01
+	}
+
+	###### war declaration
+
+	FIR = {
+		declare_war_on = {
+			target = EAR
+			type = annex_everything
+		}
+
+		declare_war_on = {
+			target = NWT
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SWT
+			type = annex_everything
+		}
+	}
+
+
+	###### diplomatic relations
+	FIR = {
+		fire_puppets_52 = yes
+		fire_puppets_106 = yes
+	}
+
+	###### alliances
+	FIR = {
+		fire_faction_106 = yes
+	}
+}
+
+##############################################   year 111 after rokus death
+
+if = {
+	limit = {
+		has_start_date > 107.01.01
+	}
+
+	###### war declaration
+
+	FIR = {
+		declare_war_on = {
+			target = EAR
+			type = annex_everything
+		}
+
+		declare_war_on = {
+			target = NWT
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = SWT
+			type = annex_everything
+		}
+	}
+
+
+	###### diplomatic relations
+	FIR = {
+		fire_puppets_52 = yes
+		fire_puppets_106 = yes
+		fire_puppets_111 = yes
+	}
+
+	###### alliances
+	FIR = {
+		fire_faction_111 = yes
+	}
+
+
+}

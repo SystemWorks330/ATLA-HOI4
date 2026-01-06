@@ -1,0 +1,237 @@
+
+recalculate_age = {
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 4
+				has_tech = measurements
+				has_tech = kinectics
+				has_tech = wind_manipulation
+				has_tech = domestication
+				has_tech = metaphysics
+			}
+		}
+		set_variable = { tech_age = 2 }
+		add_ideas = age_2_bonus
+	}
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 5
+				has_tech = measurements
+				has_tech = kinectics
+				has_tech = wind_manipulation
+				has_tech = domestication
+				has_tech = metaphysics
+			}
+		}
+		set_variable = { tech_age_complete_1 = 1 }
+	}
+
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 4
+				has_tech = geometry
+				has_tech = astronomy
+				has_tech = smelting
+				has_tech = agriculture
+				has_tech = writing
+			}
+		}
+		set_variable = { tech_age = 3 }
+		remove_ideas = age_2_bonus
+		add_ideas = age_3_bonus
+	}
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 5
+				has_tech = geometry
+				has_tech = astronomy
+				has_tech = smelting
+				has_tech = agriculture
+				has_tech = writing
+			}
+		}
+		set_variable = { tech_age_complete_2 = 1 }
+	}
+
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 4
+				has_tech = architecture
+				has_tech = leverage
+				has_tech = bronze_alloy
+				has_tech = surgery
+				has_tech = natural_philosophy
+			}
+		}
+		set_variable = { tech_age = 4 }
+		remove_ideas = age_2_bonus
+		remove_ideas = age_3_bonus
+		add_ideas = age_4_bonus
+	}
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 5
+				has_tech = architecture
+				has_tech = leverage
+				has_tech = bronze_alloy
+				has_tech = surgery
+				has_tech = natural_philosophy
+			}
+		}
+		set_variable = { tech_age_complete_3 = 1 }
+	}
+
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 4
+				has_tech = statistics
+				has_tech = magnetism
+				has_tech = alchemy
+				has_tech = botanics
+				has_tech = printing_press
+			}
+		}
+		set_variable = { tech_age = 5 }
+		remove_ideas = age_2_bonus
+		remove_ideas = age_3_bonus
+		remove_ideas = age_4_bonus
+		add_ideas = age_5_bonus
+	}
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 5
+				has_tech = statistics
+				has_tech = magnetism
+				has_tech = alchemy
+				has_tech = botanics
+				has_tech = printing_press
+			}
+		}
+		set_variable = { tech_age_complete_4 = 1 }
+	}
+
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 4
+				has_tech = laws_of_nature
+				has_tech = steam_engine
+				has_tech = steel_alloy
+				has_tech = genetics
+				has_tech = scientific_method
+			}
+		}
+		set_variable = { tech_age = 6 }
+		remove_ideas = age_2_bonus
+		remove_ideas = age_3_bonus
+		remove_ideas = age_4_bonus
+		remove_ideas = age_5_bonus
+		add_ideas = age_6_bonus
+	}
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 5
+				has_tech = laws_of_nature
+				has_tech = steam_engine
+				has_tech = steel_alloy
+				has_tech = genetics
+				has_tech = scientific_method
+			}
+		}
+		set_variable = { tech_age_complete_5 = 1 }
+	}
+
+	if = {
+		limit = {
+			count_triggers = {
+				amount = 5
+				has_tech = applied_mathematics
+				has_tech = gas_turbine
+				has_tech = aerodynamics
+				has_tech = chemistry
+				has_tech = energy_manipulation
+			}
+		}
+		set_variable = { tech_age_complete_6 = 1 }
+	}
+
+
+	if = {
+		limit = {
+			NOT = {
+				has_idea = age_1_bonus
+				has_idea = age_2_bonus
+				has_idea = age_3_bonus
+				has_idea = age_4_bonus
+				has_idea = age_5_bonus
+				has_idea = age_6_bonus
+			}
+		}
+		add_ideas = age_1_bonus
+	}
+}
+
+measurements_spread = {
+	if = {
+		limit = {
+			check_variable = { modifier@tech_share_modifier < 1 }
+		}
+		save_event_target_as = invention_origin
+
+		every_country = {
+			set_temp_variable = { invention_spread_chance = modifier@knowledge_spread }
+			multiply_temp_variable = { invention_spread_chance = 100 }
+
+			random = {
+				chance = invention_spread_chance
+				
+				country_event = { id = invention.1  random_days = 30 }
+			}
+		}
+	}
+	if = {
+		limit = {
+			all_country = {
+				has_tech = measurements
+			}
+		}
+		news_event = { id = invention_news.1  random_days = 30 }
+	}
+}
+
+kinectics_spread = {
+	if = {
+		limit = {
+			check_variable = { modifier@tech_share_modifier < 1 }
+		}
+		save_event_target_as = invention_origin
+
+		every_country = {
+			set_temp_variable = { invention_spread_chance = modifier@knowledge_spread }
+			multiply_temp_variable = { invention_spread_chance = 100 }
+
+			random = {
+				chance = invention_spread_chance
+				
+				country_event = { id = invention.2  random_days = 30 }
+			}
+		}
+	}
+	if = {
+		limit = {
+			all_country = {
+				has_tech = kinectics
+			}
+		}
+		news_event = { id = invention_news.2  random_days = 30 }
+	}
+}

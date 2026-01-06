@@ -1,0 +1,129 @@
+capital = 426
+
+OOB = "CHN_12"
+
+ 
+set_country_flag = EARTH_special_forces
+
+EAR_generic_starting_tech = yes
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		oars_tech_1 = 1
+		sails_tech_1 = 1
+		galley_tech_1 = 1
+		barque_tech_1 = 1
+		light_armor_tech_1 = 1
+	}
+
+}
+
+#set_research_slots = 2
+set_convoys = 10
+set_stability = 0.6
+set_war_support = 0.6
+
+ 
+
+
+
+set_politics = {
+	ruling_party = earth_culture
+	last_election = "2.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 10
+	pluralist_culture = 17
+	fire_culture = 10
+	earth_culture = 63
+	air_culture = 0
+}
+
+country_event = { id = chin.1 days = 60 } #Avatar Day
+
+set_variable = { victory_condition = token:chin_legacy_spirit }
+
+add_ideas = {
+	volunteer_earth_nation
+	earth_benders_only
+	local_markets
+	construction_efforts_law
+	family_support_3
+	no_education
+
+	CHN_judical_system
+	#CHN_romanticism
+	CHN_kyoshi_rivalry
+}
+
+recruit_character = CHN_mayor_wang
+recruit_character = CHN_xiang
+recruit_character = CHN_mayor_tong
+recruit_character = CHN_generic
+
+#set_cosmetic_tag = CHN_puppet
+
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 ={
+
+	#set_cosmetic_tag = CHN_puppet
+
+}
+
+
+
+ ## #####  ##  ###  #####       #  ##    #
+#     #   #  # #  #   #        ## #  #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
+##    #   #  # #  #   #         #  ##   ##
+
+
+
+106.2.4 ={
+
+	#set_cosmetic_tag = CHN_puppet
+	
+}
+
+ ## #####  ##  ###  #####       #   #   #
+#     #   #  # #  #   #        ##  ##  ##
+ #    #   #### ###    #       # # # # # #
+  #   #   #  # #  #   #         #   #   #
+##    #   #  # #  #   #         #   #   #
+
+
+
+
+111.10.30 ={
+
+	#set_cosmetic_tag = CHN_puppet
+
+}

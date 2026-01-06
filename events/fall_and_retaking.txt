@@ -1,0 +1,1615 @@
+
+add_namespace = far_news
+add_namespace = fir_battle
+
+### taku battle
+country_event = {
+	id = fir_battle.1
+	title = fir_battle.1.t
+	desc = fir_battle.1.d
+	picture = GFX_report_event_fir_approach_city
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = FIR
+
+		154 = {
+			OWNER = {
+				NOT = {
+					has_full_control_of_state = 154
+				}
+			}
+		}
+
+		FIR = { has_war_with = 154.OWNER }
+	
+		NOT = { has_global_flag = fall_of_taku }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+			
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.1.a
+		### came to stay
+		FIR = { 
+			activate_mission = taku_conquest_expectations
+			country_event = { days = 60 id = fir_battle.2 } 
+		}
+		#custom_effect_tooltip = conquest_expectations
+	}
+	option = {
+		name = fir_battle.1.b
+		### see how it goes
+	}
+	
+}
+
+### taku concerns
+country_event = {
+	id = fir_battle.2
+	title = fir_battle.2.t
+	desc = fir_battle.2.d
+	picture = GFX_report_event_people_concerned
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_active_mission = taku_conquest_expectations
+		NOT = { has_global_flag = fall_of_taku }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+			
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.2.a
+		### make propaganda
+		
+		add_political_power = -100
+	}
+	option = {
+		name = fir_battle.2.b
+		### hide the truth
+
+		add_war_support = -0.05
+	}
+	
+}
+
+### taku failure
+country_event = {
+	id = fir_battle.10
+	title = fir_battle.10.t
+	desc = fir_battle.10.d
+	picture = GFX_report_event_people_concerned
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+			set_country_flag = taku_conquest_failed
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.10.a
+		### too bad
+
+	}
+	
+}
+
+# fall of taku
+country_event = {
+	id = fir_battle.3
+	title = fir_battle.3.t
+	desc = fir_battle.3.d
+	picture = GFX_report_event_fir_soldiers
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = { #a great idea!
+		name = fir_battle.3.a
+		ai_chance = {
+			base = 100
+		}
+		154 = {
+			add_compliance = 40
+
+			set_temp_variable = {
+				var = one_time_earth_add
+				value = -40
+				tooltip = add_earth_pop_100_tt
+			}
+			set_temp_variable = { one_time_fire_add = 0 }
+			set_temp_variable = { one_time_water_add = 0 }
+			set_temp_variable = { one_time_air_add = 0 }
+			set_temp_variable = { one_time_nonbender_add = 0 }
+
+			culture_one_time_change_state = yes
+			culture_value_recalc_state = yes
+			state_culture_pie_chart_recalc = yes
+
+			culture_growth_calculation_state = yes
+		}
+		add_named_threat = { 
+		    threat = 2 
+		    name = FIR_atrocity
+		}
+		hidden_effect = {
+			every_state = {
+				limit = {
+					OR = {
+					state = 154
+					}
+				}
+				add_dynamic_modifier = { modifier = destroyed_city }
+			}
+			set_victory_points = {
+				province = 563
+				value = 5
+			}
+			set_victory_points = {
+				province = 6901
+				value = 10
+			}
+		}
+	}
+
+	option = { #rather not
+		name = fir_battle.3.b
+		ai_chance = {
+			base = 0
+		}
+		FIR = {
+			add_stability = -0.05
+			add_timed_idea = {
+				idea = unit_morale_dropped
+				days = 30
+			}
+		}
+	}
+
+}
+
+news_event = {
+	id = far_news.1
+	title = far_news.1.t
+	desc = far_news.1.d
+	picture = GFX_far_news_event_001
+	
+	major = yes
+	
+	trigger = {
+		154 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		OR = {
+			154 = { is_owned_by = TAK }
+			154 = { is_owned_by = EAR }
+		}
+		OR = {
+			FIR = { has_war_with = TAK }
+			FIR = { has_war_with = EAR }
+		}
+		NOT = { has_global_flag = fall_of_taku }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_taku
+ 			FIR = { country_event = { hours = 12 id = fir_battle.3 } }
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.1.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.1.b
+		trigger = { 
+			TAG = FIR
+			NOT = {
+				has_country_flag = taku_conquest_expectations
+			}
+		}
+	}
+	option = {
+		name = far_news.1.b_success
+		trigger = { 
+			TAG = FIR
+			has_country_flag = taku_conquest_expectations
+			NOT = {
+				has_country_flag = taku_conquest_failed
+			}
+		}
+
+		FIR_victory = yes
+	}
+	option = {
+		name = far_news.1.b_failure
+		trigger = { 
+			TAG = FIR
+			has_country_flag = taku_conquest_expectations
+			has_country_flag = taku_conquest_failed
+		}
+		add_to_variable = {
+			var = weekly_accumulated_exhaustion
+			value = 5
+			tooltip = war_weariness_add_tooltip
+		}
+	}
+	option = {
+		name = far_news.1.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+
+
+### yu dao battle
+country_event = {
+	id = fir_battle.4
+	title = fir_battle.4.t
+	desc = fir_battle.4.d
+	picture = GFX_report_event_fir_approach_field
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = FIR
+
+		OR = {
+			230 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 230
+					}
+				}
+			}
+			212 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 212
+					}
+				}
+			}
+		}
+		
+		FIR = { has_war_with = 230.OWNER }
+
+		NOT = { has_global_flag = fall_of_yudao }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+			
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.4.a
+		### our bread basket
+		FIR = { 
+			activate_mission = yudao_conquest_expectations
+			country_event = { days = 60 id = fir_battle.5 } 
+		}
+		#custom_effect_tooltip = conquest_expectations
+	}
+	option = {
+		name = fir_battle.4.b
+		### see how it goes
+	}
+	
+}
+
+### yu dao concerns
+country_event = {
+	id = fir_battle.5
+	title = fir_battle.5.t
+	desc = fir_battle.5.d
+	picture = GFX_report_event_people_concerned
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_active_mission = yudao_conquest_expectations
+		NOT = { has_global_flag = fall_of_yudao }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+			
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.5.a
+		### make propaganda
+		
+		add_political_power = -100
+		add_days_mission_timeout = {
+			mission = yudao_conquest_expectations
+			days = 30
+		}
+	}
+	option = {
+		name = fir_battle.5.b
+		### hide the truth
+
+		add_war_support = -0.05
+	}
+	
+}
+
+### yu dao failure
+country_event = {
+	id = fir_battle.6
+	title = fir_battle.6.t
+	desc = fir_battle.6.d
+	picture = GFX_report_event_people_concerned
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+ 		hidden_effect = {
+			set_country_flag = yudao_conquest_failed
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.6.a
+		### the war is not going well
+		
+		
+	}
+	
+}
+
+news_event = {
+	id = far_news.2
+	title = far_news.2.t
+	desc = far_news.2.d
+	picture = GFX_far_news_event_002
+	
+	major = yes
+	
+	trigger = {
+		230 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		OR = {
+			230 = { is_owned_by = WUL }
+			230 = { is_owned_by = EAR }
+		}
+		OR = {
+			FIR = { has_war_with = WUL }
+			FIR = { has_war_with = EAR }
+		}
+		NOT = { has_global_flag = fall_of_yudao }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_yudao
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.2.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.2.b
+		trigger = { 
+			TAG = FIR
+			NOT = {
+				has_active_mission = yudao_conquest_expectations
+			}
+		}
+	}
+	option = {
+		name = far_news.2.b_success
+		trigger = { 
+			TAG = FIR
+			has_active_mission = yudao_conquest_expectations
+			NOT = {
+				has_country_flag = yudao_conquest_failed
+			}
+		}
+
+		FIR_victory = yes
+	}
+	option = {
+		name = far_news.2.b_failure
+		trigger = { 
+			TAG = FIR
+			has_country_flag = yudao_conquest_failed
+		}
+		add_to_variable = {
+			var = weekly_accumulated_exhaustion
+			value = 5
+			tooltip = war_weariness_add_tooltip
+		}
+	}
+	option = {
+		name = far_news.2.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+
+### garsai battle
+country_event = {
+	id = fir_battle.7
+	title = fir_battle.7.t
+	desc = fir_battle.7.d
+	picture = GFX_report_event_fir_approach_field
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = FIR
+		OR = {
+			164 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 164
+					}
+				}
+			}
+			124 = {
+				OWNER = {
+					NOT = {
+						has_full_control_of_state = 124
+					}
+				}
+			}
+		}
+		
+		FIR = { has_war_with = 124.OWNER }
+
+		NOT = { has_global_flag = fall_of_garsai }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+			
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.7.a
+		### our bread basket
+		hidden_effect = {
+			FIR = { 
+				activate_mission = garsai_conquest_expectations
+				country_event = { days = 60 id = fir_battle.8 } 
+			}
+		}
+		custom_effect_tooltip = conquest_expectations
+	}
+	option = {
+		name = fir_battle.7.b
+		### see how it goes
+	}
+	
+}
+
+### garsai concerns
+country_event = {
+	id = fir_battle.8
+	title = fir_battle.8.t
+	desc = fir_battle.8.d
+	picture = GFX_report_event_people_concerned
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	trigger = {
+		has_active_mission = garsai_conquest_expectations
+		NOT = { has_global_flag = fall_of_garsai }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+			
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.8.a
+		### make propaganda
+		
+		add_political_power = -100
+		add_days_mission_timeout = {
+			mission = garsai_conquest_expectations
+			days = 30
+		}
+	}
+	option = {
+		name = fir_battle.8.b
+		### hide the truth
+
+		add_war_support = -0.05
+	}
+	
+}
+
+### garsai failure
+country_event = {
+	id = fir_battle.9
+	title = fir_battle.9.t
+	desc = fir_battle.9.d
+	picture = GFX_report_event_people_concerned
+	
+	fire_only_once = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+ 		hidden_effect = {
+			set_country_flag = garsai_conquest_failed
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.9.a
+		### the war is not going well
+		
+		
+	}
+	
+}
+
+### ba sing se siege starts battle
+country_event = {
+	id = fir_battle.11
+	title = fir_battle.11.t
+	desc = fir_battle.11.desc
+	picture = GFX_report_event_fir_approach_ba_sing_se
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = FIR
+		ba_sing_se_approached = yes
+		
+		FIR = { has_war_with = 179.OWNER }
+
+		NOT = { has_global_flag = fall_of_ba_sing_se }
+		NOT = { has_active_mission = ba_sing_se_conquest_expectations }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+			
+		}
+ 	}
+	
+	option = {
+		name = fir_battle.11.a
+
+		### general irohs siege
+
+		trigger = {
+			has_character = FIR_iroh
+			FIR_iroh = {
+				has_character_flag = character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = FIR_character_general
+			}
+		}
+
+		FIR = { 
+			activate_mission = ba_sing_se_conquest_expectations
+			set_variable = { FIR.ba_sing_se_siege_days = 365 }
+			activate_decision = encircle_ba_sing_se
+			activate_decision = breach_the_outer_wall
+
+			set_country_flag = iroh_besieges_ba_sing_se
+			FIR_iroh = {
+				set_character_flag = away_from_home
+			}
+		}
+	}
+
+	option = {
+		name = fir_battle.11.b
+
+		### general ozais siege
+
+		trigger = {
+			has_character = FIR_ozai
+			FIR_ozai = {
+				has_character_flag = character_born
+				NOT = { has_character_flag = FIR_character_death }
+				has_character_flag = FIR_character_general
+			}
+		}
+
+		FIR = { 
+			activate_mission = ba_sing_se_conquest_expectations
+			activate_decision = encircle_ba_sing_se
+			activate_decision = breach_the_outer_wall
+
+			set_country_flag = ozai_besieges_ba_sing_se
+		}
+	}
+
+	option = {
+		name = fir_battle.11.c
+
+		### random general siege
+
+		trigger = {
+			
+		}
+
+		FIR = { 
+			activate_mission = ba_sing_se_conquest_expectations
+			activate_decision = encircle_ba_sing_se
+			activate_decision = breach_the_outer_wall
+		}
+	}
+
+	option = {
+		name = fir_battle.11.d
+
+		### no siege
+
+		trigger = {
+			
+		}
+
+		
+	}
+	
+}
+
+
+news_event = {
+	id = far_news.10
+	title = far_news.10.t
+	desc = far_news.10.d
+	picture = GFX_far_news_event_010
+	
+	major = yes
+	
+	trigger = {
+		179 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		179 = { is_owned_by = EAR }
+		FIR = { has_war_with = EAR }
+		NOT = { has_global_flag = fall_of_ba_sing_se }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_ba_sing_se
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.10.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.10.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.10.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+
+news_event = {
+	id = far_news.22
+	title = far_news.22.t
+	desc = far_news.22.desc
+	picture = GFX_far_news_event_022
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	immediate = {
+ 		hidden_effect = {
+ 			
+		}
+ 	}
+
+	
+	option = {
+		name = far_news.22.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.22.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.22.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+
+	option = {
+		name = far_news.22.d
+		trigger = { 
+			TAG = FIR 
+			has_country_flag = iroh_besieges_ba_sing_se
+		}
+	}
+
+}
+
+news_event = {
+	id = far_news.3
+	title = far_news.3.t
+	desc = far_news.3.d
+	picture = GFX_far_news_event_003
+	
+	major = yes
+	
+	trigger = {
+		124 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		OR = {
+			124 = { is_owned_by = XIN }
+			124 = { is_owned_by = EAR }
+		}
+		OR = {
+			FIR = { has_war_with = XIN }
+			FIR = { has_war_with = EAR }
+		}
+		NOT = { has_global_flag = fall_of_garsai }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_garsai
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.3.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.3.b
+		trigger = { 
+			TAG = FIR
+			NOT = {
+				has_active_mission = garsai_conquest_expectations
+			}
+		}
+	}
+	option = {
+		name = far_news.3.b_success
+		trigger = { 
+			TAG = FIR
+			has_active_mission = garsai_conquest_expectations
+			NOT = {
+				has_country_flag = garsai_conquest_failed
+			}
+		}
+
+		FIR_victory = yes
+	}
+	option = {
+		name = far_news.3.b_failure
+		trigger = { 
+			TAG = FIR
+			has_country_flag = garsai_conquest_failed
+		}
+		add_to_variable = {
+			var = weekly_accumulated_exhaustion
+			value = 5
+			tooltip = war_weariness_add_tooltip
+		}
+	}
+	option = {
+		name = far_news.3.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+
+news_event = {
+	id = far_news.4
+	title = far_news.4.t
+	desc = far_news.4.d
+	picture = GFX_far_news_event_004
+	
+	major = yes
+	
+	trigger = {
+		171 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		OR = {
+			171 = { is_owned_by = YUE }
+			171 = { is_owned_by = EAR }
+		}
+		OR = {
+			FIR = { has_war_with = YUE }
+			FIR = { has_war_with = EAR }
+		}
+		NOT = { has_global_flag = fall_of_tienhai }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_tienhai
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.4.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.4.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.4.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+
+news_event = {
+	id = far_news.5
+	title = far_news.5.t
+	desc = far_news.5.d
+	picture = GFX_far_news_event_005
+	
+	major = yes
+	
+	trigger = {
+		243 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		OR = {
+			243 = { is_owned_by = HAN }
+			243 = { is_owned_by = EAR }
+		}
+		OR = {
+			FIR = { has_war_with = HAN }
+			FIR = { has_war_with = EAR }
+		}
+		NOT = { has_global_flag = fall_of_hantui }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_hantui
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.5.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.5.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.5.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+
+news_event = {
+	id = far_news.6
+	title = far_news.6.t
+	desc = far_news.6.d
+	picture = GFX_far_news_event_006
+	
+	major = yes
+	
+	trigger = {
+		276 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		OR = {
+			276 = { is_owned_by = GDD }
+			276 = { is_owned_by = EAR }
+		}
+		OR = {
+			FIR = { has_war_with = GDD }
+			FIR = { has_war_with = EAR }
+		}
+		NOT = { has_global_flag = fall_of_gaipan }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_gaipan
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.6.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.6.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.6.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+news_event = {
+	id = far_news.7
+	title = far_news.7.t
+	desc = far_news.7.d
+	picture = GFX_far_news_event_007
+	
+	major = yes
+	
+	trigger = {
+		29 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		OR = {
+			29 = { is_owned_by = GAO }
+			29 = { is_owned_by = EAR }
+		}
+		OR = {
+			FIR = { has_war_with = GAO }
+			FIR = { has_war_with = EAR }
+		}
+		NOT = { has_global_flag = fall_of_gaoling }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_gaoling
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.7.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.7.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.7.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+news_event = {
+	id = far_news.8
+	title = far_news.8.t
+	desc = far_news.8.d
+	picture = GFX_far_news_event_008
+	
+	major = yes
+	
+	trigger = {
+		205 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		OR = {
+			205 = { is_owned_by = OMS }
+			205 = { is_owned_by = EAR }
+		}
+		OR = {
+			FIR = { has_war_with = OMS }
+			FIR = { has_war_with = EAR }
+		}
+		NOT = { has_global_flag = fall_of_omashu }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_omashu
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.8.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.8.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.8.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+news_event = {
+	id = far_news.9
+	title = far_news.9.t
+	desc = far_news.9.d
+	picture = GFX_far_news_event_009
+	
+	major = yes
+	
+	trigger = {
+		434 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		OR = {
+			434 = { is_owned_by = YII }
+			434 = { is_owned_by = EAR }
+		}
+		OR = {
+			FIR = { has_war_with = YII }
+			FIR = { has_war_with = EAR }
+		}
+		NOT = { has_global_flag = fall_of_yi }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_yi
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.9.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.9.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.9.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+
+news_event = {
+	id = far_news.11
+	title = far_news.11.t
+	desc = far_news.11.d
+	picture = GFX_far_news_event_011
+	
+	major = yes
+	
+	trigger = {
+		date < 105.1.1
+		OR = {
+			EAR= { owns_state = 40}
+			FIR = { controls_state = 40}
+		}
+		OR = {
+			EAR = { owns_state = 63}
+			FIR = { controls_state = 63}
+		}
+		OR = {
+			EAR = { owns_state = 115}
+			FIR = { controls_state = 115}
+		}
+		FIR = { has_war_with = EAR }
+		NOT = { has_global_flag = crossing_the_taihua }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = crossing_the_taihua
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.11.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.11.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.11.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+
+news_event = {
+	id = far_news.12
+	title = far_news.12.t
+	desc = far_news.12.d
+	picture = GFX_far_news_event_012
+	
+	major = yes
+	
+	trigger = {
+		233 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		OR = {
+			233 = { is_owned_by = WBA }
+			233 = { is_owned_by = EAR }
+		}
+		OR = {
+			FIR = { has_war_with = YII }
+			FIR = { has_war_with = EAR }
+		}
+		FIR = { has_war_with = EAR }
+		NOT = { has_global_flag = fall_of_basingse }
+		NOT = { has_global_flag = crossing_the_pass }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = crossing_the_pass
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.12.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.12.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.12.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+
+news_event = {
+	id = far_news.13
+	title = far_news.13.t
+	desc = far_news.13.d
+	picture = GFX_far_news_event_013
+	
+	major = yes
+	
+	trigger = {
+		OR = {
+			EAR = { owns_state = 399}
+			FIR = { controls_state = 399}
+		}
+		OR = {
+			EAR = { owns_state = 195}
+			FIR = { controls_state = 195}
+		}
+		OR = {
+			EAR = { owns_state = 132}
+			FIR = { controls_state = 132}
+		}
+		OR = {
+			EAR = { owns_state = 186}
+			FIR = { controls_state = 186}
+		}
+		OR = {
+			EAR = { owns_state = 358}
+			FIR = { controls_state = 358}
+		}
+		FIR = { has_war_with = EAR }
+		NOT = { has_global_flag = crossing_the_si_wong }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = crossing_the_si_wong
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.10.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+		}
+	}
+	option = {
+		name = far_news.10.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.10.c
+		trigger = { has_dynamic_modifier = { modifier = earth_nation } }
+	}
+}
+
+news_event = {
+	id = far_news.14
+	title = far_news.14.t
+	desc = far_news.14.d
+	picture = GFX_far_news_event_014
+	
+	major = yes
+	
+	trigger = {
+		85 = { is_owned_by = SWT }
+		85 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		FIR = { has_war_with = SWT }
+		NOT = { has_global_flag = fall_of_the_south }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_the_south
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.14.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				TAG = SWT
+			}
+		}
+	}
+	option = {
+		name = far_news.14.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.14.c
+		trigger = { TAG = SWT }
+	}
+}
+
+news_event = {
+	id = far_news.15
+	title = far_news.15.t
+	desc = far_news.15.d
+	picture = GFX_far_news_event_015
+	
+	major = yes
+	
+	trigger = {
+		17 = { is_owned_by = NWT }
+		17 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		FIR = { has_war_with = NWT }
+		NOT = { has_global_flag = fall_of_the_north }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_the_north
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.15.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				TAG = NWT
+			}
+		}
+	}
+	option = {
+		name = far_news.15.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.15.c
+		trigger = { TAG = NWT }
+	}
+}
+
+news_event = {
+	id = far_news.16
+	title = far_news.16.t
+	desc = far_news.16.d
+	picture = GFX_far_news_event_016
+	
+	major = yes
+	
+	trigger = {
+		105 = { is_owned_by = KYI }
+		105 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		FIR = { has_war_with = KYI }
+		NOT = { has_global_flag = fall_of_kyoshi }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_kyoshi
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.16.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				TAG = KYI
+			}
+		}
+	}
+	option = {
+		name = far_news.16.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.16.c
+		trigger = { TAG = KYI }
+	}
+}
+news_event = {
+	id = far_news.17
+	title = far_news.17.t
+	desc = far_news.17.d
+	picture = GFX_far_news_event_017
+	
+	major = yes
+	
+	trigger = {
+		117 = { is_owned_by = SWA }
+		117 = {
+			controller = {
+				OR = {
+					tag = FIR
+					is_puppet_of = FIR
+				}
+			}
+		}
+		FIR = { has_war_with = SWA }
+		NOT = { has_global_flag = fall_of_swamp }
+	}
+
+	immediate = {
+ 		hidden_effect = {
+ 			set_global_flag = fall_of_swAMP
+		}
+ 	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = far_news.16.a
+		trigger = {
+			NOT = {
+				TAG = FIR
+				TAG = SWA
+			}
+		}
+	}
+	option = {
+		name = far_news.16.b
+		trigger = { TAG = FIR }
+	}
+	option = {
+		name = far_news.16.c
+		trigger = { TAG = SWA }
+	}
+}

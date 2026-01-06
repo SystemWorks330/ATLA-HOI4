@@ -1,0 +1,26 @@
+
+inventions_mathematics = {
+	blueprint_image = GFX_generic_plane_blueprint_background
+	color = {255 255 0} #YELLOW
+	program_background = "GFX_sp_facility_card_bg"
+}
+
+inventions_physics = {
+	color = {0 0 255}
+	program_background = "GFX_sp_facility_card_bg"
+}
+
+inventions_chemistry = {
+	color = {255 0 0}
+	program_background = "GFX_sp_facility_card_bg"
+}
+
+inventions_biology = {
+	color = {0 255 0}
+	program_background = "GFX_sp_facility_card_bg"
+}
+
+inventions_philosophy = {
+	color = {0 255 255}
+	program_background = "GFX_sp_facility_card_bg"
+}

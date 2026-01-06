@@ -1,0 +1,104 @@
+ideas = {
+
+	hidden_ideas = {
+
+		kyoshi_isolation_spirit = {
+			
+			removal_cost = -1
+
+			on_add = {
+				set_variable = { victory_condition = token:kyoshi_isolation_spirit }
+			}
+
+			cancel = {
+				NOT = {
+					check_variable = { victory_condition = token:kyoshi_isolation_spirit }
+				}
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
+	}
+
+	country = {
+
+		the_kyoshi_warriors = {
+			
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				female_divisional_commander_chance = 2
+				female_random_army_leader_chance = 2
+				female_random_admiral_chance = 2
+			}
+		}
+		KYI_signed_memorandum_of_cooperation_with_teka_kimonos_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			research_bonus = {
+				bender = 0.25
+				industry_tech = -0.15
+			}
+		}
+		KYI_signed_memorandum_of_cooperation_with_ringo_kimonos_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			research_bonus = {
+				bender = 0.20
+				industry_tech = -0.05
+				society_reforms = -0.09
+			}
+		}
+
+	}
+	melee_designer = {
+		designer = yes
+		Teka_kimonos = {
+			allowed = {
+				tag = KYI
+			}
+			allowed_to_remove = {
+				NOT = {
+					has_idea = KYI_signed_memorandum_of_cooperation_with_teka_kimonos_idea
+				}
+			}	
+			cost = 135
+			removal_cost = -1
+			traits = {
+				ragged_kimonos
+			}
+		}
+		Ringo_kimonos = {
+			allowed = {
+				tag = KYI
+			}
+			visible = {
+				has_country_flag = KYI_Ringo_kimonos_enabled
+			}
+			allowed_to_remove = {
+				NOT = {
+					has_idea = KYI_signed_memorandum_of_cooperation_with_ringo_kimonos_idea
+				}
+			}	
+			cost = 101
+			removal_cost = -1
+			traits = {
+				light_kimonos
+			}
+		}
+	}	
+
+}

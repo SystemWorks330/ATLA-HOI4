@@ -1,0 +1,169 @@
+
+ideas = {
+	
+	hidden_ideas = {
+		invention_made = {
+
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+				research_speed_factor = -0.2
+			}
+		}
+
+		age_1_bonus = {
+
+			available = {
+				check_variable = { tech_age < 2 }
+			}
+			
+			removal_cost = -1
+
+			research_bonus = {
+				age_1 = 1
+				age_2 = -0.1
+				age_3 = -0.2
+				age_4 = -0.3
+				age_5 = -0.4
+				age_6 = -0.5
+			}
+
+			modifier = {
+				knowledge_cap = 100
+
+				fossile_fuels_demand = -1
+				iron_demand = -1
+				steel_demand = -1
+				luxury_goods_demand = -1
+				bricks_demand = -1
+				steel_beams_demand = -1
+			}
+		}
+		age_2_bonus = {
+
+			available = {
+				check_variable = { tech_age < 3 }
+			}
+			
+			removal_cost = -1
+
+			research_bonus = {
+				age_1 = 1.05
+				age_2 = 1
+				age_3 = -0.1
+				age_4 = -0.2
+				age_5 = -0.3
+				age_6 = -0.4
+			}
+
+			modifier = {
+				knowledge_cap = 200
+
+				fossile_fuels_demand = -1
+				steel_demand = -1
+				luxury_goods_demand = -1
+				steel_beams_demand = -1
+			}
+		}
+		age_3_bonus = {
+
+			available = {
+				check_variable = { tech_age < 4 }
+			}
+			
+			removal_cost = -1
+
+			research_bonus = {
+				age_1 = 1.1
+				age_2 = 1.05
+				age_3 = 1
+				age_4 = -0.1
+				age_5 = -0.2
+				age_6 = -0.3
+			}
+
+			modifier = {
+				knowledge_cap = 300
+
+				steel_demand = -1
+				steel_beams_demand = -1
+			}
+		}
+		age_4_bonus = {
+
+			available = {
+				check_variable = { tech_age < 5 }
+			}
+			
+			removal_cost = -1
+
+			research_bonus = {
+				age_1 = 1.1
+				age_2 = 1.1
+				age_3 = 1.05
+				age_4 = 1
+				age_5 = -0.1
+				age_6 = -0.2
+			}
+
+			modifier = {
+				knowledge_cap = 400
+
+				steel_beams_demand = -1
+			}
+		}
+		age_5_bonus = {
+
+			available = {
+				check_variable = { tech_age < 6 }
+			}
+			
+			removal_cost = -1
+
+			research_bonus = {
+				age_1 = 1.1
+				age_2 = 1.1
+				age_3 = 1.1
+				age_4 = 1.05
+				age_5 = 1
+				age_6 = -0.1
+			}
+
+			modifier = {
+				knowledge_cap = 500
+
+				luxury_goods_demand = 0.2
+			}
+		}
+		age_6_bonus = {
+
+			available = {
+				
+			}
+			
+			removal_cost = -1
+
+			research_bonus = {
+				age_1 = 1.1
+				age_2 = 1.1
+				age_3 = 1.1
+				age_4 = 1.1
+				age_5 = 1.05
+				age_6 = 1
+			}
+			
+			modifier = {
+				knowledge_cap = 600
+
+				luxury_goods_demand = 0.5
+			}
+		}
+		
+	}
+}

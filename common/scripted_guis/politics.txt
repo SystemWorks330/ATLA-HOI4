@@ -1,0 +1,409 @@
+scripted_gui = {
+
+	major_spirit_container = {
+		context_type = player_context
+		
+		window_name = "majorspiritcontainer"
+		parent_window_token = politics_tab
+		
+		visible = {
+			always = yes
+		}
+		
+		triggers = {
+			
+		}
+
+		properties = {
+			major_spirit_box = {
+				image = "[GetVictoryCondition]"
+			}
+		}
+		
+	}
+
+	major_spirit_diplo_view = {
+		context_type = selected_country_context
+
+		window_name = "majorspiritcontainerdiplo"
+		parent_window_token = selected_country_view_diplomacy
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+			major_spirit_box = {
+				image = "[GetVictoryCondition]"
+			}
+		}
+	}
+
+	extra_country_info_view = {
+		context_type = selected_country_context
+
+		window_name = "extracountryinfocontainer"
+		parent_window_token = selected_country_view
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+			operatives_visible = {
+				FROM =  {
+					NOT = {
+						tag = ROOT
+					}
+				}
+			}
+			available_spies_visible = {
+				FROM =  {
+					tag = ROOT
+				}
+			}
+			send_spies_visible = {
+				FROM =  {
+					NOT = {
+						tag = ROOT
+					}
+				}
+			}
+			send_spies_click_enabled = {
+				#ROOT = {
+				#	check_variable = { mtth:available_spies > 0 }
+				#}
+			}
+			recall_spies_visible = {
+				FROM =  {
+					tag = ROOT
+				}
+			}
+		}
+
+		effects = {
+			send_spies_click = {
+				if = {
+					limit = {
+						ROOT = {
+							check_variable = { mtth:available_spies > 0 }
+						}
+					}
+					if = {
+						limit = {
+							NOT = {
+								is_in_array = {
+									array = ROOT.countries_with_spies
+									value = FROM.id
+								}
+							}
+						}
+						add_to_array = {
+							array = ROOT.countries_with_spies
+							value = FROM.id
+						}
+					}
+					add_to_variable = { ROOT.spies_send_to_@FROM = 1 }
+					add_to_variable = { ROOT.available_spies = -1 }
+				}
+			}
+			send_spies_right_click = {
+				if = {
+					limit = {
+						check_variable = { ROOT.spies_send_to_@FROM > 0 }
+					}
+					add_to_variable = { ROOT.spies_send_to_@FROM = -1 }
+					add_to_variable = { ROOT.available_spies = 1 }
+				}
+			}
+			recall_spies_click = {
+				for_each_scope_loop = {
+					array = ROOT.countries_with_spies
+
+					add_to_variable = { PREV.available_spies = PREV.spies_send_to_@THIS }
+					clear_variable = PREV.spies_send_to_@THIS
+				}
+			}
+			select_mission_click = {
+				if = {
+					limit = {
+						NOT = { has_variable = ROOT.spy_operation_in_@FROM }
+					}
+					set_variable = { ROOT.spy_operation_in_@FROM = 1 }
+				}
+				add_to_variable = { ROOT.spy_operation_in_@FROM = 1 }
+				if = {
+					limit = {
+						check_variable = { ROOT.spy_operation_in_@FROM > 4 }
+					}
+					set_variable = { ROOT.spy_operation_in_@FROM = 1 }
+				}
+			}
+		}
+		properties = {
+			select_mission = {
+				frame = ROOT.spy_operation_in_@FROM
+			}
+			
+		}
+	}
+	
+	political_ideology_new = {
+		context_type = player_context
+		
+		window_name = "countrypoliticsnew"
+		parent_window_token = politics_tab
+		
+		visible = {
+			always = yes
+		}
+		
+		properties = {
+			state_indicator = {
+				x = centralisation_show
+			}
+			state_target = {
+				x = mtth:legitimacy_target
+			}
+
+			air_1 = {
+				image = "[get_air_icon_1]"
+			}
+			air_2 = {
+				image = "[get_air_icon_2]"
+			}
+			air_3 = {
+				image = "[get_air_icon_3]"
+			}
+			air_4 = {
+				image = "[get_air_icon_4]"
+			}
+			air_5 = {
+				image = "[get_air_icon_5]"
+			}
+		}
+
+		triggers = {
+
+			revolt_risk_icon_visible = {
+				check_variable = { peasant_revolt_risk_variable > 0}
+				NOT = { TAG = SAT TAG = WAT TAG = EAT TAG = NAT }
+			}
+			no_revolt_risk_icon_visible = {
+				check_variable = { peasant_revolt_risk_variable = 0}
+				NOT = { TAG = SAT TAG = WAT TAG = EAT TAG = NAT }
+			}
+			revolt_risk_visible = {
+				check_variable = { peasant_revolt_risk_variable > 0}
+				NOT = { TAG = SAT TAG = WAT TAG = EAT TAG = NAT }
+			}
+
+
+			peasant_icon_visible = {
+				has_dynamic_modifier = { modifier = peasant_dynamic_modifier }
+			}
+			nobility_icon_visible = {
+				has_dynamic_modifier = { modifier = nobility_dynamic_modifier }
+			}
+			academics_icon_visible = {
+				has_dynamic_modifier = { modifier = academics_dynamic_modifier }
+			}
+			labourers_icon_visible = {
+				has_dynamic_modifier = { modifier = labourers_dynamic_modifier }
+			}
+			industrialist_icon_visible = {
+				has_dynamic_modifier = { modifier = industrialist_dynamic_modifier }
+			}
+			clergy_icon_visible = {
+				has_dynamic_modifier = { modifier = clergy_dynamic_modifier }
+			}
+
+
+			state_indicator_visible = {
+				NOT = {
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
+				}
+			}
+			state_target_visible = {
+				NOT = {
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
+				}
+			}
+			legitimacy_level_visible = {
+				NOT = {
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
+				}
+			}
+
+			fir_legit_bg_visible = {
+				has_government = fire_culture
+			}
+			fir_high_legitimacy_visible = {
+				has_government = fire_culture
+			}
+			fir_low_legitimacy_visible = {
+				has_government = fire_culture
+			}
+
+			ear_legit_bg_visible = {
+				has_government = earth_culture
+			}
+			ear_high_legitimacy_visible = {
+				has_government = earth_culture
+			}
+			ear_low_legitimacy_visible = {
+				has_government = earth_culture
+			}
+
+			water_legit_bg_visible = {
+				has_government = water_culture
+			}
+			water_high_legitimacy_visible = {
+				has_government = water_culture
+			}
+			water_low_legitimacy_visible = {
+				has_government = water_culture
+			}
+
+			air_legit_bg_visible = {
+				has_government = air_culture
+				NOT = {
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
+				}
+			}
+			air_high_legitimacy_visible = {
+				has_government = air_culture
+				NOT = {
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
+				}
+			}
+			air_low_legitimacy_visible = {
+				has_government = air_culture
+				NOT = {
+					AND = {
+						OR = {
+							original_tag = SAT
+							original_tag = EAT
+							original_tag = NAT
+							original_tag = WAT
+						}
+						NOT = { has_country_flag = air_council_dissolved }
+					}
+				}
+			}
+
+			air_spirit_bg_visible = {
+				has_government = air_culture
+				OR = {
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
+				}
+				NOT = { has_country_flag = air_council_dissolved }
+			}
+			air_council_visible = {
+				has_government = air_culture
+				OR = {
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
+				}
+				NOT = { has_country_flag = air_council_dissolved }
+			}
+			air_1_visible = {
+				has_government = air_culture
+				OR = {
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
+				}
+				NOT = { has_country_flag = air_council_dissolved }
+			}
+			air_2_visible = {
+				has_government = air_culture
+				OR = {
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
+				}
+				NOT = { has_country_flag = air_council_dissolved }
+			}
+			air_3_visible = {
+				has_government = air_culture
+				OR = {
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
+				}
+				NOT = { has_country_flag = air_council_dissolved }
+			}
+			air_4_visible = {
+				has_government = air_culture
+				OR = {
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
+				}
+				NOT = { has_country_flag = air_council_dissolved }
+			}
+			air_5_visible = {
+				has_government = air_culture
+				OR = {
+					original_tag = SAT
+					original_tag = EAT
+					original_tag = NAT
+					original_tag = WAT
+				}
+				NOT = { has_country_flag = air_council_dissolved }
+			}
+		}
+		
+	}
+	
+}

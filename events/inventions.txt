@@ -1,0 +1,113 @@
+﻿###########################
+# News Events
+###########################
+
+add_namespace = invention
+add_namespace = invention_news
+
+
+
+# measurements
+country_event = {
+	id = invention.1
+	title = invention.1.t
+	desc = invention.1.d
+	picture = GFX_invention_event_001
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_tech = measurements
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_technology = {
+				measurements = 1
+			}
+			if = {
+				limit = {
+					all_country = {
+						has_tech = measurements
+					}
+				}
+				news_event = { id = invention_news.1  random_days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = invention.1.a
+	}
+}
+
+news_event = {
+	id = invention_news.1
+	title = invention_news.1.t
+	desc = invention_news.1.d
+	picture = GFX_invention_news_event_001
+	
+	major = yes
+	minor_flavor = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = invention_news.1.a
+	}
+}
+
+
+# kinectics
+country_event = {
+	id = invention.2
+	title = invention.2.t
+	desc = invention.2.d
+	picture = GFX_invention_event_002
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			has_tech = kinectics
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_technology = {
+				kinectics = 1
+			}
+			if = {
+				limit = {
+					all_country = {
+						has_tech = kinectics
+					}
+				}
+				news_event = { id = invention_news.2  random_days = 30 }
+			}
+		}
+	}
+
+	option = {
+		name = invention.2.a
+	}
+}
+
+news_event = {
+	id = invention_news.2
+	title = invention_news.2.t
+	desc = invention_news.2.d
+	picture = GFX_invention_news_event_002
+	
+	major = yes
+	minor_flavor = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = invention_news.2.a
+	}
+}

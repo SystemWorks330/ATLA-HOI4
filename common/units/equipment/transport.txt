@@ -1,0 +1,77 @@
+equipments = {
+
+	transport_equipment = {
+		year = 10
+
+		is_archetype = yes
+		picture = archetype_transport_equipment
+		is_buildable = no
+		type = {
+			infantry
+			motorized
+		}
+		group_by = archetype
+		
+		interface_category = interface_category_land
+		
+		maximum_speed = 2 #kmh
+		reliability = 0.8
+		hardness = 1
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+
+		build_cost_ic = 10
+		resources = {
+
+		}
+
+		supply_truck = yes
+	}
+
+	transport_equipment_basic = {
+		year = 10
+
+		archetype = transport_equipment
+		priority = 20	
+	}
+
+	transport_equipment_1 = {
+	
+		archetype = transport_equipment
+		parent = transport_equipment_basic
+		priority = 10
+		visual_level = 0
+
+		maximum_speed = 2 #kmh
+		hardness = 1.0
+
+		build_cost_ic = 10
+		resources = {
+			aluminium = 2
+			iron = 1
+		}
+	}
+
+	transport_equipment_2 = {
+	
+		archetype = transport_equipment
+		parent = transport_equipment_basic
+		priority = 10
+		visual_level = 0
+
+		maximum_speed = 8 #kmh
+		hardness = 1.0
+		#armor_value = 50
+		max_strength = 100
+		reliability = 0.7
+
+		build_cost_ic = 35
+		resources = {
+			steel = 2
+			iron = 1
+			rubber = 1
+		}
+	}
+
+}

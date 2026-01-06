@@ -1,0 +1,194 @@
+equipments = {
+
+	light_cavalry_equipment = {
+	
+		is_archetype = yes
+		picture = archetype_light_cavalry_equipment
+		is_buildable = no
+		is_convertable = yes
+		type = armor
+		group_by = archetype
+		
+		interface_category = interface_category_armor
+		
+		active = no
+		
+		#Misc Abilities
+		reliability = 0.9
+		#maximum_speed = 8
+
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 1
+		armor_value = 4
+
+		#Offensive Abilities
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+
+		#Space taken in convoy
+		lend_lease_cost = 1
+		
+		build_cost_ic = 0.6
+		resources = {
+			#oil = 2
+		}
+
+		#fuel_consumption = 0.4
+		
+	}
+
+	light_cavalry_equipment_basic = {
+	
+		archetype = light_cavalry_equipment
+		active = no
+		priority = 05
+		visual_level = 0
+		is_convertable = yes
+	}
+
+    light_cavalry_equipment_1 = {
+	
+		archetype = light_cavalry_equipment
+		parent = light_cavalry_equipment_basic
+		priority = 10
+		visual_level = 0
+		is_convertable = yes
+
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 1
+		armor_value = 12
+
+		#Offensive Abilities
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+
+		build_cost_ic = 6
+		resources = {
+			chromium = 1
+		}
+	}
+
+	light_cavalry_equipment_2 = {
+	
+		archetype = light_cavalry_equipment
+		parent = light_cavalry_equipment_1
+		priority = 10
+		visual_level = 1
+		is_convertable = yes
+		
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 1
+		armor_value = 16
+
+		#Offensive Abilities
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		
+		build_cost_ic = 9
+		resources = {
+			chromium = 1
+			tungsten = 1
+		}
+	}
+	
+	light_cavalry_equipment_3 = {
+	
+		archetype = light_cavalry_equipment
+		parent = light_cavalry_equipment_2
+		priority = 10
+		visual_level = 2
+		is_convertable = yes
+		
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 1
+		armor_value = 20
+
+		#Offensive Abilities
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		
+		reliability = 0.9
+		build_cost_ic = 13
+		resources = {
+			tungsten = 1
+			chromium = 1
+			iron = 1
+		}
+	}
+
+	light_cavalry_equipment_4 = {
+	
+		archetype = light_cavalry_equipment
+		parent = light_cavalry_equipment_3
+		priority = 10
+		visual_level = 3
+		is_convertable = yes
+		
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 1
+		armor_value = 24
+
+		#Offensive Abilities
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		
+		reliability = 0.9
+		build_cost_ic = 20
+		resources = {
+			tungsten = 1
+			chromium = 1
+			iron = 1
+			steel = 1
+		}
+	}
+
+	light_cavalry_equipment_5 = {
+	
+		archetype = light_cavalry_equipment
+		parent = light_cavalry_equipment_4
+		priority = 10
+		visual_level = 3
+		is_convertable = yes
+		
+		#Defensive Abilities
+		defense = 0
+		breakthrough = 0
+		hardness = 1
+		armor_value = 28
+
+		#Offensive Abilities
+		soft_attack = 0
+		hard_attack = 0
+		ap_attack = 0
+		air_attack = 0
+		
+		reliability = 0.9
+		build_cost_ic = 30
+		resources = {
+			tungsten = 2
+			chromium = 1
+			steel = 2
+		}
+	}
+
+}

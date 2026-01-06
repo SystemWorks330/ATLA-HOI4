@@ -1,0 +1,148 @@
+
+
+available_spies = {
+	base = 0
+	modifier = {
+		set_temp_variable = { spies = modifier@operative_slot }
+		add_to_temp_variable = { spies = available_spies }
+		subtract_from_temp_variable = { spies = spies_on_quard_removed }
+		
+		add = spies
+	}
+}
+
+local_spies = {
+	base = 0
+	modifier = {
+		set_temp_variable = { local_spies = 0 }
+
+		add_to_temp_variable = { local_spies = ROOT:spies_send_to_@FROM }
+		subtract_from_temp_variable = { local_spies = ROOT:spies_removed_by_@FROM }
+		
+		add = local_spies
+	}
+}
+
+available_agents = {
+	base = 0
+	modifier = {
+		set_temp_variable = { available_agents = modifier@operative_slot }
+		add_to_temp_variable = { available_agents = available_spies }
+		subtract_from_temp_variable = { available_agents = spies_on_quard_removed }
+		add_to_temp_variable = { available_agents = modifier@intelligence_agency_defense }
+		
+		add = available_agents
+	}
+}
+
+
+spy_detection_chance = {
+	base = 0
+	modifier = {
+
+		set_temp_variable = { detection_chance = mtth:available_agents }
+		set_temp_variable = { spy_states = THIS.num_controlled_states }
+		clamp_temp_variable = {
+			var = spy_states
+			min = 1
+		}
+		divide_temp_variable = { detection_chance = spy_states }
+		multiply_temp_variable = { detection_chance = 0.1 }
+		multiply_temp_variable = { detection_chance = mtth:local_spies }
+
+		ROOT = {
+			multiply_temp_variable = { detection_chance = mtth:detection_chance }
+		}
+		FROM = {
+			multiply_temp_variable = { detection_chance = mtth:enemy_detection_chance }
+		}
+
+		add = detection_chance
+	}
+}
+
+spy_kill_chance = {
+	base = 0
+	modifier = {
+
+		set_temp_variable = { kill_chance = mtth:local_spies }
+		set_temp_variable = { spy_states = THIS.num_controlled_states }
+		clamp_temp_variable = {
+			var = spy_states
+			min = 1
+		}
+		divide_temp_variable = { kill_chance = spy_states }
+
+		ROOT = {
+			multiply_temp_variable = { kill_chance = modifier@kill_agent_factor }
+		}
+
+		add = kill_chance
+	}
+}
+
+cypher_advantage = {
+	base = 0
+	modifier = {
+
+		set_temp_variable = { cypher_advantage = 0.1 }
+		ROOT = {
+			set_temp_variable = { decryption_var = modifier@decryption }
+			multiply_temp_variable = { decryption_var = mtth:decryption_factor }
+		}
+		FROM = {
+			set_temp_variable = { encryption_var = modifier@encryption }
+			multiply_temp_variable = { encryption_var = mtth:encryption_factor }
+		}
+		add_to_temp_variable = { decryption_var = 1 }
+		add_to_temp_variable = { encryption_var = 1 }
+		divide_temp_variable = { decryption_var = encryption_var }
+		multiply_temp_variable = { cypher_advantage = decryption_var }
+
+		add = cypher_advantage
+	}
+	modifier = {
+
+		check_variable = { ROOT.modifier@decryption = 0 }
+
+		factor = 0
+	}
+}
+
+decription_combined = {
+	base = 0
+	modifier = {
+
+		set_temp_variable = { decryption_var = modifier@decryption }
+		multiply_temp_variable = { decryption_var = mtth:decryption_factor }
+
+		add = decryption_var
+	}
+}
+encription_combined = {
+	base = 0
+	modifier = {
+
+		set_temp_variable = { encryption_var = modifier@encryption }
+		multiply_temp_variable = { encryption_var = mtth:encryption_factor }
+
+		add = encryption_var
+	}
+}
+
+
+operation_success = {
+	base = 0
+	modifier = {
+		set_temp_variable = { success_chance_factor = 1 }
+		subtract_from_temp_variable = { success_chance_factor = detection_chance }
+		add_to_temp_variable = { success_chance_factor = ROOT.modifier@operation_outcome }
+		clamp_temp_variable = {
+			var = success_chance_factor
+			min = 0
+			max = 1
+		}
+
+		add = success_chance_factor
+	}
+}

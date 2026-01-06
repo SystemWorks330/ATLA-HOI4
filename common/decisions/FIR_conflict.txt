@@ -1,0 +1,860 @@
+
+FIR_conquest_category = {
+
+	FIR_declare_sphere_of_influence = {
+
+		icon = fire_sphere
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			tag = FIR
+			OR = {
+				has_country_flag = earth_war_path
+				has_country_flag = earth_diplomacy_path
+				has_war_with = EAR
+			}
+			NOT = {
+				has_idea = evacuation_expenses
+			}
+			has_start_date < 15.1.1
+		}
+		available = {
+			hidden_trigger = {
+				OR = {
+					has_country_flag = earth_war_path
+					has_country_flag = earth_diplomacy_path
+					has_war_with = EAR
+				}
+			}
+		}
+		
+		fire_only_once = yes		
+
+		cost = 100
+
+		complete_effect = {
+			add_named_threat = { 
+				threat = 10
+				name = FIR_sphere_of_influence
+			}
+		}
+
+		modifier = {
+			training_time_factor = -0.05
+		}
+
+		days_remove = 200
+
+		remove_effect = {
+			create_faction = Alliance_of_Fire
+		}
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 10
+				num_subjects > 0
+			}
+		}
+
+	}
+
+	support_yu_dao_uprising = {
+
+		icon = fir_colony
+
+		state_target = yes
+
+		targets = {
+			230
+		}
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			NOT = {
+				has_war_with = WUL
+				country_exists = YFC
+			}
+			has_country_flag = earth_war_path
+			has_government = fire_culture
+			230 = { has_dynamic_modifier = { modifier = firenation_settlers } }
+		}
+		available = {
+			has_government = fire_culture
+			has_country_flag = earth_war_path
+			has_equipment = { spear_equipment > 479 }
+			has_equipment = { heavy_armor_equipment > 479 }
+			has_equipment = { light_armor_equipment > 239 }
+			has_equipment = { bow_equipment > 239 }
+			has_equipment = { arrow_equipment > 7599 }
+			230 = { has_dynamic_modifier = { modifier = firenation_settlers } }
+		}
+
+		days_remove = 90
+
+		complete_effect = {
+
+			add_equipment_to_stockpile = {
+				type = spear_equipment
+				amount = -480
+				producer = FIR
+			}
+			add_equipment_to_stockpile = {
+				type = heavy_armor_equipment
+				amount = -480
+				producer = FIR
+			}
+			add_equipment_to_stockpile = {
+				type = light_armor_equipment
+				amount = -240
+				producer = FIR
+			}
+			add_equipment_to_stockpile = {
+				type = bow_equipment
+				amount = -240
+				producer = FIR
+			}
+			add_equipment_to_stockpile = {
+				type = arrow_equipment
+				amount = -7600
+				producer = FIR
+			}
+
+		}
+
+		modifier = {
+			political_power_gain = -0.5
+		}
+
+		remove_effect = {
+
+			custom_effect_tooltip = yu_dao_uprising
+			WUL = {
+				set_country_flag = YFC_fire_sympathisants
+			}
+
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 10
+		}
+	}
+
+	support_han_tui_uprising = {
+
+		icon = fir_colony
+
+		state_target = yes
+
+		targets = {
+			280
+		}
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			NOT = {
+				has_war_with = HAN
+				country_exists = KFC
+			}
+			has_country_flag = earth_war_path
+			has_government = fire_culture
+			280 = { has_dynamic_modifier = { modifier = firenation_settlers } }
+		}
+		available = {
+			has_government = fire_culture
+			has_country_flag = earth_war_path
+			has_equipment = { spear_equipment > 479 }
+			has_equipment = { heavy_armor_equipment > 479 }
+			has_equipment = { light_armor_equipment > 239 }
+			has_equipment = { bow_equipment > 239 }
+			has_equipment = { arrow_equipment > 7599 }
+			280 = { has_dynamic_modifier = { modifier = firenation_settlers } }
+		}
+
+		days_remove = 90
+
+		complete_effect = {
+
+			add_equipment_to_stockpile = {
+				type = spear_equipment
+				amount = -480
+				producer = FIR
+			}
+			add_equipment_to_stockpile = {
+				type = heavy_armor_equipment
+				amount = -480
+				producer = FIR
+			}
+			add_equipment_to_stockpile = {
+				type = light_armor_equipment
+				amount = -240
+				producer = FIR
+			}
+			add_equipment_to_stockpile = {
+				type = bow_equipment
+				amount = -240
+				producer = FIR
+			}
+			add_equipment_to_stockpile = {
+				type = arrow_equipment
+				amount = -7600
+				producer = FIR
+			}
+
+		}
+
+		modifier = {
+			political_power_gain = -0.5
+		}
+
+		remove_effect = {
+
+			custom_effect_tooltip = han_tui_uprising
+			HAN = {
+				set_country_flag = KFC_fire_sympathisants
+			}
+
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+        ai_will_do = {
+			base = 10
+		}
+	}
+
+	FIR_establish_colonies = {
+
+		icon = fir_occupy
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			tag = FIR
+			has_start_date < 15.1.1
+			is_in_faction = yes
+		}
+		available = {
+			is_faction_leader = yes
+			custom_trigger_tooltip = {
+				tooltip = can_add_mission		
+				check_variable = { mtth:get_missions < mtth:get_mission_cap }
+			}
+		}
+		
+		fire_only_once = yes		
+
+		cost = 100
+
+		complete_effect = {
+			unlock_decision_category_tooltip = FIR_colonies_category
+			set_country_flag = {
+				flag = colonies_category_active
+				value = 1
+			}
+		}
+
+	}
+
+	military_preparations = {
+
+		icon = military_buildup
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_start_date < 13.1.1
+		}
+		available = {
+			
+		}
+
+		modifier = {
+			production_speed_arms_factory_factor = 0.25
+		}
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 20 }
+			
+		}
+
+		remove_effect = {
+			add_tech_bonus = {
+				name = fir_invasion_tech
+				category = cat_power
+				bonus = 2.0
+			}
+			army_experience = 30
+			navy_experience = 20
+			set_country_flag = military_preparations_complete
+		}
+
+		days_remove = 90
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 20 }
+		}
+		custom_cost_text = expenses_20
+
+		fire_only_once = yes
+		ai_will_do = {
+			base = 1000
+			modifier = {
+				has_war = yes
+				factor = 10
+			}
+		}
+	}
+
+	northern_attack_plan = {
+
+		icon = attack_plan
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_start_date < 13.1.1
+			NOT = { 
+				has_country_flag = FIR_attack_plan_made
+			}
+		}
+
+		available = {
+			OR = {
+				AND = {
+					NOT = { 
+						AND = {
+							#has_war_with = EAR 
+							has_country_flag = FIR_attack_plan_made
+							has_country_flag = earth_diplomacy_path
+						}
+					}
+					has_country_flag = military_preparations_complete
+				}
+				AND = {
+					has_war_with = EAR
+					NOT = { has_country_flag = FIR_attack_plan_made }
+				}
+			}
+		}
+
+
+		#cost = 100
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = honour_cost_20
+
+		complete_effect = {
+			set_country_flag = FIR_attack_plan_made
+			hidden_effect = { add_command_power = -20 }
+		}
+
+		remove_effect = {
+			set_country_flag = FIR_attack_plan_made
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = EAR 
+					}
+				}
+				custom_effect_tooltip = FIR_planned_invasion
+				set_country_flag = northern_attack_planned
+			}
+			else = {
+				add_timed_idea = { 
+					idea = FIR_northern_plan
+					days = 1500
+				}
+				set_country_flag = northern_attack_planned
+			}
+		}
+
+		days_remove = 30
+		
+
+		fire_only_once = yes
+		ai_will_do = {
+			base = 100
+			modifier = {
+				has_war = yes
+				add = 100
+			}
+			modifier = {
+				has_idea = evacuation_expenses
+				factor = 10
+			}
+		}
+	}
+
+	central_attack_plan = {
+
+		icon = attack_plan
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_start_date < 13.1.1
+			NOT = { 
+				has_country_flag = FIR_attack_plan_made
+			}
+		}
+
+		available = {
+			OR = {
+				AND = {
+					NOT = { 
+						AND = {
+							#has_war_with = EAR 
+							has_country_flag = FIR_attack_plan_made
+							has_country_flag = earth_diplomacy_path
+						}
+					}
+					has_country_flag = military_preparations_complete
+				}
+				has_war_with = EAR
+			}
+		}
+
+        #cost = 100
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = honour_cost_20
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -20 }
+			set_country_flag = FIR_attack_plan_made
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = EAR 
+					}
+				}
+				custom_effect_tooltip = FIR_planned_invasion
+				set_country_flag = central_attack_planned
+			}
+			else = {
+				add_timed_idea = { 
+					idea = FIR_central_plan
+					days = 1500
+				}
+				set_country_flag = central_attack_planned
+			}
+		}
+
+		days_remove = 30
+
+
+		fire_only_once = yes
+ 		ai_will_do = {
+			base = 0
+			modifier = {
+				has_war = yes
+				is_historical_focus_on = no
+				add = 50
+			}
+			modifier = {
+				has_idea = evacuation_expenses
+				factor = 0
+			}
+		}
+	}
+
+	southern_attack_plan = {
+
+		icon = attack_plan
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_start_date < 13.1.1
+			NOT = { 
+				has_country_flag = FIR_attack_plan_made
+			}
+		}
+
+		available = {
+			OR = {
+				AND = {	
+					NOT = { 
+						AND = {
+							#has_war_with = EAR 
+							has_country_flag = FIR_attack_plan_made
+							has_country_flag = earth_diplomacy_path
+						}
+					}
+					has_country_flag = military_preparations_complete
+				}
+				has_war_with = EAR
+			}
+		}
+
+		#cost = 100
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = honour_cost_20
+
+		complete_effect = {
+			hidden_effect = { add_command_power = -20 }
+			set_country_flag = FIR_attack_plan_made
+		}
+
+		remove_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_war_with = EAR 
+					}
+				}
+				custom_effect_tooltip = FIR_planned_invasion
+				set_country_flag = southern_attack_planned
+			}
+			else = {
+				add_timed_idea = { 
+					idea = FIR_southern_plan
+					days = 1500
+				}
+				set_country_flag = southern_attack_planned
+			}
+		}
+
+		days_remove = 30
+
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+			modifier = {
+				has_war = yes
+				is_historical_focus_on = no
+				add = 50
+			}
+		}
+	}
+	
+	war_with_earthkingdom = {
+
+		icon = war
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			country_exists = EAR
+			NOT = { 
+				has_war_with = EAR 
+			}
+		}
+
+		available = {
+			OR = {
+				AND = {
+					has_country_flag = FIR_attack_plan_made	
+					threat > 0.5	
+					NOT = { 
+						has_country_flag = approach_earthkingdom
+						has_country_flag = earth_diplomacy_path
+					}
+				}
+				has_country_flag = emergency_intervention_atrocity
+			}
+		}
+
+		war_with_on_remove = EAR
+
+		complete_effect = {
+			declare_war_on = {
+				target = EAR
+				type = annex_everything
+			}
+			every_country = {
+				limit = {
+					is_in_faction_with = EAR
+				}
+				add_to_war = {
+					targeted_alliance = EAR
+					enemy = FIR
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = northern_attack_planned
+				}
+				add_timed_idea = { 
+					idea = FIR_northern_plan
+					days = 1500
+				}
+				set_country_flag = invade_yu_dao
+			}
+			if = {
+				limit = {
+					has_country_flag = central_attack_planned
+				}
+				add_timed_idea = { 
+					idea = FIR_central_plan
+					days = 1500
+				}
+				set_country_flag = invade_colony
+			}
+			if = {
+				limit = {
+					has_country_flag = southern_attack_planned
+				}
+				add_timed_idea = { 
+					idea = FIR_southern_plan
+					days = 1500
+				}
+			}
+			add_named_threat = { 
+				threat = 20
+				name = FIR_attack_EAR
+			}
+			hidden_effect = {
+				news_event = { id = news.7 days = 7 }
+			}
+		}
+
+		#days_remove = 60
+
+		cost = 50
+		fire_only_once = yes
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				has_war = yes
+				add = -99
+			}
+			modifier = {
+				has_country_flag = emergency_intervention_atrocity
+				factor = 100
+			}
+		}
+	}
+
+
+	earthkingdom_operation_bases = {
+
+		icon = supply_bases
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_war_with = EAR
+			has_start_date < 13.1.1
+		}
+
+		available = {
+			
+		}
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+		}
+
+		remove_effect = {
+			add_ideas = FIR_earthkingdom_operation_bases_1
+			add_to_variable = {
+				var = earth_bases_var
+				value = 5
+				tooltip = earth_bases_var_tooltip
+			}
+		}
+
+		days_remove = 100
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				has_war_with = EAR
+				add = 50
+			}
+		}
+	}
+
+	earthkingdom_operation_bases_range_upgrade = {
+
+		icon = supply_bases
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_idea = FIR_earthkingdom_operation_bases_1
+		}
+
+		available = {
+			
+		}
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+			
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = earth_bases_var
+				value = 5
+				tooltip = earth_bases_var_tooltip
+			}
+			swap_ideas = {
+				remove_idea = FIR_earthkingdom_operation_bases_1
+				add_idea = FIR_earthkingdom_operation_bases_2
+			}
+		}
+
+		days_remove = 100
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				has_war_with = EAR
+				add = 50
+			}
+		}
+	}
+
+	earthkingdom_operation_bases_cost_upgrade = {
+
+		icon = supply_bases
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_idea = FIR_earthkingdom_operation_bases_2
+		}
+
+		available = {
+			
+		}
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+			
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = earth_bases_var
+				value = 5
+				tooltip = earth_bases_var_tooltip
+			}
+			swap_ideas = {
+				remove_idea = FIR_earthkingdom_operation_bases_2
+				add_idea = FIR_earthkingdom_operation_bases_3
+			}
+		}
+
+		days_remove = 100
+
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		fire_only_once = yes
+		ai_will_do = {
+			base = 10
+			modifier = {
+				has_war_with = EAR
+				add = 50
+			}
+		}
+	}
+
+
+	FIR_summon_war_council = {
+
+		icon = war
+
+		allowed = {
+			tag = FIR
+		}
+		visible = {
+			has_war = yes
+		}
+
+		available = {
+			meta_trigger = {
+				text = {
+					longest_war_length > [war_length]
+				}
+				war_length = "[?war_meeting_value]"
+			}
+		}
+
+		cost = 50
+		days_re_enable = 30
+		
+
+		complete_effect = {
+			add_to_variable = { war_meetings_var = 1 }
+			set_variable = { war_meeting_value = war_meetings_var }
+			multiply_variable = { war_meeting_value = 3 }
+
+
+			#### zuko joins the meeting
+			if = {
+				limit = {
+					FIR_iroh = {
+						has_trait = consumed_by_grief
+						NOT = {
+							has_character_flag = away_from_home
+							has_character_flag = in_exile
+						}
+					}
+					check_variable = { mtth:zuko_age > 12 }
+				}
+				country_event = { id = fir_character.zuko.4 days = 3 }
+			}
+		}
+
+		remove_effect = {
+
+		}
+
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+
+}

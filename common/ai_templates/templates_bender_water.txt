@@ -1,0 +1,42 @@
+
+	###  #### #   # ###  #### ###    ###                               
+	#  # #    ##  # #  # #    #  #  #                       
+	###  ###  # # # #  # ###  ###    ##                            
+	#  # #    #  ## #  # #    #  #     #                     
+	###  #### #   # ###  #### #   # ###                                 
+
+template_waterbenders = {
+
+	role = {
+		benders_only
+	}
+	
+	upgrade_prio = {
+		base = 1
+	}
+	waterbender_1 = {
+		upgrade_prio = { factor = 0.01 }
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				waterbender = 3
+			}
+		}
+	}
+
+	waterbender_2 = {	
+		upgrade_prio = { factor = 1 }
+		reinforce_prio = 1
+		target_template = {
+			regiments = {
+				waterbender = 6
+			}
+			support = {
+				supply_wagon = 1
+				field_commander = 1
+				combat_pioneer = 1
+				scout = 1
+			}
+		}
+	}
+}

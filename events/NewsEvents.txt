@@ -1,0 +1,470 @@
+﻿###########################
+# News Events
+###########################
+add_namespace = news
+add_namespace = hidden
+# Comet Trigger (HIDDEN)
+news_event = {
+	id = hidden.1
+	hidden = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+	immediate = {
+		destroy_entity = great_comet
+	}
+	option = {
+		name = hidden.1.a
+	}
+}
+
+#Bears! (by Jari 'Spider-Man')
+news_event = {
+	id = news.2
+	title = news.2.t
+	desc = news.2.d
+	picture = GFX_avatar_news_event_002
+	is_triggered_only = yes
+	option = {
+		name = news.2.a
+		set_country_flag = bears_appear
+	}
+}
+
+# Bears Trigger (HIDDEN)
+country_event = {
+	id = hidden.2
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		date > 50.1.1
+		date < 68.1.1
+		NOT = {
+			has_global_flag = bears_appear
+		}
+	}
+	mean_time_to_happen = {
+		days = 600
+	}
+	immediate = {
+		random_list = {
+			100 = {
+				EAR = {
+					news_event = {
+						id = news.2
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = hidden.2.a
+	}
+}
+
+#
+#deleted hidden temple situations
+#
+#Airnomad Genocide News
+#Air Nomade Genocide
+news_event = {
+	id = news.3
+	title = news.3.t
+	desc = news.3.d
+	picture = GFX_avatar_news_event_003
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = news.3.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			has_country_flag = genocide_active
+		}
+	}
+	option = {
+		name = news.3.b
+		trigger = {
+			NOT = {
+				TAG = FIR
+				has_country_flag = genocide_active
+			}
+		}
+	}
+	option = {
+		name = news.3.c
+		trigger = {
+			TAG = FIR
+			NOT = {
+				has_country_flag = genocide_active
+			}
+		}
+	}
+}
+
+#Airnomad Genocide Trigger (HIDDEN)
+news_event = {
+	id = hidden.3
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			has_global_flag = north_temple_fallen
+			has_global_flag = north_temple_survived
+		}
+		OR = {
+			has_global_flag = east_temple_fallen
+			has_global_flag = east_temple_survived
+		}
+		OR = {
+			has_global_flag = south_temple_fallen
+			has_global_flag = south_temple_survived
+		}
+		OR = {
+			has_global_flag = west_temple_fallen
+			has_global_flag = west_temple_survived
+		}
+		NOT = {
+			has_global_flag = air_nomad_genocide
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+	immediate = {
+		hidden_effect = {
+			set_global_flag = air_nomad_genocide
+			
+			SAT = {
+				dismantle_faction = yes
+			}
+			WAT = {
+				dismantle_faction = yes
+			}
+			NAT = {
+				dismantle_faction = yes
+			}
+			EAT = {
+				dismantle_faction = yes
+			}
+		}
+		news_event = { id = news.3 }
+	}
+	option = {
+		name = hidden.3.a
+	}
+}
+
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_avatar_news_event_004
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+	}
+	option = {
+		name = news.4.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			TAG = FIR
+		}
+	}
+	option = {
+		name = news.4.b
+		trigger = {
+			NOT = {
+				TAG = FIR
+			}
+		}
+	}
+}
+
+news_event = {
+	id = hidden.4
+	hidden = yes
+	trigger = {
+		has_global_flag = send_aang_away
+		has_global_flag = air_nomad_genocide
+		NOT = {
+			has_global_flag = gyatso_and_aang_flee
+		}
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+	immediate = {
+		random_list = {
+			100 = {
+				SAT = {
+					news_event = {
+						id = news.4
+					}
+				}
+			}
+		}
+	}
+	fire_only_once = yes
+	option = {
+		name = hidden.4.a
+	}
+}
+
+# Earth Rebellion
+news_event = {
+	id = news.5
+	title = news.5.t
+	desc = news.5.d
+	picture = GFX_avatar_news_event_005
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		set_global_flag = rebellion_event_fired
+	}
+	option = {
+		name = news.5.a
+		trigger = {
+			has_country_flag = western_alliance
+			NOT = {
+				TAG = EAR
+			}
+		}
+	}
+	option = {
+		name = news.5.b
+		trigger = {
+			NOT = {
+				has_country_flag = western_alliance
+				TAG = EAR
+			}
+		}
+	}
+}
+
+# Earth Rebellion Trigger (HIDDEN)
+news_event = {
+	id = hidden.5
+	hidden = yes
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = western_alliance_creation_done
+		not = {
+			has_global_flag = rebellion_event_fired
+		}
+	}
+	mean_time_to_happen = {
+		days = 6
+	}
+	immediate = {
+		random_list = {
+			100 = {
+				FIR = {
+					news_event = {
+						id = news.5
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = hidden.5.a
+	}
+}
+
+news_event = {
+	id = news.7
+	title = news.7.t
+	desc = news.7.d
+	picture = GFX_avatar_news_event_007
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+	}
+	option = {
+		name = news.7.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			TAG = FIR
+		}
+	}
+	option = {
+		name = news.7.b
+		trigger = {
+			NOT = {
+				TAG = FIR
+			}
+		}
+	}
+}
+
+### avatar aang dies in avatar state and breaks cycle
+news_event = {
+	id = news.8
+	title = news.8.t
+	desc = news.8.d
+	picture = GFX_avatar_news_event_008
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			set_global_flag = avatar_cycle_broken
+			clr_global_flag = avatar_born_air
+			clear_variable = global.avatar_age
+			clear_variable = global.avatar_influence
+			clear_variable = global.avatar_spirituality
+			clear_variable = global.avatar_state
+			clear_variable = global.avatar_waterbender_skill
+			clear_variable = global.avatar_earthbender_skill
+			clear_variable = global.avatar_firebender_skill
+			clear_variable = global.avatar_airbender_skill
+			every_country = {
+				clr_country_flag = avatar_friendly
+			}
+		}
+	}
+	option = {
+		name = news.8.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			TAG = FIR
+		}
+	}
+	option = {
+		name = news.8.b
+		trigger = {
+			NOT = {
+				TAG = FIR
+			}
+		}
+	}
+}
+
+### avatar aang dies and a water avatar is born
+news_event = {
+	id = news.9
+	title = news.9.t
+	desc = news.9.d
+	picture = GFX_avatar_news_event_009
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			clr_global_flag = avatar_born_air
+			clear_variable = global.avatar_age
+			clear_variable = global.avatar_spirituality
+			clear_variable = global.avatar_state
+			clear_variable = global.avatar_waterbender_skill
+			clear_variable = global.avatar_earthbender_skill
+			clear_variable = global.avatar_firebender_skill
+			clear_variable = global.avatar_airbender_skill
+			every_country = {
+				set_country_flag = avatar_friendly
+			}
+			random_list = {
+				100 = {
+					SWT = {
+						news_event = {
+							id = news.10
+							days = 7
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = news.9.a
+		ai_chance = {
+			factor = 100
+		}
+		trigger = {
+			TAG = FIR
+		}
+	}
+	option = {
+		name = news.9.b
+		trigger = {
+			NOT = {
+				TAG = FIR
+			}
+		}
+	}
+}
+
+### avatar misu is born
+news_event = {
+	id = news.10
+	title = news.10.t
+	desc = news.10.d
+	picture = GFX_avatar_news_event_010
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+		hidden_effect = {
+			set_global_flag = avatar_misu
+			set_global_flag = avatar_born_water
+			set_global_flag = avatar_swt
+			random_list = {
+				100 = {
+					SWT = {
+						country_event = {
+							id = misu.1
+							days = 3
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = news.10.a
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+news_event = {
+	id = news.11
+	title = news.11.t
+	desc = news.11.d
+	picture = GFX_avatar_news_event_015
+	is_triggered_only = yes
+	major = yes
+	immediate = {
+	}
+	option = {
+		name = news.11.a
+		ai_chance = {
+			factor = 100
+		}
+		set_country_flag = FIR_phoenix
+		remove_trait = {
+			ideology = fire_culture
+			trait = firelord
+		}
+		add_trait = {
+			ideology = fire_culture
+			trait = phoenixking
+		}
+		trigger = {
+			TAG = FIR
+		}
+	}
+	option = {
+		name = news.11.b
+		trigger = {
+			NOT = {
+				TAG = FIR
+			}
+		}
+	}
+}

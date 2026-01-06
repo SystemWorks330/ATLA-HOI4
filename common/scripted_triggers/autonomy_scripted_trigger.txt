@@ -1,0 +1,179 @@
+
+
+increase_puppet_tax_trigger = {
+	
+	if = {
+		limit = {
+			THIS = {
+				NOT = {
+					OR = {
+						has_idea = low_vassal_taxes
+						has_idea = medium_vassal_taxes
+						has_idea = high_vassal_taxes
+					}
+				}
+			}
+		}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.05
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = low_vassal_taxes
+			}
+		}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.1
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = medium_vassal_taxes
+			}
+		}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.15
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
+		}
+	}
+	else = {
+		always = no
+	}
+}
+
+
+increase_puppet_war_tributes_trigger = {
+	
+	if = {
+		limit = {
+			THIS = {
+				NOT = {
+					OR = {
+						has_idea = low_war_tributes
+						has_idea = medium_war_tributes
+						has_idea = high_war_tributes
+					}
+				}
+			}
+		}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.05
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = low_war_tributes
+			}
+		}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.1
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = medium_war_tributes
+			}
+		}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.15
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
+		}
+	}
+	else = {
+		always = no
+	}
+}
+
+
+increase_puppet_territorial_integration_trigger = {
+	
+	if = {
+		limit = {
+			THIS = {
+				NOT = {
+					OR = {
+						has_idea = low_territorial_integration
+						has_idea = medium_territorial_integration
+						has_idea = high_territorial_integration
+					}
+				}
+			}
+		}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.2
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = low_territorial_integration
+			}
+		}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.4
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = medium_territorial_integration
+			}
+		}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.5
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = high_territorial_integration
+			}
+		}
+		check_variable = {
+			var = mtth:overlord_influence
+			value = 0.75
+			compare = greater_than_or_equals
+			tooltip = overlord_influence_check
+		}
+		#THIS = {
+		#	NOT = {
+		#		all_controlled_state = {
+		#			has_resources_rights = {
+		#				state = THIS
+		#				receiver = ROOT
+		#			}
+		#		}
+		#	}
+		#}
+	}
+}

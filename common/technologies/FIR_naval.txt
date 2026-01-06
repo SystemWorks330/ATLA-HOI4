@@ -1,0 +1,2716 @@
+technologies = {
+
+	firenation_yacht_tech_1 = {
+
+		enable_equipments = {
+			firenation_yacht_1
+		}
+
+		dependencies = {
+			astronomy = 1
+			leverage = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_yacht_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_yacht_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_yacht_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_yacht_1 = {
+
+		river_boat = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_yacht_1 = {
+		
+		river_boat = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_yacht_tech_2 = {
+
+		enable_equipments = {
+			firenation_yacht_2
+		}
+
+		dependencies = {
+			natural_philosophy = 1
+			alchemy = 1
+		}
+
+		path = {
+			leads_to_tech = firenation_yacht_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_yacht_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_yacht_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 25
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_yacht_2 = {
+
+		river_boat = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_yacht_2 = {
+
+		river_boat = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_yacht_tech_3 = {
+
+		enable_equipments = {
+			firenation_yacht_3
+		}
+		dependencies = {
+			magnetism = 1
+			steam_engine = 1
+		}
+
+		path = {
+			leads_to_tech = firenation_yacht_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_yacht_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_yacht_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 35
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_yacht_3 = {
+
+		river_boat = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_yacht_3 = {
+
+		river_boat = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_yacht_tech_4 = {
+
+		enable_equipments = {
+			firenation_yacht_4
+		}
+
+		dependencies = {
+			steel_alloy = 1
+			scientific_method = 1
+		}
+
+		path = {
+			leads_to_tech = firenation_yacht_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_yacht_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_yacht_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 45
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_yacht_4 = {
+
+		river_boat = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_yacht_4 = {
+
+		river_boat = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_yacht_tech_5 = {
+
+		enable_equipments = {
+			firenation_yacht_5
+		}
+
+		dependencies = {
+			gas_turbine = 1
+		}
+
+		path = {
+			leads_to_tech = firenation_yacht_tech_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_yacht_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_yacht_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 55
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_yacht_5 = {
+	
+		river_boat = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+		
+		path = {
+			leads_to_tech = left_bonus_yacht_6
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_yacht_5 = {
+		
+		river_boat = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+		
+		path = {
+			leads_to_tech = right_bonus_yacht_6
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	left_bonus_yacht_6 = {
+
+		river_boat = {
+			max_organisation = 10
+		}
+		naval_mines_effect_reduction = 0.1
+
+		path = {
+			leads_to_tech = mid_bonus_yacht_6
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_yacht_6 = {
+
+		river_boat = {
+			sub_detection = 0.1
+			surface_detection = 0.05
+		}
+		convoy_escort_efficiency = 0.05
+		
+		path = {
+			leads_to_tech = mid_bonus_yacht_6
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	mid_bonus_yacht_6 = {
+
+		river_boat = {
+			max_organisation = 15
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_frigate_tech_1 = {
+
+		enable_equipments = {
+			firenation_frigate_1
+		}
+
+		dependencies = {
+			astronomy = 1
+			leverage = 1
+		}
+
+		path = {
+			leads_to_tech = firenation_frigate_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_frigate_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_frigate_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_frigate_1 = {
+
+		naval_invasion_capacity = 20
+
+		firenation_frigate = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_frigate_1 = {
+	
+		firenation_frigate = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_frigate_tech_2 = {
+
+		enable_equipments = {
+			firenation_frigate_2
+		}
+
+		dependencies = {
+			alchemy = 1
+			natural_philosophy = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_frigate_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_frigate_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_frigate_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_frigate_2 = {
+
+		naval_invasion_capacity = 20
+		firenation_frigate = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_frigate_2 = {
+	
+		firenation_frigate = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_frigate_tech_3 = {
+
+		enable_equipments = {
+			firenation_frigate_3
+		}
+		
+		dependencies = {
+			steam_engine = 1
+			magnetism = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_frigate_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_frigate_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_frigate_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_frigate_3 = {
+
+		naval_invasion_capacity = 20
+		firenation_frigate = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_frigate_3 = {
+
+		firenation_frigate = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_frigate_tech_4 = {
+
+		enable_equipments = {
+			firenation_frigate_4
+		}
+
+		dependencies = {
+			steel_alloy = 1
+			scientific_method = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_frigate_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_frigate_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_frigate_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_frigate_4 = {
+
+		naval_invasion_capacity = 20
+		firenation_frigate = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_frigate_4 = {
+
+		firenation_frigate = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_frigate_tech_5 = {
+
+		enable_equipments = {
+			firenation_frigate_5
+		}
+		
+		dependencies = {
+			gas_turbine = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_frigate_tech_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_frigate_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_frigate_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_frigate_5 = {
+
+		naval_invasion_capacity = 20
+		firenation_frigate = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		path = {
+			leads_to_tech = left_bonus_frigate_6
+			research_cost_coeff = 1
+		}
+
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_frigate_5 = {
+
+		firenation_frigate = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		path = {
+			leads_to_tech = right_bonus_frigate_6
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	left_bonus_frigate_6 = {
+
+		naval_invasion_capacity = 20
+		firenation_frigate = {
+			max_organisation = 10
+			surface_detection = 0.1		
+		}
+		
+		path = {
+			leads_to_tech = mid_bonus_frigate_6
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_frigate_6 = {
+
+		firenation_frigate = {
+			surface_visibility = -0.10
+			convoy_raiding_coordination = 0.10
+		}
+		naval_torpedo_reveal_chance_factor = -0.05
+
+		path = {
+			leads_to_tech = mid_bonus_frigate_6
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 1 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	mid_bonus_frigate_6 = {
+		
+		dependencies = {
+			gas_turbine = 1
+			applied_mathematics = 1
+		}
+		
+		firenation_frigate = {
+			max_organisation = 15	
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_cruiser_tech_1 = {
+
+		enable_equipments = {
+			firenation_cruiser_1
+		}
+		
+		dependencies = {
+			astronomy = 1
+			geometry = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_cruiser_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = firenation_heavy_cruiser_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_cruiser_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cruiser_1 = {
+
+		firenation_cruiser = {
+			max_organisation = 10
+			surface_detection = 0.05	
+		}
+		strike_force_movement_org_loss = -0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_cruiser_tech_2 = {
+
+		enable_equipments = {
+			firenation_cruiser_2
+		}
+		
+		dependencies = {
+			leverage = 1
+			natural_philosophy = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_cruiser_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_cruiser_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cruiser_2 = {
+
+		firenation_cruiser = {
+			max_organisation = 10
+			surface_detection = 0.05	
+		}
+		strike_force_movement_org_loss = -0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_cruiser_tech_3 = {
+
+		enable_equipments = {
+			firenation_cruiser_3
+		}
+		
+		dependencies = {
+			magnetism = 1
+			alchemy = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_cruiser_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_cruiser_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cruiser_3 = {
+
+		firenation_cruiser = {
+			max_organisation = 10
+			surface_detection = 0.05	
+		}
+		strike_force_movement_org_loss = -0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_cruiser_tech_4 = {
+
+		enable_equipments = {
+			firenation_cruiser_4
+		}
+		
+		dependencies = {
+			steam_engine = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_cruiser_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_cruiser_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cruiser_4 = {
+
+		firenation_cruiser = {
+			max_organisation = 10
+			surface_detection = 0.05	
+		}
+		strike_force_movement_org_loss = -0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_cruiser_tech_5 = {
+
+		enable_equipments = {
+			firenation_cruiser_5
+		}
+		
+		dependencies = {
+			steel_alloy = 1
+			scientific_method = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_cruiser_tech_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_cruiser_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cruiser_5 = {
+
+		firenation_cruiser = {
+			max_organisation = 10
+			surface_detection = 0.05	
+		}
+		strike_force_movement_org_loss = -0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_cruiser_tech_6 = {
+
+		enable_equipments = {
+			firenation_cruiser_6
+		}
+		
+		dependencies = {
+			gas_turbine = 1
+		}
+		
+		path = {
+			leads_to_tech = left_bonus_cruiser_6
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_cruiser_6 = {
+
+		firenation_cruiser = {
+			max_organisation = 10	
+		}
+		firenation_heavy_cruiser = {
+			max_organisation = 10	
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = -1 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_heavy_cruiser_tech_1 = {
+
+		enable_equipments = {
+			firenation_heavy_cruiser_1
+		}
+		
+		dependencies = {
+			leverage = 1
+			natural_philosophy = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_heavy_cruiser_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = firenation_battleship_tech_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mid_bonus_cruiser_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_cruiser_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	mid_bonus_cruiser_1 = {
+
+		firenation_cruiser = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		firenation_heavy_cruiser = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05
+		}
+		naval_retreat_speed = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_cruiser_1 = {
+
+		firenation_heavy_cruiser = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_heavy_cruiser_tech_2 = {
+
+		enable_equipments = {
+			firenation_heavy_cruiser_2
+		}
+		
+		dependencies = {
+			alchemy = 1
+			magnetism = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_heavy_cruiser_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_cruiser_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mid_bonus_cruiser_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 3 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	mid_bonus_cruiser_2 = {
+
+		firenation_cruiser = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		firenation_heavy_cruiser = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05
+		}
+		naval_retreat_speed = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_cruiser_2 = {
+
+		firenation_heavy_cruiser = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 4 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_heavy_cruiser_tech_3 = {
+
+		enable_equipments = {
+			firenation_heavy_cruiser_3
+		}
+		
+		dependencies = {
+			steam_engine = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_heavy_cruiser_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_cruiser_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mid_bonus_cruiser_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 3 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	mid_bonus_cruiser_3 = {
+
+		firenation_cruiser = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		firenation_heavy_cruiser = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05
+		}
+		naval_retreat_speed = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_cruiser_3 = {
+
+		firenation_heavy_cruiser = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 4 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_heavy_cruiser_tech_4 = {
+
+		enable_equipments = {
+			firenation_heavy_cruiser_4
+		}
+		
+		
+		dependencies = {
+			scientific_method = 1
+			steel_alloy = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_heavy_cruiser_tech_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mid_bonus_cruiser_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_cruiser_4
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 3 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	mid_bonus_cruiser_4 = {
+
+		firenation_cruiser = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		firenation_heavy_cruiser = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05
+		}
+		naval_retreat_speed = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 2 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_cruiser_4 = {
+
+		firenation_heavy_cruiser = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 4 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_heavy_cruiser_tech_5 = {
+
+		enable_equipments = {
+			firenation_heavy_cruiser_5
+		}
+		
+		dependencies = {
+			gas_turbine = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_heavy_cruiser_tech_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mid_bonus_cruiser_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_cruiser_5
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 3 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	mid_bonus_cruiser_5 = {
+
+		firenation_cruiser = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		firenation_heavy_cruiser = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05
+		}
+		naval_retreat_speed = 0.1
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 2 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_cruiser_5 = {
+
+		firenation_heavy_cruiser = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.1
+		
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 4 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_heavy_cruiser_tech_6 = {
+
+		enable_equipments = {
+			firenation_heavy_cruiser_6
+		}
+		
+		
+		dependencies = {
+			applied_mathematics = 1
+			chemistry= 1
+		}
+		
+
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 3 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	firenation_battleship_tech_1 = {
+
+		enable_equipments = {
+			firenation_battleship_1
+		}
+		
+		dependencies = {
+			steam_engine = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_battleship_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_battleship_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_battleship_1
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 8 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_battleship_1 = {
+
+		firenation_battleship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 7 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_battleship_1 = {
+
+		firenation_battleship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		critical_receive_chance = -0.05
+		naval_critical_effect_factor = -0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 9 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_battleship_tech_2 = {
+
+		enable_equipments = {
+			firenation_battleship_2
+		}
+		
+		dependencies = {
+			scientific_method = 1
+			steel_alloy = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_battleship_tech_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_battleship_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_battleship_2
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 8 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_battleship_2 = {
+
+		firenation_battleship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 7 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_battleship_2 = {
+
+		firenation_battleship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		critical_receive_chance = -0.05
+		naval_critical_effect_factor = -0.05
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 9 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_battleship_tech_3 = {
+
+		enable_equipments = {
+			firenation_battleship_3
+		}
+		
+		dependencies = {
+			gas_turbine = 1
+		}
+		
+		path = {
+			leads_to_tech = firenation_battleship_tech_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_battleship_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_battleship_3
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 8 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_battleship_3 = {
+
+		firenation_battleship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 7 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_battleship_3 = {
+
+		firenation_battleship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		critical_receive_chance = -0.05
+		naval_critical_effect_factor = -0.05
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 9 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	firenation_battleship_tech_4 = {
+
+		enable_equipments = {
+			firenation_battleship_4
+		}
+		
+		dependencies = {
+			applied_mathematics = 1
+			chemistry = 1
+		}
+		
+		path = {
+			leads_to_tech = mid_bonus_battleship_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = left_bonus_battleship_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = right_bonus_battleship_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		#start_year = 15
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 8 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+	}
+	
+	left_bonus_battleship_4 = {
+
+		firenation_battleship = {
+			max_organisation = 10
+			surface_detection = 0.05
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 7 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	right_bonus_battleship_4 = {
+
+		firenation_battleship = {
+			max_organisation = 5
+			convoy_raiding_coordination = 0.05	
+		}
+		critical_receive_chance = -0.05
+		naval_critical_effect_factor = -0.05
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 9 y = 32 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	mid_bonus_battleship_4 = {
+
+		firenation_battleship = {
+			max_organisation = 15	
+		}
+		
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 8 y = 34 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	fire_mine_warfare_1 = {
+		
+		dependencies = {
+			smelting = 1
+		}
+		
+		naval_mines_damage_factor = 0.1
+		mines_planting_by_fleets_factor = 0.05
+		
+		path = {
+			leads_to_tech = fire_mine_warfare_2
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	fire_mine_warfare_2 = {
+		
+		dependencies = {
+			natural_philosophy = 1
+		}
+
+		naval_mines_damage_factor = 0.1
+		mines_planting_by_fleets_factor = 0.05
+
+		path = {
+			leads_to_tech = fire_mine_warfare_3
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	fire_mine_warfare_3 = {
+		
+		dependencies = {
+			alchemy = 1
+		}
+
+		naval_mines_damage_factor = 0.1
+		mines_planting_by_fleets_factor = 0.05
+
+		path = {
+			leads_to_tech = fire_mine_warfare_4
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	fire_mine_warfare_4 = {
+		
+		dependencies = {
+			laws_of_nature = 1
+			magnetism = 1
+		}
+
+		naval_mines_damage_factor = 0.1
+		mines_planting_by_fleets_factor = 0.05
+
+		path = {
+			leads_to_tech = fire_mine_warfare_5
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	fire_mine_warfare_5 = {
+		
+		dependencies = {
+			chemistry = 1
+		}
+		
+		naval_mines_damage_factor = 0.1
+		mines_planting_by_fleets_factor = 0.05
+
+		xp_research_type = navy
+		xp_boost_cost = 100
+		xp_research_bonus = 1.00
+		research_cost = 3
+		
+		categories = {
+			naval_equipment
+			dd_tech
+		}
+		
+		folder = {
+			name = fire_naval_folder
+			position = { x = 0 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+}

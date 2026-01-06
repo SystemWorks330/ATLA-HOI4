@@ -1,0 +1,477 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_fundings"
+		textureFile = "gfx/interface/avatar/_00fundings.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_guide"
+		textureFile = "gfx/interface/avatar/_00guide.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_the_revival"
+		textureFile = "gfx/interface/avatar/therevival.dds"
+		noOfFrames = 1
+	}
+	SpriteType = {
+		name = "GFX_radio_detection_medium"
+		texturefile = "gfx/interface/radio_detection.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_recruit_minister"
+		texturefile = "gfx/interface/ideas/recruit_new_advisor.dds"
+	}
+
+	########## topbar ##################
+
+	spriteType = {
+		name = "GFX_topbar_army"
+		texturefile = "gfx/interface/topbar/toolbar/army_button.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_topbar_navy"
+		texturefile = "gfx/interface/topbar/toolbar/navy_button.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_topbar_airforce"
+		texturefile = "gfx/interface/topbar/toolbar/airforce_button.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_topbar_calendar"
+		texturefile = "gfx/interface/topbar/toolbar/calendar_button.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_topbar_avatar"
+		texturefile = "gfx/interface/topbar/toolbar/avatar_button.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_topbar_achievments"
+		texturefile = "gfx/interface/topbar/toolbar/achievments_button.dds"
+		noOfFrames = 2		
+	}
+
+	progressbartype = {
+		name = "GFX_topbar_pp_bar"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\topbar\\political_full.dds"
+		textureFile2 = "gfx\\interface\\topbar\\political_empty.dds"
+		size = { x = 70 y = 26 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+
+
+	spriteType = {
+		name = "GFX_sort_button_date"
+		textureFile = "gfx/interface/sort_button_date.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_sort_button_country"
+		textureFile = "gfx/interface/sort_button_country.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_sort_button_tension"
+		textureFile = "gfx/interface/sort_button_tension.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_sort_button_war"
+		textureFile = "gfx/interface/sort_button_war.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_spirit_world_bg"
+		textureFile = "gfx/interface/avatar/spirit_world_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_war_exhaustion"
+		texturefile = "gfx/interface/topbar/war_weariness.dds"
+	}
+
+	spriteType = {
+		name = "GFX_header_mirrored_bg"
+		texturefile = "gfx/interface/header_mirrored_bg.dds"
+	}
+
+	################## avatar ######################
+
+	spriteType = {
+		name = "GFX_avatar_background"
+		textureFile = "gfx/interface/avatar/avatar_background.dds"
+	}
+
+	spriteType = {
+		name = "GFX_avatar_icon"
+		textureFile = "gfx/interface/avatar/avatar_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_influence_icon"
+		textureFile = "gfx/interface/avatar/avatar_influence.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_avatar_aang"
+		textureFile = "gfx/leaders/SAT/Portrait_Southernairtemple_Aang.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_aang_missing"
+		textureFile = "gfx/leaders/SAT/Portrait_Southernairtemple_Aang_missing.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_misu"
+		textureFile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Misu.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_stats_bg"
+		textureFile = "gfx/interface/avatar/avatar_stats.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_bender_stats_bg"
+		textureFile = "gfx/interface/avatar/avatar_bender_stats.dds"
+	}
+	spriteType = {
+		name = "GFX_wax"
+		textureFile = "gfx/interface/avatar/wax.dds"
+	}
+	spriteType = {
+		name = "GFX_ink_1"
+		textureFile = "gfx/interface/avatar/ink_1.dds"
+	}
+	spriteType = {
+		name = "GFX_ink_2"
+		textureFile = "gfx/interface/avatar/ink_2.dds"
+	}
+	spriteType = {
+		name = "GFX_spirit_stat"
+		textureFile = "gfx/interface/avatar/spirit_stat.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_stat"
+		textureFile = "gfx/interface/avatar/avatar_stat.dds"
+	}
+	spriteType = {
+		name = "GFX_water_stat"
+		textureFile = "gfx/interface/avatar/water_stat.dds"
+	}
+	spriteType = {
+		name = "GFX_fire_stat"
+		textureFile = "gfx/interface/avatar/fire_stat.dds"
+	}
+	spriteType = {
+		name = "GFX_earth_stat"
+		textureFile = "gfx/interface/avatar/earth_stat.dds"
+	}
+	spriteType = {
+		name = "GFX_air_stat"
+		textureFile = "gfx/interface/avatar/air_stat.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_team_header"
+		textureFile = "gfx/interface/avatar/team_header.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_spirit"
+		textureFile = "gfx/interface/avatar/spirit.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_avatar"
+		textureFile = "gfx/interface/avatar/avatar.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_water"
+		textureFile = "gfx/interface/avatar/water.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_earth"
+		textureFile = "gfx/interface/avatar/earth.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_fire"
+		textureFile = "gfx/interface/avatar/fire.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_air"
+		textureFile = "gfx/interface/avatar/air.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_indicator"
+		textureFile = "gfx/interface/avatar/avatar_indicator.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_iceberg"
+		textureFile = "gfx/interface/avatar/avatar_iceberg.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_friendly"
+		textureFile = "gfx/interface/avatar/avatar_friendly.dds"
+	}
+	spriteType = {
+		name = "GFX_avatar_hostile"
+		textureFile = "gfx/interface/avatar/avatar_hostile.dds"
+	}
+
+	spriteType = {
+		name = "GFX_katara"
+		textureFile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Katara.dds"
+	}
+	spriteType = {
+		name = "GFX_sokka"
+		textureFile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Sokka_1.dds"
+	}
+	spriteType = {
+		name = "GFX_appa"
+		textureFile = "gfx/leaders/SAT/Portrait_Southernairtemple_Appa.dds"
+	}
+	spriteType = {
+		name = "GFX_momo"
+		textureFile = "gfx/leaders/SAT/Portrait_Southernairtemple_Momo.dds"
+	}
+	spriteType = {
+		name = "GFX_hawky"
+		textureFile = "gfx/leaders/FIR/Portrait_Firenation_Hawky.dds"
+	}
+	spriteType = {
+		name = "GFX_gyatso"
+		textureFile = "gfx/leaders/SAT/Portrait_Southernairtemple_Gyatso.dds"
+	}
+	spriteType = {
+		name = "GFX_toph"
+		textureFile = "gfx/leaders/EAR/Portrait_Earthkingdom_Toph.dds"
+	}
+	spriteType = {
+		name = "GFX_zuko"
+		textureFile = "gfx/leaders/FIR/Portrait_Firenation_Zuko_banished.dds"
+	}
+	spriteType = {
+		name = "GFX_iroh"
+		textureFile = "gfx/leaders/FIR/Portrait_Firenation_Iroh_old.dds"
+	}
+	spriteType = {
+		name = "GFX_suki"
+		textureFile = "gfx/leaders/KYI/Portrait_Kyoshi_Suki_2.dds"
+	}
+	
+	
+	
+	spriteType = {
+		name = "GFX_Boulder"
+		textureFile = "gfx/leaders/GAO/Boulder_TEAM.dds"
+	}
+	spriteType = {
+		name = "GFX_Jet"
+		textureFile = "gfx/leaders/GDD/Jet_TEAM.dds"
+	}
+	spriteType = {
+		name = "GFX_Bumi"
+		textureFile = "gfx/leaders/OMS/Bumi_TEAM.dds"
+	}
+	
+	
+	
+	
+	
+
+	################## legitimacy ######################
+
+	spriteType = {
+		name = "GFX_legitimacy_bg"
+		texturefile = "gfx/interface/legitimacy/legitimacy_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_state_indicator"
+		texturefile = "gfx/interface/legitimacy/state_indicator.dds"
+	}
+	spriteType = {
+		name = "GFX_legit_bar"
+		texturefile = "gfx/interface/legitimacy/legit_bar.dds"
+	}
+	spriteType = {
+		name = "GFX_legit_bar_large"
+		texturefile = "gfx/interface/legitimacy/legit_bar_large.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fir_legit_bg"
+		texturefile = "gfx/interface/legitimacy/FIR_legit_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_ear_legit_bg"
+		texturefile = "gfx/interface/legitimacy/EAR_legit_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_water_legit_bg"
+		texturefile = "gfx/interface/legitimacy/WATER_legit_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_air_legit_bg"
+		texturefile = "gfx/interface/legitimacy/AIR_legit_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_air_spirit_bg"
+		texturefile = "gfx/interface/legitimacy/council.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fir_high_legitimacy"
+		texturefile = "gfx/interface/legitimacy/FIR_high_legitimacy.dds"
+	}
+	spriteType = {
+		name = "GFX_ear_high_legitimacy"
+		texturefile = "gfx/interface/legitimacy/EAR_high_legitimacy.dds"
+	}
+	spriteType = {
+		name = "GFX_water_high_legitimacy"
+		texturefile = "gfx/interface/legitimacy/WATER_high_legitimacy.dds"
+	}
+	spriteType = {
+		name = "GFX_air_high_legitimacy"
+		texturefile = "gfx/interface/legitimacy/AIR_high_legitimacy.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fir_low_legitimacy"
+		texturefile = "gfx/interface/legitimacy/FIR_low_legitimacy.dds"
+	}
+	spriteType = {
+		name = "GFX_ear_low_legitimacy"
+		texturefile = "gfx/interface/legitimacy/EAR_low_legitimacy.dds"
+	}
+	spriteType = {
+		name = "GFX_water_low_legitimacy"
+		texturefile = "gfx/interface/legitimacy/WATER_low_legitimacy.dds"
+	}
+	spriteType = {
+		name = "GFX_air_low_legitimacy"
+		texturefile = "gfx/interface/legitimacy/AIR_low_legitimacy.dds"
+	}
+
+	#################### air council ###################
+	
+	spriteType = {
+		name = "GFX_air_council_bg"
+		texturefile = "gfx/interface/decisions/air_council/council_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_air_council_member"
+		texturefile = "gfx/interface/decisions/air_council/members.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_member_1"
+		texturefile = "gfx/interface/decisions/air_council/member_1.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_member_2"
+		texturefile = "gfx/interface/decisions/air_council/member_2.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_member_3"
+		texturefile = "gfx/interface/decisions/air_council/member_3.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_member_4"
+		texturefile = "gfx/interface/decisions/air_council/member_4.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_member_5"
+		texturefile = "gfx/interface/decisions/air_council/member_5.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_symbol"
+		texturefile = "gfx/interface/decisions/air_council/symbols.dds"
+		noOfFrames = 5
+	}
+	spriteType = {
+		name = "GFX_air_council_support_bar"
+		texturefile = "gfx/interface/decisions/air_council/support_bar.dds"
+	}
+	spriteType = {
+		name = "GFX_air_council_probability_bar"
+		texturefile = "gfx/interface/decisions/air_council/probability_bar.dds"
+	}
+	spriteType = {
+		name = "GFX_air_council_army_icon"
+		texturefile = "gfx/interface/decisions/air_council/army_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_air_council_navy_icon"
+		texturefile = "gfx/interface/decisions/air_council/navy_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_air_council_air_icon"
+		texturefile = "gfx/interface/decisions/air_council/air_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_air_council_construction_icon"
+		texturefile = "gfx/interface/decisions/air_council/construction_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_air_council_politics_icon"
+		texturefile = "gfx/interface/decisions/air_council/politics_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_air_council_research_icon"
+		texturefile = "gfx/interface/decisions/air_council/research_icon.dds"
+	}
+
+
+
+	##### boost state
+
+	spriteType = {
+		name = "GFX_boost_culture"
+		textureFile = "gfx/interface/state_view/boost_culture.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fire_boost_culture"
+		textureFile = "gfx/interface/state_view/fire_boost.dds"
+	}
+	spriteType = {
+		name = "GFX_water_boost_culture"
+		textureFile = "gfx/interface/state_view/water_boost.dds"
+	}
+	spriteType = {
+		name = "GFX_earth_boost_culture"
+		textureFile = "gfx/interface/state_view/earth_boost.dds"
+	}
+	spriteType = {
+		name = "GFX_air_boost_culture"
+		textureFile = "gfx/interface/state_view/air_boost.dds"
+	}
+	spriteType = {
+		name = "GFX_pluralist_boost_culture"
+		textureFile = "gfx/interface/state_view/pluralist_boost.dds"
+	}
+
+
+	##### intel
+
+	spriteType = {
+		name = "GFX_intel_icon"
+		textureFile = "gfx/interface/intel_ledger/intel_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_operation_icon_strip"
+		textureFile = "gfx/interface/intel_ledger/operation_mission_icons.dds"
+		noOfFrames = 4
+	}
+}

@@ -1,0 +1,347 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+
+#### war weariness 
+
+
+defined_text = {
+	name = GetWearinessLevel
+	#text = {
+	#	trigger = { has_idea = war_weariness_1 }
+	#	localization_key = weariness_modifiers_1
+	#}
+	#text = {
+	#	trigger = { has_idea = war_weariness_2 }
+	#	localization_key = weariness_modifiers_2
+	#}
+	#text = {
+	#	trigger = { has_idea = war_weariness_3 }
+	#	localization_key = weariness_modifiers_3
+	#}
+	#text = {
+	#	trigger = { has_idea = war_weariness_4 }
+	#	localization_key = weariness_modifiers_4
+	#}
+	#text = {
+	#	trigger = { has_idea = war_weariness_5 }
+	#	localization_key = weariness_modifiers_5
+	#}
+	#text = {
+	#	trigger = { has_idea = war_weariness_6 }
+	#	localization_key = weariness_modifiers_6
+	#}
+	#text = {
+	#	trigger = { has_idea = war_weariness_7 }
+	#	localization_key = weariness_modifiers_7
+	#}
+	#text = {
+	#	trigger = { has_idea = war_weariness_8 }
+	#	localization_key = weariness_modifiers_8
+	#}
+	#text = {
+	#	trigger = { has_idea = war_weariness_9 }
+	#	localization_key = weariness_modifiers_9
+	#}
+	#text = {
+	#	trigger = { has_idea = war_weariness_10 }
+	#	localization_key = weariness_modifiers_10
+	#}
+
+	text = {
+		localization_key = weariness_modifiers
+	}
+
+	
+}
+
+defined_text = {
+	name = CurrentWWC
+	text = {
+		trigger = {
+			check_variable = { war_exhaustion_variable < 0 }
+		}
+		localization_key = weariness_good
+	}
+	text = {
+		trigger = {
+			check_variable = { war_exhaustion_variable = 0 }
+		}
+		localization_key = weariness_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { war_exhaustion_variable > 0 }
+		}
+		localization_key = weariness_bad_2
+	}
+}
+
+defined_text = {
+	name = OccupiedWWC
+	text = {
+		trigger = {
+			check_variable = { occupation_war_exhaustion < 0 }
+		}
+		localization_key = weariness_good
+	}
+	text = {
+		trigger = {
+			check_variable = { occupation_war_exhaustion = 0 }
+		}
+		localization_key = weariness_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { occupation_war_exhaustion > 0 }
+		}
+		localization_key = weariness_bad
+	}
+}
+
+defined_text = {
+	name = CasualtiesdWWC
+	text = {
+		trigger = {
+			check_variable = { weariness_casualties < 0 }
+		}
+		localization_key = weariness_good
+	}
+	text = {
+		trigger = {
+			check_variable = { weariness_casualties = 0 }
+		}
+		localization_key = weariness_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { weariness_casualties > 0 }
+		}
+		localization_key = weariness_bad
+	}
+}
+defined_text = {
+	name = WeeklyWWC
+	text = {
+		trigger = {
+			check_variable = { modifier@weekly_war_weariness < 0 }
+		}
+		localization_key = weariness_good
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@weekly_war_weariness = 0 }
+		}
+		localization_key = weariness_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@weekly_war_weariness > 0 }
+		}
+		localization_key = weariness_bad
+	}
+}
+defined_text = {
+	name = MonthlyWWC
+	text = {
+		trigger = {
+			check_variable = { war_exhaustion_check < 0 }
+		}
+		localization_key = weariness_good
+	}
+	text = {
+		trigger = {
+			check_variable = { war_exhaustion_check = 0 }
+		}
+		localization_key = weariness_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { war_exhaustion_check > 0 }
+		}
+		localization_key = weariness_bad
+	}
+}
+defined_text = {
+	name = FactorWWC
+	text = {
+		trigger = {
+			check_variable = { modifier@war_weariness_factor < 0 }
+		}
+		localization_key = weariness_good
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@war_weariness_factor = 0 }
+		}
+		localization_key = weariness_neutral
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@war_weariness_factor > 0 }
+		}
+		localization_key = weariness_bad
+	}
+}
+
+defined_text = {
+	name = LawWeariness1
+	text = {
+		trigger = {
+			has_idea = balanced_economy_law
+		}
+		localization_key = weariness_economy_3
+	}
+}
+defined_text = {
+	name = LawWeariness2
+	text = {
+		trigger = {
+			has_idea = war_economy_law
+		}
+		localization_key = weariness_economy_4
+	}
+}
+defined_text = {
+	name = LawWeariness3
+	text = {
+		trigger = {
+			has_idea = total_mobilisation_law
+		}
+		localization_key = weariness_total_mobilised_economy
+	}
+}
+defined_text = {
+	name = LawWeariness4.1
+	text = {
+		trigger = {
+			has_idea = family_support_2
+		}
+		localization_key = weariness_family_support_2
+	}
+}
+defined_text = {
+	name = LawWeariness4
+	text = {
+		trigger = {
+			has_idea = family_support_3
+		}
+		localization_key = weariness_family_support_3
+	}
+}
+defined_text = {
+	name = LawWeariness5
+	text = {
+		trigger = {
+			has_idea = family_support_4
+		}
+		localization_key = weariness_family_support_4
+	}
+}
+defined_text = {
+	name = LawWeariness6
+	text = {
+		trigger = {
+			has_idea = family_support_5
+		}
+		localization_key = weariness_family_support_5
+	}
+}
+defined_text = {
+	name = LawWeariness7
+	text = {
+		trigger = {
+			has_idea_with_trait = cruel_supervisor
+		}
+		localization_key = weariness_cruel_supervisor
+	}
+}
+defined_text = {
+	name = LawWeariness8
+	text = {
+		trigger = {
+			has_idea_with_trait = workers_syndicat
+		}
+		localization_key = weariness_workers_syndicat
+	}
+}
+defined_text = {
+	name = LawWeariness9
+	text = {
+		trigger = {
+			has_idea_with_trait = warrior_culture
+		}
+		localization_key = weariness_warrior_culture
+	}
+}
+defined_text = {
+	name = LawWeariness10
+	text = {
+		trigger = {
+			has_idea_with_trait = aggressive_strategist_1
+		}
+		localization_key = weariness_aggressive_strategist
+	}
+}
+defined_text = {
+	name = LawWeariness11
+	text = {
+		trigger = {
+			has_idea_with_trait = head_censor
+		}
+		localization_key = weariness_head_censor
+	}
+}
+defined_text = {
+	name = LawWeariness12
+	text = {
+		trigger = {
+			has_idea_with_trait = civil_law
+		}
+		localization_key = weariness_civil_law
+	}
+}
+defined_text = {
+	name = LawWeariness13
+	text = {
+		trigger = {
+			has_idea_with_trait = alms_and_pacification
+		}
+		localization_key = weariness_alms_and_pacification
+	}
+}
+defined_text = {
+	name = LawWeariness14
+	text = {
+		trigger = {
+			has_idea_with_trait = recreation_provider_1
+		}
+		localization_key = weariness_recreation_provider
+	}
+}
+defined_text = {
+	name = LawWeariness15
+	text = {
+		trigger = {
+			has_idea_with_trait = custumary_law
+		}
+		localization_key = weariness_custumary_law
+	}
+}
+#defined_text = {
+#	name = LawWeariness16
+#	text = {
+#		trigger = {
+#			has_idea_with_trait = secret_police
+#		}
+#		localization_key = weariness_secret_police
+#	}
+#
+#}

@@ -1,0 +1,136 @@
+capital = 105
+
+OOB = "KYI_12"
+
+
+EAR_generic_starting_tech = yes
+set_technology = {
+	kyoshi_equipment_1 = 1
+}
+
+set_variable = { victory_condition = token:kyoshi_isolation_spirit }
+
+add_ideas = {
+	volunteer_earth_nation
+	kyoshi_indiscriminate
+	city_markets
+	buildup_focus_law
+	family_support_3
+	no_education
+
+	the_kyoshi_warriors
+}
+#set_research_slots = 2
+ 
+
+set_convoys = 24
+
+
+set_politics = {
+	ruling_party = pluralist_culture
+	last_election = "12.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 14
+	pluralist_culture = 56
+	fire_culture = 0
+	earth_culture = 20
+	air_culture = 10
+}
+
+
+recruit_character = KYI_head_of_intelligence_1
+recruit_character = KYI_head_of_intelligence_2
+recruit_character = KYI_head_of_intelligence_3
+recruit_character = KYI_head_of_intelligence_4
+recruit_character = KYI_head_of_intelligence_5
+recruit_character = KYI_head_of_intelligence_6
+
+recruit_character = KYI_quartermaster_1
+recruit_character = KYI_quartermaster_2
+recruit_character = KYI_quartermaster_3
+recruit_character = KYI_quartermaster_4
+recruit_character = KYI_quartermaster_5
+recruit_character = KYI_quartermaster_6
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 ={
+	
+
+
+
+recruit_character = KYI_oyaji
+
+}
+
+
+
+
+#
+106.2.4 = { 
+	OOB = "KYI_106"
+
+}
+recruit_character = KYI_kyoshi_leader
+
+##
+#create_field_marshal = {
+#	name = "Suki"
+#	id = 800
+#	picture = "Portrait_Kyoshi_suki.dds"
+#	traits = { commando }
+#	skill = 6
+#
+#	attack_skill = 5
+#	defense_skill = 4
+#	planning_skill = 4
+#	logistics_skill = 5
+#}
+#
+#create_corps_commander = {
+# 	name = "Kyoshi Warrior"
+#	picture = "Portrait_Kyoshi_warrior_1.dds"
+# 	traits = { }
+# 	attack_skill = 3
+#	defense_skill = 2
+#	planning_skill = 1
+#	logistics_skill = 2
+#}
+#
+#create_corps_commander = {
+# 	name = "Kyoshi Warrior"
+#	picture = "Portrait_Kyoshi_warrior_2.dds"
+# 	traits = { }
+# 	attack_skill = 2
+#	defense_skill = 2
+#	planning_skill = 1
+#	logistics_skill = 2
+#}
+#
+#create_corps_commander = {
+# 	name = "Kyoshi Warrior"
+#	picture = "Portrait_Kyoshi_warrior_3.dds"
+# 	traits = { fortress_buster }
+# 	attack_skill = 1
+#	defense_skill = 3
+#	planning_skill = 2
+#	logistics_skill = 2
+#}
+
+# Different Ideology Leaders
+recruit_character = KYI_generic

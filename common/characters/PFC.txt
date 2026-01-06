@@ -1,0 +1,40 @@
+characters={
+	PFC_generic={
+		name="Zosum"
+		portraits={
+			civilian={
+				large="gfx/leaders/PFC/Portrait_Pohuai_Fire_Colony_generic.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=nationalism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=absolute_monarchie
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=martial_chiefdom
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=active_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+        country_leader={
+			
+			ideology=democracy
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+}

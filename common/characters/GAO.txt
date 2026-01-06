@@ -1,0 +1,333 @@
+characters={
+	GAO_shing={
+		name="Shing"
+		portraits={
+			civilian={
+				large="gfx/leaders/GAO/Portrait_Gaoling_Shing.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_Shing_DESC"
+			ideology=constitutional_monarchy
+			expire="130.1.1.1"
+			id=-1
+		}
+	}
+	GAO_lao_beifong = {
+		name = "Lao Beifong"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/GAO/Portrait_Gaoling_Lao.dds"
+			}
+		}
+		country_leader = {
+			ideology = constitutional_monarchy
+			id = -1
+		}
+	}
+	GAO_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/GAO/Portrait_Gaoling_nationalism.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=nationalism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=martial_chiefdom
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=absolute_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=despotism
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+	
+	 ###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+
+
+	GAO_head_of_intelligence_1 = { 
+		name = gao_head_of_intelligence_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_1"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gao_head_of_intelligence_1
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { spymaster }
+		}		
+	}
+	GAO_head_of_intelligence_2 = { 
+		name = gao_head_of_intelligence_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_2"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gao_head_of_intelligence_2
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { constable }
+		}		
+	}
+	GAO_head_of_intelligence_3 = { 
+		name = gao_head_of_intelligence_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_3"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gao_head_of_intelligence_3
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { head_censor }
+		}		
+	}
+	GAO_head_of_intelligence_4 = { 
+		name = gao_head_of_intelligence_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_4"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gao_head_of_intelligence_4
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_torturer }
+		}		
+	}
+	GAO_head_of_intelligence_5 = { 
+		name = gao_head_of_intelligence_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_5"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gao_head_of_intelligence_5
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_assassin }
+		}		
+	}
+	GAO_head_of_intelligence_6 = { 
+		name = gao_head_of_intelligence_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_6"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gao_head_of_intelligence_6
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { astrologist }
+		}		
+	}
+
+	GAO_quartermaster_1 = { 
+		name = gao_quartermaster_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_1"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gao_quartermaster_1
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { logistician_2 }
+		}		
+	}
+	GAO_quartermaster_2 = { 
+		name = gao_quartermaster_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_2"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gao_quartermaster_2
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { forager_2 }
+		}		
+	}
+	GAO_quartermaster_3 = { 
+		name = gao_quartermaster_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_3"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gao_quartermaster_3
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jungle_specialist_2 }
+		}		
+	}
+	GAO_quartermaster_4 = { 
+		name = gao_quartermaster_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_4"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gao_quartermaster_4
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { amphibious_specialist_2 }
+		}		
+	}
+	GAO_quartermaster_5 = { 
+		name = gao_quartermaster_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_5"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gao_quartermaster_5
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { winter_specialist_2 }
+		}		
+	}
+	GAO_quartermaster_6 = { 
+		name = gao_quartermaster_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_6"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gao_quartermaster_6
+			cost = 200
+			allowed = {
+				original_tag = GAO
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { garrison_master_1 }
+		}		
+	}
+}

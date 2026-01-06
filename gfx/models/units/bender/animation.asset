@@ -1,0 +1,78 @@
+
+
+
+############################### avatar
+
+#### selfmade
+
+animation = {
+	name = "firebender_idle_animation"
+	file = "firebender_idle.anim"
+}
+animation = {
+	name = "firebender_walk_animation"
+	file = "firebender_walk.anim"
+}
+animation = {
+	name = "firebender_attack_01_animation"
+	file = "firebender_attack_01.anim"
+}
+animation = {
+	name = "firebender_attack_02_animation"
+	file = "firebender_attack_02.anim"
+}
+animation = {
+	name = "firebender_attack_03_animation"
+	file = "firebender_attack_03.anim"
+}
+
+animation = {
+	name = "earthbender_idle_animation"
+	file = "earthbender_idle.anim"
+}
+animation = {
+	name = "earthbender_walk_animation"
+	file = "earthbender_walk.anim"
+}
+animation = {
+	name = "earthbender_attack_01_animation"
+	file = "earthbender_attack_01.anim"
+}
+
+
+animation = {
+	name = "earthbending_1_idle_animation"
+	file = "earthbending_1_idle.anim"
+}
+animation = {
+	name = "earthbending_1_attack_1_animation"
+	file = "earthbending_1_attack_1.anim"
+}
+
+
+animation = {
+	name = "airbender_idle_animation"
+	file = "airbender_idle.anim"
+}
+animation = {
+	name = "airbender_walk_animation"
+	file = "airbender_walk.anim"
+}
+animation = {
+	name = "airbender_attack_01_animation"
+	file = "airbender_attack_01.anim"
+}
+
+animation = {
+	name = "sandbender_idle_animation"
+	file = "sandbender_idle.anim"
+}
+animation = {
+	name = "sandbender_walk_animation"
+	file = "sandbender_walk.anim"
+}
+
+#### ck3
+
+
+###########   eu4

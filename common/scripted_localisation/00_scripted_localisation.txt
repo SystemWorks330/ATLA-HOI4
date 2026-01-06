@@ -1,0 +1,1215 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+
+defined_text = {
+	name = GetQualityGrowth
+	text = {
+		trigger = {
+			check_variable = { unit_quality_variable > modifier@unit_quality_target }
+		}
+		localization_key = qualitydecrease
+	}
+	text = {
+		trigger = {
+			check_variable = { unit_quality_variable < modifier@unit_quality_target }
+		}
+		localization_key = qualityincrease
+	}
+	text = {
+		localization_key = qualitystale
+	}
+}
+
+defined_text = {
+	name = GetQualityModifiers
+	text = {
+		localization_key = qualitymodifiers
+	}
+}
+
+defined_text = {
+	name = literacy_tech_slot
+	text = {
+		trigger = {
+			check_variable = { literacy_variable > 75 }
+		}
+		localization_key = literacy_tech_slot_yes
+	}
+	text = {
+		localization_key = literacy_tech_slot_no
+	}
+}
+
+defined_text = {
+	name = economy_tech_slot
+	text = {
+		trigger = {
+			check_variable = { wealth_bar > 50 }
+		}
+		localization_key = economy_tech_slot_yes
+	}
+	text = {
+		localization_key = economy_tech_slot_no
+	}
+}
+
+defined_text = {
+	name = relation_tech_slot
+	text = {
+		trigger = {
+			any_country = {
+				has_opinion = {
+					target = ROOT
+					value > 80
+				}
+			}
+		}
+		localization_key = relation_tech_slot_yes
+	}
+	text = {
+		localization_key = relation_tech_slot_no
+	}
+}
+
+defined_text = {
+	name = modifier_tech_slot
+	text = {
+		trigger = {
+			OR = {
+				check_variable = { modifier@research_slots_num > 0 }
+				any_controlled_state = {
+					check_variable = { modifier@research_slots_num > 0 }
+				}
+			}
+		}
+		localization_key = modifier_tech_slot_yes
+	}
+	text = {
+		localization_key = modifier_tech_slot_no
+	}
+}
+
+
+### peace
+
+defined_text = {
+	name = HasPeaceCheck
+	text = {
+		trigger = {
+			FROM.OWNER = {
+				has_war = yes
+			}
+		}
+		localization_key = IsAtWarLoc
+	}
+	text = {
+		localization_key = IsAtPeaceLoc
+	}
+}
+
+defined_text = {
+	name = CultureCheck
+	text = {
+		trigger = {
+			THIS.CONTROLLER = {has_government = fire_culture}
+		}
+		localization_key = fire_population_trigger
+	}
+	text = {
+		trigger = {
+			THIS.CONTROLLER = {has_government = earth_culture}
+		}
+		localization_key = earth_population_trigger
+	}
+	text = {
+		trigger = {
+			THIS.CONTROLLER = {has_government = water_culture}
+		}
+		localization_key = water_population_trigger
+	}
+	text = {
+		trigger = {
+			THIS.CONTROLLER = {has_government = air_culture}
+		}
+		localization_key = air_population_trigger
+	}
+	text = {
+		trigger = {
+			THIS.CONTROLLER = {has_government = pluralist_culture}
+		}
+		localization_key = nonbender_population_trigger
+	}
+}
+
+
+defined_text = {
+	name = HasAttackerCheck
+	text = {
+		trigger = {
+			FROM = {
+				check_variable = { 
+					var = attacker
+					compare = not_equals
+				}
+			}
+		}
+		localization_key = has_attacker
+	}
+	text = {
+		localization_key = no_attacker
+	}
+}
+defined_text = {
+	name = HasDefenderCheck
+	text = {
+		trigger = {
+			FROM = {
+				check_variable = { 
+					var = defender
+					compare = not_equals
+				}
+			}
+		}
+		localization_key = has_defender
+	}
+	text = {
+		localization_key = no_defender
+	}
+}
+
+
+### avatar
+
+defined_text = {
+	name = BrokenCicle
+	text = {
+		trigger = {
+			has_global_flag = avatar_cycle_broken
+		}
+		localization_key = AVATAR_BROKEN_TOOLTIP
+	}
+	text = {
+		localization_key = AVATAR_ACTIVE_TOOLTIP
+	}
+}
+
+
+### decisions
+
+defined_text = {
+	name = GetShowHideIcon
+	text = {
+		trigger = {
+			has_country_flag = hide_generic_decisions
+		}
+		localization_key = "GFX_hide_decisions"
+	}
+	text = {
+		localization_key = "GFX_show_decisions"
+	}
+}
+defined_text = {
+	name = GetCountryDecisionIcon
+	text = {
+		trigger = {
+			has_country_flag = hide_country_decisions
+		}
+		localization_key = "GFX_hide_country_decisions"
+	}
+	text = {
+		localization_key = "GFX_show_country_decisions"
+	}
+}
+defined_text = {
+	name = GetMissionIcon
+	text = {
+		trigger = {
+			has_country_flag = hide_mission_decisions
+		}
+		localization_key = "GFX_hide_mission_decisions"
+	}
+	text = {
+		localization_key = "GFX_show_mission_decisions"
+	}
+}
+defined_text = {
+	name = GetEmergencyIcon
+	text = {
+		trigger = {
+			has_country_flag = hide_emergency_decisions
+		}
+		localization_key = "GFX_hide_emergency_decisions"
+	}
+	text = {
+		localization_key = "GFX_show_emergency_decisions"
+	}
+}
+defined_text = {
+	name = GetPrioritiseIcon
+	text = {
+		trigger = {
+			has_country_flag = prioritise_civilian
+		}
+		localization_key = "GFX_decision_category_buildup"
+	}
+	text = {
+		trigger = {
+			has_country_flag = prioritise_military
+		}
+		localization_key = "GFX_decision_category_military_buildup"
+	}
+	text = {
+		trigger = {
+			has_country_flag = prioritise_research
+		}
+		localization_key = "GFX_decision_category_research"
+	}
+	text = {
+		localization_key = "GFX_decision_category_generic"
+	}
+}
+defined_text = {
+	name = GetPrioritiseName
+	text = {
+		trigger = {
+			has_country_flag = prioritise_civilian
+		}
+		localization_key = "prioritise_civilian"
+	}
+	text = {
+		trigger = {
+			has_country_flag = prioritise_military
+		}
+		localization_key = "prioritise_military"
+	}
+	text = {
+		trigger = {
+			has_country_flag = prioritise_research
+		}
+		localization_key = "prioritise_research"
+	}
+	text = {
+		localization_key = "prioritise_generic"
+	}
+}
+
+### air genocide outcomes
+
+defined_text = {
+	name = GetNorthOutcome
+	text = {
+		trigger = {
+			has_global_flag = north_temple_fallen
+		}
+		localization_key = nat_fallen_and_cant_get_up
+	}
+	text = {
+		trigger = {
+			has_global_flag = north_temple_survived
+		}
+		localization_key = nat_survived
+	}
+}
+defined_text = {
+	name = GetEastOutcome
+	text = {
+		trigger = {
+			has_global_flag = east_temple_fallen
+		}
+		localization_key = eat_fallen_and_cant_get_up
+	}
+	text = {
+		trigger = {
+			has_global_flag = east_temple_survived
+		}
+		localization_key = eat_survived
+	}
+}
+defined_text = {
+	name = GetSouthOutcome
+	text = {
+		trigger = {
+			has_global_flag = south_temple_fallen
+		}
+		localization_key = sat_fallen_and_cant_get_up
+	}
+	text = {
+		trigger = {
+			has_global_flag = south_temple_survived
+		}
+		localization_key = sat_survived
+	}
+}
+defined_text = {
+	name = GetWestOutcome
+	text = {
+		trigger = {
+			has_global_flag = west_temple_fallen
+		}
+		localization_key = wat_fallen_and_cant_get_up
+	}
+	text = {
+		trigger = {
+			has_global_flag = west_temple_survived
+		}
+		localization_key = wat_survived
+	}
+}
+
+#####
+
+
+defined_text = {
+	name = BefriendDragonsDecision
+	text = {
+		trigger = {
+			has_country_flag = befriend_dragons
+		}
+		localization_key = dragons_befriended_ttp
+	}
+	text = {
+		trigger = {
+			has_country_flag = hunting_dragons
+		}
+		localization_key = dragons_killed_ttp
+	}
+}
+
+defined_text = {
+	name = WatertribeUnityVariables
+	text = {
+		trigger = {
+			tag = NWT
+		}
+		localization_key = nwt_unity_value
+	}
+	text = {
+		trigger = {
+			tag = SWT
+		}
+		localization_key = swt_unity_value
+	}
+}
+
+defined_text = {
+	name = WatertribeUnityStatus
+	text = {
+		trigger = {
+			has_idea = loose_confederation
+		}
+		localization_key = loose_confederation_status
+	}
+	text = {
+		trigger = {
+			has_idea = united_confederation
+		}
+		localization_key = united_confederation_status
+	}
+	text = {
+		trigger = {
+			has_idea = loose_federation
+		}
+		localization_key = loose_federation_status
+	}
+	text = {
+		trigger = {
+			has_idea = united_federation
+		}
+		localization_key = united_federation_status
+	}
+	text = {
+		trigger = {
+			has_idea = one_tribe
+		}
+		localization_key = one_tribe_status
+	}
+}
+
+defined_text = {
+	name = hi
+	text = {
+		trigger = {
+			check_variable = { mountain_position = 56 }
+		}
+		localization_key = [?mountain_position]
+	}
+}
+
+#### legitimacy
+
+
+#### Air Council
+### Air Council
+defined_text = {
+	name = get_air_icon_1
+	text = {
+		trigger = {
+			check_variable = { AIR_council_support = 5 }
+		}
+		localization_key = "GFX_air_icon_1"
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = "GFX_air_icon_1_small"
+	}
+}
+defined_text = {
+	name = get_air_icon_2
+	text = {
+		trigger = {
+			check_variable = { AIR_council_support = 4 }
+		}
+		localization_key = "GFX_air_icon_2"
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = "GFX_air_icon_2_small"
+	}
+}
+defined_text = {
+	name = get_air_icon_3
+	text = {
+		trigger = {
+			check_variable = { AIR_council_support = 3 }
+		}
+		localization_key = "GFX_air_icon_3"
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = "GFX_air_icon_3_small"
+	}
+}
+defined_text = {
+	name = get_air_icon_4
+	text = {
+		trigger = {
+			check_variable = { AIR_council_support = 2 }
+		}
+		localization_key = "GFX_air_icon_4"
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = "GFX_air_icon_4_small"
+	}
+}
+defined_text = {
+	name = get_air_icon_5
+	text = {
+		trigger = {
+			check_variable = { AIR_council_support = 1 }
+		}
+		localization_key = "GFX_air_icon_5"
+	}
+	text = {
+		trigger = {
+		}
+		localization_key = "GFX_air_icon_5_small"
+	}
+}
+
+defined_text = {
+	name = air_council_army
+	text = {
+		trigger = { check_variable = { air_council_army < 100 }}
+		localization_key = air_council_army_r
+	}
+	text = {
+		trigger = { check_variable = { air_council_army = 100 }}
+		localization_key = air_council_army_y
+	}
+	text = {
+		trigger = { check_variable = { air_council_army > 100 }}
+		localization_key = air_council_army_g
+	}
+}
+
+defined_text = {
+	name = air_council_navy
+	text = {
+		trigger = { check_variable = { air_council_navy < 100 }}
+		localization_key = air_council_navy_r
+	}
+	text = {
+		trigger = { check_variable = { air_council_navy = 100 }}
+		localization_key = air_council_navy_y
+	}
+	text = {
+		trigger = { check_variable = { air_council_navy > 100 }}
+		localization_key = air_council_navy_g
+	}
+}
+
+defined_text = {
+	name = air_council_air
+	text = {
+		trigger = { check_variable = { air_council_air < 100 }}
+		localization_key = air_council_air_r
+	}
+	text = {
+		trigger = { check_variable = { air_council_air = 100 }}
+		localization_key = air_council_air_y
+	}
+	text = {
+		trigger = { check_variable = { air_council_air > 100 }}
+		localization_key = air_council_air_g
+	}
+}
+
+defined_text = {
+	name = air_council_construction
+	text = {
+		trigger = { check_variable = { air_council_construction < 100 }}
+		localization_key = air_council_construction_r
+	}
+	text = {
+		trigger = { check_variable = { air_council_construction = 100 }}
+		localization_key = air_council_construction_y
+	}
+	text = {
+		trigger = { check_variable = { air_council_construction > 100 }}
+		localization_key = air_council_construction_g
+	}
+}
+
+defined_text = {
+	name = air_council_research
+	text = {
+		trigger = { check_variable = { air_council_research < 100 }}
+		localization_key = air_council_research_r
+	}
+	text = {
+		trigger = { check_variable = { air_council_research = 100 }}
+		localization_key = air_council_research_y
+	}
+	text = {
+		trigger = { check_variable = { air_council_research > 100 }}
+		localization_key = air_council_research_g
+	}
+}
+
+defined_text = {
+	name = air_council_politics
+	text = {
+		trigger = { check_variable = { air_council_politics < 100 }}
+		localization_key = air_council_politics_r
+	}
+	text = {
+		trigger = { check_variable = { air_council_politics = 100 }}
+		localization_key = air_council_politics_y
+	}
+	text = {
+		trigger = { check_variable = { air_council_politics > 100 }}
+		localization_key = air_council_politics_g
+	}
+}
+
+defined_text = {
+	name = air_council_support_scripted
+	text = {
+		trigger = { check_variable = { AIR_council_support = 1 }}
+		localization_key = council_harsh_opposition_desc
+	}
+	text = {
+		trigger = { check_variable = { AIR_council_support = 2 }}
+		localization_key = council_opposition_desc
+	}
+	text = {
+		trigger = { check_variable = { AIR_council_support = 3 }}
+		localization_key = council_neutral_desc
+	}
+	text = {
+		trigger = { check_variable = { AIR_council_support = 4 }}
+		localization_key = council_support_desc
+	}
+	text = {
+		trigger = { check_variable = { AIR_council_support = 5 }}
+		localization_key = council_substancial_support_desc
+	}
+}
+
+defined_text = {
+	name = air_council_mission_1
+	text = {
+		trigger = { check_variable = { air_mission_1 = 1 }}
+		localization_key = air_council_reward_1
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 2 }}
+		localization_key = air_council_reward_2
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 3 }}
+		localization_key = air_council_reward_3
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 4 }}
+		localization_key = air_council_reward_4
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 5 }}
+		localization_key = air_council_reward_5
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 6} }
+		localization_key = air_council_reward_6
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 7} }
+		localization_key = air_council_reward_7
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 8 }}
+		localization_key = air_council_reward_8
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 9 }}
+		localization_key = air_council_reward_9
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 10 }}
+		localization_key = air_council_reward_10
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 11 }}
+		localization_key = air_council_reward_11
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 12 }}
+		localization_key = air_council_reward_12
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 13 }}
+		localization_key = air_council_reward_13
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 14 }}
+		localization_key = air_council_reward_14
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 15 }}
+		localization_key = air_council_reward_15
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 16 }}
+		localization_key = air_council_reward_16
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 17 }}
+		localization_key = air_council_reward_17
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 18 }}
+		localization_key = air_council_reward_18
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 19 }}
+		localization_key = air_council_reward_19
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 20 }}
+		localization_key = air_council_reward_20
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 21 }}
+		localization_key = air_council_reward_21
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 22 }}
+		localization_key = air_council_reward_22
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 23 }}
+		localization_key = air_council_reward_23
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 24 }}
+		localization_key = air_council_reward_24
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 25 }}
+		localization_key = air_council_reward_25
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 26 }}
+		localization_key = air_council_reward_26
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 27 }}
+		localization_key = air_council_reward_27
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 28 }}
+		localization_key = air_council_reward_28
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 29 }}
+		localization_key = air_council_reward_29
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 30 }}
+		localization_key = air_council_reward_30
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 31 }}
+		localization_key = air_council_reward_31
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 32 }}
+		localization_key = air_council_reward_32
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1 = 33 }}
+		localization_key = air_council_reward_33
+	}
+}
+
+defined_text = {
+	name = air_council_mission_2
+	text = {
+		trigger = { check_variable = { air_mission_2 = 1 }}
+		localization_key = air_council_reward_1
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 2 }}
+		localization_key = air_council_reward_2
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 3 }}
+		localization_key = air_council_reward_3
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 4 }}
+		localization_key = air_council_reward_4
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 5 }}
+		localization_key = air_council_reward_5
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 6} }
+		localization_key = air_council_reward_6
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 7} }
+		localization_key = air_council_reward_7
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 8 }}
+		localization_key = air_council_reward_8
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 9 }}
+		localization_key = air_council_reward_9
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 10 }}
+		localization_key = air_council_reward_10
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 11 }}
+		localization_key = air_council_reward_11
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 12 }}
+		localization_key = air_council_reward_12
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 13 }}
+		localization_key = air_council_reward_13
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 14 }}
+		localization_key = air_council_reward_14
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 15 }}
+		localization_key = air_council_reward_15
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 16 }}
+		localization_key = air_council_reward_16
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 17 }}
+		localization_key = air_council_reward_17
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 18 }}
+		localization_key = air_council_reward_18
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 19 }}
+		localization_key = air_council_reward_19
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 20 }}
+		localization_key = air_council_reward_20
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 21 }}
+		localization_key = air_council_reward_21
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 22 }}
+		localization_key = air_council_reward_22
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 23 }}
+		localization_key = air_council_reward_23
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 24 }}
+		localization_key = air_council_reward_24
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 25 }}
+		localization_key = air_council_reward_25
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 26 }}
+		localization_key = air_council_reward_26
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 27 }}
+		localization_key = air_council_reward_27
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 28 }}
+		localization_key = air_council_reward_28
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 29 }}
+		localization_key = air_council_reward_29
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 30 }}
+		localization_key = air_council_reward_30
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 31 }}
+		localization_key = air_council_reward_31
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 32 }}
+		localization_key = air_council_reward_32
+	}
+	text = {
+		trigger = { check_variable = { air_mission_2 = 33 }}
+		localization_key = air_council_reward_33
+	}
+}
+
+defined_text = {
+	name = air_council_mission_3
+	text = {
+		trigger = { check_variable = { air_mission_3 = 1 }}
+		localization_key = air_council_reward_1
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 2 }}
+		localization_key = air_council_reward_2
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 3 }}
+		localization_key = air_council_reward_3
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 4 }}
+		localization_key = air_council_reward_4
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 5 }}
+		localization_key = air_council_reward_5
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 6} }
+		localization_key = air_council_reward_6
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 7} }
+		localization_key = air_council_reward_7
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 8 }}
+		localization_key = air_council_reward_8
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 9 }}
+		localization_key = air_council_reward_9
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 10 }}
+		localization_key = air_council_reward_10
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 11 }}
+		localization_key = air_council_reward_11
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 12 }}
+		localization_key = air_council_reward_12
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 13 }}
+		localization_key = air_council_reward_13
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 14 }}
+		localization_key = air_council_reward_14
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 15 }}
+		localization_key = air_council_reward_15
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 16 }}
+		localization_key = air_council_reward_16
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 17 }}
+		localization_key = air_council_reward_17
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 18 }}
+		localization_key = air_council_reward_18
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 19 }}
+		localization_key = air_council_reward_19
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 20 }}
+		localization_key = air_council_reward_20
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 21 }}
+		localization_key = air_council_reward_21
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 22 }}
+		localization_key = air_council_reward_22
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 23 }}
+		localization_key = air_council_reward_23
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 24 }}
+		localization_key = air_council_reward_24
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 25 }}
+		localization_key = air_council_reward_25
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 26 }}
+		localization_key = air_council_reward_26
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 27 }}
+		localization_key = air_council_reward_27
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 28 }}
+		localization_key = air_council_reward_28
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 29 }}
+		localization_key = air_council_reward_29
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 30 }}
+		localization_key = air_council_reward_30
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 31 }}
+		localization_key = air_council_reward_31
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 32 }}
+		localization_key = air_council_reward_32
+	}
+	text = {
+		trigger = { check_variable = { air_mission_3 = 33 }}
+		localization_key = air_council_reward_33
+	}
+}
+
+defined_text = {
+	name = air_council_mission_4
+	text = {
+		trigger = { check_variable = { air_mission_4 = 1 }}
+		localization_key = air_council_reward_1
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 2 }}
+		localization_key = air_council_reward_2
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 3 }}
+		localization_key = air_council_reward_3
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 4 }}
+		localization_key = air_council_reward_4
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 5 }}
+		localization_key = air_council_reward_5
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 6} }
+		localization_key = air_council_reward_6
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 7} }
+		localization_key = air_council_reward_7
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 8 }}
+		localization_key = air_council_reward_8
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 9 }}
+		localization_key = air_council_reward_9
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 10 }}
+		localization_key = air_council_reward_10
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 11 }}
+		localization_key = air_council_reward_11
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 12 }}
+		localization_key = air_council_reward_12
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 13 }}
+		localization_key = air_council_reward_13
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 14 }}
+		localization_key = air_council_reward_14
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 15 }}
+		localization_key = air_council_reward_15
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 16 }}
+		localization_key = air_council_reward_16
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 17 }}
+		localization_key = air_council_reward_17
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 18 }}
+		localization_key = air_council_reward_18
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 19 }}
+		localization_key = air_council_reward_19
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 20 }}
+		localization_key = air_council_reward_20
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 21 }}
+		localization_key = air_council_reward_21
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 22 }}
+		localization_key = air_council_reward_22
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 23 }}
+		localization_key = air_council_reward_23
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 24 }}
+		localization_key = air_council_reward_24
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 25 }}
+		localization_key = air_council_reward_25
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 26 }}
+		localization_key = air_council_reward_26
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 27 }}
+		localization_key = air_council_reward_27
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 28 }}
+		localization_key = air_council_reward_28
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 29 }}
+		localization_key = air_council_reward_29
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 30 }}
+		localization_key = air_council_reward_30
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 31 }}
+		localization_key = air_council_reward_31
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 32 }}
+		localization_key = air_council_reward_32
+	}
+	text = {
+		trigger = { check_variable = { air_mission_4 = 33 }}
+		localization_key = air_council_reward_33
+	}
+}
+
+defined_text = {
+	name = air_mission_1_name
+	text = {
+		trigger = { check_variable = { air_mission_1_reward = 1 }}
+		localization_key = air_mission_reward_1
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1_reward = 1 }}
+		localization_key = air_mission_reward_1
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1_reward = 1 }}
+		localization_key = air_mission_reward_1
+	}
+	text = {
+		trigger = { check_variable = { air_mission_1_reward = 1 }}
+		localization_key = air_mission_reward_1
+	}
+}
+defined_text = {
+	name = AvatarOpinionMissingChecker
+	text = {
+		trigger = {NOT = {has_global_flag = avatar_unknown}}
+		localization_key = AVATAR_OPINION_1_TOOLTIP
+	}
+	text = {
+		trigger =  {has_global_flag = avatar_unknown}
+		localization_key = AVATAR_OPINION_2_TOOLTIP
+	}
+}

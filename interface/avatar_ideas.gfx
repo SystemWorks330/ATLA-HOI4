@@ -1,0 +1,3729 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_idea_traits_strip"
+		texturefile = "gfx/interface/ideas/idea_traits_strip.dds"
+		noOfFrames = 25
+	}
+
+	### atla icons
+
+	#major
+	SpriteType = {
+		name = "GFX_idea_spiritless_nation_spirit"
+		texturefile = "gfx/interface/ideas/major_spirit/00_spiritless.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_war_weariness"
+		texturefile = "gfx/interface/ideas/spirit/idea_war_weariness.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_no_ruler"
+		texturefile = "gfx/interface/ideas/spirit/idea_no_ruler.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tax_spending"
+		texturefile = "gfx/interface/ideas/spirit/idea_tax_spending.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_tax_relief"
+		texturefile = "gfx/interface/ideas/spirit/idea_tax_relief.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_child_labour"
+		texturefile = "gfx/interface/ideas/spirit/idea_child_labour.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_peasant_strikes"
+		texturefile = "gfx/interface/ideas/spirit/idea_peasant_strikes.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_peasant_unrest"
+		texturefile = "gfx/interface/ideas/spirit/idea_peasant_unrest.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_appeased_peasants"
+		texturefile = "gfx/interface/ideas/spirit/idea_appeased_peasants.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_colonial_investment"
+		texturefile = "gfx/interface/ideas/spirit/idea_colonial_investment.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_age_1_bonus"
+		texturefile = "gfx/interface/ideas/ages/age_1_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_age_2_bonus"
+		texturefile = "gfx/interface/ideas/ages/age_2_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_age_3_bonus"
+		texturefile = "gfx/interface/ideas/ages/age_3_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_age_4_bonus"
+		texturefile = "gfx/interface/ideas/ages/age_4_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_age_5_bonus"
+		texturefile = "gfx/interface/ideas/ages/age_5_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_age_6_bonus"
+		texturefile = "gfx/interface/ideas/ages/age_6_bonus.dds"
+	}
+
+
+	###fir
+
+	#major
+	SpriteType = {
+		name = "GFX_idea_fire_supremacy_spirit"
+		texturefile = "gfx/interface/ideas/major_spirit/FIR_supremacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_fire_supremacy_idea"
+		texturefile = "gfx/interface/ideas/major_spirit/FIR_supremacy_small.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_fire_imperialism_spirit"
+		texturefile = "gfx/interface/ideas/major_spirit/FIR_imperialism.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_fire_imperialism_idea"
+		texturefile = "gfx/interface/ideas/major_spirit/FIR_imperialism_small.dds"
+	}
+
+	#minor
+	SpriteType = {
+		name = "GFX_idea_national_prosperity"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_national_prosperity_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_legacy_of_roku_and_sozin"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_legacy_of_roku_and_sozin.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_guiding_wind_opposition"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_guiding_wind_opposition.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_ruthless_expansionism"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_ruthless_expansionism.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_prince_azulon"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_prince_azulon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_princess_rhya"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_princess_rhya.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_prince_ozai"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_prince_ozai.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_ozai_representative_prince"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_ozai_representative_prince.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_prince_iroh"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_prince_iroh.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_prince_lu_ten"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_prince_lu_ten.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_prince_zuko"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_prince_zuko.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_spirit_princess_azula"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_princess_azula.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_first_invasion"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_first_invasion.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_northern_plan"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_northern_attack_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_central_plan"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_central_attack_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_southern_plan"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_southern_attack_plan.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_promote_war_support"
+		texturefile = "gfx/interface/ideas/spirit/FIR/promote_war_support.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_modern_agriculture"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_modern_agriculture.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_guiding_wind_opposition"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_guiding_wind_opposition.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_private_investors"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_private_investors.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_cultural_change"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_FIR_cultural_change.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_earthkingdom_operation_bases"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_earthkingdom_operation_bases.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_evacuation_expenses"
+		texturefile = "gfx/interface/ideas/spirit/FIR/evacuation_expenses.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_dragon_hunt_poacher"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_dragon_hunt_poacher.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_dragon_hunt_neutral"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_dragon_hunt_neutral.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_dragon_hunt_noble"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_dragon_hunt_noble.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_FIR_600_days_siege"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_600_days_siege.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_FIR_firebending_origins"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_firebending_origins.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FIR_banned_poaching"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_banned_poaching.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ran_and_shaw"
+		texturefile = "gfx/interface/ideas/spirit/ran_and_shaw.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_dragon_army"
+		texturefile = "gfx/interface/ideas/spirit/dragon_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FIR_colonial_administration"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_colonial_administration.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_banished_prince"
+		texturefile = "gfx/interface/ideas/spirit/FIR/banished_prince.dds"
+	}
+
+
+	#fir colonies
+
+	spriteType = {
+		name = "GFX_idea_victories_western_ek"
+		texturefile = "gfx/interface/ideas/spirit/FIR/idea_victories_western_ek.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_colonial_shield"
+		texturefile = "gfx/interface/ideas/spirit/colonial_shield.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mining_colony"
+		texturefile = "gfx/interface/ideas/spirit/mining_colony.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_training_grounds"
+		texturefile = "gfx/interface/ideas/spirit/training_grounds.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_farming_colony"
+		texturefile = "gfx/interface/ideas/spirit/farming_colony.dds"
+	}
+
+
+	#ear
+
+	#major
+	SpriteType = {
+		name = "GFX_idea_heart_of_the_kingdom_spirit"
+		texturefile = "gfx/interface/ideas/major_spirit/EAR_heart_of_the_kingdom.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_heart_of_the_kingdom_idea"
+		texturefile = "gfx/interface/ideas/major_spirit/EAR_heart_of_the_kingdom_small.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_no_war_in_ba_sing_se_spirit"
+		texturefile = "gfx/interface/ideas/major_spirit/EAR_no_war_in_ba_sing_se.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_no_war_in_ba_sing_se_idea"
+		texturefile = "gfx/interface/ideas/major_spirit/EAR_no_war_in_ba_sing_se_small.dds"
+	}
+
+	#minor
+	SpriteType = {
+		name = "GFX_idea_kyoshi_constitution"
+		texturefile = "gfx/interface/ideas/spirit/kyoshi_constitution.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_weak_legitimacy"
+		texturefile = "gfx/interface/ideas/spirit/weak_legitimacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_humiliated_in_battle"
+		texturefile = "gfx/interface/ideas/spirit/humiliated_in_battle.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_corrupt_bureaucracy"
+		texturefile = "gfx/interface/ideas/spirit/corrupt_bureaucracy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_the_dai_li"
+		texturefile = "gfx/interface/ideas/spirit/the_dai_li.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_dai_li_government"
+		texturefile = "gfx/interface/ideas/spirit/dai_li_government.dds"
+	}
+
+	### ear states
+
+	#major
+	SpriteType = {
+		name = "GFX_idea_pearl_of_the_south_spirit"
+		texturefile = "gfx/interface/ideas/major_spirit/pearl_of_the_south.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_chin_legacy_spirit"
+		texturefile = "gfx/interface/ideas/major_spirit/chin_legacy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_kyoshi_isolation_spirit"
+		texturefile = "gfx/interface/ideas/major_spirit/kyoshi_isolation.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_fractured_desert_spirit"
+		texturefile = "gfx/interface/ideas/major_spirit/fractured_desert.dds"
+	}
+
+	#minor
+	SpriteType = {
+		name = "GFX_idea_depression"
+		texturefile = "gfx/interface/ideas/spirit/depression.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_a_strong_national_economy"
+		texturefile = "gfx/interface/ideas/spirit/a_strong_national_economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_population_counted"
+		texturefile = "gfx/interface/ideas/spirit/population_counted.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_merchant_tradition"
+		texturefile = "gfx/interface/ideas/spirit/merchant_tradition.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_earth_defensive_measures"
+		texturefile = "gfx/interface/ideas/spirit/idea_earth_defensive_measures.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_our_lives_for_freedom"
+		texturefile = "gfx/interface/ideas/spirit/idea_our_lives_for_freedom.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_stolen_resources"
+		texturefile = "gfx/interface/ideas/spirit/idea_stolen_resources.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_idea_bss_advisors"
+		texturefile = "gfx/interface/ideas/spirit/idea_bss_advisors.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_cavalry_tradition"
+		texturefile = "gfx/interface/ideas/spirit/cavalry_tradition.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_Teka_kimonos"
+		texturefile = "gfx/interface/ideas/designer/idea_teka_kimonos.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_Ringo_kimonos"
+		texturefile = "gfx/interface/ideas/designer/idea_ringo_kimonos.dds"
+	}
+
+	### chin
+
+	SpriteType = {
+		name = "GFX_idea_CHN_judical_system"
+		texturefile = "gfx/interface/ideas/spirit/CHN_judical_system.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHN_romanticism"
+		texturefile = "gfx/interface/ideas/spirit/CHN_romanticism.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_CHN_kyoshi_rivalry"
+		texturefile = "gfx/interface/ideas/spirit/CHN_kyoshi_rivalry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_CHN_chin_resistance"
+		texturefile = "gfx/interface/ideas/spirit/CHN_chin_resistance.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_pirate_traders"
+		texturefile = "gfx/interface/ideas/spirit/pirate_traders.dds"
+	}
+	
+	#water
+
+	#major
+	SpriteType = {
+		name = "GFX_idea_northern_spirit_spirit"
+		texturefile = "gfx/interface/ideas/major_spirit/NWT_northern_spirit.dds"
+	}
+
+	#minor
+
+	SpriteType = {
+		name = "GFX_idea_the_kyoshi_warriors"
+		texturefile = "gfx/interface/ideas/spirit/the_kyoshi_warriors.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_KYI_signed_memorandum_of_cooperation_with_ringo_kimonos_idea"
+		texturefile = "gfx/interface/ideas/spirit/KYI_signed_memorandum_of_cooperation_with_ringo_kimonos_idea.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_remote_isolation"
+		texturefile = "gfx/interface/ideas/spirit/remote_isolation.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_remote_isolation_1"
+		texturefile = "gfx/interface/ideas/spirit/remote_isolation_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_remote_isolation_2"
+		texturefile = "gfx/interface/ideas/spirit/remote_isolation_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_remote_isolation_3"
+		texturefile = "gfx/interface/ideas/spirit/remote_isolation_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_protective_isolation"
+		texturefile = "gfx/interface/ideas/spirit/remote_isolation_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_water_intervention"
+		texturefile = "gfx/interface/ideas/spirit/remote_isolation_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_loose_confederation"
+		texturefile = "gfx/interface/ideas/spirit/loose_confederation.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_united_confederation"
+		texturefile = "gfx/interface/ideas/spirit/united_confederation.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_loose_federation"
+		texturefile = "gfx/interface/ideas/spirit/loose_federation.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_united_federation"
+		texturefile = "gfx/interface/ideas/spirit/united_federation.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_one_tribe"
+		texturefile = "gfx/interface/ideas/spirit/one_tribe.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_water_raids_100"
+		texturefile = "gfx/interface/ideas/spirit/water_raids_100.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_waterbender_ice_construction"
+		texturefile = "gfx/interface/ideas/spirit/idea_waterbender_ice_construction.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_water_payments"
+		texturefile = "gfx/interface/ideas/spirit/water_payments.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_water_debts"
+		texturefile = "gfx/interface/ideas/spirit/water_debts.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_SWA_spirits"
+		texturefile = "gfx/interface/ideas/spirit/SWA_spirits.dds"
+	}
+	
+	#air
+	SpriteType = {
+		name = "GFX_air_icon_1_small"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_1_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_icon_1"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_icon_2_small"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_2_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_icon_2"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_icon_3_small"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_3_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_icon_3"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_icon_4_small"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_4_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_icon_4"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_icon_5_small"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_5_small.dds"
+	}
+	SpriteType = {
+		name = "GFX_air_icon_5"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_5.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_idea_NAT_bison_polo"
+		texturefile = "gfx/interface/ideas/spirit/NAT_bison_polo.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_pacifist_detachment"
+		texturefile = "gfx/interface/ideas/spirit/pacifist_detachment.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_protecting_the_avatar"
+		texturefile = "gfx/interface/ideas/spirit/protecting_the_avatar.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_council_harsh_opposition"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_council_opposition"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_council_neutral"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_council_support"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_council_substancial_support"
+		texturefile = "gfx/interface/ideas/spirit/air_icon_1.dds"
+	}
+
+	######## calendar
+
+	SpriteType = {
+		name = "GFX_idea_full_moon"
+		texturefile = "gfx/interface/ideas/spirit/full_moon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_half_moon"
+		texturefile = "gfx/interface/ideas/spirit/half_moon.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sozins_comet_1"
+		texturefile = "gfx/interface/ideas/spirit/sozins_comet.dds"
+	}
+
+
+	###### laws
+
+	SpriteType = {
+		name = "GFX_idea_family_support_1"
+		texturefile = "gfx/interface/ideas/laws/idea_no_rations.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_family_support_2"
+		texturefile = "gfx/interface/ideas/laws/idea_few_rations.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_family_support_3"
+		texturefile = "gfx/interface/ideas/laws/idea_basic_rations.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_family_support_4"
+		texturefile = "gfx/interface/ideas/laws/idea_good_rations.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_family_support_5"
+		texturefile = "gfx/interface/ideas/laws/idea_family_support.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_elite_education"
+		texturefile = "gfx/interface/ideas/laws/idea_education_law_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_no_education"
+		texturefile = "gfx/interface/ideas/laws/idea_education_law_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_average_education"
+		texturefile = "gfx/interface/ideas/laws/idea_education_law_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_mandatory_education"
+		texturefile = "gfx/interface/ideas/laws/idea_education_law_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_indoctrination"
+		texturefile = "gfx/interface/ideas/laws/idea_indoctrination.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_tribal_education"
+		texturefile = "gfx/interface/ideas/laws/idea_tribal_education.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_construction_efforts_law"
+		texturefile = "gfx/interface/ideas/laws/idea_construction_efforts_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_buildup_focus_law"
+		texturefile = "gfx/interface/ideas/laws/idea_buildup_focus_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_balanced_economy_law"
+		texturefile = "gfx/interface/ideas/laws/idea_balanced_economy_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_war_economy_law"
+		texturefile = "gfx/interface/ideas/laws/idea_war_economy_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_total_mobilisation_law"
+		texturefile = "gfx/interface/ideas/laws/idea_total_mobilisation_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_rural_economy_law"
+		texturefile = "gfx/interface/ideas/laws/idea_rural_economy_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_free_economy_law"
+		texturefile = "gfx/interface/ideas/laws/idea_free_economy_law.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_command_economy_law"
+		texturefile = "gfx/interface/ideas/laws/idea_command_economy_law.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_occupation_economy"
+		texturefile = "gfx/interface/ideas/laws/idea_occupation_economy.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_idea_hidden_economy"
+		texturefile = "gfx/interface/ideas/laws/idea_hidden_economy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_global_trade"
+		texturefile = "gfx/interface/ideas/laws/idea_global_trade.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_intercontinental_trade"
+		texturefile = "gfx/interface/ideas/laws/idea_intercontinental_trade.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_international_trade"
+		texturefile = "gfx/interface/ideas/laws/idea_international_trade.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_city_markets"
+		texturefile = "gfx/interface/ideas/laws/idea_city_markets.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_local_markets"
+		texturefile = "gfx/interface/ideas/laws/idea_local_markets.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_occupation_black_market"
+		texturefile = "gfx/interface/ideas/laws/idea_occupation_black_market.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_closed_economy"
+		texturefile = "gfx/interface/ideas/idea_generic_closed_economy.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_limited_exports"
+		texturefile = "gfx/interface/ideas/idea_generic_limited_exports.dds"
+	}		
+	SpriteType = {
+		name = "GFX_idea_regulated_trade"
+		texturefile = "gfx/interface/ideas/laws/idea_regulated_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_free_trade"
+		texturefile = "gfx/interface/ideas/idea_generic_free_trade.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_export_focus"
+		texturefile = "gfx/interface/ideas/idea_generic_export_focus.dds"
+	}	
+
+	spriteType = {
+		name = "GFX_idea_disarmed_nation"
+		texturefile = "gfx/interface/ideas/idea_disarmed_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_volunteer_only"
+		texturefile = "gfx/interface/ideas/idea_volunteer_only.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_limited_conscription"
+		texturefile = "gfx/interface/ideas/idea_limited_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_extensive_conscription"
+		texturefile = "gfx/interface/ideas/idea_extensive_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_service_by_requirement"
+		texturefile = "gfx/interface/ideas/idea_service_by_requirement.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_all_adults_serve"
+		texturefile = "gfx/interface/ideas/idea_all_adults_serve.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_scraping_the_barrel"
+		texturefile = "gfx/interface/ideas/idea_scraping_the_barrel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_disarmed_fire_nation"
+		texturefile = "gfx/interface/ideas/laws/idea_disarmed_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_volunteer_fire_nation"
+		texturefile = "gfx/interface/ideas/laws/idea_volunteer_only.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_limited_fire_conscription"
+		texturefile = "gfx/interface/ideas/laws/idea_limited_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_disarmed_earth_nation"
+		texturefile = "gfx/interface/ideas/laws/idea_disarmed_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_volunteer_earth_nation"
+		texturefile = "gfx/interface/ideas/laws/idea_volunteer_only.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_limited_earth_conscription"
+		texturefile = "gfx/interface/ideas/laws/idea_limited_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_disarmed_air_nation"
+		texturefile = "gfx/interface/ideas/laws/idea_disarmed_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_volunteer_air_nation"
+		texturefile = "gfx/interface/ideas/laws/idea_volunteer_only.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_limited_air_conscription"
+		texturefile = "gfx/interface/ideas/laws/idea_limited_conscription.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_disarmed_water_nation"
+		texturefile = "gfx/interface/ideas/laws/idea_disarmed_nation.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_volunteer_water_nation"
+		texturefile = "gfx/interface/ideas/laws/idea_volunteer_only.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_limited_water_conscription"
+		texturefile = "gfx/interface/ideas/laws/idea_limited_conscription.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_fire_benders_only"
+		texturefile = "gfx/interface/ideas/laws/idea_firebender_law_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_fire_exceptional"
+		texturefile = "gfx/interface/ideas/laws/idea_firebender_law_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_fire_volunteers"
+		texturefile = "gfx/interface/ideas/laws/idea_firebender_law_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_fire_auxiliary"
+		texturefile = "gfx/interface/ideas/laws/idea_firebender_law_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_fire_indiscriminate"
+		texturefile = "gfx/interface/ideas/laws/idea_firebender_law_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_sun_benders_only"
+		texturefile = "gfx/interface/ideas/laws/idea_sunbender_law_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_sun_auxiliary"
+		texturefile = "gfx/interface/ideas/laws/idea_sunbender_law_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_earth_benders_only"
+		texturefile = "gfx/interface/ideas/laws/idea_earthbender_law_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_earth_exceptional"
+		texturefile = "gfx/interface/ideas/laws/idea_earthbender_law_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_earth_volunteers"
+		texturefile = "gfx/interface/ideas/laws/idea_earthbender_law_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_earth_auxiliary"
+		texturefile = "gfx/interface/ideas/laws/idea_earthbender_law_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_earth_indiscriminate"
+		texturefile = "gfx/interface/ideas/laws/idea_earthbender_law_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_water_benders_only"
+		texturefile = "gfx/interface/ideas/laws/idea_waterbender_law_5.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_water_exceptional"
+		texturefile = "gfx/interface/ideas/laws/idea_waterbender_law_4.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_water_volunteers"
+		texturefile = "gfx/interface/ideas/laws/idea_waterbender_law_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_water_auxiliary"
+		texturefile = "gfx/interface/ideas/laws/idea_waterbender_law_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_water_indiscriminate"
+		texturefile = "gfx/interface/ideas/laws/idea_waterbender_law_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_idea_air_benders_only"
+		texturefile = "gfx/interface/ideas/laws/idea_airbender_law_1.dds"
+	}
+
+
+
+	#### advisors
+
+	spriteType = {
+		name = "GFX_idea_azulon"
+		texturefile = "gfx/interface/ideas/leader_small/idea_azulon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sozin"
+		texturefile = "gfx/interface/ideas/leader_small/idea_sozin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_iroh"
+		texturefile = "gfx/interface/ideas/leader_small/idea_iroh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_koulin"
+		texturefile = "gfx/interface/ideas/leader_small/idea_koulin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_personnel_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_personnel_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_personnel_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_personnel_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_personnel_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_personnel_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_personnel_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_personnel_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_personnel_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_personnel_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_personnel_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_personnel_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_finance_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_finance_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_finance_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_finance_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_finance_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_finance_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_finance_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_finance_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_finance_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_finance_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_finance_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_finance_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_culture_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_culture_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_culture_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_culture_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_culture_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_culture_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_culture_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_culture_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_culture_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_culture_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_culture_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_culture_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_justice_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_justice_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_justice_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_justice_2.dds"
+	}spriteType = {
+		name = "GFX_idea_fir_minister_of_justice_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_justice_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_justice_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_justice_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_justice_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_justice_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_justice_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_justice_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_works_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_works_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_works_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_works_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_works_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_works_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_works_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_works_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_works_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_works_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_works_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_works_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_rites_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_rites_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_rites_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_rites_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_rites_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_rites_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_rites_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_rites_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_rites_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_rites_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_minister_of_rites_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_minister_of_rites_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fir_head_of_intelligence_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_head_of_intelligence_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_head_of_intelligence_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_head_of_intelligence_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_head_of_intelligence_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_head_of_intelligence_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_head_of_intelligence_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_head_of_intelligence_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_head_of_intelligence_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_head_of_intelligence_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_head_of_intelligence_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_head_of_intelligence_6.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_ear_dai_li_1"
+		texturefile = "gfx/interface/ideas/leader_small/EAR/idea_earthkingdom_dai_li_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ear_dai_li_2"
+		texturefile = "gfx/interface/ideas/leader_small/EAR/idea_earthkingdom_dai_li_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ear_dai_li_3"
+		texturefile = "gfx/interface/ideas/leader_small/EAR/idea_earthkingdom_dai_li_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ear_dai_li_4"
+		texturefile = "gfx/interface/ideas/leader_small/EAR/idea_earthkingdom_dai_li_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ear_dai_li_5"
+		texturefile = "gfx/interface/ideas/leader_small/EAR/idea_earthkingdom_dai_li_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ear_dai_li_6"
+		texturefile = "gfx/interface/ideas/leader_small/EAR/idea_earthkingdom_dai_li_6.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_idea_fir_academia_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_academia_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_academia_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_academia_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_academia_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_academia_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_academia_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_academia_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fir_army_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_army_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_army_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_army_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_army_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_army_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_army_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_army_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fir_navy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_navy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_navy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_navy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_navy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_navy_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fir_melee_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_fir_melee_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_ranged_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_fir_ranged_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_mounted_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_fir_mounted_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_mounted_designer_2"
+		texturefile = "gfx/interface/ideas/designer/idea_fir_mounted_designer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_naval_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_fir_naval_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_motorized_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_fir_motorized_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_consumer_industry_designer"
+		texturefile = "gfx/interface/ideas/designer/idea_fir_consumer_industry_designer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_heavy_industry_designer"
+		texturefile = "gfx/interface/ideas/designer/idea_fir_heavy_industry_designer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_wartime_industry_designer"
+		texturefile = "gfx/interface/ideas/designer/idea_fir_wartime_industry_designer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fir_law_enforcement_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_law_enforcement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_law_enforcement_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_law_enforcement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_law_enforcement_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_law_enforcement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_law_enforcement_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_law_enforcement_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fir_martial_art_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_martial_art_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_martial_art_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_martial_art_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_martial_art_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_martial_art_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_martial_art_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_martial_art_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fir_clergy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_clergy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_clergy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_clergy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_clergy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_clergy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fir_clergy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_clergy_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_ear_homemade_arms_workshop"
+		texturefile = "gfx/interface/ideas/designer/idea_ear_homemade_arms_workshop.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ear_homemade_arms_designer"
+		texturefile = "gfx/interface/ideas/designer/idea_ear_homemade_arms_designer.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ear_melee_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_ear_melee_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_cabbage_merchant_designer"
+		texturefile = "gfx/interface/ideas/designer/idea_cabbage_merchant_designer.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_personnel_1"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_personnel_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_personnel_2"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_personnel_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_personnel_3"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_personnel_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_personnel_4"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_personnel_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_personnel_5"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_personnel_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_personnel_6"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_personnel_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_finance_1"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_finance_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_finance_2"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_finance_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_finance_3"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_finance_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_finance_4"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_finance_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_finance_5"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_finance_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_finance_6"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_finance_6.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_finance_7"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_finance_7.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_finance_8"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_finance_8.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_culture_1"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_culture_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_culture_2"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_culture_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_culture_3"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_culture_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_culture_4"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_culture_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_culture_5"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_culture_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_culture_6"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_culture_6.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_culture_7"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_culture_7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_justice_1"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_justice_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_justice_2"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_justice_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_justice_3"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_justice_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_justice_4"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_justice_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_justice_5"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_justice_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_justice_6"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_justice_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_works_1"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_works_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_works_2"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_works_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_works_3"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_works_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_works_4"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_works_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_works_5"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_works_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_works_6"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_works_6.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_works_7"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_works_7.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_rites_1"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_rites_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_rites_2"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_rites_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_rites_3"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_rites_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_rites_4"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_rites_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_rites_5"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_rites_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_minister_of_rites_6"
+		texturefile = "gfx/interface/ideas/leader_small/generic/idea_generic_minister_of_rites_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_field_marshal_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_field_marshal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_field_marshal_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_field_marshal_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_field_marshal_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_field_marshal_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_field_marshal_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_field_marshal_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_field_marshal_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_field_marshal_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_field_marshal_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_field_marshal_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_grand_admiral_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_grand_admiral_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_grand_admiral_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_grand_admiral_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_grand_admiral_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_grand_admiral_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_grand_admiral_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_grand_admiral_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_grand_admiral_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_grand_admiral_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_grand_admiral_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_grand_admiral_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_quartermaster_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_quartermaster_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_quartermaster_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_quartermaster_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_quartermaster_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_quartermaster_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_quartermaster_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_quartermaster_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_quartermaster_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_quartermaster_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_quartermaster_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_quartermaster_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_generic_head_of_weaponry_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_weaponry_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_weaponry_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_weaponry_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_weaponry_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_weaponry_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_weaponry_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_weaponry_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_weaponry_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_weaponry_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_weaponry_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_weaponry_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_head_of_intelligence_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_intelligence_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_intelligence_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_intelligence_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_intelligence_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_intelligence_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_intelligence_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_intelligence_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_intelligence_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_intelligence_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_head_of_intelligence_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_head_of_intelligence_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_generic_war_minister_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_war_minister_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_war_minister_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_war_minister_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_war_minister_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_war_minister_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_war_minister_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_war_minister_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_war_minister_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_war_minister_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_war_minister_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_war_minister_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_academia_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_academia_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_academia_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_academia_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_academia_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_academia_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_academia_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_academia_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_army_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_army_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_army_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_army_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_army_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_army_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_navy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_navy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_navy_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_law_enforcement_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_law_enforcement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_law_enforcement_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_law_enforcement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_law_enforcement_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_law_enforcement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_law_enforcement_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_law_enforcement_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_martial_art_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_martial_art_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_martial_art_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_martial_art_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_martial_art_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_martial_art_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_martial_art_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_martial_art_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_clergy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_clergy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_clergy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_clergy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_clergy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_clergy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_clergy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_clergy_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_personnel_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_personnel_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_personnel_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_personnel_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_personnel_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_personnel_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_personnel_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_personnel_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_personnel_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_personnel_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_personnel_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_personnel_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_finance_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_finance_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_finance_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_finance_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_finance_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_finance_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_finance_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_finance_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_finance_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_finance_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_finance_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_finance_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_culture_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_culture_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_culture_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_culture_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_culture_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_culture_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_culture_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_culture_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_culture_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_culture_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_culture_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_culture_6.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_unification_minister"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_unification_minister.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_justice_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_justice_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_justice_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_justice_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_justice_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_justice_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_justice_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_justice_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_justice_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_justice_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_justice_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_justice_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_works_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_works_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_works_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_works_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_works_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_works_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_works_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_works_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_works_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_works_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_works_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_works_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_rites_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_rites_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_rites_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_rites_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_rites_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_rites_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_rites_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_rites_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_rites_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_rites_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_minister_of_rites_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_minister_of_rites_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_wt_field_marshal_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_field_marshal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_field_marshal_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_field_marshal_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_field_marshal_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_field_marshal_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_field_marshal_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_field_marshal_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_field_marshal_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_field_marshal_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_field_marshal_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_field_marshal_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_wt_grand_admiral_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_grand_admiral_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_grand_admiral_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_grand_admiral_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_grand_admiral_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_grand_admiral_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_grand_admiral_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_grand_admiral_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_grand_admiral_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_grand_admiral_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_grand_admiral_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_grand_admiral_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_wt_quartermaster_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_quartermaster_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_quartermaster_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_quartermaster_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_quartermaster_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_quartermaster_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_quartermaster_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_quartermaster_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_quartermaster_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_quartermaster_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_quartermaster_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_quartermaster_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_wt_head_of_weaponry_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_weaponry_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_head_of_weaponry_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_weaponry_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_head_of_weaponry_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_weaponry_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_head_of_weaponry_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_weaponry_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_head_of_weaponry_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_weaponry_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_head_of_weaponry_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_weaponry_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_head_of_intelligence_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_intelligence_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_head_of_intelligence_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_intelligence_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_head_of_intelligence_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_intelligence_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_head_of_intelligence_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_intelligence_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_head_of_intelligence_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_intelligence_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_head_of_intelligence_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_head_of_intelligence_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_wt_war_minister_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_war_minister_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_war_minister_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_war_minister_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_war_minister_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_war_minister_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_war_minister_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_war_minister_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_war_minister_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_war_minister_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_war_minister_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_war_minister_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_academia_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_academia_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_academia_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_academia_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_academia_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_academia_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_academia_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_academia_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_army_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_army_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_army_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_army_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_army_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_army_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_army_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_army_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_navy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_navy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_navy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_navy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_navy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_navy_4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_wt_melee_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_wt_melee_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_melee_designer_2"
+		texturefile = "gfx/interface/ideas/designer/idea_wt_melee_designer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_ranged_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_wt_ranged_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_mounted_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_wt_mounted_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_mounted_designer_2"
+		texturefile = "gfx/interface/ideas/designer/idea_wt_mounted_designer_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_naval_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_wt_naval_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_motorized_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_wt_motorized_designer_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_industry_designer_1"
+		texturefile = "gfx/interface/ideas/designer/idea_wt_industry_designer_1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_law_enforcement_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_law_enforcement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_law_enforcement_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_law_enforcement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_law_enforcement_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_law_enforcement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_law_enforcement_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_law_enforcement_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_martial_art_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_martial_art_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_martial_art_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_martial_art_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_martial_art_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_martial_art_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_martial_art_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_martial_art_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_wt_clergy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_clergy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_clergy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_clergy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_clergy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_clergy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_wt_clergy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_wt_clergy_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_personnel_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_personnel_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_personnel_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_personnel_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_personnel_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_personnel_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_personnel_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_personnel_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_personnel_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_personnel_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_personnel_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_personnel_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_finance_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_finance_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_finance_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_finance_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_finance_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_finance_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_finance_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_finance_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_finance_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_finance_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_finance_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_finance_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_culture_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_culture_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_culture_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_culture_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_culture_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_culture_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_culture_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_culture_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_culture_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_culture_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_culture_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_culture_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_justice_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_justice_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_justice_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_justice_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_justice_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_justice_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_justice_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_justice_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_justice_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_justice_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_justice_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_justice_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_works_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_works_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_works_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_works_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_works_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_works_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_works_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_works_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_works_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_works_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_works_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_works_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_rites_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_rites_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_rites_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_rites_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_rites_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_rites_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_rites_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_rites_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_rites_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_rites_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_minister_of_rites_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_minister_of_rites_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mat_field_marshal_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_field_marshal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_field_marshal_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_field_marshal_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_field_marshal_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_field_marshal_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_field_marshal_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_field_marshal_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_field_marshal_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_field_marshal_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_field_marshal_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_field_marshal_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mat_grand_admiral_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_grand_admiral_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_grand_admiral_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_grand_admiral_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_grand_admiral_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_grand_admiral_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_grand_admiral_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_grand_admiral_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_grand_admiral_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_grand_admiral_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_grand_admiral_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_grand_admiral_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mat_quartermaster_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_quartermaster_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_quartermaster_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_quartermaster_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_quartermaster_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_quartermaster_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_quartermaster_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_quartermaster_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_quartermaster_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_quartermaster_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_quartermaster_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_quartermaster_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_mat_head_of_weaponry_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_weaponry_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_head_of_weaponry_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_weaponry_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_head_of_weaponry_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_weaponry_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_head_of_weaponry_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_weaponry_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_head_of_weaponry_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_weaponry_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_head_of_weaponry_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_weaponry_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_head_of_intelligence_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_intelligence_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_head_of_intelligence_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_intelligence_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_head_of_intelligence_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_intelligence_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_head_of_intelligence_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_intelligence_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_head_of_intelligence_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_intelligence_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_head_of_intelligence_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_head_of_intelligence_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_mat_war_minister_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_war_minister_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_war_minister_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_war_minister_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_war_minister_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_war_minister_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_war_minister_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_war_minister_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_war_minister_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_war_minister_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_war_minister_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_mat_war_minister_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_academia_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_academia_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_academia_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_academia_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_academia_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_academia_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_academia_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_academia_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_army_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_army_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_army_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_army_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_army_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_army_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_army_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_army_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_navy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_navy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_navy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_navy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_navy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_navy_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_law_enforcement_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_law_enforcement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_law_enforcement_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_law_enforcement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_law_enforcement_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_law_enforcement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_law_enforcement_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_law_enforcement_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_martial_art_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_martial_art_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_martial_art_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_martial_art_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_martial_art_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_martial_art_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_martial_art_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_martial_art_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_mat_clergy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_clergy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_clergy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_clergy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_clergy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_clergy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_mat_clergy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_clergy_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_personnel_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_personnel_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_personnel_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_personnel_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_personnel_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_personnel_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_personnel_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_personnel_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_personnel_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_personnel_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_personnel_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_personnel_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_finance_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_finance_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_finance_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_finance_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_finance_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_finance_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_finance_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_finance_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_finance_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_finance_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_finance_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_finance_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_culture_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_culture_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_culture_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_culture_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_culture_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_culture_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_culture_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_culture_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_culture_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_culture_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_culture_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_culture_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_justice_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_justice_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_justice_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_justice_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_justice_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_justice_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_justice_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_justice_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_justice_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_justice_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_justice_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_justice_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_works_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_works_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_works_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_works_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_works_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_works_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_works_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_works_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_works_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_works_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_works_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_works_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_rites_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_rites_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_rites_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_rites_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_rites_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_rites_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_rites_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_rites_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_rites_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_rites_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_minister_of_rites_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_minister_of_rites_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fat_field_marshal_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_field_marshal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_field_marshal_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_field_marshal_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_field_marshal_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_field_marshal_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_field_marshal_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_field_marshal_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_field_marshal_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_field_marshal_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_field_marshal_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_field_marshal_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fat_grand_admiral_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_grand_admiral_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_grand_admiral_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_grand_admiral_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_grand_admiral_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_grand_admiral_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_grand_admiral_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_grand_admiral_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_grand_admiral_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_grand_admiral_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_grand_admiral_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_grand_admiral_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fat_quartermaster_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_quartermaster_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_quartermaster_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_quartermaster_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_quartermaster_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_quartermaster_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_quartermaster_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_quartermaster_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_quartermaster_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_quartermaster_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_quartermaster_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_quartermaster_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_fat_head_of_weaponry_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_weaponry_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_head_of_weaponry_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_weaponry_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_head_of_weaponry_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_weaponry_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_head_of_weaponry_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_weaponry_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_head_of_weaponry_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_weaponry_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_head_of_weaponry_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_weaponry_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_head_of_intelligence_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_intelligence_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_head_of_intelligence_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_intelligence_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_head_of_intelligence_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_intelligence_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_head_of_intelligence_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_intelligence_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_head_of_intelligence_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_intelligence_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_head_of_intelligence_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_head_of_intelligence_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_fat_war_minister_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_war_minister_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_war_minister_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_war_minister_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_war_minister_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_war_minister_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_war_minister_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_war_minister_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_war_minister_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_war_minister_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_war_minister_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_fat_war_minister_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_academia_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_academia_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_academia_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_academia_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_academia_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_academia_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_academia_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_academia_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_army_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_army_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_army_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_army_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_army_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_army_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_army_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_army_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_navy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_navy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_navy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_navy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_navy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_navy_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_law_enforcement_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_law_enforcement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_law_enforcement_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_law_enforcement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_law_enforcement_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_law_enforcement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_law_enforcement_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_law_enforcement_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_martial_art_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_martial_art_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_martial_art_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_martial_art_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_martial_art_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_martial_art_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_martial_art_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_martial_art_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fat_clergy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_clergy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_clergy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_clergy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_clergy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_clergy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fat_clergy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_at_clergy_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_personnel_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_personnel_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_personnel_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_personnel_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_personnel_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_personnel_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_personnel_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_personnel_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_personnel_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_personnel_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_personnel_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_personnel_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_finance_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_finance_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_finance_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_finance_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_finance_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_finance_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_finance_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_finance_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_finance_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_finance_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_finance_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_finance_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_culture_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_culture_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_culture_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_culture_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_culture_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_culture_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_culture_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_culture_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_culture_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_culture_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_culture_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_culture_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_justice_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_justice_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_justice_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_justice_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_justice_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_justice_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_justice_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_justice_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_justice_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_justice_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_justice_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_justice_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_works_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_works_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_works_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_works_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_works_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_works_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_works_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_works_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_works_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_works_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_works_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_works_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_rites_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_rites_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_rites_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_rites_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_rites_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_minister_of_rites_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_swa_field_marshal_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_field_marshal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_field_marshal_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_field_marshal_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_field_marshal_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_field_marshal_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_field_marshal_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_field_marshal_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_field_marshal_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_field_marshal_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_field_marshal_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_field_marshal_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_swa_grand_admiral_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_grand_admiral_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_grand_admiral_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_grand_admiral_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_grand_admiral_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_grand_admiral_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_grand_admiral_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_grand_admiral_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_grand_admiral_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_grand_admiral_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_grand_admiral_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_grand_admiral_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_swa_quartermaster_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_quartermaster_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_quartermaster_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_quartermaster_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_quartermaster_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_quartermaster_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_minister_of_rites_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_swa_head_of_weaponry_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_weaponry_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_head_of_weaponry_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_weaponry_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_head_of_weaponry_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_weaponry_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_head_of_weaponry_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_weaponry_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_head_of_weaponry_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_weaponry_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_head_of_weaponry_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_weaponry_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_head_of_intelligence_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_intelligence_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_head_of_intelligence_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_intelligence_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_head_of_intelligence_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_intelligence_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_head_of_intelligence_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_intelligence_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_head_of_intelligence_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_intelligence_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_head_of_intelligence_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_head_of_intelligence_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_swa_war_minister_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_war_minister_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_war_minister_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_war_minister_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_war_minister_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_war_minister_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_war_minister_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_war_minister_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_war_minister_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_war_minister_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_war_minister_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_war_minister_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_academia_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_academia_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_academia_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_academia_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_academia_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_academia_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_academia_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_academia_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_army_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_army_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_army_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_army_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_army_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_army_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_army_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_army_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_navy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_navy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_navy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_navy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_navy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_navy_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_law_enforcement_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_law_enforcement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_law_enforcement_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_law_enforcement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_law_enforcement_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_law_enforcement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_law_enforcement_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_law_enforcement_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_martial_art_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_martial_art_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_martial_art_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_martial_art_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_martial_art_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_martial_art_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_martial_art_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_generic_martial_art_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_swa_clergy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_clergy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_clergy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_clergy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_clergy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_clergy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_swa_clergy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_swa_clergy_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_personnel_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_personnel_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_personnel_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_personnel_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_personnel_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_personnel_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_personnel_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_personnel_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_personnel_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_personnel_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_personnel_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_personnel_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_finance_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_finance_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_finance_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_finance_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_finance_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_finance_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_finance_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_finance_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_finance_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_finance_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_finance_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_finance_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_culture_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_culture_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_culture_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_culture_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_culture_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_culture_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_culture_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_culture_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_culture_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_culture_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_culture_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_culture_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_justice_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_justice_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_justice_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_justice_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_justice_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_justice_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_justice_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_justice_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_justice_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_justice_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_justice_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_justice_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_works_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_works_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_works_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_works_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_works_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_works_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_works_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_works_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_works_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_works_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_works_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_works_6.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_rites_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_rites_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_rites_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_rites_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_rites_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_rites_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_rites_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_rites_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_rites_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_rites_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_minister_of_rites_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_minister_of_rites_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_snw_field_marshal_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_field_marshal_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_field_marshal_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_field_marshal_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_field_marshal_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_field_marshal_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_field_marshal_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_field_marshal_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_field_marshal_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_field_marshal_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_field_marshal_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_field_marshal_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_snw_grand_admiral_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_grand_admiral_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_grand_admiral_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_grand_admiral_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_grand_admiral_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_grand_admiral_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_grand_admiral_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_grand_admiral_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_grand_admiral_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_grand_admiral_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_grand_admiral_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_grand_admiral_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_snw_quartermaster_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_quartermaster_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_quartermaster_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_quartermaster_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_quartermaster_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_quartermaster_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_quartermaster_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_quartermaster_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_quartermaster_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_quartermaster_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_quartermaster_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_quartermaster_6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_snw_head_of_weaponry_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_weaponry_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_head_of_weaponry_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_weaponry_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_head_of_weaponry_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_weaponry_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_head_of_weaponry_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_weaponry_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_head_of_weaponry_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_weaponry_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_head_of_weaponry_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_weaponry_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_head_of_intelligence_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_intelligence_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_head_of_intelligence_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_intelligence_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_head_of_intelligence_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_intelligence_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_head_of_intelligence_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_intelligence_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_head_of_intelligence_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_intelligence_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_head_of_intelligence_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_head_of_intelligence_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_war_minister_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_war_minister_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_war_minister_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_war_minister_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_war_minister_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_war_minister_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_war_minister_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_war_minister_4.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_war_minister_5"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_war_minister_5.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_war_minister_6"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_war_minister_6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_academia_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_academia_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_academia_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_academia_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_academia_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_academia_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_academia_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_academia_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_army_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_army_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_army_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_army_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_army_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_army_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_army_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_army_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_navy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_navy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_navy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_navy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_navy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_navy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_navy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_navy_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_law_enforcement_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_law_enforcement_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_law_enforcement_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_law_enforcement_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_law_enforcement_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_law_enforcement_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_law_enforcement_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_law_enforcement_5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_martial_art_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_martial_art_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_martial_art_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_martial_art_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_martial_art_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_martial_art_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_martial_art_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_fir_martial_art_4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_snw_clergy_1"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_clergy_1.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_clergy_2"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_clergy_2.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_clergy_3"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_clergy_3.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_snw_clergy_4"
+		texturefile = "gfx/interface/ideas/advisors/idea_snw_clergy_4.dds"
+	}
+}

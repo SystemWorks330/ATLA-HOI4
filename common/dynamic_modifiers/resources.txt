@@ -1,0 +1,456 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+
+sabotaged_resources = {
+	remove_trigger = { 
+		ROOT = {
+			has_resistance = no
+		}
+	}
+	
+	icon = GFX_modifiers_sabotaged_resource
+	
+	temporary_state_resource_oil = sabotaged_grain
+	temporary_state_resource_chromium = sabotaged_animal_products
+	temporary_state_resource_stone = sabotaged_minerals
+	temporary_state_resource_iron = sabotaged_iron
+	temporary_state_resource_aluminium = sabotaged_wood
+	temporary_state_resource_steel = sabotaged_steel
+	temporary_state_resource_tungsten = sabotaged_textile
+	temporary_state_resource_rubber = sabotaged_fossile_fuels
+	temporary_state_resource_food_resource = sabotaged_food
+	temporary_state_resource_consumer_goods_resource = sabotaged_consumer_goods
+	temporary_state_resource_luxury_goods_resource = sabotaged_luxury_goods
+	temporary_state_resource_planks_resource = sabotaged_planks
+	temporary_state_resource_bricks_resource = sabotaged_bricks
+	temporary_state_resource_steel_beams_resource = sabotaged_steel_beams
+}
+
+
+deposit_construction_cost = {
+	enable = { always = yes }
+
+	civilian_factory_use = deposit_construction_cost
+}
+
+civs_from_tax_buy = {
+	enable = { always = yes }
+
+	industrial_factory_donations = acquired_civil_capacities
+}
+civs_from_conversion = {
+	enable = { always = yes }
+
+	industrial_factory_donations = military_ic_transfer
+}
+civs_from_self_employed = {
+	enable = { always = yes }
+
+	industrial_factory_donations = ic_from_self_employed
+}
+
+mils_and_dockyards_extra = {
+	enable = { always = yes }
+
+	military_factory_donations = factory_duplicator
+	dockyard_donations = dockyard_duplicator
+}
+
+
+additional_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_oil = mtth:self_employed_grain_supply
+	state_resource_chromium = mtth:self_animal_products_supply
+	state_resource_stone = mtth:self_employed_minerals_supply
+	state_resource_iron = mtth:self_employed_iron_supply
+	state_resource_aluminium = mtth:self_employed_wood_supply
+	state_resource_tungsten = mtth:self_employed_textile_supply
+	state_resource_consumer_goods_resource = mtth:self_employed_consumer_goods_supply
+	state_resource_planks_resource = mtth:self_employed_planks_supply
+	state_resource_bricks_resource = mtth:self_employed_bricks_supply
+	state_resource_food_resource = mtth:self_employed_food_supply
+}
+
+stored_scripted_resources = {
+	enable = { always = yes }
+
+	country_resource_oil = grain_in_store
+	country_resource_chromium = animal_product_in_store
+	country_resource_stone = minerals_in_store
+	country_resource_iron = iron_in_store
+	country_resource_aluminium = wood_in_store
+	country_resource_tungsten = textile_in_store
+	country_resource_steel = steel_in_store
+	country_resource_consumer_goods_resource = consumer_good_in_store
+	country_resource_luxury_goods_resource = luxury_good_in_store
+	country_resource_planks_resource = plank_in_store
+	country_resource_bricks_resource = brick_in_store
+	country_resource_steel_beams_resource = steel_beam_in_store
+}
+
+animal_resource_consumption = {
+	enable = { always = yes }
+
+	country_resource_cost_oil = grain_use
+}
+
+factory_resource_consumption = {
+	enable = { always = yes }
+
+	country_resource_cost_oil = mtth:crop_cost
+	country_resource_cost_chromium = mtth:leather_cost
+	country_resource_cost_stone = mtth:stone_cost
+	country_resource_cost_iron = mtth:iron_cost
+	country_resource_cost_aluminium = mtth:wood_cost
+	country_resource_cost_steel = mtth:steel_cost
+	country_resource_cost_tungsten = mtth:textile_cost
+	
+	fuel_cost = mtth:fuel_cost
+}
+
+population_resource_bought_on_market = {
+	enable = { always = yes }
+
+	country_resource_cost_oil = grain_demand
+	country_resource_cost_chromium = animal_products_demand
+	country_resource_cost_stone = minerals_demand
+	country_resource_cost_iron = iron_demand
+	country_resource_cost_aluminium = wood_demand
+	country_resource_cost_steel = steel_demand
+	country_resource_cost_tungsten = textile_demand
+	country_resource_cost_rubber = fossile_fuels_demand
+	country_resource_cost_consumer_goods_resource = consumer_goods_demand
+	country_resource_cost_luxury_goods_resource = luxury_goods_demand
+	country_resource_cost_planks_resource = planks_demand
+	country_resource_cost_bricks_resource = bricks_demand
+	country_resource_cost_steel_beams_resource = steel_beams_demand
+	country_resource_cost_food_resource = daily_ration_need_in_food
+
+}
+
+building_upkeep_resources = {
+	enable = { always = yes }
+
+	country_resource_cost_planks_resource = local_plank_upkeep_cost
+	country_resource_cost_bricks_resource = local_brick_upkeep_cost
+	country_resource_cost_steel_beams_resource = local_steel_beam_upkeep_cost
+
+	country_resource_cost_chromium = local_animal_product_upkeep_cost
+
+	production_speed_buildings_factor = construction_material
+
+}
+
+urbanisation_modifiers = {
+	enable = { always = yes }
+
+	building_upkeep_cost = pleb_construction_cost
+	local_building_slots_factor = mtth:urbanisation_building_slots
+	monthly_population_state = mtth:urbanisation_birth_bonus
+	taxation_efficiency = mtth:urbanisation_taxation_efficiency
+	prosperity_factor = mtth:urbanisation_prosperity_cap
+
+}
+
+prosperity_modifiers = {
+	enable = { always = yes }
+
+	migration_attraction = mtth:prosperity_attraction
+
+}
+
+missing_workers_state = {
+	enable = { always = yes }
+
+	state_resources_factor = mtth:missing_workers_resource_modifier
+}
+
+
+farm_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		farm < 5
+	}
+
+	icon = GFX_farm_bonus
+
+	monthly_population_state = mtth:farm_bonus
+}
+
+farm_ranch_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		check_variable = {
+			var = building_level@farm
+			value = building_level@ranch
+			compare = greater_than
+		}
+	}
+
+	icon = GFX_farm_ranch_bonus
+
+	fertilizer = 0.2
+}
+
+mill_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		check_variable = {
+			var = building_level@mill
+			value = building_level@farm
+			compare = greater_than
+		}
+	}
+
+	icon = GFX_mill_bonus
+
+	mill_factor = 0.5
+}
+
+lumber_mill_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		lumber_mill < 8
+	}
+
+	icon = GFX_lumber_mill_bonus
+
+	reforestation = 0.2
+}
+
+carpentry_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		carpentry < 5
+	}
+
+	icon = GFX_carpentry_bonus
+
+	state_resource_consumer_goods_resource = mtth:carpentry_bonus
+	state_resource_luxury_goods_resource = mtth:carpentry_bonus_2
+}
+
+smithy_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		arms_factory < 5
+	}
+
+	icon = GFX_smithy_bonus
+
+	state_resource_steel = mtth:smithy_bonus
+}
+
+quarry_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		quarry < 5
+	}
+
+	icon = GFX_quarry_bonus
+
+	state_resource_iron = mtth:quarry_bonus
+	state_resource_rubber = mtth:quarry_bonus_2
+}
+
+masonry_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		masonry < 5
+	}
+
+	icon = GFX_masonry_bonus
+
+	state_production_speed_buildings_factor = mtth:masonry_bonus
+}
+
+fishing_stand_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		fishing_stand < 5
+	}
+
+	icon = GFX_fishing_stand_bonus
+
+
+	naval_capacity_modifier = mtth:fishing_stand_bonus_2
+	state_resource_chromium = mtth:fishing_stand_bonus
+}
+
+mine_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		mine < 5
+	}
+
+	icon = GFX_mine_bonus
+
+
+	max_dig_in = mtth:mine_bonus_1
+	resistance_decay = mtth:mine_bonus_2
+}
+
+road_upgrade = {
+	enable = { always = yes }
+
+	#no icon because it will be in every state
+	#icon = GFX_road_bonus
+
+	local_building_slots = mtth:road_bonus
+}
+
+crop_weaving_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		crop_weaving < 5
+	}
+
+	icon = GFX_crop_weaving_bonus
+
+	state_resource_consumer_goods_resource = mtth:crop_weaving_bonus
+	state_resource_luxury_goods_resource = mtth:crop_weaving_bonus_2
+}
+
+animal_weaving_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		animal_weaving < 5
+	}
+
+	icon = GFX_animal_weaving_bonus
+
+	state_resource_consumer_goods_resource = mtth:animal_weaving_bonus
+	state_resource_luxury_goods_resource = mtth:animal_weaving_bonus_2
+}
+
+ranch_upgrade = {
+	enable = { always = yes }
+	remove_trigger = {
+		ranch < 4
+	}
+
+	icon = GFX_ranch_bonus
+
+	state_resource_food_resource = mtth:ranch_bonus
+	breeding = mtth:ranch_bonus_2
+}
+
+
+industrial_zone = {
+	enable = { always = yes }
+	remove_trigger = {
+		check_variable = { mtth:industrial_zone < 10 }
+	}
+
+	icon = GFX_industrial_zone
+
+	fertilizer = -0.5
+	waters = -0.5
+	local_building_slots_factor = mtth:industrial_zone_modifier_3
+}
+
+
+
+farm_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_oil = mtth:farm_grain_gain
+	state_resource_food_resource = mtth:farm_food_gain
+}
+ranch_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_chromium = mtth:ranch_leather_gain
+}
+fishing_stand_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_food_resource = mtth:fishing_stand_food_gain
+}
+lumber_mill_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_aluminium = mtth:lumber_mill_wood_gain
+}
+quarry_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_stone = mtth:quarry_stone_gain
+}
+crop_weaving_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_tungsten = mtth:crop_weaving_textile_gain
+}
+animal_weaving_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_tungsten = mtth:animal_weaving_textile_gain
+}
+mine_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_iron = mtth:mine_iron_gain
+	state_resource_rubber = mtth:mine_coal_gain
+}
+mill_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_food_resource = mtth:mill_food_gain
+}
+steelworks_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_steel = mtth:steelworks_steel_gain
+}
+
+consumer_good_factory_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_consumer_goods_resource = mtth:shop_consumer_goods_gain
+}
+luxury_good_factory_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_luxury_goods_resource = mtth:luxury_store_luxury_goods_gain
+}
+carpentry_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_planks_resource = mtth:carpentry_plank_gain
+}
+masonry_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_bricks_resource = mtth:masonry_brick_gain
+}
+steel_beam_factory_scripted_resources = {
+	enable = { always = yes }
+
+	state_resource_steel_beams_resource = mtth:steel_beam_factory_steel_beam_gain
+}

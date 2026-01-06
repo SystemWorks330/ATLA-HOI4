@@ -1,0 +1,207 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_research_middle_win"
+		textureFile = "gfx/interface/research_middle_win.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_tech_level_strip"
+		textureFile = "gfx/interface/research/tech_level_strip.dds"	
+		noOfFrames = 6
+	}
+
+	spriteType = {
+		name = "GFX_tech_unavailable"
+		textureFile = "gfx/interface/research/tech_invention_unavailable_item_bg.dds"	
+	}
+	spriteType = {
+		name = "GFX_tech_available"
+		textureFile = "gfx/interface/research/tech_invention_available_item_bg.dds"	
+	}
+	spriteType = {
+		name = "GFX_tech_unlocked"
+		textureFile = "gfx/interface/research/tech_invention_researched_item_bg.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_tech_level_bg"
+		textureFile = "gfx/interface/research/tech_level_bg_strip.dds"	
+		noOfFrames = 6
+	}
+
+	spriteType = {
+		name = "GFX_tech_lock"
+		textureFile = "gfx/interface/research/tech_lock.dds"	
+	}
+
+	spriteType = {
+		name = "GFX_age_one_bg"
+		textureFile = "gfx/interface/research/age_1_bg.dds"	
+	}
+	spriteType = {
+		name = "GFX_age_two_bg"
+		textureFile = "gfx/interface/research/age_2_bg.dds"	
+	}
+	spriteType = {
+		name = "GFX_age_three_bg"
+		textureFile = "gfx/interface/research/age_3_bg.dds"	
+	}
+	spriteType = {
+		name = "GFX_age_four_bg"
+		textureFile = "gfx/interface/research/age_4_bg.dds"	
+	}
+	spriteType = {
+		name = "GFX_age_five_bg"
+		textureFile = "gfx/interface/research/age_5_bg.dds"	
+	}
+	spriteType = {
+		name = "GFX_age_six_bg"
+		textureFile = "gfx/interface/research/age_6_bg.dds"	
+	}
+
+	frameAnimatedSpriteType = {
+		name = "GFX_tech_level_glow"
+		texturefile = "gfx/interface/research/tech_level_glow.dds"
+		noOfFrames = 2
+		animation_rate_fps = 0.5
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+		alwaystransparent = yes
+		effectFile = "gfx/FX/buttonstate_blendframes.lua"
+	}
+
+
+
+	### inventions ###
+
+	SpriteType = {
+		name = "GFX_measurements_medium"
+		texturefile = "gfx/interface/research/inventions/measurements.dds"
+	}
+	SpriteType = {
+		name = "GFX_kinectics_medium"
+		texturefile = "gfx/interface/research/inventions/kinectics.dds"
+	}
+	SpriteType = {
+		name = "GFX_wind_manipulation_medium"
+		texturefile = "gfx/interface/research/inventions/wind_manipulation.dds"
+	}
+	SpriteType = {
+		name = "GFX_domestication_medium"
+		texturefile = "gfx/interface/research/inventions/domestication.dds"
+	}
+	SpriteType = {
+		name = "GFX_metaphysics_medium"
+		texturefile = "gfx/interface/research/inventions/metaphysics.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_geometry_medium"
+		texturefile = "gfx/interface/research/inventions/geometry.dds"
+	}
+	SpriteType = {
+		name = "GFX_astronomy_medium"
+		texturefile = "gfx/interface/research/inventions/astronomy.dds"
+	}
+	SpriteType = {
+		name = "GFX_smelting_medium"
+		texturefile = "gfx/interface/research/inventions/smelting.dds"
+	}
+	SpriteType = {
+		name = "GFX_agriculture_medium"
+		texturefile = "gfx/interface/research/inventions/agriculture.dds"
+	}
+	SpriteType = {
+		name = "GFX_writing_medium"
+		texturefile = "gfx/interface/research/inventions/writing.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_architecture_medium"
+		texturefile = "gfx/interface/research/inventions/architecture.dds"
+	}
+	SpriteType = {
+		name = "GFX_leverage_medium"
+		texturefile = "gfx/interface/research/inventions/leverage.dds"
+	}
+	SpriteType = {
+		name = "GFX_bronze_alloy_medium"
+		texturefile = "gfx/interface/research/inventions/bronze_alloy.dds"
+	}
+	SpriteType = {
+		name = "GFX_surgery_medium"
+		texturefile = "gfx/interface/research/inventions/surgery.dds"
+	}
+	SpriteType = {
+		name = "GFX_natural_philosophy_medium"
+		texturefile = "gfx/interface/research/inventions/natural_philosophy.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_statistics_medium"
+		texturefile = "gfx/interface/research/inventions/statistics.dds"
+	}
+	SpriteType = {
+		name = "GFX_magnetism_medium"
+		texturefile = "gfx/interface/research/inventions/magnetism.dds"
+	}
+	SpriteType = {
+		name = "GFX_alchemy_medium"
+		texturefile = "gfx/interface/research/inventions/alchemy.dds"
+	}
+	SpriteType = {
+		name = "GFX_botanics_medium"
+		texturefile = "gfx/interface/research/inventions/botanics.dds"
+	}
+	SpriteType = {
+		name = "GFX_printing_press_medium"
+		texturefile = "gfx/interface/research/inventions/printing_press.dds"
+	}
+
+
+	SpriteType = {
+		name = "GFX_laws_of_nature_medium"
+		texturefile = "gfx/interface/research/inventions/laws_of_nature.dds"
+	}
+	SpriteType = {
+		name = "GFX_steam_engine_medium"
+		texturefile = "gfx/interface/research/inventions/steam_engine.dds"
+	}
+	SpriteType = {
+		name = "GFX_steel_alloy_medium"
+		texturefile = "gfx/interface/research/inventions/steel_alloy.dds"
+	}
+	SpriteType = {
+		name = "GFX_genetics_medium"
+		texturefile = "gfx/interface/research/inventions/genetics.dds"
+	}
+	SpriteType = {
+		name = "GFX_scientific_method_medium"
+		texturefile = "gfx/interface/research/inventions/scientific_method.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_applied_mathematics_medium"
+		texturefile = "gfx/interface/research/inventions/applied_mathematics.dds"
+	}
+	SpriteType = {
+		name = "GFX_gas_turbine_medium"
+		texturefile = "gfx/interface/research/inventions/gas_turbine.dds"
+	}
+	SpriteType = {
+		name = "GFX_aerodynamics_medium"
+		texturefile = "gfx/interface/research/inventions/aerodynamics.dds"
+	}
+	SpriteType = {
+		name = "GFX_chemistry_medium"
+		texturefile = "gfx/interface/research/inventions/chemistry.dds"
+	}	
+	SpriteType = {
+		name = "GFX_energy_manipulation_medium"
+		texturefile = "gfx/interface/research/inventions/energy_manipulation.dds"
+	}
+
+
+}

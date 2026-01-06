@@ -1,0 +1,405 @@
+
+THE_EARTHKINGDOM = {
+	
+	confront_the_firenation = {
+
+		icon = confront_the_firenation
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			FIR = {
+				NOT = {
+					has_country_flag = earth_diplomacy_path
+				}
+			}
+			has_start_date < 20.1.1
+		}
+
+		available = {
+			FIR = {
+				NOT = {
+					has_country_flag = earth_diplomacy_path
+				}
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 10
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		complete_effect = {
+			unlock_decision_category_tooltip = EAR_firenation_hostility_category
+			set_country_flag = fire_threat_category_active
+
+			reverse_add_opinion_modifier = {
+				target = FIR
+				modifier = sassy_earth_kingdom
+			}
+		}
+	}
+	abandon_mandate_of_heaven = {
+		icon = confront_the_firenation
+		allowed = {
+			tag = EAR
+		}
+		visible = {
+			has_war_with = FIR
+		}
+		available = {
+			has_war_with = FIR
+			is_neighbor_of = FIR
+			ba_sing_se_encircled = yes
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 200
+				
+				ROOT = { surrender_progress < 0.4 }
+			}
+		}
+		complete_effect = {
+			add_ideas = EAR_idea_abandoned_capital
+		}
+		days_remove = 30
+		remove_effect = {
+			custom_effect_tooltip = ear_release_states_tt
+			every_country = {
+				limit = {
+					is_subject_of = EAR
+				}
+				EAR = {
+					end_puppet = PREV
+				}
+				add_ideas = destroyed_morale_EAR
+				country_event = earthkingdom.2
+			}
+			every_country = {
+				limit = {
+					OR = {
+						tag = GAO
+						tag = OMS
+						tag = TAK
+						tag = NCB
+						tag = ISL
+						tag = FMB
+						tag = XIN
+						tag = MER
+						tag = ECB
+						tag = YUE
+					}
+				}
+				set_major = yes
+			}
+		}
+	}
+}
+
+EAR_firenation_hostility_category = {
+
+	the_colonial_question = {
+
+		icon = fire_colony_remove
+
+		allowed = {
+			tag = EAR
+		}
+		
+		visible = {
+			tag = EAR
+			NOT = {
+				has_war_with = FIR
+			}
+			280 = {
+				OR = {
+					has_dynamic_modifier = { modifier = firenation_settlers }
+					is_controlled_by = FIR
+				}
+			}
+			230 = {
+				OR = {
+					has_dynamic_modifier = { modifier = firenation_settlers }
+					is_controlled_by = FIR
+				}
+			}
+		}
+
+		available = {
+			280 = {
+				OR = {
+					has_dynamic_modifier = { modifier = firenation_settlers }
+					is_controlled_by = FIR
+				}
+			}
+			230 = {
+				OR = {
+					has_dynamic_modifier = { modifier = firenation_settlers }
+					is_controlled_by = FIR
+				}
+			}
+			FIR = {
+				NOT = {
+					has_country_flag = earth_diplomacy_path
+				}
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+
+		days_remove = 230
+
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 100
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				factor = 100
+				has_global_flag = anti_sozin_pact_signed
+			}
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = the_colonial_question_ttp
+			FIR = { 
+				country_event = { id = ear_treaty.6 days = 1 } 
+				set_country_flag = invade_colony
+				set_country_flag = invade_yu_dao
+			}
+			280 = {
+				add_dynamic_modifier = {
+					modifier = relocate_fire_population
+					days = 400
+				}
+			}
+			230 = {
+				add_dynamic_modifier = {
+					modifier = relocate_fire_population
+					days = 400
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						280 = {
+							is_controlled_by = FIR
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = { rule = EARTHKINGDOM_FRAGMENTATION_STATUS option = EARTHKINGDOM_UNITED }
+						}
+						EAR = {
+							transfer_state = 280
+						}
+					}
+					else = {
+						HAN = {
+							transfer_state = 280
+						}
+					}
+				}
+				if = {
+					limit = {
+						230 = {
+							is_controlled_by = FIR
+						}
+					}
+					if = {
+						limit = {
+							has_game_rule = { rule = EARTHKINGDOM_FRAGMENTATION_STATUS option = EARTHKINGDOM_UNITED }
+						}
+						EAR = {
+							transfer_state = 230
+						}
+					}
+					else = {
+						WUL = {
+							transfer_state = 230
+						}
+					}
+				}
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = humiliated_in_battle_remove_ttp
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_war_with = FIR
+						}
+					}
+					remove_ideas = humiliated_in_battle
+				}
+			}
+		}
+	}
+	
+	rally_the_kingdom = {
+
+		icon = earthkingdom
+		
+		visible = {
+			tag = EAR
+			FIR = {
+				NOT = {
+					has_country_flag = earth_diplomacy_path
+				}
+			}
+			has_start_date < 20.1.1
+		}
+
+		available = {
+			FIR = {
+				NOT = {
+					has_country_flag = earth_diplomacy_path
+				}
+			}
+			threat > 0.5
+		}
+		
+		fire_only_once = yes
+
+		cost = 75
+
+		days_remove = 30
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 100
+				is_historical_focus_on = yes
+			}
+		}
+
+		remove_effect = {
+			set_country_flag = kingdom_rallied
+			every_country = {
+				limit = {
+					#is_in_faction_with = EAR
+					THIS = {
+						is_in_array = {
+							array = global.earth_kingdom
+							value = PREV
+						}
+					}
+					is_puppet = yes
+					is_puppet_of = EAR
+					NOT = {
+						TAG = EAR
+					}
+				}
+				country_event = { id = ear_treaty.1 days = 1 }
+			}
+			every_country = {
+				limit = {
+					#is_in_faction_with = EAR
+					THIS = {
+						is_in_array = {
+							array = global.earth_kingdom
+							value = PREV
+						}
+					}
+					OR = {
+						is_puppet = no
+						AND = {
+							is_puppet = yes
+							NOT = {
+								is_puppet_of = EAR
+							}
+						}
+					}
+					NOT = {
+						TAG = EAR
+					}
+				}
+				country_event = { id = ear_treaty.2 days = 1 }
+			}
+		}
+	}
+
+	anti_sozin_pact = {
+
+		icon = water_and_earth_flag
+		
+		visible = {
+			NOT = {
+				has_war_with = FIR
+			}
+			tag = EAR
+			FIR = {
+				NOT = {
+					has_country_flag = earth_diplomacy_path
+				}
+			}
+			NOT = {
+				has_global_flag = anti_sozin_pact_signed
+			}
+			has_start_date <20.1.1
+		}
+
+		available = {
+			NOT = {
+				has_war_with = FIR
+			}
+			tag = EAR
+			custom_trigger_tooltip = {
+				tooltip = kingdom_rallied_tt
+				Or = {
+					has_cosmetic_tag = EAR_united
+					has_country_flag = kingdom_rallied
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = no_diplomatic_relations_tt
+				FIR = {
+					NOT = {
+						has_country_flag = earth_diplomacy_path
+					}
+				}
+			}
+			has_global_flag = air_nomad_genocide
+		}
+		
+		fire_only_once = yes
+
+		cost = 50
+
+		days_remove = 14
+
+		ai_will_do = {
+			base = 100
+			modifier = {
+				factor = 200
+				is_historical_focus_on = yes
+			}
+		}
+
+		remove_effect = {
+			custom_effect_tooltip = anti_sozin_pact_tt
+			hidden_effect = {
+				EAR = { country_event = { id = ear_treaty.3 days = 1 } }
+			}
+
+		}
+	}
+
+}

@@ -1,0 +1,560 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+
+defined_text = {
+	name = GetPeasantIcon
+	text = {
+		trigger = {
+			check_variable = { modifier@peasant_opinion < 24 }
+		}
+		localization_key = "GFX_peasant_4"
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@peasant_opinion < 14 }
+		}
+		localization_key = "GFX_peasant_3"
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@peasant_opinion < 9 }
+		}
+		localization_key = "GFX_peasant_2"
+	}
+	text = {
+		localization_key = "GFX_peasant_1"
+	}
+}
+
+
+defined_text = {
+	name = GetIdeologyIcon
+
+	##### firen culture
+	text = {
+		trigger = {
+			has_country_leader_ideology = colonialism
+		}
+		localization_key = "GFX_ideology_colonialism"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = nationalism
+		}
+		localization_key = "GFX_ideology_nationalism"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = fire_tribes
+		}
+		localization_key = "GFX_ideology_fire_tribes"
+	}
+
+
+	##### earth culture
+	text = {
+		trigger = {
+			has_country_leader_ideology = absolute_monarchie
+		}
+		localization_key = "GFX_ideology_absolute_monarchie"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = constitutional_monarchy
+		}
+		localization_key = "GFX_ideology_constitutional_monarchy"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = elective_monarchy
+		}
+		localization_key = "GFX_ideology_elective_monarchy"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = comunism
+		}
+		localization_key = "GFX_ideology_comunism"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = earth_tribe
+		}
+		localization_key = "GFX_ideology_earth_tribe"
+	}
+
+
+	##### water culture
+	text = {
+		trigger = {
+			has_country_leader_ideology = liberalism
+		}
+		localization_key = "GFX_ideology_liberalism"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = elective_chiefdom
+		}
+		localization_key = "GFX_ideology_elective_chiefdom"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = theocratic_chiefdom
+		}
+		localization_key = "GFX_ideology_theocratic_chiefdom"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = martial_chiefdom
+		}
+		localization_key = "GFX_ideology_martial_chiefdom"
+	}
+
+
+	##### air culture
+	text = {
+		trigger = {
+			has_country_leader_ideology = absolute_pacifism
+		}
+		localization_key = "GFX_ideology_absolute_pacifism"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = active_pacifism
+		}
+		localization_key = "GFX_ideology_active_pacifism"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = spiritual_interventionism
+		}
+		localization_key = "GFX_ideology_spiritual_interventionism"
+	}
+
+
+	### nonbender culture
+	text = {
+		trigger = {
+			has_country_leader_ideology = republican
+		}
+		localization_key = "GFX_ideology_republican"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = democracy
+		}
+		localization_key = "GFX_ideology_democracy"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anarchism
+		}
+		localization_key = "GFX_ideology_anarchism"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = sovereign_monarchy
+		}
+		localization_key = "GFX_ideology_sovereign_monarchy"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = despotism
+		}
+		localization_key = "GFX_ideology_despotism"
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = theocracy
+		}
+		localization_key = "GFX_ideology_theocracy"
+	}
+
+	text = {
+		localization_key = "GFX_ideology_unknown"
+	}
+	
+}
+
+
+defined_text = {
+	name = GetAzulonIcon
+	text = {
+		trigger = {
+			check_variable = { mtth:azulon_age < 4 }
+		}
+		localization_key = "GFX_fire_baby_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:azulon_age > 3 }
+			check_variable = { mtth:azulon_age < 14 }
+		}
+		localization_key = "GFX_azulon_child_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:azulon_age > 13 }
+			check_variable = { mtth:azulon_age < 55 }
+		}
+		localization_key = "GFX_azulon_adult_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:azulon_age > 54 }
+		}
+		localization_key = "GFX_azulon_old_portrait"
+	}
+}
+
+
+defined_text = {
+	name = GetIrohIcon
+	text = {
+		trigger = {
+			check_variable = { mtth:iroh_age < 4 }
+		}
+		localization_key = "GFX_fire_baby_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:iroh_age > 3 }
+			check_variable = { mtth:iroh_age < 14 }
+		}
+		localization_key = "GFX_iroh_child_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:iroh_age > 13 }
+			check_variable = { mtth:iroh_age < 55 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_iroh
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_iroh_adult_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:iroh_age > 13 }
+			check_variable = { mtth:iroh_age < 55 }
+			has_country_leader = {
+				character = FIR_iroh
+				ruling_only = yes
+			}
+		}
+		localization_key = "GFX_iroh_adult_firelord_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:iroh_age > 54 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_iroh
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_iroh_old_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:iroh_age > 54 }
+			has_country_leader = {
+				character = FIR_iroh
+				ruling_only = yes
+			}
+		}
+		localization_key = "GFX_iroh_old_firelord_portrait"
+	}
+}
+
+
+defined_text = {
+	name = GetOzaiIcon
+	text = {
+		trigger = {
+			check_variable = { mtth:ozai_age < 4 }
+		}
+		localization_key = "GFX_ozai_baby_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:ozai_age > 3 }
+			check_variable = { mtth:ozai_age < 14 }
+		}
+		localization_key = "GFX_ozai_child_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:ozai_age > 13 }
+			check_variable = { mtth:ozai_age < 55 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_ozai
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_ozai_adult_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:ozai_age > 13 }
+			check_variable = { mtth:ozai_age < 55 }
+			has_country_leader = {
+				character = FIR_ozai
+				ruling_only = yes
+			}
+		}
+		localization_key = "GFX_ozai_adult_firelord_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:ozai_age > 54 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_ozai
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_ozai_old_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:ozai_age > 54 }
+			has_country_leader = {
+				character = FIR_ozai
+				ruling_only = yes
+			}
+		}
+		localization_key = "GFX_ozai_old_firelord_portrait"
+	}
+}
+
+defined_text = {
+	name = GetLuTenIcon
+	text = {
+		trigger = {
+			check_variable = { mtth:lu_ten_age < 4 }
+		}
+		localization_key = "GFX_fire_baby_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:lu_ten_age > 3 }
+			check_variable = { mtth:lu_ten_age < 14 }
+		}
+		localization_key = "GFX_lu_ten_child_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:lu_ten_age > 13 }
+			check_variable = { mtth:lu_ten_age < 55 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_lu_ten
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_lu_ten_adult_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:lu_ten_age > 54 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_lu_ten
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_lu_ten_old_portrait"
+	}
+}
+
+
+defined_text = {
+	name = GetZukoIcon
+	text = {
+		trigger = {
+			check_variable = { mtth:zuko_age < 4 }
+		}
+		localization_key = "GFX_fire_baby_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:zuko_age > 3 }
+			check_variable = { mtth:zuko_age < 14 }
+		}
+		localization_key = "GFX_zuko_child_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:zuko_age > 13 }
+			check_variable = { mtth:zuko_age < 29 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_zuko
+					ruling_only = yes
+				}
+			}
+			FIR_zuko = {
+				NOT = {
+					has_character_flag = burned_face
+				}
+			}
+		}
+		localization_key = "GFX_zuko_young_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:zuko_age > 13 }
+			check_variable = { mtth:zuko_age < 29 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_zuko
+					ruling_only = yes
+				}
+			}
+			FIR_zuko = {
+				has_character_flag = burned_face
+			}
+		}
+		localization_key = "GFX_zuko_young_alt_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:zuko_age > 28 }
+			check_variable = { mtth:zuko_age < 55 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_zuko
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_zuko_adult_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:zuko_age > 28 }
+			check_variable = { mtth:zuko_age < 55 }
+			has_country_leader = {
+				character = FIR_zuko
+				ruling_only = yes
+			}
+		}
+		localization_key = "GFX_zuko_adult_firelord_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:zuko_age > 54 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_zuko
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_zuko_old_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:zuko_age > 54 }
+			has_country_leader = {
+				character = FIR_zuko
+				ruling_only = yes
+			}
+		}
+		localization_key = "GFX_zuko_old_firelord_portrait"
+	}
+}
+
+defined_text = {
+	name = GetAzulaIcon
+	text = {
+		trigger = {
+			check_variable = { mtth:azula_age < 4 }
+		}
+		localization_key = "GFX_fire_baby_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:azula_age > 3 }
+			check_variable = { mtth:azula_age < 14 }
+		}
+		localization_key = "GFX_azula_child_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:azula_age > 13 }
+			check_variable = { mtth:azula_age < 29 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_azula
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_azula_young_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:azula_age > 28 }
+			check_variable = { mtth:azula_age < 55 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_azula
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_azula_adult_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:azula_age > 28 }
+			check_variable = { mtth:azula_age < 55 }
+			has_country_leader = {
+				character = FIR_azula
+				ruling_only = yes
+			}
+		}
+		localization_key = "GFX_azula_adult_firelord_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:azula_age > 54 }
+			NOT = {
+				has_country_leader = {
+					character = FIR_azula
+					ruling_only = yes
+				}
+			}
+		}
+		localization_key = "GFX_azula_old_portrait"
+	}
+	text = {
+		trigger = {
+			check_variable = { mtth:azula_age > 54 }
+			has_country_leader = {
+				character = FIR_azula
+				ruling_only = yes
+			}
+		}
+		localization_key = "GFX_azula_old_firelord_portrait"
+	}
+}

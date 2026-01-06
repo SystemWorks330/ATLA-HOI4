@@ -1,0 +1,391 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_portrait_FIR_empty_throne"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_No_Leader.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Sozin"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zosin.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Sozin_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_sozin.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Azulon_young"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Azulon_young.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Azulon_young_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_azulon_young.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Azulon_adult"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Azulon_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Azulon_adult_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_azulon_adult.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Azulon_old"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Azulon_old.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Azulon_old_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_azulon_old.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ozai_young"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ozai_young.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ozai_young_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_ozai_young.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ozai_adult"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ozai_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ozai_adult_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_ozai_adult.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ozai_old"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ozai_old.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ozai_old_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_ozai_old.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ozai_phoenix_king"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ozai_Phoenix_King.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ozai_phoenix_king_old"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ozai_Phoenix_King_old.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Iroh_young"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Iroh_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Iroh_adult"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Iroh_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Iroh_old"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Iroh_old.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Lu_Ten"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Lu_Ten.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Lu_Ten_general"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Lu_Ten_general.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Azula"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Azula.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Azula_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_azula.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ukano"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ukano.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ukano_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_ukano.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Mai"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Mai.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Mai_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_mai.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ty_Lee"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ty_Lee.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ty_Lee_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_ty_lee.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Zuko"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zuko.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Zuko_alt"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zuko_alt.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Zuko_banished"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zuko_banished.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Elua"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Elua.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Elua_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_elua.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ilah"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ilah.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ilah_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_ilah.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Ursa"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Ursa.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Ursa_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_ursa.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Rhya"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Rhya.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Rhya_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_rhya.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Zeisan"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zeisan_no_beads.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Zeisan_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_zeisan.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Zeisan_air"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zeisan.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_Portrait_Firenation_Yonrha"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Yonrha.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Firenation_Yonrha_small"
+		texturefile = "gfx/interface/ideas/leader_small/FIR/idea_yonrha.dds"
+	}
+
+	############# SWT
+
+	spriteType = {
+		name = "GFX_Portrait_SWT_hakoda"
+		texturefile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Hakoda.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SWT_hakoda_small"
+		texturefile = "gfx/interface/ideas/leader_small/SWT/hakoda_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SWT_hakoda_general"
+		texturefile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Hakoda_general.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SWT_hakoda_general_small"
+		texturefile = "gfx/interface/ideas/leader_small/SWT/hakoda_general_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SWT_sokka"
+		texturefile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Sokka_1.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SWT_sokka_small"
+		texturefile = "gfx/interface/ideas/leader_small/SWT/sokka_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_SWT_katara"
+		texturefile = "gfx/leaders/SWT/Portrait_Southernwatertribe_Katara.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SWT_katara_small"
+		texturefile = "gfx/interface/ideas/leader_small/SWT/katara_small.dds"
+	}
+
+	############# SAT
+
+
+	spriteType = {
+		name = "GFX_Portrait_Southernairtemple_Pasang"
+		texturefile = "gfx/leaders/SAT/Portrait_Southernairtemple_Pasang.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Southernairtemple_Pasang_small"
+		texturefile = "gfx/interface/ideas/leader_small/SAT/Pasang_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SAT_aang"
+		texturefile = "gfx/leaders/SAT/Portrait_Southernairtemple_Aang.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SAT_aang_small"
+		texturefile = "gfx/interface/ideas/leader_small/SAT/Aang_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SAT_appa"
+		texturefile = "gfx/leaders/SAT/Portrait_Southernairtemple_Appa.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SAT_appa_small"
+		texturefile = "gfx/interface/ideas/leader_small/SAT/Appa_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SAT_momo"
+		texturefile = "gfx/leaders/SAT/Portrait_Southernairtemple_Momo.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SAT_momo_small"
+		texturefile = "gfx/interface/ideas/leader_small/SAT/momo_small.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SAT_monk_gyatso"
+		texturefile = "gfx/leaders/SAT/Portrait_Southernairtemple_Appa.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_SAT_monk_gyatso_small"
+		texturefile = "gfx/interface/ideas/leader_small/SAT/monk_gyatso_small.dds"
+	}
+
+
+	############# KYI
+
+	spriteType = {
+		name = "GFX_Portrait_Kyoshi_Oyaji"
+		texturefile = "gfx/leaders/KYI/Portrait_Kyoshi_Oyaji.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kyoshi_Suki"
+		texturefile = "gfx/leaders/KYI/Portrait_Kyoshi_Suki.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Kyoshi_Suki_small"
+		texturefile = "gfx/interface/ideas/leader_small/KYI/idea_suki_small.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Misty_Palm_Sha_Mo"
+		texturefile = "gfx/leaders/MPO/Portrait_Misty_Palm_Sha_Mo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Foggy_Swamp_huu"
+		texturefile = "gfx/leaders/SWA/Portrait_Foggy_Swamp_huu.dds"
+	}
+
+	############# CHN
+
+	spriteType = {
+		name = "GFX_Portrait_Xiang_young"
+		texturefile = "gfx/leaders/CHN/Portrait_Chin_Xiang_young.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Xiang_young_small"
+		texturefile = "gfx/interface/ideas/leader_small/CHN/idea_xiang_young.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Xiang_adult"
+		texturefile = "gfx/leaders/CHN/Portrait_Chin_Xiang_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Xiang_adult_small"
+		texturefile = "gfx/interface/ideas/leader_small/CHN/idea_xiang_adult.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Xiang_old"
+		texturefile = "gfx/leaders/CHN/Portrait_Chin_Xiang_old.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Xiang_old_small"
+		texturefile = "gfx/interface/ideas/leader_small/CHN/idea_xiang_old.dds"
+	}
+	############# FUJ
+	spriteType = {
+		name = "GFX_Portrait_Fujian_Goruta"
+		texturefile = "gfx/leaders/FUJ/Portrait_Fujian_Goruta.dds"
+	}
+	############# BAI
+	spriteType = {
+		name = "GFX_Portrait_Baichuan_Yomi"
+		texturefile = "gfx/leaders/BAI/Portrait_Baichuan_Yomi.dds"
+	}
+	############# XIL
+	spriteType = {
+		name = "GFX_Portrait_Xilii_Gezaki"
+		texturefile = "gfx/leaders/XIL/Portrait_Xilii_Gezaki.dds"
+	}
+	############# DAW
+	spriteType = {
+		name = "GFX_Portrait_Dawa_Yojiku"
+		texturefile = "gfx/leaders/DAW/Portrait_Dawa_Yojiku.dds"
+	}
+	############# DIN
+	spriteType = {
+		name = "GFX_Portrait_Dingcuo_Riteka"
+		texturefile = "gfx/leaders/DIN/Portrait_Dingcuo_Riteka.dds"
+	}
+	############# EAR
+	spriteType = {
+		name = "GFX_Portrait_Earthkingdom_Dai_Li_Government"
+		texturefile = "gfx/leaders/EAR/Portrait_Earthkingdom_Dai_Li_Government.dds"
+	}
+	############# SHE
+	spriteType = {
+		name = "GFX_Portrait_Shendu_Finuoka"
+		texturefile = "gfx/leaders/SHE/Portrait_Shendu_Finuoka.dds"
+	}
+	############# YON
+	spriteType = {
+		name = "GFX_Portrait_Yontai_Huweto"
+		texturefile = "gfx/leaders/YON/Portrait_Yontai_Huweto.dds"
+	}
+	############# GOU
+	spriteType = {
+		name = "GFX_Portrait_Goutou_Yahatsu"
+		texturefile = "gfx/leaders/GOU/Portrait_Goutou_Yahatsu.dds"
+	}				
+}

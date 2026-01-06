@@ -1,0 +1,1866 @@
+
+taxation_category = {
+
+	change_funding = {
+
+		icon = replace
+
+		priority = -1000
+
+		available = {
+			has_country_flag = public_funding
+        }
+		visible = {
+			has_country_flag = public_funding
+		}
+
+		cost = 20
+
+		complete_effect = {
+			custom_effect_tooltip = clear_funding_tt
+			hidden_effect = {
+				clr_country_flag = public_funding
+				remove_decision = research_investment_very_low
+				remove_decision = research_investment_very_low
+				remove_decision = family_investment_very_low
+				remove_decision = morale_investment_very_low
+				remove_decision = construction_focus_very_low
+				remove_decision = resource_focus_very_low
+				remove_decision = production_investment_very_low
+				remove_decision = research_investment_low
+				remove_decision = family_investment_low
+				remove_decision = morale_investment_low
+				remove_decision = construction_focus_low
+				remove_decision = resource_focus_low
+				remove_decision = production_investment_low
+				remove_decision = research_investment_average
+				remove_decision = family_investment_average
+				remove_decision = morale_investment_average
+				remove_decision = construction_focus_average
+				remove_decision = resource_focus_average
+				remove_decision = production_investment_average
+				remove_decision = research_investment_high
+				remove_decision = family_investment_high
+				remove_decision = morale_investment_high
+				remove_decision = construction_focus_high
+				remove_decision = resource_focus_high
+				remove_decision = production_investment_high
+				remove_decision = research_investment_very_high
+				remove_decision = family_investment_very_high
+				remove_decision = morale_investment_very_high
+				remove_decision = construction_focus_very_high
+				remove_decision = resource_focus_very_high
+				remove_decision = production_investment_very_high
+			}
+		}
+		
+        ai_will_do = {
+			factor = 0
+		}
+	}
+
+
+	
+	research_investment_very_low = {
+
+		icon = research_boost
+
+		available = {
+			has_idea = family_support_5
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_5
+		}
+        days_remove = -1
+
+        modifier = {
+        	research_speed_factor = 0.025
+			political_power_factor = 0.025
+			academics_opinion = 1
+			income = -0.5
+        }
+
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
+		}
+		custom_cost_text = expenses_50
+		
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 50 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 2
+		}
+	}
+	family_investment_very_low = {
+
+		icon = health
+
+		available = {
+			has_idea = family_support_5
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_5
+		}
+        days_remove = -1
+		
+        modifier = {
+        	MONTHLY_POPULATION = 0.2
+			sickness_chance = -0.1
+			clergy_opinion = 1
+			experience_loss_factor = -0.05
+			income = -0.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
+		}
+		custom_cost_text = expenses_50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 50 }
+			set_country_flag = public_funding
+		}
+
+        ai_will_do = {
+			factor = 1
+		}
+	}
+	morale_investment_very_low = {
+
+		icon = culture
+
+		available = {
+			has_idea = family_support_5
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_5
+		}
+        days_remove = -1
+
+		#research_bonus = {
+		#	society_reforms = 0.05
+		#}
+		
+        modifier = {
+        	weekly_war_weariness = -0.01
+			stability_factor = 0.02
+			society_reforms_research_bonus = 0.05
+			peasant_opinion = 1
+			income = -0.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
+		}
+		custom_cost_text = expenses_50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 50 }
+			set_country_flag = public_funding
+			hidden_effect = {
+				add_ideas = tax_culture_spending_very_low
+			}
+		}
+
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { war_exhaustion_variable > 199 }
+				}
+				add = 100
+			}
+		}
+	}
+	construction_focus_very_low = {
+
+		icon = buildup
+
+		available = {
+			has_idea = family_support_5
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_5
+		}
+        days_remove = -1
+
+        modifier = {
+        	production_speed_buildings_factor = 0.05
+			industry_repair_factor = 0.05
+			labourers_opinion = 1
+			income = -0.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
+		}
+		custom_cost_text = expenses_50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 50 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = no
+				}
+				add = 10
+			}
+		}
+	}
+	resource_focus_very_low = {
+
+		icon = allresources
+
+		available = {
+			has_idea = family_support_5
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_5
+		}
+        days_remove = -1
+
+        modifier = {
+        	local_resources_factor = 0.05
+        	fuel_gain_factor_from_states = 0.05
+        	industrialist_opinion = 1
+        	income = -0.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
+		}
+		custom_cost_text = expenses_50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 50 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 50
+		}
+	}
+	production_investment_very_low = {
+
+		icon = military_buildup
+
+		available = {
+			has_idea = family_support_5
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_5
+		}
+        days_remove = -1
+		
+        modifier = {
+        	industrial_capacity_factory = 0.025
+			industrial_capacity_dockyard = 0.025
+			war_support_factor = 0.03
+			nobility_opinion = 1
+			income = -0.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 50 }
+		}
+		custom_cost_text = expenses_50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 50 }
+			set_country_flag = public_funding
+		}
+
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { war_exhaustion_variable < 199 }
+				}
+				add = 100
+			}
+		}
+	}
+
+	research_investment_low = {
+
+		icon = research_boost
+
+		available = {
+			has_idea = family_support_4
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_4
+		}
+        days_remove = -1
+
+        modifier = {
+        	research_speed_factor = 0.075
+			political_power_factor = 0.05
+			academics_opinion = 2
+			income = -1
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 2
+		}
+	}
+	family_investment_low = {
+
+		icon = health
+
+		available = {
+			has_idea = family_support_4
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_4
+		}
+        days_remove = -1
+
+        modifier = {
+        	MONTHLY_POPULATION = 0.5
+			sickness_chance = -0.2
+			experience_loss_factor = -0.1
+			clergy_opinion = 2
+			income = -1
+        }
+		
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 1
+		}
+	}
+	morale_investment_low = {
+
+		icon = culture
+
+		available = {
+			has_idea = family_support_4
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_4
+		}
+        days_remove = -1
+		
+        modifier = {
+        	weekly_war_weariness = -0.01
+			stability_factor = 0.06
+			society_reforms_research_bonus = 0.10
+			peasant_opinion = 2
+			income = -1
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+			set_country_flag = public_funding
+			hidden_effect = {
+				add_ideas = tax_culture_spending_low
+			}
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { war_exhaustion_variable > 199 }
+				}
+				add = 100
+			}
+		}
+	}
+	construction_focus_low = {
+
+		icon = buildup
+
+		available = {
+			has_idea = family_support_4
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_4
+		}
+        days_remove = -1
+
+        modifier = {
+        	production_speed_buildings_factor = 0.1
+			industry_repair_factor = 0.1
+			labourers_opinion = 2
+			income = -1
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = no
+				}
+				add = 10
+			}
+		}
+	}
+	resource_focus_low = {
+
+		icon = allresources
+
+		available = {
+			has_idea = family_support_4
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_4
+		}
+        days_remove = -1
+
+        modifier = {
+        	local_resources_factor = 0.1
+        	fuel_gain_factor_from_states = 0.1
+        	industrialist_opinion = 2
+        	income = -1
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 50
+		}
+	}
+	production_investment_low = {
+
+		icon = military_buildup
+
+		available = {
+			has_idea = family_support_4
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_4
+		}
+        days_remove = -1
+
+        modifier = {
+        	industrial_capacity_factory = 0.05
+			industrial_capacity_dockyard = 0.05
+			war_support_factor = 0.06
+			nobility_opinion = 2
+			income = -1
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { war_exhaustion_variable < 199 }
+				}
+				add = 100
+			}
+		}
+	}
+	
+	research_investment_average = {
+
+		icon = research_boost
+
+		available = {
+			has_idea = family_support_3
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_3
+		}
+        days_remove = -1
+
+        modifier = {
+        	research_speed_factor = 0.15
+			political_power_factor = 0.1
+			academics_opinion = 3
+			income = -1.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
+		}
+		custom_cost_text = expenses_150
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 150 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 2
+		}
+	}
+	family_investment_average = {
+
+		icon = health
+
+		available = {
+			has_idea = family_support_3
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_3
+		}
+        days_remove = -1
+
+        modifier = {
+        	MONTHLY_POPULATION = 0.8
+			sickness_chance = -0.3
+			experience_loss_factor = -0.15
+			clergy_opinion = 3
+			income = -1.5
+        }
+		
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
+		}
+		custom_cost_text = expenses_150
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 150 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 1
+		}
+	}
+	morale_investment_average = {
+
+		icon = culture
+
+		available = {
+			has_idea = family_support_3
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_3
+		}
+        days_remove = -1
+		
+        modifier = {
+        	weekly_war_weariness = -0.02
+			stability_factor = 0.1
+			society_reforms_research_bonus = 0.15
+			peasant_opinion = 3
+			income = -1.5
+			
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
+		}
+		custom_cost_text = expenses_150
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 150 }
+			set_country_flag = public_funding
+			hidden_effect = {
+				add_ideas = tax_culture_spending_average
+			}
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { war_exhaustion_variable > 199 }
+				}
+				add = 100
+			}
+		}
+	}
+	construction_focus_average = {
+
+		icon = buildup
+
+		available = {
+			has_idea = family_support_3
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_3
+		}
+        days_remove = -1
+
+        modifier = {
+        	production_speed_buildings_factor = 0.2
+			industry_repair_factor = 0.2
+			labourers_opinion = 3
+			income = -1.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
+		}
+		custom_cost_text = expenses_150
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 150 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = no
+				}
+				add = 10
+			}
+		}
+	}
+	resource_focus_average = {
+
+		icon = allresources
+
+		available = {
+			has_idea = family_support_3
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_3
+		}
+        days_remove = -1
+
+        modifier = {
+        	local_resources_factor = 0.15
+        	fuel_gain_factor_from_states = 0.15
+        	industrialist_opinion = 3
+        	income = -1.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
+		}
+		custom_cost_text = expenses_150
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 150 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 50
+		}
+	}
+	production_investment_average = {
+
+		icon = military_buildup
+
+		available = {
+			has_idea = family_support_3
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_3
+		}
+        days_remove = -1
+
+        modifier = {
+        	industrial_capacity_factory = 0.1
+			industrial_capacity_dockyard = 0.1
+			war_support_factor = 0.09
+			nobility_opinion = 3
+			income = -1.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 150 }
+		}
+		custom_cost_text = expenses_150
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 150 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { war_exhaustion_variable < 199 }
+				}
+				add = 100
+			}
+		}
+	}
+	
+	research_investment_high = {
+
+		icon = research_boost
+
+		available = {
+			has_idea = family_support_2
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_2
+		}
+        days_remove = -1
+
+        modifier = {
+        	research_speed_factor = 0.225
+			political_power_factor = 0.15
+			academics_opinion = 4
+			income = -2
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
+		}
+		custom_cost_text = expenses_200
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 200 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 2
+		}
+	}
+	family_investment_high = {
+
+		icon = health
+
+		available = {
+			has_idea = family_support_2
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_2
+		}
+        days_remove = -1
+
+        modifier = {
+        	MONTHLY_POPULATION = 1.1
+			sickness_chance = -0.4
+			experience_loss_factor = -0.2
+			clergy_opinion = 4
+			income = -2
+        }
+		
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
+		}
+		custom_cost_text = expenses_200
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 200 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 1
+		}
+	}
+	morale_investment_high = {
+
+		icon = culture
+
+		available = {
+			has_idea = family_support_2
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_2
+		}
+        days_remove = -1
+		
+        modifier = {
+        	weekly_war_weariness = -0.03
+			stability_factor = 0.14
+			society_reforms_research_bonus = 0.2
+			peasant_opinion = 4
+			income = -2
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
+		}
+		custom_cost_text = expenses_200
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 200 }
+			set_country_flag = public_funding
+			hidden_effect = {
+				add_ideas = tax_culture_spending_high
+			}
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { war_exhaustion_variable > 199 }
+				}
+				add = 100
+			}
+		}
+	}
+	construction_focus_high = {
+
+		icon = buildup
+
+		available = {
+			has_idea = family_support_2
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_2
+		}
+        days_remove = -1
+
+        modifier = {
+        	production_speed_buildings_factor = 0.3
+			industry_repair_factor = 0.3
+			labourers_opinion = 4
+			income = -2
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
+		}
+		custom_cost_text = expenses_200
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 200 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = no
+				}
+				add = 10
+			}
+		}
+	}
+	resource_focus_high = {
+
+		icon = allresources
+
+		available = {
+			has_idea = family_support_2
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_2
+		}
+        days_remove = -1
+		
+        modifier = {
+        	local_resources_factor = 0.2
+        	fuel_gain_factor_from_states = 0.2
+        	industrialist_opinion = 4
+        	income = -2
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
+		}
+		custom_cost_text = expenses_200
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 200 }
+			set_country_flag = public_funding
+		}
+
+        ai_will_do = {
+			factor = 50
+		}
+	}
+	production_investment_high = {
+
+		icon = military_buildup
+
+		available = {
+			has_idea = family_support_2
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_2
+		}
+        days_remove = -1
+		
+        modifier = {
+        	industrial_capacity_factory = 0.15
+			industrial_capacity_dockyard = 0.15
+			war_support_factor = 0.12
+			nobility_opinion = 4
+			income = -2
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 200 }
+		}
+		custom_cost_text = expenses_200
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 200 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { war_exhaustion_variable < 199 }
+				}
+				add = 100
+			}
+		}
+	}
+	
+	research_investment_very_high = {
+
+		icon = research_boost
+
+		available = {
+			has_idea = family_support_1
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_1
+		}
+        days_remove = -1
+
+        modifier = {
+        	research_speed_factor = 0.3
+			political_power_factor = 0.2
+			academics_opinion = 5
+			income = -2.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
+		}
+		custom_cost_text = expenses_250
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 250 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 2
+		}
+	}
+	family_investment_very_high = {
+
+		icon = health
+
+		available = {
+			has_idea = family_support_1
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_1
+		}
+        days_remove = -1
+
+        modifier = {
+        	MONTHLY_POPULATION = 1.4
+			sickness_chance = -0.5
+			experience_loss_factor = -0.25
+			clergy_opinion = 5
+			income = -2.5
+        }
+		
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
+		}
+		custom_cost_text = expenses_250
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 250 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 1
+		}
+	}
+	morale_investment_very_high = {
+
+		icon = culture
+
+		available = {
+			has_idea = family_support_1
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_1
+		}
+        days_remove = -1
+
+        modifier = {
+        	weekly_war_weariness = -0.05
+			stability_factor = 0.18
+			society_reforms_research_bonus = 0.25
+			peasant_opinion = 5
+			income = -2.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
+		}
+		custom_cost_text = expenses_250
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 250 }
+			set_country_flag = public_funding
+			hidden_effect = {
+				add_ideas = tax_culture_spending_very_high
+			}
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { war_exhaustion_variable > 199 }
+				}
+				add = 100
+			}
+		}
+	}
+	construction_focus_very_high = {
+
+		icon = buildup
+
+		available = {
+			has_idea = family_support_1
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_1
+		}
+		days_remove = -1
+
+        modifier = {
+        	production_speed_buildings_factor = 0.4
+			industry_repair_factor = 0.4
+			labourers_opinion = 5
+			income = -2.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
+		}
+		custom_cost_text = expenses_250
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 250 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = no
+				}
+				add = 10
+			}
+		}
+	}
+	resource_focus_very_high = {
+
+		icon = allresources
+
+		available = {
+			has_idea = family_support_1
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_1
+		}
+		days_remove = -1
+
+        modifier = {
+        	local_resources_factor = 0.3
+        	fuel_gain_factor_from_states = 0.3
+        	industrialist_opinion = 5
+        	income = -2.5
+        }
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
+		}
+		custom_cost_text = expenses_250
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 250 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 50
+		}
+	}
+	production_investment_very_high = {
+
+		icon = military_buildup
+
+		available = {
+			has_idea = family_support_1
+			NOT = { has_country_flag = public_funding }
+        }
+		visible = {
+			NOT = { has_country_flag = public_funding }
+			has_idea = family_support_1
+		}
+        days_remove = -1
+
+
+		modifier = {
+        	industrial_capacity_factory = 0.2
+			industrial_capacity_dockyard = 0.2
+			war_support_factor = 0.15
+			nobility_opinion = 5
+			income = -2.5
+		}
+
+		cancel_trigger = {
+			check_variable = {
+				var = money_variable
+				value = 0
+				compare = less_than_or_equals
+				tooltip = money_check
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = public_funding
+		}
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 250 }
+		}
+		custom_cost_text = expenses_250
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 250 }
+			set_country_flag = public_funding
+		}
+		
+        ai_will_do = {
+			factor = 0
+			modifier = {
+				AND = {
+					has_war = yes
+					check_variable = { war_exhaustion_variable < 199 }
+				}
+				add = 100
+			}
+		}
+	}
+
+
+
+	###   ###  #   # #   #  ###    #####  ###  #   # ####  ###  
+	#  # #   # ##  # #   # #         #   #   #  # #  #    #     
+	###  #   # # # # #   #  ##       #   #####   #   ###   ##   
+	#  # #   # #  ## #   #    #      #   #   #  # #  #       #  
+	###   ###  #   #  ###  ###       #   #   # #   # #### ###   
+
+	increase_treasury_capacity = {
+
+		icon = treasury
+
+		visible = {
+			
+		}
+		available = {
+			
+		}
+
+		days_remove = 120
+
+		modifier = {
+			
+		}
+
+		cost = 50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "gain_gold" }
+
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = treasury_extension }
+					}
+				}
+				add_dynamic_modifier = { modifier = treasury_extension }
+			}
+		}
+
+		remove_effect = {
+			add_to_variable = {
+				var = var_treasury_extension
+				value = 50
+				tooltip = add_treasury_extension_tooltip
+			}
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	print_money_for_deficit = {
+
+		icon = inflation
+
+		visible = {
+			
+		}
+		available = {
+			check_variable = {
+				tax_balance <= 0
+				tooltip = income_deficit_check
+			}
+		}
+
+		days_remove = 120
+
+
+		modifier = {
+			currency_amount = 0.05
+		}
+
+		cost = 50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "gain_gold" }
+		}
+
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			base = 100
+		}
+	}
+
+	send_tax_collectors = {
+
+		icon = inflation
+
+		visible = {
+			
+		}
+		available = {
+			check_variable = {
+				var = modifier@taxation_efficiency
+				value = 0.5
+				compare = less_than_or_equals
+				tooltip = less_than_taxation_efficiency_check
+			}
+		}
+
+		days_remove = 120
+
+
+		modifier = {
+			taxation_efficiency = 0.1
+			political_power_factor = -0.1
+		}
+
+		cost = 50
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "gain_gold" }
+		}
+
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				adding_10_percent_taxation_will_make_ROOTs_tax_balance_positive = yes
+				add = 85
+			}
+		}
+	}
+
+	enact_land_tax = {
+
+		icon = land_tax
+
+		visible = {
+			
+		}
+		available = {
+			has_tech = reform_1	
+		}
+
+		days_remove = -1
+
+
+		modifier = {
+			taxation = 0.02
+			nobility_opinion = -10
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "gain_gold" }
+		}
+
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	remove_land_tax = {
+
+		icon = land_tax
+
+		visible = {
+			has_decision = enact_land_tax
+		}
+		available = {
+			
+		}
+
+		cost = 50
+		
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			remove_decision = enact_land_tax
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+	enact_consumption_tax = {
+
+		icon = consumption_tax
+
+		visible = {
+			
+		}
+		available = {
+			has_dynamic_modifier = { modifier = extreme_wealth }
+		}
+
+		days_remove = -1
+
+
+		modifier = {
+			taxation = 0.01
+			nobility_opinion = -4
+			peasant_opinion = -6
+		}
+
+		
+
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "gain_gold" }
+		}
+
+		remove_effect = {
+			
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	remove_consumption_tax = {
+
+		icon = consumption_tax
+
+		visible = {
+			has_decision = enact_consumption_tax
+		}
+		available = {
+			
+		}
+
+		cost = 50
+		
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			remove_decision = enact_consumption_tax
+		}
+		
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+}

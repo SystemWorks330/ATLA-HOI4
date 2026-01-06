@@ -1,0 +1,486 @@
+technologies = {
+
+	waterbender_equipment_1 = {
+
+		enable_equipments = {
+			waterbender_equipment_1
+		}
+
+		enable_subunits = {
+			waterbender
+		}
+
+		enable_equipment_modules = { 
+			ship_waterbender_crew_1
+		}
+
+		path = {
+			leads_to_tech = water_bender_healer
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_training_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 1
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	water_training_1 = {
+		dependencies = {
+			metaphysics = 1
+		}
+
+		waterbender = {
+			soft_attack = 0.1
+			default_morale = 0.2
+		}
+
+		path = {
+			leads_to_tech = water_training_2
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	water_bender_healer = {
+		dependencies = {
+			metaphysics = 1
+		}
+
+		enable_subunits = {
+			waterbender_healer
+		}
+	
+		research_cost = 2
+		#start_year = 5
+		folder = {
+			name = water_special_forces_folder
+			position = { x = -3 y = 2 }
+		}
+		categories = {
+			support_tech
+			bender
+		}
+	}
+	water_training_2 = {
+		dependencies = {
+			astronomy = 1
+		}
+
+		waterbender = {
+			soft_attack = 0.1
+			default_morale = 0.2
+		}
+
+		path = {
+			leads_to_tech = waterbender_equipment_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 20
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 0 y = 6}
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	waterbender_equipment_2 = {
+
+		enable_equipments = {
+			waterbender_equipment_2
+		}
+
+		path = {
+			leads_to_tech = water_training_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 10
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	water_training_3 = {
+		dependencies = {
+			natural_philosophy = 1
+		}
+
+		waterbender = {
+			soft_attack = 0.1
+			default_morale = 0.2
+		}
+
+		path = { 
+			leads_to_tech = attack_training_water
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defense_training_water
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 30
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	attack_training_water = {
+
+		xor = { defense_training_water }
+
+		waterbender = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = waterbender_equipment_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 35
+		folder = {
+			name = water_special_forces_folder
+			position = { x = -1 y = 12 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	defense_training_water = {
+
+		xor = { attack_training_water }
+
+		waterbender = {
+			defense = 0.1
+			breakthrough = 0.1
+		}
+
+		path = {
+			leads_to_tech = waterbender_equipment_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		#start_year = 35
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 1 y = 12 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	water_training_4 = {
+		dependencies = {
+			alchemy = 1
+		}
+
+		waterbender = {
+			soft_attack = 0.1
+			default_morale = 0.2
+		}
+
+		path = {
+			leads_to_tech = water_training_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		#start_year = 50
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	water_training_5 = {
+		dependencies = {
+			botanics = 1
+		}
+
+		waterbender = {
+			soft_attack = 0.1
+			default_morale = 0.2
+		}
+
+		path = { 
+			leads_to_tech = attack_training_water_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defense_training_water_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 60
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	attack_training_water_2 = {
+
+		xor = { defense_training_water_2 }
+
+		waterbender = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+
+		path = {
+			leads_to_tech = waterbender_equipment_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 70
+		folder = {
+			name = water_special_forces_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	defense_training_water_2 = {
+
+		xor = { attack_training_water_2 }
+
+		waterbender = {
+			defense = 0.1
+			breakthrough = 0.1
+		}
+
+		path = {
+			leads_to_tech = waterbender_equipment_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 70
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 1 y = 20 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	water_training_6 = {
+		dependencies = {
+			energy_manipulation = 1
+		}
+	
+		waterbender = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		
+		research_cost = 4
+		#start_year = 90
+		folder = {
+			name = water_special_forces_folder
+			position = { x = -1 y = 24 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	water_training_7 = {
+		dependencies = {
+			energy_manipulation = 1
+		}
+		waterbender = {
+			defense = 0.1
+			breakthrough = 0.1
+		}
+
+		
+		research_cost = 3
+		#start_year = 100
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 1 y = 24 }
+		}
+		
+		categories = {
+			infantry_weapons
+			bender
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	waterbender_equipment_3 = {
+
+		enable_equipments = {
+			waterbender_equipment_3
+		}
+
+		path = {
+			leads_to_tech = water_training_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 40
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	waterbender_equipment_4 = {
+
+		enable_equipments = {
+			waterbender_equipment_4
+		}
+
+		path = {
+			leads_to_tech = water_training_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = water_training_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 80
+		folder = {
+			name = water_special_forces_folder
+			position = { x = 0 y = 22 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+}

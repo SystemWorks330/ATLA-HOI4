@@ -1,0 +1,161 @@
+scripted_gui = {
+
+	avatar = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "avatar_container"
+
+		effects = {
+			avatar_button_click = {
+				if = {
+					limit = {
+						check_variable = { show_avatar = 0 }
+					}
+					set_variable = { show_avatar = 1 }
+				}
+				else = {
+					set_variable = { show_avatar = 0 }
+				}
+			}
+		}
+		triggers = {
+			avatar_button_click_enabled = {
+				not = {
+					has_global_flag = avatar_cycle_broken
+				}
+			}
+        }
+	}
+
+	avatar_window = {
+		context_type = player_context
+
+		window_name = "countryavatarview"
+
+		visible = {
+			check_variable = { show_avatar > 0 }
+		}
+
+		effects = {
+			avatar_close_click = {
+				set_variable = { show_avatar = 0 }
+			}
+		}
+
+		triggers = {
+
+			avatar_air_home_visible = {
+				has_global_flag = avatar_born_air
+			}
+			avatar_water_home_visible = {
+				has_global_flag = avatar_born_water
+			}
+			avatar_fire_home_visible = {
+				has_global_flag = avatar_born_fire
+			}
+			avatar_earth_home_visible = {
+				has_global_flag = avatar_born_earth
+			}
+
+			avatar_location_unknown_visible = {
+				NOT = {
+					has_variable = global.avatar_location
+					has_global_flag = avatar_captured
+					has_global_flag = avatar_on_ship
+					has_global_flag = avatar_en_route
+				}
+			}
+			avatar_location_captured_visible = {
+				NOT = {
+					has_variable = global.avatar_location
+				}
+				has_global_flag = avatar_captured
+			}
+			avatar_location_ship_visible = {
+				NOT = {
+					has_variable = global.avatar_location
+				}
+				has_global_flag = avatar_on_ship
+			}
+			avatar_location_appa_visible = {
+				NOT = {
+					has_variable = global.avatar_location
+				}
+				has_global_flag = avatar_en_route
+			}
+			avatar_location_visible = {
+				has_variable = global.avatar_location
+			}
+
+			team_1_portrait_visible = {
+				check_variable = { global.avatar_team^num > 1 }
+			}
+			team_2_portrait_visible = {
+				check_variable = { global.avatar_team^num > 2 }
+			}
+			team_3_portrait_visible = {
+				check_variable = { global.avatar_team^num > 3 }
+			}
+			team_4_portrait_visible = {
+				check_variable = { global.avatar_team^num > 4 }
+			}
+			team_5_portrait_visible = {
+				check_variable = { global.avatar_team^num > 5 }
+			}
+			team_6_portrait_visible = {
+				check_variable = { global.avatar_team^num > 6 }
+			}
+
+		}
+
+		properties = {
+			avatar_portrait = {
+				image = "GFX_Portrait_[?global.avatar.GetTokenKey]"
+			}
+			avatar_location = {
+				image = "GFX_terrain_[?global.avatar_location.GetID]"
+			}
+
+			team_1_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^1.GetTokenKey]_small"
+			}
+			team_2_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^2.GetTokenKey]_small"
+			}
+			team_3_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^3.GetTokenKey]_small"
+			}
+			team_4_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^4.GetTokenKey]_small"
+			}
+			team_5_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^5.GetTokenKey]_small"
+			}
+			team_6_portrait = {
+				image = "GFX_Portrait_[?global.avatar_team^6.GetTokenKey]_small"
+			}
+
+			spirituality = {
+				x = global.avatar_spirituality
+			}
+			avatar_state = {
+				x = global.avatar_state
+			}
+			water_skill = {
+				x = global.avatar_waterbender_skill
+			}
+			earth_skill = {
+				x = global.avatar_earthbender_skill
+			}
+			fire_skill = {
+				x = global.avatar_firebender_skill
+			}
+			air_skill = {
+				x = global.avatar_airbender_skill
+			}
+		}
+
+	}
+
+
+}

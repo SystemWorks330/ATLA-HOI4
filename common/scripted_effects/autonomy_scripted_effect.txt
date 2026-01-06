@@ -1,0 +1,209 @@
+
+
+autonomy_state_recalc = {
+	
+}
+
+annexation_accepted = {
+	THIS = {
+		ROOT = {
+			annex_country = {
+				target = PREV
+				transfer_troops = yes
+			}
+		}
+	}
+}
+
+annexation_rejected = {
+	ROOT = {
+		end_puppet = PREV.THIS
+		remove_from_faction = PREV.THIS
+		declare_war_on = {
+			target = PREV.THIS
+			type = annex_everything
+		}
+	}	
+}
+
+
+increase_puppet_tax_effect = {
+
+	if = {
+		limit = {
+			THIS = {
+				NOT = {
+					OR = {
+						has_idea = low_vassal_taxes
+						has_idea = medium_vassal_taxes
+						has_idea = high_vassal_taxes
+					}
+				}
+			}
+		}
+		THIS = {
+			add_ideas = low_vassal_taxes
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+		}
+		ROOT = { hidden_effect = { scoped_sound_effect  = "gain_gold" } }
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = low_vassal_taxes
+			}
+		}
+		THIS = {
+			swap_ideas = {
+				remove_idea = low_vassal_taxes
+				add_idea = medium_vassal_taxes
+			}
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+		}
+		ROOT = { hidden_effect = { scoped_sound_effect  = "gain_gold" } }
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = medium_vassal_taxes
+			}
+		}
+		THIS = {
+			swap_ideas = {
+				remove_idea = medium_vassal_taxes
+				add_idea = high_vassal_taxes
+			}
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+		}
+		ROOT = { hidden_effect = { scoped_sound_effect  = "gain_gold" } }
+	}
+	
+}
+
+
+increase_puppet_war_tributes_effect = {
+
+	if = {
+		limit = {
+			THIS = {
+				NOT = {
+					OR = {
+						has_idea = low_war_tributes
+						has_idea = medium_war_tributes
+						has_idea = high_war_tributes
+					}
+				}
+			}
+		}
+		THIS = {
+			add_ideas = low_war_tributes
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = low_war_tributes
+			}
+		}
+		THIS = {
+			swap_ideas = {
+				remove_idea = low_war_tributes
+				add_idea = medium_war_tributes
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = medium_war_tributes
+			}
+		}
+		THIS = {
+			swap_ideas = {
+				remove_idea = medium_war_tributes
+				add_idea = high_war_tributes
+			}
+		}
+	}
+	
+}
+
+
+increase_puppet_territorial_integration_effect = {
+
+	if = {
+		limit = {
+			THIS = {
+				NOT = {
+					OR = {
+						has_idea = low_territorial_integration
+						has_idea = medium_territorial_integration
+						has_idea = high_territorial_integration
+					}
+				}
+			}
+		}
+		THIS = {
+			add_ideas = low_territorial_integration
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = low_territorial_integration
+			}
+		}
+		THIS = {
+			swap_ideas = {
+				remove_idea = low_territorial_integration
+				add_idea = medium_territorial_integration
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = medium_territorial_integration
+			}
+		}
+		THIS = {
+			swap_ideas = {
+				remove_idea = medium_territorial_integration
+				add_idea = high_territorial_integration
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			THIS = {
+				has_idea = high_territorial_integration
+				#NOT = {
+				#	all_controlled_state = {
+				#		has_resources_rights = {
+				#			state = THIS
+				#			receiver = ROOT
+				#		}
+				#	}
+				#}
+			}
+		}
+		THIS = {
+			every_controlled_state = {
+				set_temp_variable = { rr_state = THIS.id }
+				controller = {
+					meta_effect = {
+						text = {
+							give_resource_rights = {
+								receiver = [TAG]
+								state = [STATE]
+							}
+						}
+						TAG = "[ROOT.GetTag]" 
+						STATE = "[?rr_state]"
+					}
+				}
+			}
+		}
+	}
+	
+}

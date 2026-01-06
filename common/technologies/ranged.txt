@@ -1,0 +1,3892 @@
+technologies = {
+
+	ranged_weapons = {
+
+		enable_equipments = {
+			javelin_equipment_0
+		}
+		
+		enable_subunits = {
+			skirmishers
+		}
+		path = {
+			leads_to_tech = tacticsarrow
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = javelin1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tip0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tactics
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.6
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = 0 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	light_armor_0 = {
+
+		enable_equipments = {
+			light_armor_equipment_0
+		}
+
+		path = {
+			leads_to_tech = light_armor_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = uniform0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = guard0
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = ranged_weapons
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = bow0
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.6
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 0 }
+		}
+		folder = {
+			name = support_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tip0 = {
+
+		skirmishers = {
+			hard_attack = 0.05
+			soft_attack = 0.02
+		}
+		
+		research_cost = 1
+
+		#start_year = 10
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+	
+	uniform0 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = uniform_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+
+		#archers = {
+		#	defense = 0.03
+		#}
+		#skirmishers = {
+		#	defense = 0.03
+		#}
+		
+		research_cost = 1
+
+		#start_year = 10
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+
+	guard0 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = guard_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 10
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 2 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+
+	string0 = {
+
+		path = {
+			leads_to_tech = arrowhead0
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = string_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 15
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 4 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	arrowhead0 = {
+
+		archers = {
+			soft_attack = 0.02
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 20
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 6 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	arrowheadb0 = {
+
+		#archers = {
+		#	air_attack = 0.05
+		#	defense = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowtip_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = arrowshaft0
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 15
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 4 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrowshaft0 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowshaft_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 20
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 6 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	bow0 = {
+	
+		path = {
+			leads_to_tech = string0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = arrowheadb0
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = bow1
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			arrow0
+		}
+		
+		enable_equipments = {
+			bow_equipment_0
+		}
+
+		enable_subunits = {
+			archers
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 10
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 2 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrow0 = {
+
+		enable_equipments = {
+			arrow_equipment_0
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tip1 = {
+
+		skirmishers = {
+			hard_attack = 0.05
+			soft_attack = 0.02
+		}
+
+		research_cost = 1
+
+		#start_year = 25
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+	
+	uniform1 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = uniform_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+
+		#archers = {
+		#	defense = 0.03
+		#}
+		#skirmishers = {
+		#	defense = 0.03
+		#}
+		
+		research_cost = 1
+
+		#start_year = 25
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+
+	guard1 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = guard_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 25
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+	
+	javelin1 = {
+		dependencies = {
+			domestication = 1
+		}
+
+		enable_equipments = {
+			javelin_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = javelin2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tip1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 20
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	light_armor_1 = {
+		dependencies = {
+			domestication = 1
+		}
+
+		enable_equipments = {
+			light_armor_equipment_1
+		}
+		path = {
+			leads_to_tech = uniform1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = guard1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_armor_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 20
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	string1 = {
+
+		path = {
+			leads_to_tech = arrowhead1
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = string_upgrade_2_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 35
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 12 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	arrowhead1 = {
+
+		archers = {
+			soft_attack = 0.02
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 40
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 14 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	
+	arrowheadb1 = {
+
+		#archers = {
+		#	air_attack = 0.05
+		#	defense = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowtip_upgrade_2_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = arrowshaft1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 35
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 12 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrowshaft1 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowshaft_upgrade_2_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 40
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 14 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	bow1 = {
+		dependencies = {
+			wind_manipulation = 1
+		}
+
+		path = {
+			leads_to_tech = bow2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = string1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = arrowheadb1
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			bow_equipment_1
+		}
+		sub_technologies = {
+			arrow1
+		}
+
+		research_cost = 3.6
+
+		#start_year = 30
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 10 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrow1 = {
+
+		enable_equipments = {
+			arrow_equipment_1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tip2 = {
+
+		skirmishers = {
+			hard_attack = 0.05
+			soft_attack = 0.02
+		}
+
+		research_cost = 1
+
+		#start_year = 40
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+	
+	uniform2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = uniform_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+
+		#archers = {
+		#	defense = 0.03
+		#}
+		#skirmishers = {
+		#	defense = 0.03
+		#}
+		
+		research_cost = 1
+
+		#start_year = 40
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 14 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+
+	guard2 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = guard_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+
+		#archers = {
+		#	defense = 0.03
+		#}
+		#skirmishers = {
+		#	defense = 0.03
+		#}
+		
+		research_cost = 1
+
+		#start_year = 40
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 14 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+	
+	javelin2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			javelin_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = javelin3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tip2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 35
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = 12 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	light_armor_2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			light_armor_equipment_2
+		}
+		path = {
+			leads_to_tech = uniform2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = guard2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_armor_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 35
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	string2 = {
+
+		path = {
+			leads_to_tech = arrowhead2
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = string_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 55
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 20 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+
+	arrowhead2 = {
+
+		archers = {
+			soft_attack = 0.02
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 60
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 22 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	arrowheadb2 = {
+
+		#archers = {
+		#	air_attack = 0.05
+		#	defense = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowtip_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = arrowshaft2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 55
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 20 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrowshaft2 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowshaft_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 60
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 22 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	bow2 = {
+		dependencies = {
+			geometry = 1
+		}
+		path = {
+			leads_to_tech = bow3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = string2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = arrowheadb2
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			bow_equipment_2
+		}
+		sub_technologies = {
+			arrow2
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 50
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 18 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrow2 = {
+		
+		enable_equipments = {
+			arrow_equipment_2
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+			archer_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tip3 = {
+
+		skirmishers = {
+			hard_attack = 0.05
+			soft_attack = 0.02
+		}
+
+		research_cost = 1
+
+		#start_year = 55
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+	
+	uniform3 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = uniform_upgrade_4_tt
+		}
+		show_effect_as_desc = yes
+
+		#archers = {
+		#	defense = 0.03
+		#}
+		#skirmishers = {
+		#	defense = 0.03
+		#}
+		
+		research_cost = 1
+
+		#start_year = 55
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 20 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+
+	guard3 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = guard_upgrade_4_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 55
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 20 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+	
+	javelin3 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipments = {
+			javelin_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = javelin4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tip3
+			research_cost_coeff = 1
+		}
+
+		#start_year = 50
+
+		research_cost = 3.6
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = 18 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	light_armor_3 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipments = {
+			light_armor_equipment_3
+		}
+		path = {
+			leads_to_tech = uniform3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = guard3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_armor_4
+			research_cost_coeff = 1
+		}
+
+		#start_year = 50
+		
+		research_cost = 3.6
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	string3 = {
+
+		path = {
+			leads_to_tech = arrowhead3
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = string_upgrade_4_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 75
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 28 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	arrowhead3 = {
+
+		archers = {
+			soft_attack = 0.02
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 80
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 30 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	arrowheadb3 = {
+
+		#archers = {
+		#	air_attack = 0.05
+		#	defense = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowtip_upgrade_4_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = arrowshaft3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 75
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 28 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrowshaft3 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowshaft_upgrade_4_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 80
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 30 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	bow3 = {
+		dependencies = {
+			leverage = 1
+		}
+		path = {
+			leads_to_tech = bow4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = string3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = arrowheadb3
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			bow_equipment_3
+		}
+		sub_technologies = {
+			arrow3
+		}
+
+		research_cost = 3.6
+
+		#start_year = 70
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 26 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrow3 = {
+
+		enable_equipments = {
+			arrow_equipment_3
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+			archer_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tip4 = {
+
+		skirmishers = {
+			hard_attack = 0.05
+			soft_attack = 0.02
+		}
+
+		research_cost = 1
+
+		#start_year = 70
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 26 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+	}
+	
+	uniform4 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = uniform_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+
+		#archers = {
+		#	defense = 0.03
+		#}
+		#skirmishers = {
+		#	defense = 0.03
+		#}
+		
+		research_cost = 1
+
+		#start_year = 70
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 26 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+	}
+
+	guard4 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = guard_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+
+		#archers = {
+		#	defense = 0.03
+		#}
+		#skirmishers = {
+		#	defense = 0.03
+		#}
+		
+		research_cost = 1
+
+		#start_year = 70
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 26 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+	}
+	
+	javelin4 = {
+		dependencies = {
+			alchemy = 1
+		}
+
+		enable_equipments = {
+			javelin_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = javelin5
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = tip4
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 3.6
+
+		#start_year = 80
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = 24 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	light_armor_4 = {
+
+		enable_equipments = {
+			light_armor_equipment_4
+		}
+
+		path = {
+			leads_to_tech = uniform4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = guard4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_armor_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 80
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 24 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	string4 = {
+
+		path = {
+			leads_to_tech = arrowhead4
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = string_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 95
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 36 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	arrowhead4 = {
+
+		archers = {
+			soft_attack = 0.02
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 100
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 38 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	arrowheadb4 = {
+
+		#archers = {
+		#	air_attack = 0.05
+		#	defense = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowtip_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = arrowshaft4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 95
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 36 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrowshaft4 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowshaft_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 100
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 38 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	bow4 = {
+
+		path = {
+			leads_to_tech = bow5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = string4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = arrowheadb4
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			bow_equipment_4
+		}
+		sub_technologies = {
+			arrow4
+		}
+
+		research_cost = 3.6
+
+		#start_year = 90
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 34 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrow4 = {
+
+		enable_equipments = {
+			arrow_equipment_4
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+
+		research_cost = 1
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+			archer_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tip5 = {
+
+		skirmishers = {
+			hard_attack = 0.05
+			soft_attack = 0.02
+		}
+		
+		research_cost = 1
+
+		#start_year = 75
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -1 y = 32 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	}
+	
+	uniform5 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = uniform_upgrade_6_tt
+		}
+		show_effect_as_desc = yes
+
+		#archers = {
+		#	defense = 0.03
+		#}
+		#skirmishers = {
+		#	defense = 0.03
+		#}
+		
+		research_cost = 1
+
+		#start_year = 75
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 32 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	}
+
+	guard5 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = guard_upgrade_6_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 75
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 32 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	}
+	
+	javelin5 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+		enable_equipments = {
+			javelin_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = grenade1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tip5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 80
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = 30 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	light_armor_5 = {
+		dependencies = {
+			alchemy = 1
+		}
+		path = {
+			leads_to_tech = uniform5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = guard5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_armor_6
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			light_armor_equipment_5
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 80
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 30 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	grenade1 = {
+		dependencies = {
+			chemistry = 1
+		}
+	
+		path = {
+			leads_to_tech = grenade2
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			javelin_equipment_6
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 100
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = 38 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	}
+	
+	grenade2 = {
+		dependencies = {
+			energy_manipulation = 1
+			applied_mathematics = 1
+		}
+
+		enable_equipments = {
+			javelin_equipment_7
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 120
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -2 y = 46 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+	}
+	
+	light_armor_6 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		path = {
+			leads_to_tech = uniform6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = guard6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = light_armor_7
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			light_armor_equipment_6
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 95
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 36 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	uniform6 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = uniform_upgrade_7_tt
+		}
+		show_effect_as_desc = yes
+
+		#archers = {
+		#	defense = 0.03
+		#}
+		#skirmishers = {
+		#	defense = 0.03
+		#}
+		
+		research_cost = 1
+
+		#start_year = 100
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 38 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+	}
+
+	guard6 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = guard_upgrade_7_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 100
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 38 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+	}
+
+	string5 = {
+
+		path = {
+			leads_to_tech = arrowhead5
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = string_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 115
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 44 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	arrowhead5 = {
+
+		archers = {
+			soft_attack = 0.02
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 120
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 6 y = 46 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	arrowheadb5 = {
+
+		#archers = {
+		#	air_attack = 0.05
+		#	defense = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowtip_upgrade_6_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = arrowshaft5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 115
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 44 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrowshaft5 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = arrowshaft_upgrade_6_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 120
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 8 y = 46 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	bow5 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipments = {
+			bow_equipment_5
+		}
+		path = {
+			leads_to_tech = string5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = arrowheadb5
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			arrow5
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 110
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 7 y = 42 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	arrow5 = {
+		
+		enable_equipments = {
+			arrow_equipment_5
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+			archer_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	light_armor_7 = {
+		dependencies = {
+			chemistry = 1
+		}
+		path = {
+			leads_to_tech = uniform7
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech =guard7
+			research_cost_coeff = 1
+		}
+
+		enable_equipments = {
+			light_armor_equipment_7
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 110
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 2 y = 42 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	guard7 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = guard_upgrade_8_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+
+		#start_year = 115
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 44 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+	}
+	
+	uniform7 = {
+
+		on_research_complete = {
+			custom_effect_tooltip = uniform_upgrade_8_tt
+		}
+		show_effect_as_desc = yes
+
+		#rchers = 
+		#	defense = 0.03
+		#
+		#kirmishers = 
+		#	defense = 0.03
+		#
+		
+		research_cost = 1
+
+		#start_year = 115
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 1 y = 44 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+	}
+	
+	tactics = {
+		dependencies = {
+			kinectics = 1
+		}
+
+		skirmishers = {
+			breakthrough = 0.02
+			max_organisation = 2
+		}
+		
+		path = {
+			leads_to_tech = tacticsjavelin1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 15
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+	
+	tacticsjavelin1 = {
+
+		skirmishers = {
+			breakthrough = 0.02
+			max_organisation = 2
+		}
+				
+		path = {
+			leads_to_tech = tacticsjavelin2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 30
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 10 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+	
+	tacticsjavelin2 = {
+		dependencies = {
+			astronomy = 1
+		}
+
+		skirmishers = {
+			breakthrough = 0.02
+			max_organisation = 2
+		}
+				
+		path = {
+			leads_to_tech = tacticsjavelin3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 45
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+	
+	tacticsjavelin3 = {
+
+		skirmishers = {
+			breakthrough = 0.02
+			max_organisation = 2
+		}
+		
+		path = {
+			leads_to_tech = tacticsjavelin4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 60
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 22 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+	}
+	
+	tacticsjavelin4 = {
+		dependencies = {
+			natural_philosophy = 1
+		}
+
+		skirmishers = {
+			breakthrough = 0.02
+			max_organisation = 2
+		}
+				
+		path = {
+			leads_to_tech = tacticsjavelin5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 75
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 28 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	}
+	
+	tacticsjavelin5 = {
+
+		skirmishers = {
+			breakthrough = 0.02
+			max_organisation = 2
+		}
+				
+		path = {
+			leads_to_tech = tacticsjavelin6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 90
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 34 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+	}
+	
+	tacticsjavelin6 = {
+		dependencies = {
+			botanics = 1
+		}
+
+		skirmishers = {
+			breakthrough = 0.02
+			max_organisation = 2
+		}
+		
+		research_cost = 1
+
+		#start_year = 105
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 40 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+	}
+	
+	tacticsarrow = {
+		dependencies = {
+			wind_manipulation = 1
+		}
+
+		archers = {
+			max_organisation = 3
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = tacticsarrow1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 15
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 4 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	tacticsarrow1 = {
+
+		archers = {
+			max_organisation = 3
+			breakthrough = 0.03
+		}
+				
+		path = {
+			leads_to_tech = tacticsarrow2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 30
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 10 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	tacticsarrow2 = {
+		dependencies = {
+			astronomy = 1
+		}
+
+		archers = {
+			max_organisation = 3
+			breakthrough = 0.03
+		}
+				
+		path = {
+			leads_to_tech = tacticsarrow3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 45
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 16 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	tacticsarrow3 = {
+
+		archers = {
+			max_organisation = 3
+			breakthrough = 0.03
+		}
+		
+		path = {
+			leads_to_tech = tacticsarrow4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 60
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 22 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	tacticsarrow4 = {
+		dependencies = {
+			natural_philosophy = 1
+		}
+
+		archers = {
+			max_organisation = 3
+			breakthrough = 0.03
+		}
+				
+		path = {
+			leads_to_tech = tacticsarrow5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 75
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 28 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	tacticsarrow5 = {
+
+		archers = {
+			max_organisation = 3
+			breakthrough = 0.03
+		}
+				
+		path = {
+			leads_to_tech = tacticsarrow6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 90
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 34 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	tacticsarrow6 = {
+		dependencies = {
+			botanics = 1
+		}
+
+		archers = {
+			max_organisation = 3
+			breakthrough = 0.03
+		}
+		
+		research_cost = 1
+
+		#start_year = 105
+		
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 40 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+			archer_tech
+		}
+	}
+	
+	catapult0 = {
+		dependencies = {
+			measurements = 1
+			kinectics = 1
+			wind_manipulation = 1
+		}
+
+		enable_equipments = {
+			catapult_equipment_0
+		}
+		enable_subunits = {
+			catapult_brigade
+		}
+		sub_technologies = {
+			projectile0
+		}
+
+		path = {
+			leads_to_tech = catapult1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 25
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 8 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	projectile0 = {
+
+		enable_equipments = {
+			projectile_equipment_0
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+
+		#start_year = 7
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+	
+	ballista0 = {
+		dependencies = {
+			measurements = 1
+			kinectics = 1
+			wind_manipulation = 1
+		}
+
+		enable_equipments = {
+			ballista_equipment_0
+		}
+		enable_subunits = {
+			ballista
+		}
+		sub_technologies = {
+			bolt0
+		}
+
+
+		path = {
+			leads_to_tech = ballista1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 20
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 15 y = 6 }
+		}
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bolt0 = {
+
+		enable_equipments = {
+			bolt_equipment_0
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+
+		#start_year = 7
+		
+		categories = {
+			age_1
+
+			ranged_weapons
+		}
+	}
+	
+	catapult1 = {
+		dependencies = {
+			geometry = 1
+		}
+		path = {
+			leads_to_tech = enginec1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ammoc1
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			catapult_equipment_1
+		}
+
+		path = {
+			leads_to_tech = catapult2
+			research_cost_coeff = 1
+		}
+
+		sub_technologies = {
+			projectile1
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 40
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 14 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	enginec1 = {
+	
+		catapult_brigade = {
+			breakthrough= 0.06
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 50
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 18 y = 18 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+	
+	ammoc1 = {
+		catapult_brigade = {
+			soft_attack = 0.04
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 50
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 18 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+	
+	engineb1 = {
+
+		ballista = {
+			breakthrough = 0.05
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 40
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = 14 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+	
+	ammob1 = {
+
+		ballista = {
+			soft_attack = 0.03
+			hard_attack = 0.03
+			air_attack = 0.05
+		}
+		
+		research_cost = 1
+
+		#start_year = 40
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 14 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	} 
+	
+	projectile1 = {
+
+		enable_equipments = {
+			projectile_equipment_1
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+
+		research_cost = 1
+
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+	
+	ballista1 = {
+		dependencies = {
+			geometry = 1
+		}
+		path = {
+			leads_to_tech = engineb1
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			ballista_equipment_1
+		}
+
+		path = {
+			leads_to_tech = ballista2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ammob1
+			research_cost_coeff = 1
+		}
+
+		sub_technologies = {
+			bolt1
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 30
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 15 y = 10 }
+		}
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	bolt1 = {
+
+		enable_equipments = {
+			bolt_equipment_1
+		}
+		
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+
+		research_cost = 1
+
+		#start_year = 7
+		
+		categories = {
+			age_2
+
+			ranged_weapons
+		}
+	}
+	
+	catapult2 = {
+		dependencies = {
+			leverage = 1
+		}
+		path = {
+			leads_to_tech = enginec2
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			catapult_equipment_2
+		}
+
+		path = {
+			leads_to_tech = catapult3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ammoc2
+			research_cost_coeff = 1
+		}
+
+		sub_technologies = {
+			projectile2
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 60
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 22 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	projectile2 = {
+
+		enable_equipments = {
+			projectile_equipment_2
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+
+		#start_year = 7
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+	}
+	
+	ballista2 = {
+		dependencies = {
+			leverage = 1
+		}
+		path = {
+			leads_to_tech = engineb2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ammob2
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			ballista_equipment_2
+		}
+
+		path = {
+			leads_to_tech = ballista3
+			research_cost_coeff = 1
+		}
+		
+		sub_technologies = {
+			bolt2
+		}
+
+		research_cost = 3.6
+
+		#start_year = 50
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 15 y = 18 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	bolt2 = {
+
+		enable_equipments = {
+			bolt_equipment_2
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+
+		#start_year = 7
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+	}
+
+	enginec2 = {
+	
+		catapult_brigade = {
+			breakthrough = 0.06
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 70
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 18 y = 26 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+	}
+	
+	ammoc2 = {
+		catapult_brigade = {
+			soft_attack = 0.04
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 70
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 26 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+	}
+	
+	engineb2 = {
+
+		ballista = {
+			breakthrough = 0.05
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 60
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = 22 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+	}
+	
+	ammob2 = {
+
+		ballista = {
+			soft_attack = 0.03
+			hard_attack = 0.03
+			air_attack = 0.05
+		}
+		
+		research_cost = 1
+
+		#start_year = 60
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 22 }
+		}
+		
+		categories = {
+			age_3
+
+			ranged_weapons
+		}
+	} 
+	
+	catapult3 = {
+		dependencies = {
+			alchemy = 1
+		}
+		path = {
+			leads_to_tech = enginec3
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			catapult_equipment_3
+		}
+
+		path = {
+			leads_to_tech = catapult4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ammoc3
+			research_cost_coeff = 1
+		}
+
+		sub_technologies = {
+			projectile3
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 80
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 30 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	projectile3 = {
+
+		enable_equipments = {
+			projectile_equipment_3
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+
+		#start_year = 7
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	}
+	
+	ballista3 = {
+		dependencies = {
+			alchemy = 1
+		}
+		path = {
+			leads_to_tech = engineb3
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			ballista_equipment_3
+		}
+
+		path = {
+			leads_to_tech = ballista4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ammob3
+			research_cost_coeff = 1
+		}
+
+		sub_technologies = {
+			bolt3
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 70
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 15 y = 26 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	bolt3 = {
+
+		enable_equipments = {
+			bolt_equipment_3
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+
+		#start_year = 7
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	}
+	
+	enginec3 = {
+	
+		catapult_brigade = {
+			breakthrough = 0.06
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 90
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 18 y = 34 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	}
+	
+	ammoc3 = {
+		catapult_brigade = {
+			soft_attack = 0.04
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 90
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 34 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	}
+	
+	engineb3 = {
+
+		ballista = {
+			breakthrough = 0.05
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 80
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = 30 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	}
+	
+	ammob3 = {
+
+		ballista = {
+			soft_attack = 0.03
+			hard_attack = 0.03
+			air_attack = 0.05
+		}
+		
+		research_cost = 1
+
+		#start_year = 80
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 30 }
+		}
+		
+		categories = {
+			age_4
+
+			ranged_weapons
+		}
+	} 
+	
+	catapult4 = {
+		dependencies = {
+			laws_of_nature = 1
+			scientific_method = 1
+		}
+		path = {
+			leads_to_tech = enginec4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = catapult5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ammoc4
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			catapult_equipment_4
+		}
+
+		sub_technologies = {
+			projectile4
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 100
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 38 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	projectile4 = {
+
+		enable_equipments = {
+			projectile_equipment_4
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+
+		#start_year = 7
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+	}
+	
+	ballista4 = {
+		dependencies = {
+			steel_alloy = 1
+			steam_engine = 1
+		}
+		path = {
+			leads_to_tech = engineb4
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			ballista_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = ballista5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ammob4
+			research_cost_coeff = 1
+		}
+
+		sub_technologies = {
+			bolt4
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 90
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 15 y = 34 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	bolt4 = {
+
+		enable_equipments = {
+			bolt_equipment_4
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+
+		#start_year = 7
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+	}
+	
+	enginec4 = {
+	
+		catapult_brigade = {
+			breakthrough = 0.06
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 110
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 18 y = 42 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+	}
+	
+	ammoc4 = {
+		catapult_brigade = {
+			soft_attack = 0.04
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 110
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 42 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+	}
+	
+	engineb4 = {
+
+		ballista = {
+			breakthrough = 0.05
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 100
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = 38 }
+		}
+		
+		categories = {
+			age_5
+
+			ranged_weapons
+		}
+	}
+	
+	ammob4 = {
+
+		ballista = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+			ap_attack = 0.2
+		}
+		
+		research_cost = 1
+
+		#start_year = 100
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 38 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+	} 
+	
+	catapult5 = {
+		dependencies = {
+			chemistry = 1
+			steel_alloy = 1
+		}
+		path = {
+			leads_to_tech = enginec5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ammoc5
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			catapult_equipment_5
+		}
+
+		sub_technologies = {
+			projectile5
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 115
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 17 y = 44 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	projectile5 = {
+		
+		enable_equipments = {
+			projectile_equipment_5
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+
+		#start_year = 7
+
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+	}
+	
+	ballista5 = {
+		dependencies = {
+			chemistry = 1
+		}
+		path = {
+			leads_to_tech = engineb5
+			research_cost_coeff = 1
+		}
+		enable_equipments = {
+			ballista_equipment_5
+		}
+		path = {
+			leads_to_tech = ammob5
+			research_cost_coeff = 1
+		}
+		sub_technologies = {
+			bolt5
+		}
+		
+		research_cost = 3.6
+
+		#start_year = 110
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 15 y = 42 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	bolt5 = {
+		
+		enable_equipments = {
+			bolt_equipment_5
+		}
+
+		on_research_complete = {
+			custom_effect_tooltip = AMMUNITION_USAGE
+		}
+		
+		research_cost = 1
+
+		#start_year = 7
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+	}
+	
+	enginec5 = {
+	
+		catapult_brigade = {
+			breakthrough = 0.06
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 120
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 18 y = 46 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+	}
+	
+	ammoc5 = {
+		catapult_brigade = {
+			soft_attack = 0.04
+			hard_attack = 0.04
+		}
+		
+		research_cost = 1
+
+		#start_year = 120
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 46 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+	}
+	
+	engineb5 = {
+
+		ballista = {
+			breakthrough = 0.05
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+
+		#start_year = 115
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 14 y = 44 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+	}
+	
+	ammob5 = {
+
+		ballista = {
+			soft_attack = 0.02
+			hard_attack = 0.02
+			ap_attack = 0.2
+		}
+		
+		research_cost = 1
+
+		#start_year = 115
+		
+		folder = {
+			name = artillery_folder
+			position = { x = 16 y = 44 }
+		}
+		
+		categories = {
+			age_6
+
+			ranged_weapons
+		}
+	} 	
+}

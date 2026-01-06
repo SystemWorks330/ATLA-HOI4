@@ -1,0 +1,131 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+
+
+defined_text = {
+	name = state_modifiers_1_ref
+	text = { localization_key = state_modifiers_1 }
+}
+defined_text = {
+	name = state_modifiers_2_ref
+	text = { localization_key = state_modifiers_2 }
+}
+defined_text = {
+	name = state_modifiers_3_ref
+	text = { localization_key = state_modifiers_3 }
+}
+defined_text = {
+	name = state_modifiers_4_ref
+	text = { localization_key = state_modifiers_4 }
+}
+defined_text = {
+	name = state_modifiers_5_ref
+	text = { localization_key = state_modifiers_5 }
+}
+
+defined_text = {
+	name = GetEarthBaseLoc
+	text = {
+		trigger = {
+			check_variable = { earth_bases_var = 0 }
+		}
+		localization_key = earthkingdom_operation_bases_false
+	}
+	text = {
+		localization_key = earthkingdom_operation_bases_true
+	}
+}
+
+defined_text = {
+	name = GetPeasantMood
+	text = {
+		trigger = {
+			check_variable = { modifier@peasant_opinion > 9 }
+		}
+		localization_key = pleased_peasants
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@peasant_opinion > 9 }
+		}
+		localization_key = happy_peasants
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@peasant_opinion > 9 }
+		}
+		localization_key = integrated_peasants
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@peasant_opinion < -9 }
+		}
+		localization_key = distrusting_peasants
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@peasant_opinion < -14 }
+		}
+		localization_key = angered_peasants
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@peasant_opinion < -24 }
+		}
+		localization_key = enraged_peasants
+	}
+	text = {
+		localization_key = neutral_peasants
+	}
+}
+
+defined_text = {
+	name = GetNobilityMood
+	text = {
+		trigger = {
+			check_variable = { modifier@nobility_opinion > 9 }
+		}
+		localization_key = pleased_nobility
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@nobility_opinion > 9 }
+		}
+		localization_key = happy_nobility
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@nobility_opinion > 9 }
+		}
+		localization_key = integrated_nobility
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@nobility_opinion < -9 }
+		}
+		localization_key = distrusting_nobility
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@nobility_opinion < -14 }
+		}
+		localization_key = angered_nobility
+	}
+	text = {
+		trigger = {
+			check_variable = { modifier@nobility_opinion < -24 }
+		}
+		localization_key = enraged_nobility
+	}
+	text = {
+		localization_key = neutral_nobility
+	}
+}

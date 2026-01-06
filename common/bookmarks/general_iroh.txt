@@ -1,0 +1,157 @@
+bookmarks = {
+	bookmark = {
+		name = "GENERAL_IROH_NAME"
+		desc = "GENERAL_IROH_DESC"
+		date = 106.2.4.12
+
+	### wiki info : (to be added)
+
+		picture = "GFX_select_date_iroh"
+		default_country = "FIR"
+
+		"---"={
+			history = "OTHER_GENERAL_IROH_DESC"
+		}
+
+		"FIR"={
+			minor = yes
+			history = "FIR_GENERAL_IROH_DESC"
+			ideology = fire_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"EAR"={
+			minor = yes
+			history = "EAR_GENERAL_IROH_DESC"
+			ideology = earth_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"NWT"={
+			minor = yes
+			history = "NWT_GENERAL_IROH_DESC"
+			ideology = water_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"SWT"={
+			minor = yes
+			history = "SWT_GENERAL_IROH_DESC"
+			ideology = water_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		"NAT"={
+			minor = yes
+			history = "NAT_GENERAL_IROH_DESC"
+			ideology = earth_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"FMB"={
+			minor = yes
+			history = "FMB_GENERAL_IROH_DESC"
+			ideology = earth_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"OMS"={
+			minor = yes
+			history = "OMS_GENERAL_IROH_DESC"
+			ideology = earth_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"WBA"={
+			minor = yes
+			history = "WBA_GENERAL_IROH_DESC"
+			ideology = earth_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		
+		"EBA"={
+			minor = yes
+			history = "EBA_GENERAL_IROH_DESC"
+			ideology = earth_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"MPO"={
+			minor = yes
+			history = "MPO_GENERAL_IROH_DESC"
+			ideology = earth_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"GAO"={
+			minor = yes
+			history = "GAO_GENERAL_IROH_DESC"
+			ideology = earth_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+		"ZAO"={
+			minor = yes
+			history = "ZAO_GENERAL_IROH_DESC"
+			ideology = earth_culture
+			ideas = {
+
+			}
+			focuses = {
+
+			}
+		}
+
+		effect = {
+			randomize_weather = 12345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+
+	}
+}

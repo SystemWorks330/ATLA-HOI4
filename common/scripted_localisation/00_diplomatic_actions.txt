@@ -1,0 +1,159 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+
+defined_text = {
+	name = GetClaimState
+	text = {
+		trigger = {
+			set_temp_variable = { state = 0 }
+
+			#NOT = {
+			#	check_variable = { state > ROOT.claimed_states^num }
+			#}
+			#add_to_temp_variable = { state = 1 }
+		}
+		localization_key = "[?ROOT.claimed_states^state.GetName][GetClaimState]"
+	}
+}
+
+defined_text = {
+	name = GetAutonomy
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_kingdom
+		}
+		localization_key = autonomy_kingdom
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_county
+		}
+		localization_key = autonomy_county
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_vassalage
+		}
+		localization_key = autonomy_vassalage
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_royal_domain
+		}
+		localization_key = autonomy_royal_domain
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_tributary
+		}
+		localization_key = autonomy_tributary
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_satelit_state
+		}
+		localization_key = autonomy_satelit_state
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_imperial_dominion
+		}
+		localization_key = autonomy_imperial_dominion
+	}
+	text = {
+		trigger = {
+			has_autonomy_state = autonomy_imperial_colony
+		}
+		localization_key = autonomy_imperial_colony
+	}
+}
+
+defined_text = {
+	name = GetVassalTax
+	text = {
+		trigger = {
+			has_idea = low_vassal_taxes
+		}
+		localization_key = low_vassal_taxes
+	}
+	text = {
+		trigger = {
+			has_idea = medium_vassal_taxes
+		}
+		localization_key = medium_vassal_taxes
+	}
+	text = {
+		trigger = {
+			has_idea = high_vassal_taxes
+		}
+		localization_key = high_vassal_taxes
+	}
+	text = {
+		
+		localization_key = no_vassal_tax
+	}
+
+}
+
+defined_text = {
+	name = GetVassalWar
+	text = {
+		trigger = {
+			has_idea = low_war_tributes
+		}
+		localization_key = low_war_tributes
+	}
+	text = {
+		trigger = {
+			has_idea = medium_war_tributes
+		}
+		localization_key = medium_war_tributes
+	}
+	text = {
+		trigger = {
+			has_idea = high_war_tributes
+		}
+		localization_key = high_war_tributes
+	}
+	text = {
+		
+		localization_key = no_vassal_war
+	}
+
+}
+
+defined_text = {
+	name = GetVassalTerritory
+	text = {
+		trigger = {
+			has_idea = low_territorial_integration
+		}
+		localization_key = low_territorial_integration
+	}
+	text = {
+		trigger = {
+			has_idea = medium_territorial_integration
+		}
+		localization_key = medium_territorial_integration
+	}
+	text = {
+		trigger = {
+			has_idea = high_territorial_integration
+		}
+		localization_key = high_territorial_integration
+	}
+	text = {
+		
+		localization_key = no_vassal_territorial_integration
+	}
+
+}
+

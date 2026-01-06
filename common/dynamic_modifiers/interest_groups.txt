@@ -1,0 +1,92 @@
+
+
+peasant_dynamic_modifier = {
+			
+	enable = { always = yes }
+
+	remove_trigger = {
+		check_variable = { epmployed_percentage > 0.5 }
+	}
+
+	#stability_factor = mtth:peasant_stability
+	peasant_output_factor = mtth:peasant_output
+	stability_factor = mtth:peasant_stability
+}
+
+labourers_dynamic_modifier = {
+			
+	enable = { always = yes }
+
+	remove_trigger = {
+		NOT = {
+			check_variable = { epmployed_percentage > 0.5 }
+		}
+	}
+
+	prosperity = mtth:labourers_prosperity
+	local_resources_factor = mtth:labourers_output
+}
+
+nobility_dynamic_modifier = {
+			
+	enable = { always = yes }
+
+	remove_trigger = {
+		AND = {
+			check_variable = { centralisation_variable < 50 }
+			check_variable = { production_employed_constant > resource_employed_constant }
+		}
+	}
+
+	political_power_factor = mtth:nobility_political_power
+	unit_quality_target = mtth:nobility_unit_quality
+}
+
+industrialist_dynamic_modifier = {
+			
+	enable = { always = yes }
+
+	remove_trigger = {
+		NOT = {
+			AND = {
+				check_variable = { centralisation_variable < 50 }
+				check_variable = { production_employed_constant > resource_employed_constant }
+			}
+		}
+	}
+
+	peoples_initiative = mtth:industrialist_investment
+	production_factory_max_efficiency_factor = mtth:industrialist_production
+}
+
+
+clergy_dynamic_modifier = {
+			
+	enable = { always = yes }
+
+	remove_trigger = {
+		AND = {
+			amount_research_slots > 3
+			check_variable = { literacy_variable > 50 }
+		}
+	}
+
+	bender_target = mtth:clergy_bender
+	education_laws_cost_factor = mtth:clergy_law_cost
+}
+academics_dynamic_modifier = {
+			
+	enable = { always = yes }
+
+	remove_trigger = {
+		NOT = {
+			AND = {
+				amount_research_slots > 3
+				check_variable = { literacy_variable > 50 }
+			}
+		}
+	}
+
+	knowledge = mtth:academics_knowledge
+	research_speed_factor = mtth:academics_research
+}

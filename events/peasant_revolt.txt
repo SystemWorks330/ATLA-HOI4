@@ -1,0 +1,538 @@
+
+add_namespace = generic_peasant
+
+### revolt appear
+country_event = {
+	id = generic_peasant.1
+	title = generic_peasant.1.t
+	desc = generic_peasant.1.d
+	
+	picture = GFX_peasant_generic_1
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = active_peasant_revolt
+
+			scoped_sound_effect  = "revolt"
+
+			create_uprising_tag = yes
+
+			random_core_state = {
+				limit = {
+					is_owned_by = ROOT
+					is_in_home_area = yes
+				}
+				set_variable = { ROOT.give_state_name = THIS.id }
+				add_dynamic_modifier = { modifier = revolt_origin }
+			}
+
+			add_to_variable = {
+				var = peasant_anger_variable
+				value = peasant_revolt_risk_variable
+				tooltip = peasant_appeasement_add_tooltip
+			}
+			round_variable = peasant_anger_variable
+			clamp_variable = {
+				var = peasant_anger_variable
+				min = 0
+				max = 100
+			}
+
+			add_ideas = revolt_distrust_modifier
+			calculate_revolt_risk_var = yes
+			activate_mission = peasant_initiate_uprising
+			
+			if = {
+				limit = {
+					check_variable = { modifier@nobility_opinion < 0 }
+					has_dynamic_modifier = { modifier = nobility_dynamic_modifier }
+				}
+				country_event = { 
+					id = generic_peasant.13
+					days = 4
+					random_days = 4 
+				}
+			}
+		}
+	}
+
+	option = {
+		name = generic_peasant.1.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+
+### revolt decision starts
+country_event = {
+	id = generic_peasant.2
+	title = generic_peasant.2.t
+	desc = generic_peasant.2.d
+
+	picture = GFX_peasant_generic_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = generic_peasant.2.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### revolt to war broiling
+country_event = {
+	id = generic_peasant.3
+	title = generic_peasant.3.t
+	desc = generic_peasant.3.d
+
+	picture = GFX_peasant_generic_3
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				core_turns_unloyal = yes
+			}
+		}
+	}
+
+	option = {
+		name = generic_peasant.3.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### revolt war starts
+country_event = {
+	id = generic_peasant.4
+	title = generic_peasant.4.t
+	desc = generic_peasant.4.d
+
+	picture = GFX_peasant_generic_4
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			peasant_war_effect = yes
+		}
+	}
+
+	option = {
+		name = generic_peasant.4.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### revolt escalate
+country_event = {
+	id = generic_peasant.5
+	title = generic_peasant.5.t
+	desc = generic_peasant.5.d
+
+	picture = GFX_peasant_generic_5
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			ROOT = {
+				core_turns_unloyal = yes
+			}
+		}
+	}
+
+	option = {
+		name = generic_peasant.5.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### revolt over
+country_event = {
+	id = generic_peasant.6
+	title = generic_peasant.6.t
+	desc = generic_peasant.6.d
+
+	picture = GFX_peasant_generic_6
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clear_revolt = yes
+		}
+	}
+
+	option = {
+		name = generic_peasant.6.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### unrest
+country_event = {
+	id = generic_peasant.7
+	title = generic_peasant.7.t
+	desc = generic_peasant.7.d
+
+	picture = GFX_peasant_generic_7
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_timed_idea = {
+				idea = peasant_strikes
+				days = 90
+			}
+		}
+	}
+
+	option = {
+		name = generic_peasant.7.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### strike
+country_event = {
+	id = generic_peasant.8
+	title = generic_peasant.8.t
+	desc = generic_peasant.8.d
+
+	picture = GFX_peasant_generic_8
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_timed_idea = {
+				idea = peasant_unrest
+				days = 90
+			}
+		}
+	}
+
+	option = {
+		name = generic_peasant.8.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+
+### peasants defeated
+country_event = {
+	id = generic_peasant.9
+	title = generic_peasant.9.t
+	desc = generic_peasant.9.d
+
+	picture = GFX_peasant_generic_9
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clear_revolt = yes
+		}
+	}
+
+	option = {
+		name = generic_peasant.9.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+
+### peasants won (stalemate)
+country_event = {
+	id = generic_peasant.10
+	title = generic_peasant.10.t
+	desc = generic_peasant.10.d
+
+	picture = GFX_peasant_generic_10
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	#### agree on terms
+	option = {
+		name = generic_peasant.10.a
+
+		clear_revolt = yes
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	#### continue
+	option = {
+		name = generic_peasant.10.b
+
+		activate_mission = peasants_war_progress_2
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+	#### play as peasant
+	option = {
+		name = generic_peasant.10.c
+
+		peasant_victory = yes
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### peasants defeated after 2 year war
+country_event = {
+	id = generic_peasant.11
+	title = generic_peasant.11.t
+	desc = generic_peasant.11.d
+
+	picture = GFX_peasant_generic_11
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	#### costly victory
+	option = {
+		name = generic_peasant.11.a
+
+		clear_revolt = yes
+
+		add_war_support = -0.5
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### peasants won second time
+country_event = {
+	id = generic_peasant.12
+	title = generic_peasant.12.t
+	desc = generic_peasant.12.d
+
+	picture = GFX_peasant_generic_12
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	#### your bad and loose the game
+	option = {
+		name = generic_peasant.12.a
+
+		peasant_victory_without_tag_switch = yes
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+
+
+### nobility joins the peasants
+country_event = {
+	id = generic_peasant.13
+	title = generic_peasant.13.t
+	desc = generic_peasant.13.d
+
+	picture = GFX_peasant_generic_13
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			add_ideas = nobility_joined_revolt
+		}
+	}
+
+	option = {
+		name = generic_peasant.13.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### demands to lower taxes
+country_event = {
+	id = generic_peasant.14
+	title = generic_peasant.14.t
+	desc = generic_peasant.14.d
+
+	picture = GFX_peasant_generic_14
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_idea = family_support_1 }
+				set_country_flag = revolt_family_support_1
+			}
+			else_if = {
+				limit = { has_idea = family_support_2 }
+				set_country_flag = revolt_family_support_2
+			}
+			else_if = {
+				limit = { has_idea = family_support_3 }
+				set_country_flag = revolt_family_support_3
+			}
+			activate_mission = lower_taxation_demand
+		}
+	}
+
+	option = {
+		name = generic_peasant.14.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### demands to lower conscription
+country_event = {
+	id = generic_peasant.15
+	title = generic_peasant.15.t
+	desc = generic_peasant.15.d
+
+	picture = GFX_peasant_generic_15
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_idea = scraping_the_barrel }
+				set_country_flag = revolt_scraping_the_barrel
+			}
+			else_if = {
+				limit = { has_idea = all_adults_serve }
+				set_country_flag = revolt_all_adults_serve
+			}
+			else_if = {
+				limit = { has_idea = service_by_requirement }
+				set_country_flag = revolt_service_by_requirement
+			}
+			else_if = {
+				limit = { has_idea = extensive_conscription }
+				set_country_flag = revolt_extensive_conscription
+			}
+			activate_mission = lower_conscription_demand
+		}
+	}
+
+	option = {
+		name = generic_peasant.15.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}
+
+### demands to lower centralisation
+country_event = {
+	id = generic_peasant.16
+	title = generic_peasant.16.t
+	desc = generic_peasant.16.d
+
+	picture = GFX_peasant_generic_16
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_variable = { authority_target = current_authority }
+			subtract_from_variable = { authority_target = 2.5 }
+
+			activate_mission = lower_centralisation_demand
+		}
+	}
+
+	option = {
+		name = generic_peasant.16.a
+		
+		ai_chance = {
+			base = 1
+		}
+	}
+
+}

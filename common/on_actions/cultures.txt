@@ -1,0 +1,134 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+
+			if = {
+				limit = {
+					has_start_date < 20.1.1
+				}
+				230 = {
+					set_variable = { fire_pop = 43.50 }
+					set_variable = { earth_pop = 45.04 }
+					set_variable = { water_pop = 2.26 }
+					set_variable = { air_pop = 1.13 }
+					set_variable = { nonbender_pop = 8.07 }
+				}
+				280 = {
+					set_variable = { fire_pop = 43.50 }
+					set_variable = { earth_pop = 45.04 }
+					set_variable = { water_pop = 2.26 }
+					set_variable = { air_pop = 1.13 }
+					set_variable = { nonbender_pop = 8.07 }
+				}
+			}
+
+			every_country = {
+				culture_setup_calculation = yes
+
+				country_event = {
+					id = culture.1
+				}
+
+				every_controlled_state = {
+					add_settlers_effect = yes
+					add_occupation_culture_buff = yes
+				}
+				culture_pie_chart_recalc = yes
+			}
+
+			FIR = {
+				global_culture = yes
+			}
+
+		}
+	}
+
+	on_annex = {
+	    effect = {
+	    	
+	    }
+	}
+
+	on_daily = {
+		effect = {
+
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			
+		}
+	}
+
+	on_monthly = {
+		effect = {
+
+
+			#### actual effects
+			culture_value_recalc = yes
+			culture_pie_chart_recalc = yes
+
+
+			### add settlers
+			### add occupation culture buff
+
+			every_controlled_state = {
+				add_settlers_effect = yes
+				add_occupation_culture_buff = yes
+			}
+
+			### expected growth
+
+			culture_growth_calculation = yes
+
+			if = {
+				limit = {
+					has_country_flag = calculator
+				}
+				global_culture = yes
+			}
+
+
+
+			### national culture and bender percentage
+			national_culture_recalc = yes
+
+			set_variable = { bender_target = modifier@bender_target}
+			if = {
+				limit = {
+					NOT = {
+						check_variable = { modifier@bender_disabled > 0 }
+					}
+				}
+
+				if = {
+					limit = {
+						check_variable = { bender_percentage < bender_target }
+					}
+					add_to_variable = { bender_percentage = modifier@bender_growth }
+				}
+			}
+
+			clamp_variable = {
+				var = bender_percentage
+				min = 0
+				max = bender_target
+			}
+
+
+		}
+	}
+
+	on_state_control_changed = {
+		effect = {
+			FROM.FROM = {
+				add_settlers_effect = yes
+
+				remove_boosting_effect = yes
+			}
+		}
+	}
+
+}

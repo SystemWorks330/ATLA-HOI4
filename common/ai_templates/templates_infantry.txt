@@ -1,0 +1,223 @@
+
+	#   # #  ###  #   #       ##### # #### ###                    
+	#   # # #     #   #         #   # #    #  #        
+	##### # #  ## #####  ###    #   # ###  ###              
+	#   # # #   # #   #         #   # #    #  #         
+	#   # #  ###  #   #         #   # #### #   #            
+
+
+template_infantry_high_tier = {
+	role = {high_tier}
+	upgrade_prio = {
+		base = 1
+		modifier = {
+			has_equipment = {
+				support_equipment < 60
+			}
+			factor = 0
+		}
+	}	
+	infantry_high_tier_1 = {
+		upgrade_prio = {
+			base = 2
+		}
+		target_template = {
+			regiments = {
+				spearmen = 4
+				pikemen = 2
+			}
+			support = {
+				avatar_engineer = 1
+				scout = 1
+			}
+		}
+		replace_at_match = 0.4
+		replace_with = infantry_high_tier_2
+		target_min_match = 0.5
+	}
+
+	infantry_high_tier_2 = {
+	
+		upgrade_prio = {
+			factor = 2
+
+			modifier = {
+				factor = 1
+			}
+		}
+		
+		target_width = 20.0
+		width_weight = 0.4
+		column_swap_factor = 0.7
+		
+		target_template = {
+			weight = 0.6
+			match_value = 3000.0
+			
+			regiments = {
+				spearmen = 4
+				pikemen = 2
+				archers = 2
+			}
+
+			support = {
+				avatar_engineer = 1
+				scout = 1
+				supply_wagon = 1
+				field_commander = 1
+			}
+		}
+		
+		allowed_types = {
+			spearmen
+			pikemen
+			archers
+			avatar_engineer
+			scout
+			supply_wagon
+			field_commander
+		}
+	}
+	
+}
+
+	 ###   #   # #### ###    ###   ###  ####      ##### # #### ###              
+	#   #  #   # #    #  #  #   # #     #           #   # #    #  #
+	#####  #   # ###  ###   ##### #  ## ###   ###   #   # ###  ###           
+	#   #   # #  #    #  #  #   # #   # #           #   # #    #  # 
+	#   #    #   #### #   # #   #  ###  ####        #   # #### #   #  
+
+
+template_infantry_average_tier = {
+	role = {average_tier}	
+	upgrade_prio = {base = 2}
+
+	infantry_average_tier_1 = {
+		upgrade_prio = {base = 2}
+		target_template = {
+			regiments = {
+				spearmen = 4
+			}
+			support = {
+				avatar_engineer = 1
+			}
+		}
+		replace_at_match = 0.4
+		replace_with = infantry_average_tier_2
+		target_min_match = 0.5
+	}
+
+	infantry_average_tier_2 = {
+		upgrade_prio = {base = 2}
+		target_template = {
+			regiments = {
+				spearmen = 4
+			}
+			support = {
+				avatar_engineer = 1
+				scout = 1
+				supply_wagon = 1
+			}
+		}
+	}
+	
+}
+template_infantry_supportless = {
+	role = {
+		supportless
+	}
+	upgrade_prio = {
+		base = 3
+		modifier = {
+			has_war = yes
+			enemies_strength_ratio > 1.2
+			factor = 2
+		}
+	}
+	supportless_1 = {
+		custom_icon = 36
+		upgrade_prio = {
+			base = 4
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0.25
+			}
+		}
+		replace_with = supportless_2
+		can_upgrade_in_field = {
+			has_equipment = {
+				bow_equipment > 30
+			}
+		}
+		target_template = {	
+			regiments = {
+				spearmen = 3
+			}
+		}
+	}
+	supportless_2 = {
+		custom_icon = 35
+		upgrade_prio = {
+			base = 4
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0.25
+			}
+		}
+		replace_with = supportless_3
+		can_upgrade_in_field = {
+			has_equipment = {
+				bow_equipment > 30
+			}
+		}
+		target_template = {	
+			regiments = {
+				spearmen = 3
+				archers = 1
+			}
+		}
+	}
+	supportless_3 = {
+		custom_icon = 34
+		upgrade_prio = {
+			base = 4
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0.25
+			}
+		}
+		replace_with = supportless_4
+		can_upgrade_in_field = {
+			has_equipment = {
+				sword_equipment > 120
+			}
+		}
+		target_template = {		
+			regiments = {
+				spearmen = 3
+				archers = 2
+				swordsmen = 4
+			}
+		}
+	}
+	supportless_4 = {
+		custom_icon = 28
+		upgrade_prio = {
+			base = 4
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0.25
+			}
+		}
+		can_upgrade_in_field = {
+			always = yes
+		}
+		target_template = {	
+			regiments = {
+				spearmen = 2
+				archers = 2
+				swordsmen = 5
+			}
+		}
+	}
+}

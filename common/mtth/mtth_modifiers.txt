@@ -1,0 +1,623 @@
+
+
+inflation_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@currency_amount }
+		clamp_temp_variable = { var = factor min = 0.1 }
+
+		set_temp_variable = { factor_2 = 1 }
+		divide_temp_variable = { factor_2 = factor }
+		add = factor_2
+	}
+}
+
+intel_network_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@intel_network_gain_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+enemy_intel_network_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@enemy_intel_network_gain_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+intel_from_operatives_factor_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@intel_from_operatives_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+detection_chance = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@own_operative_detection_chance_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+enemy_detection_chance = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@enemy_operative_detection_chance_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+decryption_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@decryption_factor  }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+encryption_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@encryption_factor  }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+peasant_food_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@peasant_food_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+peasant_output_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@peasant_output_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+consumer_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@consumer_demand } 
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+
+grain_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@grain_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+animal_products_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@animal_products_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+textile_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@textile_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+wood_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@wood_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+minerals_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@minerals_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+fossile_fuels_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@fossile_fuels_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+iron_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@iron_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+steel_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@steel_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+consumer_goods_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@consumer_goods_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+luxury_goods_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@luxury_goods_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+planks_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@planks_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+bricks_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@bricks_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+steel_beams_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@steel_beams_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+average_consumer_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = modifier@grain_demand } 
+		add_to_temp_variable = { factor = modifier@animal_products_demand } 
+		add_to_temp_variable = { factor = modifier@textile_demand } 
+		add_to_temp_variable = { factor = modifier@wood_demand } 
+		add_to_temp_variable = { factor = modifier@minerals_demand } 
+		add_to_temp_variable = { factor = modifier@fossile_fuels_demand } 
+		add_to_temp_variable = { factor = modifier@iron_demand } 
+		add_to_temp_variable = { factor = modifier@steel_demand } 
+		add_to_temp_variable = { factor = modifier@consumer_goods_demand } 
+		add_to_temp_variable = { factor = modifier@luxury_goods_demand } 
+		add_to_temp_variable = { factor = modifier@planks_demand } 
+		add_to_temp_variable = { factor = modifier@bricks_demand } 
+		add_to_temp_variable = { factor = modifier@steel_beams_demand } 
+		divide_temp_variable = { factor = 13 }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+upkeep_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@building_upkeep_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+farmer_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@farmer_factor }
+		add_to_temp_variable = { factor = modifier@farmer_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+miller_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@miller_factor }
+		add_to_temp_variable = { factor = modifier@miller_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+fisher_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@fisher_factor }
+		add_to_temp_variable = { factor = modifier@fisher_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+rancher_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@rancher_factor }
+		add_to_temp_variable = { factor = modifier@rancher_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+lumberjack_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@lumberjack_factor }
+		add_to_temp_variable = { factor = modifier@lumberjack_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+miner_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@miner_factor }
+		add_to_temp_variable = { factor = modifier@miner_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+weaver_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@weaver_factor }
+		add_to_temp_variable = { factor = modifier@weaver_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+smith_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@smith_factor }
+		add_to_temp_variable = { factor = modifier@smith_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+harbour_worker_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@harbour_worker_factor }
+		add_to_temp_variable = { factor = modifier@harbour_worker_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+shopkeeper_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@shopkeeper_factor }
+		add_to_temp_variable = { factor = modifier@shopkeeper_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+craftsman_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@craftsman_factor }
+		add_to_temp_variable = { factor = modifier@craftsman_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+industrial_worker_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = controller:modifier@industrial_worker_factor }
+		add_to_temp_variable = { factor = modifier@industrial_worker_factor }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+
+
+grain_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@grain_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+animal_products_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@animal_products_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+textile_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@textile_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+wood_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@wood_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+minerals_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@minerals_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+fossile_fuels_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@fossile_fuels_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+iron_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@iron_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+steel_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@steel_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+food_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@food_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+consumer_goods_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@consumer_goods_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+luxury_goods_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@luxury_goods_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+planks_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@planks_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+bricks_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@bricks_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+steel_beams_throughput = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@steel_beams_throughput } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+expenses_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@expenses_factor } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+army_wages_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@army_wages_factor } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+navy_wages_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@navy_wages_factor } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+air_wages_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@air_wages_factor } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+reservist_wages_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@reservist_wages } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+officer_wages_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@officer_wages } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+expenses_per_pop = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { expenses = modifier@expenses_per_pop } 
+		multiply_temp_variable = { expenses = core_population_k }
+		multiply_temp_variable = { expenses = 0.1 }
+		clamp_temp_variable = { var = expenses min = 0 }
+		add = expenses
+	}
+}
+
+taxation_efficiency = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@taxation_efficiency } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+civilian_cost_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@civilian_cost_factor } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+military_cost_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@military_cost_factor } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+naval_cost_factor = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@naval_cost_factor } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}

@@ -1,0 +1,114 @@
+idea_categories = {
+	# ledger can be define for idea > idea slot > idea category
+	# first one overrides the others
+	# multiple ledgers can be defined, in that case will show on all
+	# possible values : army, air, navy, military (shows on all military ledgers), civilian, all (shows up everywhere), hidden (does not show up)
+
+
+	hidden_ideas = {
+		hidden = yes
+	
+		cost = 0
+		removal_cost = -1
+
+		ledger = hidden
+	}
+
+	country = {
+		type = national_spirit
+		
+		cost = 0
+		removal_cost = -1
+
+		ledger = hidden
+	}
+	
+	laws = {
+		slot = mobilization_laws
+		slot = bender_laws
+		slot = trade_laws
+		slot = economy
+		slot = family_support
+		slot = education_laws
+
+		ledger = civilian
+		
+		cost = 150
+		removal_cost = 0
+	}
+
+	ministry = {
+		character_slot = minister_of_personnel
+		character_slot = minister_of_finance
+		character_slot = minister_of_culture
+		character_slot = minister_of_justice
+		character_slot = minister_of_works
+		character_slot = minister_of_rites
+
+		ledger = civilian
+		
+		cost = 200
+		removal_cost = 0
+	}
+	
+	war_council = {
+		character_slot = war_minister
+		character_slot = field_marshal
+		character_slot = grand_admiral
+		character_slot = head_of_intelligence
+		character_slot = head_of_weaponry
+		character_slot = quartermaster
+
+		ledger = invalid # must be overridden
+
+		cost = 200
+		removal_cost = 0
+
+	}
+
+	designers = {
+		slot = melee_designer
+		slot = ranged_designer
+		slot = mounted_designer
+		slot = naval_designer
+		slot = motorized_designer
+		slot = industry_designer
+
+		ledger = civilian
+		
+		cost = 200
+		removal_cost = 0
+	}
+	
+	institutions = {
+		slot = academia
+		slot = army
+		slot = navy
+		slot = law_enforcement
+		slot = martial_art
+		slot = clergy
+
+		ledger = invalid # must be overridden
+		
+		cost = 200
+		removal_cost = 0
+	}
+}
+
+
+
+slot_ledgers = {
+	war_minister = army
+	field_marshal = army
+	grand_admiral = navy
+	quartermaster = army
+	head_of_intelligence = army
+	head_of_weaponry = army
+
+	academia = civilian
+	army = army
+	navy = navy
+	law_enforcement = civilian
+	martial_art = army
+	clergy = civilian
+}

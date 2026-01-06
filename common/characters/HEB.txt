@@ -1,0 +1,321 @@
+characters={
+	HEB_oh={
+		name="Oh"
+		portraits={
+			civilian={
+				large="gfx/leaders/HEB/Portrait_Hebai-Forest_Oh.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_Oh_DESC"
+			ideology=constitutional_monarchy
+			expire="130.1.1.1"
+			id=-1
+		}
+	}
+	HEB_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/HEB/Portrait_Hebai_Forest_colonialism.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=colonialism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=liberalism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=absolute_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=despotism
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+	
+	 ###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+
+
+	HEB_head_of_intelligence_1 = { 
+		name = heb_head_of_intelligence_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_1"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = heb_head_of_intelligence_1
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { spymaster }
+		}		
+	}
+	HEB_head_of_intelligence_2 = { 
+		name = heb_head_of_intelligence_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_2"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = heb_head_of_intelligence_2
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { constable }
+		}		
+	}
+	HEB_head_of_intelligence_3 = { 
+		name = heb_head_of_intelligence_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_3"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = heb_head_of_intelligence_3
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { head_censor }
+		}		
+	}
+	HEB_head_of_intelligence_4 = { 
+		name = heb_head_of_intelligence_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_4"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = heb_head_of_intelligence_4
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_torturer }
+		}		
+	}
+	HEB_head_of_intelligence_5 = { 
+		name = heb_head_of_intelligence_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_5"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = heb_head_of_intelligence_5
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_assassin }
+		}		
+	}
+	HEB_head_of_intelligence_6 = { 
+		name = heb_head_of_intelligence_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_6"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = heb_head_of_intelligence_6
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { astrologist }
+		}		
+	}
+
+	HEB_quartermaster_1 = { 
+		name = heb_quartermaster_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_1"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = heb_quartermaster_1
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { logistician_2 }
+		}		
+	}
+	HEB_quartermaster_2 = { 
+		name = heb_quartermaster_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_2"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = heb_quartermaster_2
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { forager_2 }
+		}		
+	}
+	HEB_quartermaster_3 = { 
+		name = heb_quartermaster_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_3"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = heb_quartermaster_3
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jungle_specialist_2 }
+		}		
+	}
+	HEB_quartermaster_4 = { 
+		name = heb_quartermaster_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_4"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = heb_quartermaster_4
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { amphibious_specialist_2 }
+		}		
+	}
+	HEB_quartermaster_5 = { 
+		name = heb_quartermaster_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_5"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = heb_quartermaster_5
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { winter_specialist_2 }
+		}		
+	}
+	HEB_quartermaster_6 = { 
+		name = heb_quartermaster_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_6"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = heb_quartermaster_6
+			cost = 200
+			allowed = {
+				original_tag = HEB
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { garrison_master_1 }
+		}		
+	}
+}

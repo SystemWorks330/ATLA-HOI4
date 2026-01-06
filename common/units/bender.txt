@@ -1,0 +1,361 @@
+# options for map_icon_category:
+# For land units: infantry,armored,other
+# For sea units: ship,transport,uboat
+
+sub_units = {
+	
+	firebender = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		
+		priority = 1200
+		ai_priority = 2
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = bender
+		
+		categories = {
+			category_all_foot
+			category_bender
+			category_firebender
+		}
+		
+		combat_width = 3
+		
+		#Size Definitions
+		max_strength = 10
+		max_organisation = 12
+		default_morale = 0.05
+		manpower = 10
+
+		#Misc Abilities
+		training_time = 360
+		suppression = 1.5
+		weight = 0.1
+
+		supply_consumption = 0.1
+	
+		need = {
+			firebender_equipment = 10
+		}
+
+		forest = {
+			attack = 0.1
+		}
+		fort = {
+			attack = -0.1
+		}
+		night = {
+			attack = -0.2
+			defence = -0.2
+		}
+		swamp = {
+			attack = -0.3
+			defence = -0.3
+		}
+	}
+	#	
+	earthbender = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		
+		ai_priority = 2
+		priority = 1200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = bender
+		
+		categories = {
+			category_all_foot
+			category_bender
+			category_earthbender
+		}
+		
+		combat_width = 3
+		
+		#Size Definitions
+		max_strength = 12
+		max_organisation = 20
+		default_morale = 0.1
+		manpower = 10
+
+		#Misc Abilities
+		training_time = 360
+		suppression = 1
+		weight = 0.1
+
+		supply_consumption = 0.1
+	
+		need = {
+			earthbender_equipment = 10
+		}
+
+		hills = {
+			attack = 0.2
+			defence = 0.2
+			movement = 0.5
+		}
+		cliff = {
+			attack = 0.3
+			defence = 0.3
+			movement = 0.5
+		}
+		mountain = {
+			attack = 0.4
+			defence = 0.4
+			movement = 0.5
+		}
+		high_mountain = {
+			attack = 0.5
+			defence = 0.5
+			movement = 0.5
+		}
+		desert = {
+			attack = -0.5
+			defence = -0.5
+		}
+		ice_desert = {
+			attack = -0.5
+			defence = -0.5
+		}
+		wasteland = {
+			attack = 0.1
+			defence = 0.2
+			movement = 0.1
+		}
+		beach = {
+			attack = -0.2
+			defence = -0.2
+		}
+		canyon = {
+			attack = 0.3
+			defence = 0.3
+			movement = 0.5
+		}
+		fort = {
+			attack = 0.2
+			defence = 0.2
+			#movement =	0.1
+		}
+	}
+	dai_li_units = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		ai_priority = 2
+		priority = 1200
+		active = no
+		type = {
+			infantry
+		}
+		group = bender
+		categories = {
+			category_all_foot
+			category_bender
+			category_earthbender
+		}
+		combat_width = 3
+		#Size Definitions
+		max_strength = 12
+		max_organisation = 20
+		default_morale = 0.1
+		manpower = 10
+		#Misc Abilities
+		training_time = 360
+		suppression = 1
+		weight = 0.1
+		supply_consumption = 0.1
+		need = {
+			earthbender_equipment = 10
+		}
+		hills = {
+			attack = 0.2
+			defence = 0.2
+			movement = 0.5
+		}
+		cliff = {
+			attack = 0.3
+			defence = 0.3
+			movement = 0.5
+		}
+		mountain = {
+			attack = 0.3
+			defence = 0.3
+			movement = 0.4
+		}
+		high_mountain = {
+			attack = 0.4
+			defence = 0.4
+			movement = 0.5
+		}
+		desert = {
+			attack = -0.3
+			defence = -0.3
+		}
+		ice_desert = {
+			attack = -0.5
+			defence = -0.5
+		}
+		wasteland = {
+			attack = -0.1
+			defence = -0.1
+			movement = 0.1
+		}
+		beach = {
+			attack = -0.1
+			defence = -0.1
+		}
+		canyon = {
+			attack = 0.35
+			defence = 0.35
+			movement = 0.5
+		}
+		fort = {
+			attack = 0.2
+			defence =	0.2
+			#movement =	0.1
+		}
+
+	}
+	#	
+	waterbender = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		
+		ai_priority = 2
+		priority = 1200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = bender
+		
+		categories = {
+			category_all_foot
+			category_bender
+			category_waterbender
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 14
+		max_organisation = 30
+		default_morale = 0.3
+		manpower = 10
+
+		#Misc Abilities
+		training_time = 180
+		suppression = 0.5
+		weight = 0.1
+
+		supply_consumption = 0.1
+	
+		need = {
+			waterbender_equipment = 10
+		}
+
+		swamp = {
+			attack = 0.5
+			defence = 0.5
+			movement = 0.4
+		}
+		desert = {
+			attack = -0.5
+			defence = -0.5
+		}
+		ice_desert = {
+			attack = 1
+			defence = 1
+			movement = 0.4
+		}
+		beach = {
+			attack = 0.25
+			defence = 0.25
+		}
+		fort = {
+			attack = -0.2
+		}
+		river = {
+			attack = 1
+			defence = 1
+			movement = 1
+		}
+		amphibious = {
+			attack = 1
+			defence = 1
+			movement = 1
+		}
+		snow = {
+			attack = 0.5
+			defence = 0.5
+			movement = 0.4
+		}
+		marsh = {
+			attack = 0.5
+			defence = 0.5
+			movement = 0.5
+		}
+		night = {
+			attack = 0.3
+			defence = 0.3
+		}
+	}
+	
+	#	
+	airbender = {
+		sprite = infantry
+		map_icon_category = infantry
+		special_forces = yes
+		can_be_parachuted = yes
+		
+		ai_priority = 2
+		priority = 1200
+		active = no
+
+		type = {
+			infantry
+		}
+		
+		group = bender
+		
+		categories = {
+			category_all_foot
+			category_bender
+			category_airbender
+		}
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_strength = 40
+		max_organisation = 10
+		default_morale = 0.3
+		manpower = 10
+
+		#Misc Abilities
+		training_time = 180
+		suppression = 0
+		weight = 0.1
+
+		supply_consumption = 0.1
+	
+		need = {
+			airbender_equipment = 10
+		}
+
+	}
+}

@@ -1,0 +1,320 @@
+characters={
+	GAR_bolin={
+		name="Bolin"
+		portraits={
+			civilian={
+				large="gfx/leaders/GAR/Portrait_Zheizhou_Bolin.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_Bolin_DESC"
+			ideology=constitutional_monarchy
+			expire="130.1.1.1"
+			id=-1
+		}
+	}
+	GAR_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/GAR/Portrait_Zheizhou_colonialism.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=colonialism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=theocratic_chiefdom
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=absolute_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=despotism
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+	
+	 ###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+
+	GAR_head_of_intelligence_1 = { 
+		name = gar_head_of_intelligence_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_1"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gar_head_of_intelligence_1
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { spymaster }
+		}		
+	}
+	GAR_head_of_intelligence_2 = { 
+		name = gar_head_of_intelligence_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_2"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gar_head_of_intelligence_2
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { constable }
+		}		
+	}
+	GAR_head_of_intelligence_3 = { 
+		name = gar_head_of_intelligence_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_3"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gar_head_of_intelligence_3
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { head_censor }
+		}		
+	}
+	GAR_head_of_intelligence_4 = { 
+		name = gar_head_of_intelligence_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_4"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gar_head_of_intelligence_4
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_torturer }
+		}		
+	}
+	GAR_head_of_intelligence_5 = { 
+		name = gar_head_of_intelligence_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_5"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gar_head_of_intelligence_5
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_assassin }
+		}		
+	}
+	GAR_head_of_intelligence_6 = { 
+		name = gar_head_of_intelligence_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_6"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gar_head_of_intelligence_6
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { astrologist }
+		}		
+	}
+
+	GAR_quartermaster_1 = { 
+		name = gar_quartermaster_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_1"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gar_quartermaster_1
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { logistician_2 }
+		}		
+	}
+	GAR_quartermaster_2 = { 
+		name = gar_quartermaster_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_2"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gar_quartermaster_2
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { forager_2 }
+		}		
+	}
+	GAR_quartermaster_3 = { 
+		name = gar_quartermaster_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_3"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gar_quartermaster_3
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jungle_specialist_2 }
+		}		
+	}
+	GAR_quartermaster_4 = { 
+		name = gar_quartermaster_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_4"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gar_quartermaster_4
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { amphibious_specialist_2 }
+		}		
+	}
+	GAR_quartermaster_5 = { 
+		name = gar_quartermaster_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_5"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gar_quartermaster_5
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { winter_specialist_2 }
+		}		
+	}
+	GAR_quartermaster_6 = { 
+		name = gar_quartermaster_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_6"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gar_quartermaster_6
+			cost = 200
+			allowed = {
+				original_tag = GAR
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { garrison_master_1 }
+		}		
+	}
+}

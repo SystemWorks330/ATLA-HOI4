@@ -1,0 +1,115 @@
+capital = 188
+
+OOB = "EAT_12"
+
+AIR_generic_starting_tech = yes
+
+#set_research_slots = 2
+
+set_convoys = 100
+
+
+
+set_country_flag = AIR_special_forces
+set_country_flag = AIR_air_techs
+set_country_flag = air_council_waiting_for_players_decision
+
+
+set_politics = {
+	ruling_party = air_culture
+	last_election = "10.5.8"
+	election_frequency = 120
+	elections_allowed = yes
+}
+
+set_popularities = {
+	water_culture = 0
+	pluralist_culture = 30
+	fire_culture = 0
+	earth_culture = 0
+	air_culture = 70
+}
+
+set_stability = 0.8
+set_war_support = 0.8
+
+
+add_ideas = {
+	pacifist_detachment
+	international_trade
+	construction_efforts_law
+	disarmed_air_nation
+	air_benders_only
+	family_support_3
+	mandatory_education
+}
+
+recruit_character = EAT_sister_lio
+recruit_character = EAT_generic
+
+recruit_character = EAT_head_of_intelligence_1
+recruit_character = EAT_head_of_intelligence_2
+recruit_character = EAT_head_of_intelligence_3
+recruit_character = EAT_head_of_intelligence_4
+recruit_character = EAT_head_of_intelligence_5
+recruit_character = EAT_head_of_intelligence_6
+
+recruit_character = EAT_quartermaster_1
+recruit_character = EAT_quartermaster_2
+recruit_character = EAT_quartermaster_3
+recruit_character = EAT_quartermaster_4
+recruit_character = EAT_quartermaster_5
+recruit_character = EAT_quartermaster_6
+
+every_character = {
+	set_character_flag = airbender_monk
+}
+
+recruit_character = EAT_extinct_nation
+
+
+AIR_choose_council_members = yes
+
+set_variable = { council_name_1:harmony = 3 }
+set_variable = { council_name_2:harmony = 4 }
+set_variable = { council_name_3:harmony = 5 }
+set_variable = { council_name_4:harmony = 2 }
+set_variable = { council_name_5:harmony = 5 }
+set_variable = { AIR_council_army = 25 }
+set_variable = { AIR_council_navy = 75 }
+set_variable = { AIR_council_air = 125 }
+set_variable = { AIR_council_construction = 100 }
+set_variable = { AIR_council_research = 150 }
+set_variable = { AIR_council_politics = 50 }
+
+AIR_recalc_council_support = yes
+
+
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+52.5.16 = {
+	set_politics = {
+		ruling_party = air_culture
+		elections_allowed = no
+	}
+	#set_cosmetic_tag = EAT_exterminated
+	OOB = "empty"
+	clr_country_flag = air_council_active
+	retire_character = EAT_sister_lio
+	add_popularity = {
+		ideology = air_culture
+		popularity = -0.35
+	}
+	add_ideas = {
+		no_ruler
+		local_markets
+	}
+	country_lock_all_division_template = yes
+	remove_ideas = {
+		pacifist_detachment
+	}
+}

@@ -1,0 +1,193 @@
+
+scripted_gui = {
+
+	state_scripted_ui = {
+		context_type = selected_state_context
+		
+		window_name = "state_scripted_ui_window"
+		parent_window_token = selected_state_view
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			
+		}
+
+		properties = {
+			attacker_country_flag = {
+				image = [THIS.attacker.GetFlag]
+			}
+			defender_country_flag = {
+				image = [THIS.defender.GetFlag]
+			}
+		}
+
+		dynamic_lists = {
+			state_attacker_gridbox = {
+				array = THIS.attackers
+				entry_container = attacker_list_entry
+				change_scope = yes
+			}
+			state_defender_gridbox = {
+				array = THIS.defenders
+				entry_container = defender_list_entry
+				change_scope = yes
+			}
+		}
+
+		triggers = {
+			state_conflict_modifier_visible = {
+				FROM = {
+					has_dynamic_modifier = { modifier = state_conflict_modifier }
+				}
+			}
+		}
+
+	}
+
+	terrain_anchor = {
+		context_type = selected_state_context
+		
+		window_name = "terrain_anchor_ui"
+		parent_window_name = terrain_anchor
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			
+		}
+
+		properties = {
+			special_icon = {
+				image = "GFX_terrain_[THIS.GetID]"
+			}
+		}
+
+		dynamic_lists = {
+			
+		}
+
+		triggers = {
+			
+		}
+
+	}
+
+	population_job_ui_window = {
+		context_type = selected_state_context
+		
+		window_name = "population_job_ui_window"
+		parent_window_token = selected_state_view
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			
+		}
+
+		properties = {
+			
+		}
+
+		dynamic_lists = {
+			
+		}
+
+		triggers = {
+			self_employed_active_visible = {
+				check_variable = { mtth:workers_number < mtth:state_self_employed }
+			}
+			workers_active_visible = {
+				check_variable = { mtth:workers_number > mtth:state_self_employed }
+				NOT = { check_variable = { mtth:missing_workers_resource_modifier < 0 } }
+			}
+			workers_missing_visible = {
+				check_variable = { mtth:missing_workers_resource_modifier < 0 }
+			}
+
+		}
+
+	}
+
+	tax_ui_window = {
+		context_type = selected_state_context
+		
+		window_name = "tax_ui_window"
+		parent_window_token = selected_state_view
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+			
+		}
+
+	}
+
+	prosperity_ui_window = {
+		context_type = selected_state_context
+		
+		window_name = "prosperity_ui_window"
+		parent_window_token = selected_state_view
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+			prosperity_increase_visible = {
+				check_variable = { real_prosp_growth > 0 }
+			}
+			prosperity_decrease_visible = {
+				check_variable = { real_prosp_growth < 0 }
+			}
+		}
+
+		properties = {
+			
+		}
+
+	}
+
+	urbanisation_ui_window = {
+		context_type = selected_state_context
+		
+		window_name = "urbanisation_ui_window"
+		parent_window_token = selected_state_view
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+			prosperity_increase_visible = {
+				check_variable = { real_prosp_growth > 0 }
+			}
+			prosperity_decrease_visible = {
+				check_variable = { real_prosp_growth < 0 }
+			}
+		}
+
+		properties = {
+			urbanisation_bar = {
+				frame = THIS.actual_urbanisation
+			}
+			urbanisation_bar_2 = {
+				frame = THIS.urbanisation_cap
+			}
+
+			urbanisation_icon = {
+				frame = THIS.urbanisation_icon
+			}
+		}
+
+	}
+	
+}

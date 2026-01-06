@@ -1,0 +1,296 @@
+################# Equipment Designer Window layouts: Light Ship Hulls (new format examples) #################
+
+guiTypes = {
+
+	################# Equipment Archetype: firenation_frigate_hull #################
+	containerWindowType = {
+		name = "equipment_designer_firenation_frigate_hull"
+		# NOTE: to keep aligned with the window "equipment_modules" in equipmentdesignerview.gui
+		position = { x=0 y=0 }
+		size = { width=512 height=260 }
+
+		background = {
+			name = "Background"
+			spriteType = "GFX_tiled_window_transparent"
+		}
+
+		iconType = {
+			name = "equipment_image"
+			spriteType = "GFX_SD_tv_firenation_frigate"
+			position = { x=0 y=0 }
+		}
+
+		containerWindowType = {
+			name = "module_slots"
+			position = { x=0 y=0 }
+			size = { width=100% height=100% }
+			
+
+
+			################# MODULE SLOT: Engine #################
+			containerWindowType = {
+				name = "fixed_ship_engine_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "steam_engine"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_fire_frigate_engine"
+						position = { x=0 y=0 }
+					}
+				}
+
+			}
+
+			################# MODULE SLOT: Armor #################
+			containerWindowType = {
+				name = "fixed_ship_armor_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "light_armor_plates"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_fire_frigate_armor"
+						position = { x=0 y=0 }
+					}
+				}
+
+				containerWindowType = {
+					name = "medium_armor_plates"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_fire_frigate_armor_heavy"
+						position = { x=0 y=0 }
+					}
+				}
+			}
+
+			################# MODULE SLOT: Bridge #################
+			containerWindowType = {
+				name = "fixed_ship_bridge_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				containerWindowType = {
+					name = "bridge"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "blueprint"
+						spriteType = "GFX_SM_fire_frigate_bridge"
+						position = { x=94 y=48 }
+					}
+				}
+
+			}
+
+			################# MODULE SLOT: Weapon #################
+			containerWindowType = {
+				name = "fixed_ship_artillery_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: catapult ####
+				containerWindowType = {
+					name = "ship_catapult"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_catapult"
+						position = { x=335 y=128 }
+					}
+				}
+
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_ballista"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_ballista"
+						position = { x=335 y=114 }
+					}
+				}
+
+			}
+
+			################## MODULE SLOT: Crew #################
+			#containerWindowType = {
+			#	name = "fixed_ship_crew_slot"
+			#	position = { x=0 y=0 }
+			#	size = { width=100% height=100% }
+#
+			#	containerWindowType = {
+			#		name = "ship_firebender_crew"
+			#		position = { x=0 y=0 }
+			#		size = { width=100% height=100% }
+			#		
+			#		iconType = {
+			#			name = "image"
+			#			spriteType = "GFX_SM_firebender"
+			#			position = { x=310 y=24 }
+			#		}
+			#	}
+#
+			#	containerWindowType = {
+			#		name = "ship_archers"
+			#		position = { x=0 y=0 }
+			#		size = { width=100% height=100% }
+			#		
+			#		iconType = {
+			#			name = "image"
+			#			spriteType = "GFX_SM_archers"
+			#			position = { x=310 y=24 }
+			#		}
+			#	}
+#
+			#}
+
+
+			################# MODULE SLOT: Custom 1 #################
+			containerWindowType = {
+				name = "deck_1_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: catapult ####
+				containerWindowType = {
+					name = "ship_catapult"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_catapult"
+						position = { x=300 y=131 }
+					}
+				}
+
+				containerWindowType = {
+					name = "ship_ballista"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_ballista"
+						position = { x=300 y=117 }
+					}
+				}
+
+				#containerWindowType = {
+				#	name = "ship_firebender_crew"
+				#	position = { x=0 y=0 }
+				#	size = { width=100% height=100% }
+				#	
+				#	iconType = {
+				#		name = "image"
+				#		spriteType = "GFX_SM_firebender"
+				#		position = { x=360 y=24 }
+				#	}
+				#}
+#
+				#containerWindowType = {
+				#	name = "ship_archers"
+				#	position = { x=0 y=0 }
+				#	size = { width=100% height=100% }
+				#	
+				#	iconType = {
+				#		name = "image"
+				#		spriteType = "GFX_SM_archers"
+				#		position = { x=360 y=24 }
+				#	}
+				#}
+
+			}
+
+			################# MODULE SLOT: Custom 2 #################
+			containerWindowType = {
+				name = "deck_2_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: catapult ####
+				containerWindowType = {
+					name = "ship_catapult"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_catapult"
+						position = { x=268 y=133 }
+					}
+				}
+
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_ballista"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_ballista"
+						position = { x=268 y=119 }
+					}
+				}
+
+			}
+
+			################# MODULE SLOT: Custom 3 #################
+			containerWindowType = {
+				name = "deck_3_custom_slot"
+				position = { x=0 y=0 }
+				size = { width=100% height=100% }
+
+				#### MODULE: catapult ####
+				containerWindowType = {
+					name = "ship_catapult"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_catapult"
+						position = { x=206 y=100 }
+					}
+				}
+
+				#### MODULE: Anti-Air ####
+				containerWindowType = {
+					name = "ship_ballista"
+					position = { x=0 y=0 }
+					size = { width=100% height=100% }
+					
+					iconType = {
+						name = "image"
+						spriteType = "GFX_SM_ballista"
+						position = { x=196 y=88 }
+					}
+				}
+
+			}
+			
+
+		}
+	}
+}

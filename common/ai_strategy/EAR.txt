@@ -1,0 +1,604 @@
+
+defender_defense_dafending = {
+	enable = {
+		original_tag = EAR
+		controls_state = 193
+		controls_state = 213
+		controls_state = 178
+		controls_state = 145
+		controls_state = 126
+		controls_state = 129
+		controls_state = 149
+		FIR = { OR = { controls_state = 138 controls_state = 231 controls_state = 116 controls_state = 80  controls_state = 99 } }
+		
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = "FIR"
+		value = -10000
+	}
+	
+	ai_strategy = {
+		type = put_unit_buffers
+		order_id = 0
+		states = { 
+			145
+			126
+			193
+			129
+			149
+			213
+			178
+		}
+		ratio = 0.5
+		subtract_invasions_from_need = no
+ 		subtract_fronts_from_need = no
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = FIR
+		ratio = 1
+		ordertype = front 
+		execution_type = careful
+		execute_order = no
+		manual_attack = no
+	}
+}
+
+defender_defense_dafending2 = {
+
+	enable = {
+		original_tag = EAR
+		has_war_with = FIR
+		AND = { has_full_control_of_state = 161 has_full_control_of_state = 162 has_full_control_of_state = 187 has_full_control_of_state = 189 }
+		NOT = { AND = { controls_state = 193 controls_state = 213 controls_state = 178 controls_state = 145 controls_state = 126 controls_state = 129 controls_state = 149 } }
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		order_id = 0
+		states = { 
+			161
+			162
+			187
+			189
+		}
+		ratio = 1
+		subtract_invasions_from_need = yes
+ 		subtract_fronts_from_need = yes
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = FIR
+		value = -10000
+	}
+
+}
+
+defender_defense_dafending3 = {
+
+	enable = {
+		original_tag = EAR
+		has_war_with = FIR
+		NOT = { AND = { has_full_control_of_state = 161 has_full_control_of_state = 162 has_full_control_of_state = 187 has_full_control_of_state = 189 } }
+	}
+	abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = FIR
+		value = -10000
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		order_id = 0
+		states = { 
+			179
+		}
+		ratio = 1
+		subtract_invasions_from_need = yes
+ 		subtract_fronts_from_need = yes
+	}
+}
+
+EAR_unit_production = {
+	enable = {
+		original_tag = EAR
+	}
+	abort = {
+		always = no
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = defender
+		value = 100
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = offensive
+		value = 0
+	}
+	
+	
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 10
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 0
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 100
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 15
+	}
+	
+}
+
+EAR_area_priority = {
+	enable = {
+		original_tag = EAR
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = firelands #homeland
+		value = 20
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = earth_plate
+		value = 120
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_plate
+		value = 60
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_plate
+		value = 60
+	}
+
+	ai_strategy = {
+		type = area_priority
+		id = northpole
+		value = 10
+	}
+	
+	ai_strategy = {
+		type = area_priority
+		id = southpole
+		value = 10
+	}
+}
+
+
+EARTH_decentralised_warfare = {
+
+	allowed = {
+		always = yes
+	}
+	enable = {
+		OR = {
+			has_dynamic_modifier = { modifier = earth_nation }
+			tag = SWA
+		}
+		any_allied_country = {
+			has_capitulated = no
+		}
+		NOT = {tag = EAR}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = spare_unit_factor
+		value = -999
+	}
+	ai_strategy = {
+		type = garrison
+		value = 90
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = EAR
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = POH
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = TAK
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = HAN
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MAK
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = NIX
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = YUE
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = XIN
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GAR
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = WUL
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = NOW
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = HEB
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ISL
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = NCB
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ECB
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = EBA
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = WBA
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = LAM
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GDD
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = FMB
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MER
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = OMS
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MPO
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SWA
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ZAO
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = CHN
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GAO
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = NAN
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ZIN
+		value = 10
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = YII
+		value = 10
+	}
+}
+EARTH_slightly_less_decentralised_warfare = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		OR = {
+			has_dynamic_modifier = { modifier = earth_nation }
+			tag = SWA
+		}
+		#has_war_with = FIR
+		any_allied_country = {
+			has_capitulated = yes
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = garrison
+		value = 8
+	}
+	ai_strategy = {
+		type = spare_unit_factor
+		value = 2
+	}
+}
+EARTH_help_defend_neighbours = {
+
+	allowed = {
+		always = yes
+	}
+	enable = {
+		has_dynamic_modifier = { modifier = earth_nation }
+		any_neighbor_country = {
+			surrender_progress > 0.01
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = EAR
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = POH
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = TAK
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = HAN
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MAK
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = NIX
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = YUE
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = XIN
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GAR
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = WUL
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = NOW
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = HEB
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ISL
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = NCB
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ECB
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = EBA
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = WBA
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = LAM
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GDD
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = FMB
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MER
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = OMS
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MPO
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SWA
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ZAO
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = CHN
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = GAO
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = NAN
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = ZIN
+		value = -20
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = YII
+		value = -20
+	}
+}
+
+# ba sing se, not na sing se
+
+ba_sing_se_defenders = {
+	enable = {
+		original_tag = EAR
+		has_army_manpower = {
+			size < 30000 
+        }
+
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = force_build_armies
+		value = 100
+	}
+
+	ai_strategy = {
+		type = put_unit_buffers
+
+		# ratio of total armeis in country to be buffered
+		ratio = 1
+
+		# ai areas that the orders will use these buffers in
+		area = ba_sing_se
+
+		# by default if you have orders in target areas, the buffer will request less units.
+		# you can override this to disable the feature
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = no
+	}
+	
+}

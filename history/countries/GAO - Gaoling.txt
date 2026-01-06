@@ -1,0 +1,162 @@
+capital = 29
+
+OOB = "GAO_12"
+
+ 
+set_country_flag = EARTH_special_forces
+
+set_variable = { legitimacy_var = 180 }
+
+EAR_generic_starting_tech = yes
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		oars_tech_1 = 1
+		sails_tech_1 = 1
+		galley_tech_1 = 1
+		barque_tech_1 = 1
+		light_armor_tech_1 = 1
+	}
+
+}
+
+#set_research_slots = 2
+set_convoys = 75
+set_stability = 0.6
+set_war_support = 0.4
+ 
+
+set_politics = {
+	ruling_party = earth_culture
+	last_election = "10.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 10
+	pluralist_culture = 10
+	fire_culture = 0
+	earth_culture = 65
+	air_culture = 15
+}
+
+set_variable = { victory_condition = token:pearl_of_the_south_spirit }
+
+add_ideas = {
+	volunteer_earth_nation
+	earth_benders_only
+	local_markets
+	construction_efforts_law
+	family_support_3
+	average_education
+}
+
+recruit_character = GAO_shing
+recruit_character = GAO_lao_beifong
+#if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = NAN
+#		autonomous_state = autonomy_royal_domain
+#	}
+#	else = {
+#		puppet = NAN
+#	}
+#}
+#if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = ZIN
+#		autonomous_state = autonomy_vassalage
+#	}
+#	else = {
+#		puppet = ZIN
+#	}
+#}
+#if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = GAR
+#		autonomous_state = autonomy_county
+#	}
+#	else = {
+#		puppet = GAR
+#	}
+#}
+
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 ={
+
+	OOB = "GAO_52"
+
+	#add_to_war = {
+	#	targeted_alliance = EAR
+	#	enemy = FIR
+	#}
+
+}
+
+
+
+
+ ## #####  ##  ###  #####       #  ##    #
+#     #   #  # #  #   #        ## #  #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
+##    #   #  # #  #   #         #  ##   ##
+
+
+
+106.2.4 ={
+
+	OOB = "GAO_106"
+	retire_character = GAO_shing
+}
+
+
+ ## #####  ##  ###  #####       #   #   #
+#     #   #  # #  #   #        ##  ##  ##
+ #    #   #### ###    #       # # # # # #
+  #   #   #  # #  #   #         #   #   #
+##    #   #  # #  #   #         #   #   #
+
+
+
+
+111.10.30 ={
+
+	OOB = "GAO_111"
+}
+
+# Different Ideology Leaders
+recruit_character = GAO_generic

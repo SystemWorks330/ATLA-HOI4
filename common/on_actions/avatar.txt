@@ -1,0 +1,221 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_start_date < 13.1.1
+				}
+				
+				set_variable = { global.avatar_birth = 0 }
+				set_variable = { global.avatar = token:SAT_aang }
+				set_variable = { global.avatar_location = 329.id }
+				set_global_flag = avatar_born_air
+
+				add_to_array = { global.avatar_team = token:SAT_aang }
+				
+				add_to_array = { global.avatar_team = token:SAT_appa }
+				add_to_array = { global.avatar_team = token:SAT_monk_gyatso }
+
+
+				set_variable = { global.base_avatar_opinion = 50 }
+
+				set_variable = { global.avatar_spirituality = 25 }
+				set_variable = { global.avatar_state = 0 }
+				set_variable = { global.avatar_airbender_skill = 80 }
+				set_variable = { global.avatar_waterbender_skill = 0 }
+				set_variable = { global.avatar_earthbender_skill = 0 }
+				set_variable = { global.avatar_firebender_skill = 0 }
+				
+
+			}
+			if = {
+				limit = {
+					has_start_date > 13.1.1
+				}
+				set_variable = { global.avatar_birth = 0 }
+				set_variable = { global.avatar = token:SAT_aang }
+				clear_variable = global.avatar_location
+				set_global_flag = avatar_born_air
+
+				add_to_array = { global.avatar_team = token:SAT_aang }
+				
+				add_to_array = { global.avatar_team = token:SAT_appa }
+
+				set_variable = { global.base_avatar_opinion = 0 }
+
+				set_variable = { global.avatar_spirituality = 25 }
+				set_variable = { global.avatar_state = 0 }
+				set_variable = { global.avatar_airbender_skill = 100 }
+				set_variable = { global.avatar_waterbender_skill = 0 }
+				set_variable = { global.avatar_earthbender_skill = 0 }
+				set_variable = { global.avatar_firebender_skill = 0 }
+
+				
+			}
+
+			every_country = {
+				country_event = { id = avatar_calc.1 }
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+
+			set_variable = { opinion_of_avatar = mtth:opinion_of_avatar }
+			set_variable = { avatar_opinion = mtth:avatar_opinion }
+
+			set_variable = { avatar_influence = global.avatar_influence }
+
+			set_temp_variable = { avatar_influence_modifier = 1 }
+			add_to_temp_variable = { avatar_influence_modifier = modifier@avatar_influence_modifier }
+			clamp_temp_variable = {
+				var = avatar_influence_modifier
+				min = 0
+			}
+
+			multiply_variable = { avatar_influence = avatar_influence_modifier }
+
+			clamp_variable = {
+				var = avatar_influence
+				min = 0
+				max = 100
+			}
+
+			if = {
+				limit = {
+					has_country_flag = calculator
+				}
+
+
+				set_variable = { global.avatar_influence = 0 }
+
+				every_country = {
+					set_variable = { avatar_influence_impact = mtth:opinion_of_avatar }
+					set_variable = { population_of_global_percent = max_population_k }
+					multiply_variable = { population_of_global_percent = 1000 }
+					divide_variable = { population_of_global_percent = global.total_population_k }
+					multiply_variable = { avatar_influence_impact = population_of_global_percent }
+					multiply_variable = { avatar_influence_impact = 0.001 }
+					clamp_variable = { var = avatar_influence_impact min = 0 }
+
+					add_to_variable = { global.avatar_influence = avatar_influence_impact }
+				}
+
+
+
+				###### team calculations
+
+				for_each_loop = {
+					array = global.avatar_team
+					value = curent_character
+					
+					if = {
+						limit = {
+							OR = {
+								check_variable = { curent_character = token:SWT_katara }
+							}
+						}
+						add_to_variable = {
+							var = global.avatar_waterbender_skill
+							value = 0.1
+						}
+					}
+				}
+				for_each_loop = {
+					array = global.avatar_team
+					value = curent_character
+					
+					if = {
+						limit = {
+							OR = {
+								#check_variable = { curent_character = token:SAT_monk_gyatso }
+							}
+						}
+						add_to_variable = {
+							var = global.avatar_earthbender_skill
+							value = 0.1
+						}
+					}
+				}
+				for_each_loop = {
+					array = global.avatar_team
+					value = curent_character
+					
+					if = {
+						limit = {
+							OR = {
+								#check_variable = { curent_character = token:SAT_monk_gyatso }
+							}
+						}
+						add_to_variable = {
+							var = global.avatar_firebender_skill
+							value = 0.1
+						}
+					}
+				}
+				for_each_loop = {
+					array = global.avatar_team
+					value = curent_character
+					
+					if = {
+						limit = {
+							OR = {
+								check_variable = { curent_character = token:SAT_monk_gyatso }
+							}
+						}
+						add_to_variable = {
+							var = global.avatar_airbender_skill
+							value = 0.1
+						}
+					}
+				}
+
+
+				clamp_variable = {
+					var = global.avatar_influence
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_spirituality
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_state
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_airbender_skill
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_waterbender_skill
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_earthbender_skill
+					min = 0
+					max = 100
+				}
+				clamp_variable = {
+					var = global.avatar_firebender_skill
+					min = 0
+					max = 100
+				}
+
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+
+			
+		}
+	}
+}

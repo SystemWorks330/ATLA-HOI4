@@ -1,0 +1,114 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				set_variable = { literacy_variable = modifier@knowledge_gain }
+				clamp_variable = { var = literacy_variable min = 0 max = 100 }
+
+				#### ages
+
+				recalculate_age = yes
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+			set_variable = { knowledge_daily = 0 }
+
+			# base gain
+			add_to_variable = { knowledge_daily = 0.1 }
+
+			# modifiers
+			add_to_variable = { knowledge_daily = modifier@knowledge }
+
+			# factor
+			set_variable = { knowledge_factor_calc = literacy_variable }
+			divide_variable = { knowledge_factor_calc = 100 }
+			add_to_variable = { knowledge_factor_calc = 1 }
+			clamp_variable = { 
+				var = knowledge_factor_calc 
+				min = 0 
+				#max = 0
+			}
+			multiply_variable = { knowledge_daily = knowledge_factor_calc }
+
+			add_to_variable = { knowledge_variable = knowledge_daily }
+
+			if = {
+				limit = {
+					has_country_flag = calculator
+				}
+
+				set_variable = { global.shared_knowledge = 0 }
+				set_variable = { global.knowledge_sharing_countries = 0 }
+
+				every_country = {
+					limit = {
+						check_variable = { modifier@tech_share_modifier < 1 }
+					}
+					add_to_variable = { global.shared_knowledge = knowledge_daily }
+					add_to_variable = { global.knowledge_sharing_countries = 1 }
+				}
+
+				divide_variable = { global.shared_knowledge = global.knowledge_sharing_countries }
+			}
+
+			set_variable = { shared_knowledge = global.shared_knowledge }
+			multiply_variable = { shared_knowledge = modifier@knowledge_spread }
+
+			add_to_variable = { knowledge_variable = shared_knowledge }
+
+			set_variable = { knowledge_cap = modifier@knowledge_cap }
+			clamp_variable = { 
+				var = knowledge_variable 
+				min = 0 
+				max = knowledge_cap
+			}
+
+
+
+			if = {
+				limit = {
+					check_variable = { literacy_variable < mtth:literacy_target_100 }
+					check_variable = { modifier@knowledge < 0.01 }
+				}
+				add_to_variable = { literacy_variable = 0.01 }
+			}
+			if = {
+				limit = {
+					check_variable = { literacy_variable < mtth:literacy_target_100 }
+					check_variable = {
+						var = modifier@knowledge
+						value = 0.01
+						compare = greater_than_or_equals
+					}
+				}
+				add_to_variable = { literacy_variable = modifier@knowledge }
+			}
+
+			if = {
+				limit = {
+					check_variable = { literacy_variable > mtth:literacy_target_100 }
+					check_variable = { modifier@knowledge > -0.01 }
+				}
+				add_to_variable = { literacy_variable = -0.01 }
+			}
+			if = {
+				limit = {
+					check_variable = { literacy_variable > mtth:literacy_target_100 }
+					check_variable = {
+						var = modifier@knowledge
+						value = -0.01
+						compare = less_than_or_equals
+					}
+				}
+				add_to_variable = { literacy_variable = modifier@knowledge }
+			}
+			clamp_variable = { var = literacy_variable min = 0 max = 100 }
+			
+		}
+	}
+
+}

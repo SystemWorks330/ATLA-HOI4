@@ -1,0 +1,349 @@
+spriteTypes = {
+
+	########### PROVINCE MODIFIERS
+
+	spriteType = {
+		name = "GFX_modifiers_integrated_baraques"
+		textureFile = "gfx/interface/state_modifiers/integrated_baraques.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_great_walls_of_ba_sing_se"
+		textureFile = "gfx/interface/state_modifiers/great_walls_of_ba_sing_se.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_fongs_fortress"
+		textureFile = "gfx/interface/state_modifiers/fongs_fortress.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_fongs_fortress_supply"
+		textureFile = "gfx/interface/state_modifiers/fongs_fortress_supply.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_chins_fortress"
+		textureFile = "gfx/interface/state_modifiers/chins_fortress.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_chins_fortress_supply"
+		textureFile = "gfx/interface/state_modifiers/chins_fortress_supply.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_pohuai_stronghold"
+		textureFile = "gfx/interface/state_modifiers/pohuai_stronghold.dds"
+	}
+
+	########### STATE MODIFIERS
+
+	spriteType = {
+		name = "GFX_modifiers_sabotaged_resource"
+		textureFile = "gfx/interface/state_modifiers/sabotaged_resource.dds"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_genocide_state"
+		textureFile = "gfx/interface/state_modifiers/genocide_state.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_new_settlement"
+		textureFile = "gfx/interface/state_modifiers/new_settlement.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_brave_pioneers"
+		textureFile = "gfx/interface/state_modifiers/brave_pioneers.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_destroyed_city"
+		textureFile = "gfx/interface/state_modifiers/destroyed_city.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_impoverished_region"
+		textureFile = "gfx/interface/state_modifiers/impoverished_region.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_trade_hub"
+		textureFile = "gfx/interface/state_modifiers/trade_hub.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_hostile_bottleneck"
+		textureFile = "gfx/interface/state_modifiers/hostile_bottleneck.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_watertribe_riots"
+		textureFile = "gfx/interface/state_modifiers/watertribe_riots.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_focused_construction"
+		textureFile = "gfx/interface/state_modifiers/focused_construction.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_hebai_coal_mines"
+		textureFile = "gfx/interface/state_modifiers/hebai_coal_mines.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_omashu_delivery_system"
+		textureFile = "gfx/interface/state_modifiers/omashu_delivery_system.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_fields_of_ba_sing_se"
+		textureFile = "gfx/interface/state_modifiers/fields_of_ba_sing_se.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_firenation_war_camp"
+		textureFile = "gfx/interface/state_modifiers/firenation_war_camp.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_organised_retreat"
+		textureFile = "gfx/interface/state_modifiers/organised_retreat.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_volcano"
+		textureFile = "gfx/interface/state_modifiers/volcano.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_gold_vein"
+		textureFile = "gfx/interface/state_modifiers/gold_vein.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_firenation_settlers"
+		textureFile = "gfx/interface/state_modifiers/firenation_settlers.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_earthkingdom_settlers"
+		textureFile = "gfx/interface/state_modifiers/earthkingdom_settlers.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_watertribe_settlers"
+		textureFile = "gfx/interface/state_modifiers/watertribe_settlers.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_airnomad_settlers"
+		textureFile = "gfx/interface/state_modifiers/airnomad_settlers.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_pluralist_settlers"
+		textureFile = "gfx/interface/state_modifiers/pluralist_settlers.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_refugees"
+		textureFile = "gfx/interface/state_modifiers/refugees.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_dragon_hunters"
+		textureFile = "gfx/interface/state_modifiers/dragon_hunters.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_fire_academy"
+		textureFile = "gfx/interface/state_modifiers/fire_academy.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_firenation_colony"
+		textureFile = "gfx/interface/state_modifiers/firenation_colony.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_secure_trade_route"
+		textureFile = "gfx/interface/state_modifiers/secure_trade_route.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_agricultural_subvention"
+		textureFile = "gfx/interface/state_modifiers/agricultural_subvention.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_training_grounds"
+		textureFile = "gfx/interface/state_modifiers/training_grounds.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_colonial_guards"
+		textureFile = "gfx/interface/state_modifiers/colonial_guards.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_occupied_has_dominant_culture"
+		textureFile = "gfx/interface/state_modifiers/occupied_has_dominant_culture.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_relocate_fire_population"
+		textureFile = "gfx/interface/state_modifiers/relocate_fire_population.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_rebel_activity"
+		textureFile = "gfx/interface/state_modifiers/rebel_activity.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_watertribe_barbarians"
+		textureFile = "gfx/interface/state_modifiers/watertribe_barbarians.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_peasant_discontent"
+		textureFile = "gfx/interface/state_modifiers/peasant_discontent.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_revolt_origin"
+		textureFile = "gfx/interface/state_modifiers/revolt_origin.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_peasant_rampage"
+		textureFile = "gfx/interface/state_modifiers/peasant_rampage.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_peasant_insurgency"
+		textureFile = "gfx/interface/state_modifiers/peasant_insurgency.dds"
+	}
+
+
+
+	##### seasons and weather
+
+	spriteType = {
+		name = "GFX_spring_icon"
+		texturefile = "gfx/interface/state_modifiers/spring_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_summer_icon"
+		texturefile = "gfx/interface/state_modifiers/summer_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_fall_icon"
+		texturefile = "gfx/interface/state_modifiers/fall_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_winter_icon"
+		texturefile = "gfx/interface/state_modifiers/winter_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_permafrost_modifier_icon"
+		texturefile = "gfx/interface/state_modifiers/permafrost_modifier.dds"
+	}
+
+
+
+
+	##### resource boni
+
+
+	spriteType = {
+		name = "GFX_farm_bonus"
+		texturefile = "gfx/interface/state_modifiers/farm_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_farm_ranch_bonus"
+		texturefile = "gfx/interface/state_modifiers/farm_ranch_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_lumber_mill_bonus"
+		texturefile = "gfx/interface/state_modifiers/lumber_mill_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_carpentry_bonus"
+		texturefile = "gfx/interface/state_modifiers/carpentry_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_smithy_bonus"
+		texturefile = "gfx/interface/state_modifiers/smithy_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_quarry_bonus"
+		texturefile = "gfx/interface/state_modifiers/quarry_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_masonry_bonus"
+		texturefile = "gfx/interface/state_modifiers/masonry_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_fishing_stand_bonus"
+		texturefile = "gfx/interface/state_modifiers/fishing_stand_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_mine_bonus"
+		texturefile = "gfx/interface/state_modifiers/mine_bonus.dds"
+	}
+	#spriteType = {
+	#	name = "GFX_road_bonus"
+	#	texturefile = "gfx/interface/state_modifiers/road_bonus.dds"
+	#}
+	spriteType = {
+		name = "GFX_crop_weaving_bonus"
+		texturefile = "gfx/interface/state_modifiers/crop_weaving_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_animal_weaving_bonus"
+		texturefile = "gfx/interface/state_modifiers/animal_weaving_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_mill_bonus"
+		texturefile = "gfx/interface/state_modifiers/mill_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_ranch_bonus"
+		texturefile = "gfx/interface/state_modifiers/ranch_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_industrial_zone"
+		texturefile = "gfx/interface/state_modifiers/industrial_zone.dds"
+	}
+
+
+
+	####### animals
+
+
+	spriteType = {
+		name = "GFX_komodo_herd"
+		textureFile = "gfx/interface/state_modifiers/komodo_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_mongooze_herd"
+		textureFile = "gfx/interface/state_modifiers/mongooze_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_polar_herd"
+		textureFile = "gfx/interface/state_modifiers/polar_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_buffalo_herd"
+		textureFile = "gfx/interface/state_modifiers/buffalo_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_cat_herd"
+		textureFile = "gfx/interface/state_modifiers/cat_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_walrus_herd"
+		textureFile = "gfx/interface/state_modifiers/walrus_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_ostrich_herd"
+		textureFile = "gfx/interface/state_modifiers/ostrich_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_eel_herd"
+		textureFile = "gfx/interface/state_modifiers/eel_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_elephant_herd"
+		textureFile = "gfx/interface/state_modifiers/elephant_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_desert_herd"
+		textureFile = "gfx/interface/state_modifiers/desert_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_dragon_moose_herd"
+		textureFile = "gfx/interface/state_modifiers/dragon_moose_herd.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dragon_herd"
+		textureFile = "gfx/interface/state_modifiers/dragon_herd.dds"
+	}
+	spriteType = {
+		name = "GFX_bison_herd"
+		textureFile = "gfx/interface/state_modifiers/bison_herd.dds"
+	}
+
+	spriteType = {
+		name = "GFX_crawler_herd"
+		textureFile = "gfx/interface/state_modifiers/crawler_herd.dds"
+	}
+}

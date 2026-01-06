@@ -1,0 +1,207 @@
+
+scripted_gui = {
+
+	logistics_tab_ui = {
+		context_type = player_context
+		window_name = "logistics_tab_ui_window"
+		parent_window_token = logistics_tab
+
+		triggers = {
+
+		}
+
+		effects = {
+
+			low_prio_1_click = {
+				ROOT = {
+					set_variable = { army_low_prio_var = 2 }
+					set_variable = { army_medium_prio_var = 1 }
+					set_variable = { army_high_prio_var = 1 }
+
+					set_variable = { army_priority_var = 1 }
+					ration_distribution = yes
+				}
+			}
+			medium_prio_1_click = {
+				ROOT = {
+					set_variable = { army_low_prio_var = 1 }
+					set_variable = { army_medium_prio_var = 3 }
+					set_variable = { army_high_prio_var = 1 }
+
+					set_variable = { army_priority_var = 2 }
+					ration_distribution = yes
+				}
+			}
+			high_prio_1_click = {
+				ROOT = {
+					set_variable = { army_low_prio_var = 1 }
+					set_variable = { army_medium_prio_var = 1 }
+					set_variable = { army_high_prio_var = 4 }
+
+					set_variable = { army_priority_var = 6 }
+					ration_distribution = yes
+				}
+			}
+
+			low_prio_2_click = {
+				ROOT = {
+					set_variable = { population_low_prio_var = 2 }
+					set_variable = { population_medium_prio_var = 1 }
+					set_variable = { population_high_prio_var = 1 }
+
+					set_variable = { population_priority_var = 1 }
+					ration_distribution = yes
+				}
+			}
+			medium_prio_2_click = {
+				ROOT = {
+					set_variable = { population_low_prio_var = 1 }
+					set_variable = { population_medium_prio_var = 3 }
+					set_variable = { population_high_prio_var = 1 }
+
+					set_variable = { population_priority_var = 2 }
+					ration_distribution = yes
+				}
+			}
+			high_prio_2_click = {
+				ROOT = {
+					set_variable = { population_low_prio_var = 1 }
+					set_variable = { population_medium_prio_var = 1 }
+					set_variable = { population_high_prio_var = 4 }
+
+					set_variable = { population_priority_var = 6 }
+					ration_distribution = yes
+				}
+			}
+
+			low_prio_3_click = {
+				ROOT = {
+					set_variable = { workers_low_prio_var = 2 }
+					set_variable = { workers_medium_prio_var = 1 }
+					set_variable = { workers_high_prio_var = 1 }
+
+					set_variable = { workers_priority_var = 1 }
+					ration_distribution = yes
+				}
+			}
+			medium_prio_3_click = {
+				ROOT = {
+					set_variable = { workers_low_prio_var = 1 }
+					set_variable = { workers_medium_prio_var = 3 }
+					set_variable = { workers_high_prio_var = 1 }
+
+					set_variable = { workers_priority_var = 2 }
+					ration_distribution = yes
+				}
+			}
+			high_prio_3_click = {
+				ROOT = {
+					set_variable = { workers_low_prio_var = 1 }
+					set_variable = { workers_medium_prio_var = 1 }
+					set_variable = { workers_high_prio_var = 4 }
+
+					set_variable = { workers_priority_var = 6 }
+					ration_distribution = yes
+				}
+			}
+
+			low_prio_4_click = {
+				ROOT = {
+					set_variable = { occupied_low_prio_var = 2 }
+					set_variable = { occupied_medium_prio_var = 1 }
+					set_variable = { occupied_high_prio_var = 1 }
+
+					set_variable = { occupied_priority_var = 1 }
+					ration_distribution = yes
+				}
+			}
+			medium_prio_4_click = {
+				ROOT = {
+					set_variable = { occupied_low_prio_var = 1 }
+					set_variable = { occupied_medium_prio_var = 3 }
+					set_variable = { occupied_high_prio_var = 1 }
+
+					set_variable = { occupied_priority_var = 2 }
+					ration_distribution = yes
+				}
+			}
+			high_prio_4_click = {
+				ROOT = {
+					set_variable = { occupied_low_prio_var = 1 }
+					set_variable = { occupied_medium_prio_var = 1 }
+					set_variable = { occupied_high_prio_var = 4 }
+
+					set_variable = { occupied_priority_var = 6 }
+					ration_distribution = yes
+				}
+			}
+
+		}
+
+		properties = {
+
+
+			soldier_fulfilled = {
+				frame = soldier_ratio_hundred
+			}
+			family_fulfilled = {
+				frame = family_ratio_hundred
+			}
+			working_fulfilled = {
+				frame = working_ratio_hundred
+			}
+			occupied_fulfilled = {
+				frame = occupied_ratio_hundred
+			}
+
+
+
+			low_prio_1 = {
+				frame = army_low_prio_var
+			}
+			medium_prio_1 = {
+				frame = army_medium_prio_var
+			}
+			high_prio_1 = {
+				frame = army_high_prio_var
+			}
+
+
+			low_prio_2 = {
+				frame = population_low_prio_var
+			}
+			medium_prio_2 = {
+				frame = population_medium_prio_var
+			}
+			high_prio_2 = {
+				frame = population_high_prio_var
+			}
+
+			low_prio_3 = {
+				frame = workers_low_prio_var
+			}
+			medium_prio_3 = {
+				frame = workers_medium_prio_var
+			}
+			high_prio_3 = {
+				frame = workers_high_prio_var
+			}
+
+
+			low_prio_4 = {
+				frame = occupied_low_prio_var
+			}
+			medium_prio_4 = {
+				frame = occupied_medium_prio_var
+			}
+			high_prio_4 = {
+				frame = occupied_high_prio_var
+			}
+
+
+        }
+
+	}
+
+	
+}

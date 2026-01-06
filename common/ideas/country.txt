@@ -1,0 +1,222 @@
+ideas = {
+
+	country = {
+
+		no_ruler = {
+			allowed = { always = yes }
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.5
+				political_power_factor = -2
+				disabled_ideas = 1
+				research_speed_factor = -2
+				agency_upgrade_time = 10
+			}
+
+			rule = {
+				can_join_factions = no
+				#can_create_factions = no
+				#can_be_called_to_war = no
+			}
+		}
+
+		unit_morale_dropped = {
+			allowed = { always = yes }
+
+			picture = war_weariness
+
+			removal_cost = -1
+
+			modifier = {
+				army_org_factor = -0.1
+			}
+		}
+
+		child_labour = {
+
+			removal_cost = -1
+
+			modifier = {
+				working_percentage = 0.2
+				MONTHLY_POPULATION = -0.75
+				local_resources_factor = -0.25
+				industrial_capacity_factory = -0.25
+				production_speed_buildings_factor = -0.25
+			}
+		}
+
+		peasant_strikes = {
+
+			removal_cost = -1
+
+			modifier = {
+				industrial_capacity_factory = -0.75
+				production_speed_buildings_factor = -0.75
+			}
+		}
+
+		peasant_unrest = {
+
+			removal_cost = -1
+
+			modifier = {
+				revolt_risk = 0.25
+			}
+		}
+
+		appeased_peasants = {
+
+			removal_cost = -1
+
+			modifier = {
+				revolt_risk = -1
+			}
+		}
+
+		colonial_investments = {
+
+			removal_cost = -1
+
+			modifier = {
+				income = -1
+			}
+
+			traits = {
+				expensive_convoys
+			}
+		}
+
+	}
+
+	hidden_ideas = {
+
+		spiritless_nation_spirit = {
+
+			removal_cost = -1
+
+			modifier = {
+				
+			}
+		}
+
+
+
+		transportation_buff = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				supply_node_range = 1
+				supply_consumption_factor = -1
+				country_resource_food_resource = 200
+			}
+		}
+
+		tax_culture_spending_very_low = {
+			allowed = { always = no }
+
+			name = idea_tax_spending
+			picture = tax_spending
+
+			available = {
+				has_decision = morale_investment_very_low
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				society_reforms = 0.05
+			}
+		}
+		tax_culture_spending_low = {
+			allowed = { always = no }
+
+			name = idea_tax_spending
+			picture = tax_spending
+
+			available = {
+				has_decision = morale_investment_low
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				society_reforms = 0.10
+			}
+		}
+		tax_culture_spending_average = {
+			allowed = { always = no }
+
+			name = idea_tax_spending
+			picture = tax_spending
+
+			available = {
+				has_decision = morale_investment_average
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				society_reforms = 0.15
+			}
+		}
+		tax_culture_spending_high = {
+			allowed = { always = no }
+
+			name = idea_tax_spending
+			picture = tax_spending
+
+			available = {
+				has_decision = morale_investment_high
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				society_reforms = 0.20
+			}
+		}
+		tax_culture_spending_very_high = {
+			allowed = { always = no }
+
+			name = idea_tax_spending
+			picture = tax_spending
+
+			available = {
+				has_decision = morale_investment_very_high
+			}
+
+			removal_cost = -1
+
+			research_bonus = {
+				society_reforms = 0.25
+			}
+		}
+
+		strategic_redeployment_blocker = {
+			allowed = { always = yes }
+
+			available = {
+				NOT = {
+					has_tech = long_march
+				}
+			}
+
+			modifier = {
+				disable_strategic_redeployment = 1
+			}
+		}
+
+
+	}
+}

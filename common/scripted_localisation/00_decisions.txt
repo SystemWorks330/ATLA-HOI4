@@ -1,0 +1,63 @@
+
+
+defined_text = {
+	name = GetEAR_dai_li_categoryStatus
+	text = {
+		trigger = {
+			has_country_flag = dai_li_country_decision
+		}
+		localization_key = country_category
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = dai_li_country_decision
+			}
+		}
+		localization_key = mission_category
+	}
+}
+
+defined_text = {
+	name = GetFIR_industrialisation_categoryStatus
+	text = {
+		trigger = {
+			has_country_flag = industrialisation_country_decision
+		}
+		localization_key = country_category
+	}
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = industrialisation_country_decision
+			}
+		}
+		localization_key = mission_category
+	}
+}
+defined_text = {
+	name = GetAvatarLocation
+	text = {
+		trigger = {
+			check_variable = {
+				var = global.avatar_location
+				value = 0
+			}
+		}
+		localization_key = undefined
+	}	
+	text = {
+		trigger = {
+			NOT = {
+				check_variable = {
+					var = global.avatar_location
+					value = 0
+				}
+			}
+
+		}
+		localization_key = [?global.avatar_location.GetName]
+	}	
+}
+
+

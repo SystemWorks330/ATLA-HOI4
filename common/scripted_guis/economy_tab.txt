@@ -1,0 +1,595 @@
+
+scripted_gui = {
+
+	economy_tab_ui = {
+		context_type = player_context
+		window_name = "economy_tab_ui_window"
+		parent_window_token = construction_tab
+
+		triggers = {
+
+			famine_icon_visible = {
+				has_dynamic_modifier = { modifier = famine }
+			}
+			food_shortages_icon_visible = {
+				has_dynamic_modifier = { modifier = food_shortages }
+			}
+			food_surplus_icon_visible = {
+				has_dynamic_modifier = { modifier = food_surplus_idea }
+			}
+			burgerking_icon_visible = {
+				has_dynamic_modifier = { modifier = burgerking }
+			}
+
+			extreme_poverty_icon_visible = {
+				has_dynamic_modifier = { modifier = extreme_poverty }
+			}
+			poverty_icon_visible = {
+				has_dynamic_modifier = { modifier = poverty }
+			}
+			struggeling_icon_visible = {
+				has_dynamic_modifier = { modifier = struggeling }
+			}
+			middeling_icon_visible = {
+				has_dynamic_modifier = { modifier = middeling }
+			}
+			wealth_icon_visible = {
+				has_dynamic_modifier = { modifier = wealth }
+			}
+			extreme_wealth_icon_visible = {
+				has_dynamic_modifier = { modifier = extreme_wealth }
+			}
+
+			warning_missing_workers_visible = {
+				check_variable = { worker_deficit_k > 0 }
+			}
+
+			cancel_deposit_construction_visible = {
+				check_variable = { modifier@civilian_factory_use > 0 }
+			}
+
+			fire_boni_visible = {
+				has_dynamic_modifier = { modifier = fire_nation }
+			}
+			water_boni_visible = {
+				has_dynamic_modifier = { modifier = water_nation }
+			}
+			earth_boni_visible = {
+				has_dynamic_modifier = { modifier = earth_nation }
+			}
+			air_boni_visible = {
+				has_dynamic_modifier = { modifier = air_nation }
+			}
+			pluralist_boni_visible = {
+				has_dynamic_modifier = { modifier = pluralist_nation }
+			}
+
+			mil_to_civ_icon_visible = {
+				check_variable = { military_ic_transfer > 0 }
+			}
+			civ_to_mil_icon_visible = {
+				check_variable = { military_ic_transfer < 0 }
+			}
+
+			farm_construction_click_enabled = {
+				check_variable = { modifier@farm_level_max > 0}
+				any_controlled_state = {
+					set_temp_variable = { farms = building_level@farm }
+					add_to_temp_variable = { farms = farm_construction_que }
+					check_variable = {
+						var = ROOT:modifier@farm_level_max
+						value = farms
+						compare = greater_than
+					}
+				}
+			}
+			fishing_stand_construction_click_enabled = {
+				check_variable = { modifier@fishing_stand_level_max > 0}
+				any_controlled_state = {
+					set_temp_variable = { fishing_stands = building_level@fishing_stand }
+					add_to_temp_variable = { fishing_stands = fishing_stand_construction_que }
+					check_variable = {
+						var = ROOT:modifier@fishing_stand_level_max
+						value = fishing_stands
+						compare = greater_than
+					}
+				}
+			}
+			ranch_construction_click_enabled = {
+				check_variable = { modifier@ranch_level_max > 0}
+				any_controlled_state = {
+					set_temp_variable = { ranches = building_level@ranch }
+					add_to_temp_variable = { ranches = ranch_construction_que }
+					check_variable = {
+						var = ROOT:modifier@ranch_level_max
+						value = ranches
+						compare = greater_than
+					}
+				}
+			}
+			lumber_mill_construction_click_enabled = {
+				check_variable = { modifier@lumber_mill_level_max > 0}
+				any_controlled_state = {
+					set_temp_variable = { lumber_mills = building_level@lumber_mill }
+					add_to_temp_variable = { lumber_mills = lumber_mill_construction_que }
+					check_variable = {
+						var = ROOT:modifier@lumber_mill_level_max
+						value = lumber_mills
+						compare = greater_than
+					}
+				}
+			}
+			quarry_construction_click_enabled = {
+				check_variable = { modifier@quarry_level_max > 0}
+				any_controlled_state = {
+					set_temp_variable = { quarries = building_level@quarry }
+					add_to_temp_variable = { quarries = quarry_construction_que }
+					check_variable = {
+						var = ROOT:modifier@quarry_level_max
+						value = quarries
+						compare = greater_than
+					}
+				}
+			}
+			mine_construction_click_enabled = {
+				check_variable = { modifier@mine_level_max > 0}
+				any_controlled_state = {
+					set_temp_variable = { mines = building_level@mine }
+					add_to_temp_variable = { mines = mine_construction_que }
+					check_variable = {
+						var = ROOT:modifier@mine_level_max
+						value = mines
+						compare = greater_than
+					}
+				}
+			}
+
+		}
+
+		effects = {
+
+			warning_missing_workers_click = {
+				if = {
+					limit = {
+						any_controlled_state = {
+							NOT = { check_variable = { worker_deficit_k > 0 } }
+							state = var:PREV.previous_state_checked
+						}
+					}
+					clear_variable = previous_state_checked
+				}
+				random_controlled_state = {
+					limit = {
+						check_variable = { worker_deficit_k > 0 }
+						NOT = { state = var:PREV.previous_state_checked }
+					}
+					meta_effect = {
+						text = {
+							PREV = {
+								goto_state = [STATE]
+							}
+						}
+						STATE = "[?THIS.GetID]"
+					}
+					set_variable = { PREV.previous_state_checked = THIS.id }
+				}
+				if = {
+					limit = {
+						var:PREV.previous_state_checked = {
+							check_variable = { worker_deficit_k > 0 }
+						}
+					}
+					clear_variable = ROOT.previous_state_checked
+				}
+			}
+
+			farm_construction_click = {
+				add_farm_random = yes
+			}
+			farm_construction_shift_click = {
+				add_farm_random = yes
+				add_farm_random = yes
+				add_farm_random = yes
+				add_farm_random = yes
+				add_farm_random = yes
+			}
+
+			fishing_stand_construction_click = {
+				add_fishing_stand_random = yes
+			}
+			fishing_stand_construction_shift_click = {
+				add_fishing_stand_random = yes
+				add_fishing_stand_random = yes
+				add_fishing_stand_random = yes
+				add_fishing_stand_random = yes
+				add_fishing_stand_random = yes
+			}
+			ranch_construction_click = {
+				add_ranch_random = yes
+			}
+			ranch_construction_shift_click = {
+				add_ranch_random = yes
+				add_ranch_random = yes
+				add_ranch_random = yes
+				add_ranch_random = yes
+				add_ranch_random = yes
+			}
+			lumber_mill_construction_click = {
+				add_lumber_mill_random = yes
+			}
+			lumber_mill_construction_shift_click = {
+				add_lumber_mill_random = yes
+				add_lumber_mill_random = yes
+				add_lumber_mill_random = yes
+				add_lumber_mill_random = yes
+				add_lumber_mill_random = yes
+			}
+			quarry_construction_click = {
+				add_quarry_random = yes
+			}
+			quarry_construction_shift_click = {
+				add_quarry_random = yes
+				add_quarry_random = yes
+				add_quarry_random = yes
+				add_quarry_random = yes
+				add_quarry_random = yes
+			}
+			mine_construction_click = {
+				add_mine_random = yes
+			}
+			mine_construction_shift_click = {
+				add_mine_random = yes
+				add_mine_random = yes
+				add_mine_random = yes
+				add_mine_random = yes
+				add_mine_random = yes
+			}
+
+			cancel_deposit_construction_click = {
+				every_controlled_state = {
+					clear_variable = farm_construction_que
+					clear_variable = ranch_construction_que
+					clear_variable = mine_construction_que
+					clear_variable = quarry_construction_que
+					clear_variable = lumber_mill_construction_que
+					clear_variable = fishing_stand_construction_que
+				}
+			}
+
+			increase_treasury_priority_button_click = {
+				decrease_civ_buy_effect = yes
+			}
+			increase_civilian_capacity_priority_button_click = {
+				increase_civ_buy_effect = yes
+			}
+			increase_treasury_priority_button_shift_click = {
+				decrease_civ_buy_effect = yes
+				decrease_civ_buy_effect = yes
+				decrease_civ_buy_effect = yes
+				decrease_civ_buy_effect = yes
+				decrease_civ_buy_effect = yes
+			}
+			increase_civilian_capacity_priority_button_shift_click = {
+				increase_civ_buy_effect = yes
+				increase_civ_buy_effect = yes
+				increase_civ_buy_effect = yes
+				increase_civ_buy_effect = yes
+				increase_civ_buy_effect = yes
+			}
+
+			increase_resource_buildings_priority_button_click = {
+				decrease_factory_effect = yes
+			}
+			increase_production_buildings_priority_button_click = {
+				increase_factory_effect = yes
+			}
+			increase_resource_buildings_priority_button_shift_click = {
+				decrease_factory_effect = yes
+				decrease_factory_effect = yes
+				decrease_factory_effect = yes
+				decrease_factory_effect = yes
+				decrease_factory_effect = yes
+			}
+			increase_production_buildings_priority_button_shift_click = {
+				increase_factory_effect = yes
+				increase_factory_effect = yes
+				increase_factory_effect = yes
+				increase_factory_effect = yes
+				increase_factory_effect = yes
+			}
+
+		}
+
+		properties = {
+			large_ratio_bar = {
+				frame = ration_ratio_var
+			}
+			large_sol_bar = {
+				frame = wealth_bar
+			}
+		}
+
+
+
+		######## ai behaviour
+
+		ai_test_interval = 3
+		ai_test_variance = 0.5
+		
+		ai_enabled = {
+			always = yes
+		}
+		
+		ai_max_weight_taken_per_test = 10
+		ai_weights = {
+			farm_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						set_temp_variable = {
+							f = THIS.ai_build_farm_desire
+						}
+						add = f
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			fishing_stand_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						food_resource < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			ranch_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						chromium < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			lumber_mill_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						aluminium < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			quarry_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						stone < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			mine_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						iron < 0
+						add = 200
+					}
+					modifier = {
+						NOT = { check_variable = { deposit_construction_cost < civs_for_deposites } }
+						factor = 0
+					}
+				}
+				ignore_lower_weights = {
+                	factor = 100
+                }
+			}
+			increase_civilian_capacity_priority_button_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						check_variable = {
+							var = ROOT.civ_buy_factor
+							value = 0.99
+							compare = less_than
+						}
+						add = 100
+					}
+					modifier = {
+						check_variable = {
+							var = ROOT.tax_balance
+							value = 0
+							compare = less_than_or_equals
+						}
+						factor = 0
+					}
+				}
+			}
+			increase_treasury_priority_button_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						check_variable = {
+							var = ROOT.tax_balance
+							value = 0
+							compare = less_than_or_equals
+						}
+						factor = 0
+					}
+				}
+			}
+			increase_production_buildings_priority_button_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						ROOT = {
+							num_of_civilian_factories_available_for_projects > 15
+						}
+						add = 80
+					}
+					modifier = {
+						set_temp_variable = { f = THIS.resource@food_resource}
+						multiply_temp_variable = {
+							var = f
+							value = -1
+						}
+						add = f
+					}
+				}
+			}
+			increase_resource_buildings_priority_button_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						ROOT = {
+						num_of_civilian_factories_available_for_projects < 15
+						}
+						add = 80
+					}
+				}
+			}
+			cancel_deposit_construction_click = {
+				ai_will_do = {
+					base = 0
+					modifier = {
+						ROOT = {
+							has_dynamic_modifier = { modifier = extreme_wealth }
+							has_idea = global_trade
+						}
+					add = 85	
+					}
+				}
+			}
+		}
+
+	}
+
+	states_fastview_entry = {
+		context_type = player_context
+		window_name = "states_fastview_window"
+		parent_window_token = construction_tab
+
+		visible = {
+			has_country_flag = view_states_fastview
+		}
+
+		triggers = {
+
+			capital_visible = {
+				THIS = {
+					is_capital = yes
+				}
+			}
+			occupied_visible = {
+				THIS = {
+					NOT = {
+						is_core_of = ROOT
+					}
+				}
+			}
+			
+		}
+	
+
+		dynamic_lists = {
+			constructions_gridbox = {
+				array = ROOT.controlled_states
+				entry_container = construction_state_list_entry
+				change_scope = yes
+			}
+		}
+
+	}
+
+
+
+	auto_construction_ui = {
+		context_type = player_context
+		window_name = "auto_construction_ui_window"
+		parent_window_token = construction_tab
+
+
+		triggers = {
+
+			toggle_core_visible = {
+				NOT = {
+					has_country_flag = core_all_construction_flag
+				}
+			}
+			toggle_all_visible = {
+				has_country_flag = core_all_construction_flag
+			}
+			
+		}
+
+		effects = {
+
+			toggle_stateview_click = {
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = view_states_fastview
+						}
+					}
+					ROOT = {
+						set_country_flag = view_states_fastview
+					}
+				}
+				else = {
+					clr_country_flag = view_states_fastview
+				}
+			}
+
+			
+			toggle_core_click = {
+				ROOT = {
+					set_country_flag = core_all_construction_flag
+				}
+			}
+			toggle_all_click = {
+				ROOT = {
+					clr_country_flag = core_all_construction_flag
+				}
+			}
+
+		}
+
+	}
+	
+}

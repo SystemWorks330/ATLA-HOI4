@@ -1,0 +1,162 @@
+
+add_namespace = state_conflict
+
+state_event = {
+	id = state_conflict.1
+	title = state_conflict.1.t
+	desc = {
+		text = state_conflict.start.d_a
+		trigger = {
+			check_variable = { FROM.FROM.attacker = ROOT }
+		}
+	}
+	desc = {
+		text = state_conflict.1.d_d
+		trigger = {
+			check_variable = { FROM.FROM.defender = ROOT }
+		}
+	}
+	
+	picture = GFX_state_conflict_generic_1
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = state_conflict.1.attacker
+
+		trigger = {
+			check_variable = { FROM.FROM.attacker = ROOT }
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+	option = {
+		name = state_conflict.1.defender
+
+		trigger = {
+			check_variable = { FROM.FROM.defender = ROOT }
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+	}
+
+}
+
+
+state_event = {
+	id = state_conflict.2
+	title = state_conflict.2.t
+	desc = state_conflict.2.d
+	
+	picture = GFX_state_conflict_generic_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = state_conflict.2.diplomatic
+
+		trigger = {
+			event_target:state_conflict_state = {
+				state_conflict_attacker_can_pressure_claim = yes
+			}
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		FROM = {
+			end_state_conflict = yes
+			attacker_won_conflict = yes
+		}
+	}
+
+	option = {
+		name = state_conflict.2.military
+
+		trigger = {
+			event_target:state_conflict_state = {
+				state_conflict_attacker_can_force_fight = yes
+			}
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		FROM = {
+			battle_calculation = yes
+			end_state_conflict = yes
+		}
+	}
+
+}
+
+
+state_event = {
+	id = state_conflict.3
+	title = state_conflict.3.t
+	desc = state_conflict.3.d
+	
+	picture = GFX_state_conflict_generic_2
+	
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			
+		}
+	}
+
+	option = {
+		name = state_conflict.3.diplomatic
+
+		trigger = {
+			event_target:state_conflict_state = {
+				state_conflict_defender_can_pressure_claim = yes
+			}
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		FROM = {
+			end_state_conflict = yes
+		}
+	}
+
+	option = {
+		name = state_conflict.3.military
+
+		trigger = {
+			event_target:state_conflict_state = {
+				state_conflict_defender_can_force_fight = yes
+			}
+		}
+		
+		ai_chance = {
+			base = 0
+		}
+		FROM = {
+			battle_calculation = yes
+			end_state_conflict = yes
+		}
+	}
+
+}
+

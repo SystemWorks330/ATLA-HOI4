@@ -1,0 +1,223 @@
+## #####  ##  ###  #####       #   ##
+#     #   #  # #  #   #        ##  #  #
+#    #   #### ###    #       # #    #
+#   #   #  # #  #   #         #   #
+##    #   #  # #  #   #         #  ####
+capital = 85
+set_country_flag = WAT_navy
+set_country_flag = WATER_special_forces
+#set_cosmetic_tag = SWT_tribes
+OOB = "SWT_12"
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_naval_oob = "SWT_12_naval_mtg"
+	else = {
+		set_naval_oob = "SWT_12_naval_legacy"
+	}
+}
+
+water_generic_starting_tech = yes
+set_technology = {
+	water_training_1 = 1
+}
+
+#set_research_slots = 2
+set_convoys = 20
+set_politics = {
+	ruling_party = water_culture
+	last_election = "10.6.15"
+	election_frequency = 96
+	elections_allowed = yes
+}
+
+set_popularities = {
+	water_culture = 80
+	pluralist_culture = 10
+	fire_culture = 0
+	earth_culture = 0
+	air_culture = 10
+}
+
+recruit_character = SWT_salota
+recruit_character = SWT_hakoda
+recruit_character = SWT_head_of_intelligence_1
+recruit_character = SWT_head_of_intelligence_2
+recruit_character = SWT_head_of_intelligence_3
+recruit_character = SWT_head_of_intelligence_4
+recruit_character = SWT_head_of_intelligence_5
+recruit_character = SWT_head_of_intelligence_6
+
+recruit_character = SWT_generic
+
+recruit_character = SWT_sokka
+recruit_character = SWT_katara
+
+set_stability = 0.4
+set_war_support = 0.4
+set_variable = {
+	var = SWT_unity_support
+	value = 15
+}
+
+set_variable = {
+	var = SWT_unity_total
+	value = 100
+}
+
+SWT_recalc_unity_icon_frames = yes
+add_ideas = {
+	remote_isolation
+	loose_confederation
+	local_markets
+	water_volunteers
+	construction_efforts_law
+	volunteer_water_nation
+	family_support_3
+	tribal_education
+}
+
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	create_equipment_variant = {
+		name = "Fisher Canoe"
+		type = watertribe_canoe_hull_1
+		#parent_version = 0
+		modules = {
+			fixed_ship_crew_slot = boarding_crew_1
+			fixed_ship_oars_slot = oars_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Expedition Cutter"
+		type = watertribe_cutter_hull_1
+		#parent_version = 0
+		modules = {
+			fixed_ship_crew_slot = ship_waterbender_crew_1
+			fixed_ship_sails_slot = sails_1
+			fixed_ship_armor_slot = medium_hull_reinforcement_1
+			fixed_ship_storage_slot = supplies_1
+		}
+	}
+	create_equipment_variant = {
+		name = "Transport Raft"
+		type = watertribe_raft_hull_1
+		#parent_version = 0
+		modules = {
+			fixed_ship_crew_slot = ship_waterbender_crew_1
+		}
+	}
+}
+set_major = yes
+bender_conscription_effect = yes
+factory_output_calc = yes
+throughput_variable_calc = yes
+permanent_spirits_and_modifiers = yes
+
+
+ ## #####  ##  ###  #####     ####   ##
+#     #   #  # #  #   #       #     #  #
+ #    #   #### ###    #       ###     #
+  #   #   #  # #  #   #          #   #
+##    #   #  # #  #   #       ###   #### 
+
+
+52.5.16 = {
+	OOB = "SWT_52"
+	set_naval_oob = "empty"
+	set_variable = {
+		var = SWT_unity_support
+		value = 38
+	}
+	set_variable = {
+		var = SWT_unity_total
+		value = 100
+	}
+	SWT_recalc_unity_icon_frames = yes
+	add_ideas = {
+		local_markets
+		water_exceptional
+		construction_efforts_law
+		limited_water_conscription
+		family_support_3
+		tribal_education
+		united_confederation
+	}
+	remove_ideas = {
+		loose_confederation
+		remote_isolation
+	}
+	set_technology = {
+		light_cavalry_1 = 1
+		medium_cavalry_1 = 1
+		heavy_cavalry_1 = 1
+	}
+}
+
+ ## #####  ##  ###  #####       #  ##    #
+#     #   #  # #  #   #        ## #  #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
+##    #   #  # #  #   #         #  ##   ##
+
+
+106.2.4 = {
+
+	OOB = "SWT_106"
+	set_variable = {
+		var = SWT_unity_support
+		value = 24
+	}
+	set_variable = {
+		var = SWT_unity_total
+		value = 100
+	}
+	SWT_recalc_unity_icon_frames = yes
+	add_ideas = {
+		local_markets
+		extensive_conscription
+		balanced_economy_law
+		water_indiscriminate
+		family_support_5
+		tribal_education
+		water_raids_100
+	}
+
+
+
+	retire_character = SWT_salota
+
+
+	SWT_katara = {
+		set_character_flag = character_born
+	}
+	set_variable = { SWT.katara_birth_event = 97 }
+
+	SWT_sokka = {
+		set_character_flag = character_born
+	}
+	set_variable = { SWT.sokka_birth_event = 96 }
+
+
+	set_technology = {
+	}
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "Man the Guns"
+			}
+		}
+		set_technology = {
+		}
+	}
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		set_technology = {
+		}
+	}
+}

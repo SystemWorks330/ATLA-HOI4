@@ -1,0 +1,1131 @@
+
+
+remove_old_modifier = {
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = fire_nation }
+		}
+		remove_dynamic_modifier = { modifier = fire_nation}
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = earth_nation }
+		}
+		remove_dynamic_modifier = { modifier = earth_nation}
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = water_nation }
+		}
+		remove_dynamic_modifier = { modifier = water_nation}
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = air_nation }
+		}
+		remove_dynamic_modifier = { modifier = air_nation}
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = pluralist_nation }
+		}
+		remove_dynamic_modifier = { modifier = pluralist_nation}
+	}
+}
+
+national_culture_recalc = {
+	every_core_state = {
+		add_to_temp_variable = { national_fire_pop = fire_pop }
+		add_to_temp_variable = { national_earth_pop = earth_pop }
+		add_to_temp_variable = { national_water_pop = water_pop }
+		add_to_temp_variable = { national_air_pop = air_pop }
+		add_to_temp_variable = { national_nonbender_pop = nonbender_pop }
+	}
+
+	add_to_array = { national_bender_pop = national_fire_pop }
+	add_to_array = { national_bender_pop = national_earth_pop }
+	add_to_array = { national_bender_pop = national_water_pop }
+	add_to_array = { national_bender_pop = national_air_pop }
+	add_to_array = { national_bender_pop = national_nonbender_pop }
+
+	find_highest_in_array = {
+		array = national_bender_pop
+	    value = highest_national_bender_pop
+	}
+
+	clear_array = national_bender_pop
+
+	if = { 
+		limit = { 
+			check_variable = { national_fire_pop = highest_national_bender_pop }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = { modifier = fire_nation }
+				}
+			}
+			remove_old_modifier = yes
+			add_dynamic_modifier = { modifier = fire_nation }
+		}
+	}
+	if = { 
+		limit = { 
+			check_variable = { national_earth_pop = highest_national_bender_pop }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = { modifier = earth_nation }
+				}
+			}
+			remove_old_modifier = yes
+			add_dynamic_modifier = { modifier = earth_nation }
+		}
+	}
+	if = { 
+		limit = { 
+			check_variable = { national_water_pop = highest_national_bender_pop }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = { modifier = water_nation }
+				}
+			}
+			remove_old_modifier = yes
+			add_dynamic_modifier = { modifier = water_nation }
+		}
+	}
+	if = { 
+		limit = { 
+			check_variable = { national_air_pop = highest_national_bender_pop }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = { modifier = air_nation }
+				}
+			}
+			remove_old_modifier = yes
+			add_dynamic_modifier = { modifier = air_nation }
+		}
+	}
+	if = { 
+		limit = { 
+			check_variable = { national_nonbender_pop = highest_national_bender_pop }
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_dynamic_modifier = { modifier = pluralist_nation }
+				}
+			}
+			remove_old_modifier = yes
+			add_dynamic_modifier = { modifier = pluralist_nation }
+		}
+	}
+}
+
+culture_pie_chart_recalc = {
+	every_controlled_state = {
+		clear_array = pie_chart
+		resize_array = {
+			array = pie_chart
+			value = 1 # 1 is value for neutrality frame, so we don't have to make a loop for it
+			size = 100 # 100 pieces, each percent is one piece
+		}
+
+		set_temp_variable = { fire_culture_pop = fire_pop }
+		round_temp_variable = fire_culture_pop
+	
+		set_temp_variable = { earth_culture_pop = earth_pop }
+		round_temp_variable = earth_culture_pop 
+		set_variable = { last_idx = fire_culture_pop }
+		add_to_temp_variable = { earth_culture_pop = last_idx }
+		for_loop_effect = {
+			start = last_idx
+			end = earth_culture_pop
+			set_variable = { pie_chart^v = 2 }
+			add_to_variable = { last_idx = 1 }
+		}
+	
+		set_temp_variable = { water_culture_pop = water_pop }
+		round_temp_variable = water_culture_pop
+		add_to_temp_variable = { water_culture_pop = last_idx }
+		for_loop_effect = {
+			start = last_idx
+			end = water_culture_pop
+			set_variable = { pie_chart^v = 3 }
+			add_to_variable = { last_idx = 1 }
+		}
+	
+		set_temp_variable = { air_culture_pop = air_pop }
+		round_temp_variable = air_culture_pop 
+		add_to_temp_variable = { air_culture_pop = last_idx }
+		for_loop_effect = {
+			start = last_idx
+			end = air_culture_pop
+			set_variable = { pie_chart^v = 4 }
+			add_to_variable = { last_idx = 1 }
+		}
+	
+		set_temp_variable = { pluralist_culture_pop = nonbender_pop }
+		round_temp_variable = pluralist_culture_pop 
+		add_to_temp_variable = { pluralist_culture_pop = last_idx }
+		for_loop_effect = {
+			start = last_idx
+			end = pluralist_culture_pop
+			set_variable = { pie_chart^v = 5 }
+		}
+
+		clear_variable = last_idx
+		add_to_variable = { FROM.pie_chart_dirty = 1 }
+	}
+}
+
+state_culture_pie_chart_recalc = {
+	clear_array = pie_chart
+	resize_array = {
+		array = pie_chart
+		value = 1 # 1 is value for neutrality frame, so we don't have to make a loop for it
+		size = 100 # 100 pieces, each percent is one piece
+	}
+
+	set_temp_variable = { fire_culture_pop = fire_pop }
+	round_temp_variable = fire_culture_pop
+	
+	set_temp_variable = { earth_culture_pop = earth_pop }
+	round_temp_variable = earth_culture_pop 
+	set_variable = { last_idx = fire_culture_pop }
+	add_to_temp_variable = { earth_culture_pop = last_idx }
+	for_loop_effect = {
+		start = last_idx
+		end = earth_culture_pop
+		set_variable = { pie_chart^v = 2 }
+		add_to_variable = { last_idx = 1 }
+	}
+	
+	set_temp_variable = { water_culture_pop = water_pop }
+	round_temp_variable = water_culture_pop
+	add_to_temp_variable = { water_culture_pop = last_idx }
+	for_loop_effect = {
+		start = last_idx
+		end = water_culture_pop
+		set_variable = { pie_chart^v = 3 }
+		add_to_variable = { last_idx = 1 }
+	}
+	
+	set_temp_variable = { air_culture_pop = air_pop }
+	round_temp_variable = air_culture_pop 
+	add_to_temp_variable = { air_culture_pop = last_idx }
+	for_loop_effect = {
+		start = last_idx
+		end = air_culture_pop
+		set_variable = { pie_chart^v = 4 }
+		add_to_variable = { last_idx = 1 }
+	}
+	
+	set_temp_variable = { pluralist_culture_pop = nonbender_pop }
+	round_temp_variable = pluralist_culture_pop 
+	add_to_temp_variable = { pluralist_culture_pop = last_idx }
+	for_loop_effect = {
+		start = last_idx
+		end = pluralist_culture_pop
+		set_variable = { pie_chart^v = 5 }
+	}
+
+	clear_variable = last_idx
+	add_to_variable = { FROM.pie_chart_dirty = 1 }
+}
+
+global_culture = {
+	set_temp_variable = { global_fire_pop = 0 }
+	set_temp_variable = { global_earth_pop = 0 }
+	set_temp_variable = { global_water_pop = 0 }
+	set_temp_variable = { global_air_pop = 0 }
+	set_temp_variable = { global_nonbender_pop = 0 }
+	set_temp_variable = { global_total_pop = 0 }
+
+	every_state = {
+
+		set_temp_variable = { temp_fire_pop = fire_pop }
+		set_temp_variable = { temp_earth_pop = earth_pop }
+		set_temp_variable = { temp_water_pop = water_pop }
+		set_temp_variable = { temp_air_pop = air_pop }
+		set_temp_variable = { temp_nonbender_pop = nonbender_pop }
+
+		multiply_temp_variable = { temp_fire_pop = state_population_k }
+		multiply_temp_variable = { temp_earth_pop = state_population_k }
+		multiply_temp_variable = { temp_water_pop = state_population_k }
+		multiply_temp_variable = { temp_air_pop = state_population_k }
+		multiply_temp_variable = { temp_nonbender_pop = state_population_k }
+
+		add_to_temp_variable = { global_fire_pop = temp_fire_pop }
+		add_to_temp_variable = { global_earth_pop = temp_earth_pop }
+		add_to_temp_variable = { global_water_pop = temp_water_pop }
+		add_to_temp_variable = { global_air_pop = temp_air_pop }
+		add_to_temp_variable = { global_nonbender_pop = temp_nonbender_pop }
+
+		add_to_temp_variable = { global_total_pop = state_population_k }
+	}
+
+	divide_temp_variable = { global_fire_pop = global_total_pop }
+	divide_temp_variable = { global_earth_pop = global_total_pop }
+	divide_temp_variable = { global_water_pop = global_total_pop }
+	divide_temp_variable = { global_air_pop = global_total_pop }
+	divide_temp_variable = { global_nonbender_pop = global_total_pop }
+
+	set_variable = { global.fire_pop = global_fire_pop }
+	set_variable = { global.earth_pop = global_earth_pop }
+	set_variable = { global.water_pop = global_water_pop }
+	set_variable = { global.air_pop = global_air_pop }
+	set_variable = { global.nonbender_pop = global_nonbender_pop }
+}
+
+culture_growth_calculation = {
+	every_controlled_state = {
+
+		set_variable = { fire_pop_new = fire_pop }
+		set_variable = { earth_pop_new = earth_pop }
+		set_variable = { water_pop_new = water_pop }
+		set_variable = { air_pop_new = air_pop }
+		set_variable = { nonbender_pop_new = nonbender_pop }
+	
+		set_temp_variable = { fire_reduction = THIS:modifier@monthly_fire_culture_in_state }
+		set_temp_variable = { earth_reduction = THIS:modifier@monthly_earth_culture_in_state }
+		set_temp_variable = { water_reduction = THIS:modifier@monthly_water_culture_in_state }
+		set_temp_variable = { air_reduction = THIS:modifier@monthly_air_culture_in_state }
+		set_temp_variable = { nonbender_reduction = THIS:modifier@monthly_pluralist_culture_in_state }
+	
+		divide_temp_variable = { fire_reduction = 4 }
+		divide_temp_variable = { earth_reduction = 4 }
+		divide_temp_variable = { water_reduction = 4 }
+		divide_temp_variable = { air_reduction = 4 }
+		divide_temp_variable = { nonbender_reduction = 4 }
+	
+		set_temp_variable = { fire_pop_exp = THIS:modifier@monthly_fire_culture_in_state }
+		subtract_from_temp_variable = { fire_pop_exp = earth_reduction }
+		subtract_from_temp_variable = { fire_pop_exp = water_reduction }
+		subtract_from_temp_variable = { fire_pop_exp = air_reduction }
+		subtract_from_temp_variable = { fire_pop_exp = nonbender_reduction }
+	
+		set_temp_variable = { earth_pop_exp = THIS:modifier@monthly_earth_culture_in_state }
+		subtract_from_temp_variable = { earth_pop_exp = fire_reduction }
+		subtract_from_temp_variable = { earth_pop_exp = water_reduction }
+		subtract_from_temp_variable = { earth_pop_exp = air_reduction }
+		subtract_from_temp_variable = { earth_pop_exp = nonbender_reduction }
+	
+		set_temp_variable = { water_pop_exp = THIS:modifier@monthly_water_culture_in_state }
+		subtract_from_temp_variable = { water_pop_exp = earth_reduction }
+		subtract_from_temp_variable = { water_pop_exp = fire_reduction }
+		subtract_from_temp_variable = { water_pop_exp = air_reduction }
+		subtract_from_temp_variable = { water_pop_exp = nonbender_reduction }
+	
+		set_temp_variable = { air_pop_exp = THIS:modifier@monthly_air_culture_in_state }
+		subtract_from_temp_variable = { air_pop_exp = earth_reduction }
+		subtract_from_temp_variable = { air_pop_exp = water_reduction }
+		subtract_from_temp_variable = { air_pop_exp = fire_reduction }
+		subtract_from_temp_variable = { air_pop_exp = nonbender_reduction }
+	
+		set_temp_variable = { nonbender_pop_exp = THIS:modifier@monthly_pluralist_culture_in_state }
+		subtract_from_temp_variable = { nonbender_pop_exp = earth_reduction }
+		subtract_from_temp_variable = { nonbender_pop_exp = water_reduction }
+		subtract_from_temp_variable = { nonbender_pop_exp = air_reduction }
+		subtract_from_temp_variable = { nonbender_pop_exp = fire_reduction }
+	
+		add_to_variable = { fire_pop_new = fire_pop_exp }
+		add_to_variable = { earth_pop_new = earth_pop_exp }
+		add_to_variable = { water_pop_new = water_pop_exp }
+		add_to_variable = { air_pop_new = air_pop_exp }
+		add_to_variable = { nonbender_pop_new = nonbender_pop_exp }
+	
+		add_to_array = {
+			array = culture_array
+			value = var:fire_pop_new
+		}
+		add_to_array = {
+			array = culture_array
+			value = var:earth_pop_new
+		}
+		add_to_array = {
+			array = culture_array
+			value = var:water_pop_new
+		}
+		add_to_array = {
+			array = culture_array
+			value = var:air_pop_new
+		}
+		add_to_array = {
+			array = culture_array
+			value = var:nonbender_pop_new
+		}
+	
+		if = {
+			limit = { check_variable = { fire_pop_new < 0 } }
+			find_highest_in_array = { 
+				array = culture_array
+				index = highest
+			}
+			add_to_variable = { culture_array^highest = fire_pop_new }
+			subtract_from_variable = { culture_array^0 = fire_pop_new }
+		}
+		if = {
+			limit = { check_variable = { earth_pop_new < 0 } }
+			find_highest_in_array = { 
+				array = culture_array 
+				index = highest
+			}
+			add_to_variable = { culture_array^highest = earth_pop_new }
+			subtract_from_variable = { culture_array^1 = earth_pop_new }
+		}
+		if = {
+			limit = { check_variable = { water_pop_new < 0 } }
+			find_highest_in_array = { 
+				array = culture_array 
+				index = highest
+			}
+			add_to_variable = { culture_array^highest = water_pop_new }
+			subtract_from_variable = { culture_array^2 = water_pop_new }
+		}
+		if = {
+			limit = { check_variable = { air_pop_new < 0 } }
+			find_highest_in_array = { 
+				array = culture_array 
+				index = highest
+			}
+			add_to_variable = { culture_array^highest = air_pop_new }
+			subtract_from_variable = { culture_array^3 = air_pop_new }
+		}
+		if = {
+			limit = { check_variable = { nonbender_pop_new < 0 } }
+			find_highest_in_array = { 
+				array = culture_array 
+				index = highest
+			}
+			add_to_variable = { culture_array^highest = nonbender_pop_new }
+			subtract_from_variable = { culture_array^4 = nonbender_pop_new }
+		}
+	
+		set_variable = { fire_pop_new = culture_array^0 }
+		set_variable = { earth_pop_new = culture_array^1 }
+		set_variable = { water_pop_new = culture_array^2 }
+		set_variable = { air_pop_new = culture_array^3 }
+		set_variable = { nonbender_pop_new = culture_array^4 }
+
+		clear_array = culture_array
+	
+		subtract_from_variable = { fire_pop_new = fire_pop }
+		subtract_from_variable = { earth_pop_new = earth_pop }
+		subtract_from_variable = { water_pop_new = water_pop }
+		subtract_from_variable = { air_pop_new = air_pop }
+		subtract_from_variable = { nonbender_pop_new = nonbender_pop }
+
+	}
+	
+}
+
+culture_growth_calculation_state = {
+
+	set_variable = { fire_pop_new = fire_pop }
+	set_variable = { earth_pop_new = earth_pop }
+	set_variable = { water_pop_new = water_pop }
+	set_variable = { air_pop_new = air_pop }
+	set_variable = { nonbender_pop_new = nonbender_pop }
+
+	set_temp_variable = { fire_reduction = THIS:modifier@monthly_fire_culture_in_state }
+	set_temp_variable = { earth_reduction = THIS:modifier@monthly_earth_culture_in_state }
+	set_temp_variable = { water_reduction = THIS:modifier@monthly_water_culture_in_state }
+	set_temp_variable = { air_reduction = THIS:modifier@monthly_air_culture_in_state }
+	set_temp_variable = { nonbender_reduction = THIS:modifier@monthly_pluralist_culture_in_state }
+
+	divide_temp_variable = { fire_reduction = 4 }
+	divide_temp_variable = { earth_reduction = 4 }
+	divide_temp_variable = { water_reduction = 4 }
+	divide_temp_variable = { air_reduction = 4 }
+	divide_temp_variable = { nonbender_reduction = 4 }
+
+	set_temp_variable = { fire_pop_exp = THIS:modifier@monthly_fire_culture_in_state }
+	subtract_from_temp_variable = { fire_pop_exp = earth_reduction }
+	subtract_from_temp_variable = { fire_pop_exp = water_reduction }
+	subtract_from_temp_variable = { fire_pop_exp = air_reduction }
+	subtract_from_temp_variable = { fire_pop_exp = nonbender_reduction }
+
+	set_temp_variable = { earth_pop_exp = THIS:modifier@monthly_earth_culture_in_state }
+	subtract_from_temp_variable = { earth_pop_exp = fire_reduction }
+	subtract_from_temp_variable = { earth_pop_exp = water_reduction }
+	subtract_from_temp_variable = { earth_pop_exp = air_reduction }
+	subtract_from_temp_variable = { earth_pop_exp = nonbender_reduction }
+
+	set_temp_variable = { water_pop_exp = THIS:modifier@monthly_water_culture_in_state }
+	subtract_from_temp_variable = { water_pop_exp = earth_reduction }
+	subtract_from_temp_variable = { water_pop_exp = fire_reduction }
+	subtract_from_temp_variable = { water_pop_exp = air_reduction }
+	subtract_from_temp_variable = { water_pop_exp = nonbender_reduction }
+
+	set_temp_variable = { air_pop_exp = THIS:modifier@monthly_air_culture_in_state }
+	subtract_from_temp_variable = { air_pop_exp = earth_reduction }
+	subtract_from_temp_variable = { air_pop_exp = water_reduction }
+	subtract_from_temp_variable = { air_pop_exp = fire_reduction }
+	subtract_from_temp_variable = { air_pop_exp = nonbender_reduction }
+
+	set_temp_variable = { nonbender_pop_exp = THIS:modifier@monthly_pluralist_culture_in_state }
+	subtract_from_temp_variable = { nonbender_pop_exp = earth_reduction }
+	subtract_from_temp_variable = { nonbender_pop_exp = water_reduction }
+	subtract_from_temp_variable = { nonbender_pop_exp = air_reduction }
+	subtract_from_temp_variable = { nonbender_pop_exp = fire_reduction }
+
+	add_to_variable = { fire_pop_new = fire_pop_exp }
+	add_to_variable = { earth_pop_new = earth_pop_exp }
+	add_to_variable = { water_pop_new = water_pop_exp }
+	add_to_variable = { air_pop_new = air_pop_exp }
+	add_to_variable = { nonbender_pop_new = nonbender_pop_exp }
+
+	add_to_array = {
+		array = culture_array
+		value = var:fire_pop_new
+	}
+	add_to_array = {
+		array = culture_array
+		value = var:earth_pop_new
+	}
+	add_to_array = {
+		array = culture_array
+		value = var:water_pop_new
+	}
+	add_to_array = {
+		array = culture_array
+		value = var:air_pop_new
+	}
+	add_to_array = {
+		array = culture_array
+		value = var:nonbender_pop_new
+	}
+
+	if = {
+		limit = { check_variable = { fire_pop_new < 0 } }
+		find_highest_in_array = { 
+			array = culture_array
+			index = highest
+		}
+		add_to_variable = { culture_array^highest = fire_pop_new }
+		subtract_from_variable = { culture_array^0 = fire_pop_new }
+	}
+	if = {
+		limit = { check_variable = { earth_pop_new < 0 } }
+		find_highest_in_array = { 
+			array = culture_array 
+			index = highest
+		}
+		add_to_variable = { culture_array^highest = earth_pop_new }
+		subtract_from_variable = { culture_array^1 = earth_pop_new }
+	}
+	if = {
+		limit = { check_variable = { water_pop_new < 0 } }
+		find_highest_in_array = { 
+			array = culture_array 
+			index = highest
+		}
+		add_to_variable = { culture_array^highest = water_pop_new }
+		subtract_from_variable = { culture_array^2 = water_pop_new }
+	}
+	if = {
+		limit = { check_variable = { air_pop_new < 0 } }
+		find_highest_in_array = { 
+			array = culture_array 
+			index = highest
+		}
+		add_to_variable = { culture_array^highest = air_pop_new }
+		subtract_from_variable = { culture_array^3 = air_pop_new }
+	}
+	if = {
+		limit = { check_variable = { nonbender_pop_new < 0 } }
+		find_highest_in_array = { 
+			array = culture_array 
+			index = highest
+		}
+		add_to_variable = { culture_array^highest = nonbender_pop_new }
+		subtract_from_variable = { culture_array^4 = nonbender_pop_new }
+	}
+
+	set_variable = { fire_pop_new = culture_array^0 }
+	set_variable = { earth_pop_new = culture_array^1 }
+	set_variable = { water_pop_new = culture_array^2 }
+	set_variable = { air_pop_new = culture_array^3 }
+	set_variable = { nonbender_pop_new = culture_array^4 }
+
+	clear_array = culture_array
+
+	subtract_from_variable = { fire_pop_new = fire_pop }
+	subtract_from_variable = { earth_pop_new = earth_pop }
+	subtract_from_variable = { water_pop_new = water_pop }
+	subtract_from_variable = { air_pop_new = air_pop }
+	subtract_from_variable = { nonbender_pop_new = nonbender_pop }
+	
+}
+
+culture_one_time_change_state = {
+
+	set_variable = { fire_pop_new = fire_pop }
+	set_variable = { earth_pop_new = earth_pop }
+	set_variable = { water_pop_new = water_pop }
+	set_variable = { air_pop_new = air_pop }
+	set_variable = { nonbender_pop_new = nonbender_pop }
+
+	set_temp_variable = { fire_reduction = one_time_fire_add }    #### temp vars define change in state
+	set_temp_variable = { earth_reduction = one_time_earth_add }
+	set_temp_variable = { water_reduction = one_time_water_add }
+	set_temp_variable = { air_reduction = one_time_air_add }
+	set_temp_variable = { nonbender_reduction = one_time_nonbender_add }
+
+	divide_temp_variable = { fire_reduction = 4 }
+	divide_temp_variable = { earth_reduction = 4 }
+	divide_temp_variable = { water_reduction = 4 }
+	divide_temp_variable = { air_reduction = 4 }
+	divide_temp_variable = { nonbender_reduction = 4 }
+
+	set_temp_variable = { fire_pop_exp = one_time_fire_add }
+	subtract_from_temp_variable = { fire_pop_exp = earth_reduction }
+	subtract_from_temp_variable = { fire_pop_exp = water_reduction }
+	subtract_from_temp_variable = { fire_pop_exp = air_reduction }
+	subtract_from_temp_variable = { fire_pop_exp = nonbender_reduction }
+
+	set_temp_variable = { earth_pop_exp = one_time_earth_add }
+	subtract_from_temp_variable = { earth_pop_exp = fire_reduction }
+	subtract_from_temp_variable = { earth_pop_exp = water_reduction }
+	subtract_from_temp_variable = { earth_pop_exp = air_reduction }
+	subtract_from_temp_variable = { earth_pop_exp = nonbender_reduction }
+
+	set_temp_variable = { water_pop_exp = one_time_water_add }
+	subtract_from_temp_variable = { water_pop_exp = earth_reduction }
+	subtract_from_temp_variable = { water_pop_exp = fire_reduction }
+	subtract_from_temp_variable = { water_pop_exp = air_reduction }
+	subtract_from_temp_variable = { water_pop_exp = nonbender_reduction }
+
+	set_temp_variable = { air_pop_exp = one_time_air_add }
+	subtract_from_temp_variable = { air_pop_exp = earth_reduction }
+	subtract_from_temp_variable = { air_pop_exp = water_reduction }
+	subtract_from_temp_variable = { air_pop_exp = fire_reduction }
+	subtract_from_temp_variable = { air_pop_exp = nonbender_reduction }
+
+	set_temp_variable = { nonbender_pop_exp = one_time_nonbender_add }
+	subtract_from_temp_variable = { nonbender_pop_exp = earth_reduction }
+	subtract_from_temp_variable = { nonbender_pop_exp = water_reduction }
+	subtract_from_temp_variable = { nonbender_pop_exp = air_reduction }
+	subtract_from_temp_variable = { nonbender_pop_exp = fire_reduction }
+
+	add_to_variable = { fire_pop_new = fire_pop_exp }
+	add_to_variable = { earth_pop_new = earth_pop_exp }
+	add_to_variable = { water_pop_new = water_pop_exp }
+	add_to_variable = { air_pop_new = air_pop_exp }
+	add_to_variable = { nonbender_pop_new = nonbender_pop_exp }
+
+	add_to_array = {
+		array = culture_array
+		value = var:fire_pop_new
+	}
+	add_to_array = {
+		array = culture_array
+		value = var:earth_pop_new
+	}
+	add_to_array = {
+		array = culture_array
+		value = var:water_pop_new
+	}
+	add_to_array = {
+		array = culture_array
+		value = var:air_pop_new
+	}
+	add_to_array = {
+		array = culture_array
+		value = var:nonbender_pop_new
+	}
+
+	if = {
+		limit = { check_variable = { fire_pop_new < 0 } }
+		find_highest_in_array = { 
+			array = culture_array
+			index = highest
+		}
+		add_to_variable = { culture_array^highest = fire_pop_new }
+		subtract_from_variable = { culture_array^0 = fire_pop_new }
+	}
+	if = {
+		limit = { check_variable = { earth_pop_new < 0 } }
+		find_highest_in_array = { 
+			array = culture_array 
+			index = highest
+		}
+		add_to_variable = { culture_array^highest = earth_pop_new }
+		subtract_from_variable = { culture_array^1 = earth_pop_new }
+	}
+	if = {
+		limit = { check_variable = { water_pop_new < 0 } }
+		find_highest_in_array = { 
+			array = culture_array 
+			index = highest
+		}
+		add_to_variable = { culture_array^highest = water_pop_new }
+		subtract_from_variable = { culture_array^2 = water_pop_new }
+	}
+	if = {
+		limit = { check_variable = { air_pop_new < 0 } }
+		find_highest_in_array = { 
+			array = culture_array 
+			index = highest
+		}
+		add_to_variable = { culture_array^highest = air_pop_new }
+		subtract_from_variable = { culture_array^3 = air_pop_new }
+	}
+	if = {
+		limit = { check_variable = { nonbender_pop_new < 0 } }
+		find_highest_in_array = { 
+			array = culture_array 
+			index = highest
+		}
+		add_to_variable = { culture_array^highest = nonbender_pop_new }
+		subtract_from_variable = { culture_array^4 = nonbender_pop_new }
+	}
+
+	set_variable = { fire_pop_new = culture_array^0 }
+	set_variable = { earth_pop_new = culture_array^1 }
+	set_variable = { water_pop_new = culture_array^2 }
+	set_variable = { air_pop_new = culture_array^3 }
+	set_variable = { nonbender_pop_new = culture_array^4 }
+
+	clear_array = culture_array
+
+	subtract_from_variable = { fire_pop_new = fire_pop }
+	subtract_from_variable = { earth_pop_new = earth_pop }
+	subtract_from_variable = { water_pop_new = water_pop }
+	subtract_from_variable = { air_pop_new = air_pop }
+	subtract_from_variable = { nonbender_pop_new = nonbender_pop }
+	
+}
+
+culture_value_recalc = {
+	every_controlled_state = {
+
+		add_to_variable = { fire_pop = fire_pop_new }
+		add_to_variable = { earth_pop = earth_pop_new }
+		add_to_variable = { water_pop = water_pop_new }
+		add_to_variable = { air_pop = air_pop_new }
+		add_to_variable = { nonbender_pop = nonbender_pop_new }
+
+	}
+}
+
+culture_value_recalc_state = {
+	add_to_variable = { fire_pop = fire_pop_new }
+	add_to_variable = { earth_pop = earth_pop_new }
+	add_to_variable = { water_pop = water_pop_new }
+	add_to_variable = { air_pop = air_pop_new }
+	add_to_variable = { nonbender_pop = nonbender_pop_new }
+}
+
+culture_setup_calculation = {
+	every_owned_state = {
+
+		limit = {
+			NOT = {
+				OR = {
+					check_variable = { fire_pop > 0 }
+					check_variable = { water_pop > 0 }
+					check_variable = { earth_pop > 0 }
+					check_variable = { air_pop > 0 }
+					check_variable = { nonbender_pop > 0 }
+				}
+			}
+		}
+
+		set_variable = { fire_pop = PREV.party_popularity_100@fire_culture }
+		set_variable = { earth_pop = PREV.party_popularity_100@earth_culture }
+		set_variable = { water_pop = PREV.party_popularity_100@water_culture }
+		set_variable = { air_pop = PREV.party_popularity_100@air_culture }
+		set_variable = { nonbender_pop = PREV.party_popularity_100@pluralist_culture }
+		
+		add_to_variable = { fire_pop = CONTROLLER.party_popularity_100@fire_culture }
+		add_to_variable = { earth_pop = CONTROLLER.party_popularity_100@earth_culture }
+		add_to_variable = { water_pop = CONTROLLER.party_popularity_100@water_culture }
+		add_to_variable = { air_pop = CONTROLLER.party_popularity_100@air_culture }
+		add_to_variable = { nonbender_pop = CONTROLLER.party_popularity_100@pluralist_culture }
+
+		divide_variable = { fire_pop = 2 }
+		divide_variable = { earth_pop = 2 }
+		divide_variable = { water_pop = 2 }
+		divide_variable = { air_pop = 2 }
+		divide_variable = { nonbender_pop = 2 }
+
+
+		randomize_temp_variable = {
+			var = cultural_offset_1
+			distribution = uniform
+			min = 0.5
+			max = 1.5
+		}
+		set_temp_variable_to_random = culture_1
+		add_to_variable = { fire_pop = culture_1 }
+		multiply_variable = { fire_pop = cultural_offset_1 }
+		
+		randomize_temp_variable = {
+			var = cultural_offset_2
+			distribution = uniform
+			min = 0.5
+			max = 1.5
+		}
+		set_temp_variable_to_random = culture_2
+		add_to_variable = { earth_pop = culture_2 }
+		multiply_variable = { earth_pop = cultural_offset_2 }
+		
+		randomize_temp_variable = {
+			var = cultural_offset_3
+			distribution = uniform
+			min = 0.5
+			max = 1.5
+		}
+		set_temp_variable_to_random = culture_3
+		add_to_variable = { water_pop = culture_3 }
+		multiply_variable = { water_pop = cultural_offset_3 }
+		
+		randomize_temp_variable = {
+			var = cultural_offset_4
+			distribution = uniform
+			min = 0.5
+			max = 1.5
+		}
+		set_temp_variable_to_random = culture_4
+		add_to_variable = { air_pop = culture_4 }
+		multiply_variable = { air_pop = cultural_offset_4 }
+
+		randomize_temp_variable = {
+			var = cultural_offset_5
+			distribution = uniform
+			min = 0.5
+			max = 1.5
+		}
+		set_temp_variable_to_random = culture_5
+		add_to_variable = { nonbender_pop = culture_5 }
+		multiply_variable = { nonbender_pop = cultural_offset_5 }
+		
+
+		
+		set_temp_variable = { total_pop = nonbender_pop }
+		add_to_temp_variable = { total_pop = fire_pop }
+		add_to_temp_variable = { total_pop = earth_pop }
+		add_to_temp_variable = { total_pop = water_pop }
+		add_to_temp_variable = { total_pop = air_pop }
+
+		multiply_temp_variable = { total_pop = 0.01 }
+
+		divide_variable = { fire_pop = total_pop }
+		divide_variable = { earth_pop = total_pop }
+		divide_variable = { water_pop = total_pop }
+		divide_variable = { air_pop = total_pop }
+		divide_variable = { nonbender_pop = total_pop }
+
+	}
+	
+}
+
+add_settlers_effect = {
+	if = {
+		limit = {
+			AND = {
+				check_variable = { fire_pop > 50 }
+				THIS.CONTROLLER = {
+					NOT = {
+						has_government = fire_culture
+					}
+				}
+				NOT = {
+					has_dynamic_modifier = { modifier = firenation_settlers }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = firenation_settlers }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { earth_pop > 50 }
+				THIS.CONTROLLER = {
+					NOT = {
+						has_government = earth_culture
+					}
+				}
+				NOT = {
+					has_dynamic_modifier = { modifier = earthkingdom_settlers }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = earthkingdom_settlers }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { water_pop > 50 }
+				THIS.CONTROLLER = {
+					NOT = {
+						has_government = water_culture
+					}
+				}
+				NOT = {
+					has_dynamic_modifier = { modifier = watertribe_settlers }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = watertribe_settlers }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { air_pop > 50 }
+				THIS.CONTROLLER = {
+					NOT = {
+						has_government = air_culture
+					}
+				}
+				NOT = {
+					has_dynamic_modifier = { modifier = airnomad_settlers }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = airnomad_settlers }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { nonbender_pop > 50 }
+				THIS.CONTROLLER = {
+					NOT = {
+						has_government = pluralist_culture
+					}
+				}
+				NOT = {
+					has_dynamic_modifier = { modifier = pluralist_settlers }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = pluralist_settlers }
+	}
+}
+
+add_occupation_culture_buff = {
+	if = {
+		limit = {
+			AND = {
+				check_variable = { fire_pop > 50 }
+				THIS.CONTROLLER = {
+					has_government = fire_culture
+				}
+				NOT = {
+					is_core_of = THIS.CONTROLLER
+					has_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+	}
+	if = {
+		limit = {
+			AND = {
+				THIS.CONTROLLER = {
+					has_government = fire_culture
+				}
+				OR = {
+					is_core_of = THIS.CONTROLLER
+					check_variable = { fire_pop < 50 }
+				}
+				has_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+			}
+		}
+		remove_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+	}
+	
+	if = {
+		limit = {
+			AND = {
+				check_variable = { earth_pop > 50 }
+				THIS.CONTROLLER = {
+					has_government = earth_culture
+				}
+				NOT = {
+					is_core_of = THIS.CONTROLLER
+					has_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+	}
+	if = {
+		limit = {
+			AND = {
+				THIS.CONTROLLER = {
+					has_government = earth_culture
+				}
+				OR = {
+					is_core_of = THIS.CONTROLLER
+					check_variable = { earth_pop < 50 }
+				}
+				has_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+			}
+		}
+		remove_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { water_pop > 50 }
+				THIS.CONTROLLER = {
+					has_government = water_culture
+				}
+				NOT = {
+					is_core_of = THIS.CONTROLLER
+					has_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+	}
+	if = {
+		limit = {
+			AND = {
+				THIS.CONTROLLER = {
+					has_government = water_culture
+				}
+				OR = {
+					is_core_of = THIS.CONTROLLER
+					check_variable = { water_pop < 50 }
+				}
+				has_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+			}
+		}
+		remove_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { air_pop > 50 }
+				THIS.CONTROLLER = {
+					has_government = air_culture
+				}
+				NOT = {
+					is_core_of = THIS.CONTROLLER
+					has_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+	}
+	if = {
+		limit = {
+			AND = {
+				THIS.CONTROLLER = {
+					has_government = air_culture
+				}
+				OR = {
+					is_core_of = THIS.CONTROLLER
+					check_variable = { air_pop < 50 }
+				}
+				has_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+			}
+		}
+		remove_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+	}
+	if = {
+		limit = {
+			AND = {
+				check_variable = { nonbender_pop > 50 }
+				THIS.CONTROLLER = {
+					has_government = pluralist_culture
+				}
+				NOT = {
+					is_core_of = THIS.CONTROLLER
+					has_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+				}
+			}
+		}
+		add_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+	}
+	if = {
+		limit = {
+			AND = {
+				THIS.CONTROLLER = {
+					has_government = pluralist_culture
+				}
+				OR = {
+					is_core_of = THIS.CONTROLLER
+					check_variable = { nonbender_pop < 50 }
+				}
+				has_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+			}
+		}
+		remove_dynamic_modifier = { modifier = occupied_has_dominant_culture }
+	}
+}
+
+add_boosting_effect = {
+	if = {
+		limit = {
+			controller = { has_government = fire_culture }
+		}
+		add_dynamic_modifier = { modifier = boost_fire }
+	}
+	if = {
+		limit = {
+			controller = { has_government = water_culture }
+		}
+		add_dynamic_modifier = { modifier = boost_water }
+	}
+	if = {
+		limit = {
+			controller = { has_government = earth_culture }
+		}
+		add_dynamic_modifier = { modifier = boost_earth }
+	}
+	if = {
+		limit = {
+			controller = { has_government = air_culture }
+		}
+		add_dynamic_modifier = { modifier = boost_air }
+	}
+	if = {
+		limit = {
+			controller = { has_government = pluralist_culture }
+		}
+		add_dynamic_modifier = { modifier = boost_pluralist }
+	}
+}
+
+remove_boosting_effect = {
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = boost_fire }
+		}
+		remove_dynamic_modifier = { modifier = boost_fire }
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = boost_water }
+		}
+		remove_dynamic_modifier = { modifier = boost_water }
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = boost_earth }
+		}
+		remove_dynamic_modifier = { modifier = boost_earth }
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = boost_air }
+		}
+		remove_dynamic_modifier = { modifier = boost_air }
+	}
+	if = {
+		limit = {
+			has_dynamic_modifier = { modifier = boost_pluralist }
+		}
+		remove_dynamic_modifier = { modifier = boost_pluralist }
+	}
+}

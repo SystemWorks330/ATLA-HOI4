@@ -1,0 +1,321 @@
+characters={
+	GDD_lu={
+		name="Lu"
+		portraits={
+			civilian={
+				large="gfx/leaders/GDD/Portrait_Great-Divide_Lu.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_Lu_DESC"
+			ideology=earth_tribe
+			expire="130.1.1.1"
+			id=-1
+		}
+	}
+	GDD_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/GDD/Portrait_Great_Divide_fire_tribes.dds"
+			}
+		}
+		country_leader={
+			
+			ideology=theocracy
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=fire_tribes
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=martial_chiefdom
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			
+			ideology=active_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+	
+	 ###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+
+
+	GDD_head_of_intelligence_1 = { 
+		name = gdd_head_of_intelligence_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_1"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gdd_head_of_intelligence_1
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { spymaster }
+		}		
+	}
+	GDD_head_of_intelligence_2 = { 
+		name = gdd_head_of_intelligence_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_2"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gdd_head_of_intelligence_2
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { constable }
+		}		
+	}
+	GDD_head_of_intelligence_3 = { 
+		name = gdd_head_of_intelligence_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_3"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gdd_head_of_intelligence_3
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { head_censor }
+		}		
+	}
+	GDD_head_of_intelligence_4 = { 
+		name = gdd_head_of_intelligence_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_4"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gdd_head_of_intelligence_4
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_torturer }
+		}		
+	}
+	GDD_head_of_intelligence_5 = { 
+		name = gdd_head_of_intelligence_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_5"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gdd_head_of_intelligence_5
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { master_assassin }
+		}		
+	}
+	GDD_head_of_intelligence_6 = { 
+		name = gdd_head_of_intelligence_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_6"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = gdd_head_of_intelligence_6
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { astrologist }
+		}		
+	}
+
+	GDD_quartermaster_1 = { 
+		name = gdd_quartermaster_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_1"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gdd_quartermaster_1
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { logistician_2 }
+		}		
+	}
+	GDD_quartermaster_2 = { 
+		name = gdd_quartermaster_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_2"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gdd_quartermaster_2
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { forager_2 }
+		}		
+	}
+	GDD_quartermaster_3 = { 
+		name = gdd_quartermaster_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_3"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gdd_quartermaster_3
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { jungle_specialist_2 }
+		}		
+	}
+	GDD_quartermaster_4 = { 
+		name = gdd_quartermaster_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_4"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gdd_quartermaster_4
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { amphibious_specialist_2 }
+		}		
+	}
+	GDD_quartermaster_5 = { 
+		name = gdd_quartermaster_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_5"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gdd_quartermaster_5
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { winter_specialist_2 }
+		}		
+	}
+	GDD_quartermaster_6 = { 
+		name = gdd_quartermaster_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_6"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = gdd_quartermaster_6
+			cost = 200
+			allowed = {
+				original_tag = GDD
+			}
+			available = {
+				
+			}
+			
+			
+			traits = { garrison_master_1 }
+		}		
+	}
+}

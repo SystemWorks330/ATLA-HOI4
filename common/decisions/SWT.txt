@@ -1,0 +1,36 @@
+
+SWT_tribe_union = {
+
+	SWT_capital_development = {
+
+		icon = buildup
+
+		#on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 85
+			}
+		}
+
+		visible = {
+			tag = SWT
+		}
+		
+		available = {
+			hidden_trigger = {
+				has_start_date < 13.1.1
+			}
+		}
+		
+		#fire_only_once = yes		
+
+		#cost = 100
+
+		#days_remove = 120
+
+		complete_effect = {
+			SWT_recalc_unity_icon_frames = yes
+		}
+	}
+
+}

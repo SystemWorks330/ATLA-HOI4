@@ -1,0 +1,1092 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_show_decisions"
+		texturefile = "gfx/interface/decisionview/show_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_hide_decisions"
+		texturefile = "gfx/interface/decisionview/hide_decisions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_show_country_decisions"
+		texturefile = "gfx/interface/decisionview/show_country_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_hide_country_decisions"
+		texturefile = "gfx/interface/decisionview/hide_country_decisions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_show_mission_decisions"
+		texturefile = "gfx/interface/decisionview/show_mission_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_hide_mission_decisions"
+		texturefile = "gfx/interface/decisionview/hide_mission_decisions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_show_emergency_decisions"
+		texturefile = "gfx/interface/decisionview/show_emergency_decisions.dds"
+	}
+	spriteType = {
+		name = "GFX_hide_emergency_decisions"
+		texturefile = "gfx/interface/decisionview/hide_emergency_decisions.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_water_unity_ui"
+		texturefile = "gfx/interface/decisions/decision_category_water_unity_ui.dds"
+		noOfFrames = 16
+	}
+	spriteType = {
+		name = "GFX_water_unity_bg"
+		texturefile = "gfx/interface/decisions/water_unity_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_dai_li_bg"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_headquaters_large"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_headquaters.dds"
+	}
+	spriteType = {
+		name = "GFX_connection_1"
+		texturefile = "gfx/interface/decisions/dai_li/head_connection_1.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_training_rooms"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_training_rooms.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_prisons"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_prisons.dds"
+	}
+	spriteType = {
+		name = "GFX_connection_2"
+		texturefile = "gfx/interface/decisions/dai_li/head_connection_2.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_jo_dee"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_jo_dee.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_surveillance"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_surveillance.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_brainwashing_room"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_brainwashing_room.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_politics_department"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_politics_department.dds"
+	}
+	spriteType = {
+		name = "GFX_dai_li_grand_secretary_office"
+		texturefile = "gfx/interface/decisions/dai_li/dai_li_grand_secretary_office.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_category_chin_support_ui"
+		texturefile = "gfx/interface/decisions/decision_category_chin_support_ui.dds"
+		noOfFrames = 10
+	}
+	spriteType = {
+		name = "GFX_chin_support_bg"
+		texturefile = "gfx/interface/decisions/chin_support_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_earthkingdom_bg"
+		texturefile = "gfx/interface/decisions/earthkingdom_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_peasant_bg"
+		texturefile = "gfx/interface/decisions/peasant_bg.dds"
+	}
+
+	### peasant revolt
+	spriteType = {
+		name = "GFX_peasant_1"
+		texturefile = "gfx/interface/decisions/peasant/peasant_1.dds"
+	}
+	spriteType = {
+		name = "GFX_peasant_2"
+		texturefile = "gfx/interface/decisions/peasant/peasant_2.dds"
+	}
+	spriteType = {
+		name = "GFX_peasant_3"
+		texturefile = "gfx/interface/decisions/peasant/peasant_3.dds"
+	}
+	spriteType = {
+		name = "GFX_peasant_4"
+		texturefile = "gfx/interface/decisions/peasant/peasant_4.dds"
+	}
+
+	### fire family
+	spriteType = {
+		name = "GFX_fire_family_bg"
+		texturefile = "gfx/interface/decisions/fire_family/fire_family_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_fire_family_frame"
+		texturefile = "gfx/interface/decisions/fire_family/fire_family_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_sozin_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/sozin_old.dds"
+	}
+	spriteType = {
+		name = "GFX_sozin_wife_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/sozin_waifu.dds"
+	}
+	spriteType = {
+		name = "GFX_rhya_young_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/rhya_young.dds"
+	}
+	spriteType = {
+		name = "GFX_zeisan_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/zeisan_old.dds"
+	}
+	spriteType = {
+		name = "GFX_fire_baby_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/fire_baby.dds"
+	}
+	spriteType = {
+		name = "GFX_azulon_child_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/azulon_child.dds"
+	}
+	spriteType = {
+		name = "GFX_azulon_adult_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/azulon_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_azulon_old_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/azulon_old.dds"
+	}
+	spriteType = {
+		name = "GFX_ilah_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/ilah_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_ursa_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/ursa_adult.dds"
+	}
+
+	spriteType = {
+		name = "GFX_iroh_child_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/iroh_child.dds"
+	}
+	spriteType = {
+		name = "GFX_iroh_adult_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/iroh_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_iroh_adult_firelord_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/iroh_adult_firelord.dds"
+	}
+	spriteType = {
+		name = "GFX_iroh_old_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/iroh_old.dds"
+	}
+	spriteType = {
+		name = "GFX_iroh_old_firelord_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/iroh_old_firelord.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ozai_baby_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/ozai_baby.dds"
+	}
+	spriteType = {
+		name = "GFX_ozai_child_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/ozai_child.dds"
+	}
+	spriteType = {
+		name = "GFX_ozai_adult_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/ozai_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_ozai_adult_firelord_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/ozai_adult_firelord.dds"
+	}
+	spriteType = {
+		name = "GFX_ozai_old_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/ozai_old.dds"
+	}
+	spriteType = {
+		name = "GFX_ozai_old_firelord_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/ozai_old_firelord.dds"
+	}
+
+	spriteType = {
+		name = "GFX_lu_ten_child_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/lu_ten_child.dds"
+	}
+	spriteType = {
+		name = "GFX_lu_ten_young_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/lu_ten_young.dds"
+	}
+
+	spriteType = {
+		name = "GFX_zuko_child_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/zuko_child.dds"
+	}
+	spriteType = {
+		name = "GFX_zuko_young_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/zuko_young.dds"
+	}
+	spriteType = {
+		name = "GFX_zuko_young_alt_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/zuko_young_alt.dds"
+	}
+	spriteType = {
+		name = "GFX_zuko_adult_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/zuko_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_zuko_adult_alt_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/zuko_adult_alt.dds"
+	}
+	spriteType = {
+		name = "GFX_zuko_adult_firelord_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/zuko_adult_firelord.dds"
+	}
+
+	spriteType = {
+		name = "GFX_azula_child_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/azula_child.dds"
+	}
+	spriteType = {
+		name = "GFX_azula_young_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/azula_young.dds"
+	}
+	spriteType = {
+		name = "GFX_azula_adult_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/azula_adult.dds"
+	}
+	spriteType = {
+		name = "GFX_azula_adult_firelord_portrait"
+		texturefile = "gfx/interface/decisions/fire_family/azula_adult_firelord.dds"
+	}
+
+	### categories
+	
+
+	spriteType = {
+		name = "GFX_decision_category_generic"
+		texturefile = "gfx/interface/decisions/categories/decision_category_generic.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_genocide"
+		texturefile = "gfx/interface/decisions/categories/decision_category_genocide.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_war_weariness"
+		texturefile = "gfx/interface/decisions/categories/decision_category_war_weariness.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_recruiting"
+		texturefile = "gfx/interface/decisions/categories/decision_category_recruiting.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_peasant"
+		texturefile = "gfx/interface/decisions/categories/decision_category_peasant_unrest.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_taxation"
+		texturefile = "gfx/interface/decisions/categories/decision_category_taxation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_research"
+		texturefile = "gfx/interface/decisions/categories/decision_category_research.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_conquest"
+		texturefile = "gfx/interface/decisions/categories/decision_category_conquest.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_buildup"
+		texturefile = "gfx/interface/decisions/categories/decision_category_buildup.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_military_buildup"
+		texturefile = "gfx/interface/decisions/categories/decision_category_military_buildup.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_water_unity"
+		texturefile = "gfx/interface/decisions/categories/decision_category_water_unity.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_earth_kingdom"
+		texturefile = "gfx/interface/decisions/categories/decision_category_earth_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_dai_li"
+		texturefile = "gfx/interface/decisions/categories/decision_category_dai_li.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_western_kingdom"
+		texturefile = "gfx/interface/decisions/categories/decision_category_western_kingdom.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_home_island"
+		texturefile = "gfx/interface/decisions/categories/decision_category_home_island.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_industry"
+		texturefile = "gfx/interface/decisions/categories/decision_category_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_battle"
+		texturefile = "gfx/interface/decisions/categories/decision_category_battle.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_chin_tradition"
+		texturefile = "gfx/interface/decisions/categories/decision_category_chin_tradition.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_royal_family"
+		texturefile = "gfx/interface/decisions/categories/decision_category_royal_family.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_air_council"
+		texturefile = "gfx/interface/decisions/categories/decision_category_air_council.dds"
+	}
+
+	
+	### category pictures
+	
+	spriteType = {
+		name = "GFX_decision_cat_air_genocide"
+		texturefile = "gfx/interface/decisions/decision_cat_air_genocide.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_water_raids"
+		texturefile = "gfx/interface/decisions/decision_cat_water_raids.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_research"
+		texturefile = "gfx/interface/decisions/decision_cat_research.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_recruitment"
+		texturefile = "gfx/interface/decisions/decision_cat_recruitment.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_taxation"
+		texturefile = "gfx/interface/decisions/decision_cat_taxation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_war_weariness"
+		texturefile = "gfx/interface/decisions/decision_cat_war_weariness.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_fir_conquest"
+		texturefile = "gfx/interface/decisions/decision_cat_fir_conquest.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_fir_royal_family"
+		texturefile = "gfx/interface/decisions/decision_cat_fir_royal_family.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_fir_colonies"
+		texturefile = "gfx/interface/decisions/decision_cat_fir_colonies.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_fir_outpost"
+		texturefile = "gfx/interface/decisions/decision_cat_fir_outpost.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_ear_dai_li"
+		texturefile = "gfx/interface/decisions/decision_cat_ear_dai_li.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_ear_buildup"
+		texturefile = "gfx/interface/decisions/decision_cat_ear_buildup.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_ear_military"
+		texturefile = "gfx/interface/decisions/decision_cat_ear_military.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_ear_defense"
+		texturefile = "gfx/interface/decisions/decision_cat_ear_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_troubling_signs"
+		texturefile = "gfx/interface/decisions/decision_cat_troubling_signs.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_dragon"
+		texturefile = "gfx/interface/decisions/decision_cat_dragon.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_industry"
+		texturefile = "gfx/interface/decisions/decision_cat_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_fir_capital"
+		texturefile = "gfx/interface/decisions/decision_cat_fir_capital.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_water_industry"
+		texturefile = "gfx/interface/decisions/decision_cat_water_industry.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_water_tribe_union"
+		texturefile = "gfx/interface/decisions/decision_cat_water_tribe_union.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_water_isolation"
+		texturefile = "gfx/interface/decisions/decision_cat_water_isolation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_reoccupation"
+		texturefile = "gfx/interface/decisions/decision_cat_reoccupation.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_fir_battle"
+		texturefile = "gfx/interface/decisions/decision_cat_fir_battle.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_chin_tradition"
+		texturefile = "gfx/interface/decisions/decision_cat_chin_tradition.dds"
+	}
+
+
+	### decision icons
+
+	spriteType = {
+		name = "GFX_decision_unknown"
+		texturefile = "gfx/interface/decisions/decision_generic_decision.dds"
+	}
+
+	spriteType = {
+		name = "generic_yes"
+		texturefile = "gfx/interface/decisions/decision_yes.dds"
+	}
+	spriteType = {
+		name = "generic_no"
+		texturefile = "gfx/interface/decisions/decision_no.dds"
+	}
+	spriteType = {
+		name = "replace"
+		texturefile = "gfx/interface/decisions/decision_replace.dds"
+	}
+	spriteType = {
+		name = "visible"
+		texturefile = "gfx/interface/decisions/decision_visible.dds"
+	}
+	spriteType = {
+		name = "invisible"
+		texturefile = "gfx/interface/decisions/decision_invisible.dds"
+	}
+
+	spriteType = {
+		name = "power_demonstration"
+		texturefile = "gfx/interface/decisions/decision_power_demonstration.dds"
+	}
+	spriteType = {
+		name = "appoint_minister"
+		texturefile = "gfx/interface/decisions/decision_appoint_minister.dds"
+	}
+
+	spriteType = {
+		name = "green_scroll"
+		texturefile = "gfx/interface/decisions/decision_green_scroll.dds"
+	}
+	spriteType = {
+		name = "book"
+		texturefile = "gfx/interface/decisions/decision_book.dds"
+	}
+	spriteType = {
+		name = "general"
+		texturefile = "gfx/interface/decisions/decision_general.dds"
+	}
+
+	spriteType = {
+		name = "onmap_colonising"
+		texturefile = "gfx/interface/decisions/onmap_colonising.dds"
+	}
+
+	spriteType = {
+		name = "allresources"
+		texturefile = "gfx/interface/decisions/decision_avatar_resources.dds"
+	}
+	spriteType = {
+		name = "iron"
+		texturefile = "gfx/interface/decisions/decision_iron.dds"
+	}
+	spriteType = {
+		name = "steel"
+		texturefile = "gfx/interface/decisions/decision_steel.dds"
+	}
+	spriteType = {
+		name = "coal"
+		texturefile = "gfx/interface/decisions/decision_coal.dds"
+	}
+	spriteType = {
+		name = "food"
+		texturefile = "gfx/interface/decisions/decision_food.dds"
+	}
+	spriteType = {
+		name = "fur"
+		texturefile = "gfx/interface/decisions/decision_fur.dds"
+	}
+	spriteType = {
+		name = "wood"
+		texturefile = "gfx/interface/decisions/decision_wood.dds"
+	}
+	spriteType = {
+		name = "stone"
+		texturefile = "gfx/interface/decisions/decision_stone.dds"
+	}
+	spriteType = {
+		name = "textile"
+		texturefile = "gfx/interface/decisions/decision_textile.dds"
+	}
+	spriteType = {
+		name = "convoy"
+		texturefile = "gfx/interface/decisions/decision_convoy.dds"
+	}
+	spriteType = {
+		name = "flooded"
+		texturefile = "gfx/interface/decisions/decision_flooded.dds"
+	}
+	spriteType = {
+		name = "coastline"
+		texturefile = "gfx/interface/decisions/decision_coastline.dds"
+	}
+	spriteType = {
+		name = "border_war"
+		texturefile = "gfx/interface/decisions/decision_border_war.dds"
+	}
+
+	spriteType = {
+		name = "mission_comet"
+		texturefile = "gfx/interface/decisions/mission_comet.dds"
+	}
+	spriteType = {
+		name = "mission_gates"
+		texturefile = "gfx/interface/decisions/mission_gates.dds"
+	}
+	spriteType = {
+		name = "mission_troubling_signs"
+		texturefile = "gfx/interface/decisions/mission_troubling_signs.dds"
+	}
+	spriteType = {
+		name = "rescue_fire_citizen"
+		texturefile = "gfx/interface/decisions/mission_rescue_fire_citizen.dds"
+	}
+
+	spriteType = {
+		name = "spare_the_nomads"
+		texturefile = "gfx/interface/decisions/decision_spare_the_nomads.dds"
+	}
+	spriteType = {
+		name = "fire_violence"
+		texturefile = "gfx/interface/decisions/decision_fire_violence.dds"
+	}
+	spriteType = {
+		name = "fire_defense"
+		texturefile = "gfx/interface/decisions/decision_fire_defense.dds"
+	}
+	spriteType = {
+		name = "fir_occupy"
+		texturefile = "gfx/interface/decisions/decision_fir_occupy.dds"
+	}
+	spriteType = {
+		name = "fir_colony"
+		texturefile = "gfx/interface/decisions/decision_fir_colony.dds"
+	}
+	spriteType = {
+		name = "FIR_pohuai_colony"
+		texturefile = "gfx/interface/decisions/decision_FIR_pohuai_colony.dds"
+	}
+	spriteType = {
+		name = "FIR_han_tui_colony"
+		texturefile = "gfx/interface/decisions/decision_FIR_han_tui_colony.dds"
+	}
+	spriteType = {
+		name = "FIR_garsai_colony"
+		texturefile = "gfx/interface/decisions/decision_FIR_garsai_colony.dds"
+	}
+	spriteType = {
+		name = "fir_propaganda"
+		texturefile = "gfx/interface/decisions/decision_fir_propaganda.dds"
+	}
+	spriteType = {
+		name = "fire_helmet"
+		texturefile = "gfx/interface/decisions/decision_fire_helmet.dds"
+	}
+	spriteType = {
+		name = "fire_mourn"
+		texturefile = "gfx/interface/decisions/decision_fire_mourn.dds"
+	}
+	spriteType = {
+		name = "fire_expansion"
+		texturefile = "gfx/interface/decisions/decision_fire_expansion.dds"
+	}
+	spriteType = {
+		name = "fire_navy"
+		texturefile = "gfx/interface/decisions/decision_fire_navy.dds"
+	}
+	spriteType = {
+		name = "fire_royal_guard"
+		texturefile = "gfx/interface/decisions/decision_fire_royal_guard.dds"
+	}
+	spriteType = {
+		name = "fire_succession_crisis"
+		texturefile = "gfx/interface/decisions/decision_fire_succession_crisis.dds"
+	}
+	spriteType = {
+		name = "fire_rhya_coronation"
+		texturefile = "gfx/interface/decisions/decision_fire_rhya_coronation.dds"
+	}
+	spriteType = {
+		name = "fire_azulon_coronation"
+		texturefile = "gfx/interface/decisions/decision_fire_azulon_coronation.dds"
+	}
+	spriteType = {
+		name = "fire_ozai_coronation"
+		texturefile = "gfx/interface/decisions/decision_fire_ozai_coronation.dds"
+	}
+	spriteType = {
+		name = "fire_marriage"
+		texturefile = "gfx/interface/decisions/decision_fire_marriage.dds"
+	}
+	spriteType = {
+		name = "fire_divine_firelord"
+		texturefile = "gfx/interface/decisions/decision_fire_divine_firelord.dds"
+	}
+	spriteType = {
+		name = "fire_godlike_firelord"
+		texturefile = "gfx/interface/decisions/decision_fire_godlike_firelord.dds"
+	}
+	spriteType = {
+		name = "hunt_dragons"
+		texturefile = "gfx/interface/decisions/decision_hunt_dragons.dds"
+	}
+	spriteType = {
+		name = "dragon_hunt"
+		texturefile = "gfx/interface/decisions/decision_dragon_hunt.dds"
+	}
+	spriteType = {
+		name = "royal_dragon_hunt"
+		texturefile = "gfx/interface/decisions/decision_royal_dragon_hunt.dds"
+	}
+	spriteType = {
+		name = "poacher_dragon_hunt"
+		texturefile = "gfx/interface/decisions/decision_poacher_dragon_hunt.dds"
+	}
+	spriteType = {
+		name = "kill_last_dragon"
+		texturefile = "gfx/interface/decisions/decision_kill_last_dragon.dds"
+	}
+	spriteType = {
+		name = "befriend_dragons"
+		texturefile = "gfx/interface/decisions/decision_befriend_dragons.dds"
+	}
+	spriteType = {
+		name = "fire_sphere"
+		texturefile = "gfx/interface/decisions/decision_fire_sphere.dds"
+	}
+	spriteType = {
+		name = "fire_agriculture"
+		texturefile = "gfx/interface/decisions/decision_fire_agriculture.dds"
+	}
+	spriteType = {
+		name = "fire_industry"
+		texturefile = "gfx/interface/decisions/decision_fire_industry.dds"
+	}
+	spriteType = {
+		name = "industry_investment"
+		texturefile = "gfx/interface/decisions/decision_industry_investment.dds"
+	}
+	spriteType = {
+		name = "supply_bases"
+		texturefile = "gfx/interface/decisions/decision_supply_bases.dds"
+	}
+	spriteType = {
+		name = "city_development"
+		texturefile = "gfx/interface/decisions/decision_city_development.dds"
+	}
+	spriteType = {
+		name = "city_development_2"
+		texturefile = "gfx/interface/decisions/decision_city_development_2.dds"
+	}
+	spriteType = {
+		name = "factory_investment"
+		texturefile = "gfx/interface/decisions/decision_factory_investment.dds"
+	}
+	spriteType = {
+		name = "buildup"
+		texturefile = "gfx/interface/decisions/decision_buildup.dds"
+	}
+	spriteType = {
+		name = "fortify"
+		texturefile = "gfx/interface/decisions/decision_fortify.dds"
+	}
+	spriteType = {
+		name = "war"
+		texturefile = "gfx/interface/decisions/decision_war.dds"
+	}
+	spriteType = {
+		name = "health"
+		texturefile = "gfx/interface/decisions/decision_health.dds"
+	}
+	spriteType = {
+		name = "culture"
+		texturefile = "gfx/interface/decisions/decision_culture.dds"
+	}
+	spriteType = {
+		name = "attack_plan"
+		texturefile = "gfx/interface/decisions/decision_attack_plan.dds"
+	}
+	spriteType = {
+		name = "military_buildup"
+		texturefile = "gfx/interface/decisions/decision_military_buildup.dds"
+	}
+	spriteType = {
+		name = "research_boost"
+		texturefile = "gfx/interface/decisions/decision_research_boost.dds"
+	}
+	spriteType = {
+		name = "research_slot"
+		texturefile = "gfx/interface/decisions/decision_research_slot.dds"
+	}
+	spriteType = {
+		name = "riot"
+		texturefile = "gfx/interface/decisions/decision_riot.dds"
+	}
+	spriteType = {
+		name = "rewriting"
+		texturefile = "gfx/interface/decisions/decision_rewriting.dds"
+	}
+	spriteType = {
+		name = "trade_icon"
+		texturefile = "gfx/interface/decisions/decision_trade_icon.dds"
+	}
+	spriteType = {
+		name = "xp_change"
+		texturefile = "gfx/interface/decisions/decision_xp_change.dds"
+	}
+
+	spriteType = {
+		name = "unity_1"
+		texturefile = "gfx/interface/decisions/decision_unity_1.dds"
+	}
+	spriteType = {
+		name = "unity_2"
+		texturefile = "gfx/interface/decisions/decision_unity_2.dds"
+	}
+	spriteType = {
+		name = "unity_3"
+		texturefile = "gfx/interface/decisions/decision_unity_3.dds"
+	}
+	spriteType = {
+		name = "unity_4"
+		texturefile = "gfx/interface/decisions/decision_unity_4.dds"
+	}
+	spriteType = {
+		name = "water_speech"
+		texturefile = "gfx/interface/decisions/decision_water_speech.dds"
+	}
+	spriteType = {
+		name = "water_factory"
+		texturefile = "gfx/interface/decisions/decision_water_factory.dds"
+	}
+	spriteType = {
+		name = "water_focus"
+		texturefile = "gfx/interface/decisions/decision_water_focus.dds"
+	}
+	spriteType = {
+		name = "water_hunters"
+		texturefile = "gfx/interface/decisions/decision_water_hunters.dds"
+	}
+	spriteType = {
+		name = "water_hunters_2"
+		texturefile = "gfx/interface/decisions/decision_water_hunters_2.dds"
+	}
+	spriteType = {
+		name = "water_anti_riot"
+		texturefile = "gfx/interface/decisions/decision_water_anti_riot.dds"
+	}
+	spriteType = {
+		name = "water_and_earth_flag"
+		texturefile = "gfx/interface/decisions/decision_water_and_earth_flag.dds"
+	}
+	spriteType = {
+		name = "air_and_water_flag"
+		texturefile = "gfx/interface/decisions/decision_air_and_water_flag.dds"
+	}
+	spriteType = {
+		name = "fire_and_water_flag"
+		texturefile = "gfx/interface/decisions/decision_fire_and_water_flag.dds"
+	}
+	spriteType = {
+		name = "water_protective"
+		texturefile = "gfx/interface/decisions/decision_water_protective.dds"
+	}
+	spriteType = {
+		name = "water_intervention"
+		texturefile = "gfx/interface/decisions/decision_water_intervention.dds"
+	}
+	spriteType = {
+		name = "watertribe_barbarians_icon"
+		texturefile = "gfx/interface/decisions/decision_barbarians.dds"
+	}
+	spriteType = {
+		name = "onmap_barbarians"
+		texturefile = "gfx/interface/decisions/onmap_barbarians.dds"
+	}
+
+	spriteType = {
+		name = "reveal_avatar"
+		texturefile = "gfx/interface/decisions/decision_reveal_avatar.dds"
+	}
+	spriteType = {
+		name = "eastern_air_temple"
+		texturefile = "gfx/interface/decisions/decision_eastern_air_temple.dds"
+	}
+	spriteType = {
+		name = "western_air_temple"
+		texturefile = "gfx/interface/decisions/decision_western_air_temple.dds"
+	}
+	spriteType = {
+		name = "southern_air_temple"
+		texturefile = "gfx/interface/decisions/decision_southern_air_temple.dds"
+	}
+	spriteType = {
+		name = "northern_air_temple"
+		texturefile = "gfx/interface/decisions/decision_northern_air_temple.dds"
+	}
+	spriteType = {
+		name = "gyatso_and_aang"
+		texturefile = "gfx/interface/decisions/decision_gyatso_and_aang.dds"
+	}
+
+
+	spriteType = {
+		name = "dai_li_headquater"
+		texturefile = "gfx/interface/decisions/decision_dai_li_headquater.dds"
+	}
+	spriteType = {
+		name = "dai_li_units"
+		texturefile = "gfx/interface/decisions/decision_dai_li_units.dds"
+	}
+	spriteType = {
+		name = "dai_li_extremism"
+		texturefile = "gfx/interface/decisions/decision_dai_li_extremism.dds"
+	}
+	spriteType = {
+		name = "dai_li_loyalists"
+		texturefile = "gfx/interface/decisions/decision_dai_li_loyalists.dds"
+	}
+	spriteType = {
+		name = "dai_li_government"
+		texturefile = "gfx/interface/decisions/decision_dai_li_government.dds"
+	}
+	spriteType = {
+		name = "dai_li_minister"
+		texturefile = "gfx/interface/decisions/decision_dai_li_minister.dds"
+	}
+	spriteType = {
+		name = "dai_li_brainwash"
+		texturefile = "gfx/interface/decisions/decision_dai_li_brainwash.dds"
+	}
+	spriteType = {
+		name = "no_war_in_ba_sing"
+		texturefile = "gfx/interface/decisions/decision_no_war_in_ba_sing.dds"
+	}
+
+	spriteType = {
+		name = "earth_royal_guard"
+		texturefile = "gfx/interface/decisions/decision_earth_royal_guard.dds"
+	}
+	spriteType = {
+		name = "earthkingdom"
+		texturefile = "gfx/interface/decisions/decision_earthkingdom.dds"
+	}
+	spriteType = {
+		name = "fire_colony_remove"
+		texturefile = "gfx/interface/decisions/decision_fire_colony_remove.dds"
+	}
+	spriteType = {
+		name = "confront_the_firenation"
+		texturefile = "gfx/interface/decisions/decision_confront_the_firenation.dds"
+	}
+
+	spriteType = {
+		name = "population_census"
+		texturefile = "gfx/interface/decisions/decision_population_census.dds"
+	}
+	spriteType = {
+		name = "patronise_enterprises"
+		texturefile = "gfx/interface/decisions/decision_patronise_enterprises.dds"
+	}
+	spriteType = {
+		name = "carpenter"
+		texturefile = "gfx/interface/decisions/decision_carpenter.dds"
+	}
+	spriteType = {
+		name = "artisans"
+		texturefile = "gfx/interface/decisions/decision_artisans.dds"
+	}
+	spriteType = {
+		name = "land_charter"
+		texturefile = "gfx/interface/decisions/decision_land_charter.dds"
+	}
+	spriteType = {
+		name = "earth_patrol"
+		texturefile = "gfx/interface/decisions/decision_earth_patrol.dds"
+	}
+	spriteType = {
+		name = "land_clearence"
+		texturefile = "gfx/interface/decisions/decision_land_clearence.dds"
+	}
+	spriteType = {
+		name = "bread"
+		texturefile = "gfx/interface/decisions/decision_bread.dds"
+	}
+	spriteType = {
+		name = "pillar"
+		texturefile = "gfx/interface/decisions/decision_pillar.dds"
+	}
+	spriteType = {
+		name = "inflation"
+		texturefile = "gfx/interface/decisions/decision_inflation.dds"
+	}
+	spriteType = {
+		name = "weapon_stand"
+		texturefile = "gfx/interface/decisions/decision_weapon_stand.dds"
+	}
+	spriteType = {
+		name = "equipment_quality"
+		texturefile = "gfx/interface/decisions/decision_equipment_quality.dds"
+	}
+	spriteType = {
+		name = "hunt_bandits"
+		texturefile = "gfx/interface/decisions/decision_hunt_bandits.dds"
+	}
+	spriteType = {
+		name = "earth_victory"
+		texturefile = "gfx/interface/decisions/decision_earth_victory.dds"
+	}
+	spriteType = {
+		name = "earth_feast"
+		texturefile = "gfx/interface/decisions/decision_earth_feast.dds"
+	}
+	spriteType = {
+		name = "earth_crown"
+		texturefile = "gfx/interface/decisions/decision_earth_crown.dds"
+	}
+	spriteType = {
+		name = "earth_coronation"
+		texturefile = "gfx/interface/decisions/decision_earth_coronation.dds"
+	}
+	spriteType = {
+		name = "earth_kingdom_suppression"
+		texturefile = "gfx/interface/decisions/decision_earth_kingdom_suppression.dds"
+	}
+	spriteType = {
+		name = "leave_the_ek"
+		texturefile = "gfx/interface/decisions/decision_leave_the_ek.dds"
+	}
+	spriteType = {
+		name = "expand_influence"
+		texturefile = "gfx/interface/decisions/decision_expand_influence.dds"
+	}
+	spriteType = {
+		name = "break_free"
+		texturefile = "gfx/interface/decisions/decision_break_free.dds"
+	}
+	spriteType = {
+		name = "take_over_puppet"
+		texturefile = "gfx/interface/decisions/decision_take_over_puppet.dds"
+	}
+	spriteType = {
+		name = "earth_territory"
+		texturefile = "gfx/interface/decisions/decision_earth_territory.dds"
+	}
+	spriteType = {
+		name = "earth_defense"
+		texturefile = "gfx/interface/decisions/decision_ear_defense.dds"
+	}
+	spriteType = {
+		name = "earth_city_walls"
+		texturefile = "gfx/interface/decisions/decision_earth_city_walls.dds"
+	}
+
+	spriteType = {
+		name = "western_kingdom"
+		texturefile = "gfx/interface/decisions/decision_western_kingdom.dds"
+	}
+	
+	spriteType = {
+		name = "council_increase_priority"
+		texturefile = "gfx/interface/decisions/air_council/increase_priority.dds"
+	}
+	spriteType = {
+		name = "council_decrease_priority"
+		texturefile = "gfx/interface/decisions/air_council/decrease_priority.dds"
+	}
+	spriteType = {
+		name = "council_will_meet_again"
+		texturefile = "gfx/interface/decisions/air_council/council_will_meet_again.dds"
+	}
+	spriteType = {
+		name = "council_air_mission"
+		texturefile = "gfx/interface/decisions/air_council/council_air_mission.dds"
+	}
+	spriteType = {
+		name = "council_army_mission"
+		texturefile = "gfx/interface/decisions/air_council/council_army_mission.dds"
+	}
+	spriteType = {
+		name = "council_navy_mission"
+		texturefile = "gfx/interface/decisions/air_council/council_navy_mission.dds"
+	}
+	spriteType = {
+		name = "council_industry_mission"
+		texturefile = "gfx/interface/decisions/air_council/council_industry_mission.dds"
+	}
+	spriteType = {
+		name = "council_research_mission"
+		texturefile = "gfx/interface/decisions/air_council/council_research_mission.dds"
+	}
+	spriteType = {
+		name = "council_politics_mission"
+		texturefile = "gfx/interface/decisions/air_council/council_politics_mission.dds"
+	}
+	spriteType = {
+		name = "council_air_mission_small"
+		texturefile = "gfx/interface/decisions/air_council/council_air_mission_small.dds"
+	}
+	spriteType = {
+		name = "council_army_mission_small"
+		texturefile = "gfx/interface/decisions/air_council/council_army_mission_small.dds"
+	}
+	spriteType = {
+		name = "council_navy_mission_small"
+		texturefile = "gfx/interface/decisions/air_council/council_navy_mission_small.dds"
+	}
+	spriteType = {
+		name = "council_industry_mission_small"
+		texturefile = "gfx/interface/decisions/air_council/council_industry_mission_small.dds"
+	}
+	spriteType = {
+		name = "council_research_mission_small"
+		texturefile = "gfx/interface/decisions/air_council/council_research_mission_small.dds"
+	}
+	spriteType = {
+		name = "council_politics_mission_small"
+		texturefile = "gfx/interface/decisions/air_council/council_politics_mission_small.dds"
+	}
+}

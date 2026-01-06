@@ -1,0 +1,883 @@
+
+core_state_cost = {
+	base = 0
+	modifier = {
+		set_temp_variable = { population_cost = state_population }
+		divide_temp_variable = { population_cost = 50 }
+		round_temp_variable = population_cost
+		
+		add = population_cost
+	}
+	modifier = {
+		set_temp_variable = { modifier_factor = 1 }
+		add_to_temp_variable = { modifier_factor = modifier@core_state_cost_factor }
+		clamp_temp_variable = {
+			var = modifier_factor
+			min = 0
+		}
+		
+		factor = modifier_factor
+	}
+
+}
+
+colonise_state_pp_cost = {
+	base = 100
+	modifier = {
+		set_temp_variable = { modifier_factor = 1 }
+		add_to_temp_variable = { modifier_factor = modifier@colonise_state_cost_factor }
+		clamp_temp_variable = {
+			var = modifier_factor
+			min = 0
+		}
+		
+		factor = modifier_factor
+	}
+
+}
+
+colonise_state_cost = {
+	base = 0
+	modifier = {
+		set_temp_variable = { distance_cost = PREV.distance_to@ROOT.capital }
+		divide_temp_variable = { distance_cost = 5 }
+		round_temp_variable = distance_cost
+		
+		add = distance_cost
+	}
+	modifier = {
+		set_temp_variable = { modifier_factor = 1 }
+		add_to_temp_variable = { modifier_factor = modifier@colonise_state_cost_factor }
+		clamp_temp_variable = {
+			var = modifier_factor
+			min = 0
+		}
+		
+		factor = modifier_factor
+	}
+
+}
+
+state_garrison_factor_mtth = {
+	base = 0
+	modifier = {
+		set_temp_variable = { garrison_factor_modifier = 1 }
+		add_to_temp_variable = { garrison_factor_modifier = controller:modifier@garrison_factor_modifier }
+		add_to_temp_variable = { garrison_factor_modifier = modifier@garrison_factor_modifier }
+		clamp_temp_variable = {
+			var = garrison_factor_modifier
+			min = 0.05
+		}
+
+
+		set_temp_variable = { garrison_factor = THIS.state_population_k }
+
+		set_temp_variable = { factor_modifier = 5 }
+		divide_temp_variable = { factor_modifier = garrison_factor_modifier }
+
+		divide_temp_variable = { garrison_factor = factor_modifier }
+		subtract_from_temp_variable = { garrison_factor = 1 }
+		clamp_temp_variable = {
+			var = garrison_factor
+			min = -1
+		}
+
+		add = garrison_factor
+	}
+
+}
+
+state_revolt_mtth = {
+	base = 0
+	modifier = {
+		set_temp_variable = { revolt_temp = 100 }
+		subtract_from_temp_variable = { revolt_temp = state_loyalty_variable }
+
+		add = revolt_temp
+	}
+
+}
+
+legitimacy_target = {
+	base = 0
+	modifier = {
+		set_temp_variable = { target = 1 }
+		subtract_from_temp_variable = { target = modifier@centralisation_target_modifier }
+		multiply_temp_variable = { target = 240 }
+		clamp_temp_variable = { var = target min = 0 max = 240 }
+		
+		add = target
+	}
+}
+legitimacy_target_large = {
+	base = 0
+	modifier = {
+		set_temp_variable = { target = 1 }
+		subtract_from_temp_variable = { target = modifier@centralisation_target_modifier }
+		multiply_temp_variable = { target = 350 }
+		clamp_temp_variable = { var = target min = 0 max = 350 }
+		
+		add = target
+	}
+}
+
+legitimacy_target_100 = {
+	base = 0
+	modifier = {
+		set_temp_variable = { target = 1 }
+		subtract_from_temp_variable = { target = modifier@centralisation_target_modifier }
+		multiply_temp_variable = { target = 100 }
+		clamp_temp_variable = { var = target min = 0 max = 100 }
+		
+		add = target
+	}
+}
+
+literacy_target_100 = {
+	base = 0
+	modifier = {
+		set_temp_variable = { target = modifier@knowledge_gain }
+		clamp_temp_variable = { var = target min = 0 max = 100 }
+		
+		add = target
+	}
+}
+
+legitimacy_pp_cap = {
+	base = 0
+	modifier = {
+		set_temp_variable = { pp_cap = centralisation_variable }
+		subtract_from_temp_variable = { pp_cap = 100 }
+		divide_temp_variable = { pp_cap = -1 }
+		clamp_temp_variable = { var = pp_cap min = 0  max = 100 }
+		round_temp_variable = pp_cap
+		
+		add = pp_cap
+	}
+}
+
+legitimacy_autonomy = {
+	base = 0
+	modifier = {
+		set_temp_variable = { autonomy = centralisation_variable }
+		subtract_from_temp_variable = { autonomy = 50 }
+		divide_temp_variable = { autonomy = -50 }
+		
+		add = autonomy
+	}
+}
+
+legitimacy_tax_efficiency = {
+	base = 0
+	modifier = {
+		set_temp_variable = { weariness = centralisation_variable }
+		subtract_from_temp_variable = { weariness = 100 }
+		divide_temp_variable = { weariness = -200 }
+		
+		add = weariness
+	}
+}
+
+legitimacy_war_weariness_stability = {
+	base = 0
+	modifier = {
+		set_temp_variable = { weariness = centralisation_variable }
+		subtract_from_temp_variable = { weariness = 100 }
+		divide_temp_variable = { weariness = 100 }
+		
+		add = weariness
+	}
+}
+
+legitimacy_revolt = {
+	base = 0
+	modifier = {
+		set_temp_variable = { revolt = centralisation_variable }
+		divide_temp_variable = { revolt = 100 }
+		
+		add = revolt
+	}
+}
+
+legitimacy_war_support = {
+	base = 0
+	modifier = {
+		set_temp_variable = { war_support = 50 }
+		subtract_from_temp_variable = { war_support = centralisation_variable }
+		divide_temp_variable = { war_support = 250 }
+		#clamp_temp_variable = { var = war_support min = 0 }
+		
+		add = war_support
+	}
+}
+
+legitimacy_stability = {
+	base = 0
+	modifier = {
+		set_temp_variable = { stability = -50 }
+		add_to_temp_variable = { stability = centralisation_variable }
+		divide_temp_variable = { stability = 250 }
+		#clamp_temp_variable = { var = stability min = 0 }
+		
+		add = stability
+	}
+}
+
+legitimacy_resources = {
+	base = 0
+	modifier = {
+		set_temp_variable = { resources = -50 }
+		add_to_temp_variable = { resources = centralisation_variable }
+		divide_temp_variable = { resources = 100 }
+		
+		add = resources
+	}
+}
+
+legitimacy_peoples_initiative = {
+	base = 0
+	modifier = {
+		set_temp_variable = { peoples_initiative = centralisation_variable }
+		subtract_from_temp_variable = { peoples_initiative = 50 }
+
+		set_temp_variable = { peoples_initiative_divider = centralisation_variable }
+		subtract_from_temp_variable = { peoples_initiative_divider = 50 }
+		multiply_temp_variable = { peoples_initiative_divider = peoples_initiative_divider }
+		divide_temp_variable = { peoples_initiative_divider = 125000 }
+
+		multiply_temp_variable = { peoples_initiative = peoples_initiative_divider }
+		
+		add = peoples_initiative
+	}
+}
+
+unit_quality_1 = {
+	base = 0
+	modifier = {
+		set_temp_variable = { unit_quality = unit_quality_variable }
+		add_to_temp_variable = { unit_quality = 0.5 }
+		
+		add = unit_quality
+	}
+}
+unit_quality_2 = {
+	base = 0
+	modifier = {
+		set_temp_variable = { unit_quality = modifier@unit_quality_target }
+		add_to_temp_variable = { unit_quality = 0.5 }
+		
+		add = unit_quality
+	}
+}
+unit_quality_variable_bad = {
+	base = 0
+	modifier = {
+		set_temp_variable = { unit_quality_bad = unit_quality_variable }
+		multiply_temp_variable = { unit_quality_bad = -1 }
+		
+		add = unit_quality_bad
+	}
+}
+
+war_weariness_peanalty = {
+	base = 0
+	modifier = {
+		set_temp_variable = { war_weariness = war_exhaustion_percentage }
+		multiply_temp_variable = { war_weariness = war_weariness }
+		multiply_temp_variable = { war_weariness = -0.5 }
+		
+		add = war_weariness
+	}
+}
+war_weariness_peanalty_2 = {
+	base = 0
+	modifier = {
+		set_temp_variable = { war_weariness = war_exhaustion_percentage }
+		multiply_temp_variable = { war_weariness = war_weariness }
+		multiply_temp_variable = { war_weariness = -1 }
+
+		set_temp_variable = { war_weariness_stability_impact = 1 }
+		add_to_temp_variable = { war_weariness_stability_impact = modifier@war_weariness_stability_impact }
+		clamp_temp_variable = {
+			var = war_weariness_stability_impact
+			min = 0
+		}
+
+		multiply_temp_variable = { war_weariness = war_weariness_stability_impact }
+		
+		add = war_weariness
+	}
+}
+
+
+spirit_supply_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { supply = logistic_spirit_var }
+		multiply_temp_variable = { supply = 0.03 }
+		subtract_from_temp_variable = { supply = 1 }
+		
+		add = supply
+	}
+}
+spirit_army_orga_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { orga = logistic_spirit_var }
+		multiply_temp_variable = { orga = 0.015 }
+		subtract_from_temp_variable = { orga = 0.1 }
+		
+		add = orga
+	}
+}
+
+spirit_wages_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { wages = quality_spirit_var }
+		multiply_temp_variable = { wages = 0.025 }
+		subtract_from_temp_variable = { wages = 1 }
+		
+		add = wages
+	}
+}
+spirit_unit_quality_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { unit_quality = quality_spirit_var }
+		multiply_temp_variable = { unit_quality = 0.01 }
+		subtract_from_temp_variable = { unit_quality = 0.5 }
+		
+		add = unit_quality
+	}
+}
+
+spirit_leader_cost_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { leader_cost = unit_leader_spirit_var }
+		multiply_temp_variable = { leader_cost = 0.01 }
+		subtract_from_temp_variable = { leader_cost = 0.75 }
+		
+		add = leader_cost
+	}
+}
+spirit_leader_level_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { leader_level = unit_leader_spirit_var }
+		multiply_temp_variable = { leader_level = 0.1 }
+		
+		add = leader_level
+	}
+}
+
+allowed_bender_units = {
+	base = 0
+	modifier = {
+		set_temp_variable = { bender_population_k = max_manpower_k }
+		multiply_temp_variable = { bender_population_k = bender_percentage }
+
+		set_temp_variable = { bender_unit_cap = max_available_manpower_k }
+
+		set_temp_variable = { nonbender_ratio = 1 }
+		subtract_from_temp_variable = { nonbender_ratio = bender_percentage }
+
+		set_temp_variable = { nonbender_factor = 1 }
+		add_to_temp_variable = { nonbender_factor = modifier@nonbender_factor }
+
+		multiply_temp_variable = { nonbender_ratio = nonbender_factor }
+
+		set_temp_variable = { bender_unit_ratio = 1 }
+		subtract_from_temp_variable = { bender_unit_ratio = nonbender_ratio }
+
+		multiply_temp_variable = { bender_unit_cap = bender_unit_ratio }
+
+		set_temp_variable = { bender_unit_factor = 1 }
+		add_to_temp_variable = { bender_unit_factor = modifier@bender_unit_factor }
+		clamp_temp_variable = {
+			var = bender_unit_factor
+			min = 0
+		}
+		multiply_temp_variable = { bender_unit_cap = bender_unit_factor }
+		clamp_temp_variable = {
+			var = bender_unit_cap
+			min = 0
+			max = bender_population_k
+		}
+		multiply_temp_variable = { bender_unit_cap = 100 }
+		
+		add = bender_unit_cap
+	}
+}
+
+nonbender_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { nonbender_modifier = -1 }
+		add_to_temp_variable = { nonbender_modifier = bender_percentage }
+
+		set_temp_variable = { nonbender_factor = modifier@nonbender_factor }
+		multiply_temp_variable = { nonbender_factor = -1 }
+		clamp_temp_variable = {
+			var = nonbender_factor
+			min = 0
+			max = 1
+		}
+
+		multiply_temp_variable = { nonbender_modifier = nonbender_factor }
+		
+		add = nonbender_modifier
+	}
+
+}
+
+additional_conscription_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { nonbender_modifier = -1 }
+		add_to_temp_variable = { nonbender_modifier = bender_percentage }
+
+		set_temp_variable = { nonbender_factor = modifier@nonbender_factor }
+		multiply_temp_variable = { nonbender_factor = -1 }
+		clamp_temp_variable = {
+			var = nonbender_factor
+			min = 0
+			max = 1
+		}
+
+		multiply_temp_variable = { nonbender_modifier = nonbender_factor }
+
+
+		set_temp_variable = { conscription_factor_reduction = 1 }
+		add_to_temp_variable = { conscription_factor_reduction = nonbender_modifier }
+
+		set_temp_variable = { conscription_factor = 1 }
+		add_to_temp_variable = { conscription_factor = modifier@conscription_factor_new }
+
+		clamp_temp_variable = {
+			var = conscription_factor
+			min = 0
+		}
+
+		multiply_temp_variable = { conscription_factor_reduction = conscription_factor }
+
+		set_temp_variable = { extra_conscription_factor = -1 }
+		add_to_temp_variable = { extra_conscription_factor = conscription_factor_reduction }
+		subtract_from_temp_variable = { extra_conscription_factor = nonbender_modifier }
+		
+		add = extra_conscription_factor
+	}
+
+}
+
+
+bender_pop_bonus = {
+	base = 0
+	modifier = {
+		set_temp_variable = { bender_bonus = 0.5 }
+
+		set_temp_variable = { bonus_recruitment_factor = 1 }
+		subtract_from_temp_variable = { bonus_recruitment_factor = modifier@conscription }
+		clamp_temp_variable = {
+			var = bonus_recruitment_factor
+			min = 0
+			max = 1
+		}
+
+		multiply_temp_variable = { bender_bonus = bonus_recruitment_factor }
+		
+		add = bender_bonus
+	}
+}
+
+bender_pop_bonus_negative = {
+	base = 0
+	modifier = {
+		set_temp_variable = { bender_bonus = -0.5 }
+
+		set_temp_variable = { bonus_recruitment_factor = 1 }
+		subtract_from_temp_variable = { bonus_recruitment_factor = modifier@conscription }
+		clamp_temp_variable = {
+			var = bonus_recruitment_factor
+			min = 0
+			max = 1
+		}
+
+		multiply_temp_variable = { bender_bonus = bonus_recruitment_factor }
+		
+		add = bender_bonus
+	}
+}
+
+
+bender_k = {
+	base = 0
+	modifier = {
+		set_temp_variable = { bender_manpower_k = max_manpower_k }
+
+		multiply_temp_variable = { bender_manpower_k = bender_percentage }
+		
+		add = bender_manpower_k
+	}
+}
+
+
+
+fire_settler_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { settler_factor = fire_pop }
+		divide_temp_variable = { settler_factor = -100 }
+		
+		add = settler_factor
+	}
+
+	modifier = {
+		set_temp_variable = { resistance_value = THIS.modifier@settler_defiance }
+		
+		factor = resistance_value
+	}
+}
+water_settler_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { settler_factor = water_pop }
+		divide_temp_variable = { settler_factor = -100 }
+		
+		add = settler_factor
+	}
+
+	modifier = {
+		set_temp_variable = { resistance_value = THIS.modifier@settler_defiance }
+		
+		factor = resistance_value
+	}
+}
+earth_settler_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { settler_factor = earth_pop }
+		divide_temp_variable = { settler_factor = -100 }
+		
+		add = settler_factor
+	}
+
+	modifier = {
+		set_temp_variable = { resistance_value = THIS.modifier@settler_defiance }
+		
+		factor = resistance_value
+	}
+}
+air_settler_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { settler_factor = air_pop }
+		divide_temp_variable = { settler_factor = -100 }
+		
+		add = settler_factor
+	}
+
+	modifier = {
+		set_temp_variable = { resistance_value = THIS.modifier@settler_defiance }
+		
+		factor = resistance_value
+	}
+}
+pluralist_settler_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { settler_factor = nonbender_pop }
+		divide_temp_variable = { settler_factor = -100 }
+		
+		add = settler_factor
+	}
+
+	modifier = {
+		set_temp_variable = { resistance_value = THIS.modifier@settler_defiance }
+		
+		factor = resistance_value
+	}
+}
+
+
+fire_settler_resource_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { settler_factor = fire_pop }
+		divide_temp_variable = { settler_factor = -100 }
+		
+		add = settler_factor
+	}
+
+	modifier = {
+		set_temp_variable = { resistance_value = THIS.modifier@settler_defiance }
+		
+		factor = resistance_value
+	}
+
+	modifier = {
+		set_temp_variable = { law_modifier = 1 }
+		add_to_temp_variable = { law_modifier = THIS.modifier@culture_resource_effect }
+		
+		factor = law_modifier
+	}
+}
+water_settler_resource_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { settler_factor = water_pop }
+		divide_temp_variable = { settler_factor = -100 }
+		
+		add = settler_factor
+	}
+
+	modifier = {
+		set_temp_variable = { resistance_value = THIS.modifier@settler_defiance }
+		
+		factor = resistance_value
+	}
+
+	modifier = {
+		set_temp_variable = { law_modifier = 1 }
+		add_to_temp_variable = { law_modifier = THIS.modifier@culture_resource_effect }
+		
+		factor = law_modifier
+	}
+}
+earth_settler_resource_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { settler_factor = earth_pop }
+		divide_temp_variable = { settler_factor = -100 }
+		
+		add = settler_factor
+	}
+
+	modifier = {
+		set_temp_variable = { resistance_value = THIS.modifier@settler_defiance }
+		
+		factor = resistance_value
+	}
+
+	modifier = {
+		set_temp_variable = { law_modifier = 1 }
+		add_to_temp_variable = { law_modifier = THIS.modifier@culture_resource_effect }
+		
+		factor = law_modifier
+	}
+}
+air_settler_resource_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { settler_factor = air_pop }
+		divide_temp_variable = { settler_factor = -100 }
+		
+		add = settler_factor
+	}
+
+	modifier = {
+		set_temp_variable = { resistance_value = THIS.modifier@settler_defiance }
+		
+		factor = resistance_value
+	}
+
+	modifier = {
+		set_temp_variable = { law_modifier = 1 }
+		add_to_temp_variable = { law_modifier = THIS.modifier@culture_resource_effect }
+		
+		factor = law_modifier
+	}
+}
+pluralist_settler_resource_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { settler_factor = nonbender_pop }
+		divide_temp_variable = { settler_factor = -100 }
+		
+		add = settler_factor
+	}
+
+	modifier = {
+		set_temp_variable = { resistance_value = THIS.modifier@settler_defiance }
+		
+		factor = resistance_value
+	}
+
+	modifier = {
+		set_temp_variable = { law_modifier = 1 }
+		add_to_temp_variable = { law_modifier = THIS.modifier@culture_resource_effect }
+		
+		factor = law_modifier
+	}
+}
+
+
+fire_relocate_migration = {
+	base = 0
+	modifier = {
+		set_temp_variable = { migrants = fire_pop }
+		multiply_temp_variable = { migrants = 0.05 }
+		multiply_temp_variable = { migrants = -0.01 }
+		
+		add = migrants
+	}
+}
+
+
+refugee_supplies = {
+	base = 0
+	modifier = {
+		set_temp_variable = { refugee = refugees_accepted_last_month }
+		divide_temp_variable = { refugee = state_population }
+		multiply_temp_variable = { refugee = -1 }
+		
+		add = refugee
+	}
+}
+
+
+
+animal_breeding = {
+	base = 0
+	modifier = {
+		set_temp_variable = { breeding = 1 }
+		add_to_temp_variable = { breeding = modifier@animal_breeding_factor }
+		clamp_temp_variable = {
+			var = breeding
+			min = 0
+		}
+		
+		add = breeding
+	}
+}
+
+pp_cap = {
+	base = 150
+	modifier = {
+		set_temp_variable = { cap = modifier@political_power_cap }
+		
+		add = cap
+	}
+}
+
+pp_ratio = {
+	base = 0
+	modifier = {
+		set_temp_variable = { ratio = political_power }
+		set_temp_variable = { ratio = political_power }
+		divide_temp_variable = { ratio = mtth:pp_cap }
+		multiply_temp_variable = { ratio = 100 }
+		
+		add = ratio
+	}
+}
+
+money_cap = {
+	base = 150
+	modifier = {
+		set_temp_variable = { cap = modifier@money_capacity }
+		
+		add = cap
+	}
+}
+
+
+autonomy_frame = {
+	base = 0
+	modifier = {
+		set_temp_variable = { autonomy = autonomy_ratio }
+		multiply_temp_variable = { autonomy = 100 }
+		
+		add = autonomy
+	}
+}
+
+overlord_influence = {
+	base = 0
+	modifier = {
+		set_temp_variable = { influence = modifier@subject_influence }
+		multiply_temp_variable = { influence = -1 }
+		add_to_temp_variable = { influence = overlord:modifier@overlord_influence }
+		
+		add = influence
+	}
+}
+
+avatar_opinion = {
+	base = 0
+	modifier = {
+		set_temp_variable = { avatar_opinion = 50 }
+
+		set_temp_variable = { avatar_opinion_tension = ROOT.has_added_tension_amount }
+		multiply_temp_variable = { avatar_opinion_tension = -2 }
+
+		set_temp_variable = { avatar_opinion_modifier = modifier@avatar_opinion_modifier }
+
+		add_to_temp_variable = { avatar_opinion = avatar_opinion_tension }
+		add_to_temp_variable = { avatar_opinion = avatar_opinion_modifier }
+
+		clamp_temp_variable = {
+			var = avatar_opinion
+			min = -100
+			max = 100
+		}
+		
+		add = avatar_opinion
+	}
+}
+
+opinion_of_avatar = {
+	base = 0
+	modifier = {
+		set_temp_variable = { opinion_of_avatar = global.base_avatar_opinion }
+
+		set_temp_variable = { opinion_of_avatar_modifier = modifier@opinion_of_avatar_modifier }
+
+		add_to_temp_variable = { opinion_of_avatar = opinion_of_avatar_modifier }
+
+		clamp_temp_variable = {
+			var = opinion_of_avatar
+			min = -100
+			max = 100
+		}
+		
+		add = opinion_of_avatar
+	}
+}
+
+avatar_effect_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { effect_modifier = global.base_avatar_opinion }
+
+		set_temp_variable = { opinion_of_avatar_modifier = modifier@opinion_of_avatar_modifier }
+
+		add_to_temp_variable = { effect_modifier = opinion_of_avatar_modifier }
+
+		multiply_temp_variable = { effect_modifier = 0.001 }
+
+		multiply_temp_variable = { effect_modifier = avatar_influence }
+
+		multiply_temp_variable = { effect_modifier = 0.05 }
+
+		clamp_temp_variable = {
+			var = effect_modifier
+			min = -0.25
+			max = 0.25
+		}
+		
+		add = effect_modifier
+	}
+}
+
+
+colonial_guards_effect = {
+	base = 0
+	modifier = {
+		set_temp_variable = { guards_effect = controller:num_armies_in_state@FROM }
+		multiply_temp_variable = { guards_effect = -0.05 }
+		
+		add = guards_effect
+	}
+}

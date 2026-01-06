@@ -1,0 +1,115 @@
+capital = 302
+
+OOB = "SNW_12"
+
+set_technology = {
+# infantry
+	basic_armor = 1
+	basic_spear_1 = 1
+	basic_sword_1 = 1
+	light_armor_0 = 1
+# ranged
+	ranged_weapons = 1
+# support
+	tech_support = 1
+# special
+	firebender_equipment_1 = 1
+# doctrine
+	power = 1
+	
+	spear_update_1 = 1
+	sidearm_update_1 = 1
+	shield_update_1 = 1
+	tip0 = 1
+	uniform0 = 1
+# construction
+	farm_1 = 1
+	ranch_1 = 1
+	animal_weaving_1 = 1
+	lumber_1 = 1
+	carpentry_1 = 1
+	quarry_1 = 1
+	masonry_1 = 1
+	fishing_stand_1 = 1
+}
+
+#set_research_slots = 1
+set_convoys = 10
+set_stability = 0.9 
+set_war_support = 0.2
+
+ 
+set_country_flag = SNW_special_forces
+set_country_flag = lost_civilisation
+add_ideas = {
+	hidden_economy
+	sun_benders_only
+
+	ran_and_shaw
+}
+
+set_politics = {
+	ruling_party = fire_culture
+	last_election = "2.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 20
+	pluralist_culture = 0
+	fire_culture = 60
+	earth_culture = 0
+	air_culture = 20
+}
+
+###########################
+
+
+recruit_character = SNW_head_of_intelligence_1
+recruit_character = SNW_head_of_intelligence_2
+recruit_character = SNW_head_of_intelligence_3
+recruit_character = SNW_head_of_intelligence_4
+recruit_character = SNW_head_of_intelligence_5
+recruit_character = SNW_head_of_intelligence_6
+
+recruit_character = SNW_quartermaster_1
+recruit_character = SNW_quartermaster_2
+recruit_character = SNW_quartermaster_3
+recruit_character = SNW_quartermaster_4
+recruit_character = SNW_quartermaster_5
+recruit_character = SNW_quartermaster_6
+
+recruit_character = SNW_lost_civilisation
+recruit_character = SNW_sun_warrior_chief_early
+recruit_character = SNW_kedu
+recruit_character = SNW_generic
+
+
+
+ ## #####  ##  ###  #####       #  ##    #
+#     #   #  # #  #   #        ## #  #  #
+ #    #   #### ###    #       # # #  # #  #
+  #   #   #  # #  #   #         # #  # #  #
+##    #   #  # #  #   #         #  ##   ##
+
+
+
+106.2.4 ={
+recruit_character = SNW_sun_warrior_chief
+
+}
+
+ ## #####  ##  ###  #####       #   #   #
+#     #   #  # #  #   #        ##  ##  ##
+ #    #   #### ###    #       # # # # # #
+  #   #   #  # #  #   #         #   #   #
+##    #   #  # #  #   #         #   #   #
+
+
+
+
+111.10.30 ={
+
+
+}

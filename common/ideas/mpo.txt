@@ -1,0 +1,31 @@
+ideas = {
+
+	hidden_ideas = {
+
+		fractured_desert_spirit = {
+			
+			removal_cost = -1
+
+			on_add = {
+				set_variable = { victory_condition = token:fractured_desert_spirit }
+			}
+
+			cancel = {
+				NOT = {
+					check_variable = { victory_condition = token:fractured_desert_spirit }
+				}
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+
+	}
+
+	country = {
+
+		
+
+	}
+}

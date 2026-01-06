@@ -1,0 +1,310 @@
+
+technologies = {
+
+	armored_vehicle_prototype = {
+		dependencies = {
+			steam_engine = 1
+		}
+
+		allow_branch = {
+			has_country_flag = FIR_armor
+        }
+
+		enable_equipments = {
+			tank_equipment_1
+		}
+
+		enable_subunits = {
+			fire_tank
+		}
+		
+		path = {
+			leads_to_tech = tank_prototype_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 50
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+			motorisation
+		}
+	}
+
+	tank_prototype_1 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+		
+		enable_equipments = {
+			tank_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = tank_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 60
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+			motorisation
+		}
+	}
+
+	tank_1 = {
+		dependencies = {
+			applied_mathematics = 1
+			laws_of_nature = 1
+		}
+
+		enable_equipments = {
+			tank_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = tank_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tundra_tank_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 80
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+			motorisation
+		}
+	}
+
+	tank_2 = {
+		dependencies = {
+			gas_turbine = 1
+		}
+
+		enable_equipments = {
+			tank_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = tank_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = train_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 90
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+			motorisation
+		}
+	}
+
+	tank_3 = {
+		dependencies = {
+			energy_manipulation = 1
+		}
+
+		enable_equipments = {
+			tank_equipment_5
+		}
+		
+		
+		research_cost = 2
+		#start_year = 100
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+			motorisation
+		}
+	}
+
+	train_1 = {
+		dependencies = {
+			chemistry = 1
+		}
+
+		enable_subunits = {
+			armored_train
+		}
+
+		enable_equipments = {
+			train_equipment_1
+		}
+		
+		research_cost = 2
+		#start_year = 100
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = -4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+			motorisation
+		}
+	}
+
+	siege_tundra_tank_1 = {
+		dependencies = {
+			chemistry = 1
+		}
+
+		enable_subunits = {
+			siege_tundra_tank
+		}
+
+		enable_equipments = {
+			siege_tundra_tank_equipment_1
+		}
+		
+		research_cost = 2
+		#start_year = 110
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 4 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+			motorisation
+		}
+	}
+
+
+	tundra_tank_1 = {
+		dependencies = {
+			applied_mathematics = 1
+		}
+
+		enable_subunits = {
+			tundra_tank
+		}
+
+		enable_equipments = {
+			tundra_tank_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = tundra_tank_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 90
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+			motorisation
+		}
+	}
+
+	tundra_tank_2 = {
+		dependencies = {
+			aerodynamics = 1
+		}
+
+		enable_equipments = {
+			tundra_tank_equipment_2
+		}
+
+		path = {
+			leads_to_tech = siege_tundra_tank_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		#start_year = 100
+		folder = {
+			name = fir_special_forces_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		categories = {
+			armor
+			cat_light_armor
+			motorisation
+		}
+	}
+
+
+
+}

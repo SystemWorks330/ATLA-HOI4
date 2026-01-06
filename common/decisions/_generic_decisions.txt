@@ -1,0 +1,749 @@
+
+generic_debug_view = {
+	show_wanted_divisions = {
+		available = {
+			
+			always = no
+		}
+	}
+	show_current_taxation = {
+		available = {always = yes}
+		complete_effect = {
+			calculate_countrys_taxation = yes
+		}
+	}
+	log_total_number_of_divisions = {
+		available = {
+			always = yes
+		}	
+		complete_effect = {	
+			set_temp_variable = {
+				var = d
+				value = 0 
+			}
+			every_country = {
+				add_to_temp_variable = {
+					var = d
+					value = THIS.num_divisions
+				}
+			}
+			set_temp_variable = {
+				var = e
+				value = 0
+			}
+			every_country = {
+				limit  = {
+					is_in_earth_kingdom = yes
+				}
+				add_to_temp_variable = {
+					var = e
+					value = THIS.num_divisions
+				}
+			}
+			log = "Total number of divisions: [?d], Fire Nation: [?FIR.num_divisions], Earth Kingdom: [?e]"
+		}
+	} 
+
+	fir_effect = {
+		allowed = {
+			tag = FIR
+		}
+		available = {
+			
+		}
+
+		complete_effect = {
+			FIR_victory = yes
+		}
+
+	}
+	avatars_location = {
+		allowed = {
+			always = yes
+		}
+		
+	}
+	stop_all_current_wars = {
+		allowed = {
+			always = yes
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_war = yes
+				}
+				every_possible_country = {
+					limit = {
+						has_war_with = PREV
+					}
+					white_peace = PREV
+					give_military_access = PREV 
+				}
+			}
+		}
+	}
+	declare_war_immediately = {
+		allowed = {
+			always = yes
+		}
+		target_trigger = {
+			FROM = {
+				NOT = {tag = ROOT} 
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_in_faction = yes
+					}
+				}
+				FROM = {
+					leave_faction = yes
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_in_faction = yes
+					}
+				}
+				ROOT = {
+					leave_faction = yes
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_puppet = yes
+					}
+				}
+				FROM.overlord = {
+					release_puppet = FROM
+				}
+				FROM = {
+					set_autonomy = {
+						target = THIS
+						autonomy_state = autonomy_free
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_puppet = yes
+					}
+				}
+				ROOT.overlord = {
+					release_puppet = ROOT
+				}
+			}
+			ROOT = {
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				} 
+			}
+		}
+	}
+}
+
+
+reoccupy_category = {
+
+	show_genocided_territories = {
+
+		icon = visible
+
+		visible = {
+			NOT = {
+				has_country_flag = show_genocided_territories
+			}
+		}
+
+		complete_effect = {
+			set_country_flag = show_genocided_territories
+		}
+
+	}
+
+	hide_genocided_territories = {
+
+		icon = invisible
+
+		visible = {
+			has_country_flag = show_genocided_territories
+		}
+
+		complete_effect = {
+			clr_country_flag = show_genocided_territories
+		}
+
+	}
+	
+	reinhabit_land = {
+
+		icon = onmap_colonising
+
+
+		allowed = {
+			always = no
+		}
+		visible = {
+			has_country_flag = show_genocided_territories
+		}
+		available = {
+			NOT = {
+				has_country_flag = establishing_a_colony
+			}
+			FROM = {
+				NOT = {
+					is_core_of = ROOT
+					has_state_flag = recolonisation_in_progress
+				}
+			}
+		}
+
+		state_target = yes
+		target_trigger = {
+			
+		}
+
+		fire_only_once = no
+		custom_cost_trigger = {
+			check_variable = { var = money_variable compare = greater_than_or_equals value = 100 }
+		}
+		custom_cost_text = expenses_100
+
+		days_remove = colony_growth@120
+		#days_re_enable = 180
+		on_map_mode = map_only
+		complete_effect = {
+			hidden_effect = { scoped_sound_effect  = "lose_gold" }
+			subtract_from_variable = { var = money_variable value = 100 }
+			
+			FROM = {
+				set_state_flag = recolonisation_in_progress
+			}
+			ROOT = {
+				set_country_flag = establishing_a_colony
+			}
+		}
+		cancel_effect = {
+			FROM = {
+				clr_state_flag = recolonisation_in_progress
+			}
+			ROOT = {
+				clr_country_flag = establishing_a_colony
+			}
+		}
+
+		modifier = {
+			monthly_population = -0.1
+			#stability_weekly_factor = -0.001
+			expenses_per_pop = 1
+		}
+
+		remove_effect = {
+			ROOT = {
+				clr_country_flag = establishing_a_colony
+				transfer_state = FROM
+				add_stability = 0.1
+			}
+			FROM = {
+				set_variable = {
+					var = fire_pop
+					value = ROOT.party_popularity_100@fire_culture
+					tooltip = set_fire_pop_tt
+				}
+				set_variable = {
+					var = earth_pop
+					value = ROOT.party_popularity_100@earth_culture
+					tooltip = set_earth_pop_tt
+				}
+				set_variable = {
+					var = water_pop
+					value = ROOT.party_popularity_100@water_culture
+					tooltip = set_water_pop_tt
+				}
+				set_variable = {
+					var = air_pop
+					value = ROOT.party_popularity_100@air_culture
+					tooltip = set_air_pop_tt
+				}
+				set_variable = {
+					var = nonbender_pop
+					value = ROOT.party_popularity_100@pluralist_culture
+					tooltip = set_nonbender_pop_tt
+				}
+
+				clr_state_flag = recolonisation_in_progress
+				add_dynamic_modifier = { modifier = new_settlement }
+				force_update_dynamic_modifier = yes
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+}
+
+recruitment_decision_category = {
+	
+	small_recruitment_campaign = {
+
+		available = {
+			any_owned_state = {
+				state_population > 5000
+				state_population < 10000
+			}
+		}
+
+		visible = {
+			
+		}
+
+		days_re_enable = 360
+
+		complete_effect = {
+			#custom_effect_tooltip = recruitment_campaign_1_tt
+			random_owned_state = {
+				limit = { 
+					is_core_of = ROOT 
+					THIS = {
+						state_population > 5000
+						state_population < 10000
+					}
+				}
+				add_to_variable = { local_migrant_pool = -1000 }
+				# = -1000
+			}
+			add_manpower = 1000
+		}
+
+		cost = 10
+
+	}
+
+	medium_recruitment_campaign = {
+
+		available = {
+			any_owned_state = {
+				state_population > 10000
+				state_population < 20000
+            }
+		}
+
+		visible = {
+			
+		}
+
+		days_re_enable = 360
+
+		complete_effect = {
+			#custom_effect_tooltip = recruitment_campaign_1_tt
+			random_owned_state = {
+				limit = { 
+					is_core_of = ROOT 
+					THIS = {
+						state_population > 10000
+						state_population < 20000
+					}
+				}
+				add_to_variable = { local_migrant_pool = -2000 }
+				#add_manpower = -2000
+			}
+			add_manpower = 2000
+		}
+		cost = 20
+
+	}
+
+	large_recruitment_campaign = {
+
+		available = {
+			any_owned_state = {
+				state_population > 20000
+				state_population < 50000
+            }
+		}
+
+		visible = {
+			
+		}
+
+		days_re_enable = 360
+
+		complete_effect = {
+			#custom_effect_tooltip = recruitment_campaign_1_tt
+			random_owned_state = {
+				limit = { 
+					is_core_of = ROOT 
+					THIS = {
+						state_population > 20000
+						state_population < 50000
+					}
+				}
+				add_to_variable = { local_migrant_pool = -4000 }
+				#add_manpower = -4000
+			}
+			add_manpower = 4000
+		}
+		cost = 30
+
+	}
+
+}
+
+
+war_measures_category = {
+
+	campaign_season = {
+
+		icon = attack_plan
+
+		available = {
+			has_war = yes
+			NOT = { 
+				has_country_flag = military_campaign
+			}
+		}
+
+		days_remove = 100
+
+		modifier = {
+			weekly_war_weariness = 0.01
+			army_attack_factor = 0.05
+			army_speed_factor = 0.05
+			land_reinforce_rate = 0.01
+		}
+
+		#cost = 100
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = honour_cost_20
+		
+		complete_effect = {
+			set_country_flag = military_campaign
+
+			hidden_effect = { add_command_power = -20 }
+		}
+		remove_effect = {
+			clr_country_flag = military_campaign
+		}
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				AND = {
+					has_war = yes
+					original_tag = FIR
+					check_variable = { war_exhaustion_weekly < 5 }
+				}
+				add = 50
+			}
+		}
+	}
+
+	gathering_season = {
+
+		icon = attack_plan
+
+		available = {
+            has_war = yes
+			NOT = { 
+				has_country_flag = military_campaign
+			}
+        }
+
+        days_remove = 100
+
+        modifier = {
+        	max_planning_factor = 0.1
+			max_dig_in_factor = 0.1
+			army_attack_factor = -0.15
+			army_speed_factor = -0.15
+			breakthrough_factor = -0.15
+			out_of_supply_factor = -0.25
+        }
+
+		#cost = 100
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = honour_cost_20
+		
+		complete_effect = {
+			set_country_flag = military_campaign
+
+			hidden_effect = { add_command_power = -20 }
+		}
+		remove_effect = {
+			clr_country_flag = military_campaign
+
+			every_unit_leader = {
+				limit = {
+					is_leading_army = yes
+				}
+				supply_units = 720
+			}
+			#add_to_variable = {
+			#	var = weekly_accumulated_exhaustion
+			#	value = -5
+			#	tooltip = war_weariness_remove_tooltip
+			#}
+		}
+
+        ai_will_do = {
+			factor = 1
+			#modifier = {
+			#	AND = {
+			#		has_war = yes
+			#		check_variable = { war_exhaustion_variable > 199 }
+			#	}
+			#	add = 100
+			#}
+		}
+	}
+
+	guerrilla_campaign = {
+
+		icon = attack_plan
+
+		available = {
+            has_war = yes
+			NOT = { 
+			has_country_flag = military_campaign
+			}
+        }
+
+        days_remove = 100
+
+
+        modifier = {
+			army_attack_factor = -0.1
+        	resistance_damage_to_garrison_on_our_occupied_states = 0.05
+			army_core_defence_factor = 0.05
+			org_loss_when_moving = 0.05
+        }
+
+		#cost = 100
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = honour_cost_20
+		
+		complete_effect = {
+			set_country_flag = military_campaign
+
+			hidden_effect = { add_command_power = -20 }
+		}
+		remove_effect = {
+			clr_country_flag = military_campaign
+		}
+		
+        ai_will_do = {
+			factor = 1
+		}
+	}
+
+	raiding_campaign = {
+
+		icon = attack_plan
+
+		available = {
+            has_war = yes
+			NOT = { 
+			has_country_flag = military_campaign
+			}
+        }
+
+        days_remove = 100
+
+        modifier = {
+			weekly_war_weariness = 0.01
+			breakthrough_factor = 0.1
+			fortification_collateral_chance = 0.25
+			land_night_attack = 0.1
+			dont_lose_dig_in_on_attack = 1
+        }
+
+		#cost = 100
+		custom_cost_trigger = {
+			command_power > 20
+		}
+		custom_cost_text = honour_cost_20
+		
+		complete_effect = {
+			set_country_flag = military_campaign
+
+			hidden_effect = { add_command_power = -20 }
+		}
+		remove_effect = {
+			clr_country_flag = military_campaign
+		}
+		
+        ai_will_do = {
+			factor = 00
+			modifier = {
+				AND = {
+					original_tag = FIR
+					has_war = yes
+					check_variable = { war_exhaustion_variable < 300 }
+				}
+				add = 100
+			}
+		}
+	}
+
+}
+
+
+generic_research_slot_category = {
+	
+#	second_extra_research_slot = {
+#
+#		icon = research_slot
+#
+#		visible = {
+#			amount_research_slots < 2
+#		}
+#
+#		available = {
+#			hidden_trigger = {
+#				amount_research_slots < 2
+#			}
+#			AND = {
+#				num_of_civilian_factories > 10
+#				#num_of_available_civilian_factories > 5
+#				num_of_naval_factories > 10
+#				has_equipment = {
+#					convoy_1 > 10
+#				}
+#				has_idea = global_trade
+#				OR = {
+#					has_tech = progressive_economy_0
+#					has_tech = conservative_economy_0
+#				}
+#				has_stability > 0.6
+#			}
+#		}
+#
+#		modifier = {
+#			civilian_factory_use = 5
+#		}
+#		days_remove = 200
+#
+#		remove_effect = {
+#			add_research_slot = 1
+#		}
+#		cost = 0
+#        fire_only_once = yes
+#
+#        custom_cost_trigger = {
+#			num_of_civilian_factories > 4
+#		}
+#		custom_cost_text = manufactory_5
+#		ai_will_do = {
+#			base = 100
+#		}
+#	}
+#
+#	third_extra_research_slot = {
+#
+#		icon = research_slot
+#
+#		visible = {
+#			amount_research_slots < 3
+#			amount_research_slots > 1
+#		}
+#
+#		available = {
+#			hidden_trigger = {
+#				amount_research_slots < 3
+#				amount_research_slots > 1
+#			}
+#			AND = {
+#				num_of_civilian_factories > 25
+#				#num_of_available_civilian_factories > 10
+#				OR = {
+#					has_idea = mandatory_education
+#					has_idea = elite_education
+#				}
+#				OR = {
+#					has_tech = progressive_education_1
+#					has_tech = conservative_education_1
+#				}
+#				has_stability > 0.7
+#			}
+#		}
+#
+#		modifier = {
+#			civilian_factory_use = 10
+#		}
+#		days_remove = 300
+#
+#		remove_effect = {
+#			add_research_slot = 1
+#		}
+#
+#		custom_cost_trigger = {
+#			num_of_civilian_factories > 9
+#		}
+#		custom_cost_text = manufactory_10
+#		ai_will_do = {
+#			base = 100
+#		}
+#
+#	}
+#
+#	fourth_extra_research_slot = {
+#
+#		icon = research_slot
+#
+#		visible = {
+#			amount_research_slots < 4
+#			amount_research_slots > 2
+#		}
+#
+#		available = {
+#			hidden_trigger = {
+#				amount_research_slots < 4
+#				amount_research_slots > 2
+#			}
+#			AND = {
+#				num_of_civilian_factories > 50
+#				#num_of_available_civilian_factories > 20
+#				has_idea = elite_education
+#				OR = {
+#					has_tech = progressive_education_2
+#					has_tech = conservative_education_2
+#				}
+#				has_stability > 0.8
+#			}
+#		}
+#
+#		modifier = {
+#			civilian_factory_use = 20
+#		}
+#		days_remove = 400
+#
+#		remove_effect = {
+#			add_research_slot = 1
+#		}
+#
+#		custom_cost_trigger = {
+#			num_of_civilian_factories > 19
+#		}
+#		custom_cost_text = manufactory_20
+#		ai_will_do = {
+#			base = 100
+#		}
+#
+#	}
+	
+
+}

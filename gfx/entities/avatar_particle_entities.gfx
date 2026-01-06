@@ -1,0 +1,90 @@
+objectTypes = {
+
+	#### infantry
+
+	pdxparticle = {
+		name = "arrow_shoot_particle"
+		type = "arrow_shot_file"
+		scale = 1
+	}
+
+	pdxparticle = {
+		name = "arrow_draw_particle"
+		type = "arrow_draw_file"
+		scale = 1
+	}
+
+	#### ships
+
+	pdxparticle = {
+		name = "ship_moving_front_large_particle"
+		type = "ship_moving_front_file"
+		scale = 2
+	}
+	
+	pdxparticle = {
+		name = "ship_moving_back_large_particle"
+		type = "ship_moving_back_file"
+		scale = 2
+	}
+	
+	pdxparticle = {
+		name = "ship_moving_front_fleet_large_particle"
+		type = "ship_moving_front_fleet_file"
+		scale = 2
+	}
+	
+	pdxparticle = {
+		name = "ship_moving_back_fleet_large_particle"
+		type = "ship_moving_back_fleet_file"
+		scale = 2
+	}
+
+	pdxparticle = {  
+		name = "ship_smoke_particle"
+		type = "ship_smoke_file"
+		scale = 1 
+	}
+
+#BENDING
+
+	pdxparticle = {
+		name = "firebender_01_particle"
+		type = "bender_fire_1_file"
+		scale = 3
+	}
+
+	pdxparticle = {
+		name = "smithy_particle"
+		type = "smithy_sparks_file"
+		scale = 1
+	}
+
+	pdxparticle = {
+		name = "quarry_particle"
+		type = "quarry_sparks_file"
+		scale = 1
+	}
+
+	pdxparticle = {
+		name = "hay_particle"
+		type = "hay_file"
+		scale = 1
+	}
+
+
+#AMBIENT
+
+	pdxparticle = {
+		name = "great_comet_1"
+		type = "great_comet_file"
+		scale = 4
+	}
+
+	pdxparticle = {
+		name = "great_comet_2"
+		type = "great_comet_atmosphere"
+		scale = 2
+	}
+	
+}

@@ -1,0 +1,4606 @@
+technologies = {
+
+	basic_spear_1 = {
+
+		#allow_branch = {
+		#	NOT = {
+		#		has_dlc = "No Step Back"
+		#	}
+		#}
+
+		enable_equipments = {
+			spear_equipment_0
+		}
+		
+		enable_subunits = {
+			spearmen
+		}
+
+		path = {
+			leads_to_tech = basic_polearm_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = sidearm_update_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = spear_2
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = spear_update_1
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = basic_sword_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 1
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	basic_polearm_1 = {
+
+		enable_equipments = {
+			pike_equipment_1
+		}
+		
+		enable_subunits = {
+			pikemen
+		}
+
+		path = {
+			leads_to_tech = blade_update_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = polearm_2
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = pole_update_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 5
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 2 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sidearm_update_1 = {
+
+		#spearmen = {
+		#	hard_attack = 0.04
+		#	defense = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = sidearm_update_1_tt
+		}
+		show_effect_as_desc = yes
+		
+		path = {
+			leads_to_tech = pole_update_1
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1
+		#start_year = 5
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	spear_update_1 = {
+
+		spearmen = {
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = shield_update_1
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1
+		#start_year = 5
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	basic_sword_1 = {
+
+		enable_equipments = {
+			sword_equipment_1
+		}
+		
+		enable_subunits = {
+			swordsmen
+		}
+
+		path = {
+			leads_to_tech = shield_update_1
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = sword_2
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = sparring_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 5
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = 2 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	blade_update_1 = {
+
+		pikemen = {
+			hard_attack = 0.05
+		}
+		
+		path = {
+			leads_to_tech = drilling_a_1
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1
+		#start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 4 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pole_update_1 = {
+
+		#spearmen = {
+		#	hard_attack = 0.02
+		#	breakthrough = 0.02
+		#}
+		#pikemen = {
+		#	hard_attack = 0.02
+		#	breakthrough = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = poleturning_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+		
+		path = {
+			leads_to_tech = polearm_tactics_1
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1
+		#start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 4 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shield_update_1 = {
+
+		#spearmen = {
+		#	soft_attack = 0.02
+		#	defense = 0.01
+		#}
+		#swordsmen = {
+		#	soft_attack = 0.02
+		#	defense = 0.01
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = shield_update_1_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = armored_tactics_1
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			spear_tech
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_tactics_1 = {
+
+		#spearmen = {
+		#	breakthrough = 0.05
+		#}
+		#swordsmen = {
+		#	breakthrough = 0.05
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = boot_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 15
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 6 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			spear_tech
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sparring_1 = {
+
+		#swordsmen = {
+		#	soft_attack = 0.02
+		#	hard_attack = 0.04
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = blade_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+		
+		path = {
+			leads_to_tech = drilling_b_1
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1
+		#start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 4 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_a_1 = {
+	
+		path = {
+			leads_to_tech = defensive_a_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defensive_b_1
+			research_cost_coeff = 1
+		}
+		
+		#pikemen = {
+		#	max_organisation = 4
+		#	breakthrough = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = torch_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 15
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 6 }
+		}
+		
+		categories = {
+			age_1
+
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	drilling_b_1 = {
+	
+		path = {
+			leads_to_tech = offensive_a_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = offensive_b_1
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			max_organisation = 2
+			hard_attack = 0.03
+			soft_attack = 0.02
+		}		
+
+		research_cost = 1
+		#start_year = 15
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 6 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	polearm_tactics_1 = {
+
+		spearmen = {
+			max_organisation = 1
+			ap_attack = 0.1
+		}
+		pikemen = {
+			max_organisation = 1
+			ap_attack = 0.1
+		}
+
+		research_cost = 1
+		#start_year = 15
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	defensive_a_1 = {
+
+		category_melee = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 1
+		#start_year = 20
+		folder = {
+			name = infantry_folder
+			position = { x = -6 y = 8 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_b_1 = {
+
+		#max_dig_in = 1
+
+		on_research_complete = {
+			custom_effect_tooltip = shovel_upgrade_1_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 20
+		folder = {
+			name = infantry_folder
+			position = { x = -8 y = 8 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_a_1 = {
+
+		category_melee = {
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+		#start_year = 20
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 8 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_b_1 = {
+
+		category_melee = {
+			breakthrough = 0.04
+		}
+
+		research_cost = 1
+		#start_year = 20
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			spear_equipment_1
+		}
+
+		path = {
+			leads_to_tech = spear_update_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = sidearm_update_2
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = spear_3
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 3
+		#start_year = 20
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			age_2
+
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shield_update_2 = {
+	
+		path = {
+			leads_to_tech = armored_tactics_2
+			research_cost_coeff = 1
+		}
+		#spearmen = {
+		#	soft_attack = 0.02
+		#	defense = 0.01
+		#}
+		#swordsmen = {
+		#	soft_attack = 0.02
+		#	defense = 0.01
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = shield_update_2_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 25
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 12 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			spear_tech
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_tactics_2 = {
+
+		#spearmen = {
+		#	breakthrough = 0.05
+		#}
+		#swordsmen = {
+		#	breakthrough = 0.05
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = boot_upgrade_2_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 35
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 14 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			spear_tech
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	polearm_2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			pike_equipment_2
+		}
+
+		path = {
+			leads_to_tech = blade_update_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = polearm_3
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = pole_update_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 25
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 10 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sidearm_update_2 = {
+
+		path = {
+			leads_to_tech = pole_update_2
+			research_cost_coeff = 1
+		}
+		
+		#spearmen = {
+		#	hard_attack = 0.04
+		#	defense = 0.02
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = sidearm_update_2_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+		#start_year = 25
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 10 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	spear_update_2 = {
+	
+		path = {
+			leads_to_tech = shield_update_2
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			hard_attack = 0.05
+		}	
+
+		research_cost = 1
+		#start_year = 25
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 10 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sword_2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			sword_equipment_2
+		}
+
+		path = {
+			leads_to_tech = shield_update_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = sword_3
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = sparring_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 25
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = 10 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	blade_update_2 = {
+
+		pikemen = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = drilling_a_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 30
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 12 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pole_update_2 = {
+
+		#spearmen = {
+		#	hard_attack = 0.02
+		#	breakthrough = 0.02
+		#}
+		#pikemen = {
+		#	hard_attack = 0.02
+		#	breakthrough = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = poleturning_upgrade_2_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = polearm_tactics_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 30
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 12 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shield_update_3 = {
+
+		#spearmen = {
+		#	soft_attack = 0.02
+		#	defense = 0.01
+		#}
+		#swordsmen = {
+		#	soft_attack = 0.02
+		#	defense = 0.01
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = shield_update_3_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = armored_tactics_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 30
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 20 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			spear_tech
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_tactics_3 = {
+
+		#spearmen = {
+		#	breakthrough = 0.05
+		#}
+		#swordsmen = {
+		#	breakthrough = 0.05
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = boot_upgrade_3_tt
+		}
+		show_effect_as_desc = yes	
+
+		research_cost = 1
+		#start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 22 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			spear_tech
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sparring_2 = {
+
+		#swordsmen = {
+		#	soft_attack = 0.02
+		#	hard_attack = 0.04
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = blade_upgrade_2_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = drilling_b_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 30
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 12 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_a_2 = {
+	
+		path = {
+			leads_to_tech = defensive_a_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defensive_b_2
+			research_cost_coeff = 1
+		}
+		
+		#pikemen = {
+		#	max_organisation = 4
+		#	breakthrough = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = torch_upgrade_2_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 35
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 14 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	polearm_tactics_2 = {
+
+		spearmen = {
+			max_organisation = 1
+			ap_attack = 0.1
+		}
+		pikemen = {
+			max_organisation = 1
+			ap_attack = 0.1
+		}
+
+		research_cost = 1
+		#start_year = 35
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 14 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_a_2 = {
+
+		category_melee = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 1
+		#start_year = 40
+		folder = {
+			name = infantry_folder
+			position = { x = -6 y = 16 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_b_2 = {
+
+		#max_dig_in = 1
+
+		on_research_complete = {
+			custom_effect_tooltip = shovel_upgrade_2_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 40
+		folder = {
+			name = infantry_folder
+			position = { x = -8 y = 16 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_a_2 = {
+
+		category_melee = {
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+		#start_year = 40
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 16 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_b_2 = {
+
+		category_melee = {
+			breakthrough = 0.04
+		}
+
+		research_cost = 1
+		#start_year = 40
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 16 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_3 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipments = {
+			spear_equipment_2
+		}
+
+		path = {
+			leads_to_tech = spear_update_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = sidearm_update_3
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = spear_4
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 3
+		#start_year = 40
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		categories = {
+			age_3
+
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_b_2 = {
+	
+		path = {
+			leads_to_tech = offensive_a_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = offensive_b_2
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			max_organisation = 2
+			hard_attack = 0.03
+			soft_attack = 0.02
+		}	
+
+		research_cost = 1
+		#start_year = 35
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 14 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	polearm_3 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipments = {
+			pike_equipment_3
+		}
+
+		path = {
+			leads_to_tech = blade_update_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = polearm_4
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = pole_update_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 35
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 18 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sidearm_update_3 = {
+
+		path = {
+			leads_to_tech = pole_update_3
+			research_cost_coeff = 1
+		}
+		
+		#spearmen = {
+		#	hard_attack = 0.04
+		#	defense = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = sidearm_update_3_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+		#start_year = 45
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 18 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	spear_update_3 = {
+	
+		path = {
+			leads_to_tech = shield_update_3
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			hard_attack = 0.05
+		}	
+		
+		research_cost = 1
+		#start_year = 45
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 18 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sword_3 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipments = {
+			sword_equipment_3
+		}
+		path = {
+			leads_to_tech = shield_update_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sword_4
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = sparring_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 45
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = 18 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	blade_update_3 = {
+
+		pikemen = {
+			hard_attack = 0.05
+		}	
+
+		path = {
+			leads_to_tech = drilling_a_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 50
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 20 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	pole_update_3 = {
+
+		#spearmen = {
+		#	hard_attack = 0.02
+		#	breakthrough = 0.02
+		#}
+		#pikemen = {
+		#	hard_attack = 0.02
+		#	breakthrough = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = poleturning_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = polearm_tactics_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 50
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 20 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	polearm_tactics_3 = {
+
+		spearmen = {
+			max_organisation = 1
+			ap_attack = 0.1
+		}
+		pikemen = {
+			max_organisation = 1
+			ap_attack = 0.1
+		}	
+
+		research_cost = 1
+		#start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 22 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_a_3 = {
+
+		category_melee = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 1
+		#start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = -6 y = 24 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_b_3 = {
+
+		#max_dig_in = 1
+
+		on_research_complete = {
+			custom_effect_tooltip = shovel_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = -8 y = 24 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_a_3 = {
+
+		category_melee = {
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+		#start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 24 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_b_3 = {
+
+		category_melee = {
+			breakthrough = 0.04
+		}
+
+		research_cost = 1
+		#start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 24 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_4 = {
+		dependencies = {
+			printing_press = 1
+		}
+
+		enable_equipments = {
+			spear_equipment_3
+		}
+
+		path = {
+			leads_to_tech = spear_update_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = sidearm_update_4
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = spear_5
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 3
+		#start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		categories = {
+			age_4
+
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_update_4 = {
+	
+		path = {
+			leads_to_tech = shield_update_4
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			hard_attack = 0.05
+		}	
+
+		research_cost = 1
+		#start_year = 65
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 26 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shield_update_4 = {
+	
+		path = {
+			leads_to_tech = armored_tactics_4
+			research_cost_coeff = 1
+		}
+		
+		#spearmen = {
+		#	soft_attack = 0.02
+		#	defense = 0.01
+		#}
+		#swordsmen = {
+		#	soft_attack = 0.02
+		#	defense = 0.01
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = shield_update_4_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 28 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			spear_tech
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_tactics_4 = {
+
+		#spearmen = {
+		#	breakthrough = 0.05
+		#}
+		#swordsmen = {
+		#	breakthrough = 0.05
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = boot_upgrade_4_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 30 }
+		}
+		
+		categories = {
+			age_4
+
+			infantry_weapons
+			spear_tech
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sparring_3 = {
+	
+		path = {
+			leads_to_tech = drilling_b_3
+			research_cost_coeff = 1
+		}	
+
+		#swordsmen = {
+		#	soft_attack = 0.02
+		#	hard_attack = 0.04
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = blade_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+		#start_year = 50
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 20 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_a_3 = {
+	
+		path = {
+			leads_to_tech = defensive_a_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defensive_b_3
+			research_cost_coeff = 1
+		}
+		
+		#pikemen = {
+		#	max_organisation = 4
+		#	breakthrough = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = torch_upgrade_3_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 22 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_b_3 = {
+	
+		path = {
+			leads_to_tech = offensive_a_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = offensive_b_3
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			max_organisation = 2
+			hard_attack = 0.03
+			soft_attack = 0.02
+		}	
+
+		research_cost = 1
+		#start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 22 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sidearm_update_4 = {
+
+		path = {
+			leads_to_tech = pole_update_4
+			research_cost_coeff = 1
+		}
+
+		#spearmen = {
+		#	hard_attack = 0.04
+		#	defense = 0.02
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = sidearm_update_4_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 65
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 26 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sword_4 = {
+		dependencies = {
+			printing_press = 1
+		}
+
+		enable_equipments = {
+			sword_equipment_4
+		}
+
+		path = {
+			leads_to_tech = shield_update_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = sword_5
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = sparring_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 65
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = 26 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sparring_4 = {
+	
+		path = {
+			leads_to_tech = drilling_b_4
+			research_cost_coeff = 1
+		}	
+
+		#swordsmen = {
+		#	soft_attack = 0.02
+		#	hard_attack = 0.04
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = blade_upgrade_4_tt
+		}
+		show_effect_as_desc = yes
+		
+		research_cost = 1
+		#start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 28 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	drilling_b_4 = {
+	
+		path = {
+			leads_to_tech = offensive_a_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = offensive_b_4
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			max_organisation = 2
+			hard_attack = 0.03
+			soft_attack = 0.02
+		}	
+
+		research_cost = 1
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 30 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	polearm_4 = {
+		dependencies = {
+			printing_press = 1
+		}
+	
+		path = {
+			leads_to_tech = blade_update_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = pole_update_4
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = polearm_5
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			pike_equipment_4
+		}
+
+		research_cost = 3
+		#start_year = 65
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 26 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	blade_update_4 = {
+
+		pikemen = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = drilling_a_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 28 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_a_4 = {
+	
+		path = {
+			leads_to_tech = defensive_a_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defensive_b_4
+			research_cost_coeff = 1
+		}
+		
+		#pikemen = {
+		#	max_organisation = 4
+		#	breakthrough = 0.02
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = torch_upgrade_4_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 30 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pole_update_4 = {
+
+		#spearmen = {
+		#	hard_attack = 0.02
+		#	breakthrough = 0.02
+		#}
+		#pikemen = {
+		#	hard_attack = 0.02
+		#	breakthrough = 0.02
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = poleturning_upgrade_4_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = polearm_tactics_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 28 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	polearm_tactics_4 = {
+
+		spearmen = {
+			max_organisation = 1
+			ap_attack = 0.1
+		}
+		pikemen = {
+			max_organisation = 1
+			ap_attack = 0.1
+		}
+
+		research_cost = 1
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 30 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_a_4 = {
+
+		category_melee = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 1
+		#start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = -6 y = 32 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_b_4 = {
+
+		#max_dig_in = 1
+
+		on_research_complete = {
+			custom_effect_tooltip = shovel_upgrade_4_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = -8 y = 32 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_a_4 = {
+
+		category_melee = {
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+		#start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 32 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_b_4 = {
+
+		category_melee = {
+			breakthrough = 0.04
+		}
+
+		research_cost = 1
+		#start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 32 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_5 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipments = {
+			spear_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = spear_update_5
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = sidearm_update_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = spear_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 3
+		#start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 32 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	spear_update_5 = {
+
+		path = {
+			leads_to_tech = shield_update_5
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			hard_attack = 0.05
+		}	
+
+		research_cost = 1
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 34 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sidearm_update_5 = {
+	
+		path = {
+			leads_to_tech = pole_update_5
+			research_cost_coeff = 1
+		}
+		
+		#spearmen = {
+		#	hard_attack = 0.04
+		#	defense = 0.02
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = sidearm_update_5_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 34 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	shield_update_5 = {
+	
+		path = {
+			leads_to_tech = armored_tactics_5
+			research_cost_coeff = 1
+		}
+		
+		#spearmen = {
+		#	soft_attack = 0.02
+		#	defense = 0.01
+		#}
+		#swordsmen = {
+		#	soft_attack = 0.02
+		#	defense = 0.01
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = shield_update_5_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 36 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			spear_tech
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armored_tactics_5 = {
+
+		#spearmen = {
+		#	breakthrough = 0.05
+		#}
+		#swordsmen = {
+		#	breakthrough = 0.05
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = boot_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 95
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 38 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			spear_tech
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	polearm_5 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+	
+		path = {
+			leads_to_tech = blade_update_5
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = pole_update_5
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = polearm_6
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			pike_equipment_5
+		}
+
+		research_cost = 3
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 34 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	blade_update_5 = {
+
+		pikemen = {
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = drilling_a_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 36 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_a_5 = {
+	
+		path = {
+			leads_to_tech = defensive_a_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = defensive_b_5
+			research_cost_coeff = 1
+		}
+		
+		#pikemen = {
+		#	max_organisation = 4
+		#	breakthrough = 0.02
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = torch_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 95
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 38 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pole_update_5 = {
+
+		#spearmen = {
+		#	hard_attack = 0.02
+		#	breakthrough = 0.02
+		#}
+		#pikemen = {
+		#	hard_attack = 0.02
+		#	breakthrough = 0.02
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = poleturning_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = polearm_tactics_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 36 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	polearm_tactics_5 = {
+
+		spearmen = {
+			max_organisation = 1
+			ap_attack = 0.1
+		}
+		pikemen = {
+			max_organisation = 1
+			ap_attack = 0.1
+		}
+
+		research_cost = 1
+		#start_year = 95
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 38 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sword_5 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipments = {
+			sword_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = shield_update_5
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = sparring_5
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = sword_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = 34 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sparring_5 = {
+
+		path = {
+			leads_to_tech = drilling_b_5
+			research_cost_coeff = 1
+		}
+		
+		#swordsmen = {
+		#	soft_attack = 0.02
+		#	hard_attack = 0.04
+		#}
+
+		on_research_complete = {
+			custom_effect_tooltip = blade_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 36 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	drilling_b_5 = {
+	
+		path = {
+			leads_to_tech = offensive_a_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = offensive_b_5
+			research_cost_coeff = 1
+		}
+		
+		swordsmen = {
+			max_organisation = 2
+			hard_attack = 0.03
+			soft_attack = 0.02
+		}		
+
+		research_cost = 1
+		#start_year = 95
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 38 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_a_5 = {
+
+		category_melee = {
+			hard_attack = 0.05
+		}
+
+		research_cost = 1
+		#start_year = 100
+		folder = {
+			name = infantry_folder
+			position = { x = -6 y = 40 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	defensive_b_5 = {
+
+		#max_dig_in = 1
+
+		on_research_complete = {
+			custom_effect_tooltip = shovel_upgrade_5_tt
+		}
+		show_effect_as_desc = yes
+
+		research_cost = 1
+		#start_year = 100
+		folder = {
+			name = infantry_folder
+			position = { x = -8 y = 40 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_a_5 = {
+
+		category_melee = {
+			max_organisation = 1
+		}
+		
+		research_cost = 1
+		#start_year = 100
+		folder = {
+			name = infantry_folder
+			position = { x = 8 y = 40 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	offensive_b_5 = {
+
+		category_melee = {
+			breakthrough = 0.04
+		}
+
+		research_cost = 1
+		#start_year = 100
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 40 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			sword_tech
+			spear_tech
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_6 = {
+		dependencies = {
+			chemistry = 1
+		}
+		
+		path = {
+			leads_to_tech = sidearm_update_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = spear_update_6
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			spear_equipment_5
+		}
+
+		research_cost = 3
+		#start_year = 100
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 40 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	polearm_6 = {
+		dependencies = {
+			chemistry = 1
+		}
+	
+		path = {
+			leads_to_tech = blade_update_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = pole_update_6
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			pike_equipment_6
+		}
+
+		research_cost = 3
+		#start_year = 105
+		folder = {
+			name = infantry_folder
+			position = { x = -5 y = 42 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	sword_6 = {
+		dependencies = {
+			chemistry = 1
+		}
+	
+		path = {
+			leads_to_tech = shield_update_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = sparring_6
+			research_cost_coeff = 1
+		}
+		
+		enable_equipments = {
+			sword_equipment_6
+		}
+
+		research_cost = 3
+		#start_year = 105
+		folder = {
+			name = infantry_folder
+			position = { x = 5 y = 42 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	blade_update_6 = {
+		
+		pikemen = {
+			hard_attack = 0.25
+			max_organisation = 1
+		}
+
+		research_cost = 1
+		#start_year = 110
+		folder = {
+			name = infantry_folder
+			position = { x = -7 y = 44 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	pole_update_6 = {
+	
+		
+		pikemen = {
+			soft_attack = 0.04
+			breakthrough = 0.02
+		}	
+
+		research_cost = 1
+		#start_year = 110
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 44 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			pike_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	shield_update_6 = {
+	
+		swordsmen = {
+			hard_attack = 0.04
+			defense = 0.02
+		}
+
+		research_cost = 1
+		#start_year = 110
+		folder = {
+			name = infantry_folder
+			position = { x = 3 y = 44 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sparring_6 = {
+		
+		swordsmen = {
+			soft_attack = 0.04
+			breakthrough = 0.02
+		}
+
+		research_cost = 1
+		#start_year = 110
+		folder = {
+			name = infantry_folder
+			position = { x = 7 y = 44 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			sword_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	spear_update_6 = {
+
+		path = {
+			leads_to_tech = shield_update_6
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			soft_attack = 0.04
+			defense = 0.04
+		}	
+
+		research_cost = 1
+		#start_year = 105
+		folder = {
+			name = infantry_folder
+			position = { x = 1 y = 42 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	sidearm_update_6 = {
+
+		path = {
+			leads_to_tech = pole_update_6
+			research_cost_coeff = 1
+		}
+		
+		spearmen = {
+			hard_attack = 0.05
+			defense = 0.04
+		}	
+
+		research_cost = 1
+		#start_year = 105
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 42 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			spear_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	
+	
+	
+	
+
+
+	basic_armor = {
+
+		#allow_branch = {
+		#	NOT = {
+		#		has_dlc = "No Step Back"
+		#	}
+		#}
+
+		enable_equipments = {
+			heavy_armor_equipment_0
+		}
+		
+		path = {
+			leads_to_tech = heavy_armor_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = armor_a_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = armor_b_1
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 3.0
+		#start_year = 1
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_1 = {
+
+		out_of_supply_factor = -0.1	
+
+		on_research_complete = {
+			custom_effect_tooltip = backpack_1_tt
+		}
+		show_effect_as_desc = yes
+		
+		path = {
+			leads_to_tech = armor_e_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_a_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 5
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_2 = {
+
+		heat_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 4 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	armor_e_2 = {
+
+		winter_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 4 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_1 = {
+
+		#category_melee = {
+		#	defense = 0.03
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_1_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = armor_b_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 5
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_2 = {
+
+		category_melee = {
+			max_organisation = 1
+			#max_strength = 2
+		}	
+
+		research_cost = 1
+		#start_year = 10
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heavy_armor_1 = {
+		dependencies = {
+			domestication = 1
+		}
+
+		enable_equipments = {
+			heavy_armor_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = heavy_armor_2
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = armor_a_3
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = armor_b_3
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 3.0
+		#start_year = 15
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_3 = {
+
+		out_of_supply_factor = -0.1	
+
+		on_research_complete = {
+			custom_effect_tooltip = backpack_2_tt
+		}
+		show_effect_as_desc = yes
+		
+		path = {
+			leads_to_tech = armor_e_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_a_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 20
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_4 = {
+
+		heat_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 25
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 10 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_4 = {
+	
+		winter_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 25
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_3 = {
+
+		#category_melee = {
+		#	defense = 0.03
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_2_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = armor_b_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 20
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_4 = {
+
+		category_melee = {
+			max_organisation = 1
+			#max_strength = 2
+		}	
+
+		research_cost = 1
+		#start_year = 25
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		categories = {
+			age_1
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heavy_armor_2 = {
+		dependencies = {
+			smelting = 1
+		}
+
+		enable_equipments = {
+			heavy_armor_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = heavy_armor_3
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = armor_a_5
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = armor_b_5
+			research_cost_coeff = 1
+		}	
+
+		research_cost = 3
+		#start_year = 30
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_5 = {
+
+		out_of_supply_factor = -0.1
+
+		on_research_complete = {
+			custom_effect_tooltip = backpack_3_tt
+		}
+		show_effect_as_desc = yes
+		
+		path = {
+			leads_to_tech = armor_e_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_a_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 35
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_6 = {
+
+		heat_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 40
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 16 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_6 = {
+
+		winter_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 40
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 16 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_5 = {
+
+		#category_melee = {
+		#	defense = 0.03
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_3_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = armor_b_6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 35
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_6 = {
+
+		category_melee = {
+			max_organisation = 1
+			#max_strength = 2
+		}	
+
+		research_cost = 1
+		#start_year = 40
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 16 }
+		}
+		
+		categories = {
+			age_2
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heavy_armor_3 = {
+		dependencies = {
+			bronze_alloy = 1
+		}
+
+		enable_equipments = {
+			heavy_armor_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = heavy_armor_4
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = armor_a_7
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = armor_b_7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3.0
+		#start_year = 45
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	armor_a_7 = {
+
+		out_of_supply_factor = -0.1
+
+		on_research_complete = {
+			custom_effect_tooltip = backpack_4_tt
+		}
+		show_effect_as_desc = yes
+		
+		path = {
+			leads_to_tech = armor_e_8
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_a_8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 50
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = 20 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_8 = {
+
+		heat_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 22 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_8 = {
+
+		winter_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 22 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_7 = {
+
+		#category_melee = {
+		#	defense = 0.03
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_4_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = armor_b_8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 50
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_8 = {
+
+		category_melee = {
+			max_organisation = 1
+			#max_strength = 2
+		}	
+
+		research_cost = 1
+		#start_year = 55
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 22 }
+		}
+		
+		categories = {
+			age_3
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heavy_armor_4 = {
+
+		enable_equipments = {
+			heavy_armor_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = heavy_armor_5
+			research_cost_coeff = 1
+		}	
+
+		path = {
+			leads_to_tech = armor_a_9
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = armor_b_9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 3.0
+		#start_year = 60
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	armor_a_9 = {
+
+		out_of_supply_factor = -0.1
+
+		on_research_complete = {
+			custom_effect_tooltip = backpack_5_tt
+		}
+		show_effect_as_desc = yes
+		
+		path = {
+			leads_to_tech = armor_e_10
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_a_10
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 65
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = 26 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_10 = {
+
+		heat_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 28 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_10 = {
+
+		winter_attrition_factor = -0.1
+		
+		research_cost = 1
+		#start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 28 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_9 = {
+
+		#category_melee = {
+		#	defense = 0.03
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_5_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = armor_b_10
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 65
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 26 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_10 = {
+
+		category_melee = {
+			max_organisation = 1
+			#max_strength = 2
+		}	
+
+		research_cost = 1
+		#start_year = 70
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 28 }
+		}
+		
+		categories = {
+			age_4
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	heavy_armor_5 = {
+		dependencies = {
+			printing_press = 1
+		}
+
+		enable_equipments = {
+			heavy_armor_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = heavy_armor_6
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = armor_a_11
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_b_11
+			research_cost_coeff = 1
+		}
+		research_cost = 3.0
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 30 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+
+	armor_a_11 = {
+
+		out_of_supply_factor = -0.1
+
+		on_research_complete = {
+			custom_effect_tooltip = backpack_6_tt
+		}
+		show_effect_as_desc = yes
+		
+		path = {
+			leads_to_tech = armor_e_12
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_a_12
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = 32 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_12 = {
+
+		heat_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 34 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_12 = {
+
+		winter_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 34 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_11 = {
+
+		#category_melee = {
+		#	defense = 0.03
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_6_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = armor_b_12
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 80
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 32 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_12 = {
+
+		category_melee = {
+			max_organisation = 1
+			#max_strength = 2
+		}	
+
+		research_cost = 1
+		#start_year = 75
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 34 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	heavy_armor_6 = {
+		dependencies = {
+			steel_alloy = 1
+		}
+
+		enable_equipments = {
+			heavy_armor_equipment_6
+		}
+		
+		path = {
+			leads_to_tech = heavy_armor_7
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = armor_a_13
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_b_13
+			research_cost_coeff = 1
+		}
+		research_cost = 3.0
+		#start_year = 90
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 36 }
+		}
+		
+		categories = {
+			age_5
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	armor_a_13 = {
+
+		out_of_supply_factor = -0.1
+
+		on_research_complete = {
+			custom_effect_tooltip = backpack_7_tt
+		}
+		show_effect_as_desc = yes
+		
+		path = {
+			leads_to_tech = armor_e_14
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = armor_a_14
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 95
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = 38 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_a_14 = {
+
+		heat_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 100
+		folder = {
+			name = infantry_folder
+			position = { x = -1 y = 40 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_e_14 = {
+
+		winter_attrition_factor = -0.1
+
+		research_cost = 1
+		#start_year = 100
+		folder = {
+			name = infantry_folder
+			position = { x = -3 y = 40 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_13 = {
+
+		#category_melee = {
+		#	defense = 0.03
+		#}	
+
+		on_research_complete = {
+			custom_effect_tooltip = armor_7_tt
+		}
+		show_effect_as_desc = yes
+
+		path = {
+			leads_to_tech = armor_b_14
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		#start_year = 95
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 38 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	armor_b_14 = {
+
+		category_melee = {
+			max_organisation = 1
+			#max_strength = 2
+		}	
+
+		research_cost = 1
+		#start_year = 100
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = 40 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	heavy_armor_7 = {
+		dependencies = {
+			aerodynamics = 1
+		}
+
+		enable_equipments = {
+			heavy_armor_equipment_7
+		}
+
+		research_cost = 3.0
+		#start_year = 105
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 42 }
+		}
+		
+		categories = {
+			age_6
+			
+			infantry_weapons
+			heavy_armor
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	
+}

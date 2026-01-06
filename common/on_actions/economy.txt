@@ -1,0 +1,397 @@
+on_actions = {
+
+	on_weekly = {
+		effect = {
+
+			### modifiers for factory output
+			factory_output_calc = yes
+
+			### set variables to zero for states to add to it
+			reset_var_to_zero = yes
+
+			### 
+			employment_calculation_country = yes
+
+
+			every_controlled_state = {
+				
+
+				#### view employed number
+				worker_counting_states = yes
+
+				#### taxation and prosperity
+				taxation_state_calc = yes
+
+				#### trade capacity
+				trade_state_calc = yes
+
+				set_temp_variable = { temp_worker_deficit = mtth:workers_needed }
+				subtract_from_temp_variable = { temp_worker_deficit = mtth:state_workforce_k }
+				clamp_temp_variable = { 
+					var = temp_worker_deficit
+					min = 0
+				}
+				set_variable = { worker_deficit_k = temp_worker_deficit }
+				add_to_variable = { ROOT.worker_deficit_k = temp_worker_deficit }
+
+
+
+				#### count buildings in states
+				count_buildings_in_states = yes
+
+				### resource deposit construction
+				#deposit_calculations = yes
+			}
+
+			if = {
+				limit = {
+					has_capitulated = yes
+				}
+				every_core_state = {
+
+					set_temp_variable = { occupied_smithy_count = building_level@arms_factory }
+					multiply_temp_variable = { occupied_smithy_count = 2 }    #### because base output of 1 wouldnt be counted so it has to be duplicated to 2
+					set_temp_variable = { occupied_factory_count = building_level@factory }
+					set_temp_variable = { occupied_harbour_count = building_level@harbour }
+					set_temp_variable = { occupied_dockyard_count = building_level@dockyard }
+
+					multiply_temp_variable = { occupied_smithy_count = resistance }
+					multiply_temp_variable = { occupied_factory_count = resistance }
+					multiply_temp_variable = { occupied_harbour_count = resistance }
+					multiply_temp_variable = { occupied_dockyard_count = resistance }
+
+					multiply_temp_variable = { occupied_smithy_count = 0.01 }
+					multiply_temp_variable = { occupied_factory_count = 0.01 }
+					multiply_temp_variable = { occupied_harbour_count = 0.01 }
+					multiply_temp_variable = { occupied_dockyard_count = 0.01 }
+
+					add_to_variable = { ROOT.smithy_count = occupied_smithy_count }
+					add_to_variable = { ROOT.factory_count = occupied_factory_count }
+					add_to_variable = { ROOT.harbour_count = occupied_harbour_count }
+					add_to_variable = { ROOT.dockyard_count = occupied_dockyard_count }
+				}
+			}
+
+
+			set_variable = { building_count = 0 }
+			add_to_variable = { building_count = farm_count }
+			add_to_variable = { building_count = mill_count }
+			add_to_variable = { building_count = fishing_stand_count }
+			add_to_variable = { building_count = ranch_count }
+			add_to_variable = { building_count = lumber_mill_count }
+			add_to_variable = { building_count = quarry_count }
+			add_to_variable = { building_count = crop_weaving_count }
+			add_to_variable = { building_count = animal_weaving_count }
+			add_to_variable = { building_count = mine_count }
+			add_to_variable = { building_count = steelworks_count }
+			add_to_variable = { building_count = smithy_count }
+			add_to_variable = { building_count = factory_count }
+			add_to_variable = { building_count = harbour_count }
+			add_to_variable = { building_count = dockyard_count }
+			add_to_variable = { building_count = consumer_good_factory_count }
+			add_to_variable = { building_count = luxury_good_factory_count }
+			add_to_variable = { building_count = carpentry_count }
+			add_to_variable = { building_count = masonry_count }
+			add_to_variable = { building_count = steel_beam_factory_count }
+			
+			add_to_variable = { building_count = fuel_repository_count }
+			add_to_variable = { building_count = scout_tower_count }
+			add_to_variable = { building_count = anti_air_building_count }
+			add_to_variable = { building_count = air_base_count }
+			add_to_variable = { building_count = granary_count }
+
+
+
+			### calculats countries prosperity
+			national_wealth_calc = yes
+
+			### wages and taxes
+			wages_and_taxes = yes
+
+			### trade 
+			trade_calculation = yes
+
+			###view food
+			set_variable = { food_supply = resource@food_resource }
+			set_variable = { food_supply_real = resource@food_resource }
+			set_variable = { food_traded_away = food_supply_real }
+			subtract_from_variable = { food_traded_away = food_supply }
+
+
+
+
+			##### prices and wealth
+			prices_and_demand = yes
+
+
+			### investment pool
+
+			set_variable = { initiative_chance = modifier@peoples_initiative }
+			clamp_variable = { 
+				var = initiative_chance
+				min = 0
+				max = 1
+			}
+			clamp_variable = { 
+				var = weekly_peoples_investment_ic
+				min = 0
+			}
+			
+			add_to_variable = { peoples_investment_ic = weekly_peoples_investment_ic }
+
+			set_variable = { peoples_ic_points = peoples_investment_ic }
+			multiply_variable = { peoples_ic_points = 10 }
+
+
+
+			employment_calculation_country = yes
+
+			set_temp_variable = { resource_employed_temp = resource_employed }
+			add_to_temp_variable = { resource_employed_temp = self_employed_k }
+			set_variable = { resource_employed_constant = resource_employed_temp }
+			set_variable = { production_employed_constant = production_employed }
+
+
+			### cost of maintaining buildings
+			building_upkeep_calc = yes
+
+
+			### factory variable calcualted
+			factory_calculations = yes
+			
+
+
+			### replaced by donations dynamic modifier
+			
+			#### factories added offmap
+			#civil_factory_output = yes
+			#extra_factory_output = yes
+			#extra_dockyard_output = yes
+
+		}
+	}
+
+
+
+
+
+
+
+
+	on_daily = {
+		effect = {
+
+			ration_calculation = yes
+
+			ratio_effects_and_interface = yes
+
+			money_calculation = yes
+
+			resource_storage_calculation = yes
+
+		}
+	}
+
+
+	on_monthly = {
+		effect = {
+
+
+			set_variable = { fishing_stand_dockyards = 0 }
+
+			every_controlled_state = {
+
+				###### stacked building boni #####
+
+				if = {
+					limit = {
+						farm > 4
+						controller = {
+							has_tech = farm_2
+						}
+					}
+					add_dynamic_modifier = { modifier = farm_upgrade }
+				}
+				set_temp_variable = { population_growth_temp = state_population }
+				#### 0.03% base growth
+				multiply_temp_variable = { population_growth_temp = 0.03 }
+				multiply_temp_variable = { population_growth_temp = 0.01 }
+
+				set_variable = { population_growth_factor = 1}
+				add_to_variable = { population_growth_factor = modifier@monthly_population_state }
+				add_to_variable = { population_growth_factor = ROOT.modifier@monthly_population }
+
+				multiply_temp_variable = { population_growth_temp = population_growth_factor }
+	
+				round_temp_variable = population_growth_temp
+				set_variable = { population_growth = population_growth_temp }
+				add_manpower = var:population_growth
+
+				if = {
+					limit = {
+						farm > 0
+						check_variable = {
+							var = building_level@ranch
+							value = building_level@farm
+							compare = greater_than_or_equals
+						}
+						controller = {
+							has_tech = farm_united
+						}
+					}
+					add_dynamic_modifier = { modifier = farm_ranch_upgrade }
+				}
+
+				if = {
+					limit = {
+						mill > 0
+						check_variable = {
+							var = building_level@farm
+							value = building_level@mill
+							compare = greater_than_or_equals
+						}
+						controller = {
+							has_tech = mill_3
+						}
+					}
+					add_dynamic_modifier = { modifier = mill_upgrade }
+				}
+
+				if = {
+					limit = {
+						lumber_mill > 9
+						controller = {
+							has_tech = lumber_3
+						}
+					}
+					add_dynamic_modifier = { modifier = lumber_mill_upgrade }
+				}
+
+				if = {
+					limit = {
+						carpentry > 4
+						controller = {
+							has_tech = carpentry_3
+						}
+					}
+					add_dynamic_modifier = { modifier = carpentry_upgrade }
+				}
+
+				if = {
+					limit = {
+						arms_factory > 4
+						controller = {
+							has_tech = smithy_2
+						}
+					}
+					add_dynamic_modifier = { modifier = smithy_upgrade }
+				}
+
+				if = {
+					limit = {
+						quarry > 9
+						controller = {
+							has_tech = quarry_3
+						}
+					}
+					add_dynamic_modifier = { modifier = quarry_upgrade }
+				}
+
+				if = {
+					limit = {
+						masonry > 4
+						controller = {
+							has_tech = masonry_3
+						}
+					}
+					add_dynamic_modifier = { modifier = masonry_upgrade }
+				}
+
+				if = {
+					limit = {
+						fishing_stand > 3
+						controller = {
+							has_tech = fishing_stand_2
+						}
+					}
+					add_dynamic_modifier = { modifier = fishing_stand_upgrade }
+				}
+				if = {
+					limit = {
+						fishing_stand > 14
+						controller = {
+							has_tech = fishing_stand_4
+						}
+					}
+					add_to_variable = { ROOT.fishing_stand_dockyards = building_level@fishing_stand }
+				}
+
+				if = {
+					limit = {
+						mine > 4
+						controller = {
+							has_tech = mine_3
+						}
+					}
+					add_dynamic_modifier = { modifier = mine_upgrade }
+				}
+
+				if = {
+					limit = {
+						controller = {
+							has_tech = road_4
+						}
+					}
+					add_dynamic_modifier = { modifier = road_upgrade }
+				}
+
+				if = {
+					limit = {
+						crop_weaving > 4
+						controller = {
+							has_tech = crop_weaving_3
+						}
+					}
+					add_dynamic_modifier = { modifier = crop_weaving_upgrade }
+				}
+
+				if = {
+					limit = {
+						animal_weaving > 4
+						controller = {
+							has_tech = animal_weaving_3
+						}
+					}
+					add_dynamic_modifier = { modifier = animal_weaving_upgrade }
+				}
+
+				if = {
+					limit = {
+						ranch > 4
+						controller = {
+							has_tech = ranch_2
+						}
+					}
+					add_dynamic_modifier = { modifier = ranch_upgrade }
+				}
+
+				####### stacked boni end ######
+
+
+				if = {
+					limit = {
+						check_variable = {
+							var = mtth:industrial_zone
+							value = 10
+							compare = greater_than_or_equals
+						}
+					}
+					add_dynamic_modifier = { modifier = industrial_zone }
+				}
+
+			}
+
+		}
+	}
+
+}

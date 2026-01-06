@@ -1,0 +1,64 @@
+characters = {
+	EBA_than = {
+		name = "Than"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EBA/Portrait_East-Ba_Than.dds"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_Than_DESC"
+			ideology = constitutional_monarchy
+			expire = "130.1.1.1"
+			id = -1
+		}
+	}
+	EBA_generic = {
+		name = "Generic"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EBA/Portrait_East_Ba_colonialism.dds"
+			}
+		}
+		country_leader = {
+			ideology = colonialism
+			expire = "120.4.7.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = martial_chiefdom
+			expire = "120.4.7.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = absolute_pacifism
+			expire = "120.4.7.1"
+			id = -1
+		}
+		country_leader = {
+			ideology = despotism
+			expire = "120.4.7.1"
+			id = -1
+		}
+	}
+	###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+	EBA_Liu = {
+		name = "Liu"
+		portraits = {
+			army = {
+				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Generic_15.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 1
+		}
+	}
+}

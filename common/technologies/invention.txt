@@ -1,0 +1,374 @@
+technologies = {
+
+###  mathematics  ###
+#	measurements
+#	geometry
+#	architecture
+#	statistics
+#	laws_of_nature
+#	applied_mathematics
+
+###  physics ### 
+#	kinectics
+#	astronomy 
+#	leverage 
+#	magnetism
+#	steam_engine
+#	gas_turbine
+
+###  chemistry  ###
+#	wind_manipulation
+#	smelting
+#	bronze_alloy
+#	alchemy
+#	steel_alloy
+#	aerodynamics
+
+###  biology  ###
+#	domestication
+#	agriculture
+#	surgery
+#	botanics
+#	genetics
+#	chemistry
+
+###  philosophy  ###
+#	metaphysics
+#	writing
+#	natural_philosophy
+#	printing_press
+#	scientific_method
+#	energy_manipulation
+
+###  age 1  ###
+#	measurements
+#	kinectics
+#	wind_manipulation
+#	domestication
+#	metaphysics
+
+###  age 2  ##
+#	geometry
+#	astronomy
+#	smelting
+#	agriculture
+#	writing
+
+###  age 3  ###
+#	architecture
+#	leverage
+#	bronze_alloy
+#	surgery
+#	natural_philosophy
+
+###  age 4  ###
+#	statistics
+#	magnetism
+#	alchemy
+#	botanics
+#	printing_press
+
+###  age 5  ###
+#	laws_of_nature
+#	steam_engine
+#	steel_alloy
+#	genetics
+#	scientific_method
+
+###  age 6  ###
+#	applied_mathematics
+#	gas_turbine
+#	aerodynamics
+#	chemistry
+#	energy_manipulation
+
+
+	###  mathematics  ###
+
+	measurements = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	geometry = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	architecture = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	statistics = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	laws_of_nature = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	applied_mathematics = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+
+	###  physics ###
+
+	kinectics = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	astronomy = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	leverage = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	magnetism = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	steam_engine = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	gas_turbine = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+
+
+	###  chemistry  ###
+
+
+	wind_manipulation = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	smelting = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	bronze_alloy = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	alchemy = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	steel_alloy = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	aerodynamics = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+
+	###  biology  ###
+
+	domestication = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	agriculture = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	surgery = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	botanics = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	genetics = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	chemistry = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+
+	###  philosophy  ###
+
+
+	metaphysics = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	writing = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	natural_philosophy = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	printing_press = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	scientific_method = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+	energy_manipulation = {
+		research_cost = 1
+		allow = { always = no }
+		on_research_complete = {
+			invention_check = yes
+		}
+		categories = { inventions }
+	}
+
+
+}

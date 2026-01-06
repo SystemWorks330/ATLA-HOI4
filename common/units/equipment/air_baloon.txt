@@ -1,0 +1,108 @@
+equipments = {
+	
+	air_balloon_equipment = {
+		year = 10
+
+		is_archetype = yes
+		is_convertable = yes
+		picture = archetype_air_balloon
+		
+		type = { fighter cas scout_plane }
+		allow_mission_type = {
+			air_superiority
+			interception
+			cas
+			attack_logistics
+			recon
+			naval_patrol
+			training
+		}
+		
+		group_by = archetype
+		sprite = balloon_sprite
+		air_map_icon_frame = 5
+
+		
+		interface_category = interface_category_air
+		
+		# Transport
+		interface_overview_category_index = 5
+		
+		air_superiority = 1
+		reliability = 0.8
+
+		# Air vs Navy - high damage / low hit chance / hard to hurt
+		naval_strike_attack = 0.0
+		naval_strike_targetting = 0.0
+		
+		build_cost_ic = 1800
+		resources = {
+			aluminium = 2
+			steel = 2
+			tungsten = 4
+		}
+		
+		manpower = 4
+		fuel_consumption = 1
+	}
+
+
+	air_balloon_equipment_1 = {
+		year = 10
+
+		archetype = air_balloon_equipment
+		active = no
+		priority = 130
+		
+		air_range = 300
+		maximum_speed = 215
+		air_agility = 10
+		air_defence = 20
+		air_ground_attack = 6
+	}
+
+
+	air_balloon_equipment_2 = {
+
+		archetype = air_balloon_equipment
+		parent = air_balloon_equipment_1
+		priority = 140
+		
+		air_range = 310
+		maximum_speed = 220
+		air_agility = 10
+		air_attack = 150
+		air_defence = 50
+		air_bombing = 60
+		air_ground_attack = 10
+		
+		build_cost_ic = 1900
+		resources = {
+			aluminium = 2
+			steel = 2
+			tungsten = 4
+		}
+	}
+
+	air_balloon_equipment_3 = {
+
+		archetype = air_balloon_equipment
+		parent = air_balloon_equipment_2
+		priority = 140
+		
+		air_range = 320
+		maximum_speed = 225
+		air_agility = 10
+		air_attack = 150
+		air_defence = 50
+		air_bombing = 60
+		air_ground_attack = 14
+		
+		build_cost_ic = 2000
+		resources = {
+			aluminium = 2
+			steel = 2
+			tungsten = 4
+		}
+	}
+}

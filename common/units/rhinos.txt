@@ -1,0 +1,337 @@
+# options for map_icon_category:
+# For land units: infantry,armored,other
+# For sea units: ship,transport,uboat
+
+sub_units = {
+
+	komodo_rhinos = {
+		sprite = cavalry
+		map_icon_category = other
+		priority = 599
+		ai_priority = 200
+		active = yes
+		cavalry = yes
+
+		type = { infantry }
+		
+		group = cavalry
+		
+		categories = {
+			category_all_spear
+			category_all_mounted
+			category_all_cavalry
+			category_all_rhinos
+		}
+
+		
+		combat_width = 3
+		
+		#Size Definitions
+		max_organisation = 10
+		max_strength = 25
+		default_morale = 0.3
+		manpower = 10
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 1.2
+
+		#Offensive Abilities
+		suppression = 2
+
+		# Equipment balancing
+		defense = -0.85
+		breakthrough = 0.2
+		soft_attack = 3
+		hard_attack = -0.5
+
+		hardness = -0.5
+		ap_attack = -1
+
+		transport = komodo_rhino
+	
+		need = {
+			komodo_rhino = 10
+			pike_equipment = 10
+			heavy_armor_equipment = 10
+			heavy_cavalry_equipment = 10
+		}
+
+		plains = {
+			attack = 0.5
+		}
+		wasteland = {
+			attack = 0.5
+		}
+
+		forest = {
+			attack = -0.7
+		}
+		jungle = {
+			attack = -0.9
+		}
+		village = {
+			attack = -0.5
+			movement = 0.5
+		}
+		urban = {
+			attack = -0.6
+			movement = 0.5
+		}
+		hills = {
+			attack = -0.4
+		}
+		cliff = {
+			attack = -0.4
+		}
+		mountain = {
+			attack = -0.5
+		}
+		high_mountain = {
+			attack = -0.5
+		}
+
+		river = {
+			attack = -0.3
+		}
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	ranged_komodo_rhinos = {
+		sprite = cavalry
+		map_icon_category = other
+		priority = 599
+		ai_priority = 200
+		active = yes
+		cavalry = yes
+
+		type = { infantry }
+		
+		group = ranged_cavalry
+		
+		categories = {
+			category_all_arrow
+			category_all_mounted
+			category_all_cavalry
+			category_all_rhinos
+		}
+
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_organisation = 20
+		max_strength = 25
+		default_morale = 0.3
+		manpower = 10
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 1.2
+
+		#Offensive Abilities
+		suppression = 2
+
+		# Equipment balancing
+		defense = -0.5
+		breakthrough = 0.75
+		soft_attack = 0.5
+		hard_attack = 0.5
+
+		hardness = -1
+		armor_value = -1
+
+		transport = komodo_rhino
+	
+		need = {
+			komodo_rhino = 10
+			javelin_equipment = 30
+			light_armor_equipment = 10
+			heavy_cavalry_equipment = 10
+		}
+
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	bender_komodo_rhinos = {
+		sprite = cavalry
+		map_icon_category = other
+		priority = 599
+		ai_priority = 200
+		active = yes
+		cavalry = yes
+		special_forces = yes
+
+		type = { infantry }
+		
+		group = bender
+		
+		categories = {
+			category_bender
+			category_firebender
+			category_all_mounted
+			category_all_cavalry
+			category_all_rhinos
+		}
+
+		
+		combat_width = 4
+		
+		#Size Definitions
+		max_organisation = 25
+		max_strength = 25
+		default_morale = 0.3
+		manpower = 10
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 1.2
+
+		#Offensive Abilities
+		suppression = 2
+
+		# Equipment balancing
+		hardness = -0.9
+		armor_value = -0.5
+
+		transport = komodo_rhino
+	
+		need = {
+			komodo_rhino = 10
+			firebender_equipment = 10
+			heavy_cavalry_equipment = 10
+		}
+
+		forest = {
+			attack = 0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = 0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+	}
+
+
+	rhino_catapults = {
+		sprite = cavalry
+		map_icon_category = other
+		priority = 599
+		ai_priority = 200
+		active = no
+		cavalry = yes
+
+		type = { infantry }
+		
+		group = mobile
+		
+		categories = {
+			category_all_projectile
+			category_all_mounted
+			category_all_cavalry
+			category_all_rhinos
+		}
+
+		
+		combat_width = 2
+		
+		#Size Definitions
+		max_organisation = 25
+		max_strength = 25
+		default_morale = 0.3
+		manpower = 10
+
+		#Misc Abilities
+		training_time = 120		
+		weight = 0.5
+		
+		supply_consumption = 1.2
+
+		#Offensive Abilities
+		suppression = 2
+
+		transport = heavy_catapult_cavalry_equipment
+
+		essential = {
+			support_equipment
+		}
+	
+		need = {
+			support_equipment = 10
+			heavy_armor_equipment = 10
+			heavy_catapult_cavalry_equipment = 10
+		}
+
+		forest = {
+			attack = -0.05
+		}
+
+		hills = {
+			attack = -0.05
+		}
+
+		mountain = {
+			attack = -0.1
+			movement = -0.05
+		}
+
+		jungle = {
+			attack = -0.1
+		}
+
+		urban = {
+			attack = -0.05
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+	
+
+	
+}

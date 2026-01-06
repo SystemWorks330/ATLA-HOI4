@@ -1,0 +1,258 @@
+
+money_printing = {
+	enable = { always = yes }
+
+	currency_amount = var_money_printing
+}
+
+treasury_extension = {
+	enable = { always = yes }
+
+	money_capacity = var_treasury_extension
+}
+
+exported_resources_dynamic = {
+	enable = { always = yes }
+
+	min_export = exports_reduction
+
+	civilian_intel_to_others = trade_intel_var
+	navy_intel_to_others = trade_intel_var
+
+	knowledge_spread = trade_knowledge_var
+	prosperity = trade_prosperity_var
+}
+
+
+impoverished_region = {
+	enable = { always = yes }
+	remove_trigger = {
+		check_variable = { local_prosperity_ratio > 0.05 }
+	}
+
+	icon = GFX_modifiers_impoverished_region
+	
+	monthly_migration_state = -0.01
+}
+
+trade_hub = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		NOT = {
+			check_variable = {
+				var = THIS.local_prosperity
+				value = 40
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = THIS.urbanisation_cap
+				value = 40
+				compare = greater_than_or_equals
+			}
+		}
+	}
+
+	icon = GFX_modifiers_trade_hub
+
+	migration_attraction = 0.5
+	state_resources_factor = 0.1
+	prosperity = 0.1
+	local_trade_network = 0.75
+}
+
+
+
+
+famine = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		OR = {
+			NOT = {
+				check_variable = { famine_check < ration_penalty }
+				check_variable = { ration_variable = 0 }
+			}
+			check_variable = { ration_penalty > -0.5 }
+		}
+	}
+	MONTHLY_POPULATION = family_penalty_2
+
+	#### army
+	army_org_factor = soldier_penalty
+	navy_org_factor  = soldier_penalty
+	supply_consumption_factor = soldier_penalty_good
+
+	#### population
+	stability_factor = family_penalty
+
+	#### workers
+	production_factory_max_efficiency_factor = working_penalty
+
+	#### occupied
+	resistance_target = occupied_penalty
+}
+food_shortages = {
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			NOT = {
+				check_variable = { ration_variable = 0 }
+			}
+			check_variable = { famine_check < -0.5 }
+		}
+	}
+	MONTHLY_POPULATION = family_penalty_2
+
+	#### army
+	army_org_factor = soldier_penalty
+	navy_org_factor  = soldier_penalty
+	supply_consumption_factor = soldier_penalty_good
+
+	#### population
+	stability_factor = family_penalty
+
+	#### workers
+	production_factory_max_efficiency_factor = working_penalty
+
+	#### occupied
+	resistance_target = occupied_penalty
+}
+food_surplus_idea = {
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			check_variable = { ration_variable = 0 }
+			check_variable = { ration_variable = ration_max }
+		}
+	}
+	MONTHLY_POPULATION = ration_buff
+	stability_factor = ration_stability_buff
+	population_ration_need_factor = ration_ratio_percent
+}
+burgerking = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			check_variable = { ration_variable = ration_max }
+		}
+	}
+	MONTHLY_POPULATION = ration_buff
+	stability_factor = ration_stability_buff
+	population_ration_need_factor = ration_ratio_percent
+}
+
+extreme_poverty = {
+
+	#icon = GFX_idea_extreme_poverty
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			check_variable = { wealth_bar < 10 }
+		}
+	}
+
+	consumer_demand = mtth:prosperity_consumer_demand_factor
+	luxury_goods_demand = mtth:prosperity_luxury_demand
+	#prosperity_factor = mtth:prosperity_wealthy_factor
+	research_speed_factor = mtth:sol_base_impact_factor
+	stability_factor = mtth:sol_base_impact_factor
+}
+poverty = {
+
+	#icon = GFX_idea_poverty
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			AND = {
+				check_variable = { wealth_bar < 30 }
+				check_variable = { wealth_bar > 9.999 }
+			}
+		}
+	}
+
+	consumer_demand = mtth:prosperity_consumer_demand_factor
+	luxury_goods_demand = mtth:prosperity_luxury_demand
+	#prosperity_factor = mtth:prosperity_wealthy_factor
+	research_speed_factor = mtth:sol_base_impact_factor
+	stability_factor = mtth:sol_base_impact_factor
+}
+struggeling = {
+	
+	#icon = GFX_idea_struggeling
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			AND = {
+				check_variable = { wealth_bar < 50 }
+				check_variable = { wealth_bar > 29.999 }
+			}
+		}
+	}
+
+	consumer_demand = mtth:prosperity_consumer_demand_factor
+	luxury_goods_demand = mtth:prosperity_luxury_demand
+	#prosperity_factor = mtth:prosperity_wealthy_factor
+	research_speed_factor = mtth:sol_base_impact_factor
+	stability_factor = mtth:sol_base_impact_factor
+}
+middeling = {
+	
+	#icon = GFX_idea_middeling
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			AND = {
+				check_variable = { wealth_bar < 70 }
+				check_variable = { wealth_bar > 49.999 }
+			}
+		}
+	}
+
+	consumer_demand = mtth:prosperity_consumer_demand_factor
+	luxury_goods_demand = mtth:prosperity_luxury_demand
+	#prosperity_factor = mtth:prosperity_wealthy_factor
+	research_speed_factor = mtth:sol_base_impact_factor
+	stability_factor = mtth:sol_base_impact_factor
+}
+wealth = {
+
+	#icon = GFX_idea_wealth
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			AND = {
+				check_variable = { wealth_bar < 90 }
+				check_variable = { wealth_bar > 69.999 }
+			}
+		}
+	}
+
+	consumer_demand = mtth:prosperity_consumer_demand_factor
+	luxury_goods_demand = mtth:prosperity_luxury_demand
+	#prosperity_factor = mtth:prosperity_wealthy_factor
+	research_speed_factor = mtth:sol_base_impact_factor
+	stability_factor = mtth:sol_base_impact_factor
+}
+extreme_wealth = {
+
+	#icon = GFX_idea_extreme_wealth
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			check_variable = { wealth_bar > 89.999 }
+		}
+	}
+
+	consumer_demand = mtth:prosperity_consumer_demand_factor
+	luxury_goods_demand = mtth:prosperity_luxury_demand
+	#prosperity_factor = mtth:prosperity_wealthy_factor
+	research_speed_factor = mtth:sol_base_impact_factor
+	stability_factor = mtth:sol_base_impact_factor
+}
