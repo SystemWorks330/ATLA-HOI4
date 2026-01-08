@@ -44,7 +44,7 @@
  news.10.t:0 "A New Avatar is Born"
  news.10.d:0 "Beams of light have erupted from temples throughout the world, signaling the return of the Avatar. According to the cycle, the next Avatar will be born among the Waterbenders."
  news.10.a:0 "North, South...Or Foggy Swamp?"
- 
+
  news.11.t:0 "Dawn of the Phoenix Empire"
  news.11.d:0 "With the fall of Ba Sing Se to Fire Nation forces, and the subsequent subjugation of all remaining Earth Kingdom strongholds, Fire Lord [FIR.GetLeader] has seen it fit to signify the Fire Nation's total control over the world by establishing the Phoenix Empire, an all-powerful state encompassing both the Fire Islands and its colonies. The supreme leader of this empire will henceforth be known as the Phoenix King, a self-appointed title in which [FIR.GetLeader] has been lavishly coronated. \n\nThe few remaining people of the world free from Fire Nation control can do nothing but watch on with bated breath..."
  news.11.a:0 "All hail Phoenix King [FIR.GetLeader]!"
@@ -101,6 +101,27 @@
  chin.10.d:0 "Our demands have been accepted by the Kyoshi Governorship. They cleverly recognized our strength and realized the futility of fighting. Our occupational force is now enroute to deal with the remnants of Kyoshi's "fangirls"."
  chin.10.a:0 "Avatar Kyoshi couldn't protect you forvever!"
 
+ #Airbender genocide event tree
+ airbender_genocide.1.t:0 "Fire Lord Sozin's vision"
+ airbender_genocide.1.d:0 "Fire Lord Sozin has dreams of conquest. In order to share the prosperity of the Fire Nation with the rest of the world, Sozin dreams of uniting all the nations under the banner of the Fire Nation. Once every one hundred years the Great Comet passes by the earth, which greatly enhances the abilities of the firebenders. Soon, this comet will pass us once more. We must utilize this cosmic event to capture or kill the greatest threat to the Fire Nation. The Avatar. In about two months the comet will pass, we must prepare the Fire Nation's armies and navy to purge all four air temples to ensure the Avatar falls.
+
+ We must start preparing our armies and navy for a number of naval invasions. We have freed additional resources to fund the operation."
+ airbender_genocide.1.a:0 "Long live the Fire Lord!"
+
+ #These are used in scripted localisation and are assigned based on WHICH temple, and in what order they fall.
+ airbender_genocide_temple_conquered_title:0 "The fall of the [?PREV.GetName|Y]"
+ airbender_genocide_temple_conquered_description_south:0 "The Southern Air Temple has been purged of all Airbenders. While they were largely unprepared for our assault, one monk in particular held off our forces for quite some time, claiming many lives with methods of Airbending unheard of in any of our records. Despite his resistance, he eventually succumbed to our numbers and fell like the rest. Several stragglers managed to flee, but they cannot hide forever."
+ airbender_genocide_temple_conquered_description_generic:0 "The Northern Air Temple has been purged of all Airbenders. They were not prepared for our comet-enhanced assault, and their lack of a standing army hindered any ability to properly mount an effective defense. Several stragglers managed to flee, but they cannot hide forever."
+ airbender_genocide_temple_conquered_answer_1:0 "One down, three more to go."
+ airbender_genocide_temple_conquered_answer_2:0 "Excellent."
+ airbender_genocide_temple_conquered_answer_3:0 "Excellent."
+ airbender_genocide_temple_conquered_answer_4:0 "The airbenders are no more."
+
+
+ airbender_genocide.6.t:0 "The Avatar lives"
+ airbender_genocide.6.d:0 "Despite the purges, the Avatar has not to reveal himself. It is unknown to us what temple the Avatar previously inhabited, nor have we found any trace of where he could have gone. Fire Lord Sozin has demanded we intensify the search, so that the Avatar will not elude him for much longer. "
+ airbender_genocide.6.a:0 "We are done here."
+
  #firenation
  firenation.1.t:0 "Success in the Western Air Temple"
  firenation.1.d:0 "The Western Air Temple has been purged of all Airbenders. They were not prepared for our comet-enhanced assault, and their lack of a standing army hindered any ability to properly mount an effective defense. Several stragglers managed to flee, but they cannot hide forever..."
@@ -118,7 +139,7 @@
  firenation.4.d:0 "The Eastern Air Temple has been purged of all Airbenders. They were not prepared for our comet-enhanced assault, and their lack of a standing army hindered any ability to properly mount an effective defense. Several stragglers managed to flee, but they cannot hide forever..."
  firenation.4.a:0 "We are done here."
  firenation.4.b:0 "These islands are of strategic importance."
- 
+
  firenation.5.t:0 "Dragon Attack!"
  firenation.5.d:0 "A Dragon retaliated and attacked "[?global.dragon_attack.GetName]". "
  firenation.5.a:0 "Those monsters!"
@@ -266,7 +287,7 @@
  fir_character.azula.3.a:0 "...improving her bending style."
  fir_character.azula.3.b:0 "...agni kai."
  fir_character.azula.3.c:0 "...Lightning Bending."
- 
+
  fir_character.1.t:0 "Sozin's Studies"
  fir_character.1.desc:0 "Sozin decides to pick up a book and read. He starts reading the text..."
  fir_character.1.a:0 "...'Great Battles and Sieges'"
@@ -292,7 +313,7 @@
  fir_character.10.t:0 "The Wedding of Ozai and Ursa"
  fir_character.10.desc:0 "wedding desc"
  fir_character.10.a:0 "What a great couple"
- 
+
  fir_colonies.1.t:0 "The Rebuilding of Taku"
  fir_colonies.1.d:0 "Taku was rebuilt as a prosperous Fire Nation colony"
  fir_colonies.1.a:0 "Spread our culture"
@@ -308,7 +329,7 @@
  fir_colonies.4.d:0 "The city of Garsai is the key to controlling this region"
  fir_colonies.4.a:0 "Enforce our culture"
  fir_colonies.4.b:0 "Recruit locals in the Army"
- 
+
  #air genocide
  air_gen.1.t:0 "Dai Li Proposes Plan"
  air_gen.1.d:0 "It has come to light that the Dai Li, the secret police force of the Earth Kingdom, has been working on a plan to wipe out the Air Nomads and blame it on the Fire Nation. The Dai Li Chief believes that the destruction of the Air Nomads, a peaceful and neutral nation, would be a devastating blow to the Fire Nation's reputation and would turn public opinion against them."
@@ -363,7 +384,7 @@
  fir_genocide_description:0 "The Fire Nation attacks the air temples with [?FIR.genocide_preparation] units each"
  air_gen.8.b:0 "On a second thought..."
  fir_cold_feet_description:0 "Do not genocide Air Nomads - you risk having expansion plans ruined!"
- 
+
  #earthkingdom
  earthkingdom.1.t:0 ""
  earthkingdom.1.d:0 ""

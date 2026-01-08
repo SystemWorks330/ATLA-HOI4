@@ -155,7 +155,7 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				check_variable = { 
+				check_variable = {
 					var = attacker
 					compare = not_equals
 				}
@@ -172,7 +172,7 @@ defined_text = {
 	text = {
 		trigger = {
 			FROM = {
-				check_variable = { 
+				check_variable = {
 					var = defender
 					compare = not_equals
 				}
@@ -1211,5 +1211,65 @@ defined_text = {
 	text = {
 		trigger =  {has_global_flag = avatar_unknown}
 		localization_key = AVATAR_OPINION_2_TOOLTIP
+	}
+}
+defined_text = {
+	name = airbender_genocide_temple_conquered_description
+	text = {
+		trigger = {
+			PREV = {
+				tag = SAT
+			}
+		}
+		localization_key = airbender_genocide_temple_conquered_description_south
+	}
+	text = {
+		trigger = {
+			NOT = {
+				PREV = {
+					tag = SAT
+				}
+			}
+		}
+		localization_key = airbender_genocide_temple_conquered_description_generic
+	}
+}
+defined_text = {
+	name = airbender_genocide_temple_conquered_answer
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = conquered_air_temple_count
+				value = 1
+			}
+		}
+		localization_key = airbender_genocide_temple_conquered_answer_1
+	}
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = conquered_air_temple_count
+				value = 2
+			}
+		}
+		localization_key = airbender_genocide_temple_conquered_answer_2
+	}
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = conquered_air_temple_count
+				value = 3
+			}
+		}
+		localization_key = airbender_genocide_temple_conquered_answer_3
+	}
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = conquered_air_temple_count
+				value = 4
+			}
+		}
+		localization_key = airbender_genocide_temple_conquered_answer_4
 	}
 }

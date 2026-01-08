@@ -91,515 +91,19 @@ country_event = {
 
 	option = {
 		name = fir_focus.1.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
 		add_ideas = fire_imperialism_spirit
-		
+
 	}
 	option = {
 		name = fir_focus.1.b
-		
+
 	}
 }
 
-
-
-#West temple situation
-country_event = {
-	id = firenation.1
-	title = firenation.1.t
-	desc = firenation.1.d
-	picture = GFX_report_event_west_temple
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	immediate = {
- 		hidden_effect = {
-			WAT = {
-				white_peace = FIR
-				leave_faction = yes
-				remove_ideas = pacifist_detachment
-				set_cosmetic_tag = WAT_exterminated
-				country_lock_all_division_template = yes
-				#kill_country_leader = yes
-				#create_country_leader = {
-				#	name = "Extinct Nation"
-				#	
-				#	picture = "Portrait_Westernairtemple_Extinct.dds"
-				#	expire = "120.1.1"
-				#	ideology = active_pacifism
-				#	traits = {
-				#		extinguished_population
-				#	}
-				#}
-				add_ideas = no_ruler
-			}
-			add_named_threat = { 
-				threat = 10
-				name = FIR_air_nomad_genocide
-			}
-		}
- 	}
-
-	option = {
-		name = firenation.1.a
-		ai_chance = { 
-			factor = 100
-		}
-		WAT = {
-			transfer_state = 167
-			transfer_state = 232
-			transfer_state = 181
-			transfer_state = 200
-			transfer_state = 175
-			transfer_state = 222
-			transfer_state = 148
-			transfer_state = 123
-			transfer_state = 112
-			transfer_state = 208
-			transfer_state = 118
-			transfer_state = 111
-			transfer_state = 100
-			transfer_state = 82
-			give_military_access = FIR
-		}
-		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 167
-						state = 232
-						state = 181
-						state = 200
-						state = 175
-						state = 222
-						state = 148
-						state = 123
-						state = 112
-						state = 208
-						state = 118
-						state = 111
-						state = 100
-						state = 82
-					}
-				}
-				add_dynamic_modifier = { modifier = genocide_state }
-			}
-		}
-	}
-	option = {
-		name = firenation.1.b
-		FIR = {
-			transfer_state = 167
-			transfer_state = 232
-			transfer_state = 181
-			transfer_state = 200
-			transfer_state = 175
-			transfer_state = 222
-			transfer_state = 148
-			transfer_state = 123
-			transfer_state = 112
-			transfer_state = 208
-			transfer_state = 118
-			transfer_state = 111
-			transfer_state = 100
-			transfer_state = 82
-		}
-		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 167
-						state = 232
-						state = 181
-						state = 200
-						state = 175
-						state = 222
-						state = 148
-						state = 123
-						state = 112
-						state = 208
-						state = 118
-						state = 111
-						state = 100
-						state = 82
-					}
-				}
-				add_dynamic_modifier = { modifier = genocide_state }
-				add_compliance = 100
-			}
-		}
-	}
-}
-
-
-#South temple situation
-country_event = {
-	id = firenation.2
-	title = firenation.2.t
-	desc = firenation.2.d
-	picture = GFX_report_event_south_temple
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	immediate = {
- 		hidden_effect = {
-			SAT = {
-				white_peace = FIR
-				remove_ideas = pacifist_detachment
-				set_cosmetic_tag = SAT_exterminated
-				#kill_country_leader = yes
-				#create_country_leader = {
-				#	name = "Extinct Nation"
-				#	
-				#	picture = "Portrait_Southernairtemple_Extinct.dds"
-				#	expire = "120.1.1"
-				#	ideology = active_pacifism
-				#	traits = {
-				#		extinguished_population
-				#	}
-				#}
-				add_ideas = no_ruler
-			}
-			country_lock_all_division_template = yes
-			add_named_threat = { 
-				threat = 10
-				name = FIR_air_nomad_genocide
-			}
-			if = {
-				limit = {
-					not = {
-						has_global_flag = send_aang_away
-					}
-				}
-				random_list = {
-					100 = { 
-						modifier = {
-							check_variable = { global.avatar_state > 49}
-							add = -100
-						}
-						FIR = { news_event = { id = news.8  days = 10 } }
-					}
-					0 = { 
-						modifier = {
-							check_variable = { global.avatar_state > 49}
-							add = 100
-						}
-						FIR = { news_event = { id = news.9  days = 10 } }
-					}
-				}
-			}
-		}
- 	}
-
-	option = {
-		name = firenation.2.a
-		ai_chance = { 
-			factor = 100
-		}
-		SAT = {
-			transfer_state = 242
-			transfer_state = 319
-			transfer_state = 274
-			transfer_state = 297
-			transfer_state = 137
-			transfer_state = 203
-			transfer_state = 134
-			transfer_state = 236
-			transfer_state = 329
-			transfer_state = 239
-			transfer_state = 296
-			transfer_state = 125
-			transfer_state = 356
-			transfer_state = 357
-			transfer_state = 258
-			transfer_state = 285
-			transfer_state = 228
-			transfer_state = 260
-			give_military_access = FIR
-		}
-		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 242
-						state = 319
-						state = 274
-						state = 297
-						state = 137
-						state = 203
-						state = 134
-						state = 236
-						state = 329
-						state = 239
-						state = 296
-						state = 125
-						state = 356
-						state = 357
-						state = 258
-						state = 285
-						state = 228
-						state = 260
-					}
-				}
-				add_dynamic_modifier = { modifier = genocide_state }
-				add_compliance = 100
-			}
-		}
-	}
-	option = {
-		name = firenation.2.b
-		FIR = {
-			transfer_state = 242
-			transfer_state = 319
-			transfer_state = 274
-			transfer_state = 297
-			transfer_state = 137
-			transfer_state = 203
-			transfer_state = 134
-			transfer_state = 236
-			transfer_state = 329
-			transfer_state = 239
-			transfer_state = 296
-			transfer_state = 125
-			transfer_state = 356
-			transfer_state = 357
-			transfer_state = 258
-			transfer_state = 285
-			transfer_state = 228
-			transfer_state = 260
-		}
-		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 242
-						state = 319
-						state = 274
-						state = 297
-						state = 137
-						state = 203
-						state = 134
-						state = 236
-						state = 329
-						state = 239
-						state = 296
-						state = 125
-						state = 356
-						state = 357
-						state = 258
-						state = 285
-						state = 228
-						state = 260
-					}
-				}
-				add_dynamic_modifier = { modifier = genocide_state }
-				add_compliance = 100
-			}
-		}
-	}
-}
-
-
-#North temple situation
-country_event = {
-	id = firenation.3
-	title = firenation.3.t
-	desc = firenation.3.d
-	picture = GFX_report_event_north_temple
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	immediate = {
- 		hidden_effect = {
-			NAT = {
-				white_peace = FIR
-				country_lock_all_division_template = yes
-				leave_faction = yes
-				remove_ideas = pacifist_detachment
-				set_cosmetic_tag = NAT_exterminated
-				#kill_country_leader = yes
-				#create_country_leader = {
-				#	name = "Extinct Nation"
-				#	
-				#	picture = "Portrait_Northernairtemple_Extinct.dds"
-				#	expire = "120.1.1"
-				#	ideology = active_pacifism
-				#	traits = {
-				#		extinguished_population
-				#	}
-				#}
-				add_ideas = no_ruler
-			}
-			add_named_threat = { 
-				threat = 10
-				name = FIR_air_nomad_genocide
-			}
-		}
- 	}
-
-	option = {
-		name = firenation.3.a
-		ai_chance = { 
-			factor = 100
-		}
-		NAT = {
-			transfer_state = 316
-			transfer_state = 34
-			give_military_access = FIR
-		}
-		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 316
-						state = 34
-					}
-				}
-				add_dynamic_modifier = { modifier = genocide_state }
-			}
-		}
-	}
-	option = {
-		name = firenation.3.b
-		FIR = {
-			transfer_state = 316
-			transfer_state = 34
-		}
-		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 316
-						state = 34
-					}
-				}
-				add_dynamic_modifier = { modifier = genocide_state }
-				add_compliance = 100
-			}
-		}
-	}
-}
-
-
-#East temple situation
-country_event = {
-	id = firenation.4
-	title = firenation.4.t
-	desc = firenation.4.d
-	picture = GFX_report_event_east_temple
-
-	is_triggered_only = yes
-
-	fire_only_once = yes
-
-	immediate = {
- 		hidden_effect = {
-			EAT = {
-				white_peace = FIR
-				country_lock_all_division_template = yes
-				leave_faction = yes
-				remove_ideas = pacifist_detachment
-				set_cosmetic_tag = EAT_exterminated
-				#kill_country_leader = yes
-				#create_country_leader = {
-				#	name = "Extinct Nation"
-				#	
-				#	picture = "Portrait_Easternairtemple_Extinct.dds"
-				#	expire = "120.1.1"
-				#	ideology = active_pacifism
-				#	traits = {
-				#		extinguished_population
-				#	}
-				#}
-				add_ideas = no_ruler
-			}
-			add_named_threat = { 
-				threat = 10
-				name = FIR_air_nomad_genocide
-			}
-		}
- 	}
-
-	option = {
-		name = firenation.4.a
-		ai_chance = { 
-			factor = 100
-		}
-		EAT = {
-			transfer_state = 320
-			transfer_state = 371
-			transfer_state = 373
-			transfer_state = 247
-			transfer_state = 447
-			transfer_state = 188
-			transfer_state = 22
-			transfer_state = 106
-			transfer_state = 24
-			give_military_access = FIR
-		}
-		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 320
-						state = 371
-						state = 373
-						state = 247
-						state = 447
-						state = 188
-						state = 22
-						state = 106
-						state = 24
-					}
-				}
-				add_dynamic_modifier = { modifier = genocide_state }
-			}
-		}
-	}
-	option = {
-		name = firenation.4.b
-		FIR = {
-			transfer_state = 320
-			transfer_state = 371
-			transfer_state = 373
-			transfer_state = 247
-			transfer_state = 447
-			transfer_state = 188
-			transfer_state = 22
-			transfer_state = 106
-			transfer_state = 24
-		}
-		hidden_effect = {
-			every_state = {
-				limit = {
-					OR = {
-						state = 320
-						state = 371
-						state = 373
-						state = 247
-						state = 447
-						state = 188
-						state = 22
-						state = 106
-						state = 24
-					}
-				}
-				add_dynamic_modifier = { modifier = genocide_state }
-				add_compliance = 100
-			}
-		}
-	}
-
-}
 
 #Dragon attack
 country_event = {
@@ -630,7 +134,7 @@ country_event = {
 
 			set_temp_variable = { population_killed = state_population_k }
 			multiply_temp_variable = { population_killed = -10 }
-			
+
 			add_manpower = var:population_killed
 
 			clr_state_flag = dragon_attack
@@ -694,7 +198,7 @@ country_event = {
 	option = {
 		name = firenation.15.a
 		#glory to the firenation
-		
+
 		add_war_support = 0.05
 	}
 }
@@ -711,7 +215,7 @@ country_event = {
 	option = {
 		name = firenation.16.a
 		#glory to the firenation
-		
+
 		add_war_support = 0.05
 	}
 }
@@ -730,7 +234,7 @@ country_event = {
 
 	option = { #Accept
 		name = fir_treaty.1.a
-		ai_chance = { 
+		ai_chance = {
 			base = 0
 			modifier = {
 				add = 100
@@ -781,7 +285,7 @@ country_event = {
 	}
 	option = { #compromise
 		name = fir_treaty.1.b
-		ai_chance = { 
+		ai_chance = {
 			base = 0
 			modifier = {
 				add = 100
@@ -794,11 +298,11 @@ country_event = {
 				days = 1
 			}
 		}
-		
+
 	}
 	option = { #Refuse
 		name = fir_treaty.1.c
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 		}
 
@@ -811,7 +315,7 @@ country_event = {
 				days = 1
 			}
 		}
-		
+
 	}
 
 }
@@ -828,7 +332,7 @@ country_event = {
 
 	option = { #Accept
 		name = fir_treaty.2.a
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 		}
 		add_stability = 0.05
@@ -848,7 +352,7 @@ country_event = {
 
 	option = { #Accept
 		name = fir_treaty.3.a
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 			modifier = {
 				add = 100
@@ -906,11 +410,11 @@ country_event = {
 			}
 			set_capital = { state = 199 }
 		}
-		
+
 	}
 	option = { #Refuse
 		name = fir_treaty.3.b
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 			modifier = {
 				factor = 0
@@ -919,7 +423,7 @@ country_event = {
 		}
 
 		trigger = {
-			OR = {	
+			OR = {
 				check_variable = { mtth:get_missions < mtth:get_mission_cap }
 				has_country_flag = conquest_category_active
 			}
@@ -928,15 +432,15 @@ country_event = {
 		FIR = {
 			clr_country_flag = approach_earthkingdom
 			set_country_flag = earth_war_path
-			
+
 			unlock_decision_category_tooltip = FIR_conquest_category
 			set_country_flag = {
 				flag = conquest_category_active
 				value = 1
 			}
 		}
-		
-		add_named_threat = { 
+
+		add_named_threat = {
 			threat = 5
 			name = FIR_failed_negotiation
 		}
@@ -956,7 +460,7 @@ country_event = {
 
 	option = { #peace for our time
 		name = fir_treaty.4.a
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 		}
 		add_stability = 0.05
@@ -976,18 +480,18 @@ country_event = {
 
 	option = { #this means war
 		name = fir_treaty.5.a
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 		}
 
 		trigger = {
-			OR = {		
+			OR = {
 				check_variable = { mtth:get_missions < mtth:get_mission_cap }
 				has_country_flag = conquest_category_active
 			}
 		}
 
-		add_named_threat = { 
+		add_named_threat = {
 			threat = 15
 			name = FIR_failed_negotiation
 		}
@@ -995,7 +499,7 @@ country_event = {
 		FIR = {
 			add_war_support = 0.1
 			set_country_flag = earth_war_path
-			
+
 			unlock_decision_category_tooltip = FIR_conquest_category
 			set_country_flag = {
 				flag = conquest_category_active
@@ -1006,7 +510,7 @@ country_event = {
 
 	option = { #there is nothing we can do
 		name = fir_treaty.5.b
-		ai_chance = { 
+		ai_chance = {
 			base = 0
 		}
 
@@ -1029,7 +533,7 @@ country_event = {
 
 	option = { #Accept
 		name = fir_treaty.6.a
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 		}
 
@@ -1056,25 +560,25 @@ country_event = {
 	}
 	option = { #refuse
 		name = fir_treaty.6.b
-		ai_chance = { 
+		ai_chance = {
 			base = 0
 			modifier = {
 				add = 100
 				is_historical_focus_on = no
 			}
 		}
-		
+
 		FIR = {
 			country_event = {
 				id = fir_treaty.8
 				days = 2
 			}
 		}
-		
+
 	}
 	option = { #capture
 		name = fir_treaty.6.c
-		ai_chance = { 
+		ai_chance = {
 			base = 0
 			modifier = {
 				add = 100
@@ -1086,7 +590,7 @@ country_event = {
 			limit = { has_character = FIR_rhya }
 			random_character = {
 				limit = { is_character = FIR_rhya }
-				
+
 				set_character_flag = imprisoned
 
 				set_nationality = EAR
@@ -1097,7 +601,7 @@ country_event = {
 				days = 2
 			}
 		}
-		
+
 	}
 
 }
@@ -1114,9 +618,9 @@ country_event = {
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = fir_treaty.7.a
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 		}
 	}
@@ -1134,9 +638,9 @@ country_event = {
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = fir_treaty.8.a
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 		}
 	}
@@ -1154,9 +658,9 @@ country_event = {
 
 	fire_only_once = yes
 
-	option = { 
+	option = {
 		name = fir_treaty.9.a
-		ai_chance = { 
+		ai_chance = {
 			base = 100
 		}
 	}
@@ -1176,13 +680,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.1.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -1201,7 +705,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.1.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -1220,10 +724,10 @@ country_event = {
 	}
 	option = {
 		name = fir_character.1.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
-		
+
 		random_list = {
 			90 = {
 				FIR_sozin = {
@@ -1236,7 +740,7 @@ country_event = {
 						limit = {
 							is_unit_leader = yes
 						}
-						add_random_trait = { 
+						add_random_trait = {
 							desert_fox
 							swamp_fox
 							trait_mountaineer
@@ -1269,7 +773,7 @@ country_event = {
  		hidden_effect = {
  			FIR = {
 				retire_character = FIR_sozin
-				
+
 				add_country_leader_role = {
 					character = FIR_empty_throne
 					promote_leader = yes
@@ -1280,7 +784,7 @@ country_event = {
 					}
 				}
 			}
- 		} 		
+ 		}
  		random_list = {
 			100 = { FIR = { news_event = { hours = 12 id = fir_news.1 } } }
 		}
@@ -1327,7 +831,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			if = {
-				limit = { 
+				limit = {
 					AND = {
 						is_historical_focus_on = no
 						has_country_flag = fire_no_genocide
@@ -1346,7 +850,7 @@ country_event = {
 	option = {
 		name = fir_character.azulon.1.a
 
-		trigger = { 
+		trigger = {
 			NOT = {
 				has_country_flag = azulon_birth_complication
 			}
@@ -1364,7 +868,7 @@ country_event = {
 	option = {
 		name = fir_character.azulon.1.a_alt
 
-		trigger = { 
+		trigger = {
 			has_country_flag = azulon_birth_complication
 		}
 
@@ -1398,7 +902,7 @@ country_event = {
 	option = {
 		name = fir_character.azulon.1.b_alt
 
-		trigger = { 
+		trigger = {
 			has_country_flag = azulon_birth_complication
 		}
 
@@ -1441,13 +945,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.azulon.2.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -1466,7 +970,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.azulon.2.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -1485,10 +989,10 @@ country_event = {
 	}
 	option = {
 		name = fir_character.azulon.2.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
-		
+
 		random_list = {
 			90 = {
 				FIR_azulon = {
@@ -1501,7 +1005,7 @@ country_event = {
 						limit = {
 							is_unit_leader = yes
 						}
-						add_random_trait = { 
+						add_random_trait = {
 							desert_fox
 							swamp_fox
 							trait_mountaineer
@@ -1530,13 +1034,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.azulon.3.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -1557,7 +1061,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.azulon.3.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -1572,11 +1076,11 @@ country_event = {
 	}
 	option = {
 		name = fir_character.azulon.3.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
-		trigger = { 
+		trigger = {
 			any_unit_leader = {
 				is_character = FIR_azulon
 				attack_skill_level > 6
@@ -1622,7 +1126,7 @@ country_event = {
  		hidden_effect = {
  			FIR = {
 				retire_character = FIR_azulon
-				
+
 				add_country_leader_role = {
 					character = FIR_empty_throne
 					promote_leader = yes
@@ -1633,7 +1137,7 @@ country_event = {
 					}
 				}
 			}
- 		} 		
+ 		}
  		random_list = {
 			100 = { FIR = { news_event = { hours = 12 id = fir_news.2 } } }
 		}
@@ -1657,7 +1161,7 @@ country_event = {
  		hidden_effect = {
  			FIR = {
 				retire_character = FIR_azulon
-				
+
 				add_country_leader_role = {
 					character = FIR_empty_throne
 					promote_leader = yes
@@ -1668,7 +1172,7 @@ country_event = {
 					}
 				}
 			}
- 		} 		
+ 		}
  		random_list = {
 			100 = { FIR = { news_event = { hours = 12 id = fir_news.2 } } }
 		}
@@ -1702,14 +1206,14 @@ country_event = {
  			FIR = {
 				retire_character = FIR_elua
 			}
- 		} 
+ 		}
  	}
 
 	fire_only_once = yes
 
 	option = {
 		name = fir_character.5.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 	}
@@ -1737,12 +1241,12 @@ country_event = {
 					random_days = 6
 				}
  			}
- 		} 
+ 		}
  	}
 
 	option = {
 		name = fir_character.6.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 		###TODO: different outcomes in traits for ilah and azulon
@@ -1750,7 +1254,7 @@ country_event = {
 
 	option = {
 		name = fir_character.6.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 0
 		}
 	}
@@ -1770,13 +1274,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
- 			
- 		} 
+
+ 		}
  	}
 
 	option = {
 		name = fir_character.7.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 		FIR_ilah = { set_character_flag = in_love_with_azulon }
@@ -1784,7 +1288,7 @@ country_event = {
 
 	option = {
 		name = fir_character.7.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 0
 		}
 		FIR_azulon = { set_character_flag = ilahs_bully }
@@ -1821,12 +1325,12 @@ country_event = {
  					}
  				}
  			}
- 		} 
+ 		}
  	}
 
 	option = {
 		name = fir_character.8.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 	}
@@ -1862,12 +1366,12 @@ country_event = {
  					}
  				}
  			}
- 		} 
+ 		}
  	}
 
 	option = {
 		name = fir_character.9.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 	}
@@ -1903,12 +1407,12 @@ country_event = {
  					}
  				}
  			}
- 		} 
+ 		}
  	}
 
 	option = {
 		name = fir_character.10.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 	}
@@ -1951,8 +1455,8 @@ country_event = {
 	option = {
 		name = fir_character.ozai.1.a
 
-		trigger = { 
-			
+		trigger = {
+
 		}
 		add_ideas = spirit_prince_ozai
 		FIR_ozai = {
@@ -1976,13 +1480,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.ozai.2.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2001,7 +1505,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.ozai.2.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2020,10 +1524,10 @@ country_event = {
 	}
 	option = {
 		name = fir_character.ozai.2.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
-		
+
 		random_list = {
 			90 = {
 				FIR_ozai = {
@@ -2036,7 +1540,7 @@ country_event = {
 						limit = {
 							is_unit_leader = yes
 						}
-						add_random_trait = { 
+						add_random_trait = {
 							desert_fox
 							swamp_fox
 							trait_mountaineer
@@ -2065,13 +1569,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.ozai.3.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2092,7 +1596,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.ozai.3.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2107,11 +1611,11 @@ country_event = {
 	}
 	option = {
 		name = fir_character.ozai.3.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
-		trigger = { 
+		trigger = {
 			any_unit_leader = {
 				is_character = FIR_ozai
 				attack_skill_level > 6
@@ -2155,7 +1659,7 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
@@ -2163,7 +1667,7 @@ country_event = {
  	### ozai is ordered to kill zuko
 	option = {
 		name = fir_character.ozai.4.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2183,13 +1687,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.ozai.5.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2213,14 +1717,14 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
  	### banish ursa
 	option = {
 		name = fir_character.ozai.6.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2232,7 +1736,7 @@ country_event = {
 	### kill ursa
 	option = {
 		name = fir_character.ozai.6.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 0
 		}
 
@@ -2281,8 +1785,8 @@ country_event = {
 	option = {
 		name = fir_character.iroh.1.a
 
-		trigger = { 
-			
+		trigger = {
+
 		}
 		add_ideas = spirit_prince_iroh
 		FIR_iroh = {
@@ -2307,13 +1811,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.iroh.2.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2332,7 +1836,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.iroh.2.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2351,10 +1855,10 @@ country_event = {
 	}
 	option = {
 		name = fir_character.iroh.2.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
-		
+
 		random_list = {
 			90 = {
 				FIR_iroh = {
@@ -2367,7 +1871,7 @@ country_event = {
 						limit = {
 							is_unit_leader = yes
 						}
-						add_random_trait = { 
+						add_random_trait = {
 							desert_fox
 							swamp_fox
 							trait_mountaineer
@@ -2396,13 +1900,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.iroh.3.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2423,7 +1927,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.iroh.3.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2438,11 +1942,11 @@ country_event = {
 	}
 	option = {
 		name = fir_character.iroh.3.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
-		trigger = { 
+		trigger = {
 			any_unit_leader = {
 				is_character = FIR_iroh
 				attack_skill_level > 6
@@ -2496,12 +2000,12 @@ country_event = {
 					days = 800
 				}
 			}
-		} 
+		}
 	}
 
 	option = {
 		name = fir_character.iroh.4.a
-		
+
 		FIR_iroh = {
 			if = {
 				limit = {
@@ -2533,7 +2037,7 @@ country_event = {
 #	title = firenation.14.t
 #	desc = firenation.14.d
 #	picture = GFX_Iroh_Decided_To_Withdraw
-#	
+#
 #	trigger = {
 #		tag = FIR
 #	}
@@ -2542,7 +2046,7 @@ country_event = {
 #	fire_only_once = yes
 #	option = {
 #		name = firenation.14.a
-#		#disband Iroh, teleport 
+#		#disband Iroh, teleport
 #		every_unit_leader = { limit = { has_id = 7 } retire = yes }
 #		hidden_effect = {
 #			If = { limit = { EAR = { controls_state = 179 } }
@@ -2597,9 +2101,9 @@ country_event = {
 #			369 = { teleport_armies = { limit = { tag = FIR } to_state_array = siege_ereas } }
 #			361 = { teleport_armies = { limit = { tag = FIR } to_state_array = siege_ereas } }
 #
-#			EAR = { 
-#				set_state_controller = 179 
-#				set_state_controller = 173	
+#			EAR = {
+#				set_state_controller = 179
+#				set_state_controller = 173
 #				set_state_controller = 174
 #				set_state_controller = 187
 #				set_state_controller = 189
@@ -2614,51 +2118,51 @@ country_event = {
 #				set_state_controller = 126
 #				set_state_controller = 145
 #			}
-#			DIN = { 
+#			DIN = {
 #				set_state_controller = 369
 #				set_state_controller = 80
-#				set_state_controller = 65	
+#				set_state_controller = 65
 #				set_state_controller = 99
 #				set_state_controller = 54
 #			}
-#			BAI = { 
+#			BAI = {
 #				set_state_controller = 76
 #			}
-#			WBA = { 
+#			WBA = {
 #				set_state_controller = 138
 #				set_state_controller = 141
 #				set_state_controller = 197
 #				set_state_controller = 233
 #				set_state_controller = 96
 #			}
-#			DAW = { 
+#			DAW = {
 #				set_state_controller = 361
 #				set_state_controller = 273
 #				set_state_controller = 231
 #				set_state_controller = 256
 #				set_state_controller = 241
 #			}
-#			EBA = { 
+#			EBA = {
 #				set_state_controller = 253
-#				set_state_controller = 116 
-#				set_state_controller = 139	
+#				set_state_controller = 116
+#				set_state_controller = 139
 #				set_state_controller = 217
 #				set_state_controller = 206
 #				set_state_controller = 248
 #				set_state_controller = 287
 #			}
-#			
-#			ECB = { 
-#				set_state_controller = 246 
-#				set_state_controller = 277	
+#
+#			ECB = {
+#				set_state_controller = 246
+#				set_state_controller = 277
 #				set_state_controller = 341
 #				set_state_controller = 333
 #				set_state_controller = 378
 #				set_state_controller = 398
 #				set_state_controller = 291
 #			}
-#			
-#			
+#
+#
 #			EAR = {
 #				if = {
 #					limit = {
@@ -2714,7 +2218,7 @@ country_event = {
  			FIR = {
 				retire_character = FIR_michi
 			}
- 		} 
+ 		}
  	}
 
 	fire_only_once = yes
@@ -2722,8 +2226,8 @@ country_event = {
 	option = {
 		name = fir_character.lu_ten.1.a
 
-		trigger = { 
-			
+		trigger = {
+
 		}
 
 		custom_effect_tooltip = michi_dies_ttp
@@ -2751,13 +2255,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.lu_ten.2.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2776,7 +2280,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.lu_ten.2.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2795,10 +2299,10 @@ country_event = {
 	}
 	option = {
 		name = fir_character.lu_ten.2.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
-		
+
 		random_list = {
 			90 = {
 				FIR_lu_ten = {
@@ -2811,7 +2315,7 @@ country_event = {
 						limit = {
 							is_unit_leader = yes
 						}
-						add_random_trait = { 
+						add_random_trait = {
 							desert_fox
 							swamp_fox
 							trait_mountaineer
@@ -2840,13 +2344,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.lu_ten.3.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2867,7 +2371,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.lu_ten.3.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -2882,11 +2386,11 @@ country_event = {
 	}
 	option = {
 		name = fir_character.lu_ten.3.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
-		trigger = { 
+		trigger = {
 			any_unit_leader = {
 				is_character = FIR_lu_ten
 				attack_skill_level > 6
@@ -2940,12 +2444,12 @@ country_event = {
 			   retire_character = FIR_lu_ten
 		   }
 		   country_event = { id = fir_character.iroh.4 days = 16 }
-		} 
+		}
 	}
 
 	option = {
 		name = fir_character.lu_ten.4.a
-		
+
 		if = {
 			limit = {
 				NOT = {
@@ -2992,8 +2496,8 @@ country_event = {
 	option = {
 		name = fir_character.zuko.1.a
 
-		trigger = { 
-			
+		trigger = {
+
 		}
 		add_ideas = spirit_prince_zuko
 		FIR_zuko = {
@@ -3018,13 +2522,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.zuko.2.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3043,7 +2547,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.zuko.2.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3062,10 +2566,10 @@ country_event = {
 	}
 	option = {
 		name = fir_character.zuko.2.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
-		
+
 		random_list = {
 			90 = {
 				FIR_zuko = {
@@ -3078,7 +2582,7 @@ country_event = {
 						limit = {
 							is_unit_leader = yes
 						}
-						add_random_trait = { 
+						add_random_trait = {
 							desert_fox
 							swamp_fox
 							trait_mountaineer
@@ -3107,13 +2611,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.zuko.3.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3134,7 +2638,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.zuko.3.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3149,11 +2653,11 @@ country_event = {
 	}
 	option = {
 		name = fir_character.zuko.3.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
-		trigger = { 
+		trigger = {
 			any_unit_leader = {
 				is_character = FIR_zuko
 				attack_skill_level > 6
@@ -3195,13 +2699,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.zuko.4.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3220,13 +2724,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.zuko.5.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3239,14 +2743,14 @@ country_event = {
 
 	option = {
 		name = fir_character.zuko.5.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 0
 		}
 
 		trigger = {
 			has_country_flag = zuko_wins_the_agni_kai
 		}
-		
+
 	}
 }
 
@@ -3283,8 +2787,8 @@ country_event = {
 	option = {
 		name = fir_character.azula.1.a
 
-		trigger = { 
-			
+		trigger = {
+
 		}
 		add_ideas = spirit_prince_azula
 		FIR_azula = {
@@ -3308,13 +2812,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.azula.2.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3333,7 +2837,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.azula.2.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3352,10 +2856,10 @@ country_event = {
 	}
 	option = {
 		name = fir_character.azula.2.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
-		
+
 		random_list = {
 			90 = {
 				FIR_azula = {
@@ -3368,7 +2872,7 @@ country_event = {
 						limit = {
 							is_unit_leader = yes
 						}
-						add_random_trait = { 
+						add_random_trait = {
 							desert_fox
 							swamp_fox
 							trait_mountaineer
@@ -3397,13 +2901,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_character.azula.3.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3424,7 +2928,7 @@ country_event = {
 	}
 	option = {
 		name = fir_character.azula.3.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3439,11 +2943,11 @@ country_event = {
 	}
 	option = {
 		name = fir_character.azula.3.c
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
-		trigger = { 
+		trigger = {
 			any_unit_leader = {
 				is_character = FIR_azula
 				attack_skill_level > 6
@@ -3500,7 +3004,7 @@ country_event = {
 
 	option = {
 		name = fir_colonies.1.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3526,7 +3030,7 @@ country_event = {
 	}
 	option = {
 		name = fir_colonies.1.b
-		
+
 		154 = {
 			add_compliance = 40
 
@@ -3561,13 +3065,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_colonies.2.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3611,13 +3115,13 @@ country_event = {
 
 	immediate = {
  		hidden_effect = {
-			
+
 		}
  	}
 
 	option = {
 		name = fir_colonies.3.a
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3628,7 +3132,7 @@ country_event = {
 
 	option = {
 		name = fir_colonies.3.b
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3659,7 +3163,7 @@ country_event = {
 
 	option = {
 		name = fir_colonies.4.a   ### enforce culture
-		ai_chance = { 
+		ai_chance = {
 			factor = 100
 		}
 
@@ -3683,7 +3187,7 @@ country_event = {
 	}
 	option = {
 		name = fir_colonies.4.b   ### training grounds
-		
+
 		124 = {
 			add_dynamic_modifier = { modifier = training_grounds }
 

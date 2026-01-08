@@ -1,0 +1,22 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = NAT
+							original_tag  = SAT
+							original_tag = WAT
+							original_tag  = EAT
+						}
+					}
+					FROM = {
+						has_country_flag = expansionist_path
+					}
+				}
+				country_event = airbender_genocide.1
+			}
+		}
+	}
+}

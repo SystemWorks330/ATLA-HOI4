@@ -23,9 +23,12 @@ set_country_flag = FIR_navy
 set_country_flag = FIR_air_techs
 set_country_flag = FIR_special_forces
 
+# this should be an event and a decision!!
+set_country_flag = expansionist_path
+set_country_flag = arrival_of_the_great_comet_mission
+
 
 set_variable = { legitimacy_var = 120 }
-
 set_variable = { logistic_spirit_var = 25 }
 set_variable = { quality_spirit_var = 50 }
 set_variable = { unit_leader_spirit_var = 15 }
@@ -36,7 +39,7 @@ FIR_starting_tech_12 = yes
 
 #set_research_slots = 3
 set_convoys = 260
-set_stability = 0.9 
+set_stability = 0.9
 set_war_support = 0.9
 
 army_experience = 80
@@ -223,13 +226,13 @@ permanent_spirits_and_modifiers = yes
 #     #   #  # #  #   #       #     #  #
  #    #   #### ###    #       ###     #
   #   #   #  # #  #   #          #   #
-##    #   #  # #  #   #       ###   #### 
+##    #   #  # #  #   #       ###   ####
 
 
-52.5.16 ={
+52.5.16 = {
 
 	#### army, tech and equipment
-	
+
 
 	OOB = "FIR_52"
 	FIR_starting_tech_52 = yes
@@ -313,7 +316,7 @@ permanent_spirits_and_modifiers = yes
 
 
 	set_variable = { victory_condition = token:fire_imperialism_spirit }
-	
+
 
 
 	set_variable = { azulon_x = 90 }
@@ -335,12 +338,12 @@ permanent_spirits_and_modifiers = yes
 		set_character_flag = literate
 
 		add_field_marshal_role = {
-			traits = { 
-				skilled_staffer 
-				offensive_infantry 
-				fast_planner 
-				aggressive_assaulter 
-				firelord 
+			traits = {
+				skilled_staffer
+				offensive_infantry
+				fast_planner
+				aggressive_assaulter
+				firelord
 			}
 			skill = 5
 			attack_skill = 5
@@ -349,10 +352,10 @@ permanent_spirits_and_modifiers = yes
 			logistics_skill = 3
 			legacy_id=-1
 
-			visible = { 
+			visible = {
 				has_character_flag = character_born
 				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
+				NOT = { has_character_flag = FIR_character_death }
 			}
 		}
 	}
@@ -382,7 +385,7 @@ permanent_spirits_and_modifiers = yes
 
 
 106.2.4 ={
-	
+
 	OOB = "FIR_106"
 
 	set_variable = { logistic_spirit_var = 80 }
@@ -416,7 +419,7 @@ permanent_spirits_and_modifiers = yes
 	}
 
 	remove_ideas = {
-		
+
 	}
 
 
@@ -452,11 +455,11 @@ permanent_spirits_and_modifiers = yes
 		set_character_flag = literate
 
 		add_field_marshal_role = {
-			traits = { 
+			traits = {
 				prince
 				calm
-				skilled_staffer 
-				offensive_infantry 
+				skilled_staffer
+				offensive_infantry
 				tactical_mind
 				thorough_planner
 				besieger
@@ -468,10 +471,10 @@ permanent_spirits_and_modifiers = yes
 			logistics_skill = 6
 			legacy_id=-1
 
-			visible = { 
+			visible = {
 				has_character_flag = character_born
 				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
+				NOT = { has_character_flag = FIR_character_death }
 			}
 		}
 	}
@@ -491,10 +494,10 @@ permanent_spirits_and_modifiers = yes
 		set_unit_leader_flag = lu_ten
 
 		add_corps_commander_role = {
-			traits = { 
+			traits = {
 				prince
 				brave
-				offensive_infantry 
+				offensive_infantry
 			}
 			skill = 3
 			attack_skill = 3
@@ -503,10 +506,10 @@ permanent_spirits_and_modifiers = yes
 			logistics_skill = 2
 			legacy_id=-1
 
-			visible = { 
+			visible = {
 				has_character_flag = character_born
 				has_character_flag = FIR_character_general
-				NOT = { has_character_flag = FIR_character_death } 
+				NOT = { has_character_flag = FIR_character_death }
 			}
 		}
 	}
@@ -602,9 +605,9 @@ permanent_spirits_and_modifiers = yes
 
 
 111.10.30 ={
-	
+
 	OOB = "FIR_111"
-	
+
 	FIR_starting_tech_111 = yes
 
 	set_political_power = 300
@@ -646,7 +649,7 @@ permanent_spirits_and_modifiers = yes
 
 	set_variable = { iroh_x = 350 }
 	set_variable = { iroh_y = 6 }
-		
+
 
 }
 
