@@ -823,6 +823,11 @@ spriteTypes = {
 		texturefile = "gfx/texticons/mil_factory.dds"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = "GFX_nav_dockyard_texticon"
+		texturefile = "gfx/texticons/nav_dockyard.dds"
+		legacy_lazy_load = no
+	}
 
 	spriteType = {
 		name = "GFX_civ_factory_damaged"
@@ -2641,6 +2646,12 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_resources_to_market_icon"
 		texturefile = "gfx/texticons/resources_to_market.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_energy_consumption_texticon"
+		texturefile = "gfx/texticons/energy_consumption_texticon.dds"
 		legacy_lazy_load = no
 	}
 
