@@ -155,7 +155,30 @@ guiTypes = {
 			position = { x= 442 y = 2 }
 			alwaystransparent = yes
 		}
-		
+
+		containerWindowType = {
+			name = "resource_strip_container"
+			position = { x = 20 y = 46 }
+			size = { width = -20 height = 25 }
+
+			iconType ={
+				name = "resources_bg"
+				quadTextureSprite = "GFX_trade_filter_bg"
+				position = { x= -9999 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+
+			gridBoxType = {
+				orientation = "CENTER_UP"
+				name = "resources_grid"
+				position = { x = -99999 y = 4 }
+				size = { width = 100% height = 100% }
+				slotsize = { width = 70 height = 31 }
+				max_slots = { x = 7 y = 1 }
+				add_horizontal = no
+				format = "UPPER_LEFT"
+			}
+		}
 
 		containerWindowType = {
 			name = "fuel_info"
@@ -164,14 +187,6 @@ guiTypes = {
 			verticalScrollbar = "right_vertical_slider"
 			Orientation = LOWER_LEFT
 			clipping = yes
-			
-			
-			iconType ={
-				name ="trade_filter_bg"
-				spriteType = "GFX_trade_filter_bg"
-				position = { x= 20 y = 0 }
-				Orientation = "UPPER_LEFT"
-			}
 			
 			iconType ={
 				name ="fuel_header"

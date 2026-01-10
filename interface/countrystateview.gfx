@@ -768,4 +768,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/stateview_nuke_button.dds"
 	}
 
+		### Energy
+	
+	spriteType = {
+		name = "GFX_modifiers_energy"
+		textureFile = "gfx/interface/modifiers/modifiers_energy.dds"
+	}
 }
