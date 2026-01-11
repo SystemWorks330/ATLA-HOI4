@@ -69,45 +69,114 @@ guiTypes = {
 					min = { width = 100%% height = 100%% }
 				}
 				clipping = no
+				
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
 
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_techtree_stripes"
-				}
+			containerWindowType = {
+				name = "size_filler"
+				position = { x=0 y=0 }
+				size = { width = 2100 height = 100% }
+			}
 
-				iconType = {
-					name ="mob_warfare_bg"
-					spriteType = "GFX_mob_warfare_bg"
-					position = { x=85 y=33 }
-				}
+			iconType = {
+				name ="power_bg"
+				spriteType = "GFX_power_bg"
+				position = { x=85 y=33 }
+			}
+			iconType = {
+				name ="substance_bg"
+				spriteType = "GFX_substance_bg"
+				position = { x=575 y=33 }
+			}
+			iconType = {
+				name ="change_bg"
+				spriteType = "GFX_change_bg"
+				position = { x=1050 y=33 }
+			}
+			iconType = {
+				name ="freedom_bg"
+				spriteType = "GFX_freedom_bg"
+				position = { x=1535 y=33 }
+			}
 
-				iconType = {
-					name ="sup_firepower_bg"
-					spriteType = "GFX_sup_firepower_bg"
-					position = { x=575 y=33 }
-				}
+			iconType = {
+				name ="positiv_jing_bg"
+				spriteType = "GFX_positiv_jing_bg"
+				position = { x=560 y=700 }
+			}	
+			iconType = {
+				name ="neutral_jing_bg"
+				spriteType = "GFX_neutral_jing_bg"
+				position = { x=930 y=700 }
+			}
+			iconType = {
+				name ="negativ_jing_bg"
+				spriteType = "GFX_negativ_jing_bg"
+				position = { x=1305 y=700 }
+			}
+
+			iconType = {
+				name ="positiv_jing_two_bg"
+				spriteType = "GFX_positiv_jing_two_bg"
+				position = { x=330 y=1410 }
+			}	
+			iconType = {
+				name ="neutral_jing_two_bg"
+				spriteType = "GFX_neutral_jing_two_bg"
+				position = { x=810 y=1410 }
+			}
+			iconType = {
+				name ="negativ_jing_two_bg"
+				spriteType = "GFX_negativ_jing_two_bg"
+				position = { x=1295 y=1410 }
 			}
 
 			instantTextBoxType = {
-				name = "mob_warfare_title"
+				name = "power_title"
 				position = { x = 120 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
-				text = "Something_something_change"
+				text = "POWER_DOCTRINE_LABEL"
 				maxWidth = 400
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
 			instantTextBoxType = {
-				name = "superior_firepower_title"
+				name = "substance_title"
 				position = { x = 600 y = 35 }
 				textureFile = ""
 				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
+				text = "SUBSTANCE_DOCTRINE_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "change_title"
+				position = { x = 1080 y = 35 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "CHANGE_DOCTRINE_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "freedom_title"
+				position = { x = 1560 y = 35 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "FREEDOM_DOCTRINE_LABEL"
 				maxWidth = 400
 				maxHeight = 122
 				format = center
@@ -115,141 +184,97 @@ guiTypes = {
 			}
 
 			instantTextBoxType = {
-				name = "mob_warfare_desc"
-				position = { x = 140 y = 90 }
+				name = "positiv_jing_title"
+				position = { x = 360 y = 435 }
 				textureFile = ""
-				font = "hoi_20b"
+				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
-				maxWidth = 350
+				text = "POSITIV_JING_LABEL"
+				maxWidth = 400
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
-
 			instantTextBoxType = {
-				name = "superior_firepower_desc"
-				position = { x = 600 y = 90 }
+				name = "neutral_jing_title"
+				position = { x = 840 y = 435 }
 				textureFile = ""
-				font = "hoi_20b"
+				font = "hoi_22tech"
 				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
+				text = "NEUTRAL_JING_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "negativ_jing_title"
+				position = { x = 1320 y = 435 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "NEGATIV_JING_LABEL"
 				maxWidth = 400
 				maxHeight = 122
 				format = center
 				Orientation = "UPPER_LEFT"
 			}
 
-			instantTextBoxType = {
-				name = "mob_warfare_subtitle1"
-				position = { x = 110 y = 435 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
-				maxWidth = 150
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "MOBILE_INFANTRY_LABEL_TT"
+			gridboxtype = {
+				name = "power_tree"
+				position = { x=80 y=130 }
+				size = { width = 478 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"				
+			}
+			gridboxtype = {
+				name = "substance_tree"
+				position = { x=80 y=130 }
+				size = { width = 478 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"				
+			}
+			gridboxtype = {
+				name = "change_tree"
+				position = { x=80 y=130 }
+				size = { width = 478 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"				
+			}
+			gridboxtype = {
+				name = "freedom_tree"
+				position = { x=80 y=130 }
+				size = { width = 478 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"				
 			}
 
-			instantTextBoxType = {
-				name = "mob_warfare_subtitle2"
-				position = { x = 355 y = 435 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
-				maxWidth = 200
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "PROFESSIONAL_INFANTRY_LABEL_TT"
-			}
+			containerWindowType = {
+				name = "techtree_xor_item1"
+				position = { x=295 y=1155 }
+				size = { width=60 height= 60 }
 
-			instantTextBoxType = {
-				name = "mob_warfare_subtitle3"
-				position = { x = 110 y = 919 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
-				maxWidth = 150
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "COMBINED_ARMS_LABEL_TT"
-			}
-
-			instantTextBoxType = {
-				name = "mob_warfare_subtitle4"
-				position = { x = 360 y = 917 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
-				maxWidth = 180
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "MODERN_BLITZKRIEG_LABEL_TT"
-			}
-
-			instantTextBoxType = {
-				name = "sup_firepower_subtitle1"
-				position = { x = 600 y = 435 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
-				maxWidth = 150
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "DISPERSED_SUPPORT_LABEL_TT"
-			}
-
-			instantTextBoxType = {
-				name = "sup_firepower_subtitle2"
-				position = { x = 850 y = 435 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
-				maxWidth = 170
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "INTEGRATED_SUPPORT_LABEL_TT"
-			}
-
-			instantTextBoxType = {
-				name = "sup_firepower_subtitle3"
-				position = { x = 600 y = 795 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
-				maxWidth = 150
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "MODERN_ARTILLERY_LABEL_TT"
-			}
-
-			instantTextBoxType = {
-				name = "sup_firepower_subtitle4"
-				position = { x = 840 y = 795 }
-				textureFile = ""
-				font = "hoi_22tech"
-				borderSize = {x = 0 y = 4}
-				text = "Something_Title"
-				maxWidth = 170
-				maxHeight = 122
-				format = center
-				Orientation = "UPPER_LEFT"
-				pdx_tooltip = "SHOCK_AND_AWE_LABEL_TT"
+				iconType = {
+					name = "power"
+					position = { x=0 y=0 }
+					spriteType = "GFX_techtree_xor_right"
+				}
+				iconType = {
+					name = "owo"
+					position = { x=960 y=0 }
+					spriteType = "GFX_techtree_xor_left"
+				}
+				iconType = {
+					name = "uwu"
+					position = { x=960 y=0 }
+					spriteType = "GFX_techtree_xor_right"
+				}
+				iconType = {
+					name = "reeee"
+					position = { x=1438 y=0 }
+					spriteType = "GFX_techtree_xor_left"
+					}
+				}
 			}
 		}
 
