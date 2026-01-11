@@ -348,6 +348,9 @@ technology_folders = {
 		ledger = air
 		doctrine = yes
 	}
+	innovation_army_folder = {
+		ledger = hidden 
+	}
 }
 
   
