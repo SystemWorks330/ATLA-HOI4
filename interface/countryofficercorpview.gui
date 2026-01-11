@@ -602,13 +602,13 @@ guiTypes = {
 		    # If you have the DLC that enables spirits, each of the sections (army, navy, air) will need to be larger in height
 		    # This defines the extra height added to each section, and thus also the offset added to the start of the next section
 		    name = "spirit_row_offset"
-		    position = { x = 0 y = 56 }
+		    position = { x = 0 y = 0 }
 		}
 		
 		containerWindowType = {
 			name = "army_header"
-			position = { x = 0 y = 5 }
-			size = { width = 98% height = 200 }
+			position = { x = 0 y = 125 }
+			size = { width = 98% height = 240 }
 			margin = { top = 0 left = 0 bottom = 0 right = 0}
 			
 			background = {
@@ -697,8 +697,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "navy_header"
-			position = { x = 0 y = 209 }
-			size = { width = 98% height = 200 }
+			position = { x = 0 y = 369 }
+			size = { width = 98% height = 240 }
 			margin = { top = 0 left = 0 bottom = 0 right = 0}
 
 			background = {
@@ -787,8 +787,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "air_header"
-			position = { x = 0 y = 414 }
-			size = { width = 98% height = 200 }
+			position = { x = 0 y = 614 }
+			size = { width = 98% height = 240 }
 			margin = { top = 0 left = 0 bottom = 0 right = 0}
 
 			background = {
@@ -854,7 +854,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "special_forces_header"
-			position = { x = 0 y = 619 }
+			position = { x = 0 y = 859 }
 			size = { width = 98% height = 145 }
 			margin = { top = 0 left = 0 bottom = 0 right = 0}
 			

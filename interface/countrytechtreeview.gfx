@@ -162,6 +162,11 @@ spriteTypes = {
 		noOfFrames = 2		
 	}
 	spriteType = {
+		name = "GFX_innovation_army_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_doctrine_tab_small.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
 		name = "GFX_land_doctrine_folder_tab"
 		textureFile = "gfx/interface/techtree/techtree_landdoctrine_tab.dds"
 		noOfFrames = 2		
@@ -686,6 +691,45 @@ spriteTypes = {
 	frameAnimatedSpriteType = {
 		name = "GFX_technology_land_doctrine_folder_currently_researching_item_bg"
 		texturefile = "gfx/interface/techtree/tech_doctrine_2_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	#### land doctrine #####
+	
+	spriteType = {
+		name = "GFX_technology_innovation_army_folder_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_wide_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_innovation_army_folder_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_wide_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_innovation_army_folder_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_wide_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_industry_folder_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_wide_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_innovation_army_folder_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_wide_bg.dds"
+	}	
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_innovation_army_folder_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip_wide.dds"
 		noOfFrames = 9
 		loadType = "INGAME"
 		transparencecheck = yes

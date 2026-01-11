@@ -114,6 +114,11 @@ spriteTypes = {
 		name = "GFX_officer_corp_theorist_icon"
 		textureFile = "gfx/interface/officer_corp/officer_corp_theorist_icon.dds"
 	}
+
+	spriteType = {
+		name = "GFX_officer_corp_bg_banner_spy"
+		textureFile = "gfx/interface/officer_corp/officer_corp_bg_banner_spy.dds"
+	}
 	
 	spriteType = {
 		name = "GFX_officer_corp_army_banner_icon"
@@ -263,6 +268,11 @@ spriteTypes = {
 
 
 #### Spirits ####	
+
+spriteType = {
+	name = "GFX_officer_corp_spirit_background"
+	textureFile = "gfx/interface/officer_corp/spirit_background.dds"
+}
 	
 spriteType = {
 	name = "GFX_officer_corp_spirit_bg_enabled"

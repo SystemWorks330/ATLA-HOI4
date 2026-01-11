@@ -4,7 +4,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = shore_bombardment
@@ -20,8 +20,8 @@ technologies = {
 		amphibious_invasion = 0.25
 		navy_max_range_factor = 0.05
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -52,7 +52,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = naval_firepower
@@ -61,8 +61,8 @@ technologies = {
 
 		shore_bombardment_bonus = 0.2
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -89,13 +89,13 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		naval_hit_chance = 0.05
 		ships_at_battle_start = 0.25
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -122,7 +122,7 @@ technologies = {
 
 		xp_research_type = air
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = strategic_bombing
@@ -133,8 +133,8 @@ technologies = {
 		experience_gain_air_factor = 0.1
 		army_bonus_air_superiority_factor = 0.05
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -161,7 +161,7 @@ technologies = {
 
 		xp_research_type = air
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = mass_destruction
@@ -170,8 +170,8 @@ technologies = {
 
 		air_strategic_bomber_bombing_factor = 0.2
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -198,12 +198,12 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		air_strategic_bomber_bombing_factor = 0.2
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -233,7 +233,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -267,8 +267,8 @@ technologies = {
 			breakthrough = 0.1
 		}
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -299,7 +299,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = energy_and_drive
@@ -324,8 +324,8 @@ technologies = {
 		}
 		org_loss_when_moving = -0.1
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -357,7 +357,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = root_a
@@ -369,8 +369,8 @@ technologies = {
 			default_morale = 0.1
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -405,7 +405,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = fleet_in_being
@@ -417,8 +417,8 @@ technologies = {
 			max_organisation = 4
 		}
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -446,7 +446,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = floating_fortress
@@ -479,8 +479,8 @@ technologies = {
 		}
 		mines_planting_by_fleets_factor = 0.1
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -508,15 +508,15 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		firenation_cruiser = {
 			max_organisation = 5
 			defense = 0.15			
 		}
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -545,7 +545,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = multiplanar_warfare
@@ -557,8 +557,8 @@ technologies = {
 		}
 		land_reinforce_rate = 0.02
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -586,7 +586,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = flying_fortress
@@ -596,8 +596,8 @@ technologies = {
 		max_planning = 0.1
 		planning_speed = 0.1
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -625,12 +625,12 @@ technologies = {
 
 		xp_research_type = air
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		air_strategic_bomber_defence_factor = 0.25
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -665,7 +665,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -697,8 +697,8 @@ technologies = {
 			defense = 0.2
 		}
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -729,7 +729,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		spearmen = {
 			combat_width = -0.5
@@ -754,8 +754,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -787,7 +787,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = root_a
@@ -803,8 +803,8 @@ technologies = {
 		}
 		land_reinforce_rate = 0.05
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -839,7 +839,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = marine_corps
@@ -849,8 +849,8 @@ technologies = {
 		invasion_preparation = -0.1
 		shore_bombardment_bonus = 0.2
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -878,7 +878,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = battlefield_concentration
@@ -888,8 +888,8 @@ technologies = {
 		naval_invasion_capacity = 5
 		convoy_escort_efficiency = 0.15
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -917,13 +917,13 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		naval_enemy_fleet_size_ratio_penalty_factor = 0.15
 		strike_force_movement_org_loss = -0.2
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -952,7 +952,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = convoy_escort
@@ -961,8 +961,8 @@ technologies = {
 
 		convoy_escort_efficiency = 0.1
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -990,7 +990,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = integrated_convoy_defense
@@ -999,8 +999,8 @@ technologies = {
 
 		convoy_escort_efficiency = 0.2
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1028,12 +1028,12 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		convoy_escort_efficiency = 0.3
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1066,7 +1066,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -1099,8 +1099,8 @@ technologies = {
 			default_morale = 0.2
 		}
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1131,7 +1131,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = communal_unity
@@ -1154,8 +1154,8 @@ technologies = {
 			acclimatization_cold_climate_gain_factor = 0.05
 		}
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1187,7 +1187,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = root_b
@@ -1200,8 +1200,8 @@ technologies = {
 
 		resistance_damage_to_garrison_on_our_occupied_states = 0.4
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1235,7 +1235,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = raiding_operations
@@ -1248,8 +1248,8 @@ technologies = {
 		}
 		naval_speed_factor = 0.5
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1277,7 +1277,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = convoy_interception
@@ -1309,8 +1309,8 @@ technologies = {
 		naval_retreat_chance = 0.1
 		naval_retreat_speed = 0.5
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1338,12 +1338,12 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		convoy_raiding_efficiency_factor = 0.1
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1372,7 +1372,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = infiltration
@@ -1383,8 +1383,8 @@ technologies = {
 			default_morale = 0.2
 		}
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1412,7 +1412,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = camouflage
@@ -1422,8 +1422,8 @@ technologies = {
 		enable_tactic = tactic_infiltration
 		supply_consumption_factor = -0.10
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1451,14 +1451,14 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		category_all_foot = {
 			defense = 0.15
 		}
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1490,7 +1490,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -1521,8 +1521,8 @@ technologies = {
 		army_speed_factor = 0.10
 		org_loss_when_moving = -0.25
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1553,7 +1553,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = detachment
@@ -1575,8 +1575,8 @@ technologies = {
 			defense = 0.15
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1608,7 +1608,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = root_c
@@ -1620,8 +1620,8 @@ technologies = {
 			soft_attack = 0.10
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1656,7 +1656,7 @@ technologies = {
 
 		xp_research_type = air
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = home_defense
@@ -1666,8 +1666,8 @@ technologies = {
 		air_superiority_detect_factor = 0.1
 		air_superiority_efficiency = 0.2
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1694,7 +1694,7 @@ technologies = {
 
 		xp_research_type = air
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = direct_ground_support
@@ -1704,8 +1704,8 @@ technologies = {
 		air_interception_detect_factor = 0.1
 		air_intercept_efficiency = 0.2
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1732,12 +1732,12 @@ technologies = {
 
 		xp_research_type = air
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		air_cas_present_factor = 0.20
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1765,7 +1765,7 @@ technologies = {
 
 		xp_research_type = air
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = dogfighting
@@ -1775,8 +1775,8 @@ technologies = {
 		air_intercept_efficiency = 0.2
 		air_mission_xp_gain_factor = 0.1
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1803,7 +1803,7 @@ technologies = {
 
 		xp_research_type = air
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = hunt_and_destroy
@@ -1812,8 +1812,8 @@ technologies = {
 
 		air_superiority_efficiency = 0.2
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1840,13 +1840,13 @@ technologies = {
 
 		xp_research_type = air
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		air_ace_generation_chance_factor = 0.15
 		air_close_air_support_org_damage_factor = 0.1
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1882,7 +1882,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -1904,8 +1904,8 @@ technologies = {
 		}
 
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1937,7 +1937,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = solar_plexus_a
@@ -1947,8 +1947,8 @@ technologies = {
 		enable_tactic = tactic_bait_distraction
 		enable_tactic = tactic_infiltration
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -1980,7 +1980,7 @@ technologies = {
 
 		xp_research_type = navy
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = hearth_a
@@ -1989,8 +1989,8 @@ technologies = {
 
 		invasion_preparation = -0.3
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2022,7 +2022,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = throat_a
@@ -2034,8 +2034,8 @@ technologies = {
 		}
 		army_morale_factor = 0.05
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2067,7 +2067,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = third_eye_a
@@ -2080,8 +2080,8 @@ technologies = {
 			soft_attack = 0.1
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2113,7 +2113,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = crown_chakra_a
@@ -2129,8 +2129,8 @@ technologies = {
 
 		enable_tactic = tactic_oblique_assault
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2162,7 +2162,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = inner_peace
@@ -2185,8 +2185,8 @@ technologies = {
 			max_organisation = 4
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2224,7 +2224,7 @@ technologies = {
 		}
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -2250,8 +2250,8 @@ technologies = {
 		}
 		experience_loss_factor = -0.15
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2282,7 +2282,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = power_from_chi
@@ -2294,8 +2294,8 @@ technologies = {
 			defense = 0.2
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2329,7 +2329,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		category_bender= {
 			hard_attack = 0.15
@@ -2339,8 +2339,8 @@ technologies = {
 		}
 
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2376,7 +2376,7 @@ technologies = {
 		}
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -2397,8 +2397,8 @@ technologies = {
 			breakthrough = 0.15
 		}
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2430,7 +2430,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = glorious_charge
@@ -2447,8 +2447,8 @@ technologies = {
 		}
 
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2480,7 +2480,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		category_all_cavalry = {
 			breakthrough = 0.10
@@ -2491,8 +2491,8 @@ technologies = {
 			hard_attack = 0.20
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2529,7 +2529,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -2548,8 +2548,8 @@ technologies = {
 		enable_tactic = tactic_cautious_advance
 		army_speed_factor = 0.15
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2581,7 +2581,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = organized_assault
@@ -2597,8 +2597,8 @@ technologies = {
 		}
 
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2630,7 +2630,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		org_loss_when_moving = -0.1
 		category_all_cavalry = {
@@ -2638,8 +2638,8 @@ technologies = {
 			max_organisation = 2
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2680,7 +2680,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -2702,8 +2702,8 @@ technologies = {
 		max_dig_in = 10
 		dig_in_speed_factor = 0.25
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2735,7 +2735,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = solar_plexus_b
@@ -2745,8 +2745,8 @@ technologies = {
 		enable_tactic = tactic_mass_charge
 		enable_tactic = tactic_force_concentration
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2778,7 +2778,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = hearth_b
@@ -2790,8 +2790,8 @@ technologies = {
 			hard_attack = 0.1
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2823,7 +2823,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = throat_b
@@ -2835,8 +2835,8 @@ technologies = {
 		}
 		supply_consumption_factor = -0.10
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2868,7 +2868,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = third_eye_b
@@ -2880,8 +2880,8 @@ technologies = {
 		}
 		land_reinforce_rate = 0.05
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2913,7 +2913,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = crown_chakra_b
@@ -2927,8 +2927,8 @@ technologies = {
 
 		enable_tactic = tactic_pincer_movement
 		
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -2960,7 +2960,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = wait
@@ -2978,8 +2978,8 @@ technologies = {
 		}
 		dig_in_speed_factor = 0.15
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3017,7 +3017,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		xor = { listen }
 
@@ -3029,8 +3029,8 @@ technologies = {
 		max_dig_in = 15
 		enable_tactic = tactic_field_traps
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3062,7 +3062,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = the_anvil
@@ -3079,8 +3079,8 @@ technologies = {
 			soft_attack = 0.1
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3112,7 +3112,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		out_of_supply_factor = -0.2
 		spearmen = {
@@ -3120,8 +3120,8 @@ technologies = {
 			hard_attack = 0.1
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3159,7 +3159,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		xor = { wait }
 
@@ -3172,8 +3172,8 @@ technologies = {
 
 		enable_tactic = tactic_scattered_defense
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3205,7 +3205,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = the_hammer
@@ -3218,8 +3218,8 @@ technologies = {
 			breakthrough = 0.2
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3251,7 +3251,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		category_all_cavalry = {
 			hard_attack = 0.2
@@ -3263,8 +3263,8 @@ technologies = {
 		}
 
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3304,7 +3304,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -3323,8 +3323,8 @@ technologies = {
 		army_speed_factor = 0.10
 		army_morale_factor = 0.25
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3356,7 +3356,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = solar_plexus_c
@@ -3366,8 +3366,8 @@ technologies = {
 		enable_tactic = tactic_defeat_in_detail
 		enable_tactic = tactic_field_traps
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3399,7 +3399,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = hearth_c
@@ -3411,8 +3411,8 @@ technologies = {
 			default_morale = 0.2
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3444,7 +3444,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = throat_c
@@ -3456,8 +3456,8 @@ technologies = {
 		}
 		experience_loss_factor = -0.1
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3489,7 +3489,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = third_eye_c
@@ -3503,8 +3503,8 @@ technologies = {
 			hard_attack = 0.2
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3536,7 +3536,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = crown_chakra_c
@@ -3551,8 +3551,8 @@ technologies = {
 
 		enable_tactic = tactic_hit_and_run
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3584,7 +3584,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = retreat
@@ -3607,8 +3607,8 @@ technologies = {
 			default_morale = 0.2
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3646,7 +3646,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -3665,8 +3665,8 @@ technologies = {
 		resistance_damage_to_garrison_on_our_occupied_states = 0.1
 		enable_tactic = tactic_feint_retreat
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3698,7 +3698,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = last_stand
@@ -3710,8 +3710,8 @@ technologies = {
 		}
 		dig_in_speed_factor = 0.2
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3743,14 +3743,14 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		no_supply_grace = 192
 		out_of_supply_factor = -0.30
 		army_core_defence_factor = 0.1
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3787,7 +3787,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -3807,8 +3807,8 @@ technologies = {
 		org_loss_when_moving = -0.15
 		enable_tactic = tactic_evade_battle
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3840,7 +3840,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = hit_and_run
@@ -3854,8 +3854,8 @@ technologies = {
 		land_night_attack = 0.25
 		planning_speed = 0.25
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3887,7 +3887,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		category_ranged = {
 			hard_attack = 0.15
@@ -3895,8 +3895,8 @@ technologies = {
 			max_organisation = 4
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3933,7 +3933,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		allow = {
 			NOT = {
@@ -3959,8 +3959,8 @@ technologies = {
 
 		enable_tactic = tactic_square_formation
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -3991,7 +3991,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		path = {
 			leads_to_tech = become_wind
@@ -4003,8 +4003,8 @@ technologies = {
 			soft_attack = 0.20
 		}
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
@@ -4038,7 +4038,7 @@ technologies = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100
-		doctrine = no
+		doctrine = yes
 
 		army_speed_factor = 0.25
 		category_bender = {
@@ -4047,8 +4047,8 @@ technologies = {
 		}
 
 
-		doctrine = no
-		research_cost = 1.5
+		doctrine = yes
+		#research_cost = 1.5
 
 		folder = {
 			name = innovation_army_folder
