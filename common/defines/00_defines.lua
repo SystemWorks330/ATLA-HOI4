@@ -1303,37 +1303,6 @@ NAir = {
 
 	FIELD_EXPERIENCE_FACTOR = 0.7,						-- Factor all air experience gain from missions by this
 	
-	MISSION_DAILY_EXP_GAIN_PER_SHIP = 0.3,					-- Amount of exp each ship gain every 24h while training (before modifiers)
-	MISSION_DAILY_COUNTRY_EXP_FACTOR = 0.01,						-- Factor used to scale the Daily Country Navy XP gain
-	MISSION_DAILY_COUNTRY_EXP_MANPOWER_FACTOR = 0.006,					-- Factor used to scale the sum of the on mission manpower for the Daily Country Navy XP gain
-	MISSION_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR = 0.01,				-- Factor used to scale the sum of the manpower divided by the country's number of ship for the Daily Country Navy XP gain
-	MISSION_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR =  300.0,					-- Factor used to scale the ratio of ships on mission for the Daily Country Navy XP gain
-	MISSION_EXP_RATIOS = {											-- experience multipliers for different mission types
-		0.0,	-- HOLD
-		0.005,	-- PATROL
-		0.005,	-- STRIKE FORCE
-		0.005,	-- CONVOY RAIDING
-		0.005,	-- CONVOY ESCORT
-		0.005,	-- MINES PLANTING
-		0.005,	-- MINES SWEEPING
-		1.0,	-- TRAIN
-		0.0,	-- RESERVE_FLEET
-		0.005,	-- NAVAL_INVASION_SUPPORT
-	},
-
-	MISSION_DOMINANCE_RATIOS = { -- dominance multipliers for different mission types
-		0.0, -- HOLD
-		1.0, -- PATROL
-		1.0, -- STRIKE FORCE
-		0.5, -- CONVOY RAIDING
-		0.5, -- CONVOY ESCORT
-		0.3, -- MINES PLANTING
-		0.3, -- MINES SWEEPING
-		0.0, -- TRAIN
-		0.0, -- RESERVE_FLEET
-		1.0, -- NAVAL_INVASION_SUPPORT
-	},
-	
 	AI_ALLOWED_PLANES_KEPT_IN_RESERVE = 0.10,			--AI allowed planes is reduced by this percentage. Overflow will be distributed to the next valid order. Worst case, this will result in this % of planes no being assigned any order. 
 	
 	ACCIDENT_CHANCE_BASE = 0.05,							-- Base chance % (0 - 100) for accident to happen. Reduced with higher reliability stat.
@@ -1737,6 +1706,7 @@ NNavy = {
 	
 	HOLD_MISSION_MOVEMENT_COST = 1.0,								-- ships on hold cost this much fuel while moving
 	ON_BASE_FUEL_COST = 0.0,										-- ships that waits at naval bases cost this ratio
+	STRIKE_FORCE_ON_BASE_FUEL_COST_FACTOR = 0.25,					-- fuel cost for naval strike mission in port
 	IN_COMBAT_FUEL_COST = 2.0,										-- ships in combat will get this ratio for fuel cost
 	TRAINING_FUEL_COST_FOR_ESCORT_SHIPS = 0.15,						-- ships that are on training mission but not training (ie they are at max xp and training will cancel at max xp) will consume this ratio of fuel
 	
@@ -1835,7 +1805,40 @@ NNavy = {
 	
 	INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 0.25,				-- initially countries will allocate this ratio of dockyards for repairs
 	
+	FIELD_EXPERIENCE_FACTOR = 0.7,									-- Factor all naval experience gain from missions by this
 	
+	MISSION_DAILY_EXP_GAIN_PER_SHIP = 0.3,					-- Amount of exp each ship gain every 24h while training (before modifiers)
+	MISSION_DAILY_COUNTRY_EXP_FACTOR = 0.01,						-- Factor used to scale the Daily Country Navy XP gain
+	MISSION_DAILY_COUNTRY_EXP_MANPOWER_FACTOR = 0.006,					-- Factor used to scale the sum of the on mission manpower for the Daily Country Navy XP gain
+	MISSION_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR = 0.01,				-- Factor used to scale the sum of the manpower divided by the country's number of ship for the Daily Country Navy XP gain
+	MISSION_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR =  300.0,					-- Factor used to scale the ratio of ships on mission for the Daily Country Navy XP gain
+	
+	MISSION_EXP_RATIOS = {											-- experience multipliers for different mission types
+		0.0,	-- HOLD
+		0.005,	-- PATROL
+		0.005,	-- STRIKE FORCE
+		0.005,	-- CONVOY RAIDING
+		0.005,	-- CONVOY ESCORT
+		0.005,	-- MINES PLANTING
+		0.005,	-- MINES SWEEPING
+		1.0,	-- TRAIN
+		0.0,	-- RESERVE_FLEET
+		0.005,	-- NAVAL_INVASION_SUPPORT
+	},
+
+	MISSION_DOMINANCE_RATIOS = { -- dominance multipliers for different mission types
+		0.0, -- HOLD
+		1.0, -- PATROL
+		1.0, -- STRIKE FORCE
+		0.5, -- CONVOY RAIDING
+		0.5, -- CONVOY ESCORT
+		0.3, -- MINES PLANTING
+		0.3, -- MINES SWEEPING
+		0.0, -- TRAIN
+		0.0, -- RESERVE_FLEET
+		1.0, -- NAVAL_INVASION_SUPPORT
+	},
+
 	MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
 		0.0, -- HOLD
 		1.0, -- PATROL		
@@ -1989,6 +1992,11 @@ NNavy = {
 		
 	BASE_POSITIONING												= 1.0,	-- base value for positioning
 	
+	DOMINANCE_DAILY_GAIN_FACTOR = 0.02, 							-- Daily dominance gain, as a fraction of target value 
+	DOMINANCE_DAILY_LOSS_FACTOR = 0.04, 							-- Daily dominance loss, as a fraction of previous target value 
+
+	SUPPORT_SHIP_RECOVERY_BASE_STRENGTH_FACTOR = 0.01,				-- Percentage of strength of max strength a recovered ship gets on recovery.
+
 	RELATIVE_SURFACE_DETECTION_TO_POSITIONING_FACTOR				= 0.01,	-- multiples the surface detection difference between two sides. the side with higher detection will get a bonus of this value
 	MAX_POSITIONING_BONUS_FROM_SURFACE_DETECTION					= 0.0,  -- will clamp the bonus that you get from detection
 	
@@ -2076,8 +2084,8 @@ NNavy = {
 	COORDINATION_EFFECT_ON_MINE_SWEEPING_SPEED 						= 0.5,      -- affect of coordination modifier in mine sweeping speed
 	COORDINATION_EFFECT_ON_PATROL_SPOTTING 							= 1.0,		-- affect of coordination modifier in spotting speed
 
-	COORDINATION_EFFECT_ON_MINE_SWEEPING_SUPREMACY_EFFICIENCY		= 1.0,      -- mine missions supremacy can be buffed by coordination
-	COORDINATION_EFFECT_ON_MINE_PLANTING_SUPREMACY_EFFICIENCY		= 1.0,      -- mine missions supremacy can be buffed by coordination
+	COORDINATION_EFFECT_ON_MINE_SWEEPING = 1.0,      -- modifies coordination by multiplication for mine sweeping
+	COORDINATION_EFFECT_ON_MINE_PLANTING = 1.0,      -- modifies coordination by multiplication for mine laying
 
 	DOMINANCE_EFFECT_ON_POSITIONING_FOR_CONVOY_ESCORT_MAX_RATIO		= 2.0,		-- The ratio which gives the max possible gain of positioning bonus from dominance in region of combat (e.g. to get max bonus you need 'dominance threshold * 2.0' dominance in the region)
 	DOMINANCE_EFFECT_ON_POSITIONING_FOR_CONVOY_ESCORT				= 0.15,		-- Increase of positioning when at max ratio (full control and dominance is >=DOMINANCE_EFFECT_ON_POSITIONING_FOR_CONVOY_ESCORT_MAX_RATIO times the competing dominance)
@@ -4165,6 +4173,7 @@ NSupply = {
 	NAVAL_BASE_INITIAL_SUPPLY_FLOW = 5,
 	NAVAL_BASE_STARTING_PENALTY_PER_PROVINCE = 1.4,
 	NAVAL_BASE_ADDED_PENALTY_PER_PROVINCE = 1,
+	NAVAL_SUPPLY_HUB_REDUCTION_FACTOR = 0.0,							-- naval supply hub will reduce the supply need to the fleet by this ratio
 
 	-- Node Flow (i.e. province caps) increase by this amount per railway level of the node's bottleneck
 	NODE_FLOW_BONUS_PER_RAIL_LEVEL = 0.2,
@@ -4390,6 +4399,10 @@ NProject = {
 	BREAKTHROUGH_DAILY_ROCKET_SITE_GAIN = 1,		   -- Amount in 1/100th percentage gained per rocket site level. E.g. 1 = 0.01% per rocket site level.
 	BREAKTHROUGH_DAILY_NUCLEAR_REACTOR_GAIN = 1,       -- Amount in 1/100th percentage gained per nuclear reactor. E.g. 2 = 0.02% per nuclear reactor.
 	BREAKTHROUGH_GAIN_ANIMATION_SPEED_MAX = 1.0,	   -- The animation for gaining breakthrough progress is a ratio of this value and current daily gain.
+	AMOUNT_OF_SUPPORTIVE_SCIENTISTS = 3,			   -- The amount of supportive scientists a facility can have
+	SUPPORTIVE_SCIENTISTS_FRACTION = 0.25,			   -- how effective supportive scientists are compared to how strong they would be on default
+	SUPPORTIVE_SCIENITST_PROGRESS_BONUS = 0.1,		   -- How much of the progress will be given to the additional scientist countries project. percentage of how much the current project got from its iteration
+	SUPPORTIVE_SCIENTISTS_SHARING_BONUS = 0.05,		   -- Research sharing % per supportive scientist. Global per faction.
 },
 NRaids = {
 	BASE_DAYS_TO_PREPARE = 7,						   -- Base number of days required to complete raid preparation phase

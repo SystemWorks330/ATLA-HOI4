@@ -2789,7 +2789,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	custumary_law = {
+	customary_law = {
 		random = no
 		compliance_growth = -0.1
 		weekly_occupation_war_weariness = -0.2

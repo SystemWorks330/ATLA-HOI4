@@ -1330,6 +1330,14 @@ NGraphics = {
 	RAID_MAP_ICON_MAX_DRAW_DISTANCE_IN_RAID_MAP_MODE = 1600.0,   -- Above this distance, raid map icons are hidden in raid map mode
 
 	RAID_TARGET_ZOOM_HEIGHT = 200.0,				-- The height for the map carmera to zoom in to a raid target
+
+	FACTION_PING_MAP_NONE_SELECT_COLOR = { 0.1, 0.1, 0.3, 0.98 },				-- Color when you have non selected
+	FACTION_PING_MAP_AVAILABLE_COLOR = {0.3, 0.3, 0.3, 0.5 },		-- Available region color
+	FACTION_PING_MAP_UNAVAILABLE_COLOR = { 0.1, 0.1, 0.3, 1.0 },	-- Unavailable region color
+	FACTION_PING_MAP_COLOR = { 0.99, 0.99, 0.99, 0.05 },				-- Selected region color
+	FACTION_PING_MAP_ALREADY_ASSIGNED_COLOR = { 0.5, 0.5, 0.75, 0.15 },	-- Already assigned to another theater color
+	
+	FACTION_PING_MAP_GRADIENT = 150,								-- Selected region distance gradient
 },
 
 NInterface = {
