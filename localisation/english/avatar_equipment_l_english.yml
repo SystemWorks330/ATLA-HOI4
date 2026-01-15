@@ -97,7 +97,7 @@
 
 
  #general
- transport_equipment:0 "Transport cart"
+ transport_equipment:0 "Transport Cart"
  transport_equipment_desc:0 "A wooden cart capable of clearing any terrain, if given enough time. A fabric protects the cargo and grass is used to prevent the perishable contents from spoiling."
 
  #FIR_EQUIPMENT_VERSION_1:0 "A"
@@ -118,7 +118,7 @@
  #FIR_EQUIPMENT_VERSION_16:0 "P"
 
  dragon_moose_animal:0 "Dragon Moose"
- dragon_moose_animal_desc:0 "A large hybrid between a moose and a dragon. Has grown docile after being trained for six years. The majority of this training focused on getting it to accept a herbivore diet."
+ dragon_moose_animal_desc:0 "A large hybrid between a moose and a dragon. Grows docile after being trained for at least six years. The majority of this training is focused on getting it to accept a herbivore diet."
  eel_hound_animal:0 "Eel Hound"
  eel_hound_animal_desc:0 "-missing"
  ostrich_horse_animal:0 "Ostrich Horse"
@@ -179,6 +179,10 @@
  siege_tower_equipment_1:0 "Siege Tower"
  siege_tower_equipment_1_short:0 "Siege Eq. III"
  siege_tower_equipment_1_desc:0 "These massive wheeled towers can deliver dozens of soldiers to the tops of enemy battlements, greatly aiding siege efforts."
+ gate_ram_equipment_1_short:0 "Ram Eq."
+ gate_ram_equipment_1:0 "Battering Rams"
+ gate_ram_equipment_desc:0 "Battering rams allow us to push through gates and break through enemy fortifications."
+
 
 
  spear_equipment:0"Spear"

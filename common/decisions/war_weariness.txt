@@ -87,9 +87,10 @@ war_weariness_category = {
 		visible = {
 			num_occupied_states > 9
 		}
+
 		available = {
 			check_variable = { 
-				occupation_accumulated_exhaustion >=20
+				occupation_accumulated_exhaustion >= 20
 				tooltip = at_least_occupation_war_weariness_tooltip
 			}
 		}
@@ -104,7 +105,7 @@ war_weariness_category = {
 
 		remove_trigger = {
 			check_variable = { 
-				occupation_accumulated_exhaustion <=20
+				occupation_accumulated_exhaustion <= 20
 				tooltip = at_most_occupation_war_weariness_tooltip
 			}
 		}

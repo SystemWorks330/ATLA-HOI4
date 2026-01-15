@@ -213,7 +213,6 @@ if = {
 
 }
 
-
 bender_conscription_effect = yes
 factory_output_calc = yes
 throughput_variable_calc = yes
@@ -583,7 +582,6 @@ permanent_spirits_and_modifiers = yes
 		name = "Steel Armor with Backpack"
 		type = heavy_armor_equipment_6
 		upgrades = {
-			armor_backpack_upgrade = 7
 		}
 		#obsolete = yes
 	}

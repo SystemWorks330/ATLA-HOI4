@@ -8,6 +8,13 @@
  wages_and_professionalism_spirit:0 "Training Level"
  unit_leader_spirit:0 "Academy Level"
 
+ coordination_spirit:0 "Coordination Level"
+ quality_spirit:0 "Readiness Level"
+ discipline_spirit:0 "Cohesion Level"
+
+ 
+
+
  spring_modifier:0 "Spring"
  summer_modifier:0 "Summer"
  fall_modifier:0 "Fall"

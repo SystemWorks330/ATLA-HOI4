@@ -31,7 +31,7 @@ equipments = {
 				}
 			}
 			fixed_ship_artillery_slot = {
-				required = yes
+				required = no
 				allowed_module_categories = {
 					ship_catapult
 					ship_ballista

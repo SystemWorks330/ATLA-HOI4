@@ -158,7 +158,7 @@ guiTypes = {
 			quadTextureSprite ="GFX_guide"
 			clicksound = time_up
 			pdx_tooltip = "MENU_ATLA_GUIDE"
-			web_link = "https://hoi4-avatar-the-last-airbender.fandom.com/wiki/Hearts_of_Iron_IV:_Avatar_-_The_last_Airbender_Wiki"
+			web_link = "https://discord.gg/vCqWZcrMcB"
 		}
 
 		ButtonType = {
@@ -495,10 +495,10 @@ guiTypes = {
 		ButtonType = {
 			name = "twitter_button"
 			position = { x=150 y=0 }
-			quadTextureSprite ="twitter"
+			quadTextureSprite ="x"
 			#clicksound = click_default
-			pdx_tooltip = "MENU_TWITTER"
-			web_link = "https://twitter.com/hoi_game"
+			pdx_tooltip = "MENU_X"
+			web_link = "https://x.com/hoi_game"
 		}
 		ButtonType = {
 			name = "privacy_policy_button"

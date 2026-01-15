@@ -314,9 +314,8 @@ spriteTypes = {
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "twitter"
-		texturefile = "gfx/interface/icon_twitter.dds"
-		noOfFrames = 1
+		name = "x"
+		texturefile = "gfx/interface/icon_x.dds"
 	}
 	spriteType = {
 		name = "youtube"
@@ -329,6 +328,10 @@ spriteTypes = {
 	spriteType = {
 		name = "instagram"
 		texturefile = "gfx//interface//icon_instagram.dds"
+	}
+	spriteType = {
+		name = "bluesky"
+		texturefile = "gfx/interface/icon_bluesky.dds"
 	}
 	spriteType = {
 		name = "homepage"
