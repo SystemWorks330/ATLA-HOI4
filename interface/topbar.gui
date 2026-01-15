@@ -409,6 +409,7 @@ guiTypes = {
 			position = { x= 441 y = 20 }
 			frame = 50
 			alwaystransparent = yes
+			hide = yes
 		}
 
 		## convoy
