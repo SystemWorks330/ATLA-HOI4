@@ -50,6 +50,11 @@ guiTypes = {
 			size = { width = 122 height = 100%% }
 			verticalScrollbar = "right_vertical_slider"
 			
+			positionType = {
+				name = "minimized_offset"
+				position = { x = 420 y = 0 }
+			}
+			
 			#background = {
 			#	name = "Background"
 			#	quadTextureSprite ="GFX_tiled_window_transparent"

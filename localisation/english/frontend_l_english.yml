@@ -169,6 +169,7 @@
  ACHIEVEMENTS_LOGGED_IN_MICROSOFT:0 "Logged in with Microsoft account"
  ACHIEVEMENTS_DIFFICULTY:0 "Regular or higher difficulty"
  ACHIEVEMENTS_OK:0 "§HCan get Achievements!§!"
+ ACHIEVEMENTS_MOD_OK:0 "§HCan get Achievements from mods!§!"
  ACHIEVEMENTS_NOT_OK:1 "§RCannot get Achievements.§!"
  ACHIEVEMENTS_MOSTLY_NOT_OK:0 "§RCannot get most Achievements.§!"
  diff_strong_ai_generic:0 "Stronger AI"

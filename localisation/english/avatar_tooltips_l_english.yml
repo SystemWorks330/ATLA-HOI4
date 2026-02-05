@@ -121,7 +121,7 @@ quality_topbar_tooltip:0 "§HUnit Quality§! \n\nTarget: [?mtth:unit_quality_2|%
 qualityincrease:0 "£increase_texticon  Monthly growth: [?quality_increase|%=+]"
 qualitydecrease:0 "£decrease_texticon  Monthly decrease: [?quality_reduction|%=+]"
 qualitystale:0 "No monthly change"
-qualitymodifiers:0 "£strenght_texticon  Stregth: [?unit_quality_variable|%+=] \n£recovery_texticon  Division Discipline: [?unit_quality_variable|%+=] \n£dig_in_speed_texticon  Entrenchment speed: [?unit_quality_variable|%+=] \n£max_planning_texticon  Max planning factor: [?unit_quality_variable|%+=]"
+qualitymodifiers:0 "£strenght_texticon  Strength: [?unit_quality_variable|%+=] \n£recovery_texticon  Division Discipline: [?unit_quality_variable|%+=] \n£dig_in_speed_texticon  Entrenchment speed: [?unit_quality_variable|%+=] \n£max_planning_texticon  Max planning factor: [?unit_quality_variable|%+=]"
 
 quality_topbar_tooltip_delayed:0 "If an increasing amount of soldiers are unsuited for war, the army will begin to suffer combat penalties."
 
@@ -199,6 +199,10 @@ decryption_modifier_tooltip:0 "£decryption_texticon  §YDecryption§! \nBase va
 spy_modifier:0 "£spy_slots_texticon  [?modifier@operative_slot|+0]"
 spy_modifier_tooltip:0 "£spy_slots_texticon  §YAvailable Spies§! \nSpies: [?modifier@operative_slot|+0]"
 
+### Navy
+coordination_text:0 "Coordination Level:"
+discipline_text:0 "Discipline Level:"
+quality_text:0 "Quality Level:"
 logistics_spirit_text:0 "Logistics Level: [?logistic_spirit_var|Y0]"
 logistic_name_1:0 "Supply Gathering"
 logistic_name_2:0 "Carried Supplies"
@@ -225,9 +229,11 @@ professionalism_name_8:0 "Standing Army"
 professionalism_name_9:0 "Experienced Standing Army"
 professionalism_name_10:0 "Professional Standing Army"
 wages_and_professionalism_tooltip:0 "§Y[GetProfessionalismsName]§!  \n\nUpgrade cost:£army_experience  §Y50.00§! \n\n£wages_texticon  Army Wages: [?mtth:spirit_wages_modifier|-=%0] \n£wages_texticon  Reservist Wages: [?mtth:spirit_wages_modifier|-=%0] \n£unit_quality_texticon  Unit Quality Target: [?mtth:spirit_unit_quality_modifier|+=%1]"
+wages_and_professionalism_tooltip:0 "§Y[GetProfessionalismsName]§!  \n\nUpgrade cost:£army_experience  §Y50.00§! \n\n£wages_texticon  Army Wages: [?mtth:spirit_wages_modifier|-=%0] \n£wages_texticon  Reservist Wages: [?mtth:spirit_wages_modifier|-=%0] \n£unit_quality_texticon  Unit Quality Target: [?mtth:spirit_unit_quality_modifier|+=%1]"
 spirit_wages_modifier:0 "£wages_texticon  : [?mtth:spirit_wages_modifier|-=%0]"
 spirit_professionalism_modifier:0 "£unit_quality_texticon  : [?mtth:spirit_unit_quality_modifier|+=%1]"
 unit_leader_text:0 "Academy Level: [?unit_leader_spirit_var|Y0]"
+
 leader_academy_name_1:0 "Academy I"
 leader_academy_name_2:0 "Academy II"
 leader_academy_name_3:0 "Academy III"

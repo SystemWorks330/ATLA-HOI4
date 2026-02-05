@@ -9,19 +9,19 @@ guiTypes = {
 		iconType ={
 			name ="icon_banner"
 			spriteType = "GFX_officer_corp_bg_banner_spy"
-			position = { x=16 y=122 }
+			position = { x=0 y=122 }
 			Orientation = "UPPER_LEFT"
 			alwaystransparent = yes
 		}
 		iconType ={
 			name ="icon_spy"
 			spriteType = "GFX_spy_master_icon"
-			position = { x=18 y=126 }
+			position = { x=24 y=126 }
 			Orientation = "UPPER_LEFT"
 		}
 		instantTextboxType = {
 			name = "text"
-			position = { x=80 y=138 }
+			position = { x=110 y=138 }
 			Orientation = "UPPER_LEFT"
 			font = "hoi_20bs"
 			borderSize = {x = 0 y = 0}
@@ -35,11 +35,11 @@ guiTypes = {
 			name = "modifier_bg_1"
 			spriteType = "GFX_modifier_bg"
 			Orientation = "UPPER_LEFT"
-			position = { x=20 y=166 }	
+			position = { x=5 y=215 }	
 		}
 		instantTextboxType = {
 			name = "encryption"
-			position = {x= 30 y= 172 }
+			position = {x= 15 y= 221 }
 			font = "hoi_18mbs"
 			maxWidth = 110
 			maxHeight = 23
@@ -53,11 +53,11 @@ guiTypes = {
 			name = "modifier_bg_2"
 			spriteType = "GFX_modifier_bg"
 			Orientation = "UPPER_LEFT"
-			position = { x=92 y=166 }	
+			position = { x=77 y=215 }	
 		}
 		instantTextboxType = {
 			name = "decryption"
-			position = {x= 102 y= 172 }
+			position = {x=87 y=221 }
 			font = "hoi_18mbs"
 			maxWidth = 110
 			maxHeight = 23
@@ -71,11 +71,11 @@ guiTypes = {
 			name = "modifier_bg_3"
 			spriteType = "GFX_modifier_bg"
 			Orientation = "UPPER_LEFT"
-			position = { x=164 y=166 }	
+			position = { x=149 y=215 }	
 		}
 		instantTextboxType = {
 			name = "spies_available"
-			position = {x= 174 y= 172 }
+			position = {x= 159 y= 221 }
 			font = "hoi_18mbs"
 			maxWidth = 110
 			maxHeight = 23
@@ -89,16 +89,29 @@ guiTypes = {
 			name = "modifier_bg_4"
 			spriteType = "GFX_modifier_bg"
 			Orientation = "UPPER_LEFT"
-			position = { x=236 y=166 }	
+			position = { x=221 y=215 }	
 		}
 
 		iconType =	{
 			name = "modifier_bg_5"
 			spriteType = "GFX_modifier_bg"
 			Orientation = "UPPER_LEFT"
-			position = { x=308 y=166 }	
+			position = { x=293 y=215 }	
 		}
-
+		
+		iconType =	{
+			name = "modifier_bg_6"
+			spriteType = "GFX_modifier_bg"
+			Orientation = "UPPER_LEFT"
+			position = { x=365 y=215 }	
+		}
+	
+		iconType =	{
+			name = "modifier_bg_7"
+			spriteType = "GFX_modifier_bg"
+			Orientation = "UPPER_LEFT"
+			position = { x=437 y=215 }	
+		}
 	}
 
 	containerWindowType = {
@@ -249,7 +262,7 @@ guiTypes = {
 				maxWidth = 150
 				maxHeight = 23
 				format = left
-				text = "coordination_spirit_text"
+				text = "coordination_text"
 				allwaystransparent = yes
 			}
 			instantTextboxType = {

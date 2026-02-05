@@ -431,8 +431,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "naviesview_window"
-		position = {x=-340 y=82}
-		show_position = {x=0 y=82}
+		position = {x=-340 y=100}
+		show_position = {x=0 y=120}
 		size = { width=500 height=86%% }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
@@ -464,7 +464,7 @@ guiTypes = {
 
 			gridBoxType = {
 				name = "detailed_fleet_box"
-				position = { x=0 y=0 }
+				position = { x=0 y=-30 }
 				size = { width=492 height=100%% }
 				slotsize = { width=100%% height=165 }
 				max_slots_horizontal = 1
@@ -476,7 +476,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "tool_bar_window"
 			position = {x=0 y=0} # vertical position controlled by code
-			size = { width=492 height=44 }
+			size = { width=492 height=40 }
 			Orientation = upper_left
 
 			background = {
@@ -886,7 +886,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "fleet_view_header"
 		#name = "naviesview_entry"
-		position = {x=0 y=0}
+		position = {x=0 y=27}
 		size = { width=492 height=166 }
 		Orientation = upper_left
 		clipping = no
@@ -1273,7 +1273,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "taskforce_view_entry"
-		position = {x=0 y=-0}
+		position = {x=0 y=-27}
 		size = { width=492 height=125 }
 		Orientation = upper_left
 		clipping = no

@@ -606,6 +606,18 @@ guiTypes = {
 		}
 		
 		containerWindowType = {
+			name = "spy_header"
+			position = { x = 0 y = 10 }
+			size = { width = 98% height = 115 }
+			margin = { top = 0 left = 0 bottom = 0 right = 0}	
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_spy_tiled_marble_bg"
+			}
+		}
+		
+		containerWindowType = {
 			name = "army_header"
 			position = { x = 0 y = 125 }
 			size = { width = 98% height = 240 }
