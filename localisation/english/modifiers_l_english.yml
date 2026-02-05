@@ -1944,6 +1944,26 @@
  modifier_experience_gain_watertribe_warship_combat_factor:0 "Watertribe Warship Combat Experience Gain"
  modifier_experience_gain_watertribe_submarine_training_factor:0 "Watertribe Submarine Training Experience Gain"
  modifier_experience_gain_watertribe_submarine_combat_factor:0 "Watertribe Submarine Combat Experience Gain"
+ modifier_experience_gain_firenation_frigate_mission_factor:0 "Fire Nation Frigate Mission Experience Gain"
+ modifier_experience_gain_firenation_cruiser_mission_factor:0 "Fire Nation Cruiser Mission Experience Gain"
+ modifier_experience_gain_firenation_heavy_cruiser_mission_factor:0 "Fire Nation Heavy Cruiser Mission Experience Gain"
+ modifier_experience_gain_firenation_battleship_mission_factor:0 "Fire Nation Battleship Mission Experience Gain"
+ modifier_experience_gain_river_boat_mission_factor:0 "River Boat Mission Experience Gain"
+ modifier_experience_gain_galley_mission_factor:0 "Galley Mission Experience Gain"
+ modifier_experience_gain_barque_mission_factor:0 "Barque Mission Experience Gain"
+ modifier_experience_gain_junk_mission_factor:0 "Junk Mission Experience Gain"
+ modifier_experience_gain_heavy_junk_mission_factor:0 "Heavy Junk Mission Experience Gain"
+ modifier_experience_gain_warship_mission_factor:0 "Warship Mission Experience Gain"
+ modifier_experience_gain_watertribe_canoe_mission_factor:0 "Watertribe Canoe Mission Experience Gain"
+ modifier_experience_gain_watertribe_raft_mission_factor:0 "Watertribe Raft Mission Experience Gain"
+ modifier_experience_gain_watertribe_cutter_ship_mission_factor:0 "Watertribe Cutter Mission Experience Gain"
+ modifier_experience_gain_watertribe_cutter_flagship_mission_factor:0 "Watertribe Cutter Flagship Mission Experience Gain"
+ modifier_experience_gain_watertribe_warship_mission_factor:0 "Watertribe Warship Mission Experience Gain"
+ modifier_experience_gain_watertribe_submarine_mission_factor:0 "Watertribe Submarine Mission Experience Gain"
+
+
+
+
  MODIFIER_ARMOR:0 "Armor"
  MODIFIER_ARMY_STRENGTH:0 "£strenght_texticon  Strength"
  MODIFIER_BREAKTHROUGH:0 "£defense_attack_texticon  Division Attack Shield"
