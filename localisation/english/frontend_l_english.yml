@@ -60,6 +60,7 @@
  SM_EFFECT_VOLUME:0 "Effect Volume"
  SM_MUSIC_VOLUME:0 "Music Volume"
  SM_SCROLL_SPEED:0 "Scroll Speed"
+ SM_CORNER_SCROLL:0 "Enable Corner Scrolling"
  SM_ZOOM_SPEED:0 "Zoom Speed"
  SM_MOUSE_SPEED:0 "Mouse Speed"
  SM_MODE:0 "Mode"
