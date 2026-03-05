@@ -224,6 +224,7 @@
  BUILDING_CURRENT_MAX_LEVEL_SHARED_SLOTS:0 "Max $BUILDING|Y$ in a State: $MAXLEVEL|Y$"
  BUILDING_TERRAIN_MAX_LEVEL: "Current Max level in $TERRAIN|H$: $MAXLEVEL|H$"
  BUILDING_TERRAIN_BASE_MAX_LEVEL: "Base: $MAXLEVEL|H$"
+ BUILDING_STATE_CATEGORY_MAX_LEVEL: "State category Max level for $CATEGORY|H$: $MAXLEVEL|H$"
  BUILDING_LEVEL_HEALTH:0 "Level health: $VALUE|%2Y$"
  AIR_DEFENSE_IN_STATE:1 "\n§HIndustry bombing damage reduction:§! $TOT_INDUSTRY|%G$\n§HOther bombing damage reduction:§! $TOT|%G$\nAnti-Air: $AA|-%$\n"
  RADAR_ONMAP_TOOLTIP:0 "§HRadar station§! level: $LVL|G$/$TOT|H$\nBelongs to: $WHO|H$"
