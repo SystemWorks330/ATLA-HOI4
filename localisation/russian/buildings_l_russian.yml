@@ -1,0 +1,231 @@
+﻿l_russian:
+ infrastructure:0 "Инфраструктура"
+ infrastructure_plural:0 "Инфраструктура"
+ infrastructure_desc:0 "Это здание улучшает логистику региона. Оно увеличивает снабжение в стратегических регионах, открывает новые ячейки строительства и повышает скорость дивизий."
+ infrastructure_extended:0 "§YИнфраструктура§! \n"
+
+ settlement:0 "Поселение"
+ settlement_plural:0 "Поселения"
+ settlement_desc:0 "Поселения составляют основу вашего государства. Строя и расширяя их, вы увеличиваете число людей, которых можно призвать в армию."
+ settlement_extended:0 "§YПоселение§! \n"
+ 
+ industrial_complex:0 "Мануфактура"
+ industrial_complex_plural:0 "Мануфактуры"
+ industrial_complex_desc:0 "Это здание даёт региону небольшое количество гражданской промышленности." #\n\nCost:(£civ_factory_output -§Y10§! per existing §YManufactory§! level)
+ industrial_complex_extended:0 "§YМануфактура§! \nГражданская мастерская с низкой производительностью, но высокой самостоятельностью и надёжностью. При необходимости может быть переоборудована в кузницу. \n\nМакс. уровень: §Y50§! \nПрочность: §Y6§! \nРабочих: §Y40§!\n \nПроизводство: §G+[?ROOT.manufactory_output]§! £civ_factory_output \n\nСтоимость: £civ_factory_output §Y25000§!"
+
+ arms_factory:0 "£smithy|2  Кузница"
+ arms_factory_plural:0 "Кузницы"
+ arms_factory_desc:0 "Это здание даёт региону небольшое количество военной промышленности." # \n\nCost:(£civ_factory_output -§Y20§! per existing §YSmithy§! level)
+ arms_factory_extended:0 "§YКузница§! \nОружейная мастерская с низкой производительностью, но здесь каждое оружие изготавливается на совесть. При необходимости может быть переоборудована в мануфактуру. \n\nМакс. уровень: §Y50§! \nПрочность: §Y6§! \nРабочих: §Y40§!\n \nЕжедневный расход топлива: §R-24§! \nПроизводство: §G+[?ROOT.smithy_output]§! £mil_factory \n\nСтоимость: £civ_factory_output §Y22000§!"
+
+ factory:0 "£factory|2  Фабрика"
+ factory_plural:0 "Фабрики"
+ factory_desc:0 "Это здание подходит для любого вида военного производства. Его можно строить только у рек или морского побережья." # \n\nCost:(£civ_factory_output -§Y500§! per existing §YFactory§! level) \n\nIt provides the state with:\n
+ factory_extended:0 "§YФабрика§! \nМассовое производство военного снаряжения и тяжёлых материалов. \n\nМакс. уровень: §Y[?factory_level]§! \nПрочность: §Y5§! \nРабочих: §Y500§!\n \nЕжедневный расход топлива: §R-120§! \nПроизводство: §G+[?ROOT.factory_output]§! £mil_factory \n\nСтоимость: £civ_factory_output §Y60000§!"
+ 
+ harbour:0 "£harbour|2  Гавань"
+ harbour_plural:0 "Гавани"
+ harbour_desc:0 "Недорогое место стоянки для кораблей и конвоев. Позволяет проводить снабжение."
+ harbour_extended:0 "§YГавань§! \nБазовая верфь. \n\nМакс. уровень: §Y[?harbour_level]§! \nПрочность: §Y3§! \nРабочих: §Y100§!\n\nПроизводство: §G+[?ROOT.harbour_output]§! £dockyard_texticon \n\nСтоимость: £civ_factory_output §Y14000§!"
+
+ dockyard:0 "£dockyard_factory|2  Верфь"
+ dockyard_plural:0 "£dockyard_factory|2  Верфи"
+ dockyard_desc:0 "Это здание даёт региону промышленную базу для строительства новых кораблей. Заодно это ещё и отличное место для рыболовства." # \n\nCost:(£civ_factory_output -§Y50§! per existing §YNaval Dockyard§! level)
+ dockyard_extended:0 "§YВерфь§! \nКрупная верфь для развитого военного судостроения. \n\nМакс. уровень: §Y[?dockyard_level]§! \nПрочность: §Y4§! \nРабочих: §Y200§!\n\nПроизводство: §G+[?ROOT.dockyard_output]§! £dockyard_texticon \n\nСтоимость: £civ_factory_output §Y20000§!"
+
+ granary:0 "Амбар"
+ granary_plural:0 "Амбары"
+ granary_desc:0 "Это здание увеличивает вместимость хранилищ для пайков."
+
+ fuel_repository:0 "Хранилище"
+ fuel_repository_plural:0 "Хранилища"
+ fuel_repository_desc:0 "Это здание увеличивает вместимость хранилищ для топлива."
+ fuel_repository_extended:0 "§YХранилище§! \nРазведчики позволяют получать сведения о вражеских войсках в соседних регионах.\nЧем выше уровень разведки в регионе, тем больше эффективная дальность действия разведчиков.\nРазведчики также улучшают обнаружение вражеских воздушных сил, повышая шансы ваших воздушных сил на перехват.\nКроме того, разведчики увеличивают вероятность обнаружения вражеских флотов в море."
+
+ air_base:0 "Авиабаза"
+ air_base_plural:0 "Авиабазы"
+ air_base_desc:0 "Это здание служит базой развёртывания для ваших воздушных сил. Также оно используется как место базирования §Yптиц§! и §Yнебесных бизонов§!."
+ air_base_extended:0 "§YАвиабаза§! \nРазведчики позволяют получать сведения о вражеских войсках в соседних регионах.\nЧем выше уровень разведки в регионе, тем больше эффективная дальность действия разведчиков.\nРазведчики также улучшают обнаружение вражеских воздушных сил, повышая шансы ваших воздушных сил на перехват.\nКроме того, разведчики увеличивают вероятность обнаружения вражеских флотов в море."
+
+ anti_air_building:0 "ПВО"
+ anti_air_building_plural:0 "ПВО"
+ anti_air_building_desc:0 "Это здание защищает регион от стратегических бомбардировок."
+ anti_air_building_extended:0 "§YПВО§! \nРазведчики позволяют получать сведения о вражеских войсках в соседних регионах.\nЧем выше уровень разведки в регионе, тем больше эффективная дальность действия разведчиков.\nРазведчики также улучшают обнаружение вражеских воздушных сил, повышая шансы ваших воздушных сил на перехват.\nКроме того, разведчики увеличивают вероятность обнаружения вражеских флотов в море."
+
+ naval_base:0 "Морская база"
+ naval_base_plural:0 "Морские базы"
+ naval_base_desc:1 "Увеличивает дальность действия вашего флота и позволяет ремонтировать корабли. Обеспечивает снабжение по морю и экспорт ресурсов. Более высокие уровни повышают пропускную способность снабжения."
+ 
+ wall:0 "Стена"
+ wall_plural:0 "Стены"
+ wall_desc:0 "Это здание накладывает на атакующего штраф к атаке в размере $VALUE|+%2$ за каждый уровень стены. Атака с нескольких направлений уменьшает эффект стен."
+ 
+ road:0 "Дорога"
+ road_plural:0 "Дороги"
+ road_desc:0 "Дороги дают вашим войскам бонус к скорости в размере §G10%§! за каждый уровень.                                                 £trigger_no §RВНИМАНИЕ: из-за ограничений моддинга это здание сейчас не даёт никакого эффекта.§!"
+
+ supply_depot:0 "Склад снабжения"
+ supply_depot_plural:0 "Склады снабжения"
+ supply_depot_desc:0 "Это здание позволяет хранить пайки и припасы для армий."
+
+ coastal_fortress:0 "Береговая крепость"
+ coastal_fortress_plural:0 "Береговые крепости"
+ coastal_fortress_desc:0 "Это здание накладывает на атакующего штраф к атаке в размере $VALUE|+%2$ за каждый уровень крепости при морском вторжении."
+ 
+ synthetic_refinery_amount:0 "$VALUE|G0=$"
+ synthetic_refinery_resource:0 "£resources_strip|$FRAME$"
+
+ mine:0 "£mine|2  Шахта"
+ mine_plural:0 "£mine|2  Шахты"
+ mine_desc:0 "Глубоко под землёй, во мраке шахт, скрываются ценнейшие металлы и ископаемое топливо. \n\n£import_texticon  Требования:£resource_deposites|2 \n\n£export_texticon  Производство: £resources_strip|6 +£resources_strip|7 " 
+ mine_extended:0 "§YШахта§! \nГлубоко под землёй, во мраке шахт, скрываются ценнейшие металлы и ископаемое топливо. \n\nМакс. уровень: §Y[?mine_level]§! \nПрочность: §Y8§! \nРабочих: §Y100§!\n\nТребования: §R-1§!£resource_deposites|2 \nПроизводство: §G+[?ROOT.mine_output1]§! £resources_strip|7 §G+[?ROOT.mine_output2]§! £resources_strip|6  \n\nСтоимость: £civ_factory_output §Y9000§!"
+
+
+ mine_ooo:0 "Заброшенная шахта"
+ mine_ooo_plural:0 "Заброшенные шахты"
+ mine_ooo_desc:0 "§RВременно не действует из-за отсутствия необходимых условий!§!" 
+ mine_ooo_extended:0 "§RВременно не действует из-за отсутствия необходимых условий!§!"
+
+ lumber_mill:0 "£lumberjack|2  Лесопилка"
+ lumber_mill_plural:0 "£lumberjack|2  Лесопилки"
+ lumber_mill_desc:0 "Рабочее место лесорубов, где производится древесина. \n\n£import_texticon  Требования:£resource_deposites|1 \n\n£export_texticon  Производство: £resources_strip|4 "
+ lumber_mill_extended:0 "§YЛесопилка§! \nРабочее место лесорубов, где производится древесина. \n\nМакс. уровень: §Y[?lumber_mill_level]§! \nПрочность: §Y12§! \nРабочих: §Y30§!\n\nТребования: §R-1§!£resource_deposites|1 \nПроизводство: §G+[?ROOT.lumber_mill_output]§! £resources_strip|4 \n\nСтоимость: £civ_factory_output §Y5200§!"
+
+ lumber_mill_ooo:0 "Заброшенная лесопилка"
+ lumber_mill_ooo_plural:0 "Заброшенные лесопилки"
+ lumber_mill_ooo_desc:0 "§RВременно не действует из-за отсутствия необходимых условий!§!" 
+ lumber_mill_ooo_extended:0 "§RВременно не действует из-за отсутствия необходимых условий!§!"
+
+ quarry:0 "£quarry|2  Карьер"
+ quarry_plural:0 "£quarry|2  Карьеры"
+ quarry_desc:0 "Карьеры являются самым простым источником минералов. \n\n£import_texticon  Требования:£resource_deposites|5 \n\n£export_texticon  Производство: £resources_strip|5 "
+ quarry_extended:0 "§YКарьер§! \nКарьеры являются самым простым источником минералов. Их можно закладывать почти где угодно. \n\nМакс. уровень: §Y[?quarry_level]§! \nПрочность: §Y16§! \nРабочих: §Y120§!\n\nТребования: §R-1§!£resource_deposites|5 \nПроизводство: §G+[?ROOT.quarry_output]§! £resources_strip|5 \n\nСтоимость: £civ_factory_output §Y5800§!"
+
+ quarry_mill_ooo:0 "Заброшенный карьер"
+ quarry_mill_ooo_plural:0 "Заброшенные карьеры"
+ quarry_mill_ooo_desc:0 "§RВременно не действует из-за отсутствия необходимых условий!§!" 
+ quarry_mill_ooo_extended:0 "§RВременно не действует из-за отсутствия необходимых условий!§!"
+
+ crop_weaving:0 "£weaving|2  Ткацкая мастерская"
+ crop_weaving_plural:0 "£weaving|2  Ткацкие мастерские"
+ crop_weaving_desc:0 "Ткацкая мастерская, использующая хлопок или шёлк для производства тканей. \n\n£import_texticon  Требования:£resources_strip|1 \n\n£export_texticon  Производство: £resources_strip|3 "
+ crop_weaving_extended:0 "§YТкацкая мастерская§! \nТкацкая мастерская, использующая хлопок или шёлк для производства тканей. \n\nМакс. уровень: §Y[?crop_weaving_level]§! \nПрочность: §Y4§! \nРабочих: §Y70§!\n\nТребования: §R-6§!£resources_strip|1 \nПроизводство: §G+[?ROOT.crop_weaving_output]§! £resources_strip|3 \n\nСтоимость: £civ_factory_output §Y4100§!"
+
+ crop_weaving_ooo:0 "Заброшенная ткацкая мастерская"
+ crop_weaving_ooo_plural:0 "Заброшенные ткацкие мастерские"
+ crop_weaving_ooo_desc:0 "§RВременно не действует из-за отсутствия необходимых условий!§!" 
+ crop_weaving_ooo_extended:0 "§RВременно не действует из-за отсутствия необходимых условий!§!"
+
+ animal_weaving:0 "£weaving|2  Ткацкая мастерская из животного сырья"
+ animal_weaving_plural:0 "£weaving|2  Ткацкие мастерские из животного сырья"
+ animal_weaving_desc:0 "Ткацкая мастерская, использующая шкуры или шерсть для производства тканей. \n\n£import_texticon  Требования:£resources_strip|2 \n\n£export_texticon  Производство: £resources_strip|3 "
+ animal_weaving_extended:0 "§YТкацкая мастерская из животного сырья§! \nТкацкая мастерская, использующая шкуры или шерсть для производства тканей. \n\nМакс. уровень: §Y[?animal_weaving_level]§! \nПрочность: §Y4§! \nРабочих: §Y70§!\n\nТребования: §R-5§!£resources_strip|2 \nПроизводство: §G+[?ROOT.animal_weaving_output]§! £resources_strip|3 \n\nСтоимость: £civ_factory_output §Y4100§!"
+
+ animal_weaving_ooo:0 "Заброшенная ткацкая мастерская"
+ animal_weaving_ooo_plural:0 "Заброшенные ткацкие мастерские"
+ animal_weaving_ooo_desc:0 "§RВременно не действует из-за отсутствия необходимых условий!§!" 
+ animal_weaving_ooo_extended:0 "§RВременно не действует из-за отсутствия необходимых условий!§!"
+
+ steelworks:0 "£smelting|2  Плавильня"
+ steelworks_plural:0 "£smelting|2  Плавильни"
+ steelworks_desc:0 "Предприятие, используемое для производства стали. \n\n£import_texticon  Требования:£resources_strip|5 +£resources_strip|7 \n\n£export_texticon  Производство: £resources_strip|8 "
+ steelworks_extended:0 "§YПлавильня§! \nПредприятие, используемое для производства стали. \n\nМакс. уровень: §Y[?steelworks_level]§! \nПрочность: §Y5§! \nРабочих: §Y200§!\n\nТребования: §R-20§!£resources_strip|7  §R-1§!£resources_strip|5 \nЕжедневный расход топлива: §R-240§! \nПроизводство: §G+[?ROOT.steelworks_output]§! £resources_strip|8 \n\nСтоимость: £civ_factory_output §Y18000§!"
+
+ steelworks_ooo:0 "Заброшенная плавильня"
+ steelworks_ooo_plural:0 "Заброшенные плавильни"
+ steelworks_ooo_desc:0 "§RВременно не действует из-за отсутствия необходимых условий!§!" 
+ steelworks_ooo_extended:0 "§RВременно не действует из-за отсутствия необходимых условий!§!"
+
+ scout_tower:0 "Сторожевая башня"
+ scout_tower_plural:0 "Сторожевые башни"
+ scout_tower_desc:0 "Разведчики позволяют получать сведения о вражеских войсках в соседних регионах.\nЧем выше уровень разведки в регионе, тем больше эффективная дальность действия разведчиков.\nРазведчики также улучшают обнаружение вражеских воздушных сил, повышая шансы ваших воздушных сил на перехват.\nКроме того, разведчики увеличивают вероятность обнаружения вражеских флотов в море."
+ scout_tower_extended:0 "§YСторожевая башня§! \nРазведчики позволяют получать сведения о вражеских войсках в соседних регионах.\nЧем выше уровень разведки в регионе, тем больше эффективная дальность действия разведчиков.\nРазведчики также улучшают обнаружение вражеских воздушных сил, повышая шансы ваших воздушных сил на перехват.\nКроме того, разведчики увеличивают вероятность обнаружения вражеских флотов в море."
+ 
+ consumer_good_factory:0 "£store|2  Лавка"
+ consumer_good_factory_plural:0 "£store|2  Лавки"
+ consumer_good_factory_desc:0 "Товары первой необходимости для повседневных нужд населения. \n\n£import_texticon  Требования:£resources_strip|3 +£resources_strip|4 \n\n£export_texticon  Производство: £resources_strip|10 "
+ consumer_good_factory_extended:0 "§YЛавка§! \nТовары первой необходимости для повседневных нужд населения. \n\nМакс. уровень: §Y[?consumer_good_factory_level]§! \nПрочность: §Y4§! \nРабочих: §Y20§!\n\nТребования: §R-2§!£resources_strip|3 §R-2§!£resources_strip|4 \nПроизводство: §G+[?ROOT.consumer_good_factory_output]§! £economy_resources|2 \n\nСтоимость: £civ_factory_output §Y8000§!"
+ 
+ luxury_good_factory:0 "£luxury_store|2  Лавка предметов роскоши"
+ luxury_good_factory_plural:0 "£luxury_store|2  Лавки предметов роскоши"
+ luxury_good_factory_desc:0 "Лавка для высших слоёв общества. \n\n£import_texticon  Требования:£resources_strip|5 + £resources_strip|7 \n\n£export_texticon  Производство: £resources_strip|11 "
+ luxury_good_factory_extended:0 "§YЛавка предметов роскоши§! \nЛавка для высших слоёв общества. \n\nМакс. уровень: §Y[?luxury_good_factory_level]§! \nПрочность: §Y4§! \nРабочих: §Y20§!\n\nТребования: §R-2§!£resources_strip|7 §R-1§!£resources_strip|5 \nПроизводство: §G+[?ROOT.luxury_good_factory_output]§! £economy_resources|3 \n\nСтоимость: £civ_factory_output §Y12000§!"
+
+ carpentry:0 "£carpentry|2  Плотницкая мастерская"
+ carpentry_plural:0 "£carpentry|2  Плотницкие мастерские"
+ carpentry_desc:0 "Мастерская, где из древесины изготавливают полезные товары. \n\n£import_texticon  Требования:£resources_strip|4 \n\n£export_texticon  Производство: £resources_strip|12 "
+ carpentry_extended:0 "§YПлотницкая мастерская§! \nМастерская, где из древесины изготавливают полезные товары. \n\nМакс. уровень: §Y[?carpentry_level]§! \nПрочность: §Y6§! \nРабочих: §Y30§!\n\nТребования: §R-2§!£resources_strip|4 \nПроизводство: §G+[?ROOT.carpentry_output]§! £economy_resources|4 \n\nСтоимость: £civ_factory_output §Y14000§!"
+
+ masonry:0 "£masonry|2  Кирпичная мастерская"
+ masonry_plural:0 "£masonry|2  Кирпичные мастерские"
+ masonry_desc:0 "Здесь каменщики производят кирпичи. \n\n£import_texticon  Требования:£resources_strip|5 \n\n£export_texticon  Производство: £resources_strip|13 "
+ masonry_extended:0 "§YКирпичная мастерская§! \nЗдесь каменщики производят кирпичи. \n\nМакс. уровень: §Y[?masonry_level]§! \nПрочность: §Y7§! \nРабочих: §Y40§!\n\nТребования: §R-3§!£resources_strip|5 \nПроизводство: §G+[?ROOT.masonry_output]§! £economy_resources|5 \n\nСтоимость: £civ_factory_output §Y14000§!"
+
+ steel_beam_factory:0 "£steel_beam_factory|2  Завод стальных балок"
+ steel_beam_factory_plural:0 "£steel_beam_factory|2  Заводы стальных балок"
+ steel_beam_factory_desc:0 "Стальные балки являются передовым строительным материалом. \n\n£import_texticon  Требования:£resources_strip|8 \n\n£export_texticon  Производство: £resources_strip|14 "
+ steel_beam_factory_extended:0 "§YЗавод стальных балок§! \nСтальные балки являются передовым строительным материалом. \n\nМакс. уровень: §Y[?steel_beam_factory_level]§! \nПрочность: §Y6§! \nРабочих: §Y100§!\n\nТребования: §R-6§!£resources_strip|8 \nЕжедневный расход топлива: §R-48§! \nПроизводство: §G+[?ROOT.steel_beam_factory_output]§! £economy_resources|6 \n\nСтоимость: £civ_factory_output §Y24000§!"
+
+ farm:0 "£farming|2  Ферма"
+ farm_plural:0 "£farming|2  Фермы"
+ farm_desc:0 "Фермы являются древнейшим и важнейшим изобретением цивилизации. \n\n£import_texticon  Требования:£resource_deposites|3 \n\n£export_texticon  Производство: £resources_strip|1 +£economy_resources|1 "
+ farm_extended:0 "§YФерма§! \nФермы являются древнейшим и важнейшим изобретением цивилизации. \n\nМакс. уровень: §Y[?farm_level]§! \nПрочность: §Y9§! \nРабочих: §Y600§!\n\nТребования: §R-1§!£resource_deposites|3 \nПроизводство: §G+[?ROOT.farm_output]§! £resources_strip|1  §G+[?ROOT.farm_output_2]§! £economy_resources|1 \n\nСтоимость: £civ_factory_output §Y3700§!"
+ 
+ mill:0 "£milling|2  Мельница"
+ mill_plural:0 "£milling|2  Мельницы"
+ mill_desc:0 "Сооружение на воде или ветру, превращающее урожай в пищу. \n\n£import_texticon  Требования:£resources_strip|1 \n\n£export_texticon  Производство: £resources_strip|9 "
+ mill_extended:0 "§YМельница§! \nСооружение на воде или ветру, превращающее урожай в пищу. \n\nМакс. уровень: §Y[?mill_level]§! \nПрочность: §Y3§! \nРабочих: §Y40§!\n\nТребования: §R-4§!£resources_strip|1 \nПроизводство: §G+[?ROOT.mill_output]§! £economy_resources|1 \n\nСтоимость: £civ_factory_output §Y4600§!"
+
+ ranch:0 "£ranch|2  Ранчо"
+ ranch_plural:0 "£ranch|2  Ранчо"
+ ranch_desc:0 "Используется для содержания животных и разведения верховых животных для §Yкавалерии§!. \n\n£import_texticon  Требования:£resource_deposites|6 \n\n£export_texticon  Производство: £resources_strip|2 "
+ ranch_extended:0 "§YРанчо§! \nИспользуется для содержания животных. \n\nМакс. уровень: §Y[?ranch_level]§! \nПрочность: §Y6§! \nРабочих: §Y60§!\n\nТребования: §R-1§!£resource_deposites|6 \nПроизводство: §G+[?ROOT.ranch_output]§! £resources_strip|2 \n\nСтоимость: £civ_factory_output §Y4000§!"
+
+ fishing_stand:0 "£fishing|2  Рыбацкая стоянка"
+ fishing_stand_plural:0 "£fishing|2  Рыбацкие стоянки"
+ fishing_stand_desc:0 "Рыбацкие стоянки используются для рыбной ловли. \n\n£import_texticon  Требования:£resource_deposites|4 \n\n£export_texticon  Производство: £resources_strip|9 "
+ fishing_stand_extended:0 "§YРыбацкая стоянка§! \nРыбацкие стоянки используются для рыбной ловли. \n\nМакс. уровень: §Y[?fishing_stand_level]§! \nПрочность: §Y7§! \nРабочих: §Y50§!\n\nТребования: §R-1§!£resource_deposites|4 \nПроизводство: §G+[?ROOT.fishing_stand_output]§! £economy_resources|1 \n\nСтоимость: £civ_factory_output §Y3500§!"
+ 
+ construction_extended_ttp:0 "§GЩёлкните§!, чтобы начать строительство в случайном подходящем регионе. \n§GShift + щелчок§! начнёт строительство 5 объектов. \n§RОтключённые здания§! будут сначала §Yповторно активированы§!."
+
+ BUILDING_BOMBED:0 "$BUILDING$: бомбардировка!"
+ BUILDING_SABOTAGED:0 "$BUILDING$: диверсия!"
+ BUILDING_REPAIRED:0 "$BUILDING$: ремонт завершён!"
+ BUILDING_DAMAGE_REASON_COLLATERAL:0 "$BUILDING$ получило сопутствующий урон!"
+ NUKE_DROPPED:0 "Сброшена ядерная бомба!"
+ BUILDING_DAMAGED:0 "Повреждено уровней: $DAMAGED|-$/$CURRENT|H$"
+ CAPACITY:0 "$VAL$/$MAX$"
+ CAPACITY_PLUS:0 "$VAL$+$PLUS$/$MAX$"
+ AIR_BASE_LEVEL:0 "$NAME|H$: $VAL|Y$"
+ AIR_BASE_LEVEL_UNKNOWN:0 "$NAME|H$"
+ ROCKET_SITE_CAPACITY:0 "Вместимость: $VAL$/$MAX$"
+ NAVAL_BASE_LEVEL_UNKNOWN:0 "§YМорская база§!"
+ NAVAL_BASE_LEVEL:0 "§YМорская база§!: $VAL|Y$"
+ NAVAL_BASE_SUPPLY_LIMIT:0 "Предел пропускной способности снабжения: $VAL|Y$"
+ NAVAL_BASE_CAPACITY:0 "Вместимость: $USED|1G$/$TOTAL|0G$"
+ NAVAL_BASE_CAPACITY_OVER:0 "Вместимость: $USED|1R$/$TOTAL|0R$"
+ NAVAL_BASE_CAPACITY_PENALTY:0 "Штраф к ремонтным мощностям из-за перегрузки: $PENALTY|%0R$"
+ BUILDING_LEVEL:1 "§TУровень региона: $LEVEL|H$§!"
+ BUILDING_CURRENT_MAX_LEVEL_CAPPED:0 "Текущий максимальный уровень здания ограничен следующим:"
+ BUILDING_CURRENT_MAX_LEVEL_NONCAPPED:0 "Текущий максимальный уровень здания не ограничен."
+ BUILDING_CURRENT_MAX_LEVEL_CAPPED_MANPOWER:0 "Население региона: $MANPOWER|*Y$"
+ BUILDING_CURRENT_MAX_LEVEL_CAPPED_POP_PER_LEVEL:0 "Население на уровень здания: $POPLEVEL|*Y$"
+ BUILDING_CURRENT_MAX_LEVEL_CAPPED_BUILDING_MAX_FACTOR:0 "Максимальный коэффициент региона: $MAXFACTOR|%0Y$"
+ BUILDING_CURRENT_MAX_LEVEL_CAPPED_MIN_MAXLEVEL:0 "Минимальный максимальный уровень из-за населения: $MAXLEVEL|Y$"
+ BUILDING_SLOT_REMOVE_BUILDING_LEVEL:0 "Удалить здание."
+ BUILDING_SLOT_REMOVE_CONSTRUCTION_LEVEL:0 "Удалить один уровень строительства здания."
+ BUILDING_SLOT_REMOVE_CONVERSION_LEVEL:0 "Отменить переоборудование здания."
+ BUILDING_SLOT_REMOVE_COOLDOWN:0 "Во время войны здания можно удалять только раз в $DAYS|Y$ дней. Следующее удаление будет доступно $DATE|Y$."
+ CLICK_TO_CONVERT:1 "§GЩёлкните§!, чтобы переоборудовать в $BUILDING|Y$"
+ INSERT_CONVERSION:0 "§GCtrl+щелчок§! для переоборудования с помещением в начало очереди."
+ INSERT_CONSTRUCTION:0 "§GCtrl+щелчок§! для строительства с помещением в начало очереди."
+ BUILDING_CURRENT_MAX_LEVEL:0 "Максимальный уровень для $BUILDING|Y$: $MAXLEVEL|Y$"
+ BUILDING_CURRENT_MAX_LEVEL_SHARED_SLOTS:0 "Макс. число зданий типа $BUILDING|Y$ в регионе: $MAXLEVEL|Y$"
+ BUILDING_LEVEL_HEALTH:0 "Прочность уровня: $VALUE|%2Y$"
+ AIR_DEFENSE_IN_STATE:0 "\n§HОбщее снижение урона от бомбардировок:§! $TOT|%G$\nПВО: $AA|-%$\n"
+ RADAR_ONMAP_TOOLTIP:0 "§HРадарная станция§! уровень: $LVL|G$/$TOT|H$\nПринадлежит: $WHO|H$"
+ RADAR_ONMAP_DAMAGED_TOOLTIP:0 "§HРадарная станция§! уровень: $LVL|R$/$TOT|H$\nПринадлежит: $WHO|H$"
+ RADAR_ONMAP_TOOLTIP_COVERAGE:0 "\n§HОхват регионов:§!"
+ RADAR_ONMAP_TOOLTIP_COVERAGE_ENTRY:0 "\n  $PERC|%$ в регионе $REGION$"
+ RADAR_ONMAP_TOOLTIP_SUPPRESS:0 "\nУдерживайте §GCtrl§!, чтобы §Rскрыть§! эту подсказку."
