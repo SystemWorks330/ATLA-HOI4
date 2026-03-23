@@ -823,11 +823,6 @@ spriteTypes = {
 		texturefile = "gfx/texticons/mil_factory.dds"
 		legacy_lazy_load = no
 	}
-	spriteType = {
-		name = "GFX_nav_dockyard_texticon"
-		texturefile = "gfx/texticons/nav_dockyard.dds"
-		legacy_lazy_load = no
-	}
 
 	spriteType = {
 		name = "GFX_civ_factory_damaged"
@@ -1239,8 +1234,8 @@ spriteTypes = {
 		noOfFrames = 2		
 	}
 	spriteType = {
-		name = "GFX_unit_ostrich_horses_icon_small"
-		texturefile = "gfx/texticons/unit_ostrich_horses_icon_small.dds"
+		name = "GFX_unit_ostrich_icon_small_small"
+		texturefile = "gfx/texticons/unit_ostrich_icon_small.dds"
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
@@ -1619,48 +1614,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-		spriteType = {
-		name = "GFX_naval_dominance_texticon"
-		texturefile = "gfx/texticons/naval_dominance_texticon.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_naval_dominance_multiplication_texticon"
-		texturefile = "gfx/texticons/naval_dominance_multiplication_texticon.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_naval_dominance_reduction_texticon"
-		texturefile = "gfx/texticons/naval_dominance_reduction_texticon.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_naval_dominance_increase_texticon"
-		texturefile = "gfx/texticons/naval_dominance_increase_texticon.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_naval_dominance_protect_texticon"
-		texturefile = "gfx/texticons/naval_dominance_protect_texticon.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
-		name = "GFX_out_of_power_texticon"
-		texturefile = "gfx/texticons/out_of_power_texticon.dds"
-		legacy_lazy_load = no
-	}
-
 	spriteType = {
 		name = "GFX_convoy_texticon"
 		texturefile = "gfx/texticons/convoy_texticon.dds"
 		legacy_lazy_load = no
 	}
-
 
 	spriteType = {
 		name = "GFX_mapicon_port_strike_result_text"
@@ -2650,12 +2608,6 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_energy_consumption_texticon"
-		texturefile = "gfx/texticons/energy_consumption_texticon.dds"
-		legacy_lazy_load = no
-	}
-
-	spriteType = {
 		name = "GFX_crypto_defense"
 		texturefile = "gfx/texticons/crypto_defense.dds"
 		legacy_lazy_load = no
@@ -2688,11 +2640,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_counter_intelligence"
 		texturefile = "gfx/texticons/counter_intelligence.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
-		name = "GFX_doctrine_mastery"
-		texturefile = "gfx/texticons/doctrine_mastery_texticon.dds"
 		legacy_lazy_load = no
 	}
 }

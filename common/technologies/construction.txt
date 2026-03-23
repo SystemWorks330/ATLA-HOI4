@@ -5,13 +5,17 @@ technologies = {
 			agriculture = 1
 		}
 
-		enable_building = {
-			building = farm
-			level = 1
-		}
+		#hidden_modifier = {
+			farm_level_max = 2
+		#}
+
+		#enable_building = {
+		#	building = farm
+		#	level = 2
+		#}
 
 		on_research_complete = {
-			set_variable = { farm_level = 1 }
+			set_variable = { farm_level = 2 }
 		}
 		
 		path = {
@@ -34,17 +38,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				FROM = {
-					all_owned_state = {
-						OR = {
-							check_variable = {THIS.field = THIS.modifier@farm_level}
-							check_variable = {THIS.field < 2}
-						}
-					}
-				}	
-				add = 80
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -61,21 +60,26 @@ technologies = {
 			domestication = 1
 		}
 		on_research_complete = {
-			set_variable = { farm_level = 2 }
-			set_variable = { ranch_level = 2 }
+			set_variable = { farm_level = 4 }
+			set_variable = { ranch_level = 4 }
 
 			custom_effect_tooltip = farm_upgrade_2_tt
 		}
 
-		enable_building = {
-			building = farm
-			level = 2
-		}
+		#enable_building = {
+		#	building = farm
+		#	level = 4
+		#}
 
-		enable_building = {
-			building = ranch
-			level = 2
-		}
+		#enable_building = {
+		#	building = ranch
+		#	level = 4
+		#}
+
+		#hidden_modifier = {
+			ranch_level_max = 2
+			farm_level_max = 2
+		#}
 		
 		path = {
 			leads_to_tech = farm_2
@@ -93,18 +97,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				FROM = {
-					all_owned_state = {
-						OR = {
-							check_variable = {THIS.field = THIS.modifier@farm_level}
-							check_variable = {THIS.field < 2}
-						}
-					}
-				}	
-				add = 80
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -121,16 +114,20 @@ technologies = {
 		}
 		production_cost_farm_factor = -0.1
 
-		enable_building = {
-			building = farm
-			level = 3
-		}
+		#enable_building = {
+		#	building = farm
+		#	level = 6
+		#}
 
 		on_research_complete = {
-			set_variable = { farm_level = 3 }
+			set_variable = { farm_level = 6 }
 
 			custom_effect_tooltip = farm_upgrade_1_tt
 		}
+
+		#hidden_modifier = {
+			farm_level_max = 2
+		#}
 
 		path = {
 			leads_to_tech = farm_3
@@ -144,17 +141,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				FROM = {
-					all_owned_state = {
-						OR = {
-							check_variable = {THIS.field = THIS.modifier@farm_level}
-							check_variable = {THIS.field < 2}
-						}
-					}
-				}	
-				add = 80
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -171,14 +163,18 @@ technologies = {
 		}
 		production_cost_farm_factor = -0.15
 
-		enable_building = {
-			building = farm
-			level = 4
-		}
+		#enable_building = {
+		#	building = farm
+		#	level = 10
+		#}
 
 		on_research_complete = {
-			set_variable = { farm_level = 4 }
+			set_variable = { farm_level = 10 }
 		}
+
+		#hidden_modifier = {
+			farm_level_max = 4
+		#}
 
 		research_cost = 1.25
 		folder = {
@@ -187,17 +183,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				FROM = {
-					all_owned_state = {
-						OR = {
-							check_variable = {THIS.field = THIS.modifier@farm_level}
-							check_variable = {THIS.field < 2}
-						}
-					}
-				}	
-				add = 80
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -213,13 +204,17 @@ technologies = {
 			domestication = 1
 		}
 
-		enable_building = {
-			building = ranch
-			level = 1
-		}
+		#hidden_modifier = {
+			ranch_level_max = 2
+		#}
+
+		#enable_building = {
+		#	building = ranch
+		#	level = 2
+		#}
 
 		on_research_complete = {
-			set_variable = { ranch_level = 1 }
+			set_variable = { ranch_level = 2 }
 		}
 
 		path = {
@@ -242,13 +237,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				all_owned_state = {
-					check_variable = {THIS.animal > 1}
-					ranch > 1
-				}
-				add = 20
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -264,15 +258,20 @@ technologies = {
 			surgery = 1
 		}
 		on_research_complete = {
-			set_variable = { ranch_level = 3 }
+			set_variable = { ranch_level = 6 }
 
 			custom_effect_tooltip = ranch_upgrade_1_tt
 		}
 
-		enable_building = {
-			building = ranch
-			level = 3
-		}
+		#enable_building = {
+		#	building = ranch
+		#	level = 6
+		#}
+
+		#hidden_modifier = {
+			ranch_level_max = 2
+		#}
+
 
 		production_cost_ranch_factor = -0.1
 
@@ -288,14 +287,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				all_owned_state = {
-					check_variable = {THIS.animal > 1}
-					ranch > 1
-				}
-				add = 20
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -310,15 +302,18 @@ technologies = {
 		}
 
 		on_research_complete = {
-			set_variable = { ranch_level = 4 }
+			set_variable = { ranch_level = 10 }
 
 			custom_effect_tooltip = ranch_upgrade_2_tt
 		}
 
-		enable_building = {
-			building = ranch
-			level = 4
-		}	
+		#enable_building = {
+		#	building = ranch
+		#	level = 10
+		#}
+		#hidden_modifier = {
+			ranch_level_max = 4
+		#}
 
 		production_cost_ranch_factor = -0.15
 		
@@ -329,14 +324,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				all_owned_state = {
-					check_variable = {THIS.animal > 1}
-					ranch > 1
-				}
-				add = 20
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -371,13 +359,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				any_owned_state = {
-					farm > 0
-				}
-				add = 40
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -411,46 +393,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {m = 0}
-				set_temp_variable = {s = FROM.num_owned_states}
-				if = {
-					limit = {
-						check_variable = {s = 0}
-					}
-					add_to_temp_variable = {
-						var = s
-						value = 10000
-					}
-				}
-				all_owned_state = {
-					add_to_temp_variable = {
-						var = m
-						value = THIS.building_level@mill
-					}
-				}
-				divide_temp_variable = {
-					var = m
-					value = s
-				}
-				if = {
-					limit = {
-						check_variable = {m < 4}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 0
-					}
-					else = {
-						multiply_temp_variable = {
-							var = m
-							value = 23
-						}
-					}	
-				}
-				add = m
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -488,46 +431,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {m = 0}
-				set_temp_variable = {s = FROM.num_owned_states}
-				if = {
-					limit = {
-						check_variable = {s = 0}
-					}
-					add_to_temp_variable = {
-						var = s
-						value = 10000
-					}
-				}
-				all_owned_state = {
-					add_to_temp_variable = {
-						var = m
-						value = THIS.building_level@mill
-					}
-				}
-				divide_temp_variable = {
-					var = m
-					value = s
-				}
-				if = {
-					limit = {
-						check_variable = {m < 9}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 0
-					}
-					else = {
-						multiply_temp_variable = {
-							var = m
-							value = 12
-						}
-					}	
-				}
-				add = m
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -558,46 +462,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {m = 0}
-				set_temp_variable = {s = FROM.num_owned_states}
-				if = {
-					limit = {
-						check_variable = {s = 0}
-					}
-					add_to_temp_variable = {
-						var = s
-						value = 10000
-					}
-				}
-				all_owned_state = {
-					add_to_temp_variable = {
-						var = m
-						value = THIS.building_level@mill
-					}
-				}
-				divide_temp_variable = {
-					var = m
-					value = s
-				}
-				if = {
-					limit = {
-						check_variable = {m < 24}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 0
-					}
-					else = {
-						multiply_temp_variable = {
-							var = m
-							value = 4
-						}
-					}	
-				}
-				add = m
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -633,7 +498,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
 		}
 		
 		categories = {
@@ -668,7 +539,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
 		}
 		
 		categories = {
@@ -706,7 +583,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
 		}
 		
 		categories = {
@@ -739,7 +616,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
 		}
 		
 		categories = {
@@ -774,7 +651,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
 		}
 		
 		categories = {
@@ -808,7 +691,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
+			modifier = {
+				factor = 3
+				date > "2.1.1"
+			}
 		}
 		
 		categories = {
@@ -846,7 +735,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
 		}
 		
 		categories = {
@@ -879,7 +768,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
 		}
 		
 		categories = {
@@ -891,13 +780,17 @@ technologies = {
 
 	fishing_stand_1 = {
 
-		enable_building = {
-			building = fishing_stand
-			level = 1
-		}
+		#hidden_modifier = {
+			fishing_stand_level_max = 2
+		#}
+
+		#enable_building = {
+		#	building = fishing_stand
+		#	level = 2
+		#}
 
 		on_research_complete = {
-			set_variable = { fishing_stand_level = 1 }
+			set_variable = { fishing_stand_level = 2 }
 		}
 
 		path = {
@@ -912,23 +805,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				any_owned_state = {
-					is_coastal = yes
-				}
-				add = 1
-			}
-			modifier = {
-				fishing_stand > 2
-				factor = 2	
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@food_resource < 3
-				}
-				factor = 10
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -941,14 +818,18 @@ technologies = {
 		dependencies = {
 			astronomy = 1
 		}
+		
+		#hidden_modifier = {
+			fishing_stand_level_max = 2
+		#}
 
-		enable_building = {
-			building = fishing_stand
-			level = 2
-		}
+		#enable_building = {
+		#	building = fishing_stand
+		#	level = 4
+		#}
 
 		on_research_complete = {
-			set_variable = { fishing_stand_level = 2 }
+			set_variable = { fishing_stand_level = 4 }
 
 			custom_effect_tooltip = fishing_upgrade_1_tt
 		}
@@ -965,23 +846,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				any_owned_state = {
-					is_coastal = yes
-				}
-				add = 1
-			}
-			modifier = {
-				fishing_stand > 4
-				factor = 2	
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@food_resource < 3
-				}
-				factor = 10
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -993,14 +858,18 @@ technologies = {
 		dependencies = {
 			leverage = 1
 		}
+		
+		#hidden_modifier = {
+			fishing_stand_level_max = 2
+		#}
 
-		enable_building = {
-			building = fishing_stand
-			level = 3
-		}
+		#enable_building = {
+		#	building = fishing_stand
+		#	level = 5
+		#}
 
 		on_research_complete = {
-			set_variable = { fishing_stand_level = 3 }
+			set_variable = { fishing_stand_level = 5 }
 
 			custom_effect_tooltip = fishing_upgrade_2_tt
 		}
@@ -1019,23 +888,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				any_owned_state = {
-					is_coastal = yes
-				}
-				add = 1
-			}
-			modifier = {
-				fishing_stand > 6
-				factor = 2	
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@food_resource < 3
-				}
-				factor = 10
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -1048,13 +901,17 @@ technologies = {
 			genetics = 1
 		}
 		
-		enable_building = {
-			building = fishing_stand
-			level = 4
-		}
+		#hidden_modifier = {
+			fishing_stand_level_max = 4
+		#}
+
+		#enable_building = {
+		#	building = fishing_stand
+		#	level = 10
+		#}
 
 		on_research_complete = {
-			set_variable = { fishing_stand_level = 4 }
+			set_variable = { fishing_stand_level = 10 }
 		}
 
 		production_cost_fishing_stand_factor = -0.10
@@ -1066,23 +923,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				any_owned_state = {
-					is_coastal = yes
-				}
-				add = 1
-			}
-			modifier = {
-				fishing_stand > 8
-				factor = 2	
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@food_resource < 3
-				}
-				factor = 10
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -1102,13 +943,17 @@ technologies = {
 			kinectics = 1
 		}
 
-		enable_building = {
-			building = lumber_mill
-			level = 1
-		}
+		#hidden_modifier = {
+			lumber_mill_level_max = 2
+		#}
+
+		#enable_building = {
+		#	building = lumber_mill
+		#	level = 2
+		#}
 
 		on_research_complete = {
-			set_variable = { lumber_mill_level = 1 }
+			set_variable = { lumber_mill_level = 2 }
 		}
 		
 		path = {
@@ -1131,13 +976,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
 			
 			modifier = {
-				any_owned_state = {
-					is_coastal = yes
-				}
-				add = 80
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -1151,14 +994,18 @@ technologies = {
 		dependencies = {
 			smelting = 1
 		}
+		
+		#hidden_modifier = {
+			lumber_mill_level_max = 2
+		#}
 
-		enable_building = {
-			building = lumber_mill
-			level = 2
-		}
+		#enable_building = {
+		#	building = lumber_mill
+		#	level = 4
+		#}
 
 		on_research_complete = {
-			set_variable = { lumber_mill_level = 2 }
+			set_variable = { lumber_mill_level = 4 }
 		}
 		
 		path = {
@@ -1189,13 +1036,17 @@ technologies = {
 		}
 		production_cost_lumber_mill_factor = -0.1
 
-		enable_building = {
-			building = lumber_mill
-			level = 3
-		}
+		#hidden_modifier = {
+			lumber_mill_level_max = 2
+		#}
+
+		#enable_building = {
+		#	building = lumber_mill
+		#	level = 6
+		#}
 
 		on_research_complete = {
-			set_variable = { lumber_mill_level = 3 }
+			set_variable = { lumber_mill_level = 6 }
 
 			custom_effect_tooltip = lumber_mill_upgrade_tt
 		}
@@ -1228,13 +1079,17 @@ technologies = {
 		}
 		production_cost_lumber_mill_factor = -0.15
 
-		enable_building = {
-			building = lumber_mill
-			level = 4
-		}
+		#hidden_modifier = {
+			lumber_mill_level_max = 4
+		#}
+
+		#enable_building = {
+		#	building = lumber_mill
+		#	level = 10
+		#}
 
 		on_research_complete = {
-			set_variable = { lumber_mill_level = 4 }
+			set_variable = { lumber_mill_level = 10 }
 		}
 		
 		research_cost = 1.25
@@ -1527,13 +1382,17 @@ technologies = {
 			kinectics = 1
 		}
 
-		enable_building = {
-			building = quarry
-			level = 1
-		}
+		#hidden_modifier = {
+			quarry_level_max = 2
+		#}
+
+		#enable_building = {
+		#	building = quarry
+		#	level = 2
+		#}
 
 		on_research_complete = {
-			set_variable = { quarry_level = 1 }
+			set_variable = { quarry_level = 2 }
 		}
 
 		path = {
@@ -1583,14 +1442,17 @@ technologies = {
 		dependencies = {
 			leverage = 1
 		}
+		#hidden_modifier = {
+			quarry_level_max = 2
+		#}
 
-		enable_building = {
-			building = quarry
-			level = 2
-		}
+		#enable_building = {
+		#	building = quarry
+		#	level = 4
+		#}
 
 		on_research_complete = {
-			set_variable = { quarry_level = 2 }
+			set_variable = { quarry_level = 4 }
 		}
 
 		path = {
@@ -1620,13 +1482,17 @@ technologies = {
 			magnetism = 1
 		}
 
-		enable_building = {
-			building = quarry
-			level = 3
-		}
+		#hidden_modifier = {
+			quarry_level_max = 2
+		#}
+
+		#enable_building = {
+		#	building = quarry
+		#	level = 6
+		#}
 
 		on_research_complete = {
-			set_variable = { quarry_level = 3 }
+			set_variable = { quarry_level = 6 }
 
 			custom_effect_tooltip = quarry_upgrade_1_tt
 		}
@@ -1658,14 +1524,18 @@ technologies = {
 		dependencies = {
 			gas_turbine = 1
 		}
+		
+		#hidden_modifier = {
+			quarry_level_max = 4
+		#}
 
-		enable_building = {
-			building = quarry
-			level = 4
-		}
+		#enable_building = {
+		#	building = quarry
+		#	level = 10
+		#}
 
 		on_research_complete = {
-			set_variable = { quarry_level = 4 }
+			set_variable = { quarry_level = 10 }
 
 			custom_effect_tooltip = quarry_upgrade_2_tt
 		}
@@ -1834,13 +1704,17 @@ technologies = {
 			smelting = 1
 		}
 
-		enable_building = {
-			building = mine
-			level = 1
-		}
+		#hidden_modifier = {
+			mine_level_max = 2
+		#}
+
+		#enable_building = {
+		#	building = mine
+		#	level = 2
+		#}
 
 		on_research_complete = {
-			set_variable = { mine_level = 1 }
+			set_variable = { mine_level = 2 }
 		}
 
 		path = {
@@ -1877,13 +1751,17 @@ technologies = {
 			architecture = 1
 		}
 		
-		enable_building = {
-			building = mine
-			level = 2
-		}
+		#hidden_modifier = {
+			mine_level_max = 2
+		#}
+
+		#enable_building = {
+		#	building = mine
+		#	level = 4
+		#}
 
 		on_research_complete = {
-			set_variable = { mine_level = 2 }
+			set_variable = { mine_level = 4 }
 		}
 
 		path = {
@@ -1911,14 +1789,18 @@ technologies = {
 		dependencies = {
 			alchemy = 1
 		}
+		
+		#hidden_modifier = {
+			mine_level_max = 2
+		#}
 
-		enable_building = {
-			building = mine
-			level = 3
-		}
+		#enable_building = {
+		#	building = mine
+		#	level = 6
+		#}
 
 		on_research_complete = {
-			set_variable = { mine_level = 3 }
+			set_variable = { mine_level = 6 }
 
 			custom_effect_tooltip = mine_upgrade_1_tt
 		}
@@ -1950,14 +1832,18 @@ technologies = {
 		dependencies = {
 			gas_turbine = 1
 		}
+		
+		#hidden_modifier = {
+			mine_level_max = 4
+		#}
 
-		enable_building = {
-			building = mine
-			level = 4
-		}
+		#enable_building = {
+		#	building = mine
+		#	level = 10
+		#}
 
 		on_research_complete = {
-			set_variable = { mine_level = 4 }
+			set_variable = { mine_level = 10 }
 
 			custom_effect_tooltip = mine_upgrade_2_tt
 		}
@@ -2831,22 +2717,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
 			modifier = {
-				num_of_civilian_factories > 5
-				add = 10
-			}
-			modifier = {
-				has_dynamic_modifier = {modifier = extreme_poverty}
-				add = -20
-			}
-			modifier = {
-				has_dynamic_modifier = {modifier = poverty}
-				add = -10
-			}
-			modifier = {
-				is_faction_leader = yes
-				factor = 4
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -2885,30 +2760,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
 			modifier = {
-				num_of_civilian_factories > 5
-				add = 10
-			}
-			modifier = {
-				has_dynamic_modifier = {modifier = extreme_poverty}
-				add = -20
-			}
-			modifier = {
-				has_dynamic_modifier = {modifier = poverty}
-				add = -10
-			}
-			modifier = {
-				is_faction_leader = yes
-				factor = 4
-			}
-			modifier = {
-				NOT = {
-				 	any_owned_state = {
-						infrastructure > 3
-					}
-				}
-				factor = 0 
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -2946,31 +2802,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				num_of_civilian_factories > 5
-				add = 10
-			}
-			modifier = {
-				has_dynamic_modifier = {modifier = extreme_poverty}
-				add = -20
-			}
-			modifier = {
-				has_dynamic_modifier = {modifier = poverty}
-				add = -10
-			}
-			modifier = {
-				is_faction_leader = yes
-				factor = 4
-			}
-			modifier = {
-				NOT = {
-				 	any_owned_state = {
-						infrastructure > 3
-					}
-				}
-				factor = 0 
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -3008,36 +2840,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				num_of_civilian_factories > 5
-				add = 10
-			}
-			modifier = {
-				has_dynamic_modifier = {modifier = extreme_poverty}
-				add = -20
-			}
-			modifier = {
-				has_dynamic_modifier = {modifier = poverty}
-				add = -10
-			}
-			modifier = {
-				is_faction_leader = yes
-				factor = 4
-			}
-			modifier = {
-				NOT = {
-				 	has_built = {
-						type = infrastructure
-						value > 10
-					}
-					has_built = {
-						type = rail_way
-						value > 5
-					}
-				}
-				factor = 0 
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -3067,43 +2870,15 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				num_of_civilian_factories > 5
-				add = 10
-			}
-			modifier = {
-				has_dynamic_modifier = {modifier = extreme_poverty}
-				add = -20
-			}
-			modifier = {
-				has_dynamic_modifier = {modifier = poverty}
-				add = -10
-			}
-			modifier = {
-				is_faction_leader = yes
-				factor = 4
-			}
-			modifier = {
-				NOT = {
-				 	has_built = {
-						type = infrastructure
-						value > 10
-					}
-					has_built = {
-						type = rail_way
-						value > 5
-					}
-				}
-				factor = 0 
-			}
+			factor = 100
 		}
+		
 		categories = {
 			construction
 			resource_construction
 			stone_construction
-		}
-	}		
+		}	
+	}
 	wall_1 = {
 
 		enable_building = {
@@ -3131,20 +2906,14 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
 			modifier = {
-				set_temp_variable = {r = THIS.enemies_strength_ratio}
-				multiply_temp_variable = {
-					var = r
-					value = 200
-				}
-				subtract_from_temp_variable = {
-					var = r
-					value = 50
-				}
-				add = r
+				factor = 3
+				date > "2.1.1"
 			}
 		}
+		
 		categories = {
 			construction
 			resource_construction
@@ -3172,18 +2941,11 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
 			modifier = {
-				set_temp_variable = {r = THIS.enemies_strength_ratio}
-				multiply_temp_variable = {
-					var = r
-					value = 200
-				}
-				subtract_from_temp_variable = {
-					var = r
-					value = 50
-				}
-				add = r
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -3214,19 +2976,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {r = THIS.enemies_strength_ratio}
-				multiply_temp_variable = {
-					var = r
-					value = 200
-				}
-				subtract_from_temp_variable = {
-					var = r
-					value = 50
-				}
-				add = r
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -3251,19 +3001,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {r = THIS.enemies_strength_ratio}
-				multiply_temp_variable = {
-					var = r
-					value = 200
-				}
-				subtract_from_temp_variable = {
-					var = r
-					value = 50
-				}
-				add = r
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -3290,12 +3028,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				num_of_civilian_factories > 20
-				has_stability > 0.6
-				add = 30
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -3330,7 +3063,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 100
 		}
 		
 		categories = {
@@ -3366,7 +3099,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 100
 		}
 		
 		categories = {
@@ -3396,7 +3129,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 100
 		}
 		
 		categories = {
@@ -3426,7 +3159,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 100
 		}
 		
 		categories = {
@@ -3451,7 +3184,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 100
 		}
 		
 		categories = {
@@ -3482,7 +3215,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 100
 		}
 		
 		categories = {
@@ -3513,7 +3246,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 100
 		}
 		
 		categories = {
@@ -3545,7 +3278,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 100
 		}
 		
 		categories = {
@@ -3577,7 +3310,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 100
 		}
 		
 		categories = {
@@ -3603,7 +3336,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
+			factor = 100
 		}
 		
 		categories = {
@@ -3665,19 +3398,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				any_enemy_country = {
-					air_base > 1
-				}
-				add = 40
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier = extreme_poverty
-				}
-			factor = 0	
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -3708,19 +3429,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				any_enemy_country = {
-					air_base > 1
-				}
-				add = 40
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier = extreme_poverty
-				}
-			factor = 0	
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -3751,19 +3460,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				any_enemy_country = {
-					air_base > 1
-				}
-				add = 40
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier = extreme_poverty
-				}
-			factor = 0	
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -3793,19 +3490,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				any_enemy_country = {
-					air_base > 1
-				}
-				add = 40
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier = extreme_poverty
-				}
-			factor = 0	
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -3830,19 +3515,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				any_enemy_country = {
-					air_base > 1
-				}
-				add = 40
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier = extreme_poverty
-				}
-			factor = 0	
-			}
+			factor = 100
 		}
 		
 		categories = {
@@ -3878,44 +3551,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				set_temp_variable = {
-					p = num_deployed_planes
-				}
-				set_temp_variable = {
-					b = 0
-				}
-				all_owned_state = {
-					add_to_temp_variable = {
-						var = b
-						value = THIS.building_level@air_base 
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							b = 0
-						}
-					}
-					add_to_temp_variable = {
-						var = b
-						value = 10000
-					}
-				}
-				divide_temp_variable = { 
-					var = p
-					value = b
-				}
-				divide_temp_variable = { 
-					var = p
-					value = 20
-				}
-				multiply_temp_variable = { 
-					var = p
-					value = 100
-				}
-				add = p
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -3944,44 +3585,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				set_temp_variable = {
-					p = num_deployed_planes
-				}
-				set_temp_variable = {
-					b = 0
-				}
-				all_owned_state = {
-					add_to_temp_variable = {
-						var = b
-						value = THIS.building_level@air_base 
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							b = 0
-						}
-					}
-					add_to_temp_variable = {
-						var = b
-						value = 10000
-					}
-				}
-				divide_temp_variable = { 
-					var = p
-					value = b
-				}
-				divide_temp_variable = { 
-					var = p
-					value = 20
-				}
-				multiply_temp_variable = { 
-					var = p
-					value = 100
-				}
-				add = p
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -4010,44 +3619,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				set_temp_variable = {
-					p = num_deployed_planes
-				}
-				set_temp_variable = {
-					b = 0
-				}
-				all_owned_state = {
-					add_to_temp_variable = {
-						var = b
-						value = THIS.building_level@air_base 
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							b = 0
-						}
-					}
-					add_to_temp_variable = {
-						var = b
-						value = 10000
-					}
-				}
-				divide_temp_variable = { 
-					var = p
-					value = b
-				}
-				divide_temp_variable = { 
-					var = p
-					value = 20
-				}
-				multiply_temp_variable = { 
-					var = p
-					value = 100
-				}
-				add = p
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -4078,44 +3655,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				set_temp_variable = {
-					p = num_deployed_planes
-				}
-				set_temp_variable = {
-					b = 0
-				}
-				all_owned_state = {
-					add_to_temp_variable = {
-						var = b
-						value = THIS.building_level@air_base 
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							b = 0
-						}
-					}
-					add_to_temp_variable = {
-						var = b
-						value = 10000
-					}
-				}
-				divide_temp_variable = { 
-					var = p
-					value = b
-				}
-				divide_temp_variable = { 
-					var = p
-					value = 20
-				}
-				multiply_temp_variable = { 
-					var = p
-					value = 100
-				}
-				add = p
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -4139,44 +3684,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				set_temp_variable = {
-					p = num_deployed_planes
-				}
-				set_temp_variable = {
-					b = 0
-				}
-				all_owned_state = {
-					add_to_temp_variable = {
-						var = b
-						value = THIS.building_level@air_base 
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {
-							b = 0
-						}
-					}
-					add_to_temp_variable = {
-						var = b
-						value = 10000
-					}
-				}
-				divide_temp_variable = { 
-					var = p
-					value = b
-				}
-				divide_temp_variable = { 
-					var = p
-					value = 20
-				}
-				multiply_temp_variable = { 
-					var = p
-					value = 100
-				}
-				add = p
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -4209,32 +3722,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				any_owned_state = {
-					days_since_last_strategic_bombing < 365
-				}
-				add = 50
-			}
-			modifier = {
-				any_allied_country = {
-					any_owned_state = {
-						days_since_last_strategic_bombing < 365
-					}
-				}
-				add = 50
-			}
-			modifier = {
-				set_temp_variable = {
-					p = 0
-				}
-				all_enemy_country = {
-					add_to_temp_variable = { p = THIS.num_deployed_planes}
-				}
-				multiply_temp_variable = {
-					p = 3
-				}
-				add = p
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -4266,34 +3759,13 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				num_of_civilian_factories > 15
-				OR = {
-					any_owned_state = {
-						days_since_last_strategic_bombing > 1
-						days_since_last_strategic_bombing < 359 
-					}
-					any_allied_country = {
-						any_owned_state = {
-							days_since_last_strategic_bombing > 1
-							days_since_last_strategic_bombing < 359 
-						}
-					}
-					any_enemy_country = {
-						air_base > 2
-					}	
-				}
-				add = 3	
-			}
-			modifier = {
-				has_bombing_war_support > -0.1
-				factor = 1.2
-			}
-			modifier = {
-				has_bombing_war_support > -0.2
 				factor = 3
-			}  
+				date > "2.1.1"
+			}
 		}
 		
 		categories = {
@@ -4325,32 +3797,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				any_owned_state = {
-					days_since_last_strategic_bombing < 365
-				}
-				add = 50
-			}
-			modifier = {
-				any_allied_country = {
-					any_owned_state = {
-						days_since_last_strategic_bombing < 365
-					}
-				}
-				add = 50
-			}
-			modifier = {
-				set_temp_variable = {
-					p = 0
-				}
-				all_enemy_country = {
-					add_to_temp_variable = { p = THIS.num_deployed_planes}
-				}
-				multiply_temp_variable = {
-					p = 3
-				}
-				add = p
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -4382,32 +3834,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				any_owned_state = {
-					days_since_last_strategic_bombing < 365
-				}
-				add = 50
-			}
-			modifier = {
-				any_allied_country = {
-					any_owned_state = {
-						days_since_last_strategic_bombing < 365
-					}
-				}
-				add = 50
-			}
-			modifier = {
-				set_temp_variable = {
-					p = 0
-				}
-				all_enemy_country = {
-					add_to_temp_variable = { p = THIS.num_deployed_planes}
-				}
-				multiply_temp_variable = {
-					p = 3
-				}
-				add = p
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -4433,32 +3865,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 100
+			
+			
 			modifier = {
-				any_owned_state = {
-					days_since_last_strategic_bombing < 365
-				}
-				add = 50
-			}
-			modifier = {
-				any_allied_country = {
-					any_owned_state = {
-						days_since_last_strategic_bombing < 365
-					}
-				}
-				add = 50
-			}
-			modifier = {
-				set_temp_variable = {
-					p = 0
-				}
-				all_enemy_country = {
-					add_to_temp_variable = { p = THIS.num_deployed_planes}
-				}
-				multiply_temp_variable = {
-					p = 3
-				}
-				add = p
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		

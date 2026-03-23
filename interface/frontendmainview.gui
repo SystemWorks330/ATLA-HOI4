@@ -175,13 +175,6 @@ guiTypes = {
 			position = { x= 15 y = 15 }
 		}
 		
-		iconType = 
-		{
-			name ="the_revival"
-			spriteType = "GFX_the_revival"
-			position = { x= 1150 y = -140 }
-		}
-
 		iconType =
 		{
 			name ="pdx_int_logo"

@@ -36,8 +36,6 @@ build_supply_lines = {
 	enable = {
 		num_of_supply_nodes < 150
 		num_of_civilian_factories > 60
-		check_variable = {THIS.resource@food_resource > 0 }
-		check_variable = {THIS.construction_material > 0.3 }
 	}
 	abort_when_not_enabled = yes
 	ai_strategy = {
@@ -76,9 +74,6 @@ build_weavings = {
 		has_resources_in_country = {
 			resource = tungsten
 			amount < 0
-		}
-		check_variable = {
-			THIS.daily_ration_need_in_food < THIS.resource@food_resource
 		}
 	}
 	abort_when_not_enabled = yes
@@ -145,66 +140,6 @@ build_food = {
 		id = mill
 		value = 1000
 	}
-	ai_strategy = {
-		type = building_target
-		id = arms_factory
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = carpentry
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = masonry
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = steelworks
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = quarry
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = mine
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = rail_way
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = supply_node
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = wall
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = naval_base
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = coastal_fortress
-		value = 0
-	}
-	ai_strategy = {
-		type = building_target
-		id = infrastructure
-		value = 0
-	}
 }
 water_tribes_build_food = {
 	allowed = {
@@ -222,12 +157,6 @@ water_tribes_build_food = {
 		id = fishing_stand
 		value = 10
 	}
-	ai_strategy = {
-		type = building_target
-		id = farm
-		value = 0
-	}
-
 }
 build_consumer = {
 	allowed = {
@@ -259,16 +188,6 @@ build_luxury = {
 		}
 	}
 	abort_when_not_enabled = yes
-	abort = {
-		has_resources_in_country = {
-			resource = iron
-			amount < 1
-		}
-		has_resources_in_country = {
-			resource = stone
-			amount < 1
-		}
-	}
 
 	ai_strategy = {
 		type = building_target
@@ -277,7 +196,7 @@ build_luxury = {
 	}
 }
 
-build_carpentries = {
+build_construction = {
 	allowed = {
 		always = yes
 	}
@@ -286,14 +205,8 @@ build_carpentries = {
 			resource = planks_resource
 			amount < 0
 		}
-		check_variable = { modifier@animal_product_upkeep_factor = 0 }
 	}
 	abort_when_not_enabled = yes
-	abort = {
-		check_variable = {
-			THIS.resource@aluminium < 1
-		}
-	}
 
 	ai_strategy = {
 		type = building_target
@@ -313,11 +226,7 @@ build_masonry = {
 		}
 	}
 	abort_when_not_enabled = yes
-	abort = {
-		check_variable = {
-			THIS.resource@stone < masonry_need 
-		}
-	}
+
 	ai_strategy = {
 		type = building_target
 		id = masonry
@@ -336,11 +245,6 @@ build_steel_beam_factory = {
 		}
 	}
 	abort_when_not_enabled = yes
-	abort = {
-		check_variable = {
-			resource@steel < 1
-		}
-	}
 
 	ai_strategy = {
 		type = building_target

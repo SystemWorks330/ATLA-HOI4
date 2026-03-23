@@ -150,12 +150,12 @@ country_event = {
 
 
 		event_target:migration_state = {
-			add_manpower = event_target:migration_origin.var:migrating_population
+			#add_manpower = event_target:migration_origin.var:migrating_population
 		}
 
 		event_target:migration_origin = {
 			multiply_variable = { migrating_population = -1 }
-			add_manpower = var:migrating_population
+			#add_manpower = var:migrating_population
 
 			clear_variable = migrating_population
 		}
@@ -177,6 +177,43 @@ country_event = {
 	option = {
 		name = refugee_event.2.c
 
+		
+		ai_chance = { 
+			base = 0
+
+		}
+	}
+	
+}
+
+
+### refugees leave
+country_event = {
+	id = refugee_event.3
+	title = refugee_event.3.t
+	desc = refugee_event.3.desc
+	picture = GFX_report_event_refugees
+
+	is_triggered_only = yes
+
+	option = {   #test add
+		name = refugee_event.3.a
+
+		417 = {
+			add_manpower = 1000000
+		}
+
+		ai_chance = { 
+			base = 100
+
+		}
+	}
+	option = {   # test remove
+		name = refugee_event.3.b
+
+		417 = {
+			add_manpower = -1000000
+		}
 		
 		ai_chance = { 
 			base = 0

@@ -282,10 +282,10 @@ music = {
 	song = "the_sun_warriors"
 	
 	chance = {
-		base = 0
 		modifier = {
-			add = 40
-			tag = SNW
+			factor = 2
+
+			has_war = no
 		}		
 	}	
 }
@@ -294,11 +294,10 @@ music = {
 	song = "last_agni_kai"
 	
 	chance = {
-		base = 0
 		modifier = {
-			tag = FIR
-			has_country_flag = earth_war_path
-			add = 80
+			factor = 2
+
+			has_war = yes
 		}
 	}
 }
@@ -331,22 +330,10 @@ music = {
 	song = "aang_vs_ozai"
 	
 	chance = {
-		base = 0
 		modifier = {
-			has_global_flag = avatar_aang
-			FIR = {
-				any_enemy_country = {
-					417 = {
-						any_neighbor_state = {
-							is_controlled_by = PREV.PREV
-						}
-					}
-				}
-			}
-			FIR_ozai = {
-				is_country_leader = yes
-			}
-			add = 100
+			factor = 2
+
+			has_war = yes
 		}		
 	}	
 }
@@ -472,26 +459,13 @@ music = {
 	song = "air_victory"
 	
 	chance = {
-		base = 0
 		modifier = {
-			add = 100
+			factor = 4
 			OR = {
-				AND = {
-					tag = SAT
-					has_global_flag = south_temple_survived
-				}
-				AND = {
-					tag = NAT
-					has_global_flag = north_temple_survived
-				}
-				AND = {
-					tag = WAT
-					has_global_flag = west_temple_survived
-				}
-				AND = {
-					tag = EAT
-					has_global_flag = east_temple_survived
-				}
+				tag = SAT
+				tag = NAT
+				tag = WAT
+				tag = EAT
 			}
 			has_war = no
 		}		

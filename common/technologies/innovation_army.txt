@@ -29,16 +29,12 @@ technologies = {
 		}
 
 		ai_will_do = {
-			base = 1
+			factor = 20
 			modifier = {
 				not = {
 					has_army_experience > 120
 				}
 				factor = 0.8
-			}
-			modifier = {
-				tag = FIR
-				add = 120
 			}
 		}
 	}
@@ -427,7 +423,7 @@ technologies = {
 		}
 
 		ai_will_do = {
-			base = 80
+			factor = 20
 			modifier = {
 				not = {
 					has_army_experience > 120
@@ -2231,7 +2227,7 @@ technologies = {
 		#xor = { attack advance }
 
 		path = {
-			leads_to_tech = balance_tech
+			leads_to_tech = balance
 			research_cost_coeff = 1
 		}
 
@@ -2273,7 +2269,7 @@ technologies = {
 		#}
 	}
 
-	balance_tech = {
+	balance = {
 
 		xp_research_type = army
 		xp_unlock_cost = 100

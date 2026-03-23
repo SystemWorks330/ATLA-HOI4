@@ -12,7 +12,7 @@ ideas = {
 
 			available = {
 				check_variable = {
-					var = current_authority 
+					var = current_authority
 					value = 60
 					compare = greater_than_or_equals
 					tooltip = check_authority_tooltip

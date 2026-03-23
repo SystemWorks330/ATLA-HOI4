@@ -74,29 +74,6 @@ guiTypes = {
 				maxHeight = 30
 				format = left
 			}
-
-			iconType ={
-				name ="energy_consumption_bg"
-				spriteType = "GFX_victorypoint_stateview_bg"
-				position = { x = 180 y = 119 }
-			}
-			
-			iconType = {
-				name = "energy_icon"
-				spriteType = "GFX_modifiers_energy"
-				position = { x = 194 y = 116 }
-			}
-			
-			instantTextboxType = {
-				name = "energy_text"
-				position = { x = 180 y = 124 }
-				textureFile = ""
-				font = "hoi_16mbs"
-				text = ""
-				maxWidth = 30
-				maxHeight = 30
-				format = center
-			}
 			
 			gridBoxType = {
 				name = "state_shared_slot_building_entries"
@@ -138,7 +115,7 @@ guiTypes = {
 			
 			OverlappingElementsBoxType = {
 				name = "state_claims"
-				position = { x = 75 y = 196 }
+				position = { x = 75 y = 198 }
 				size = { x = 110 y = 40 }
 				format = left
 				spacing = 1.0
@@ -156,34 +133,29 @@ guiTypes = {
 				format = left
 			}
 			
-			OverlappingElementsBoxType = {
-				name = "state_owners"
-				position = { x = 75 y = 146 }
-				size = { x = 60 y = 40 }
-				format = left
-				spacing = 1.0
+			buttonType = {
+				name = "owner_flag"
+				quadTextureSprite ="GFX_flag_small2"
+				position = { x= 79 y = 148 }
 			}
-
-			positionType = {
-				name = "state_owners_size_when_owner_is_controller"
-				position = { x = 79 y = 148 }
+			
+			iconType ={
+				name ="owner_flag_border"
+				quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
+				position = { x= 75 y = 144 }
+				alwaystransparent = yes
 			}
-
-			positionType = {
-				name = "state_owners_size_when_owner_is_not_controller"
-				position = { x = 79 y = 148 }
-			}
-
+			
 			buttonType = {
 				name = "controller_flag"
 				quadTextureSprite = "GFX_flag_small2"
-				position = { x= 105 y = 63 }
+				position = { x= 104 y = 148 }
 			}	
 			
 			iconType ={
 				name ="controller_flag_border"
 				quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
-				position = { x= 100 y = 59 }
+				position = { x= 100 y = 144 }
 				alwaystransparent = yes
 			}
 			
@@ -213,14 +185,14 @@ guiTypes = {
 			iconType ={
 				name ="population_icon"
 				spriteType = "GFX_population_icon"
-				position = { x = 40 y = 23 }
+				position = { x = 20 y = 61 }
 				Orientation = "UPPER_LEFT"
-				hide = yes
+				#hide = yes
 			}
 			
 			instantTextboxType = {
 				name = "manpower"
-				position = { x = -11164 y = 71 }
+				position = { x = 64 y = 69 }
 				textureFile = ""
 				font = "hoi_18mbs"
 				maxWidth = 80
@@ -346,16 +318,6 @@ guiTypes = {
 				spriteType = "GFX_required_rule"
 				Orientation = "UPPER_LEFT"
 			}	
-
-			iconType = {
-				name = "building_modifiers_icon"
-				position = { x = -9999 y= 55 }
-				spriteType = "GFX_buildings_strip"
-				Orientation = "UPPER_LEFT"
-				frame = 20
-				scale = 1
-				hide = yes
-			}
 			
 			### Positioning of these are controlled by the positionType "countrystateview_weathericons_position" and "countrystateview_weathericons_offset" above
 			iconType = {
@@ -430,30 +392,12 @@ guiTypes = {
 
 				gridBoxType = {
 					name = "dynamic_modifiers_grid"
-					position = { x = 150 y = 115 }
+					position = { x = 419 y = 159 }
 					size = { width = 40 height = 0 }
 					format = "LOWER_LEFT"
 					slotsize = { width = 40 height = 50 }
 					max_slots_vertical = 1
 				}
-			}
-
-			gridBoxType = {
-				name = "strategic_locations_grid"
-				position = { x = -5 y = 30 }
-				size = { width = 0 height = 0 }
-				format = "LOWER_LEFT"
-				slotsize = { width = 33 height = 33 }
-				max_slots_vertical = 1
-			}
-
-			gridBoxType = {
-				name = "province_custom_icon_building_entries"
-				position = { x = 10 y = 5}
-				size = { width = 480 height = 40 }
-				format = "UPPER_LEFT"
-				slotsize = { width = 61 height = 84}
-				max_slots_vertical = 1
 			}
 			
 			gridBoxType = {
@@ -506,43 +450,7 @@ guiTypes = {
 			Orientation = "UPPER_RIGHT"
 		}
 	}
-
-	windowType = {
-		name = "state_stakeholder_entry"
-		position = { x = 0 y = 0}	
-		size = { x = 40 y = 26 }
-
-		guibuttonType = {
-			name = "stakeholder_country_flag"
-			quadTextureSprite ="GFX_flag_small2"
-			position = { x= 0 y = 1 }
-			#Orientation = "UPPER_LEFT"
-		}
-		
-		iconType = {
-			name = "flag_border_thin"
-			quadTextureSprite = "GFX_small_flag_frame_thin"
-			position = { x= -3 y = -1 }
-			alwaystransparent = yes
-		}
-
-		iconType = {
-			name = "flag_border_thick"
-			quadTextureSprite = "GFX_diplo_countrylist_flag_frame"
-			position = { x= -3 y = -2 }
-			alwaystransparent = yes
-		}
-		
-		iconType = {
-			name = "flag_exclamation_mark"
-			spriteType = "GFX_alerts_category"
-			position = {x = 0 y = 0}
-			frame = 2
-			alwaystransparent = yes
-			scale = 0.8
-		}
-	}
-
+	
 	windowType = {
 		name = "state_core_entry"
 		position = { x = 0 y = 0}	
@@ -685,38 +593,6 @@ guiTypes = {
 			spriteType = "GFX_damage_bar"
 			position = { x=9 y=38  }
 			rotation = 1.5708		
-		}
-	}
-
-		containerWindowType = {
-		name = "province_building_special_icon_entry"
-		position = { x=-8 y=18 }
-		size = { width=50 height= 43 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			spriteType ="GFX_province_landmark_bg"
-		}
-
-		# Since the province building and facility icons are not the same size.
-		# For now use the position type X value as a scale, where 1 = 0.1 scale.
-		positionType = {
-			name = "facility_building_button_scale"
-			position = { x = 4 y = 0}
-		}
-
-		buttonType = {
-			name = "building_button"
-			quadTextureSprite = "GFX_placeholder_bg"
-			position = { x = 14 y = 7 }
-			scale = 1.0
-		}
-		
-		iconType = {
-			name = "damage_bar"
-			spriteType = "GFX_province_landmark_damage_bar"
-			position = { x=6 y=8  }
 		}
 	}
 	

@@ -89,7 +89,9 @@ war_weariness_category = {
 		}
 		available = {
 			check_variable = { 
-				occupation_accumulated_exhaustion >=20
+				var = occupation_accumulated_exhaustion
+				value = 20
+				compare = greater_than_or_equals
 				tooltip = at_least_occupation_war_weariness_tooltip
 			}
 		}
@@ -104,7 +106,9 @@ war_weariness_category = {
 
 		remove_trigger = {
 			check_variable = { 
-				occupation_accumulated_exhaustion <=20
+				var = occupation_accumulated_exhaustion
+				value = 20
+				compare = less_than_or_equals
 				tooltip = at_most_occupation_war_weariness_tooltip
 			}
 		}
@@ -148,7 +152,9 @@ war_weariness_category = {
 		}
 		available = {
 			check_variable = {
-				current_authority >= 60
+				var = current_authority
+				value = 60
+				compare = greater_than_or_equals
 				tooltip = check_authority_tooltip
 			}
 		}
@@ -163,7 +169,9 @@ war_weariness_category = {
 
 		remove_trigger = {
 			check_variable = {
-				current_authority <= 60
+				var = current_authority
+				value = 60
+				compare = less_than_or_equals
 				tooltip = check_liberty_tooltip
 			}
 		}

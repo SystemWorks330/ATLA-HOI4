@@ -222,68 +222,166 @@ recalc_increase_factory_clamp = {
 
 add_farm_here = {
 
-	FROM = {
-		add_building_construction = {
-			type = farm
-			level = 1
-			instant_build = no
-		}
+	ROOT = {
+		simulated_construction = yes
+		add_to_variable = { farm_deposit_construction = 1 }
 	}
+	
+	if = {
+		limit = {
+			NOT = {
+				has_state_flag = {
+					flag = farm_in_construction
+					value > 0
+				}
+			}
+		}
+		set_state_flag = {
+			flag = farm_in_construction
+			days = 100
+			value = 1
+		}
+		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
+	}
+
+	add_to_variable = { farm_construction_que = 1 }
 
 }
 
 add_fishing_stand_here = {
-	FROM = {
-		add_building_construction = {
-			type = fishing_stand
-			level = 1
-			instant_build = no
-		}
+
+	ROOT = {
+		simulated_construction = yes
+		add_to_variable = { fishing_stand_deposit_construction = 1 }
 	}
+	
+	if = {
+		limit = {
+			NOT = {
+				has_state_flag = {
+					flag = fishing_stand_in_construction
+					value > 0
+				}
+			}
+		}
+		set_state_flag = {
+			flag = fishing_stand_in_construction
+			days = 100
+			value = 1
+		}
+		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
+	}
+
+	add_to_variable = { fishing_stand_construction_que = 1 }
+
 }
 
 add_ranch_here = {
 	
-	FROM = {
-		add_building_construction = {
-			type = ranch
-			level = 1
-			instant_build = no
-		}
+	ROOT = {
+		simulated_construction = yes
+		add_to_variable = { ranch_deposit_construction = 1 }
 	}
+	
+	if = {
+		limit = {
+			NOT = {
+				has_state_flag = {
+					flag = ranch_in_construction
+					value > 0
+				}
+			}
+		}
+		set_state_flag = {
+			flag = ranch_in_construction
+			days = 100
+			value = 1
+		}
+		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
+	}
+
+	add_to_variable = { ranch_construction_que = 1 }
 }
 
 add_lumber_mill_here = {
 	
-	FROM = {
-		add_building_construction = {
-			type = lumber_mill
-			level = 1
-			instant_build = no
-		}
+	ROOT = {
+		simulated_construction = yes
+		add_to_variable = { lumber_mill_deposit_construction = 1 }
 	}
+	
+	if = {
+		limit = {
+			NOT = {
+				has_state_flag = {
+					flag = lumber_mill_in_construction
+					value > 0
+				}
+			}
+		}
+		set_state_flag = {
+			flag = lumber_mill_in_construction
+			days = 100
+			value = 1
+		}
+		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
+	}
+
+	add_to_variable = { lumber_mill_construction_que = 1 }
 }
 
 add_quarry_here = {
 	
-	FROM = {
-		add_building_construction = {
-			type = quarry
-			level = 1
-			instant_build = no
-		}
+	ROOT = {
+		simulated_construction = yes
+		add_to_variable = { quarry_deposit_construction = 1 }
 	}
+	
+	if = {
+		limit = {
+			NOT = {
+				has_state_flag = {
+					flag = quarry_in_construction
+					value > 0
+				}
+			}
+		}
+		set_state_flag = {
+			flag = quarry_in_construction
+			days = 100
+			value = 1
+		}
+		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
+	}
+
+	add_to_variable = { quarry_construction_que = 1 }
 }
 
 add_mine_here = {
 	
-	FROM = {
-		add_building_construction = {
-			type = mine
-			level = 1
-			instant_build = no
-		}
+	ROOT = {
+		simulated_construction = yes
+		add_to_variable = { mine_deposit_construction = 1 }
 	}
+	
+	if = {
+		limit = {
+			NOT = {
+				has_state_flag = {
+					flag = mine_in_construction
+					value > 0
+				}
+			}
+		}
+		set_state_flag = {
+			flag = mine_in_construction
+			days = 100
+			value = 1
+		}
+		add_to_variable = { ROOT.deposit_construction_cost = @deposit_construction_cost }
+	}
+
+	add_to_variable = { mine_construction_que = 1 }
 }
 
 ###    ###  #   # ###    ###   #   #     

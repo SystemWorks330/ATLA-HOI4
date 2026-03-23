@@ -11,7 +11,7 @@ scripted_gui = {
 		context_type = player_context
 		
 		window_name = "research_and_decadence"
-		parent_window_name = research_slots
+		parent_window_token = technology_tab
 		
 		visible = {
 			always = yes
@@ -51,21 +51,11 @@ scripted_gui = {
 			invention_button_click = {
 				ai_will_do = {
 					base = 0
+
 					modifier = {
-						set_temp_variable = {
-							AI_knowledge_threshold_to_open_inventions_tab = 0
-						}
-						add_to_temp_variable = {
-							var = AI_knowledge_threshold_to_open_inventions_tab
-							value = THIS.age_multiplier_for_AI_invention_logic_calculation
-						}
-						multiply_temp_variable = {
-							var = AI_knowledge_threshold_to_open_inventions_tab
-							value = 100
-						}
 						check_variable = { 
 							var = knowledge_variable 
-							value = AI_knowledge_threshold_to_open_inventions_tab
+							value = 100
 							compare = greater_than_or_equals
 						}
 						NOT = {
@@ -761,15 +751,7 @@ scripted_gui = {
 				ai_will_do = { factor = 100 }
 			}
 			natural_philosophy_2_click = {
-				ai_will_do = { 
-					base = 100
-					modifier = {
-						check_variable = {
-							FROM.ration_balance < 0.01	#Leads to farm output boosting technologies, so prioritize if you have food shortages.
-						}
-						factor = 2
-					}
-				} 
+				ai_will_do = { factor = 100 }
 			}
 			statistics_2_click = {
 				ai_will_do = { factor = 100 }
@@ -784,21 +766,7 @@ scripted_gui = {
 				ai_will_do = { factor = 100 }
 			}
 			printing_press_2_click = {
-				ai_will_do = { 
-					base = 100
-					modifier = {
-						check_variable = {THIS.resource@tungsten < 5} #textile
-						add = 20
-					}
-					modifier = {
-						check_variable = {THIS.resource@tungsten < 0}
-						add = 50
-					}
-					modifier = {
-						check_variable = {THIS.resource@tungsten < -5}
-						factor = 3
-					}  
-				}
+				ai_will_do = { factor = 100 }
 			}
 			laws_of_nature_2_click = {
 				ai_will_do = { factor = 100 }
