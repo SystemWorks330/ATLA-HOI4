@@ -1702,6 +1702,14 @@ bitmapfonts = {
 		languages = { "l_japanese" }
 	}
 
+	bitmapfont_override = {
+		name = "tahoma_60"
+		fontfiles = {
+			"gfx/fonts/hoi_mapfont4_russian"
+		}
+		languages = { "l_russian" }
+	}
+
 	bitmapfont = {
 		name = "hoi_30"
 		fontfiles = {
