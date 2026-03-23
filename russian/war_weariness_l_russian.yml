@@ -1,0 +1,53 @@
+﻿l_russian:
+
+war_weariness_topbar:0 "[?war_exhaustion_percentage|0%]"
+war_weariness_diplo_view:0 "[?war_exhaustion_percentage|0%]"
+war_weariness_decision_amount:0 "[?war_exhaustion_percentage|r0%]"
+
+WAR_WEARINESS_TOOLTIP:0 "§YУсталость от войны§! \n§HСейчас зависит от:§! \n\nПолитики и решений: §R[?weekly_accumulated_exhaustion|%%]§! (в неделю: [WeeklyWWC][?war_exhaustion_weekly|%%]§!)  \nОккупированных регионов: §R[?occupation_accumulated_exhaustion|%%]§! (в неделю: [OccupiedWWC][?occupation_war_exhaustion|%%]§!)  \nПавших солдат: §R[?casualty_accumulated_exhaustion|%%]§! (в неделю: [CasualtiesdWWC][?weariness_casualties|%%]§!)  \n\nКоэффициент усталости от войны: [FactorWWC][?modifier@war_weariness_factor|%0]§! \n\n[GetWearinessLevel]"
+WAR_WEARINESS_TOOLTIP_DELAYED:0 "Чем дольше страна находится в состоянии войны, тем сильнее будет усталость от войны. С возвращением мира этот показатель начнет снижаться. \nНекоторые §Hрешения§! и §Hсобытия§! также могут уменьшать это значение.\nЕсли не указано иное, большая часть усталости добавляется §Yежемесячно§!."
+WAR_WEARINESS_TOOLTIP_SHORT:0 "§YУсталость от войны§! \n§HСейчас зависит от:§! \n\nПолитики и решений: §R[?weekly_accumulated_exhaustion|%%]§! (в неделю: [WeeklyWWC][?war_exhaustion_weekly|%%]§!)  \nОккупированных регионов: §R[?occupation_accumulated_exhaustion|%%]§! (в неделю: [OccupiedWWC][?occupation_war_exhaustion|%%]§!)  \nПавших солдат: §R[?casualty_accumulated_exhaustion|%%]§! (в неделю: [CasualtiesdWWC][?weariness_casualties|%%]§!)  \n\nКоэффициент усталости от войны: [FactorWWC][?modifier@war_weariness_factor|%0]§!"
+
+weariness_good:0 "§G"
+weariness_neutral:0 "§Y"
+weariness_bad:0 "§R+"
+weariness_bad_2:0 "§R"
+
+weariness_economy_3:0 "\n    - Сбалансированная экономика: §R+5§!"
+weariness_economy_4:0 "\n    - Военная экономика: §R+15§!"
+weariness_total_mobilised_economy:0 "\n    - Тотальная мобилизация: §R+50§!"
+weariness_family_support_2:0 "\n    - Высокие налоги: §G-5§!"
+weariness_family_support_3:0 "\n    - Средние налоги: §G-10§!"
+weariness_family_support_4:0 "\n    - Низкие налоги: §G-15§!"
+weariness_family_support_5:0 "\n    - Очень низкие налоги: §G-20§!"
+weariness_cruel_supervisor:0 "\n    - Жестокий надсмотрщик: §R+5§!"
+weariness_workers_syndicat:0 "\n    - Рабочий синдикат: §G-5§!"
+weariness_warrior_culture:0 "\n    - Воинская культура: §G-10§!"
+weariness_aggressive_strategist:0 "\n    - Агрессивный стратег: §R+10§!"
+weariness_head_censor:0 "\n    - Главный цензор: §G-5§!"
+weariness_civil_law:0 "\n    - Гражданское право: §G-10§!"
+weariness_alms_and_pacification:0 "\n    - Милостыня и умиротворение: §G-5§!"
+
+weariness_recreation_provider:0 "\n    - Организатор досуга: §G-12§! от §Yоккупации§!"
+weariness_custumary_law:0 "\n    - Обычное право: §G-10§! от §Yоккупации§!"
+weariness_secret_police:0 "\n    - Тайная полиция: §G-10§! от §Yоккупации§!"
+
+
+weariness_line_graph_data_label:0 "[?WAR_WEARINESS_numbers^segment_idx]"
+
+war_weariness_decision_ttp:0 "[GetWearinessLevel]"
+
+weariness_modifiers:0 "§HЭффекты от текущей усталости от войны:§! \n£attack_texticon  Атака дивизий: [?war_weariness_peanalty_half|+%2]  \n£defense_attack_texticon  Защита дивизий: [?war_weariness_peanalty|+%2] \n£speed_texticon  Скорость дивизий: [?mtth:war_weariness_peanalty|+%2] \n£stability_texticon  Стабильность: [?mtth:war_weariness_peanalty_2|+R%2] \n£construction_speed_texticon  Выпуск гражданских мощностей: [?mtth:war_weariness_peanalty|+R%2] \n£factory_output_texticon  Выпуск военных мощностей: [?mtth:war_weariness_peanalty|+R%2] \n£dockyard_output_texticon  Выпуск морских мощностей: [?mtth:war_weariness_peanalty|+R%2]"
+
+#old: weariness_modifiers:0 "§HEffects from our current War Weariness:§! \n£invasion_time_texticon  Invasion Preparation Time: [?mtth:war_weariness_peanalty_2|-%1] \n£defense_attack_texticon  Attack Shield: [?mtth:war_weariness_peanalty|+%2] \n£speed_texticon  Divisions speed: [?mtth:war_weariness_peanalty|+%2] \n£strenght_texticon  Division Strength: [?mtth:war_weariness_peanalty_halfed|+R%1] \n£recovery_texticon  Division Discipline: [?mtth:war_weariness_peanalty|+R%1] \n£stability_texticon  Stability: [?mtth:war_weariness_peanalty|+R%2] \n£construction_speed_texticon  Civilian Capacity Output: [?mtth:war_weariness_peanalty|+R%2] \n£defense_attack_texticon  Division Attack Shield: [?mtth:war_weariness_peanalty|+R%2"
+
+weariness_modifiers_1:0 "§HУсталость от войны I§! \n£invasion_time_texticon  Время подготовки вторжения: §R+5.0%§! \n£speed_texticon  Скорость дивизий: §R-5.00%§! \n$MODIFIER_ARMY_ORG$: §R-5.0%§! \n£recovery_texticon  Дисциплина дивизий: §R-5.0%§! \n£war_support_texticon  Милитаризм: §R-5.00%§! \n£construction_speed_texticon  Выпуск гражданских мощностей: §R-5.00%§! \n£defense_attack_texticon  Защита дивизий: §R-10.00%§!"
+weariness_modifiers_2:0 "§HУсталость от войны II§! \n£invasion_time_texticon  Время подготовки вторжения: §R+10.0%§! \n£speed_texticon  Скорость дивизий: §R-10.00%§! \n$MODIFIER_ARMY_ORG$: §R-10.0%§! \n£recovery_texticon  Дисциплина дивизий: §R-10.0%§! \n£war_support_texticon  Милитаризм: §R-10.00%§! \n£construction_speed_texticon  Выпуск гражданских мощностей: §R-10.00%§! \n£defense_attack_texticon  Защита дивизий: §R-20.00%§!"
+weariness_modifiers_3:0 "§HУсталость от войны III§! \n£invasion_time_texticon  Время подготовки вторжения: §R+15.0%§! \n£speed_texticon  Скорость дивизий: §R-15.00%§! \n$MODIFIER_ARMY_ORG$: §R-15.0%§! \n£recovery_texticon  Дисциплина дивизий: §R-15.0%§! \n£war_support_texticon  Милитаризм: §R-15.00%§! \n£construction_speed_texticon  Выпуск гражданских мощностей: §R-15.00%§! \n£defense_attack_texticon  Защита дивизий: §R-30.00%§!"
+weariness_modifiers_4:0 "§HУсталость от войны IV§! \n£invasion_time_texticon  Время подготовки вторжения: §R+20.0%§! \n£speed_texticon  Скорость дивизий: §R-20.00%§! \n$MODIFIER_ARMY_ORG$: §R-20.0%§! \n£recovery_texticon  Дисциплина дивизий: §R-20.0%§! \n£war_support_texticon  Милитаризм: §R-20.00%§! \n£construction_speed_texticon  Выпуск гражданских мощностей: §R-20.00%§! \n£defense_attack_texticon  Защита дивизий: §R-40.00%§!"
+weariness_modifiers_5:0 "§HУсталость от войны V§! \n£invasion_time_texticon  Время подготовки вторжения: §R+25.0%§! \n£speed_texticon  Скорость дивизий: §R-25.00%§! \n$MODIFIER_ARMY_ORG$: §R-25.0%§! \n£recovery_texticon  Дисциплина дивизий: §R-25.0%§! \n£war_support_texticon  Милитаризм: §R-25.00%§! \n£construction_speed_texticon  Выпуск гражданских мощностей: §R-25.00%§! \n£defense_attack_texticon  Защита дивизий: §R-50.00%§!"
+weariness_modifiers_6:0 "§HУсталость от войны VI§! \n£invasion_time_texticon  Время подготовки вторжения: §R+30.0%§! \n£speed_texticon  Скорость дивизий: §R-30.00%§! \n$MODIFIER_ARMY_ORG$: §R-30.0%§! \n£recovery_texticon  Дисциплина дивизий: §R-30.0%§! \n£war_support_texticon  Милитаризм: §R-30.00%§! \n£construction_speed_texticon  Выпуск гражданских мощностей: §R-30.00%§! \n£defense_attack_texticon  Защита дивизий: §R-60.00%§!"
+weariness_modifiers_7:0 "§HУсталость от войны VII§! \n£invasion_time_texticon  Время подготовки вторжения: §R+35.0%§! \n£speed_texticon  Скорость дивизий: §R-35.00%§! \n$MODIFIER_ARMY_ORG$: §R-35.0%§! \n£recovery_texticon  Дисциплина дивизий: §R-35.0%§! \n£war_support_texticon  Милитаризм: §R-35.00%§! \n£construction_speed_texticon  Выпуск гражданских мощностей: §R-35.00%§! \n£defense_attack_texticon  Защита дивизий: §R-70.00%§!"
+weariness_modifiers_8:0 "§HУсталость от войны VIII§! \n£invasion_time_texticon  Время подготовки вторжения: §R+40.0%§! \n£speed_texticon  Скорость дивизий: §R-40.00%§! \n$MODIFIER_ARMY_ORG$: §R-40.0%§! \n£recovery_texticon  Дисциплина дивизий: §R-40.0%§! \n£war_support_texticon  Милитаризм: §R-40.00%§! \n£construction_speed_texticon  Выпуск гражданских мощностей: §R-40.00%§! \n£defense_attack_texticon  Защита дивизий: §R-80.00%§!"
+weariness_modifiers_9:0 "§HУсталость от войны IX§! \n£invasion_time_texticon  Время подготовки вторжения: §R+45.0%§! \n£speed_texticon  Скорость дивизий: §R-45.00%§! \n$MODIFIER_ARMY_ORG$: §R-45.0%§! \n£recovery_texticon  Дисциплина дивизий: §R-45.0%§! \n£war_support_texticon  Милитаризм: §R-45.00%§! \n£construction_speed_texticon  Выпуск гражданских мощностей: §R-45.00%§! \n£defense_attack_texticon  Защита дивизий: §R-90.00%§!"
+weariness_modifiers_10:0 "§HУсталость от войны X§! \n£invasion_time_texticon  Время подготовки вторжения: §R+50.0%§! \n£speed_texticon  Скорость дивизий: §R-50.00%§! \n$MODIFIER_ARMY_ORG$: §R-50.0%§! \n£recovery_texticon  Дисциплина дивизий: §R-50.0%§! \n£war_support_texticon  Милитаризм: §R-50.00%§! \n£construction_speed_texticon  Выпуск гражданских мощностей: §R-50.00%§! \n£defense_attack_texticon  Защита дивизий: §R-100.00%§!"
