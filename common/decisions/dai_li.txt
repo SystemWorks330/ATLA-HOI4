@@ -939,7 +939,11 @@ EAR_dai_li_category = {
 		available = {
 			any_character = {
 				is_character_slot = minister_of_culture
+<<<<<<< Updated upstream
 				has_trait = cunning_schemer
+=======
+				has_trait = chauvinist
+>>>>>>> Stashed changes
 				is_hired_as_advisor = yes
 			}
 		}

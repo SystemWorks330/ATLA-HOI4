@@ -88,10 +88,26 @@ on_actions = {
 			
 		}
 	}
+<<<<<<< Updated upstream
 	on_yearly = {
 		add_to_variable = {
 			var = global.avatar_age
 			value = 1
+=======
+	
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					check_variable = { global.avatar_age_month_counter < 12 }
+				}
+				add_to_variable = { var = global.avatar_age_month_counter value = 1 }
+			}
+			else = {
+				set_variable = { global.avatar_age_month_counter = 0 }
+				add_to_variable = { var = global.avatar_age value = 1 }
+			}
+>>>>>>> Stashed changes
 		}
 	}
 
@@ -116,6 +132,10 @@ on_actions = {
 			log = "[THIS.GetNameDef] :  [?THIS.resource@food_resource] food build_farm_desire: [?THIS.ai_build_farm_desire]"
 		}
 	}
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 	on_monthly = {
 		effect = {
 			set_variable = { d = 0 }

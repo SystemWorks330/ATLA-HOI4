@@ -880,8 +880,11 @@ NMilitary = {
 	
 	LAND_COMBAT_STR_DICE_SIZE = 2,                 -- nr of damage dice (used by ground to ground)
 	LAND_COMBAT_ORG_DICE_SIZE = 4,                 -- nr of damage dice (used by ground to ground)
+<<<<<<< Updated upstream
 	LAND_COMBAT_STR_ARMOR_ON_SOFT_DICE_SIZE = 2,   -- extra damage dice if our armor outclasses enemy
 	LAND_COMBAT_ORG_ARMOR_ON_SOFT_DICE_SIZE = 6,   -- extra damage dice if our armor outclasses enemy
+=======
+>>>>>>> Stashed changes
 	LAND_AIR_COMBAT_STR_DICE_SIZE = 2,                 -- nr of damage dice (used by air to ground)
 	LAND_AIR_COMBAT_ORG_DICE_SIZE = 5,                 -- nr of damage dice (used by air to ground)
 	LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.005,        -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
@@ -898,7 +901,10 @@ NMilitary = {
 	LAND_COMBAT_FORT_DAMAGE_CHANCE = 5,		-- (was 5) chance to get a hit to damage on forts. (out of 100)
 	ATTRITION_DAMAGE_ORG = 0.05,					   -- damage from attrition to Organisation
 	ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.01,		   -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+<<<<<<< Updated upstream
 	ATTRITION_EQUIPMENT_PER_TYPE_LOSS_CHANCE = 0.01, -- Chance for loosing equipment when suffer attrition. Scaled up the stronger attrition is. Then scaled down by equipment reliability.
+=======
+>>>>>>> Stashed changes
 	ATTRITION_WHILE_MOVING_FACTOR = 1,
 	RELIABILITY_ORG_REGAIN = -0.3,                 -- how much reliability affects org regain
 	RELIABILITY_ORG_MOVING = -1.0,                 -- how much reliability affects org loss on moving
@@ -1628,7 +1634,10 @@ NNavy = {
 	NAVAL_TRANSFER_BASE_SPEED = 10,                                 -- base speed of units on water being transported
 	NAVAL_TRANSFER_BASE_NAVAL_DIST_ADD = 100,						-- Extra cost for naval movement ( compared to land movement ) when deciding what ports to use for a naval transfer
 	NAVAL_TRANSFER_BASE_NAVAL_DIST_MULT = 20,						-- Multiplier for the cost of naval movement ( compared to land movement ) when deciding what ports to use for naval transfer
+<<<<<<< Updated upstream
 	NAVAL_SUPREMACY_CAN_INVADE = -1,								-- required naval supremacy to perform invasions on an area
+=======
+>>>>>>> Stashed changes
 
 	NAVAL_COMBAT_PLANE_MIN_STACKING_PENALTY = 80,						-- How many planes flying in a naval combat before penalties are introduced
 	NAVAL_COMBAT_PLANE_STACKING_PENALTY_EFFECT = 0.005,					-- Each plane above the optimal amount decreases the amount of airplanes being able to takeoff by such %. Subject to diminishing returns
@@ -1871,6 +1880,7 @@ NNavy = {
 		0.0, -- RESERVE_FLEET
 		1.0, -- NAVAL_INVASION_SUPPORT
 	},
+<<<<<<< Updated upstream
 
 	MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
 		0.0, -- HOLD
@@ -1888,6 +1898,8 @@ NNavy = {
 	SUPREMACY_PER_SHIP_PER_MANPOWER = 0.5,							-- supremacy of a ship is calculated using its IC, manpower and a base define
 	SUPREMACY_PER_SHIP_PER_IC = 0.0005,
 	SUPREMACY_PER_SHIP_BASE = 100.0,
+=======
+>>>>>>> Stashed changes
 	
 	DOMINANCE_PER_SHIP_PER_RANGE_NEUTRAL = 2000,					-- ship range where there is no penalty nor bonus to naval dominance, below or above this will be scaled accordingly with penalty or bonus, min value is 0
 	DOMINANCE_PER_SHIP_PER_SPEED_NEUTRAL = 20,						-- ship speed where there is no penalty nor bonus to naval dominance, below or above this will be scaled accordingly with penalty or bonus, min value is 0
@@ -2251,7 +2263,11 @@ NRailwayGun = {
 	OUT_OF_SUPPLY_SPEED = -0.8,						-- Max speed reduction from supply for railway guns
 	BASE_CAPTURE_CHANCE = 0.2,						-- The base chance of railway guns being captured during an overrrun. Will be further modified by the equipment capture chance of the capturing unit.
 	DISTRIBUTION_RAILWAY_GUN_PRESENCE_SCORE = -100,					-- Score for Railway Guns in nearby provs. x3 if on that province. x2 if adjacent. x1 if 2 away.
+<<<<<<< Updated upstream
 DISTRIBUTION_OUR_UNITS_PRESENCE_SCORE = 1,	 					-- Score for our units in province when distributing Railway Guns
+=======
+	DISTRIBUTION_OUR_UNITS_PRESENCE_SCORE = 1,	 					-- Score for our units in province when distributing Railway Guns
+>>>>>>> Stashed changes
 	DISTRIBUTION_FRIENDLY_UNITS_PRESENCE_SCORE = 0,					-- Score for friendly units in province when distributing Railway Guns
 	DISTRIBUTION_HOSTILE_UNITS_PRESENCE_SCORE = -45,				-- Score for hostile units in province when distributing Railway Guns
 	DISTRIBUTION_COMBATS_PRESENCE_SCORE = -15,						-- Score for combats in province when distributing Railway Guns
@@ -2718,8 +2734,11 @@ NAI = {
 	NAVAL_ACCESS_SCORE_PENALTY_PER_EXISTING_ACCESS_AT_WAR = 150,
 	NAVAL_ACCESS_SCORE_PENALTY_PER_EXISTING_ACCESS = 250,
 
+<<<<<<< Updated upstream
 	NAVAL_SUPREMACY_WEIGHT_PER_DIVISION_ON_INVASION_ORDER = 10,	-- adds to supremacy requests for regions with active or pending naval invasions
 
+=======
+>>>>>>> Stashed changes
 	AIR_BASE_ACCESS_SCORE_PENALTY_PER_EXISTING_ACCESS_AT_WAR = 150,
 	AIR_BASE_ACCESS_SCORE_PENALTY_PER_EXISTING_ACCESS = 250,
 
@@ -4520,6 +4539,10 @@ NFactions = {
 	FACTION_INFLUENCE_EXPEDITIONARY_FORCE_RECIEVER_FACTOR = -0.02 , --how much the country's provided expeditionary forces affects its influence
 	FACTION_MANPOWER_GIVE_CONTRIBUTION_SCALAR=0.1,			-- a scalar of how much contribution you get for giving a singular recruitable population to your faction
 	FACTION_MANPOWER_RECIEVE_CONTRIBUTION_SCALAR=0.1,		-- a scalar for how much contribution it takes to get a singular recruitable population
+<<<<<<< Updated upstream
+=======
+	FACTION_INFLUENCE_SCIENTIST_CONTRIBUTION_VALUE = 0.5,				-- how much contribution one scientists gives to you if it is working for somebody else.
+>>>>>>> Stashed changes
 	FACTION_SCIENTIST_CONTRIBUTION_VALUE = 3,				--how much contribution one scientists gives to you if it is working for somebody else.
 	ASSIGN_FACILITY_TO_FACTION_INITIATIVE_COST = 1,		--The initiative cost of assigning a facility to a faction
 	FACTION_ASSIGN_SCIENTIST_COST = 25,						--how much political power it costs to assign a supportive scientist

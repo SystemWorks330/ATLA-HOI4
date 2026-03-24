@@ -130,7 +130,14 @@ spriteTypes = {
 		name = "GFX_report_event_fir_colony_failed"
 		texturefile = "gfx/event_pictures/report_event_fir_colony_failed.dds"
 	}
+<<<<<<< Updated upstream
 
+=======
+	spriteType = {
+		name = "GFX_report_event_clans_awaken"
+		texturefile = "gfx/event_pictures/report_event_clans_awaken.dds"
+	}
+>>>>>>> Stashed changes
 	spriteType = {
 		name = "GFX_report_event_dai_li_proposal"
 		texturefile = "gfx/event_pictures/report_event_dai_li_proposal.dds"
@@ -140,6 +147,13 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_air_genocide.dds"
 	}
 	spriteType = {
+<<<<<<< Updated upstream
+=======
+		name = "GFX_report_event_the_third_option"
+		texturefile = "gfx/event_pictures/report_event_the_third_option.dds"
+	}
+	spriteType = {
+>>>>>>> Stashed changes
 		name = "GFX_report_event_rally_ek"
 		texturefile = "gfx/event_pictures/report_event_rally_ek.dds"
 	}

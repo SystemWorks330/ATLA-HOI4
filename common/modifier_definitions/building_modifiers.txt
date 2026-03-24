@@ -58,6 +58,10 @@ farmer_k = {								#### base farmers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 miller_k = {								#### base millers employed in a building
 	color_type = neutral
@@ -65,6 +69,10 @@ miller_k = {								#### base millers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 fisher_k = {								#### base fishers employed in a building
 	color_type = neutral
@@ -72,6 +80,10 @@ fisher_k = {								#### base fishers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 rancher_k = {								#### base ranchers employed in a building
 	color_type = neutral
@@ -79,6 +91,10 @@ rancher_k = {								#### base ranchers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 lumberjack_k = {							#### base lumber jacks employed in a building
 	color_type = neutral
@@ -86,6 +102,10 @@ lumberjack_k = {							#### base lumber jacks employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 miner_k = {									#### base miners employed in a building
 	color_type = neutral
@@ -93,6 +113,10 @@ miner_k = {									#### base miners employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 weaver_k = {								#### base weavers employed in a building
 	color_type = neutral
@@ -100,6 +124,10 @@ weaver_k = {								#### base weavers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 smith_k = {									#### base smiths employed in a building
 	color_type = neutral
@@ -107,6 +135,10 @@ smith_k = {									#### base smiths employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 smith_fake = {								#### base smiths but with no effect
 	color_type = neutral
@@ -121,6 +153,10 @@ harbour_worker_k = {						#### base harbour workers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 shopkeeper_k = {							#### base shopkeepers employed in a building
 	color_type = neutral
@@ -128,6 +164,10 @@ shopkeeper_k = {							#### base shopkeepers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 craftsman_k = {								#### base craftsman employed in a building
 	color_type = neutral
@@ -135,6 +175,10 @@ craftsman_k = {								#### base craftsman employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 craftsman_fake = {							#### base craftsmen with no effect
 	color_type = neutral
@@ -149,6 +193,10 @@ industrial_worker_k = {						#### base industrial workers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+<<<<<<< Updated upstream
+=======
+	category = state
+>>>>>>> Stashed changes
 }
 
 building_upkeep_cost = {					#### upkeep resource cost of a building

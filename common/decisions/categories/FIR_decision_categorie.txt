@@ -37,9 +37,15 @@ FIR_royal_family_category = {
 
 FIR_clan_category = {
 
+<<<<<<< Updated upstream
 	icon = GFX_decision_category_royal_family
 
 	#picture = GFX_decision_cat_fir_royal_family
+=======
+	icon = GFX_decision_category_fire_clans
+
+	picture = GFX_decision_cat_fire_clans
+>>>>>>> Stashed changes
 
 	visible_when_empty = yes
 
@@ -50,6 +56,7 @@ FIR_clan_category = {
 	visible = {
 		original_tag = FIR
 		NOT = { has_country_flag = hide_country_decisions }
+<<<<<<< Updated upstream
 		always = no
 	}
 
@@ -57,6 +64,10 @@ FIR_clan_category = {
 		base = 200
 	}
 	
+=======
+		has_country_flag = war_clans_deliberate
+	}	
+>>>>>>> Stashed changes
 }
 
 
@@ -199,10 +210,14 @@ FIR_outpost_category = {
 		original_tag = FIR
 		NOT = { has_country_flag = hide_mission_decisions }
 
+<<<<<<< Updated upstream
 		has_country_flag = {
 			flag = outpost_active
 			value < 2
 		}
+=======
+		has_country_flag = outpost_active
+>>>>>>> Stashed changes
 	}
 
 	priority = {
@@ -381,10 +396,14 @@ FIR_army_navy_struggle = {
 	visible = {
 		NOT = { has_country_flag = hide_mission_decisions }
 
+<<<<<<< Updated upstream
 		has_country_flag = {
 			flag = army_navy_struggle_active
 			value < 2
 		}
+=======
+		has_country_flag = army_navy_struggle_active
+>>>>>>> Stashed changes
 	}
 
 	priority = {

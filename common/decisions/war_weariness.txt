@@ -11,6 +11,10 @@ war_weariness_category = {
 			}
 		}
 	}
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 	set_0 = {
 		visible = {
 			is_debug = yes
@@ -37,12 +41,16 @@ war_weariness_category = {
 	rotate_frontlines = {
 
 		available = {
+<<<<<<< Updated upstream
 			meta_trigger = {
 				text = {
 					has_army_manpower = { size < [field_manpower] }
 				}
 				field_manpower = "[?manpower]"
 			}
+=======
+			has_manpower > 0
+>>>>>>> Stashed changes
 		}
 
 		days_remove = 30
@@ -51,7 +59,11 @@ war_weariness_category = {
 		modifier = {
 			army_attack_factor = -0.10
 			army_defence_factor = -0.15
+<<<<<<< Updated upstream
 			land_reinforce_rate =  -0.015
+=======
+			land_reinforce_rate = -0.015
+>>>>>>> Stashed changes
 		}
 
 		remove_effect = {
@@ -74,14 +86,21 @@ war_weariness_category = {
 			modifier = {
 				AND = {
 					has_war = yes
+<<<<<<< Updated upstream
 					check_variable = { casualty_accumulated_exhaustion > 50 }
+=======
+					check_variable = { var = casualty_accumulated_exhaustion value = 50 compare = greater_than }
+>>>>>>> Stashed changes
 				}
 				add = 50
 			}
 		}
 	}
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 	occupation_department = {
 
 		visible = {
@@ -89,26 +108,45 @@ war_weariness_category = {
 		}
 
 		available = {
+<<<<<<< Updated upstream
 			check_variable = { 
 				occupation_accumulated_exhaustion >= 20
 				tooltip = at_least_occupation_war_weariness_tooltip
+=======
+			custom_trigger_tooltip = {
+				tooltip = at_least_occupation_war_weariness_tooltip
+				check_variable = { var = occupation_accumulated_exhaustion value = 20 compare = greater_than_or_equals }
+>>>>>>> Stashed changes
 			}
 		}
 
 		days_remove = -1
+<<<<<<< Updated upstream
 		#days_re_enable = 10
+=======
+>>>>>>> Stashed changes
 
 		modifier = {
 			weekly_occupation_war_weariness = -0.5
 			garrison_factor_modifier = 0.1
 		}
 
+<<<<<<< Updated upstream
 		remove_trigger = {
 			check_variable = { 
 				occupation_accumulated_exhaustion <= 20
 				tooltip = at_most_occupation_war_weariness_tooltip
 			}
 		}
+=======
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = at_most_occupation_war_weariness_tooltip
+				check_variable = { var = occupation_accumulated_exhaustion value = 20 compare = less_than_or_equals }
+			}
+		}
+
+>>>>>>> Stashed changes
 		remove_effect = {
 			add_to_variable = {
 				var = occupation_accumulated_exhaustion
@@ -124,7 +162,11 @@ war_weariness_category = {
 			modifier = {
 				AND = {
 					has_war = yes
+<<<<<<< Updated upstream
 					check_variable = { occupation_accumulated_exhaustion > 20 }
+=======
+					check_variable = { var = occupation_accumulated_exhaustion value = 20 compare = greater_than }
+>>>>>>> Stashed changes
 				}
 				add = 50
 			}
@@ -145,29 +187,51 @@ war_weariness_category = {
 	public_war_propaganda = {
 
 		visible = {
+<<<<<<< Updated upstream
 			
 		}
 		available = {
 			check_variable = {
 				current_authority >= 60
 				tooltip = check_authority_tooltip
+=======
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = check_authority_tooltip
+				check_variable = { var = current_authority value = 60 compare = greater_than_or_equals }
+>>>>>>> Stashed changes
 			}
 		}
 
 		days_remove = -1
+<<<<<<< Updated upstream
 		#days_re_enable = 10
+=======
+>>>>>>> Stashed changes
 
 		modifier = {
 			war_weariness_factor = -0.05
 			income = -0.1
 		}
 
+<<<<<<< Updated upstream
 		remove_trigger = {
 			check_variable = {
 				current_authority <= 60
 				tooltip = check_liberty_tooltip
 			}
 		}
+=======
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = check_liberty_tooltip
+				check_variable = { var = current_authority value = 60 compare = less_than_or_equals }
+			}
+		}
+
+>>>>>>> Stashed changes
 		remove_effect = {
 			add_political_power = -50
 		}
@@ -178,4 +242,8 @@ war_weariness_category = {
 			factor = 50
 		}
 	}
+<<<<<<< Updated upstream
 }
+=======
+}
+>>>>>>> Stashed changes

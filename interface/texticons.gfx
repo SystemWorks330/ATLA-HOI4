@@ -2688,4 +2688,25 @@ spriteTypes = {
 		texturefile = "gfx/texticons/doctrine_mastery_texticon.dds"
 		legacy_lazy_load = no
 	}
+<<<<<<< Updated upstream
+=======
+		spriteType = {
+		name = "GFX_command_power"
+		texturefile = "gfx/texticons/command_power.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_infantry_equipment_text_icon"
+		texturefile = "gfx/texticons/infantry_equipment_text_icon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_icons_mods"
+		texturefile = "gfx/texticons/icons_mods.dds"
+		legacy_lazy_load = no
+		noOfFrames=3
+	}
+>>>>>>> Stashed changes
 }

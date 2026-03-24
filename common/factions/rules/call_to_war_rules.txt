@@ -8,7 +8,10 @@ call_to_war_rule_faction_leader_only = {
 		modifier = { 
 			add = 2
 			is_faction_leader = yes
+<<<<<<< Updated upstream
 			NOT = { has_government = democratic }
+=======
+>>>>>>> Stashed changes
 		}
 	}
 	modifier = {
@@ -25,7 +28,11 @@ call_to_war_rule_major_only = {
 		base = 0
 		modifier = { 
 			add = 2
+<<<<<<< Updated upstream
 			tag = GER 
+=======
+		tag = FIR
+>>>>>>> Stashed changes
 		}
 	}
 	modifier = {
@@ -48,7 +55,10 @@ guarantee_threat_reduction_15 = {
 		base = 0
 		modifier = { 
 			add = 2
+<<<<<<< Updated upstream
 			has_government = democratic
+=======
+>>>>>>> Stashed changes
 		}
 	}
 	modifier = {

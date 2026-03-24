@@ -199,6 +199,39 @@ decryption_modifier_tooltip:0 "£decryption_texticon  §YDecryption§! \nBase va
 spy_modifier:0 "£spy_slots_texticon  [?modifier@operative_slot|+0]"
 spy_modifier_tooltip:0 "£spy_slots_texticon  §YAvailable Spies§! \nSpies: [?modifier@operative_slot|+0]"
 
+<<<<<<< Updated upstream
+=======
+# Tooltip keys
+clan_balance_above_20:0 "Clan balance must be above 20"
+clan_balance_above_30:0 "Clan balance must be above 30"
+clan_balance_above_80:0 "Clan balance must be above 80"
+clan_balance_below_60:0 "Clan balance must be below 60"
+clan_balance_below_70:0 "Clan balance must be below 70"
+clan_loyalist_above_40:0 "Loyalist influence must be above 40"
+clan_reformist_above_40:0 "Reformist influence must be above 40"
+clan_isolationist_above_40:0 "Isolationist influence must be above 40"
+clan_loyalist_dominant_tt:0 "Loyalist influence must be above 55"
+clan_reformist_dominant_tt:0 "Reformist influence must be above 55"
+clan_isolationist_dominant_tt:0 "Isolationist influence must be above 55"
+ 
+clan_loyalist_var_increase_tt:0 "Loyalist influence increases. Other factions weaken."
+clan_reformist_var_increase_tt:0 "Reformist influence increases. Other factions weaken."
+clan_isolationist_var_increase_tt:0 "Isolationist influence increases. Other factions weaken."
+clan_balance_var_decrease_tt:0 "§RClan stability decreases.§! Pushing one faction too hard risks collapse."
+clan_balance_var_increase_tt:0 "§GClan stability increases.§!"
+clan_system_activated_tt:0 "The clan system is now active. Manage faction influence carefully."
+clan_warning_1_tt:0 "§YThe clans grow restless.§! Stability is faltering, act before it is too late."
+clan_warning_2_tt:0 "§RThe clans are on the verge of open conflict.§! Civil war is imminent if nothing is done."
+clan_civil_war_ended_tt:0 "The rebels have been crushed. The dominant faction will now determine the nation's future."
+clan_reunification_loyalist_tt:0 "The Loyalist clans have prevailed. The Fire Nation returns to Sozin's vision, strength, conquest, and fire supremacy."
+clan_reunification_reformist_tt:0 "The Reformist clans have prevailed. The Fire Nation begins to transform, a more measured, sustainable empire emerges."
+clan_reunification_isolationist_tt:0 "The Isolationist clans have prevailed. The Fire Nation turns inward, the wars slow, and the home islands come first."
+clan_loyalist_tournament_tt:0 "The Loyalist champion prevailed. Their prestige grows."
+clan_reformist_tournament_tt:0 "The Reformist champion prevailed. Their prestige grows."
+clan_isolationist_tournament_tt:0 "The Isolationist champion prevailed. Their prestige grows."
+ 
+
+>>>>>>> Stashed changes
 ### Navy
 coordination_text:0 "Coordination Level:"
 discipline_text:0 "Discipline Level:"
@@ -295,8 +328,12 @@ clergy_tooltip_delayed:0 "§LThe Religious institution responsible for the conne
 
 
 state_culture_tooltip:0 "§YState Culture§! \n£fire_texticon Fire Dominance: [?fire_pop|*Y2%] ([?fire_pop_new|%%=]) \n£earth_texticon Earth Dominance: [?earth_pop|*Y2%] ([?earth_pop_new|%%=]) \n£water_texticon Water Dominance: [?water_pop|*Y2%] ([?water_pop_new|%%=]) \n£air_texticon Air Dominance: [?air_pop|*Y2%] ([?air_pop_new|%%=]) \n£pluralist_texticon Pluralist Dominance: [?nonbender_pop|*Y2%] ([?nonbender_pop_new|%%=]) \n\nModified by:\n[]"
+<<<<<<< Updated upstream
 add_cultural_advisor_tooltip:0 "Boost [ROOT.GetElement] [[ROOT.GetElementTextColor]Culture§! in §Y[From.GetName]§!"
 remove_cultural_advisor_tooltip:0 "Stop Culture boosting"
+=======
+add_cultural_advisor_tooltip:0 "Boost £[GetCulturalAdvisorState] [GetElementTextColorState]§Y[GetElementState]§ Culture§! in §Y[This.GetName]§!"
+>>>>>>> Stashed changes
 establishing_a_colony:0 "Is already establishing a colony."
 recolonisation_in_progress:0 "Someone else is already recolonising [FROM.GetName]."
 workless_debuff:0 "Unemployed: "

@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 
 	#   # #  ###  #   #       ##### # #### ###                    
 	#   # # #     #   #         #   # #    #  #        
@@ -10,6 +11,14 @@ template_infantry_high_tier = {
 	role = {high_tier}
 	upgrade_prio = {
 		base = 1
+=======
+template_infantry_high_tier = {
+
+	role = high_tier
+
+	upgrade_prio = {
+		factor = 1
+>>>>>>> Stashed changes
 		modifier = {
 			has_equipment = {
 				support_equipment < 60
@@ -17,9 +26,16 @@ template_infantry_high_tier = {
 			factor = 0
 		}
 	}	
+<<<<<<< Updated upstream
 	infantry_high_tier_1 = {
 		upgrade_prio = {
 			base = 2
+=======
+
+	infantry_high_tier_1 = {
+		upgrade_prio = {
+			factor = 2
+>>>>>>> Stashed changes
 		}
 		target_template = {
 			regiments = {
@@ -40,6 +56,7 @@ template_infantry_high_tier = {
 	
 		upgrade_prio = {
 			factor = 2
+<<<<<<< Updated upstream
 
 			modifier = {
 				factor = 1
@@ -54,12 +71,20 @@ template_infantry_high_tier = {
 			weight = 0.6
 			match_value = 3000.0
 			
+=======
+		}
+		
+		target_template = {
+>>>>>>> Stashed changes
 			regiments = {
 				spearmen = 4
 				pikemen = 2
 				archers = 2
 			}
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 			support = {
 				avatar_engineer = 1
 				scout = 1
@@ -67,6 +92,7 @@ template_infantry_high_tier = {
 				field_commander = 1
 			}
 		}
+<<<<<<< Updated upstream
 		
 		allowed_types = {
 			spearmen
@@ -94,6 +120,20 @@ template_infantry_average_tier = {
 
 	infantry_average_tier_1 = {
 		upgrade_prio = {base = 2}
+=======
+	}
+}
+
+
+template_infantry_average_tier = {
+
+	role = average_tier	
+
+	upgrade_prio = { factor = 2 }
+
+	infantry_average_tier_1 = {
+		upgrade_prio = { factor = 2 }
+>>>>>>> Stashed changes
 		target_template = {
 			regiments = {
 				spearmen = 4
@@ -108,7 +148,11 @@ template_infantry_average_tier = {
 	}
 
 	infantry_average_tier_2 = {
+<<<<<<< Updated upstream
 		upgrade_prio = {base = 2}
+=======
+		upgrade_prio = { factor = 2 }
+>>>>>>> Stashed changes
 		target_template = {
 			regiments = {
 				spearmen = 4
@@ -120,6 +164,7 @@ template_infantry_average_tier = {
 			}
 		}
 	}
+<<<<<<< Updated upstream
 	
 }
 template_infantry_supportless = {
@@ -128,16 +173,35 @@ template_infantry_supportless = {
 	}
 	upgrade_prio = {
 		base = 3
+=======
+}
+
+
+template_infantry_supportless = {
+
+	role = supportless
+	
+	upgrade_prio = {
+		factor = 3
+>>>>>>> Stashed changes
 		modifier = {
 			has_war = yes
 			enemies_strength_ratio > 1.2
 			factor = 2
 		}
 	}
+<<<<<<< Updated upstream
 	supportless_1 = {
 		custom_icon = 36
 		upgrade_prio = {
 			base = 4
+=======
+
+	supportless_1 = {
+		custom_icon = 36
+		upgrade_prio = {
+			factor = 4
+>>>>>>> Stashed changes
 			modifier = {
 				num_of_military_factories < 10
 				factor = 0.25
@@ -155,10 +219,18 @@ template_infantry_supportless = {
 			}
 		}
 	}
+<<<<<<< Updated upstream
 	supportless_2 = {
 		custom_icon = 35
 		upgrade_prio = {
 			base = 4
+=======
+
+	supportless_2 = {
+		custom_icon = 35
+		upgrade_prio = {
+			factor = 4
+>>>>>>> Stashed changes
 			modifier = {
 				num_of_military_factories < 10
 				factor = 0.25
@@ -177,10 +249,18 @@ template_infantry_supportless = {
 			}
 		}
 	}
+<<<<<<< Updated upstream
 	supportless_3 = {
 		custom_icon = 34
 		upgrade_prio = {
 			base = 4
+=======
+
+	supportless_3 = {
+		custom_icon = 34
+		upgrade_prio = {
+			factor = 4
+>>>>>>> Stashed changes
 			modifier = {
 				num_of_military_factories < 10
 				factor = 0.25
@@ -200,10 +280,18 @@ template_infantry_supportless = {
 			}
 		}
 	}
+<<<<<<< Updated upstream
 	supportless_4 = {
 		custom_icon = 28
 		upgrade_prio = {
 			base = 4
+=======
+
+	supportless_4 = {
+		custom_icon = 28
+		upgrade_prio = {
+			factor = 4
+>>>>>>> Stashed changes
 			modifier = {
 				num_of_military_factories < 10
 				factor = 0.25

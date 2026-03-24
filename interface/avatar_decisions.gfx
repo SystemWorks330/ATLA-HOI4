@@ -283,6 +283,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/categories/decision_category_generic.dds"
 	}
 	spriteType = {
+<<<<<<< Updated upstream
+=======
+		name = "GFX_decision_category_refugees"
+		texturefile = "gfx/interface/decisions/categories/decision_category_refugees.dds"
+	}
+	spriteType = {
+>>>>>>> Stashed changes
 		name = "GFX_decision_category_genocide"
 		texturefile = "gfx/interface/decisions/categories/decision_category_genocide.dds"
 	}
@@ -307,6 +314,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/categories/decision_category_research.dds"
 	}
 	spriteType = {
+<<<<<<< Updated upstream
+=======
+		name = "GFX_decision_category_fire_clans"
+		texturefile = "gfx/interface/decisions/categories/decision_category_fire_clans.dds"
+	}
+	spriteType = {
+>>>>>>> Stashed changes
 		name = "GFX_decision_category_conquest"
 		texturefile = "gfx/interface/decisions/categories/decision_category_conquest.dds"
 	}
@@ -367,6 +381,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_air_genocide.dds"
 	}
 	spriteType = {
+<<<<<<< Updated upstream
+=======
+		name = "GFX_decision_cat_fire_clans"
+		texturefile = "gfx/interface/decisions/decision_cat_fire_clans.dds"
+	}
+	spriteType = {
+>>>>>>> Stashed changes
 		name = "GFX_decision_cat_water_raids"
 		texturefile = "gfx/interface/decisions/decision_cat_water_raids.dds"
 	}
@@ -419,6 +440,13 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_ear_defense.dds"
 	}
 	spriteType = {
+<<<<<<< Updated upstream
+=======
+		name = "GFX_decision_cat_refugees"
+		texturefile = "gfx/interface/decisions/decision_cat_refugees.dds"
+	}
+	spriteType = {
+>>>>>>> Stashed changes
 		name = "GFX_decision_cat_troubling_signs"
 		texturefile = "gfx/interface/decisions/decision_cat_troubling_signs.dds"
 	}

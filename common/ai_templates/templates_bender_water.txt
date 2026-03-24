@@ -7,9 +7,13 @@
 
 template_waterbenders = {
 
+<<<<<<< Updated upstream
 	role = {
 		benders_only
 	}
+=======
+	role = benders_only
+>>>>>>> Stashed changes
 	
 	upgrade_prio = {
 		base = 1

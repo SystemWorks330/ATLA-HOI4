@@ -270,6 +270,51 @@ print_money_for_deficit:0 "Mint More Coins"
  godlike_firelord:0 "Godlike Ruler §Y[ROOT.GetLeader]§!"
  godlike_firelord_desc:0 "Our majestic leader [ROOT.GetLeader.GetName] guides our every move with [ROOT.GetLeader.GetHerHis] divine prescience, blessing our nation with great victories. It is clear that the majestic [ROOT.GetLeader.GetName] is the only star shining above our path, a true god. We shall treat [ROOT.GetLeader.GetHerHis] as such."
 
+<<<<<<< Updated upstream
+=======
+
+ FIR_clan_category:0 "The War Clans"
+ FIR_clan_category_desc:0 "The ancient clans of the Fire Nation stir. Balance their competing ambitions or watch the nation fracture from within."
+ 
+ FIR_reinstate_clans_from_roku:0 "The Noble Houses Rise"
+ FIR_reinstate_clans_from_roku_desc:0 "Our reforms have awakened old ambitions. The noble houses long dormant beneath Sozin's iron rule, now demand a seat at the table. The clan system cannot be suppressed any longer. We must manage it, or be consumed by it."
+ 
+ FIR_reinstate_clans_deliberate:0 "Restore the Clan System"
+ FIR_reinstate_clans_deliberate_desc:0 "Before Sozin consolidated power, the Fire Nation was governed by a balance of ancient clans. We choose to restore that system, a gamble that decentralized power will strengthen our nation, if we can keep the factions from one another's throats."
+ 
+ FIR_empower_loyalists:0 "Back the Loyalist Houses"
+ FIR_empower_loyalists_desc:0 "The Loyalist clans uphold Sozin's legacy: conquest, strength, and Fire Nation supremacy. Backing them shifts the balance of power in their favour, but alienates the other factions."
+ 
+ FIR_loyalist_military_purge:0 "Loyalist Military Purge"
+ FIR_loyalist_military_purge_desc:0 "The Loyalists have identified officers they consider reformist sympathisers or isolationist cowards. A purge of the officer corps will entrench Loyalist dominance but the other clans will not forgive this easily."
+ 
+ # Reformist Decisions
+ FIR_empower_reformists:0 "Back the Saowan Clans"
+ FIR_empower_reformists_desc:0 "The Saowan & Reformist Clans believe the Fire Nation must evolve with moderation, diplomacy, and a sustainable empire rather than endless war. Empowering them shifts the balance, but the old guard will not stand idle."
+ 
+ FIR_reformist_council_session:0 "Convene the Reform Council"
+ FIR_reformist_council_session_desc:0 "The Reformist clans such as Saowan call a grand council to codify their vision for the Fire Nation's future. Funding this session gives them enormous legitimacy, but the cost is steep and the Loyalists will see it as a direct challenge."
+ 
+ # Isolationist Decisions
+ FIR_empower_isolationists:0 "Back the Sei-Naka House"
+ FIR_empower_isolationists_desc:0 "The Isolationist clans want to pull the Fire Nation back behind its own borders: end the wars, consolidate the home islands, and let the world burn on its own terms. Their influence grows, but the war faction seethes."
+ 
+ FIR_isolationist_withdrawal_pact:0 "The Withdrawal Pact"
+ FIR_isolationist_withdrawal_pact_desc:0 "The Isolationist clans have drafted a formal pact demanding a gradual withdrawal from the Earth Kingdom colonies. Signing it would cement their dominance but it may cost us everything we have bled for."
+ 
+ # Stabilization Decisions
+ FIR_clan_appeasement:0 "Appease the Clans"
+ FIR_clan_appeasement_desc:0 "The tension between the clans grows dangerous. We can spend resources to buy goodwill across all factions: feasts, honours, and bribes,  and buy ourselves time before the fractures become cracks."
+ 
+ FIR_clan_grand_tournament:0 "The Grand Agni Kai Tournament"
+ FIR_clan_grand_tournament_desc:0 "A grand tournament, clan champions competing before the Fire Lord in honorable combat, has long been the traditional method of resolving inter-clan tensions. It is expensive, but it channels aggression into ritual rather than rebellion."
+ 
+ # Reunification Decision
+ FIR_clan_reunification:0 "Reunify Under One Banner"
+ FIR_clan_reunification_desc:0 "One faction has emerged dominant. The time has come to end the clan system's division and reunify the Fire Nation under a single coherent vision. The dominant clan will set the course of the nation for a generation."
+ 
+ 
+>>>>>>> Stashed changes
  FIR_dragon_category:0 "§mDragons§!"
  FIR_dragon_category_desc:0 "Dragons are the original practitioners of firebending, capable of flight and breathing fire. Although their scales and eggs are highly sought after by enterprising poachers, Dragons are greatly feared and respected for their intellect and Firebending prowess. [BefriendDragonsDecision]"
  dragons_befriended_ttp:0 "\nDragons Befriended: [?dragons_befriended_var|0G]"
@@ -464,7 +509,11 @@ print_money_for_deficit:0 "Mint More Coins"
  war_with_southern_watertribe:0 "War with the Southern Water Tribe"
 
  FIR_clan_category:0 "§tFire Clans§!"
+<<<<<<< Updated upstream
  FIR_clan_category_desc:0 "§YFire Clans§! have always been part of §OFire Nation§! history until now. The Fire Clans should be revived under the condition that they serve a new Fire Lord and if successful, will be given a substantial degree of §1autonomy§!. We must secure the support of these noble clans."
+=======
+ FIR_clan_category_desc:0 "§YFire Clans§! have always been part of §OFire Nation§! history until Sozin's purges. The Fire Clans should be revived under the condition that they serve a new Fire Lord. If we are successful in our coup, we should avoid civil war and provide substantial degree of §1autonomy§! to our friends. We must secure the support of these noble clans."
+>>>>>>> Stashed changes
 
  ### firenation battle
  firenation_battle_category:0 "§eSieges and Battles§!"

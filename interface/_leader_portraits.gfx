@@ -140,6 +140,13 @@ spriteTypes = {
 		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zuko.dds"
 	}
 	spriteType = {
+<<<<<<< Updated upstream
+=======
+		name = "GFX_Portrait_Zuko_old"
+		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zuko_old.dds"
+	}
+	spriteType = {
+>>>>>>> Stashed changes
 		name = "GFX_Portrait_Zuko_alt"
 		texturefile = "gfx/leaders/FIR/Portrait_Firenation_Zuko_alt.dds"
 	}

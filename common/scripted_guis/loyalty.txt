@@ -13,9 +13,12 @@ scripted_gui = {
 			}
 		}
 		
+<<<<<<< Updated upstream
 		triggers = {
 			
 		}
+=======
+>>>>>>> Stashed changes
 
 		properties = {
 

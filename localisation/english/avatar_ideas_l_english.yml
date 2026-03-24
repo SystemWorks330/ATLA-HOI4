@@ -28,6 +28,30 @@
  FIR_cultural_change:0 "Cultural Change"
  FIR_private_investors:0 "Private Investors"
 
+<<<<<<< Updated upstream
+=======
+
+ # Clans
+ FIR_loyalist_purge_idea:0 "Loyalist Officer Purge"
+ FIR_loyalist_purge_idea_desc:0 "The officer corps has been purged of reformist and isolationist sympathisers. The military is firmly in Loyalist hands — but resentment festers in every barracks."
+ 
+ FIR_reformist_council_idea:0 "Reform Council Mandate"
+ FIR_reformist_council_idea_desc:0 "The Reform Council has produced a formal mandate for change. Reformist legitimacy is at its peak — but the Loyalist old guard sharpens its knives."
+ 
+ FIR_isolationist_pact_idea:0 "The Withdrawal Pact"
+ FIR_isolationist_pact_idea_desc:0 "The Withdrawal Pact has been formally signed. The Isolationists hold enormous political capital — but the war faction is furious, and the colonies are uneasy."
+ 
+ FIR_loyalist_reunification_idea:0 "Sozin's Heirs"
+ FIR_loyalist_reunification_idea_desc:0 "The Loyalist clans have reunified the Fire Nation under Sozin's legacy. The nation is hardened for conquest, its officer corps purged of doubt, and its people reminded of their destiny."
+ 
+ FIR_reformist_reunification_idea:0 "The New Fire"
+ FIR_reformist_reunification_idea_desc:0 "The Reformist clans have reshaped the Fire Nation's identity. A more measured, sustainable empire emerges — one that seeks to endure rather than merely to conquer."
+ 
+ FIR_isolationist_reunification_idea:0 "Behind the Walls of Fire"
+ FIR_isolationist_reunification_idea_desc:0 "The Isolationist clans have turned the Fire Nation inward. The home islands are fortified, the wars wound down, and the nation consolidates what it has rather than reaching for more."
+ 
+
+>>>>>>> Stashed changes
  heart_of_the_kingdom_spirit:0 "Heart of the Kingdom"
  heart_of_the_kingdom_spirit_description:0 "§YHeart of the Kingdom§!  \n£population_texticon  Monthly Population: §G+25.0%§! \n£pol_power  Political Power Gain: §G+25%§! \nSurrender Limit: §G+100%§!"
  heart_of_the_kingdom_spirit_delayed:0 "§LNot only is Ba Sing Se the capital of the Earth Kingdom, but it is also the largest city in the world. All power and organisation is centralised here.§!"
