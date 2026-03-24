@@ -7,19 +7,10 @@
 
 template_earthbenders = {
 
-<<<<<<< Updated upstream
-	role = {
-		earthbenders
-		benders_only
-	}
-	upgrade_prio = {
-		base = 1
-=======
 	role = earthbenders
 
 	upgrade_prio = {
 		factor = 1
->>>>>>> Stashed changes
 	}
 
 	earthbender_1 = {
@@ -49,8 +40,4 @@ template_earthbenders = {
 			}
 		}
 	}
-<<<<<<< Updated upstream
-	
-=======
->>>>>>> Stashed changes
 }

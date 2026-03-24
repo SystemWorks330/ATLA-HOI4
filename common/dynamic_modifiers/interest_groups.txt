@@ -72,14 +72,9 @@ clergy_dynamic_modifier = {
 	}
 
 	bender_target = mtth:clergy_bender
-<<<<<<< Updated upstream
-	education_laws_cost_factor = mtth:clergy_law_cost
-}
-=======
 	education_laws_cost_factor =  mtth:clergy_law_cost
 }
 
->>>>>>> Stashed changes
 academics_dynamic_modifier = {
 			
 	enable = { always = yes }

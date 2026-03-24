@@ -15,17 +15,10 @@ on_actions = {
 		effect = {
 			#### tribal unity nwt swt
 			SWT = {
-<<<<<<< Updated upstream
-				add_to_variable = { NWT_unity_support = modifier@monthly_unification }
-				clamp_variable = { var = NWT_unity_support max = NWT_unity_total min = 0 }
-				NWT_recalc_unity_icon_frames = yes
-				NWT_recalc_spirit = yes	
-=======
 				add_to_variable = { SWT_unity_support = modifier@monthly_unification }
 				clamp_variable = { var = SWT_unity_support max = SWT_unity_total min = 0 }
 				SWT_recalc_unity_icon_frames = yes
 				SWT_recalc_spirit = yes	
->>>>>>> Stashed changes
 			}
 		}
 	}

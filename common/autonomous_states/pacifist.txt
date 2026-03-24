@@ -4,11 +4,7 @@ autonomy_state = {
 	
 	is_puppet = yes
 	
-<<<<<<< Updated upstream
-	min_freedom_level = 4.0
-=======
 	min_freedom_level = 0.4
->>>>>>> Stashed changes
 	
 	manpower_influence = 0
 	
@@ -72,11 +68,7 @@ autonomy_state = {
 	default = yes
 	is_puppet = yes
 	
-<<<<<<< Updated upstream
-	min_freedom_level = 1.0
-=======
 	min_freedom_level = 0.4
->>>>>>> Stashed changes
 	
 	peace_conference_initial_freedom = 0.001
 	

@@ -12,11 +12,7 @@ dismissal_rule_world_tension = {
 		base = 0
 		modifier = {  
 			add = 1
-<<<<<<< Updated upstream
-			has_government = democratic
-=======
 			has_government = water_culture
->>>>>>> Stashed changes
 			is_faction_leader = yes 
 		}
 	}
@@ -31,11 +27,7 @@ dismissal_rule_offensive_war = {
 		base = 0
 		modifier = {  
 			add = 1
-<<<<<<< Updated upstream
-			has_government = neutrality
-=======
 			has_government = pluralist_culture
->>>>>>> Stashed changes
 			is_faction_leader = yes 
 		}
 	}
@@ -55,79 +47,16 @@ dismissal_rule_offensive_war = {
 ### ###  ###  ##  ###  ##   ##    #   
 
 
-<<<<<<< Updated upstream
-dismissal_rule_ideology_not_democratic = {
-	type = dismissal_rules
-	visible = { has_government = democratic }
-=======
 dismissal_rule_ideology_not_fire_culture = {
 	type = dismissal_rules
 	visible = { has_government = fire_culture }
->>>>>>> Stashed changes
 	ai_will_do = {
 		base = 0
 	}
 
 	dismiss_member_trigger = {
 		NOT = {
-<<<<<<< Updated upstream
-			has_government = democratic 
-		}
-	}
-}
-
-dismissal_rule_ideology_not_communism = {
-	type = dismissal_rules
-	visible = { has_government = communism }
-	ai_will_do = {
-		base = 0
-	}
-
-	dismiss_member_trigger = {
-		NOT = {
-			has_government = communism 
-		}
-	}
-}
-
-dismissal_rule_ideology_communist = {
-	type = dismissal_rules
-	visible = { NOT = { has_government = communism } }
-	ai_will_do = {
-		base = 0
-	}
-
-	dismiss_member_trigger = {
-		has_government = communism
-	}
-}
-
-dismissal_rule_ideology_fascist = {
-	type = dismissal_rules
-	visible = { NOT = { has_government = fascism } }
-	ai_will_do = {
-		base = 0
-	}
-
-	dismiss_member_trigger = {
-		has_government = fascism
-	}
-}
-
-dismissal_rule_ideology_democratic = {
-	type = dismissal_rules
-	visible = { NOT = { has_government = democratic } }
-	ai_will_do = {
-		base = 0
-	}
-
-	dismiss_member_trigger = {
-		has_government = democratic
-	}
-}
-=======
 			has_government = fire_culture 
 		}
 	}
 }
->>>>>>> Stashed changes

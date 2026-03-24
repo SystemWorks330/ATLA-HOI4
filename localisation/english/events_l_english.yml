@@ -172,8 +172,6 @@
  fir_treaty.9.a:0 "This is madness"
 
 
-<<<<<<< Updated upstream
-=======
  # Events
  fir_clan.1.t:0 "The Clans Awaken"
  fir_clan.1.d:0 "The ancient houses of the Fire Nation, long suppressed under the centralised rule of Fire Lord Sozin and his successors, have begun to reassert themselves. Loyalists such as the Keohso, who remember the glory of conquest, Reformists like the Saowan, who dream of a different Fire Nation, and Isolationists such as the Sei'Naka who wish only to withdraw behind the home islands, all now demand their voices be heard.\n\nThe balance of power between them is fragile. Push too hard in any direction, and the nation may fracture."
@@ -214,7 +212,6 @@
  fir_clan.9.a:0 "Let the healing begin. And the reckoning."
 
 
->>>>>>> Stashed changes
 
  fir_character.azulon.1.t:0 "A Prince is Born"
  fir_character.azulon.1.d:0 "Today is a glorious day for the Fire Nation – especially for the Fire Lord. Today, a new heir to the throne has been born. Sozin presented his son, christened Crown Prince Azulon, to the nation he will one day rule. Many have great expectations for the next Fire Lord, especially during this great age of properity in the Fire Nation. Long live the Fire Lord, and his Crown Prince, Azulon!"
@@ -406,8 +403,6 @@
  fir_genocide_description:0 "The Fire Nation attacks the air temples with [?FIR.genocide_preparation] units each"
  air_gen.8.b:0 "On a second thought..."
  fir_cold_feet_description:0 "Do not genocide Air Nomads - you risk having expansion plans ruined!"
-<<<<<<< Updated upstream
-=======
 
 ### CLANS
  air_gen.7.b:0 "No, there is another way."
@@ -417,7 +412,6 @@
  air_gen.11.a:0 "We honor Roku's legacy. Balance must be maintained."
  air_gen.11.b:0 "The Fire Nation must rediscover itself first."
  
->>>>>>> Stashed changes
  
  #earthkingdom
  earthkingdom.1.t:0 ""

@@ -34,8 +34,6 @@ spriteTypes = {
 		alwaystransparent = yes	
 	}
 	corneredTileSpriteType = {
-<<<<<<< Updated upstream
-=======
 		name = "GFX_tiled_paper_small_bg"
 		size= { x=192 y=192 }
 		textureFile = "gfx//interface//tiles//tiled_paper_bg.dds"
@@ -44,7 +42,6 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"	
 	}
 	corneredTileSpriteType = {
->>>>>>> Stashed changes
 		name = "GFX_tiled_research_bg2"
 		size= { x=96 y=96 }
 		textureFile = "gfx/interface/tiles/tiled_research_bg2.dds"

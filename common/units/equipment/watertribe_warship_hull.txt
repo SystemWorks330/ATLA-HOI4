@@ -6,11 +6,7 @@ equipments = {
 		is_buildable = no
 		type = capital_ship
 		interface_category = interface_category_screen_ships
-<<<<<<< Updated upstream
-		alias = heavy_cruiser
-=======
 #		alias = heavy_cruiser
->>>>>>> Stashed changes
 		priority = 1900
 
 		module_slots = {

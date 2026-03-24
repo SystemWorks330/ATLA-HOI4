@@ -199,8 +199,6 @@ decryption_modifier_tooltip:0 "£decryption_texticon  §YDecryption§! \nBase va
 spy_modifier:0 "£spy_slots_texticon  [?modifier@operative_slot|+0]"
 spy_modifier_tooltip:0 "£spy_slots_texticon  §YAvailable Spies§! \nSpies: [?modifier@operative_slot|+0]"
 
-<<<<<<< Updated upstream
-=======
 # Tooltip keys
 clan_balance_above_20:0 "Clan balance must be above 20"
 clan_balance_above_30:0 "Clan balance must be above 30"
@@ -231,7 +229,6 @@ clan_reformist_tournament_tt:0 "The Reformist champion prevailed. Their prestige
 clan_isolationist_tournament_tt:0 "The Isolationist champion prevailed. Their prestige grows."
  
 
->>>>>>> Stashed changes
 ### Navy
 coordination_text:0 "Coordination Level:"
 discipline_text:0 "Discipline Level:"
@@ -328,12 +325,7 @@ clergy_tooltip_delayed:0 "§LThe Religious institution responsible for the conne
 
 
 state_culture_tooltip:0 "§YState Culture§! \n£fire_texticon Fire Dominance: [?fire_pop|*Y2%] ([?fire_pop_new|%%=]) \n£earth_texticon Earth Dominance: [?earth_pop|*Y2%] ([?earth_pop_new|%%=]) \n£water_texticon Water Dominance: [?water_pop|*Y2%] ([?water_pop_new|%%=]) \n£air_texticon Air Dominance: [?air_pop|*Y2%] ([?air_pop_new|%%=]) \n£pluralist_texticon Pluralist Dominance: [?nonbender_pop|*Y2%] ([?nonbender_pop_new|%%=]) \n\nModified by:\n[]"
-<<<<<<< Updated upstream
-add_cultural_advisor_tooltip:0 "Boost [ROOT.GetElement] [[ROOT.GetElementTextColor]Culture§! in §Y[From.GetName]§!"
-remove_cultural_advisor_tooltip:0 "Stop Culture boosting"
-=======
 add_cultural_advisor_tooltip:0 "Boost £[GetCulturalAdvisorState] [GetElementTextColorState]§Y[GetElementState]§ Culture§! in §Y[This.GetName]§!"
->>>>>>> Stashed changes
 establishing_a_colony:0 "Is already establishing a colony."
 recolonisation_in_progress:0 "Someone else is already recolonising [FROM.GetName]."
 workless_debuff:0 "Unemployed: "

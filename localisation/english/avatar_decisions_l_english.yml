@@ -270,8 +270,6 @@ print_money_for_deficit:0 "Mint More Coins"
  godlike_firelord:0 "Godlike Ruler §Y[ROOT.GetLeader]§!"
  godlike_firelord_desc:0 "Our majestic leader [ROOT.GetLeader.GetName] guides our every move with [ROOT.GetLeader.GetHerHis] divine prescience, blessing our nation with great victories. It is clear that the majestic [ROOT.GetLeader.GetName] is the only star shining above our path, a true god. We shall treat [ROOT.GetLeader.GetHerHis] as such."
 
-<<<<<<< Updated upstream
-=======
 
  FIR_clan_category:0 "The War Clans"
  FIR_clan_category_desc:0 "The ancient clans of the Fire Nation stir. Balance their competing ambitions or watch the nation fracture from within."
@@ -314,7 +312,6 @@ print_money_for_deficit:0 "Mint More Coins"
  FIR_clan_reunification_desc:0 "One faction has emerged dominant. The time has come to end the clan system's division and reunify the Fire Nation under a single coherent vision. The dominant clan will set the course of the nation for a generation."
  
  
->>>>>>> Stashed changes
  FIR_dragon_category:0 "§mDragons§!"
  FIR_dragon_category_desc:0 "Dragons are the original practitioners of firebending, capable of flight and breathing fire. Although their scales and eggs are highly sought after by enterprising poachers, Dragons are greatly feared and respected for their intellect and Firebending prowess. [BefriendDragonsDecision]"
  dragons_befriended_ttp:0 "\nDragons Befriended: [?dragons_befriended_var|0G]"
@@ -509,11 +506,7 @@ print_money_for_deficit:0 "Mint More Coins"
  war_with_southern_watertribe:0 "War with the Southern Water Tribe"
 
  FIR_clan_category:0 "§tFire Clans§!"
-<<<<<<< Updated upstream
- FIR_clan_category_desc:0 "§YFire Clans§! have always been part of §OFire Nation§! history until now. The Fire Clans should be revived under the condition that they serve a new Fire Lord and if successful, will be given a substantial degree of §1autonomy§!. We must secure the support of these noble clans."
-=======
  FIR_clan_category_desc:0 "§YFire Clans§! have always been part of §OFire Nation§! history until Sozin's purges. The Fire Clans should be revived under the condition that they serve a new Fire Lord. If we are successful in our coup, we should avoid civil war and provide substantial degree of §1autonomy§! to our friends. We must secure the support of these noble clans."
->>>>>>> Stashed changes
 
  ### firenation battle
  firenation_battle_category:0 "§eSieges and Battles§!"

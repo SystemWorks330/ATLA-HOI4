@@ -1134,17 +1134,9 @@ country_event = { # Yes
 			}
 		}
 	}
-<<<<<<< Updated upstream
-	option = { # No
-		name = air_gen.7.b
-
-		activate_decision = regret_letting_roku_die
-
-=======
 	option = { # No - opens follow up
 		name = air_gen.7.b
 		country_event = { id = air_gen.11 days = 1 }
->>>>>>> Stashed changes
 		ai_chance = {
 			base = 0
 			modifier = {
@@ -1166,8 +1158,6 @@ country_event = { # Yes
 				}
 			}
 		}
-<<<<<<< Updated upstream
-=======
 
 	}
 }
@@ -1197,7 +1187,6 @@ country_event = {
 		name = air_gen.11.b
 		set_country_flag = war_clans_deliberate
 		ai_chance = { base = 0 }
->>>>>>> Stashed changes
 	}
 }
 

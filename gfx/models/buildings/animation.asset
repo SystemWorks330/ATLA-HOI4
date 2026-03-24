@@ -54,8 +54,6 @@ animation = {
 	file = "floating_harbor_idle.anim"
 }
 
-<<<<<<< Updated upstream
-=======
 animation = {
 	name = "stronghold_network_idle_animation"
 	file = "stronghold_network_idle.anim"
@@ -83,7 +81,6 @@ animation = {
 	name = "JAP_anti_tank_type_97_attack_animation"
 	file = "JAP_anti_tank_type_97_attack.anim"
 }
->>>>>>> Stashed changes
 
 
 

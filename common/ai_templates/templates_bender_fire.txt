@@ -1,28 +1,9 @@
-<<<<<<< Updated upstream
-
-	###  #### #   # ###  #### ###    ###                               
-	#  # #    ##  # #  # #    #  #  #                       
-	###  ###  # # # #  # ###  ###    ##                            
-	#  # #    #  ## #  # #    #  #     #                     
-	###  #### #   # ###  #### #   # ###                                 
-
-template_firebenders = {
-
-	role = {
-		firebenders
-		benders_only
-	}
-	
-	upgrade_prio = {
-		base = 1
-=======
 template_firebenders = {
 
 	role = firebenders
 	
 	upgrade_prio = {
 		factor = 1
->>>>>>> Stashed changes
 	}
 	
 	firebender_1 = {
@@ -50,30 +31,6 @@ template_firebenders = {
 			}
 		}
 	}
-<<<<<<< Updated upstream
-	
-}
-
-
-	#   #  ###  ###   # #   # ####  ###                         
-	## ## #   # #  #  # ##  # #    #                        
-	# # # ##### ###   # # # # ###   ##                             
-	#   # #   # #  #  # #  ## #       #                    
-	#   # #   # #   # # #   # #### ###                           
-
-
-
-template_firebender_marines = {
-
-	role = {
-		firebenders
-		marines
-		combined_arms
-	}
-	
-	upgrade_prio = {
-		base = 1
-=======
 }
 
 
@@ -83,7 +40,6 @@ template_firebender_marines = {
 	
 	upgrade_prio = {
 		factor = 1
->>>>>>> Stashed changes
 	}
 	
 	firebender_marines = {
@@ -101,28 +57,6 @@ template_firebender_marines = {
 			}
 		}
 	}
-<<<<<<< Updated upstream
-	
-}
-
-
-	 ###  ###  #   # ###  # #   # #### ###         ###  ###   #   #  ### 
-	#    #   # ## ## #  # # ##  # #    #  #       #   # #  #  ## ## #    
-	#    #   # # # # ###  # # # # ###  #  #  ###  ##### ###   # # #  ##  
-	#    #   # #   # #  # # #  ## #    #  #       #   # #  #  #   #    # 
-	 ###  ###  #   # ###  # #   # #### ###        #   # #   # #   # ###  
-
-
-template_firebender_offensive = {
-
-	role = {
-		firebenders
-		combined_arms
-	}
-	
-	upgrade_prio = {
-		base = 1
-=======
 }
 
 
@@ -132,7 +66,6 @@ template_firebender_offensive = {
 	
 	upgrade_prio = {
 		factor = 1
->>>>>>> Stashed changes
 	}
 	
 	firebender_offensive = {
@@ -151,8 +84,4 @@ template_firebender_offensive = {
 			}
 		}
 	}
-<<<<<<< Updated upstream
-	
-=======
->>>>>>> Stashed changes
 }

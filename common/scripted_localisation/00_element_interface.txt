@@ -146,8 +146,6 @@ defined_text = {
 	
 }
 
-<<<<<<< Updated upstream
-=======
 # State-scoped versions for use in state view tooltips
 defined_text = {
 	name = GetCulturalAdvisorState
@@ -251,7 +249,6 @@ defined_text = {
 	}
 }
 
->>>>>>> Stashed changes
 defined_text = {
 	name = GetVictoryCondition
 	text = {
@@ -260,8 +257,4 @@ defined_text = {
 		}
 		localization_key = get_victory_condition
 	}
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes

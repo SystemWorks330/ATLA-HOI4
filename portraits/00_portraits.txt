@@ -35,13 +35,6 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
-<<<<<<< Updated upstream
-			"GFX_Portrait_Earthkingdom_Generic_15"
-			"GFX_Portrait_Earthkingdom_Generic_16"
-			"GFX_Portrait_Earthkingdom_Generic_17"
-			"GFX_Portrait_Earthkingdom_Generic_18"
-=======
->>>>>>> Stashed changes
 		}
 	}
 	
@@ -61,13 +54,6 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
-<<<<<<< Updated upstream
-			"GFX_Portrait_Earthkingdom_Generic_15"
-			"GFX_Portrait_Earthkingdom_Generic_16"
-			"GFX_Portrait_Earthkingdom_Generic_17"
-			"GFX_Portrait_Earthkingdom_Generic_18"
-=======
->>>>>>> Stashed changes
 		}
 	}
 
@@ -91,13 +77,6 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
-<<<<<<< Updated upstream
-			"GFX_Portrait_Earthkingdom_Generic_15"
-			"GFX_Portrait_Earthkingdom_Generic_16"
-			"GFX_Portrait_Earthkingdom_Generic_17"
-			"GFX_Portrait_Earthkingdom_Generic_18"
-=======
->>>>>>> Stashed changes
 		}
 	}
 	
@@ -117,13 +96,6 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
-<<<<<<< Updated upstream
-			"GFX_Portrait_Earthkingdom_Generic_15"
-			"GFX_Portrait_Earthkingdom_Generic_16"
-			"GFX_Portrait_Earthkingdom_Generic_17"
-			"GFX_Portrait_Earthkingdom_Generic_18"
-=======
->>>>>>> Stashed changes
 		}
 	}
 
@@ -147,13 +119,6 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
-<<<<<<< Updated upstream
-			"GFX_Portrait_Earthkingdom_Generic_15"
-			"GFX_Portrait_Earthkingdom_Generic_16"
-			"GFX_Portrait_Earthkingdom_Generic_17"
-			"GFX_Portrait_Earthkingdom_Generic_18"
-=======
->>>>>>> Stashed changes
 		}
 	}
 	
@@ -173,13 +138,6 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
-<<<<<<< Updated upstream
-			"GFX_Portrait_Earthkingdom_Generic_15"
-			"GFX_Portrait_Earthkingdom_Generic_16"
-			"GFX_Portrait_Earthkingdom_Generic_17"
-			"GFX_Portrait_Earthkingdom_Generic_18"
-=======
->>>>>>> Stashed changes
 		}
 	}
 
@@ -282,13 +240,6 @@ EAR = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
-<<<<<<< Updated upstream
-			"GFX_Portrait_Earthkingdom_Generic_15"
-			"GFX_Portrait_Earthkingdom_Generic_16"
-			"GFX_Portrait_Earthkingdom_Generic_17"
-			"GFX_Portrait_Earthkingdom_Generic_18"
-=======
->>>>>>> Stashed changes
 		}
 	}
 	
@@ -308,13 +259,6 @@ EAR = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
-<<<<<<< Updated upstream
-			"GFX_Portrait_Earthkingdom_Generic_15"
-			"GFX_Portrait_Earthkingdom_Generic_16"
-			"GFX_Portrait_Earthkingdom_Generic_17"
-			"GFX_Portrait_Earthkingdom_Generic_18"
-=======
->>>>>>> Stashed changes
 		}
 	}
 
@@ -348,13 +292,6 @@ EAR_united = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
-<<<<<<< Updated upstream
-			"GFX_Portrait_Earthkingdom_Generic_15"
-			"GFX_Portrait_Earthkingdom_Generic_16"
-			"GFX_Portrait_Earthkingdom_Generic_17"
-			"GFX_Portrait_Earthkingdom_Generic_18"
-=======
->>>>>>> Stashed changes
 		}
 	}
 	
@@ -374,13 +311,6 @@ EAR_united = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
-<<<<<<< Updated upstream
-			"GFX_Portrait_Earthkingdom_Generic_15"
-			"GFX_Portrait_Earthkingdom_Generic_16"
-			"GFX_Portrait_Earthkingdom_Generic_17"
-			"GFX_Portrait_Earthkingdom_Generic_18"
-=======
->>>>>>> Stashed changes
 		}
 	}
 

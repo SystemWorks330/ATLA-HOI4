@@ -2688,8 +2688,6 @@ spriteTypes = {
 		texturefile = "gfx/texticons/doctrine_mastery_texticon.dds"
 		legacy_lazy_load = no
 	}
-<<<<<<< Updated upstream
-=======
 		spriteType = {
 		name = "GFX_command_power"
 		texturefile = "gfx/texticons/command_power.dds"
@@ -2708,5 +2706,4 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames=3
 	}
->>>>>>> Stashed changes
 }

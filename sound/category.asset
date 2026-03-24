@@ -75,13 +75,10 @@ category = {
 	alert_doctrine_unlock_sound
 	alert_officer_corps_sound
 	alert_losing_trains_sound
-<<<<<<< Updated upstream
-=======
 	alert_industrial_org_sizeup_sound
 	alert_out_of_fuel_sound
 	alert_lack_of_power_sound
 	alert_faction_can_select_goal_sound
->>>>>>> Stashed changes
 
 	######## INGAME ALERT - sidebar
 	# important and less so by type (naval/air/land)
@@ -124,10 +121,6 @@ category = {
 	order_invalid_effect
 	orders_disband
 	order_convoy_transport
-<<<<<<< Updated upstream
-
-	###### OTHER
-=======
 	
 	### WOTP
 	USA_carrier_0_entity
@@ -159,7 +152,6 @@ category = {
 
 	###### OTHER
 	explosion_big
->>>>>>> Stashed changes
 	nuke
 	building_repaired
 	building_collateral
@@ -201,21 +193,6 @@ category = {
 category = {
  name = "Battle"
  soundeffects = {
-<<<<<<< Updated upstream
-	nuke_big_light_flash
-	nuke_big_explosion_and_fire
-	super_railway_gun
-	flamethrower_start
-	flamethrower_main
-	flamethrower_end
-	helicopter_start
-	helicopter_loop
-	super_heavy_gun
-	land_cruiser_idle_engine_loop
-	land_cruiser_moving_engine_loop
-	land_cruiser_moving_treads_loop
-	landcruiser_canon_firing
-=======
 	flamethrower_start
 	flamethrower_end
 	flamethrower_main
@@ -239,15 +216,11 @@ category = {
 	sonic_boom_initial
 	supersonic_jet_fly
 
->>>>>>> Stashed changes
 	mechanized_units_mg_fire
 	infantry_rifle_attack
 	infantry_rifle_cartridge
 	infantry_mg_attack
-<<<<<<< Updated upstream
-=======
 	infantry_mg_attack_long
->>>>>>> Stashed changes
 	infantry_mg_support_attack
 	artillery_unit_fire_01
 	tank_engine_light_move
@@ -484,14 +457,11 @@ category = {
 	cryptology_the_bombe_timer
 	operative_event_close
 
-<<<<<<< Updated upstream
-=======
 	sfx_ui_sd_module_turret
 	sfx_ui_sd_module_sonar
  	sfx_ui_sd_module_default
  	sfx_ui_sd_module_engine
 
->>>>>>> Stashed changes
 	ui_doctrine_tab_air
 	ui_doctrine_tab_land
 	ui_doctrine_tab_naval
@@ -513,10 +483,7 @@ category = {
 	ui_mapmode_strategic_navy
 	ui_mapmode_supply
 	ui_mapmode_terrain
-<<<<<<< Updated upstream
-=======
 	ui_mapmode_raids
->>>>>>> Stashed changes
 
 	ui_research_tab_air
 	ui_research_tab_armor
@@ -582,11 +549,7 @@ category = {
 	ui_scorched_earth
 	ui_delivery_completed
 	ui_insufficient_delivery
-<<<<<<< Updated upstream
-		
-=======
 
->>>>>>> Stashed changes
  }
 
  compressor =
@@ -601,26 +564,6 @@ category = {
  }
 }
 
-<<<<<<< Updated upstream
-category = {
- name = "nonControllableEntities"
- soundeffects = {
-
-
-	GER_train_equipment_3
- 	}
-}
-
-
-category = {
- name = "nonControllableEntities"
- soundeffects = {
-
- 	}
-}
-
-=======
->>>>>>> Stashed changes
 category = {
  name = "Atmosphere"
  soundeffects = {

@@ -1,12 +1,6 @@
 
 template_garrisons = {
-<<<<<<< Updated upstream
-	role = {
-		garrison
-	}
-=======
 	role = garrison
->>>>>>> Stashed changes
 	
 	upgrade_prio = {
 		factor = 2

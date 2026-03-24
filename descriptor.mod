@@ -69,5 +69,5 @@ tags={
 	"Utilities"
 }
 picture="thumbnail.png"
-supported_version="1.17.*"
-remote_file_id="1508151299"
+supported_version="1.17.3"
+remote_file_id="3666289956"

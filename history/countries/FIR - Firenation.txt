@@ -211,10 +211,6 @@ if = {
 		}
 	}
 
-<<<<<<< Updated upstream
-}
-
-=======
 	create_equipment_variant = {
 		name = "Invasion Class"
 		type = firenation_frigate_hull_1
@@ -231,7 +227,6 @@ if = {
 
 
 
->>>>>>> Stashed changes
 bender_conscription_effect = yes
 factory_output_calc = yes
 throughput_variable_calc = yes

@@ -913,11 +913,7 @@ earth_military_buildup_category = {
 						state_population > 5000
 					}
 				}
-<<<<<<< Updated upstream
-				add_to_variable { local_migrant_pool = -400 }
-=======
 				add_to_variable = { local_migrant_pool = -400 }
->>>>>>> Stashed changes
 				#add_manpower = -400
 			}
 			clr_country_flag = military_investments

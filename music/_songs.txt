@@ -449,11 +449,7 @@ music = {
 	chance = {
 		modifier = {
 			factor = 4
-<<<<<<< Updated upstream
-			tag = earth_nation
-=======
 			tag = EAR
->>>>>>> Stashed changes
 			has_war = no
 		}		
 	}	
