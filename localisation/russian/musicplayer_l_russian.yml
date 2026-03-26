@@ -9,6 +9,7 @@
  MUSICPLAYER_SHUFFLE_USER_FUNCTION:0 "Взвешенное перемешивание"
  MUSICPLAYER_TIME_MIN_SEC:1 "$MIN$:$SEC$"
  MUSICPLAYER_OPEN_PLAYER:0 "Открыть музыкальный плеер"
+ MUSICPLAYER_CLOSE_PLAYER:0 "Закрыть музыкальный плеер"
  MUSICPLAYER_TOGGLE_CONTROLLER:0 "Переключить музыкальную панель"
  MUSICPLAYER_PLAY_TRACK:0 "Воспроизвести трек"
  MUSICPLAYER_DISABLE_TRACK:0 "Отключить трек"
