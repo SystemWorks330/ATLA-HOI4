@@ -1,6 +1,6 @@
 characters={
 	NIX_paiwei={
-		name="Pai-Wei"
+		name=NIX_paiwei
 		portraits={
 			civilian={
 				large="gfx/leaders/NIX/Portrait_Hu-Xin_Pai-Wei.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	NIX_generic={
-		name="Generic"
+		name=NIX_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/NIX/Portrait_Hu-Xin_nationalism.dds"

@@ -1,7 +1,7 @@
 characters={
 
 	SAT_monk_pasang={
-		name="Pasang"
+		name=SAT_pasang
 		portraits={
 			civilian={
 			 large = "GFX_Portrait_Southernairtemple_Pasang"
@@ -142,7 +142,7 @@ characters={
 	}
 	
 	SAT_extinct_nation={
-		name= "Extinct Nation"
+		name=SAT_extinct_nation
 		portraits={
 			civilian={
 				large="gfx/leaders/SAT/Portrait_Southernairtemple_Extinct.dds"
@@ -159,7 +159,7 @@ characters={
 		}
 	}
 	SAT_council = {
-		name = "Council of Elders"
+		name = SAT_council
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/SAT/Portrait_Southernairtemple_Council.dds"
@@ -175,7 +175,7 @@ characters={
 
 
 	SAT_generic={
-		name="Generic"
+		name=SAT_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/SAT/Portrait_Southernairtemple_colonialism.dds"

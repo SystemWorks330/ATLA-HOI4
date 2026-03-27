@@ -1,6 +1,6 @@
 characters = {
 	EAT_sister_lio = {
-		name = "Iio"
+		name = EAT_sister_lio
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAT/Portrait_Easternairtemple_Lio.dds"
@@ -31,14 +31,14 @@ characters = {
 		}
 	}
 	EAT_extinct_nation = {
-		name = "Extinct Nation"
+		name = EAT_extinct_nation
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAT/Portrait_Easternairtemple_Extinct.dds"
 			}
 		}
 		country_leader = {
-			desc = "An Extinct Nation"
+			desc = EAT_extinct_nation_desc
 			ideology = absolute_pacifism
 			expire = "120.1.1"
 			traits = {
@@ -48,7 +48,7 @@ characters = {
 		}
 	}
 	EAT_generic = {
-		name = "Generic"
+		name = EAT_generic
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAT/Portrait_Easternairtemple_colonialism.dds"
@@ -331,7 +331,7 @@ characters = {
 		}
 	}
 	EAT_hisha = {
-		name = "Hisha"
+		name = EAT_hisha
 		portraits = {
 			army = {
 				large = "gfx/leaders/EAT/Portrait_airnomad_generic_6.dds"

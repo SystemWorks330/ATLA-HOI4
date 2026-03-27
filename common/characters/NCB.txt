@@ -1,6 +1,6 @@
 characters={
 	NCB_hotun={
-		name="Ho-Tun"
+		name=NCB_hotun
 		portraits={
 			civilian={
 				large="gfx/leaders/NCB/Portrait_North-Chameleon-Bay_Ho-Tun.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	NCB_generic={
-		name="Generic"
+		name=NCB_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/NCB/Portrait_North_Chameleon_Bay_colonialism.dds"

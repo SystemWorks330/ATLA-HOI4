@@ -1,6 +1,6 @@
 characters={
 	FMB_haru={
-		name="Haru"
+		name=FMB_haru
 		portraits={
 			civilian={
 				large="gfx/leaders/FMB/Portrait_Full-Moon-Bay_Haru.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	FMB_generic={
-		name="Generic"
+		name=FMB_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/FMB/Portrait_Full_Moon_Bay_nationalism.dds"

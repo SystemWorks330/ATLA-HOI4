@@ -1,6 +1,6 @@
 characters={
 	NOW_fong={
-		name="Fong"
+		name=NOW_fong
 		portraits={
 			civilian={
 				large="gfx/leaders/NOW/Portrait_Northwest_Fong.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	NOW_generic={
-		name="Generic"
+		name=NOW_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/NOW/Portrait_Northwest_nationalism.dds"

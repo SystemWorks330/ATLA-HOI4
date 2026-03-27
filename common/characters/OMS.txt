@@ -1,6 +1,6 @@
 characters={
 	OMS_iuri={
-		name="Tu"
+		name=OMS_tu
 		portraits={
 			civilian={
 				large="gfx/leaders/OMS/Portrait_Omashu_mad_king.dds"
@@ -15,7 +15,7 @@ characters={
 		}
 	}
 	OMS_bumi={
-		name="Bumi"
+		name=OMS_bumi
 		portraits={
 			civilian={
 				large="gfx/leaders/OMS/Portrait_Omashu_Young_Bumi.dds"
@@ -30,7 +30,7 @@ characters={
 		}
 	}
 	OMS_generic={
-		name="Generic"
+		name=OMS_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/OMS/Portrait_Omashu_colonialism.dds"
@@ -63,7 +63,7 @@ characters={
 	}
 
 	EAR_cabagge_merchant = {
-		name="Cabbage Merchant"
+		name=EAR_cabagge_merchant
 		portraits={
 			civilian={
 				large="gfx/leaders/OMS/Portrait_Omashu_Young_Bumi.dds"
