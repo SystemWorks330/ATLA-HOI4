@@ -333,7 +333,7 @@ characters = {
 			desc = "Dai Li Government"
 			ideology = earth_despotism
 			traits = {
-				surveillance_state
+				shadow_king
 			}
 			expire = "130.1.1"
 			id = -1

@@ -49,34 +49,69 @@ scripted_gui = {
 
 		effects = {
 			logistics_and_orga_spirit_click = {
-				logistics_and_orga_spirit_add_1 = yes
+				army_experience = -50
+				add_to_variable = { logistic_spirit_var = 1 }
+				clamp_variable = {
+					var = logistic_spirit_var
+					max = 100
+				}
 			}
 			logistics_and_orga_spirit_shift_click = {
-				logistics_and_orga_spirit_add_10 = yes
+				army_experience = -500
+				add_to_variable = { logistic_spirit_var = 10 }
+				clamp_variable = {
+					var = logistic_spirit_var
+					max = 100
+				}
 			}
 
 			wages_and_professionalism_spirit_click = {
-				wages_and_professionalism_spirit_add_1 = yes
+				army_experience = -50
+				add_to_variable = { quality_spirit_var = 1 }
+				clamp_variable = {
+					var = quality_spirit_var
+					max = 100
+				}
 			}
 			wages_and_professionalism_spirit_shift_click = {
-				wages_and_professionalism_spirit_add_10 = yes
+				army_experience = -500
+				add_to_variable = { quality_spirit_var = 10 }
+				clamp_variable = {
+					var = quality_spirit_var
+					max = 100
+				}
 			}
 
 			unit_leader_spirit_click = {
-				unit_leader_spirit_add_1 = yes
+				army_experience = -50
+				add_to_variable = { unit_leader_spirit_var = 1 }
+				clamp_variable = {
+					var = unit_leader_spirit_var
+					max = 100
+				}
 			}
 			unit_leader_spirit_shift_click = {
-				unit_leader_spirit_add_10 = yes
+				army_experience = -500
+				add_to_variable = { unit_leader_spirit_var = 10 }
+				clamp_variable = {
+					var = unit_leader_spirit_var
+					max = 100
+				}
 			}
+
 		}
 
 		triggers = {
 			logistics_and_orga_spirit_click_enabled = {
+				has_army_experience > 49
 				check_variable = {
-					var = army_experience
-					value = 50
-					compare = greater_than_or_equals
+					var = logistic_spirit_var
+					value = 100
+					compare = less_than
 				}
+			}
+			logistics_and_orga_spirit_shift_click_enabled = {
+				has_army_experience > 499
 				check_variable = {
 					var = logistic_spirit_var
 					value = 100
@@ -84,11 +119,15 @@ scripted_gui = {
 				}
 			}
 			wages_and_professionalism_spirit_click_enabled = {
+				has_army_experience > 49
 				check_variable = {
-					var = army_experience
-					value = 50
-					compare = greater_than_or_equals
+					var = quality_spirit_var
+					value = 100
+					compare = less_than
 				}
+			}
+			wages_and_professionalism_spirit_shift_click_enabled = {
+				has_army_experience > 499
 				check_variable = {
 					var = quality_spirit_var
 					value = 100
@@ -96,11 +135,15 @@ scripted_gui = {
 				}
 			}
 			unit_leader_spirit_click_enabled = {
+				has_army_experience > 49
 				check_variable = {
-					var = army_experience
-					value = 50
-					compare = greater_than_or_equals
+					var = unit_leader_spirit_var
+					value = 100
+					compare = less_than
 				}
+			}
+			unit_leader_spirit_shift_click_enabled = {
+				has_army_experience > 499
 				check_variable = {
 					var = unit_leader_spirit_var
 					value = 100

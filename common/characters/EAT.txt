@@ -34,7 +34,7 @@ characters = {
 		name = "Extinct Nation"
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/EAT/Portrait_Easternairtemple_extinct.dds"
+				large = "gfx/leaders/EAT/Portrait_Easternairtemple_Extinct.dds"
 			}
 		}
 		country_leader = {

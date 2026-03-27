@@ -2967,7 +2967,7 @@ resource_state_calc = {
 		var = luxury_store_luxury_goods_gain
 		min = 0
 	}
-	multiply_variable = { localuxury_store_luxury_goods_gainl_resource = local_resource_factor }
+	multiply_variable = { luxury_store_luxury_goods_gain = local_resource_factor }
 	multiply_variable = { luxury_store_luxury_goods_gain = controller:luxury_goods_throughput }
 
 

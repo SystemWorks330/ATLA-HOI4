@@ -2,5 +2,16 @@
     "cwtools.localisation.languages": [
         "English",
         "Russian"
-    ]
+    ],
+    "files.associations": {
+        "**/*.txt": "hoi4",
+        "**/*.gui": "hoi4",
+        "**/*.gfx": "hoi4",
+        "**/*.asset": "hoi4",
+        "**/*.cwt": "hoi4"
+    },
+    "cwtools.debug_mode": true,
+    "cwtools.errors.vanilla": true,
+    "cwtools.logging.diagnostic": true,
+    "cwtools.maxFileSize": 4
 }

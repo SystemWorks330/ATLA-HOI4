@@ -124,6 +124,7 @@ steal_tech_mission = {
 			ROOT = {
 				steal_random_tech_bonus = {
 					category = inventions
+					bonus = 0.5
 					instant = yes
 					target = PREV
 				}
