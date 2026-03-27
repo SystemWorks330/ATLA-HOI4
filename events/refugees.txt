@@ -42,6 +42,7 @@ country_event = {
 			every_controlled_state = {
 				state_event = {
 					id = refugee_calc.1
+					trigger_for = ROOT
 				}
 			}
 		}
