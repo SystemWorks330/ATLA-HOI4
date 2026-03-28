@@ -1,6 +1,6 @@
 characters={
 	MFC_generic={
-		name="Masu"
+		name=MFC_masu
 		portraits={
 			civilian={
 				large="gfx/leaders/MFC/Portrait_Makapu_Fire_Colony_generic.dds"

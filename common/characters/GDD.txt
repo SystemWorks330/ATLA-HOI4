@@ -1,6 +1,6 @@
 characters={
 	GDD_lu={
-		name="Lu"
+		name=GDD_lu
 		portraits={
 			civilian={
 				large="gfx/leaders/GDD/Portrait_Great-Divide_Lu.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	GDD_generic={
-		name="Generic"
+		name=GDD_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/GDD/Portrait_Great_Divide_fire_tribes.dds"

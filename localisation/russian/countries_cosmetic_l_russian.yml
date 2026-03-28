@@ -1,0 +1,74 @@
+l_russian:
+ EAR_united:0 "Царство Земли"
+ EAR_united_DEF:0 "Царство Земли"
+
+ CHN_empire:0 "Империя Чина"
+ CHN_empire_DEF:0 "Империя Чина"
+
+ FIR_phoenix:0 "Империя Феникса"
+ FIR_phoenix_DEF:0 "Империя Феникса"
+
+ AIR_united:0 "Воздушные кочевники"
+ AIR_united_DEF:0 "Воздушные кочевники"
+
+ NWT_tribes:0 "Северные Племена Воды"
+ NWT_tribes_DEF:0 "Северные Племена Воды"
+ SWT_tribes:0 "Южные Племена Воды"
+ SWT_tribes_DEF:0 "Южные Племена Воды"
+
+ HEB_imperialcolony:0 "Колония Хэбай"
+ HEB_imperialcolony_DEF:0 "Колония Хэбай"
+ HEB_integrated:0 "Хэбай"
+ HEB_integrated_DEF:0 "Хэбай"
+ HEB_puppet:0 "Хэбай"
+ HEB_puppet_DEF:0 "Хэбай"
+ HEB_supervised:0 "Хэбай"
+ HEB_supervised_DEF:0 "Хэбай"
+
+ POH_imperialcolony:0 "Колония Ху Бао"
+ POH_imperialcolony_DEF:0 "Колония Ху Бао"
+ POH_integrated:0 "Ху Бао"
+ POH_integrated_DEF:0 "Ху Бао"
+ POH_puppet:0 "Ху Бао"
+ POH_puppet_DEF:0 "Ху Бао"
+ POH_supervised:0 "Ху Бао"
+ POH_supervised_DEF:0 "Ху Бао"
+ NAT_exterminated:0 "Северные Воздушные Территории"
+ NAT_exterminated_DEF:0 "Северные Воздушные Территории"
+ SAT_exterminated:0 "Южные Воздушные Территории"
+ SAT_exterminated_DEF:0 "Южные Воздушные Территории"
+ WAT_exterminated:0 "Западные Воздушные Территории"
+ WAT_exterminated_DEF:0 "Западные Воздушные Территории"
+ EAT_exterminated:0 "Восточные Воздушные Территории"
+ EAT_exterminated_DEF:0 "Восточные Воздушные Территории"
+ NAT_mechanist_temple:0 "Северный Храм Воздуха"
+ NAT_mechanist_temple_DEF:0 "Северный Храм Воздуха"
+
+ SNW_united:0 "Солнечный Доминион"
+ SNW_united_DEF:0 "Солнечный Доминион"
+
+ SWA_wt:0 "Центральное Племя Воды"
+ SWA_wt_DEF:0 "Центральное Племя Воды"
+
+ NWT_united:0 "Водная Конфедерация"
+ NWT_united_DEF:0 "Водная Конфедерация"
+
+ NWT_zhao:0 "Протекторат Чжао"
+ NWT_zhao_DEF:0 "Протекторат Чжао"
+
+ NWT_imperialcolony:0 "Северная Водная Зависимая Территория"
+ NWT_imperialcolony_DEF:0 "Северная Водная Зависимая Территория"
+
+ SWT_imperialcolony:0 "Южная Водная Зависимая Территория"
+ SWT_imperialcolony_DEF:0 "Южная Водная Зависимая Территория"
+
+ NWT_exterminated:0 "Северные Пустоши"
+ NWT_exterminated_DEF:0 "Северные Пустоши"
+ SWT_exterminated:0 "Южные Пустоши"
+ SWT_exterminated_DEF:0 "Южные Пустоши"
+
+ NAT_mechanist:0 "Беженцы Северного Храма"
+ NAT_mechanist_DEF:0 "Беженцы Северного Храма"
+
+ OMC_new_ozai:0 "Новый Озай"
+ OMC_new_ozai_DEF:0 "Новый Озай"

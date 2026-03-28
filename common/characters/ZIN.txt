@@ -1,6 +1,6 @@
 characters={
 	ZIN_kuei={
-		name="Moku"
+		name=ZIN_moku
 		portraits={
 			civilian={
 				large="gfx/leaders/ZIN/Portrait_Tu-Zin_Kuei.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	ZIN_generic={
-		name="Generic"
+		name=ZIN_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/ZIN/Portrait_Tu-Zin_nationalism.dds"

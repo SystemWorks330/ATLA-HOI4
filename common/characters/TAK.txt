@@ -1,6 +1,6 @@
 characters={
 	TAK_pong={
-		name="Pong"
+		name=TAK_pong
 		portraits={
 			civilian={
 				large="gfx/leaders/TAK/Portrait_Taku_King.dds"
@@ -15,7 +15,7 @@ characters={
 		}
 	}
 	TAK_generic={
-		name="Generic"
+		name=TAK_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/TAK/Portrait_Taku_fire_tribes.dds"

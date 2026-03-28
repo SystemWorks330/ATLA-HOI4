@@ -1,0 +1,10 @@
+﻿l_russian:
+ money_topbar:0 "[?money_variable|0]"
+ money_tooltip:0 "§YКазна§! \nИзменение дохода: [?income_variable|2+=] в день \nБазовое значение: §Y1.00§! \nОт модификаторов: [?modifier@income|2+=] \nОт торговли: [?trade_income|2+=] \nОт налогообложения и расходов: [?income_factor|2+=%] \n\nТекущий максимум: [?mtth:money_cap|0Y]"
+ money_tooltip_delayed:0 "Казну можно использовать для финансирования самых разных проектов. При желании ей можно и кого-нибудь подкупить."
+
+ knowledge_topbar:0 "[?knowledge_variable|0]"
+ knowledge_tooltip:0 "§YЗнания и грамотность§! \n\nТекущие знания: [?knowledge_variable|1G] \n\nТекущий максимум: [?modifier@knowledge_cap|0Y]\n\nГрамотность: §H[?literacy_variable|2]%§! / §H[?modifier@knowledge_gain|2]%§! \n\nЕжедневный прирост: [?knowledge_daily|2Y] \n£knowledge_spread  Глобальное распространение знаний: [?shared_knowledge|2Y]/[?global.shared_knowledge|2Y]"
+ knowledge_tooltip_delayed:0 "Знания можно тратить на §Hизобретения§! и §Hсведения календаря§!. Они получаются через §Hтехнологии§! и §Hрешения§!. Базовый прирост равен §Y0.1§!. Грамотность применяется как множитель ко всему приросту знаний и ограничена 100%."
+
+ pp_topbar:0 "[?political_power|0]/[?mtth:pp_cap|0]"
