@@ -6,15 +6,15 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		path = {
 			leads_to_tech = shore_bombardment
 			research_cost_coeff = 1
 		}
 		
-		on_research_complete = {
-			set_technology = {
-			}
-		}
 
 		invasion_preparation = -0.3
 		amphibious_invasion = 0.25
@@ -54,6 +54,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		path = {
 			leads_to_tech = naval_firepower
 			research_cost_coeff = 1
@@ -91,6 +95,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		naval_hit_chance = 0.05
 		ships_at_battle_start = 0.25
 		
@@ -123,6 +131,10 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			air_experience = -100
+		}
 
 		path = {
 			leads_to_tech = strategic_bombing
@@ -163,6 +175,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			air_experience = -100
+		}
+
 		path = {
 			leads_to_tech = mass_destruction
 			research_cost_coeff = 1
@@ -200,6 +216,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		air_strategic_bomber_bombing_factor = 0.2
 		
 		doctrine = yes
@@ -234,6 +254,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		allow = {
 			NOT = {
@@ -301,6 +325,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = energy_and_drive
 			research_cost_coeff = 1
@@ -359,6 +387,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = root_a
 			research_cost_coeff = 1
@@ -407,6 +439,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = fleet_in_being
 			research_cost_coeff = 1
@@ -447,6 +483,10 @@ technologies = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			navy_experience = -100
+		}
 
 		path = {
 			leads_to_tech = floating_fortress
@@ -510,6 +550,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		firenation_cruiser = {
 			max_organisation = 5
 			defense = 0.15			
@@ -546,6 +590,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = multiplanar_warfare
@@ -588,6 +636,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = flying_fortress
 			research_cost_coeff = 1
@@ -626,6 +678,10 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			air_experience = -100
+		}
 
 		air_strategic_bomber_defence_factor = 0.25
 		
@@ -666,6 +722,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		allow = {
 			NOT = {
@@ -731,6 +791,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		spearmen = {
 			combat_width = -0.5
 		}
@@ -789,6 +853,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = root_a
 			research_cost_coeff = 1
@@ -841,6 +909,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		path = {
 			leads_to_tech = marine_corps
 			research_cost_coeff = 1
@@ -879,6 +951,10 @@ technologies = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			navy_experience = -100
+		}
 
 		path = {
 			leads_to_tech = battlefield_concentration
@@ -919,6 +995,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		naval_enemy_fleet_size_ratio_penalty_factor = 0.15
 		strike_force_movement_org_loss = -0.2
 		
@@ -953,6 +1033,10 @@ technologies = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			navy_experience = -100
+		}
 
 		path = {
 			leads_to_tech = convoy_escort
@@ -992,6 +1076,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		path = {
 			leads_to_tech = integrated_convoy_defense
 			research_cost_coeff = 1
@@ -1030,6 +1118,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		convoy_escort_efficiency = 0.3
 		
 		doctrine = yes
@@ -1067,6 +1159,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		allow = {
 			NOT = {
@@ -1133,6 +1229,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = communal_unity
 			research_cost_coeff = 1
@@ -1189,6 +1289,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = root_b
 			research_cost_coeff = 1
@@ -1237,6 +1341,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		path = {
 			leads_to_tech = raiding_operations
 			research_cost_coeff = 1
@@ -1278,6 +1386,10 @@ technologies = {
 		xp_research_type = navy
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			navy_experience = -100
+		}
 
 		path = {
 			leads_to_tech = convoy_interception
@@ -1340,6 +1452,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		convoy_raiding_efficiency_factor = 0.1
 		
 		doctrine = yes
@@ -1373,6 +1489,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = infiltration
@@ -1414,6 +1534,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = camouflage
 			research_cost_coeff = 1
@@ -1453,6 +1577,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		category_all_foot = {
 			defense = 0.15
 		}
@@ -1491,6 +1619,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		allow = {
 			NOT = {
@@ -1555,6 +1687,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = detachment
 			research_cost_coeff = 1
@@ -1610,6 +1746,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = root_c
 			research_cost_coeff = 1
@@ -1658,6 +1798,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			air_experience = -100
+		}
+
 		path = {
 			leads_to_tech = home_defense
 			research_cost_coeff = 1
@@ -1695,6 +1839,10 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			air_experience = -100
+		}
 
 		path = {
 			leads_to_tech = direct_ground_support
@@ -1734,6 +1882,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			air_experience = -100
+		}
+
 		air_cas_present_factor = 0.20
 		
 		doctrine = yes
@@ -1766,6 +1918,10 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			air_experience = -100
+		}
 
 		path = {
 			leads_to_tech = dogfighting
@@ -1805,6 +1961,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			air_experience = -100
+		}
+
 		path = {
 			leads_to_tech = hunt_and_destroy
 			research_cost_coeff = 1
@@ -1841,6 +2001,10 @@ technologies = {
 		xp_research_type = air
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			air_experience = -100
+		}
 
 		air_ace_generation_chance_factor = 0.15
 		air_close_air_support_org_damage_factor = 0.1
@@ -1883,6 +2047,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		allow = {
 			NOT = {
@@ -1939,6 +2107,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = solar_plexus_a
 			research_cost_coeff = 1
@@ -1982,6 +2154,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			navy_experience = -100
+		}
+
 		path = {
 			leads_to_tech = hearth_a
 			research_cost_coeff = 1
@@ -2023,6 +2199,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = throat_a
@@ -2069,6 +2249,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = third_eye_a
 			research_cost_coeff = 1
@@ -2114,6 +2298,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = crown_chakra_a
@@ -2163,6 +2351,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = inner_peace
@@ -2226,6 +2418,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		allow = {
 			NOT = {
 				has_tech = attack
@@ -2284,6 +2480,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = power_from_chi
 			research_cost_coeff = 1
@@ -2331,6 +2531,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		category_bender= {
 			hard_attack = 0.15
 			soft_attack = 0.15
@@ -2377,6 +2581,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		allow = {
 			NOT = {
@@ -2432,6 +2640,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = glorious_charge
 			research_cost_coeff = 1
@@ -2482,6 +2694,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		category_all_cavalry = {
 			breakthrough = 0.10
 			hard_attack = 0.20
@@ -2530,6 +2746,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		allow = {
 			NOT = {
@@ -2583,6 +2803,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = organized_assault
 			research_cost_coeff = 1
@@ -2631,6 +2855,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		org_loss_when_moving = -0.1
 		category_all_cavalry = {
@@ -2681,6 +2909,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		allow = {
 			NOT = {
@@ -2737,6 +2969,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = solar_plexus_b
 			research_cost_coeff = 1
@@ -2779,6 +3015,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = hearth_b
@@ -2825,6 +3065,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = throat_b
 			research_cost_coeff = 1
@@ -2870,6 +3114,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = third_eye_b
 			research_cost_coeff = 1
@@ -2914,6 +3162,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = crown_chakra_b
@@ -2961,6 +3213,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = wait
@@ -3019,6 +3275,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		xor = { listen }
 
 		path = {
@@ -3063,6 +3323,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = the_anvil
@@ -3114,6 +3378,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		out_of_supply_factor = -0.2
 		spearmen = {
 			combat_width = -0.5
@@ -3161,6 +3429,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		xor = { wait }
 
 		path = {
@@ -3207,6 +3479,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = the_hammer
 			research_cost_coeff = 1
@@ -3252,6 +3528,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		category_all_cavalry = {
 			hard_attack = 0.2
@@ -3306,6 +3586,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		allow = {
 			NOT = {
 				has_tech = root_b
@@ -3358,6 +3642,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = solar_plexus_c
 			research_cost_coeff = 1
@@ -3400,6 +3688,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = hearth_c
@@ -3446,6 +3738,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = throat_c
 			research_cost_coeff = 1
@@ -3490,6 +3786,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = third_eye_c
@@ -3538,6 +3838,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = crown_chakra_c
 			research_cost_coeff = 1
@@ -3585,6 +3889,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		path = {
 			leads_to_tech = retreat
@@ -3648,6 +3956,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		allow = {
 			NOT = {
 				has_tech = evade
@@ -3700,6 +4012,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = last_stand
 			research_cost_coeff = 1
@@ -3745,6 +4061,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		no_supply_grace = 192
 		out_of_supply_factor = -0.30
 		army_core_defence_factor = 0.1
@@ -3788,6 +4108,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		allow = {
 			NOT = {
@@ -3842,6 +4166,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = hit_and_run
 			research_cost_coeff = 1
@@ -3889,6 +4217,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		category_ranged = {
 			hard_attack = 0.15
 			soft_attack = 0.20
@@ -3934,6 +4266,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		allow = {
 			NOT = {
@@ -3993,6 +4329,10 @@ technologies = {
 		xp_unlock_cost = 100
 		doctrine = yes
 
+		on_research_complete = {
+			army_experience = -100
+		}
+
 		path = {
 			leads_to_tech = become_wind
 			research_cost_coeff = 1
@@ -4039,6 +4379,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		doctrine = yes
+
+		on_research_complete = {
+			army_experience = -100
+		}
 
 		army_speed_factor = 0.25
 		category_bender = {
