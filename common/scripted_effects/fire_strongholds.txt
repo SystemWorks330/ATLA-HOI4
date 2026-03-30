@@ -36,7 +36,7 @@ pohuai_chokepoint = {
 				level = 0
 				province = {
 					all_provinces = yes
-					level = 1
+					level > 0
 					first = yes
 				}
 			}
