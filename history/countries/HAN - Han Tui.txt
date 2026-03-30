@@ -118,6 +118,7 @@ add_ideas = {
 }
 
 recruit_character = HAN_gambu
+recruit_character = HAN_generic
 
 #set_cosmetic_tag = HAN_puppet
 
@@ -191,4 +192,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = HAN_generic

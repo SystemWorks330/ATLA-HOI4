@@ -63,6 +63,7 @@ add_ideas = {
 }
 
 recruit_character = NOW_fong
+recruit_character = NOW_generic
 
 #set_cosmetic_tag = NOW_puppet
 
@@ -129,4 +130,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = NOW_generic

@@ -85,6 +85,7 @@ add_ideas = {
 }
 
 recruit_character = WUL_tycho
+recruit_character = WUL_generic
 
 #set_cosmetic_tag = WUL_puppet
 
@@ -188,4 +189,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = WUL_generic

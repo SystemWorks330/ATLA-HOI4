@@ -112,6 +112,7 @@ permanent_spirits_and_modifiers = yes
 ##    #   #  # #  #   #       ###   #### 
 
 
+recruit_character = YFC_generic
 52.5.16 ={
 	#add_to_war = {
 	#	targeted_alliance = FIR
@@ -192,4 +193,3 @@ permanent_spirits_and_modifiers = yes
 
 # Different Ideology Leaders
 recruit_character = YFC_chey
-recruit_character = YFC_generic

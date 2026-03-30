@@ -64,6 +64,7 @@ add_ideas = {
 }
 
 recruit_character = YON_Huweto
+recruit_character = YON_generic
 
 #set_cosmetic_tag = YON_puppet
 
@@ -127,4 +128,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = YON_generic

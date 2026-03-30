@@ -83,6 +83,7 @@ permanent_spirits_and_modifiers = yes
 ##    #   #  # #  #   #       ###   #### 
 
 
+recruit_character = MPO_generic
 52.5.16 ={
 
 	#set_cosmetic_tag = MPO_puppet
@@ -142,4 +143,3 @@ permanent_spirits_and_modifiers = yes
 recruit_character = MPO_shamo
 
 # Different Ideology Leaders
-recruit_character = MPO_generic

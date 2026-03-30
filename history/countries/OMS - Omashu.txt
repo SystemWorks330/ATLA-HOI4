@@ -134,6 +134,7 @@ if = {
 recruit_character = OMS_iuri
 recruit_character = OMS_bumi
 recruit_character = EAR_cabagge_merchant
+recruit_character = OMS_generic
 
 
 
@@ -231,4 +232,3 @@ if = {
 }
 
 # Different Ideology Leaders
-recruit_character = OMS_generic

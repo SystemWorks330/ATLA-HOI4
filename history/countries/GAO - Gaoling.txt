@@ -65,6 +65,7 @@ add_ideas = {
 
 recruit_character = GAO_shing
 recruit_character = GAO_lao_beifong
+recruit_character = GAO_generic
 #if = {
 #	limit = {
 #		has_dlc = "Together for Victory"
@@ -159,4 +160,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = GAO_generic

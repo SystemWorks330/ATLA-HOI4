@@ -64,6 +64,7 @@ add_ideas = {
 }
 
 recruit_character = DAW_Yojiku
+recruit_character = DAW_generic
 
 #set_cosmetic_tag = DAW_puppet
 
@@ -128,4 +129,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = DAW_generic

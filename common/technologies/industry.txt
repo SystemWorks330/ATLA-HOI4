@@ -2433,7 +2433,6 @@ technologies = {
 
 		craftsman_factor = 0.025
 		
-		carpentry_planks_output = 1
 		carpentry_output_2 = 1
 		
 		research_cost = 2
@@ -2523,7 +2522,6 @@ technologies = {
 
 		craftsman_factor = 0.025
 		
-		carpentry_planks_output = 1
 		carpentry_output_2 = 1
 		
 		research_cost = 2
@@ -2611,7 +2609,6 @@ technologies = {
 		}
 		craftsman_factor = 0.025
 		
-		carpentry_planks_output = 1
 		carpentry_output_2 = 1
 		
 		research_cost = 2
@@ -2666,6 +2663,15 @@ technologies = {
 				set_temp_variable = {s = THIS.wood_variable}
 				set_temp_variable = {m = THIS.wood_max}
 				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				if = {
+					limit = {
+						check_variable = {d = 0}
+					}
+					add_to_temp_variable = {
+						var = d
+						value = 10000
+					}
+				}
 				subtract_from_temp_variable = { #m-s
 					var = m
 					value = s
@@ -2699,7 +2705,6 @@ technologies = {
 		}
 		craftsman_factor = 0.025
 		
-		carpentry_planks_output = 1
 		carpentry_output_3 = 1
 		
 		research_cost = 2
@@ -2754,6 +2759,15 @@ technologies = {
 				set_temp_variable = {s = THIS.wood_variable}
 				set_temp_variable = {m = THIS.wood_max}
 				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				if = {
+					limit = {
+						check_variable = {d = 0}
+					}
+					add_to_temp_variable = {
+						var = d
+						value = 10000
+					}
+				}
 				subtract_from_temp_variable = { #m-s
 					var = m
 					value = s
@@ -2787,7 +2801,6 @@ technologies = {
 		}
 		craftsman_factor = 0.025
 
-		carpentry_planks_output = 1
 		carpentry_output_3 = 1
 		
 		research_cost = 2
@@ -2839,6 +2852,15 @@ technologies = {
 				set_temp_variable = {s = THIS.wood_variable}
 				set_temp_variable = {m = THIS.wood_max}
 				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				if = {
+					limit = {
+						check_variable = {d = 0}
+					}
+					add_to_temp_variable = {
+						var = d
+						value = 10000
+					}
+				}
 				subtract_from_temp_variable = { #m-s
 					var = m
 					value = s
@@ -2872,7 +2894,6 @@ technologies = {
 		}
 		craftsman_factor = 0.025
 		
-		carpentry_planks_output = 1
 		carpentry_output_3 = 1
 		
 		research_cost = 2

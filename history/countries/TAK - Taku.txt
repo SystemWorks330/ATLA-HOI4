@@ -69,6 +69,7 @@ add_ideas = {
 #set_cosmetic_tag = TAK_puppet
 
 recruit_character = TAK_pong
+recruit_character = TAK_generic
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -139,4 +140,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = TAK_generic

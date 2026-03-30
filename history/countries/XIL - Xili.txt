@@ -64,6 +64,7 @@ add_ideas = {
 }
 
 recruit_character = XIL_Gezaki
+recruit_character = XIL_generic
 
 #set_cosmetic_tag = XIL_puppet
 
@@ -127,4 +128,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = XIL_generic

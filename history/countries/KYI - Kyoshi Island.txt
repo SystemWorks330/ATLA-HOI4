@@ -55,6 +55,7 @@ recruit_character = KYI_quartermaster_3
 recruit_character = KYI_quartermaster_4
 recruit_character = KYI_quartermaster_5
 recruit_character = KYI_quartermaster_6
+recruit_character = KYI_generic
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -133,4 +134,3 @@ recruit_character = KYI_kyoshi_leader
 #}
 
 # Different Ideology Leaders
-recruit_character = KYI_generic

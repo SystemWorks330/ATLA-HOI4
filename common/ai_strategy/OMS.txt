@@ -36,23 +36,13 @@ OMS_production_1 = {
 	abort_when_not_enabled = yes
 	ai_strategy = {
 		type = equipment_production_factor
-		id = spear_equipment_1
-		value = 5
+		id = infantry
+		value = 10
 	}
 	ai_strategy = {
 		type = equipment_production_min_factories
-		id = spear_equipment_1
-		value = 2
-	}
-	ai_strategy = {
-		type = equipment_production_factor
-		id = heavy_armor_equipment
-		value = 5
-	}
-	ai_strategy = {
-		type = equipment_production_min_factories
-		id = heavy_armor_equipment
-		value = 2
+		id = infantry
+		value = 4
 	}
 
 }

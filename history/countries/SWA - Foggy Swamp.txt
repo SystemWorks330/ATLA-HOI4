@@ -90,6 +90,7 @@ recruit_character = SWA_huu
 recruit_character = SWA_due
 
 recruit_character = SWA_tho
+recruit_character = SWA_generic
 
 
 bender_conscription_effect = yes
@@ -187,4 +188,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = SWA_generic

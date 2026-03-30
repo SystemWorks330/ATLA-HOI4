@@ -54,6 +54,7 @@ set_popularities = {
 }
 
 recruit_character = GDD_lu
+recruit_character = GDD_generic
 
 #set_cosmetic_tag = GDD_puppet
 
@@ -119,4 +120,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = GDD_generic
