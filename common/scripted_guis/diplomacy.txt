@@ -1,8 +1,8 @@
 scripted_gui = {
 
 	claim_state_gui = {
-		context_type = selected_country_context
-		parent_window_token = selected_country_view_diplomacy
+		context_type = diplomatic_action
+		#parent_window_token = top_bar
 		window_name = "claim_state_gui"
 
 		effects = {
