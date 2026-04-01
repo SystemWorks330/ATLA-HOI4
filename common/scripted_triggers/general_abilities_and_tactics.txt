@@ -16,17 +16,17 @@ battle_trigger = {
 has_initiative = {
 	OR = {
 		AND = {
-			recon_advantage > 0
+			recon_advantage = yes
 			skill_advantage > -4
 		}
 		AND = {
-			recon_advantage < 0
+			recon_advantage = no
 			skill_advantage > 5
 		}
 		AND = {
 			NOT = {
-				recon_advantage > 0
-				recon_advantage < 0
+				recon_advantage = yes
+				recon_advantage = no
 			}
 			skill_advantage > 0
 		}
