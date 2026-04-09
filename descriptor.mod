@@ -1,4 +1,4 @@
-name="Avatar - The Last Airbender"
+name="Avatar - The Last Airbender Development"
 replace_path="common/dynamic_modifiers"
 replace_path="common/peace_conference/ai_peace"
 replace_path="common/peace_conference/categories"

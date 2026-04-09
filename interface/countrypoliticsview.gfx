@@ -197,18 +197,6 @@ spriteTypes = {
 		alwaystransparent = yes
 		effectFile = "gfx/FX/buttonstate_blendframes.lua"
 	}
-	
-	frameAnimatedSpriteType = {
-		name = "GFX_ongoing_focus_goal_polview"
-		texturefile = "gfx/interface/ongoing_focus_goal_polview.dds"
-		noOfFrames = 3
-		animation_rate_fps = 1
-		looping = yes
-		play_on_show = yes
-		pause_on_loop = 0.0
-		alwaystransparent = yes
-		effectFile = "gfx/FX/buttonstate_blendframes.lua"
-	}
 
 	spriteType = {
 		name = "GFX_dismantle_faction_button"
