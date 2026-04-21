@@ -1,5 +1,0 @@
-﻿l_english:
- REQUESTED_MANPOWER_DETAILS:0 "Next $NUM|Y$ of manpower will arrive in $HR|Y$ hours.\nFull manpower reinforcement roughly in $D|Y$ days."
- NOT_ENOUGH_MANPOWER_TO_REINFORCE:0 "Not enough manpower to reinforce."
- MANPOWER_REINFORCEMENT_NOT_POSSIBLE:0 "§RManpower reinforcement is not possible at the current location.§!"
- EQUIPMENT_DESCRIPTION:0 "$NAME$"
