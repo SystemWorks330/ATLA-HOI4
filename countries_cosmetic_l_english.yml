@@ -1,0 +1,74 @@
+﻿l_english:
+ EAR_united:0 "Earth Kingdom"
+ EAR_united_DEF:0 "the Earth Kingdom"
+
+ CHN_empire:0 "Chin Empire"
+ CHN_empire_DEF:0 "the Chin Empire"
+
+ FIR_phoenix:0 "Phoenix Empire"
+ FIR_phoenix_DEF:0 "the Phoenix Empire"
+
+ AIR_united:0 "Air Nation"
+ AIR_united_DEF:0 "the Air Nation"
+
+ NWT_tribes:0 "Northern Water Tribes"
+ NWT_tribes_DEF:0 "the Northern Water Tribes"
+ SWT_tribes:0 "Southern Water Tribes"
+ SWT_tribes_DEF:0 "the Southern Water Tribes"
+
+ HEB_imperialcolony:0 "Hebai Colony"
+ HEB_imperialcolony_DEF:0 "the Hebai Colony"
+ HEB_integrated:0 "Hebai"
+ HEB_integrated_DEF:0 "Hebai"
+ HEB_puppet:0 "Hebai"
+ HEB_puppet_DEF:0 "Hebai"
+ HEB_supervised:0 "Hebai"
+ HEB_supervised_DEF:0 "Hebai"
+
+ POH_imperialcolony:0 "Hu Bao Colony"
+ POH_imperialcolony_DEF:0 "the Hu Bao Colony"
+ POH_integrated:0 "Hu Bao"
+ POH_integrated_DEF:0 "Hu Bao"
+ POH_puppet:0 "Hu Bao"
+ POH_puppet_DEF:0 "Hu Bao"
+ POH_supervised:0 "Hu Bao"
+ POH_supervised_DEF:0 "Hu Bao"
+ NAT_exterminated:0 "Northern Air Territories"
+ NAT_exterminated_DEF:0 "the Northern Air Territories"
+ SAT_exterminated:0 "Southern Air Territories"
+ SAT_exterminated_DEF:0 "the Southern Air Territories"
+ WAT_exterminated:0 "Western Air Territories"
+ WAT_exterminated_DEF:0 "the Western Air Territories"
+ EAT_exterminated:0 "Eastern Air Territories"
+ EAT_exterminated_DEF:0 "the Eastern Air Territories"
+ NAT_mechanist_temple:0 "Northern Air Temple"
+ NAT_mechanist_temple_DEF:0 "the Northern Air Temple"
+
+ SNW_united:0 "Solar Dominion"
+ SNW_united_DEF:0 "the Solar Dominion"
+
+ SWA_wt:0 "Central Water Tribe"
+ SWA_wt_DEF:0 "the Central Water Tribe"
+
+ NWT_united:0 "Water Confederation"
+ NWT_united_DEF:0 "the Water Confederation"
+
+ NWT_zhao:0 "Zhao Protectorate"
+ NWT_zhao_DEF:0 "the Zhao Protectorate"
+
+ NWT_imperialcolony:0 "Northern Water Dependency"
+ NWT_imperialcolony_DEF:0 "the Northern Water Dependency"
+
+ SWT_imperialcolony:0 "Southern Water Dependency"
+ SWT_imperialcolony_DEF:0 "the Southern Dependency"
+
+ NWT_exterminated:0 "Northern Wastes"
+ NWT_exterminated_DEF:0 "the Northern Wastes"
+ SWT_exterminated:0 "Southern Wastes"
+ SWT_exterminated_DEF:0 "the Southern Wastes"
+
+ NAT_mechanist:0 "Northern Temple Refugees"
+ NAT_mechanist_DEF:0 "the Northern Temple Refugees"
+
+ OMC_new_ozai:0 "New Ozai"
+ OMC_new_ozai_DEF:0 "the New Ozai"
