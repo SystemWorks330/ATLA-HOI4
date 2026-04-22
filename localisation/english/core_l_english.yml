@@ -1380,7 +1380,7 @@
  TYPE_HERE:0 "Type here"
  GOTO_CAPITAL:0 "Go Home"
  
- NAVY_REPAIR_NOW:3 "§HRepair now!§!\nThe task force will return to a close by naval base for repairs.\n§GClick§! to send. It will come back to the current task after it is fully repaired.\n§GCtrl+Click§! to send. It will stay in the naval base after that."
+
  NAVY_CARRIER_DEFENSIVE_STANCE: "§YSelect defensive stance§!"
  NAVY_CARRIER_DEFENSIVE_STANCE_CONFLICT: "Most task forces: $CURRENT|G$"
  NAVY_CARRIER_DEFENSIVE_STANCE_CURRENT: "Current defensive stance - $CURRENT|G$"

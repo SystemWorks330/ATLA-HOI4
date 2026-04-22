@@ -326,7 +326,7 @@
  
  bow_equipment:0"Bow"
  bow_equipment_short:0"Bow"
- bow_equipment_0_desc:0"The most basic equipment needed to deploy archers in your armies."
+ bow_equipment_short_0_desc:0"The most basic equipment needed to deploy archers in your armies."
  
  bow_equipment_0:0"Rudimentary bow"
  bow_equipment_0_desc:0"A simple tool made out of flexible wood and animal sinews that allows the projection of arrows, useful for hunting."
@@ -362,9 +362,6 @@
  javelin_equipment_7:0 "Shrapnel Grenades"
  javelin_equipment_7_desc:0 "The addition of shrapnel to handgrenades makes them far more deadly to enemy infantry in compact formations, trully a gruesome weapon that can decimate even the sturdiest of formations."
  
- arrow_equipment:0"Arrows"
- arrow_equipment_short:0"Arrows"
- arrow_equipment_0_desc:0"Used to hunting and warfare alike."
  
  arrow_equipment_0:0"Bone Arrowheads"
  arrow_equipment_0_desc:0"Animal fangs, tooths and bones can serve as a cheap and easily accessible tip for your arrows."
@@ -971,10 +968,10 @@ right_bonus_battleship_4:0 "Large Water-Pumps"
 mid_bonus_battleship_4:0 "Large Petrol Engine"
 
 fire_mine_warfare_1:0 "Naval Chains"
-fire_mine_warfare_1:0 "Flamable Barrels"
-fire_mine_warfare_1:0 "Incendiary Mines"
-fire_mine_warfare_1:0 "Explosive Mines"
-fire_mine_warfare_1:0 "Nerve Gas Mines"
+fire_mine_warfare_2:0 "Flamable Barrels"
+fire_mine_warfare_3:0 "Incendiary Mines"
+fire_mine_warfare_4:0 "Explosive Mines"
+fire_mine_warfare_5:0 "Nerve Gas Mines"
 
  firenation_yacht_hull_1:0 "Motorised Boat Prototype"
  #firenation_yacht_hull_1_short:0 "River Boat I"

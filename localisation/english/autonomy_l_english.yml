@@ -3,7 +3,6 @@
  autonomy_county:0 "County"
  autonomy_vassalage:0 "Vassalage"
  autonomy_royal_domain:0 "Royal Domain"
- autonomy_tributary:0 "Tributary"
  autonomy_satelit_state:0 "Satelite"
  autonomy_imperial_dominion:0 "Dominion"
  autonomy_imperial_colony:0 "Colony"

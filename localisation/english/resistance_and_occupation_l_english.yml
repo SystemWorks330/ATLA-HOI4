@@ -169,7 +169,6 @@
  compliance_100:0 "Formal Annexation"
  
  compliance_60_effect_tooltip:0 "The occupied country can be formally §Gintegrated§!."
- compliance_80_effect_tooltip:0 "Decisions will allow the creation of §GColonies§! in some areas."
  compliance_100_effect_tooltip:0 "Can be made a core state when at peace with the occupied country and thus become part of our homeland."
  resistance_50_effect_tooltip:0 "The occupied country will get the ability to spawn §RPartisan Units§! in occupied core states!"
  resistance_90_effect_tooltip:0 "Resistance will §Rdeclare independence§! on the core states that are being occupied."

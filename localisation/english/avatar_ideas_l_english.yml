@@ -1,16 +1,12 @@
 ﻿l_english:
-
  water_nation:0 "Water Nation"
  earth_nation:0 "Earth Nation"
  fire_nation:0 "Fire Nation"
  air_nation:0 "Air Nation"
  pluralist_nation:0 "Pluralist Nation"
-
- #### major
  spiritless_nation_spirit:0 "No National Identity"
  spiritless_nation_spirit_description:0 "§YNo National Identity§!"
  spiritless_nation_spirit_delayed:0 "§LNo National Identity§!"
-
  fire_supremacy_spirit:0 "Fire Supremacy"
  fire_supremacy_spirit_description:0 "§YFire Supremacy§!  \n£fire_texticon  Fire Influence: §G+0.02§! \n£recovery_texticon  Discipline: §G+50%§! \nOffensive War Stability Modifier: §G+35%§! \n§YInventions§! can not be stolen or shared: §GYes§! \n\n§GProgresses when:§!\nGlobal £fire_texticon  §YFire Culture§! is greater than §Y25%§!"
  fire_supremacy_spirit_delayed:0 "§LWe are the sons and daughters of fire, the superior element! We must ensure it prevails."
@@ -27,28 +23,18 @@
  fire_imperialism_spirit_hidden:0 "Inactive Fire Imperialism"
  FIR_cultural_change:0 "Cultural Change"
  FIR_private_investors:0 "Private Investors"
-
-
- # Clans
  FIR_loyalist_purge_idea:0 "Loyalist Officer Purge"
  FIR_loyalist_purge_idea_desc:0 "The officer corps has been purged of reformist and isolationist sympathisers. The military is firmly in Loyalist hands — but resentment festers in every barracks."
- 
  FIR_reformist_council_idea:0 "Reform Council Mandate"
  FIR_reformist_council_idea_desc:0 "The Reform Council has produced a formal mandate for change. Reformist legitimacy is at its peak — but the Loyalist old guard sharpens its knives."
- 
  FIR_isolationist_pact_idea:0 "The Withdrawal Pact"
  FIR_isolationist_pact_idea_desc:0 "The Withdrawal Pact has been formally signed. The Isolationists hold enormous political capital — but the war faction is furious, and the colonies are uneasy."
- 
  FIR_loyalist_reunification_idea:0 "Sozin's Heirs"
  FIR_loyalist_reunification_idea_desc:0 "The Loyalist clans have reunified the Fire Nation under Sozin's legacy. The nation is hardened for conquest, its officer corps purged of doubt, and its people reminded of their destiny."
- 
  FIR_reformist_reunification_idea:0 "The New Fire"
  FIR_reformist_reunification_idea_desc:0 "The Reformist clans have reshaped the Fire Nation's identity. A more measured, sustainable empire emerges — one that seeks to endure rather than merely to conquer."
- 
  FIR_isolationist_reunification_idea:0 "Behind the Walls of Fire"
  FIR_isolationist_reunification_idea_desc:0 "The Isolationist clans have turned the Fire Nation inward. The home islands are fortified, the wars wound down, and the nation consolidates what it has rather than reaching for more."
- 
-
  heart_of_the_kingdom_spirit:0 "Heart of the Kingdom"
  heart_of_the_kingdom_spirit_description:0 "§YHeart of the Kingdom§!  \n£population_texticon  Monthly Population: §G+25.0%§! \n£pol_power  Political Power Gain: §G+25%§! \nSurrender Limit: §G+100%§!"
  heart_of_the_kingdom_spirit_delayed:0 "§LNot only is Ba Sing Se the capital of the Earth Kingdom, but it is also the largest city in the world. All power and organisation is centralised here.§!"
@@ -57,7 +43,6 @@
  no_war_in_ba_sing_se_spirit:0 "No War in Ba Sing Se"
  no_war_in_ba_sing_se_spirit_description:0 "§YNo War in Ba Sing Se§!  \n£centralisation_target_texticon  Centralisation Target: §Y+50.00%§! \n£migration_texticon  Migration attraction: §G+100.0%§! \n£stability_texticon  Stability: §G+25.00%§!"
  no_war_in_ba_sing_se_spirit_delayed:0 "§LIn silencing talk of conflict, Ba Sing Se remains a peaceful, orderly utopia. The last one on Earth.§!"
-
  northern_spirit_spirit:0 "Northern Spirit"
  northern_spirit_spirit_description:0 "§YNorthern Spirit§!  \n£water_texticon  Water Influence: §G+0.02§! \nStarting level of new navy leaders: §G+2§! \n£snow_texticon  Cold acclimatization gain factor: §G+50%§! \n£snow_texticon  Winter Attrition: §G-50%§!"
  northern_spirit_spirit_delayed:0 "§LThe North Pole holds many secrets..."
@@ -73,21 +58,14 @@
  fractured_desert_spirit:0 "Fractured Desert"
  fractured_desert_spirit_description:0 "§YFractured Desert§!"
  fractured_desert_spirit_delayed:0 "§LFractured Desert§!"
-
  cavalry_tradition:0 "Cavalry Tradition"
  cavalry_tradition_desc:0 "Omashu's status as the second-largest sovereignty in the Earth Kingdom owes much to its esteemed lineage of Ostrich Horse cavalrymen. Many of these skilled riders are tasked with patrolling the less developed regions of the Kingdom."
-
  idea_underground_networks:0 "Extensive Tunnel Systems"
  idea_underground_networks_desc:0 "In a bid to stave off impending defeat, the military has strategically regrouped within fortified subterranean bases, aiming to employ nimble hit-and-run tactics against encroaching enemy forces."
-
  idea_roadside_ambushes:0 "Clandestine Specialists"
  idea_roadside_ambushes_desc:0 "Earthbenders lie in wait, ready to send a crushing wave of rock down onto unsuspecting enemies."
-
  idea_bss_advisors:0 "Ba Sing Se Advisors"
  idea_bss_advisors_desc:0 "Military experts from the Earth Kingdom capital have arrived to train the armed forces."
-
-
- ### hidden 
  state_1:0 "High Decentralisation"
  state_2:0 "Decentralisation"
  state_3:0 "Equilibrium"
@@ -101,15 +79,12 @@
  tax_culture_spending_average:0 "Tax Spending"
  tax_culture_spending_high:0 "Tax Spending"
  tax_culture_spending_very_high:0 "Tax Spending"
-
  age_1_bonus:0 "£age_1_texticon §cAge I§! ($age_1_tech_title$)"
  age_2_bonus:0 "£age_2_texticon §cAge II§! ($age_2_tech_title$)"
  age_3_bonus:0 "£age_3_texticon §cAge III§! ($age_3_tech_title$)"
  age_4_bonus:0 "£age_4_texticon §cAge IV§! ($age_4_tech_title$)"
  age_5_bonus:0 "£age_5_texticon §cAge V§! ($age_5_tech_title$)"
  age_6_bonus:0 "£age_6_texticon §cAge VI§! ($age_6_tech_title$)"
-
-
  low_vassal_taxes:0 "Low Vassal Tax"
  medium_vassal_taxes:0 "Medium Vassal Tax"
  high_vassal_taxes:0 "High Vassal Tax"
@@ -122,12 +97,8 @@
  medium_territorial_integration:0 "Medium Integration"
  high_territorial_integration:0 "High Integration"
  no_vassal_territorial_integration:0 "No Integration"
-
- ### minor
  no_ruler:0 "No Leadership"
  no_ruler_desc:0 "There exists no authority to make decisions for this nation."
- 
- ### firenation
  FIR_guiding_wind_opposition:0 "Guiding Wing Opposition"
  FIR_guiding_wind_opposition_desc:0 "The Guiding Wind is a hostile, rogue organization of Air Nomads far removed from the traditional teachings of their people. They believe that the Air Nomads have grown too complacent in their search for enlightenment and seek too much cooperation with corrupt and exploitative wealthy citizens from other nations. To combat this, members of the Guiding Wind commit violent attacks against the upper class, and bolster the organization's numbers by recruiting impressionable Air Nomad youth and spiritual nobles who wish to renounce their wealthy lifestyles."
  national_prosperity:0 "National Prosperity"
@@ -164,7 +135,6 @@
  banned_poaching_desc:0 "Dragons are incredible creatures that require freedom. Annihilating them and hindering their ability to grow as a species is counterintuitive towards our development. Outlawing poaching will allow us to expand our services to that of the Dragon."
  FIR_600_days_siege:0 "The [?FIR.ba_sing_se_siege_days|0] days Siege of Ba Sing Se"
  FIR_600_days_siege_desc:0 ""
-
  kyoshi_constitution:0 "Kyoshi Constitution"
  kyoshi_constitution_desc:0 "The Peasant Uprising in Ba Sing Se threw the capital into chaos. Only when Avatar Kyoshi forced the 46th Earth King to accept a new constitution, the uprising dispersed. Nevertheless, the Kyoshi Constitution has limited the power of the King."
  weak_legitimacy:0 "Low Legitimacy"
@@ -178,7 +148,6 @@
  EAR_idea_abandoned_capital:0 "Abandoned Capital"
  destroyed_morale_EAR:0 "Destroyed Morale"
  destroyed_morale_EAR_desc:0 "With fall of the Mandate of Heaven, it had become clear that the Earth Kingdom was no longer the unbreakable fortress it once was. The Fire Nation's relentless advance has left the Earth Kingdom in a state of disarray, with the Unconquerable City getting conquered, what chance do we have to resist?"
- 
  dai_li_headquaters:0 "Dai Li Headquaters"
  dai_li_headquaters_ttp:0 "§YDai Li Headquaters§! \n£spy_slots_texticon  Available Spies: §G+1§! \nMonthly £dai_li_texticon  §DDai Li§! Influence: §G+1§!"
  dai_li_headquaters_desc:0 ""
@@ -203,12 +172,10 @@
  dai_li_grand_secretary_office:0 "Grand Secretary Office"
  dai_li_grand_secretary_office_ttp:0 "§YGrand Secretary Office§! \n£centralisation_target_texticon  Centralisation Target: §Y+10.00%§! \n£pol_power_cap  Political Power Capacity: §G+75§!"
  dai_li_grand_secretary_office_desc:0 ""
- 
  brainwashed_nobles:0 "Brainwashed Nobles"
  brainwashed_nobles_desc:0 ""
  brainwashed_academics:0 "Brainwashed Academics"
  brainwashed_academics_desc:0 ""
-
  merchant_tradition:0 "Merchant Tradition"
  merchant_tradition_desc:0 "Generations of trading overseas made the navy part of our culture."
  pirate_traders:0 "High Risk Traders"
@@ -217,23 +184,18 @@
  the_kyoshi_warriors_desc:0 "The Kyoshi Warriors are an order of female fighters named after Avatar Kyoshi. With their unique and individual fighting style, these elite warriors train to ensure the safety and isolationism of their homeland."
  depression:0 "Depression"
  depression_desc:0 "The inflation created by the government which lead to a short term economic boost is now showing its real effect: mass unemployment and unrest, poverty, no, artificially empoverished people. The only upside: there is a massive pricedrop."
-
  CHN_judical_system:0 "Judical System"
  CHN_judical_system_desc:0 "I say what happened, then you say what happened, and then I decide who's right. That's why we call it justice. Because it's 'just us!'"
  #CHN_romanticism:0 "Romanticise old Times"
  #CHN_romanticism_desc:0 "Because they were so great."
  CHN_kyoshi_rivalry:0 "Rivalry with Kyoshi Island"
  CHN_kyoshi_rivalry_desc:0 "It is a widely held belief among his supporters that Chin the Great was unjustly murdered by Avatar Kyoshi, an act which led to the immediate dissolution of his empire. Even to this day, Chin loyalists hold a grudge against the neighboring island of Kyoshi, hoping to pay back the damage in full done by the Avatar."
-
  CHN_chin_resistance:0 "Chin Resistance"
  CHN_chin_resistance_desc:0 "Members of the Chin clan are up in arms over what they see as the trampling of their great traditions."
-
  NAT_mechanist_culture:0 "Cult of Progress"
  NAT_mechanist_culture_desc:0 "Seeking to create a society of equal opportunities, and inspired by the ancient murals of flying nomads that adorn the temples walls, the new inhabitants of the Northern Air Temple have used their engineering prowess to mimic the freedom of flight that was previously known only to Airbenders. Gliders operated by nonbenders are now a common sight around the skies of the temple, but the steam-powered machinery required to pursue such a lifestyle has unfortunately begun to erode away the historical integrity of the original temple."
-
  ran_and_shaw:0 "Ran and Shaw"
  ran_and_shaw_desc:0 "Deep within the hidden civilization of the Sun Warriors reside two ancient dragons, Ran and Shaw. Their synchronized movements and masterful control of firebending have served as the fundamental inspiration for numerous spiritual and martial teachings among the Sun Warriors."
-
  remote_isolation:0 "Remote Isolation"
  remote_isolation_desc:0 "Laying at the edge of the world, the Water Tribes have remained isolated from the developments of the outside world."
  loose_confederation:0 "Loose Confederation"
@@ -250,24 +212,18 @@
  protective_isolation_desc:0 "By limiting interaction with the other nations, the people of the Water Tribe remain safe from outside threats, for now."
  water_intervention:0 "Intervention Spirit"
  water_intervention_desc:0 "n response to the erosion of global stability, the Water Tribe has adopted a proactive intervention policy, aiming to preemptively shield itself from potential threats before they have an opportunity to approach its shores."
- waterbender_ice_construction:0 "Ice Construction"
- waterbender_ice_construction_desc:0 "The ubiquitus ice makes for an easily available construction material. This simplifies building repairs."
+ waterbender_ice_construction:0 "Ice Architecture"
+ waterbender_ice_construction_desc:0 "The people of the Northern Water Tribe are noticably more sophisticated than their Southern sister tribe, and this is best seen in its sprawling cities of ice. Unlike snow-based igloos, ice's rigid form allows for highly intricate designs and offers a sturdy construction capable of supporting several stories."
  water_raids_100:0 "A Broken People"
  water_raids_100_desc:0 "Over the past several decades, Fire Nation raiding parties scoured over the South, capturing every waterbender they could find. Today, the Southern style of waterbending is virtually extinct, with many among the younger generations believing the Waterbending art altogether to be nothing more than a tall tale."
-
  water_payments:0 "Payments from the Water Tribe"
  water_payments_desc:0 "In exchange for our knowledge and technology, the Northern Water Tribe pays us money."
  water_debts:0 "Debts"
  water_debts_desc:0 "To keep up with the rest of the world we are buying technologies."
- waterbender_ice_construction:0 "Ice Architecture"
- waterbender_ice_construction_desc:0 "The people of the Northern Water Tribe are noticably more sophisticated than their Southern sister tribe, and this is best seen in its sprawling cities of ice. Unlike snow-based igloos, ice's rigid form allows for highly intricate designs and offers a sturdy construction capable of supporting several stories."
- 
  SWA_spirits:0 "Swamp Spirits"
  SWA_spirits_desc:0 "The Foggy Bottom Swamp has a deep connection to the Spirit World, with enigmatic weather patterns, induced visions of the past, present, and future, and physical spirit encounters being among some of the well known effects an unprepared traveler might face."
- 
  NAT_bison_polo:0 "Sky Bison Polo"
  NAT_bison_polo_desc:0 "When not in meditation or training, the monks of the Northern Air Temple are eagerly preparing for the next Bison Polo Championship, an annual event which draws in Airbenders from around the world to participate."
- 
  pacifist_detachment:0 "Pacifist Detachment"
  pacifist_detachment_desc:0 "The Air Nomads have deliberated isolated themselves from the conflicts of the outside world, and seek spiritual enlightenment over material objectives."
  protecting_the_avatar:0 "Protecting the Avatar"
@@ -276,7 +232,6 @@
  home_of_the_avatar_desc:0 "For most of his life, the Avatar has lived in the Southern Air temple. The Air Nomads have protected, cared, and nurtured the new avatar."
  nomadic_lifestyle:0 "Nomadic Lifestyle"
  nomadic_lifestyle_desc:0 "The Air Nomads were wanderers but still lived in four air temples, one located at each corner of the globe, hard for outsiders to reach. Unlike the other nations, those born to the Air Nomads were all benders. Upon coming of age, they undergo a spirtual journey and travel the world in search of enlightenment."
- 
  war_weariness_1_desc:0 "Prolonged conflict fatigues our people, we must keep them appeased until the situation improves."
  war_weariness_2:0 "War Weariness"
  war_weariness_2_desc:0 "Prolonged conflict fatigues our people, we must keep them appeased until the situation improves."
@@ -296,17 +251,14 @@
  war_weariness_9_desc:0 "Prolonged conflict fatigues our people, we must keep them appeased until the situation improves."
  war_weariness_10:0 "War Weariness"
  war_weariness_10_desc:0 "Prolonged conflict fatigues our people, we must keep them appeased until the situation improves."
- 
  sozins_comet_1:0 "Great Comet"
  sozins_comet_1_desc:0 "Every 100 years a comet arrives and gives firebenders additional power."
  full_moon:0 "Full Moon"
  full_moon_desc:0 "My first girlfriend turned into the moon."
  half_moon:0 "New Moon"
  half_moon_desc:0 "That's not a moon..."
- 
  firebender_population_1:0 "Firebender Population"
  firebender_population_1_desc:0 "Firebenders have always been a part of our culture. However only a certain percentage of the population has this special trait."
-
  laws:0 "Laws"
  #laws_desc:0 "The government of a country has the possibility to influence the public life via the laws."
  advisors:0 "Advisors"
@@ -314,7 +266,6 @@
  war_council:0 "War Council"
  designers:0 "Designers"
  institutions:0 "Institutions"
-
  disarmed_fire_nation:0 "Disarmed Nation"
  volunteer_fire_nation:0 "Volunteer Only"
  limited_fire_conscription:0 "Limited Conscription"
@@ -327,28 +278,22 @@
  disarmed_air_nation:0 "Disarmed Nation"
  volunteer_air_nation:0 "Volunteer Only"
  limited_air_conscription:0 "Limited Conscription"
-
  disarmed_fire_nation_desc:0 "Peace, not war."
  volunteer_fire_nation_desc:0 "Sheer patriotism is enough to fill our ranks."
  limited_fire_conscription_desc:0 "Fighting age men can be called into service, if the need arises."
-
-  disarmed_water_nation_desc:0 "Peace, not war."
+ disarmed_water_nation_desc:0 "Peace, not war."
  volunteer_water_nation_desc:0 "Sheer patriotism is enough to fill our ranks."
  limited_water_conscription_desc:0 "Fighting age men can be called into service, if the need arises."
-
-  disarmed_earth_nation_desc:0 "Peace, not war."
+ disarmed_earth_nation_desc:0 "Peace, not war."
  volunteer_earth_nation_desc:0 "Sheer patriotism is enough to fill our ranks."
  limited_earth_conscription_desc:0 "Fighting age men can be called into service, if the need arises."
-
-  disarmed_air_nation_desc:0 "Peace, not war."
+ disarmed_air_nation_desc:0 "Peace, not war."
  volunteer_air_nation_desc:0 "Sheer patriotism is enough to fill our ranks."
  limited_air_conscription_desc:0 "Fighting age men can be called into service, if the need arises."
-
  extensive_conscription_desc:0 "A mandatory draft will aid the war effort."
  service_by_requirement_desc:0 "All able-bodied citizens are selected for mandatory service."
  all_adults_serve_desc:0 "Age limits for military service have been abolished."
  scraping_the_barrel_desc:0 "We will take anything we can get..."
-
  bender_laws:0 "Military Composition"
  fire_benders_only:0 "Benders Only"
  fire_exceptional:0 "Exceptional Nonbenders"
@@ -368,37 +313,30 @@
  earth_auxiliary:0 "Nonbender Auxiliary"
  earth_indiscriminate:0 "Equal Opportunity"
  air_benders_only:0 "Benders Only"
-
  fire_benders_only_desc:0 "A bender is naturally more powerful than the average nonbender. A military comprised solely of benders would exploit this power gap tenfold."
  fire_exceptional_desc:0 "Some nonbenders show remarkable strength and talent, placing their abilities on par with some of our best benders. It would be foolish to ignore them."
  fire_volunteers_desc:0 "There remains a great sense of patriotism among the nonbender commoners. Despite their inherent disadvantages when compared to benders, their numbers could be of great use."
  fire_auxiliary_desc:0 "Guards, patrols, and runners are all positions that nonbenders can easily occupy, allowing benders to take on more important roles."
  fire_indiscriminate_desc:0 "Benders and nonbenders are treated equally, and have the capability to serve in any role together."
-
  water_benders_only_desc:0 "A bender is naturally more powerful than the average nonbender. A military comprised solely of benders would exploit this power gap tenfold."
  water_exceptional_desc:0 "Some nonbenders show remarkable strength and talent, placing their abilities on par with some of our best benders. It would be foolish to ignore them."
  water_volunteers_desc:0 "There remains a great sense of patriotism among the nonbender commoners. Despite their inherent disadvantages when compared to benders, their numbers could be of great use."
  water_auxiliary_desc:0 "Guards, patrols, and runners are all positions that nonbenders can easily occupy, allowing benders to take on more important roles."
  water_indiscriminate_desc:0 "Benders and nonbenders are treated equally, and have the capability to serve in any role together."
-
  earth_benders_only_desc:0 "A bender is naturally more powerful than the average nonbender. A military comprised solely of benders would exploit this power gap tenfold."
  earth_exceptional_desc:0 "Some nonbenders show remarkable strength and talent, placing their abilities on par with some of our best benders. It would be foolish to ignore them."
  earth_volunteers_desc:0 "There remains a great sense of patriotism among the nonbender commoners. Despite their inherent disadvantages when compared to benders, their numbers could be of great use."
  earth_auxiliary_desc:0 "Guards, patrols, and runners are all positions that nonbenders can easily occupy, allowing benders to take on more important roles."
  earth_indiscriminate_desc:0 "Benders and nonbenders are treated equally, and have the capability to serve in any role together."
-
  sun_benders_only_desc:0 "Due to their focus on spirituality, the Sun Warriors are solely comprised of benders, leaving no need to deliberate on the state of nonbenders."
  sun_auxiliary_desc:0 "Guards, patrols, and runners are all positions that nonbenders can easily occupy, allowing benders to take on more important roles."
-
  air_benders_only_desc:0 "Due to their focus on spirituality, the Air Nomads are solely comprised of benders, leaving no need to deliberate on the state of nonbenders."
-
  family_support:0 "Taxation"
  family_support_1:0 "Very High Taxes"
  family_support_2:0 "High Taxes"
  family_support_3:0 "Average Taxes"
  family_support_4:0 "Low Taxes"
  family_support_5:0 "Very Low Taxes"
-
  rural_economy_law:0 "Rural Economy"
  construction_efforts_law:0 "Construction Efforts"
  economy_1_desc:0 "The economy is entirely focused on infrastructure and societal development."
@@ -410,12 +348,10 @@
  economy_4_desc:0 "Economic priorities will shift toward producing weapons and military resources, adapting traditional structures to meet the demands of wartime."
  total_mobilisation_law:0 "Total Mobilization"
  total_mobilised_economy_desc:0 "All available resources, including bending abilities and communal support, will be focused on the war effort."
-
  hidden_economy:0 "Hidden Economy"
  hidden_economy_desc:0 "Since our tribe went into hiding we cannot trade without revealing ourselves."
  lost_economy:0 "Unknown to the World"
  regulated_trade:0 "Regulated Trade"
-
  global_trade:0 "Global Trade"
  global_trade_desc:0 "Trade ships are welcomed in ports around the world to exchange lucrative foreign goods."
  intercontinental_trade:0 "Intercontinental Trade"
@@ -426,7 +362,6 @@
  city_markets_desc:0 "Urban development has facilitated the creation of communal marketplaces and bazaars for the exchanging of goods."
  local_markets:0 "Local Markets"
  local_markets_desc:0 "Trade is limited to the most basic forms of local commerce."
-
  education_laws:0 "Education"
  average_education:0 "Average Education"
  average_education_desc:0 "A rudimentary educational system is in place, teaching commoners how to read and write."
@@ -440,7 +375,6 @@
  indoctrination_desc:0 "The schooling system balances its educational curriculum with propaganda, fostering patriotism from an early age."
  tribal_education:0 "Tribal Education"
  tribal_education_desc:0 "Tribal elders educate new generations with their captivating stories, though some of their exploits may sound a bit exaggerated..."
-
  strong_national_economy:0 "Strenghten Our Economy"
  strong_national_economy_desc:0 "Investments into our economy can pay off handsomely in the long run, provided that it is us and not our enemies who will reap the rewards."
  population_counted:0 "Succesful Census"
@@ -451,7 +385,6 @@
  stolen_resources_desc:0 "When considering where to obtain their resources from, these people have not failed to consider the stocks of others."
  child_labour:0 "Child Labour"
  child_labour_desc:0 "Hello, boys and girls! Today I will teach you a new game! It's called help me work! Whoever helps me the most gets an extra half an hour of rest!"
- 
  minister_of_personnel:0 "Minister of Personnel"
  minister_of_finance:0 "Minister of Finance"
  minister_of_justice:0 "Minister of Justice"
@@ -462,7 +395,6 @@
  field_marshal:0 "Field Marshal"
  grand_admiral:0 "Grand Admiral"
  quartermaster:0 "Quartermaster"
- head_of_intelligence:0 "Head of Intelligence"
  head_of_weaponry:0 "Head of Weaponry"
  academia:0 "Academia"
  clergy:0 "Clergy"
@@ -476,7 +408,6 @@
  naval_designer:0 "Naval Designer"
  motorized_designer:0 "Motorisation Designer"
  industry_designer:0 "Industry Designer"
-
  azulon:0 "Prince Azulon"
  fridericus_william:0 "Fridericus William"
  lee_wang:0 "Lee Wang"
@@ -491,8 +422,8 @@
  fir_minister_of_finance_2:0 "Kwan"
  fir_minister_of_finance_3:0 "Hiroshi"
  fir_minister_of_finance_4:0 "Yasuko"
- fir_minister_of_finance_5:0 "Ogodei"
  fir_minister_of_finance_5:0 "Hide"
+ #fir_minister_of_finance_5:0 "Hide" should be a six 
  fir_minister_of_culture_1:0 "Shiro"
  fir_minister_of_culture_2:0 "Ham-Gao"
  fir_minister_of_culture_3:0 "P'li"
@@ -543,7 +474,7 @@
  fir_head_of_intelligence_6:0 "Yon-Rah"
  fir_head_of_weaponry_1:0 "Fang"
  fir_head_of_weaponry_2:0 "Yao"
- fir_head_of_weaponry_3:0 "Lee"
+ fir_head_of_weaponry_3:0 "Lin"
  fir_head_of_weaponry_4:0 "Mongke"
  fir_head_of_weaponry_5:0 "Sako"
  fir_head_of_weaponry_6:0 "Wang"
@@ -553,12 +484,6 @@
  fir_quartermaster_4:0 "Shazou"
  fir_quartermaster_5:0 "Zolt"
  fir_quartermaster_6:0 "Quin-Lee"
- fir_head_of_weaponry_1:0 "Fang"
- fir_head_of_weaponry_2:0 "Yao"
- fir_head_of_weaponry_3:0 "Lin"
- fir_head_of_weaponry_4:0 "Mongke"
- fir_head_of_weaponry_5:0 "Sako"
- fir_head_of_weaponry_6:0 "Wang"
  fir_army_1:0 "Way of the Puma"
  fir_army_2:0 "Way of the Rhino"
  fir_army_3:0 "Way of the Goose"
@@ -601,8 +526,8 @@
  generic_minister_of_finance_2:0 "Saiful"
  generic_minister_of_finance_3:0 "Wei"
  generic_minister_of_finance_4:0 "Gang"
- generic_minister_of_finance_5:0 "Tyro"
  generic_minister_of_finance_5:0 "Ghashiun"
+ #generic_minister_of_finance_5:0 "Ghashiun" meant to be 6 
  generic_minister_of_culture_1:0 "Arik"
  generic_minister_of_culture_2:0 "Ahnah"
  generic_minister_of_culture_3:0 "Lian"
@@ -687,7 +612,6 @@
  generic_clergy_2:0 "Monastarianism"
  generic_clergy_3:0 "Earth Sages"
  generic_clergy_4:0 "Daofei Fanaticism"
-
  nwt_minister_of_personnel_1:0 "Hasook"
  nwt_minister_of_personnel_2:0 "Ashuna"
  nwt_minister_of_personnel_3:0 "Atuat"
@@ -698,8 +622,8 @@
  nwt_minister_of_finance_2:0 "Yakone"
  nwt_minister_of_finance_3:0 "Thod"
  nwt_minister_of_finance_4:0 "Sangok"
- nwt_minister_of_finance_5:0 "Nutha"
  nwt_minister_of_finance_5:0 "Desna"
+ #nwt_minister_of_finance_5:0 "Desna" meant to be six
  nwt_minister_of_culture_1:0 "Gilak"
  nwt_minister_of_culture_2:0 "Iknik"
  nwt_minister_of_culture_3:0 "Korra"
@@ -725,7 +649,6 @@
  nwt_minister_of_rites_4:0 "Unalaq"
  nwt_minister_of_rites_5:0 "Zhaya"
  nwt_minister_of_rites_6:0 "Bakun"
-
  swt_minister_of_personnel_1:0 "Hasook"
  swt_minister_of_personnel_2:0 "Ashuna"
  swt_minister_of_personnel_3:0 "Atuat"
@@ -736,8 +659,8 @@
  swt_minister_of_finance_2:0 "Yakone"
  swt_minister_of_finance_3:0 "Thod"
  swt_minister_of_finance_4:0 "Sangok"
- swt_minister_of_finance_5:0 "Nutha"
  swt_minister_of_finance_5:0 "Desna"
+ #swt_minister_of_finance_5:0 "Desna" meant to be six
  swt_minister_of_culture_1:0 "Gilak"
  swt_minister_of_culture_2:0 "Iknik"
  swt_minister_of_culture_3:0 "Korra"
@@ -763,7 +686,6 @@
  swt_minister_of_rites_4:0 "Unalaq"
  swt_minister_of_rites_5:0 "Zhaya"
  swt_minister_of_rites_6:0 "Bakun"
-
  wt_war_minister_1:0 "Tonraq"
  wt_war_minister_2:0 "Wekun"
  wt_war_minister_3:0 "Adewlmar"
@@ -847,8 +769,8 @@
  mat_minister_of_finance_2:0 "Tashi"
  mat_minister_of_finance_3:0 "Afiko"
  mat_minister_of_finance_4:0 "Aanung"
- mat_minister_of_finance_5:0 "Malu"
  mat_minister_of_finance_5:0 "Momoei"
+ #mat_minister_of_finance_5:0 "Momoei" this is meant to be six but i dont know the name you want
  mat_minister_of_culture_1:0 "Jinju"
  mat_minister_of_culture_2:0 "Dalai"
  mat_minister_of_culture_3:0 "Tang"
@@ -941,8 +863,8 @@
  fat_minister_of_finance_2:0 "Kiki"
  fat_minister_of_finance_3:0 "Milu"
  fat_minister_of_finance_4:0 "Yasua"
- fat_minister_of_finance_5:0 "Olweia"
  fat_minister_of_finance_5:0 "Fa-Wa"
+ #fat_minister_of_finance_5:0 "Fa-Wa" should be six but i dont know the name you want
  fat_minister_of_culture_1:0 "Irisha"
  fat_minister_of_culture_2:0 "Lin"
  fat_minister_of_culture_3:0 "Wei-Wui"
@@ -991,24 +913,18 @@
  fat_head_of_intelligence_4:0 "Yara"
  fat_head_of_intelligence_5:0 "Letshe"
  fat_head_of_intelligence_6:0 "Zaya"
- fat_head_of_weaponry_1:0 "Leptso"
- fat_head_of_weaponry_2:0 "Lumo"
- fat_head_of_weaponry_3:0 "Karlha"
- fat_head_of_weaponry_4:0 "Ekadazati"
- fat_head_of_weaponry_5:0 "Dalha"
- fat_head_of_weaponry_6:0 "Cempla"
- fat_quartermaster_1:0 "Akarina"
- fat_quartermaster_2:0 "Bhasundara"
- fat_quartermaster_3:0 "Ema"
- fat_quartermaster_4:0 "Jamyang"
- fat_quartermaster_5:0 "Lamo"
- fat_quartermaster_6:0 "Khadroma"
  fat_head_of_weaponry_1:0 "Ikki"
  fat_head_of_weaponry_2:0 "Metog"
  fat_head_of_weaponry_3:0 "Rinzen"
  fat_head_of_weaponry_4:0 "Lumo"
  fat_head_of_weaponry_5:0 "Saki"
  fat_head_of_weaponry_6:0 "Hariti"
+ fat_quartermaster_1:0 "Akarina"
+ fat_quartermaster_2:0 "Bhasundara"
+ fat_quartermaster_3:0 "Ema"
+ fat_quartermaster_4:0 "Jamyang"
+ fat_quartermaster_5:0 "Lamo"
+ fat_quartermaster_6:0 "Khadroma"
  fat_army_1:0 "Teachings of Jesa"
  fat_army_2:0 "Teachings of Yangchen"
  fat_army_3:0 "Teachings of Laghima"
@@ -1041,8 +957,8 @@
  swa_minister_of_finance_2:0 "Wakka"
  swa_minister_of_finance_3:0 "Nana"
  swa_minister_of_finance_4:0 "Ayishi"
- swa_minister_of_finance_5:0 "Ogo"
  swa_minister_of_finance_5:0 "Abu"
+ #swa_minister_of_finance_5:0 "Abu" meant to be a six but i dont know the name you want
  swa_minister_of_culture_1:0 "Pashi"
  swa_minister_of_culture_2:0 "Ham"
  swa_minister_of_culture_3:0 "Gugui"
@@ -1136,8 +1052,8 @@
  snw_minister_of_finance_2:0 "Xpiayoc"
  snw_minister_of_finance_3:0 "Hiroshi"
  snw_minister_of_finance_4:0 "Xmucane"
- snw_minister_of_finance_5:0 "Zac-Kuk"
  snw_minister_of_finance_5:0 "Itzel"
+ #snw_minister_of_finance_5:0 "Itzel" meant to be six but i dont know the name you want
  snw_minister_of_culture_1:0 "Babajide"
  snw_minister_of_culture_2:0 "Amaru"
  snw_minister_of_culture_3:0 "Ekkeko"
@@ -1221,7 +1137,6 @@
  snw_clergy_2:0 "Spiritual Guidance"
  snw_clergy_3:0 "Dragon Worship"
  snw_clergy_4:0 "Fire Worship"
-
  Teka_kimonos:0 "Teka Kimonos"
  Ringo_kimonos:0 "Ringo Kimonos"
  KYI_signed_memorandum_of_cooperation_with_teka_kimonos_idea:0 "Memorandum of Cooperation with Teka Kimonos"

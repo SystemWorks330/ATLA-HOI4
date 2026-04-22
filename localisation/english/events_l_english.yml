@@ -405,7 +405,7 @@
  fir_cold_feet_description:0 "Do not genocide Air Nomads - you risk having expansion plans ruined!"
 
 ### CLANS
- air_gen.7.b:0 "No, there is another way."
+ air_gen.9.b:0 "No, there is another way."
  
  air_gen.11.t:0 "A Different Path for the Fire Nation"
  air_gen.11.d:0 "We choose not to follow Sozin's path of genocide. But how we chart our own course is another question entirely.\n\nDo we honor the legacy of Avatar Roku, seeking balance in the world, contesting the Northern Water Tribe's influence, and building a legitimate empire? Or do we look inward, rebuild the Fire Nation by burning everything to the ground, and cede power to the clans."
@@ -434,7 +434,6 @@
  ear_treaty.2.a:0 "If it protects us, then so be it"
  ear_treaty.2.b:0 "We agree, as long as we keep some autonomy"
  ear_treaty.2.c:0 "Who do they think they are?"
- ear_treaty.2.d:0 "Our King still has [ROOT.GetLeader.GetHerHis] dignity"
  ear_treaty.2.e:0 "What service could we offer?"
  ear_treaty.3.t:0 "Anti-Sozin Pact"
  ear_treaty.3.desc:0 "The recent global events have shown, that nobody is save anymore. The last nations that could stop the firenation aggression now have to stand together."

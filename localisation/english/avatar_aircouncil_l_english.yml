@@ -73,8 +73,6 @@
  politics_increase_tooltip:0 "Change §YPolitics§! Priority \n"
  
  mission_1_description:0 "[mission_1_desc]"
- mission_nr7_timeout:0 "One council member may loose harmony"
- mission_nr7_success:0 "One council member may gain harmony"
  
  ### ideas ###
  council_harsh_opposition:0 "Council in disarray!"
