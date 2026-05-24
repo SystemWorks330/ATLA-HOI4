@@ -1,6 +1,6 @@
 characters={
 	NAT_northern_monk={
-		name=NAT_choezom
+		name="Choezom"
 		portraits={
 			civilian={
 				large="gfx/leaders/NAT/Portrait_Northernairtemple_Generic.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	NAT_extinct_nation={
-		name=NAT_extinct_nation
+		name="Extinct Nation"
 		portraits={
 			civilian={
 				large="gfx/leaders/NAT/Portrait_Northernairtemple_Extinct.dds"
@@ -31,7 +31,7 @@ characters={
 		}
 	}
 	NAT_mechanist={
-		name=NAT_mechanist
+		name="Mechanist"
 		portraits={
 			civilian={
 				large="gfx/leaders/NAT/Portrait_Northernairtemple_Mechanist.dds"
@@ -48,7 +48,7 @@ characters={
 		}
 	}
 	NAT_generic={
-		name=NAT_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/NAT/Portrait_Northernairtemple_colonialism.dds"

@@ -1,6 +1,6 @@
 characters={
 	GAR_bolin={
-		name=GAR_bolin
+		name="Bolin"
 		portraits={
 			civilian={
 				large="gfx/leaders/GAR/Portrait_Zheizhou_Bolin.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	GAR_generic={
-		name=GAR_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/GAR/Portrait_Zheizhou_colonialism.dds"

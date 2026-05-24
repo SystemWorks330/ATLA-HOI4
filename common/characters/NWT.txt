@@ -1,6 +1,6 @@
 characters = {
 	NWT_rundak = {
-		name = NWT_rundak
+		name = "Rundak"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/NWT/Portrait_Northernwatertribe_Generic1.dds"
@@ -13,7 +13,7 @@ characters = {
 		}
 	}
 	NWT_arnook = {
-		name = NWT_arnook
+		name = "Arnook"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/NWT/Portrait_Northernwatertribe_Arnook.dds"
@@ -26,7 +26,7 @@ characters = {
 		}
 	}
 	NWT_buthaka = {
-		name = NWT_buthaka
+		name = "Buthaka"
 		portraits = {
 			army = {
 				small = "GFX_Portrait_Watertribe_Generic_1_small"
@@ -66,7 +66,7 @@ characters = {
 		}
 	}
 	NWT_sangok = {
-		name = NWT_sangok
+		name = "Sangok"
 		portraits = {
 			army = {
 				small = "GFX_Portrait_Watertribe_Generic_2_small"
@@ -105,7 +105,7 @@ characters = {
 		}
 	}
 	NWT_pakku = {
-		name = NWT_pakku
+		name = "Pakku"
 		portraits = {
 			army = {
 				large = "gfx/leaders/NWT/Portrait_Northernwatertribe_Pakku.png"
@@ -124,7 +124,7 @@ characters = {
 		}
 	}
 	NWT_generic = {
-		name = NWT_generic
+		name = "Generic"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/NWT/Portrait_Northernwatertribe_fire_tribes.dds"

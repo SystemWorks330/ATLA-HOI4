@@ -20,7 +20,7 @@
  stone_desc:0 "Stones & Raw Materials can be used on the tip of spears or arrows or as projectiles for catapults and trebuchets."
  iron_desc:0 "Iron and Copper are the most cost effective material to supply your army with weapons of all types."
  steel_desc:0 "Steel is the strongest and most expensive metal for modern equipment like swords and spears, but also tanks and ships."
- chromium_desc:0 "Though very primitive, Hides & Animal Products are still very useful and necessary for a variety of weapons."
+ chromium_desc:0 "Though very primitive, Hides & Animal Products are still very usefull and necessary for a variety of weapons."
  food_resource_desc:1 "Food is necessary for the people to survive."
  consumer_goods_resource_desc:1 "Consumer goods make live easier."
  luxury_goods_resource_desc:1 "Luxury goods are needed for the upper class, which can establish in prosperous societies."
@@ -332,12 +332,4 @@
  BONUS_PRODUCTION_RESOURCE_NEED_FACTOR: "Production resource need"
  BONUS_PRODUCTION_RESOURCE_PENALTY_FACTOR: "Production resource penalty"
  BONUS_PRODUCTION_CONVERSION_SPEED_FACTOR: "Production conversion speed"
- 
- PRODUCTION_UNKNOWN_ENERGY_AMOUNT: "?"
- PRODUCTION_NO_INTEL_ON_POWER: "We have no intel on power usage in this state."
- PRODUCTION_STATE_ENERGY_EFFICIENCY: "Energy Efficiency: $VALUE|H$"
- PRODUCTION_STATE_ENERGY_USAGE_FACTORIES: "Factory Energy Usage: $VALUE|H$"
- PRODUCTION_STATE_ENERGY_USAGE_MILITARY_FACTORIES: "  £mil_factory Military Factory Energy Usage: $VALUE|H$"
- PRODUCTION_STATE_ENERGY_USAGE_NAVAL_DOCKYARDS: "  £nav_dockyard_texticon Naval Dockyard Energy Usage: $VALUE|H$"
- PRODUCTION_STATE_ENERGY_USAGE_CIVILIAN_FACTORIES: "  £civ_factory Civilian Factory Energy Usage: $VALUE|H$"
  

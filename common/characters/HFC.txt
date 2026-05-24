@@ -1,6 +1,6 @@
 characters={
 	HFC_koulin = {
-		name = HFC_zuji
+		name = "Zuji"
 		portraits={
 			civilian = {
 				large="gfx/leaders/HFC/Portrait_Hu_Xin_Fire_Colony_Koulin.dds"
@@ -33,7 +33,7 @@ characters={
 	}
 
 	HFC_generic={
-		name=HFC_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/GDD/Portrait_Great_Divide_fire_tribes.dds"

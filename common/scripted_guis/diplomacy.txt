@@ -150,7 +150,9 @@ scripted_gui = {
 			target_country_flag = {
 				image = [FROM.GetFlag]
 			}
-			
+			claimer_country_flag = {
+				image = [ROOT.GetFlag]
+			}
 			just_claim_type = {
 				frame = just_claim_icon
 			}

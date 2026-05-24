@@ -316,7 +316,7 @@ guiTypes = {
 				}
 				
 				iconType = {
-					name ="occupied_fulfilled"
+					name ="working_fulfilled"
 					spriteType = "GFX_logistics_fuelbar"
 					position = { x=10 y = 30 }
 					frame = 100

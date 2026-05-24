@@ -45,8 +45,8 @@ sub_units = {
 		
 		max_organisation = 20
 
-		supply_consumption = 0
 		
+		supply_consumption = 0
 		critical_parts = { burning_engine on_fire rudder_jammed damaged_trebuchets damaged_catapults }
 		critical_part_damage_chance_mult = 1
 		
@@ -83,7 +83,7 @@ sub_units = {
 
 		supply_consumption = 0
 		
-		critical_parts = { burning_engine on_fire rudder_jammed }
+		critical_parts = { burning_engine on_fire rudder_jammed}
 		critical_part_damage_chance_mult = 1
 		
 		hit_profile_mult = 1.0

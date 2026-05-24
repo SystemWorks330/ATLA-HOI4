@@ -1,6 +1,6 @@
 characters={
 	MAK_hongli={
-		name=MAK_hongli
+		name="Hong-Li"
 		portraits={
 			civilian={
 				large="gfx/leaders/MAK/Portrait_Makapu_Hong-Li.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	MAK_generic={
-		name=MAK_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/MAK/Portrait_Makapu_colonialism.dds"

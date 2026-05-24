@@ -55,7 +55,7 @@ set_popularities = {
 set_variable = { victory_condition = token:pearl_of_the_south_spirit }
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	local_markets
 	construction_efforts_law
@@ -65,7 +65,6 @@ add_ideas = {
 
 recruit_character = GAO_shing
 recruit_character = GAO_lao_beifong
-recruit_character = GAO_generic
 #if = {
 #	limit = {
 #		has_dlc = "Together for Victory"
@@ -160,3 +159,4 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
+recruit_character = GAO_generic

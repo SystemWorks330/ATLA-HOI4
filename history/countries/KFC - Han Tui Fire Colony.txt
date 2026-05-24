@@ -111,7 +111,6 @@ permanent_spirits_and_modifiers = yes
 ##    #   #  # #  #   #       ###   #### 
 
 
-recruit_character = KFC_generic
 52.5.16 ={
 	#add_to_war = {
 	#	targeted_alliance = FIR
@@ -148,3 +147,4 @@ recruit_character = KFC_generic
 
 # Different Ideology Leaders
 recruit_character = KFC_qin
+recruit_character = KFC_generic

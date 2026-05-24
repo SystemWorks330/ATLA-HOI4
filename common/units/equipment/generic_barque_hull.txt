@@ -6,7 +6,7 @@ equipments = {
 		is_buildable = no
 		type = screen_ship
 		interface_category = interface_category_screen_ships
-		#alias = destroyer
+		alias = destroyer
 		priority = 1900
 
 		module_slots = {

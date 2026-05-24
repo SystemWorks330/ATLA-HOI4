@@ -1,6 +1,6 @@
 characters={
 	PFC_generic={
-		name=PFC_zosum
+		name="Zosum"
 		portraits={
 			civilian={
 				large="gfx/leaders/PFC/Portrait_Pohuai_Fire_Colony_generic.dds"

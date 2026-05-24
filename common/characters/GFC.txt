@@ -1,6 +1,6 @@
 characters={
 	GFC_generic={
-		name=GFC_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/GFC/Portrait_Garsai_Fire_Colony_generic.dds"

@@ -59,22 +59,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			modifier = {
-				set_temp_variable = {
-					b = THIS.resource@bricks_resource
-				}
-				multiply_temp_variable = {
-					b = 5
-				}
-				add = b
-			}
-			modifier = {
-				has_resources_in_country = {
-					resource = stone
-					amount < 1
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2102,16 +2087,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
-			modifier = {
-				check_variable = {
-					THIS.resource@luxury_goods_resource  < 1
-				}
-				check_variable = {
-					THIS.resource@stone > 3
-				}
-			add = 4	
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2145,16 +2121,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
-			modifier = {
-				check_variable = {
-					THIS.resource@luxury_goods_resource  < 1
-				}
-				check_variable = {
-					THIS.resource@stone > 3
-				}
-			add = 4	
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2188,16 +2155,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
-			modifier = {
-				check_variable = {
-					THIS.resource@luxury_goods_resource  < 1
-				}
-				check_variable = {
-					THIS.resource@stone > 3
-				}
-			add = 4	
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2231,16 +2189,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
-			modifier = {
-				check_variable = {
-					THIS.resource@luxury_goods_resource  < 1
-				}
-				check_variable = {
-					THIS.resource@stone > 3
-				}
-			add = 4	
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2271,16 +2220,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
-			modifier = {
-				check_variable = {
-					THIS.resource@luxury_goods_resource  < 1
-				}
-				check_variable = {
-					THIS.resource@stone > 3
-				}
-			add = 4	
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2433,6 +2373,7 @@ technologies = {
 
 		craftsman_factor = 0.025
 		
+		carpentry_output = 1
 		carpentry_output_2 = 1
 		
 		research_cost = 2
@@ -2479,33 +2420,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
-				# ai_will_do = 3*(m-s)
-				#Make it percentual
-				#ai_will_do = 3 * {[(m-s)/m]*100}
-				set_temp_variable = {s = THIS.wood_variable}
-				set_temp_variable = {m = THIS.wood_max}
-				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
-				subtract_from_temp_variable = { #m-s
-					var = m
-					value = s
-				}
-				divide_temp_variable = { # (m-s)/m
-					var = m
-					value = d
-				}
-				multiply_temp_variable = { # [(m-s)/m] * 100
-					var = m
-					value = 100
-				}
-				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
-					var = m
-					value = 3
-				}
-				add = m
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2522,6 +2437,7 @@ technologies = {
 
 		craftsman_factor = 0.025
 		
+		carpentry_output = 1
 		carpentry_output_2 = 1
 		
 		research_cost = 2
@@ -2567,33 +2483,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
-				# ai_will_do = 3*(m-s)
-				#Make it percentual
-				#ai_will_do = 3 * {[(m-s)/m]*100}
-				set_temp_variable = {s = THIS.wood_variable}
-				set_temp_variable = {m = THIS.wood_max}
-				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
-				subtract_from_temp_variable = { #m-s
-					var = m
-					value = s
-				}
-				divide_temp_variable = { # (m-s)/m
-					var = m
-					value = d
-				}
-				multiply_temp_variable = { # [(m-s)/m] * 100
-					var = m
-					value = 100
-				}
-				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
-					var = m
-					value = 3
-				}
-				add = m
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2609,6 +2499,7 @@ technologies = {
 		}
 		craftsman_factor = 0.025
 		
+		carpentry_output = 1
 		carpentry_output_2 = 1
 		
 		research_cost = 2
@@ -2654,42 +2545,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
-				# ai_will_do = 3*(m-s)
-				#Make it percentual
-				#ai_will_do = 3 * {[(m-s)/m]*100}
-				set_temp_variable = {s = THIS.wood_variable}
-				set_temp_variable = {m = THIS.wood_max}
-				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
-				if = {
-					limit = {
-						check_variable = {d = 0}
-					}
-					add_to_temp_variable = {
-						var = d
-						value = 10000
-					}
-				}
-				subtract_from_temp_variable = { #m-s
-					var = m
-					value = s
-				}
-				divide_temp_variable = { # (m-s)/m
-					var = m
-					value = d
-				}
-				multiply_temp_variable = { # [(m-s)/m] * 100
-					var = m
-					value = 100
-				}
-				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
-					var = m
-					value = 3
-				}
-				add = m
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2705,6 +2561,7 @@ technologies = {
 		}
 		craftsman_factor = 0.025
 		
+		carpentry_output = 1
 		carpentry_output_3 = 1
 		
 		research_cost = 2
@@ -2750,42 +2607,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
-				# ai_will_do = 3*(m-s)
-				#Make it percentual
-				#ai_will_do = 3 * {[(m-s)/m]*100}
-				set_temp_variable = {s = THIS.wood_variable}
-				set_temp_variable = {m = THIS.wood_max}
-				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
-				if = {
-					limit = {
-						check_variable = {d = 0}
-					}
-					add_to_temp_variable = {
-						var = d
-						value = 10000
-					}
-				}
-				subtract_from_temp_variable = { #m-s
-					var = m
-					value = s
-				}
-				divide_temp_variable = { # (m-s)/m
-					var = m
-					value = d
-				}
-				multiply_temp_variable = { # [(m-s)/m] * 100
-					var = m
-					value = 100
-				}
-				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
-					var = m
-					value = 3
-				}
-				add = m
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2801,6 +2623,7 @@ technologies = {
 		}
 		craftsman_factor = 0.025
 
+		carpentry_output = 1
 		carpentry_output_3 = 1
 		
 		research_cost = 2
@@ -2843,42 +2666,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
-				# ai_will_do = 3*(m-s)
-				#Make it percentual
-				#ai_will_do = 3 * {[(m-s)/m]*100}
-				set_temp_variable = {s = THIS.wood_variable}
-				set_temp_variable = {m = THIS.wood_max}
-				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
-				if = {
-					limit = {
-						check_variable = {d = 0}
-					}
-					add_to_temp_variable = {
-						var = d
-						value = 10000
-					}
-				}
-				subtract_from_temp_variable = { #m-s
-					var = m
-					value = s
-				}
-				divide_temp_variable = { # (m-s)/m
-					var = m
-					value = d
-				}
-				multiply_temp_variable = { # [(m-s)/m] * 100
-					var = m
-					value = 100
-				}
-				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
-					var = m
-					value = 3
-				}
-				add = m
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -2894,6 +2682,7 @@ technologies = {
 		}
 		craftsman_factor = 0.025
 		
+		carpentry_output = 1
 		carpentry_output_3 = 1
 		
 		research_cost = 2
@@ -3554,57 +3343,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				fishing_stand > 0
-				add = 1
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier =  famine
-				}
-				any_owned_state = {
-					is_coastal = yes
-				}
-				add = 10
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.6
-				}
-				add = 4
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.5
-				}
-				add = 30
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.4
-				}
-				add = 30
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.3
-				}
-				add = 30
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.2
-				}
-				factor = 2
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier = burgerking
-				}
-				factor = 0
-			}
-		
+			factor = 2
 		}
 		
 		categories = {
@@ -3630,9 +3369,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 2
-
+			factor = 2
 		}
+		
 		categories = {
 			age_1
 
@@ -3657,57 +3396,9 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				fishing_stand > 0
-				add = 1
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier =  famine
-				}
-				any_owned_state = {
-					is_coastal = yes
-				}
-				add = 10
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.6
-				}
-				add = 4
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.5
-				}
-				add = 30
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.4
-				}
-				add = 30
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.3
-				}
-				add = 30
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.2
-				}
-				factor = 2
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier = burgerking
-				}
-				factor = 0
-			}
+			factor = 2
 		}
+		
 		categories = {
 			age_2
 
@@ -3811,56 +3502,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				fishing_stand > 0
-				add = 1
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier =  famine
-				}
-				any_owned_state = {
-					is_coastal = yes
-				}
-				add = 10
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.6
-				}
-				add = 4
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.5
-				}
-				add = 30
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.4
-				}
-				add = 30
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.3
-				}
-				add = 30
-			}
-			modifier = {
-				check_variable = {
-					THIS.ration_ratio_percent < 0.2
-				}
-				factor = 2
-			}
-			modifier = {
-				has_dynamic_modifier = {
-					modifier = burgerking
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -3928,54 +3570,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -4001,56 +3596,16 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 2
 			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
+				OR = {
+					tag = NWT
+					tag = SWT
 				}
 				factor = 0
 			}
 		}
-
+		
 		categories = {
 			age_1
 
@@ -4086,54 +3641,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -4163,54 +3671,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -4246,54 +3707,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -4321,54 +3735,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -4406,54 +3773,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -4481,54 +3801,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -4564,54 +3837,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -4640,54 +3866,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -4721,54 +3900,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -4793,58 +3925,11 @@ technologies = {
 		#start_year = 72
 		folder = {
 			name = industry_folder
-			position = { x = -5 y = 24 }
+			position = { x = -5-5 y = 24 }
 		}
 		
 		ai_will_do = {
-			base = 0
-			modifier = {
-				set_temp_variable = {a = 500}
-				set_temp_variable = {
-					m = THIS.ration_months_to_empty
-				}
-				if = {
-					limit = {
-						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
-							all_owned_state = {
-								has_dynamic_modifier = {
-									modifier = winter_modifier
-								}
-							NOT = {check_variable = {global.calendar_month = 2}}
-							}
-						}
-					}
-					multiply_temp_variable = {
-						var = m
-						value = 2
-					}
-				}
-				if = {
-					limit = {
-						check_variable = {m = 0}
-					}
-					add_to_temp_variable = {
-						var = m
-						value = 1
-					}
-				}
-				divide_temp_variable = {
-					var = a
-					value = m
-				}
-				add = a	
-			}
-			modifier = {
-				THIS = {
-					all_owned_state = {
-						has_dynamic_modifier = { 
-							modifier = permafrost_modifier 
-						}
-					}
-				}
-				factor = 0
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -5075,25 +4160,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 10
-				}
-				add = 2
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 5
-				}
-				factor = 10
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 0
-				}
-				factor = 30
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -5164,25 +4231,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 10
-				}
-				add = 2
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 5
-				}
-				factor = 10
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 0
-				}
-				factor = 30
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -5218,25 +4267,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 10
-				}
-				add = 2
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 5
-				}
-				factor = 10
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 0
-				}
-				factor = 30
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -5272,25 +4303,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 10
-				}
-				add = 2
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 5
-				}
-				factor = 10
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 0
-				}
-				factor = 30
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -5321,25 +4334,7 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 1
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 10
-				}
-				add = 2
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 5
-				}
-				factor = 10
-			}
-			modifier = {
-				check_variable = {
-					THIS.resource@tungsten < 0
-				}
-				factor = 30
-			}
+			factor = 2
 		}
 		
 		categories = {
@@ -5690,6 +4685,10 @@ technologies = {
 		}
 		miner_factor = 0.05
 		
+		path = {
+			leads_to_tech = mining_c5
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = burning_4
 			research_cost_coeff = 1

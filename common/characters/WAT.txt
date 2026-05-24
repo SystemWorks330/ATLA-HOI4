@@ -1,6 +1,6 @@
 characters={
 	WAT_western_monk={
-		name=WAT_pemin
+		name="Pemin"
 		portraits={
 			civilian={
 				large="gfx/leaders/WAT/Portrait_Westernairtemple_Generic.dds"
@@ -23,7 +23,7 @@ characters={
 		}
 	}
 	WAT_extinct_nation={
-		name=WAT_extinct_nation
+		name="Extinct Nation"
 		portraits={
 			civilian={
 				large="gfx/leaders/WAT/Portrait_Westernairtemple_Extinct.dds"
@@ -40,7 +40,7 @@ characters={
 		}
 	}
 	WAT_generic={
-		name=WAT_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/WAT/Portrait_Westernairtemple_fire_tribes.dds"

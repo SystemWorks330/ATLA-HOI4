@@ -1,6 +1,6 @@
 characters={
 	SWA_otang={
-		name=SWA_otang
+		name="Otang"
 		portraits={
 			army={
 				small="GFX_Portrait_Swamp_Generic_2_small"
@@ -17,7 +17,7 @@ characters={
 		}
 	}
 	SWA_huu={
-		name=SWA_huu
+		name="Huu"
 		portraits={
 			civilian={
 				large="GFX_Portrait_Foggy_Swamp_huu"
@@ -31,7 +31,7 @@ characters={
 		}
 	}
 	SWA_due={
-		name=SWA_due
+		name="Due"
 		portraits={
 			army={
 				small="GFX_Portrait_Swamp_Generic_1_small"
@@ -50,7 +50,7 @@ characters={
 		}
 	}
 	SWA_tho={
-		name=SWA_tho
+		name="Tho"
 		portraits={
 			army={
 				small="GFX_Portrait_Swamp_Generic_3_small"
@@ -69,7 +69,7 @@ characters={
 		}
 	}
 	SWA_generic={
-		name=SWA_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/SWA/Portrait_Foggy_Swamp_fire_tribes.dds"

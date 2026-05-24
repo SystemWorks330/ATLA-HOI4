@@ -54,7 +54,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	local_markets
 	construction_efforts_law
@@ -63,7 +63,6 @@ add_ideas = {
 }
 
 recruit_character = ZIN_kuei
-recruit_character = ZIN_generic
 
 #set_cosmetic_tag = ZIN_puppet
 
@@ -125,3 +124,4 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
+recruit_character = ZIN_generic

@@ -1,6 +1,6 @@
 characters={
 	ISL_gombo={
-		name=ISL_gombo
+		name="Gombo"
 		portraits={
 			civilian={
 				large="gfx/leaders/ISL/Portrait_Islands_Gombo.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	ISL_generic={
-		name=ISL_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/ISL/Portrait_Islands_colonialism.dds"

@@ -1,6 +1,6 @@
 characters={
 	NAN_ping={
-		name=NAN_ping
+		name="Ping"
 		portraits={
 			civilian={
 				large="gfx/leaders/NAN/Portrait_Nan-Shan_Ping.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	NAN_generic={
-		name=NAN_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/NAN/Portrait_Nan-Shan_colonialism.dds"

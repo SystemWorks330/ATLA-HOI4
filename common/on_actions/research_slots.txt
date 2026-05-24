@@ -59,7 +59,7 @@ on_actions = {
 						}
 						any_country = {
 							has_opinion = {
-								target = PREV
+								target = ROOT
 								value > 80
 							}
 						}
@@ -73,7 +73,7 @@ on_actions = {
 						NOT = {
 							any_country = {
 								has_opinion = {
-									target = PREV
+									target = ROOT
 									value > 80
 								}
 							}

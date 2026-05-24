@@ -318,6 +318,13 @@ technology_folders = {
 		ledger = navy
 	}
 
+	special_forces_doctrine_folder = {
+		ledger = army
+		ledger = navy
+		ledger = air
+		doctrine = yes
+	}
+
 	industry_folder = {
 		ledger = civilian
 	}
@@ -340,9 +347,6 @@ technology_folders = {
 	air_doctrine_folder = {
 		ledger = air
 		doctrine = yes
-	}
-	innovation_army_folder = {
-		ledger = hidden 
 	}
 }
 

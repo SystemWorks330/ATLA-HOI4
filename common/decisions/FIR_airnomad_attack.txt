@@ -188,6 +188,7 @@ air_genocide_category = {
 		}
 		visible = {
 			has_country_flag = genocide_active
+			has_country_flag = firebender_operation
 			NOT = {
 				has_global_flag = sozins_comet_first
 				has_war = yes
@@ -232,6 +233,10 @@ air_genocide_category = {
 					has_country_flag = north_extra_construction
 					has_decision = northern_operation_base
 				}
+			}
+			OR = {
+				has_country_flag = firebender_operation
+				has_country_flag = hired_dai_li
 			}
 			NOT = {
 				has_global_flag = sozins_comet_first
@@ -298,6 +303,10 @@ air_genocide_category = {
 					has_country_flag = east_extra_construction
 					has_decision = eastern_operation_base
 				}
+			}
+			OR = {
+				has_country_flag = firebender_operation
+				has_country_flag = hired_dai_li
 			}
 			NOT = {
 				has_global_flag = sozins_comet_first
@@ -381,6 +390,10 @@ air_genocide_category = {
 					has_decision = southern_operation_base
 				}
 			}
+			OR = {
+				has_country_flag = firebender_operation
+				has_country_flag = hired_dai_li
+			}
 			NOT = {
 				has_global_flag = sozins_comet_first
 				has_war = yes
@@ -462,6 +475,10 @@ air_genocide_category = {
 					has_country_flag = west_extra_construction
 					has_decision = western_operation_base
 				}
+			}
+			OR = {
+				has_country_flag = firebender_operation
+				has_country_flag = hired_dai_li
 			}
 			NOT = {
 				has_global_flag = sozins_comet_first

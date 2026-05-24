@@ -1,6 +1,6 @@
 characters={
 	PIR_blackbeard={
-		name = PIR_gundao
+		name = "Gundao"
 		portraits={
 			civilian={
 				large="gfx/leaders/PIR/Portrait_Pirates_Blackbeard.dds"
@@ -16,7 +16,7 @@ characters={
 	}
 
 	PIR_generic = {
-		name = PIR_generic
+		name = "Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/PIR/Portrait_Pirates_Blackbeard.dds"

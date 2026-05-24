@@ -177,35 +177,35 @@ scripted_gui = {
 				frame = mtth:moon_phases
 			}
 
-			flood_unlock = {
+			flood_buy_unlock = {
 				frame = flood_buy_unlock
 			}
-			drought_unlock = {
+			drought_buy_unlock = {
 				frame = drought_buy_unlock
 			}
-			volcano_unlock = {
+			volcano_buy_unlock = {
 				frame = volcano_buy_unlock
 			}
-			tornado_unlock = {
+			tornado_buy_unlock = {
 				frame = tornado_buy_unlock
 			}
-			earthquake_unlock = {
+			earthquake_buy_unlock = {
 				frame = earthquake_buy_unlock
 			}
 
-			full_moon_unlock = {
+			full_moon_buy_unlock = {
 				frame = full_moon_buy_unlock
 			}
-			black_sun_unlock = {
+			black_sun_buy_unlock = {
 				frame = black_sun_buy_unlock
 			}
-			comet_rain_unlock = {
+			comet_rain_buy_unlock = {
 				frame = comet_rain_buy_unlock
 			}
-			great_comet_unlock = {
+			great_comet_buy_unlock = {
 				frame = great_comet_buy_unlock
 			}
-			lunar_eclipse_unlock = {
+			lunar_eclipse_buy_unlock = {
 				frame = lunar_eclipse_buy_unlock
 			}
 		}

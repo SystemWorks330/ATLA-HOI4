@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 ﻿l_english:
  # name list themes -- updated to include country-specific and other new list names
  #NAME_THEME_RIVERS:0 "Rivers"
@@ -7,4 +8,15 @@
  NAME_THEME_SS:0 "Small Ships"
  NAME_THEME_CL:0 "Light Cruisers"
  NAME_THEME_CA:0 "Heavy Cruisers"
+=======
+﻿l_english:
+ # name list themes -- updated to include country-specific and other new list names
+ NAME_THEME_RIVERS:0 "Rivers"
+ NAME_THEME_FISH:0 "Fish"
+ NAME_THEME_ANIMALS:0 "Animals"
+ NAME_THEME_BATTLES:0 "Famous Battles"
+ NAME_THEME_SS:0 "Small Ships"
+ NAME_THEME_CL:0 "Light Cruisers"
+ NAME_THEME_CA:0 "Heavy Cruisers"
+>>>>>>> Stashed changes
  NAME_THEME_BB:0 "Battleships"

@@ -1,6 +1,6 @@
 characters={
 	KYI_oyaji={
-		name=KYI_oyaji
+		name="Oyaji"
 		portraits={
 			civilian={
 				large="GFX_Portrait_Kyoshi_Oyaji"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	KYI_kyoshi_leader={
-		name=KYI_kyoshi_leader
+		name="Ijuru"
 		portraits={
 			civilian={
 				large="GFX_Portrait_Kyoshi_Generic"
@@ -28,7 +28,7 @@ characters={
 		}
 	}
 	KYI_suki={
-		name=KYI_suki
+		name="Suki"
 		portraits={
 			army={
 				small="GFX_Portrait_Kyoshi_Suki_small"
@@ -47,7 +47,7 @@ characters={
 		}
 	}
 	KYI_kyoshi_warrior={
-		name=KYI_kyoshi_warrior
+		name="Kyoshi Warrior"
 		portraits={
 			army={
 				small="GFX_Portrait_Kyoshi_Generic_1_small"
@@ -66,7 +66,7 @@ characters={
 		}
 	}
 	KYI_generic={
-		name=KYI_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/KYI/Portrait_Kyoshi_nationalism.dds"

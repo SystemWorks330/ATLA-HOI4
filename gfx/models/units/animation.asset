@@ -260,11 +260,6 @@ animation = {
 }
 
 animation = {
-	name = "cavalry_horse_idle_forward_animation"
-	file = "cavalry_horse_idle_forward.anim"
-}
-
-animation = {
 	name = "cavalry_horse_moving_animation"
 	file = "cavalry_horse_walk.anim"
 }

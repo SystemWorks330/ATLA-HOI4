@@ -1,6 +1,6 @@
 characters={
 	YUE_lubao={
-		name=YUE_lubao
+		name="Lubao"
 		portraits={
 			civilian={
 				large="gfx/leaders/YUE/Portrait_Kangfao_Lubao.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	YUE_generic={
-		name=YUE_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/YUE/Portrait_Kangfao_colonialism.dds"

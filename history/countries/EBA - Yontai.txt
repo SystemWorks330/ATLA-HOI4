@@ -90,7 +90,6 @@ set_popularities = {
 }
 
 recruit_character = EBA_than
-recruit_character = EBA_generic
 
 #set_cosmetic_tag = EBA_integrated
 
@@ -153,3 +152,4 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
+recruit_character = EBA_generic

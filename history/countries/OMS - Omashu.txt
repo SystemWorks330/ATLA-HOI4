@@ -75,7 +75,7 @@ omashu_puppet_12 = yes
 
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	intercontinental_trade
 	construction_efforts_law
@@ -134,7 +134,6 @@ if = {
 recruit_character = OMS_iuri
 recruit_character = OMS_bumi
 recruit_character = EAR_cabagge_merchant
-recruit_character = OMS_generic
 
 
 
@@ -232,3 +231,4 @@ if = {
 }
 
 # Different Ideology Leaders
+recruit_character = OMS_generic

@@ -70,23 +70,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 0
+			factor = 30
+			
+			
 			modifier = {
-				#ai_will_do = 100 - stability
-				set_temp_variable = {s = THIS.stability}
-				multiply_temp_variable = {
-					var = s
-					value = -1
-				}
-				add_to_temp_variable = {
-					var = s
-					value = 1
-				}
-				multiply_temp_variable = {
-					var = s
-					value = 100
-				}
-				add = s
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -126,17 +115,16 @@ technologies = {
 			name = electronics_folder
 			position = { x = 5 y = 2 }
 		}
+		
 		ai_will_do = {
+			factor = 30
+			
+			
 			modifier = {
-				set_temp_variable = { s = THIS.stability}
-				multiply_temp_variable = {
-					var = s
-					value = 100
-				}
-				add = s
+				factor = 3
+				date > "2.1.1"
 			}
 		}
-
 		
 		categories = {
 			age_1
@@ -231,18 +219,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
+			factor = 30
+			
+			
 			modifier = {
-				set_temp_variable = {r = THIS.peasant_revolt_risk_var }
-				set_temp_variable = {s = THIS.stability}
-				multiply_temp_variable = {
-					var = r
-					value = r
-				}
-				divide_temp_variable = {
-					var = r
-					value = s
-				}
-				add = r
+				factor = 3
+				date > "2.1.1"
 			}
 		}
 		
@@ -1605,10 +1587,12 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			base = 5
+			factor = 30
+			
+			
 			modifier = {
 				factor = 3
-				has_manpower < 400
+				date > "2.1.1"
 			}
 		}
 		

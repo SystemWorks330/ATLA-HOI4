@@ -1,6 +1,6 @@
 characters={
 	SWT_salota={
-		name=SWT_salota
+		name="Salota"
 		portraits={
 			civilian={
 				large="gfx/leaders/SWT/Portrait_Southernwatertribe_Dad_Hakoda.dds"
@@ -107,7 +107,7 @@ characters={
 	}
 
 	SWT_generic={
-		name=SWT_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/SWT/Portrait_Southernwatertribe_colonialism.dds"

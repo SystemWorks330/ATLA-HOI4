@@ -61,7 +61,6 @@ add_ideas = {
 }
 
 recruit_character = FMB_haru
-recruit_character = FMB_generic
 
 #set_cosmetic_tag = FMB_puppet
 
@@ -134,3 +133,4 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
+recruit_character = FMB_generic

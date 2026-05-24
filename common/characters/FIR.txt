@@ -454,7 +454,7 @@ characters={
 	###################
 
 	FIR_shaozu = {
-		name = FIR_shaozu
+		name = "Shaozu"
 		portraits={
 			army = {
 				large="GFX_Portrait_Firenation_Generic_13"
@@ -473,7 +473,7 @@ characters={
 	}
 
 	FIR_yotto={
-		name=FIR_yotto
+		name="Yotto"
 		portraits={
 			army={
 				small="GFX_Portrait_Firenation_Generic_14_small"
@@ -508,7 +508,7 @@ characters={
 	}
 
 	FIR_arashi={
-		name=FIR_arashi
+		name="Arashi"
 		portraits={
 			army={
 				small="GFX_Portrait_Firenation_Generic_7_small"
@@ -542,7 +542,7 @@ characters={
 		}
 	}
 	FIR_track={
-		name=FIR_track
+		name="Dosan"
 		portraits={
 			army={
 				small="GFX_Portrait_Firenation_Generic_5_small"
@@ -562,7 +562,7 @@ characters={
 		}
 	}
 	FIR_konran={
-		name=FIR_konran
+		name="Konran"
 		portraits={
 			army={
 				small="GFX_Portrait_Firenation_Generic_3_small"
@@ -596,7 +596,7 @@ characters={
 		}
 	}
 	FIR_waruidesu={
-		name=FIR_waruidesu
+		name="Waruidesu"
 		portraits={
 			army={
 				small="GFX_Portrait_Firenation_Generic_2_small"
@@ -616,7 +616,7 @@ characters={
 		}
 	}
 	FIR_jeong={
-		name=FIR_jeong
+		name="Jeong"
 		portraits={
 			army={
 				small="GFX_Portrait_Firenation_Generic_6_small"
@@ -636,7 +636,7 @@ characters={
 		}
 	}
 	FIR_lee={
-		name=FIR_lee
+		name="Lee"
 		portraits={
 			army={
 				small="GFX_Portrait_Firenation_Generic_8_small"
@@ -670,7 +670,7 @@ characters={
 		}
 	}
 	FIR_ogodei={
-		name=FIR_ogodei
+		name="Ogodei"
 		portraits={
 			army={
 				small="GFX_Portrait_Firenation_Generic_9_small"
@@ -690,7 +690,7 @@ characters={
 		}
 	}
 	FIR_Yonrha = {
-		name = FIR_Yonrha
+		name = "Yonrha"
 		portraits = {
 			army = {
 				large = "GFX_Portrait_Firenation_Yonrha"
@@ -708,7 +708,7 @@ characters={
 	}
 
 	FIR_generic={
-		name=FIR_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/FIR/Portrait_Firenation_constitutional_monarchy.dds"

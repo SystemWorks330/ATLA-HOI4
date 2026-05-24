@@ -16,6 +16,8 @@
  check_liberty_tooltip:0 "Меньше $RIGHT|%%Y2$ £centralisation_weekly_texticon  Централизации"
  check_authority_tooltip:0 "Больше $RIGHT|%%Y2$ £centralisation_weekly_texticon  Централизации"
 
+ check_urbanisation_tooltip:0 "Меньше $RIGHT|Y0$ £urbanisation_texticon  Урбанизации"
+
  income_deficit_check:0 "Иметь §Rдефицит§! доходов от £taxes_texticon  налогов и £payments_texticon  расходов: $LEFT|Y2$"
  daily_money_check:0 "Иметь ежедневный £income_texticon  §Yдоход§! не меньше: $RIGHT|Y2$"
  money_check:0 "£income_texticon  §YКазна§! меньше или равна: $RIGHT|Y2$"

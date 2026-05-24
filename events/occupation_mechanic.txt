@@ -135,50 +135,16 @@ country_event = {
 					set_temp_variable = { allowed_party_pluralist_culture = 1 }
 					
 					# do not change ideology of occupier country
-					if = {
-						limit = { var:occupier_country = { has_government = air_culture } }
-						set_temp_variable = { allowed_party_air_culture = 0 }
-					}
-					if = {
-						limit = { var:occupier_country = { has_government = earth_culture } }
-						set_temp_variable = { allowed_party_earth_culture = 0 }
-					}
-					if = {
-						limit = { var:occupier_country = { has_government = fire_culture } }
-						set_temp_variable = { allowed_party_fire_culture = 0 }
-					}
-					if = {
-						limit = { var:occupier_country = { has_government = water_culture } }
-						set_temp_variable = { allowed_party_water_culture = 0 }
-					}
-					if = {
-						limit = { var:occupier_country = { has_government = pluralist_culture } }
-						set_temp_variable = { allowed_party_pluralist_culture = 0 }
+					var:occupier_country = {
+						remove_from_allowed_party = yes
 					}
 					
 					if = {
 						# if occupied country exists and different than new country
 						# it is white peaced & subject of occupier. ignore its ideology as well
 						limit = { NOT = { check_variable = { new_occupied_country = occupied_country } } }
-						if = {
-							limit = { var:occupied_country = { has_government = air_culture } }
-							set_temp_variable = { allowed_party_air_culture = 0 }
-						}
-						if = {
-							limit = { var:occupied_country = { has_government = earth_culture } }
-							set_temp_variable = { allowed_party_earth_culture = 0 }
-						}
-						if = {
-							limit = { var:occupied_country = { has_government = fire_culture } }
-							set_temp_variable = { allowed_party_fire_culture = 0 }
-						}
-						if = {
-							limit = { var:occupied_country = { has_government = water_culture } }
-							set_temp_variable = { allowed_party_water_culture = 0 }
-						}
-						if = {
-							limit = { var:occupied_country = { has_government = pluralist_culture } }
-							set_temp_variable = { allowed_party_pluralist_culture = 0 }
+						var:occupied_country = {
+							remove_from_allowed_party = yes
 						}
 					}
 					

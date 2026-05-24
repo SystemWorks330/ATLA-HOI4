@@ -90,11 +90,12 @@
 		ranch_tech = 6
 	}
 	ideas = {
-		construction_efforts_law = 100
-		volunteer_earth_nation = 100
+		economy_6 = 100
+		conscription_1 = 100
 		family_support_4 = 100
 		city_markets = 100
 		earth_benders_only = 100
+		EAR_minister_of_personnel_1 = 100
 	}
 	#Farms
 	ai_strategy = {
@@ -221,11 +222,13 @@ Ba_Sing_Se_buildup_stage_2 = {
 		ranch_tech = 6
 	}
 	ideas = {
-		construction_efforts_law = 100
-		volunteer_earth_nation = 100
+		economy_6 = 100
+		conscription_1 = 100
 		family_support_4 = 100
 		city_markets = 100
 		earth_benders_only = 100
+		EAR_minister_of_personnel_1 = 100
+		EAR_minister_of_finance_3 = 100
 	}
 	ai_strategy = {
 		type = building_target
@@ -339,11 +342,14 @@ Ba_Sing_Se_buildup_stage_3 ={
 		ranch_tech = 6
 	}
 	ideas = {
-		construction_efforts_law = 100
-		volunteer_earth_nation = 100
+		economy_6 = 100
+		conscription_1 = 100
 		family_support_4 = 100
 		city_markets = 100
 		earth_benders_only = 100
+		EAR_minister_of_personnel_1 = 100
+		EAR_minister_of_finance_3 = 90
+		EAR_minister_of_justice_1 = 80
 
 	}
 	ai_strategy = {

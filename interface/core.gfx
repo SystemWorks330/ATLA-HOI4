@@ -314,8 +314,9 @@ spriteTypes = {
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "x"
-		texturefile = "gfx/interface/icon_x.dds"
+		name = "twitter"
+		texturefile = "gfx/interface/icon_twitter.dds"
+		noOfFrames = 1
 	}
 	spriteType = {
 		name = "youtube"
@@ -328,10 +329,6 @@ spriteTypes = {
 	spriteType = {
 		name = "instagram"
 		texturefile = "gfx//interface//icon_instagram.dds"
-	}
-	spriteType = {
-		name = "bluesky"
-		texturefile = "gfx/interface/icon_bluesky.dds"
 	}
 	spriteType = {
 		name = "homepage"
@@ -527,11 +524,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/button_148x34_light.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
-	textSpriteType = {
-		name = "GFX_button_238x38"
-		texturefile = "gfx/interface/button_238x38.dds"
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
+
 	textSpriteType = {
 		name = "GFX_government_button"
 		texturefile = "gfx/interface/government_button.dds"
@@ -1709,6 +1702,14 @@ bitmapfonts = {
 		languages = { "l_japanese" }
 	}
 
+	bitmapfont_override = {
+		name = "tahoma_60"
+		fontfiles = {
+			"gfx/fonts/hoi_mapfont4_russian"
+		}
+		languages = { "l_russian" }
+	}
+
 	bitmapfont = {
 		name = "hoi_30"
 		fontfiles = {
@@ -1789,13 +1790,7 @@ bitmapfonts = {
 		}
 		languages = { "l_japanese" }
 	}
-	bitmapfont_override = {
-		name = "tahoma_60"
-		fontfiles = {
-			"gfx/fonts/hoi_mapfont4_russian"
-		}
-		languages = { "l_russian" }
-	}
+
 	corneredTileSpriteType = {
 		name = "SandboxFloaterBackground"
 		size= {x=190 y=310 }
@@ -1838,42 +1833,4 @@ bitmapfonts = {
 		name = "GFX_red_cross_small"
 		textureFile = "gfx//interface//red_cross_small.dds"
 	}
-		
-	textSpriteType = {
-		name = "GFX_preset_button_open"
-		texturefile = "gfx//interface//equipmentdesigner//preset_button.dds"
-		noOfFrames = 4
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	
-	textSpriteType = {
-		name = "GFX_preset_button_import"
-		texturefile = "gfx//interface//equipmentdesigner//preset_import_button.dds"
-		noOfFrames = 4
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	
-	textSpriteType = {
-		name = "GFX_preset_button_export"
-		texturefile = "gfx//interface//equipmentdesigner//preset_export_button.dds"
-		noOfFrames = 4
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	
-	textSpriteType = {
-		name = "GFX_preset_button_save"
-		texturefile = "gfx//interface//equipmentdesigner//save_preset_button.dds"
-		noOfFrames = 4
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	
-	textSpriteType = {
-		name = "GFX_edit_designer_notes_button"
-		texturefile = "gfx//interface//equipmentdesigner//edit_notes_button.dds"
-		noOfFrames = 4
-		effectFile = "gfx/FX/buttonstate.lua"
-	}
-	
 }
-
-

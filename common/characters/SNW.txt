@@ -1,6 +1,6 @@
 characters={
 	SNW_sun_warrior_chief={
-		name=SNW_sun_warrior_chief
+		name="Sun Warrior Chief"
 		portraits={
 			civilian={
 				large="gfx/leaders/SNW/Portrait_Sunwarriors_Generic.dds"
@@ -15,7 +15,7 @@ characters={
 	}
 
 	SNW_sun_warrior_chief_early={
-		name=SNW_zosu
+		name="Zosu"
 		portraits={
 			civilian={
 				large="GFX_Portrait_Sunwarriors_leader"
@@ -30,7 +30,7 @@ characters={
 	}
 
 	SNW_lost_civilisation={
-		name=SNW_lost_civilisation
+		name="Lost Civilisation"
 		portraits={
 			civilian={
 				large="gfx/leaders/SNW/Portrait_Sunwarriors_lost_civilisation.dds"
@@ -45,7 +45,7 @@ characters={
 		}
 	}
 	SNW_kedu={
-		name=SNW_kedu
+		name="Kedu"
 		portraits={
 			army={
 				small="GFX_Portrait_Sunwarriors_leader_small"
@@ -65,7 +65,7 @@ characters={
 		}
 	}
 	SNW_generic={
-		name=SNW_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/SNW/Portrait_Sunwarriors_absolute_monarchie.dds"

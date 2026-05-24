@@ -55,7 +55,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	local_markets
 	construction_efforts_law
@@ -64,7 +64,6 @@ add_ideas = {
 }
 
 recruit_character = LAM_fung
-recruit_character = LAM_generic
 
 #set_cosmetic_tag = LAM_puppet
 
@@ -129,3 +128,4 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
+recruit_character = LAM_generic

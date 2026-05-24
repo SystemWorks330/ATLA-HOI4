@@ -1,6 +1,6 @@
 characters={
 	POH_rhee={
-		name=POH_rhee
+		name="Rhee"
 		portraits={
 			civilian={
 				large="gfx/leaders/POH/Portrait_Pohuai_Rhee.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	POH_generic={
-		name=POH_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/POH/Portrait_Pohuai_nationalism.dds"

@@ -11,32 +11,4 @@ characters = {
 			ideology = earth_tribe
 		}
 	}
-	FUJ_generic = {
-		name = FUJ_generic
-		portraits = {
-			civilian = {
-				large = GFX_Portrait_Fujian_Goruta
-			}
-		}
-		country_leader = {
-			ideology = fire_tribes
-			expire = "120.4.7.1"
-			id = -1
-		}
-		country_leader = {
-			ideology = liberalism
-			expire = "120.4.7.1"
-			id = -1
-		}
-		country_leader = {
-			ideology = active_pacifism
-			expire = "120.4.7.1"
-			id = -1
-		}
-		country_leader = {
-			ideology = democracy
-			expire = "120.4.7.1"
-			id = -1
-		}
-	}
 }

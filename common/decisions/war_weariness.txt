@@ -11,7 +11,6 @@ war_weariness_category = {
 			}
 		}
 	}
-
 	set_0 = {
 		visible = {
 			is_debug = yes
@@ -38,7 +37,12 @@ war_weariness_category = {
 	rotate_frontlines = {
 
 		available = {
-			has_manpower > 0
+			meta_trigger = {
+				text = {
+					has_army_manpower = { size < [field_manpower] }
+				}
+				field_manpower = "[?manpower]"
+			}
 		}
 
 		days_remove = 30
@@ -47,7 +51,7 @@ war_weariness_category = {
 		modifier = {
 			army_attack_factor = -0.10
 			army_defence_factor = -0.15
-			land_reinforce_rate = -0.015
+			land_reinforce_rate =  -0.015
 		}
 
 		remove_effect = {
@@ -70,40 +74,44 @@ war_weariness_category = {
 			modifier = {
 				AND = {
 					has_war = yes
-					check_variable = { var = casualty_accumulated_exhaustion value = 50 compare = greater_than }
+					check_variable = { casualty_accumulated_exhaustion > 50 }
 				}
 				add = 50
 			}
 		}
 	}
 
+
 	occupation_department = {
 
 		visible = {
 			num_occupied_states > 9
 		}
-
 		available = {
-			custom_trigger_tooltip = {
+			check_variable = { 
+				var = occupation_accumulated_exhaustion
+				value = 20
+				compare = greater_than_or_equals
 				tooltip = at_least_occupation_war_weariness_tooltip
-				check_variable = { var = occupation_accumulated_exhaustion value = 20 compare = greater_than_or_equals }
 			}
 		}
 
 		days_remove = -1
+		#days_re_enable = 10
 
 		modifier = {
 			weekly_occupation_war_weariness = -0.5
 			garrison_factor_modifier = 0.1
 		}
 
-		cancel_trigger = {
-			custom_trigger_tooltip = {
+		remove_trigger = {
+			check_variable = { 
+				var = occupation_accumulated_exhaustion
+				value = 20
+				compare = less_than_or_equals
 				tooltip = at_most_occupation_war_weariness_tooltip
-				check_variable = { var = occupation_accumulated_exhaustion value = 20 compare = less_than_or_equals }
 			}
 		}
-
 		remove_effect = {
 			add_to_variable = {
 				var = occupation_accumulated_exhaustion
@@ -119,7 +127,7 @@ war_weariness_category = {
 			modifier = {
 				AND = {
 					has_war = yes
-					check_variable = { var = occupation_accumulated_exhaustion value = 20 compare = greater_than }
+					check_variable = { occupation_accumulated_exhaustion > 20 }
 				}
 				add = 50
 			}
@@ -140,29 +148,33 @@ war_weariness_category = {
 	public_war_propaganda = {
 
 		visible = {
+			
 		}
-
 		available = {
-			custom_trigger_tooltip = {
+			check_variable = {
+				var = current_authority
+				value = 60
+				compare = greater_than_or_equals
 				tooltip = check_authority_tooltip
-				check_variable = { var = current_authority value = 60 compare = greater_than_or_equals }
 			}
 		}
 
 		days_remove = -1
+		#days_re_enable = 10
 
 		modifier = {
 			war_weariness_factor = -0.05
 			income = -0.1
 		}
 
-		cancel_trigger = {
-			custom_trigger_tooltip = {
+		remove_trigger = {
+			check_variable = {
+				var = current_authority
+				value = 60
+				compare = less_than_or_equals
 				tooltip = check_liberty_tooltip
-				check_variable = { var = current_authority value = 60 compare = less_than_or_equals }
 			}
 		}
-
 		remove_effect = {
 			add_political_power = -50
 		}

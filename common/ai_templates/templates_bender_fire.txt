@@ -1,28 +1,64 @@
+
+	###  #### #   # ###  #### ###    ###                               
+	#  # #    ##  # #  # #    #  #  #                       
+	###  ###  # # # #  # ###  ###    ##                            
+	#  # #    #  ## #  # #    #  #     #                     
+	###  #### #   # ###  #### #   # ###                                 
+
 template_firebenders = {
 
-	role = firebenders
-	
-	upgrade_prio = {
-		factor = 1
+	roles = {
+		firebenders
+		benders_only
 	}
 	
+	upgrade_prio = {
+		base = 1
+	}
+	match_to_count = 0.5
+	
 	firebender_1 = {
+	
 		upgrade_prio = { factor = 0.01 }
+		production_prio = { factor = 0.01 }
+		
+		target_width = 9
+		width_weight = 1
+		column_swap_factor = 1.5
 		reinforce_prio = 1
+		
 		target_template = {
+			weight = 0.95
+			match_value = 10000
+			
 			regiments = {
 				firebender = 3
 			}
 		}
+		
+		allowed_types = {
+			firebender
+		}
 	}
 
-	firebender_2 = {	
+	firebender_2 = {
+	
 		upgrade_prio = { factor = 1 }
-		reinforce_prio = 1		
+		production_prio = { factor = 1 }
+		
+		target_width = 18
+		width_weight = 1
+		column_swap_factor = 1.5
+		reinforce_prio = 1
+		
 		target_template = {
+			weight = 0.95
+			match_value = 10000
+			
 			regiments = {
 				firebender = 6
 			}
+
 			support = {
 				supply_wagon = 1
 				field_commander = 1
@@ -30,21 +66,53 @@ template_firebenders = {
 				scout = 1
 			}
 		}
+		
+		allowed_types = {
+			firebender
+			supply_wagon
+			field_commander
+			combat_pioneer
+			scout
+		}
 	}
+	
 }
+
+
+	#   #  ###  ###   # #   # ####  ###                         
+	## ## #   # #  #  # ##  # #    #                        
+	# # # ##### ###   # # # # ###   ##                             
+	#   # #   # #  #  # #  ## #       #                    
+	#   # #   # #   # # #   # #### ###                           
+
 
 
 template_firebender_marines = {
 
-	role = firebenders
-	
-	upgrade_prio = {
-		factor = 1
+	roles = {
+		firebenders
+		marines
+		combined_arms
 	}
 	
+	upgrade_prio = {
+		base = 1
+	}
+	match_to_count = 0.5
+	
 	firebender_marines = {
+	
 		upgrade_prio = { factor = 1 }
+		production_prio = { factor = 1 }
+		
+		target_width = 18.0
+		width_weight = 0.4
+		column_swap_factor = 0.7
+		
 		target_template = {
+			weight = 0.95
+			match_value = 10000
+			
 			regiments = {
 				firebender = 3
 				swordsmen = 3
@@ -56,21 +124,52 @@ template_firebender_marines = {
 				combat_pioneer = 1
 			}
 		}
+		
+		allowed_types = {
+			firebender
+			swordsmen
+			archers
+			scout
+			field_commander
+			combat_pioneer
+		}
 	}
+	
 }
+
+
+	 ###  ###  #   # ###  # #   # #### ###         ###  ###   #   #  ### 
+	#    #   # ## ## #  # # ##  # #    #  #       #   # #  #  ## ## #    
+	#    #   # # # # ###  # # # # ###  #  #  ###  ##### ###   # # #  ##  
+	#    #   # #   # #  # # #  ## #    #  #       #   # #  #  #   #    # 
+	 ###  ###  #   # ###  # #   # #### ###        #   # #   # #   # ###  
 
 
 template_firebender_offensive = {
 
-	role = firebenders
-	
-	upgrade_prio = {
-		factor = 1
+	roles = {
+		firebenders
+		combined_arms
 	}
 	
+	upgrade_prio = {
+		base = 1
+	}
+	match_to_count = 0.5
+	
 	firebender_offensive = {
+	
 		upgrade_prio = { factor = 1 }
+		production_prio = { factor = 1 }
+		
+		target_width = 21.0
+		width_weight = 0.4
+		column_swap_factor = 0.7
+		
 		target_template = {
+			weight = 0.95
+			match_value = 10000
+			
 			regiments = {
 				firebender = 3
 				spearmen = 2
@@ -83,5 +182,16 @@ template_firebender_offensive = {
 				combat_pioneer = 1
 			}
 		}
+		
+		allowed_types = {
+			firebender
+			spearmen
+			archers
+			skirmishers
+			scout
+			field_commander
+			combat_pioneer
+		}
 	}
+	
 }

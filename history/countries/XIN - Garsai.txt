@@ -53,7 +53,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	intercontinental_trade
 	construction_efforts_law
@@ -77,7 +77,6 @@ add_ideas = {
 #}
 
 recruit_character = XIN_bao
-recruit_character = XIN_generic
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -220,3 +219,4 @@ set_technology = {
 }
 
 # Different Ideology Leaders
+recruit_character = XIN_generic

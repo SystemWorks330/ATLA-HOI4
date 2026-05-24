@@ -1,6 +1,6 @@
 characters = {
 	EBA_than = {
-		name = EBA_than
+		name = "Than"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EBA/Portrait_East-Ba_Than.dds"
@@ -14,7 +14,7 @@ characters = {
 		}
 	}
 	EBA_generic = {
-		name = EBA_generic
+		name = "Generic"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EBA/Portrait_East_Ba_colonialism.dds"
@@ -47,7 +47,7 @@ characters = {
 	#   #  #  #  #   #  #     #  #   #  # #      #      
 	#   #  ###    ###   #  ###    ###   #  #  ###    
 	EBA_Liu = {
-		name = EBA_Liu
+		name = "Liu"
 		portraits = {
 			army = {
 				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Generic_15.dds"

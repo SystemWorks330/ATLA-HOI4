@@ -939,7 +939,7 @@ EAR_dai_li_category = {
 		available = {
 			any_character = {
 				is_character_slot = minister_of_culture
-				has_trait = chauvinist
+				has_trait = cunning_schemer
 				is_hired_as_advisor = yes
 			}
 		}

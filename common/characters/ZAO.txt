@@ -1,6 +1,6 @@
 characters={
 	ZAO_fengshui={
-		name=ZAO_fengshui
+		name="Feng-Shui"
 		portraits={
 			civilian={
 				large="gfx/leaders/ZAO/Portrait_Zaofu_Feng-Shui.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	ZAO_generic={
-		name=ZAO_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/ZAO/Portrait_Zaofu_colonialism.dds"

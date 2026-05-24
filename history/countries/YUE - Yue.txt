@@ -78,7 +78,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	city_markets
 	construction_efforts_law
@@ -131,7 +131,6 @@ if = {
 
 
 recruit_character = YUE_lubao
-recruit_character = YUE_generic
 
 bender_conscription_effect = yes
 factory_output_calc = yes
@@ -213,3 +212,4 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
+recruit_character = YUE_generic

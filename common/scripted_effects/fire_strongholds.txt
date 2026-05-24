@@ -36,11 +36,9 @@ pohuai_chokepoint = {
 				level = 0
 				province = {
 					all_provinces = yes
-					level > 0
-					first = yes
+					limit_to_supply_node = yes
 				}
 			}
-
 			remove_building = {
 				type = infrastructure
 				level = -8

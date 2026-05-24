@@ -1,6 +1,6 @@
 characters={
 	WBA_gow={
-		name=WBA_gow
+		name="Gow"
 		portraits={
 			civilian={
 				large="gfx/leaders/WBA/Portrait_West-Ba_Gow.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	WBA_generic={
-		name=WBA_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/WBA/Portrait_West_Ba_fire_tribes.dds"

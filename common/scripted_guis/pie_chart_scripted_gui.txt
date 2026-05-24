@@ -23,8 +23,11 @@ scripted_gui = {
 		triggers = {
 			boost_culture_click_enabled = {
 				ROOT = {
-					any_character = {
-						is_character_slot = minister_of_culture
+					amount_taken_ideas = {
+						amount > 0
+						slots = {
+							minister_of_culture
+						}
 					}
 				}
 			}

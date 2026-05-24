@@ -35,6 +35,10 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
 		}
 	}
 	
@@ -54,6 +58,10 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
 		}
 	}
 
@@ -77,6 +85,10 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
 		}
 	}
 	
@@ -96,6 +108,10 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
 		}
 	}
 
@@ -119,6 +135,10 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
 		}
 	}
 	
@@ -138,6 +158,10 @@ continent = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
 		}
 	}
 
@@ -240,6 +264,10 @@ EAR = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
 		}
 	}
 	
@@ -259,6 +287,10 @@ EAR = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
 		}
 	}
 
@@ -292,6 +324,10 @@ EAR_united = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
 		}
 	}
 	
@@ -311,6 +347,10 @@ EAR_united = {
 			"GFX_Portrait_Earthkingdom_Generic_12"
 			"GFX_Portrait_Earthkingdom_Generic_13"
 			"GFX_Portrait_Earthkingdom_Generic_14"
+			"GFX_Portrait_Earthkingdom_Generic_15"
+			"GFX_Portrait_Earthkingdom_Generic_16"
+			"GFX_Portrait_Earthkingdom_Generic_17"
+			"GFX_Portrait_Earthkingdom_Generic_18"
 		}
 	}
 

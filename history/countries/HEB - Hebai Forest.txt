@@ -51,7 +51,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	global_trade
 	construction_efforts_law
@@ -60,7 +60,6 @@ add_ideas = {
 }
 
 recruit_character = HEB_oh
-recruit_character = HEB_generic
 
 #set_cosmetic_tag = HEB_puppet
 
@@ -124,3 +123,4 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
+recruit_character = HEB_generic

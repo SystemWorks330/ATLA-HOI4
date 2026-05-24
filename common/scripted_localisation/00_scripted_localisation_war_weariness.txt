@@ -330,9 +330,9 @@ defined_text = {
 	name = LawWeariness15
 	text = {
 		trigger = {
-			has_idea_with_trait = customary_law
+			has_idea_with_trait = custumary_law
 		}
-		localization_key = weariness_customary_law
+		localization_key = weariness_custumary_law
 	}
 }
 #defined_text = {

@@ -1,6 +1,6 @@
 characters={
 	XIN_bao={
-		name=XIN_bao
+		name="Bao"
 		portraits={
 			civilian={
 				large="gfx/leaders/XIN/Portrait_Leader_1.dds"
@@ -27,7 +27,7 @@ characters={
 		}
 	}
 	XIN_generic={
-		name=XIN_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/XIN/Portrait_Leader_fire_tribes.dds"

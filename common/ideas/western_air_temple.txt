@@ -334,7 +334,7 @@ ideas = {
 				political_power_factor = -0.1
 			}
 			
-			traits = { customary_law }
+			traits = { custumary_law }
 
 			ai_will_do = {
 				factor = 0.5

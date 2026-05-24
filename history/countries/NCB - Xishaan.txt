@@ -61,7 +61,6 @@ add_ideas = {
 }
 
 recruit_character = NCB_hotun
-recruit_character = NCB_generic
 
 #set_cosmetic_tag = NCB_puppet
 
@@ -127,3 +126,4 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
+recruit_character = NCB_generic

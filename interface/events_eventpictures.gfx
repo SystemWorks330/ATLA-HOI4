@@ -130,10 +130,7 @@ spriteTypes = {
 		name = "GFX_report_event_fir_colony_failed"
 		texturefile = "gfx/event_pictures/report_event_fir_colony_failed.dds"
 	}
-	spriteType = {
-		name = "GFX_report_event_clans_awaken"
-		texturefile = "gfx/event_pictures/report_event_clans_awaken.dds"
-	}
+
 	spriteType = {
 		name = "GFX_report_event_dai_li_proposal"
 		texturefile = "gfx/event_pictures/report_event_dai_li_proposal.dds"
@@ -141,10 +138,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_air_genocide"
 		texturefile = "gfx/event_pictures/report_event_air_genocide.dds"
-	}
-	spriteType = {
-		name = "GFX_report_event_the_third_option"
-		texturefile = "gfx/event_pictures/report_event_the_third_option.dds"
 	}
 	spriteType = {
 		name = "GFX_report_event_rally_ek"

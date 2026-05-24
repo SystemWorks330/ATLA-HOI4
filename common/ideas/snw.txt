@@ -312,7 +312,7 @@ ideas = {
 			available = { }
 			
 			
-			traits = { customary_law }
+			traits = { custumary_law }
 
 			ai_will_do = {
 				factor = 0.5

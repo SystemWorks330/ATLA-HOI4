@@ -1,6 +1,6 @@
 characters = {
 	ECB_sung = {
-		name = ECB_sung
+		name = "Sung"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ECB/Portrait_East-Chameleon-Bay_Sung.dds"
@@ -14,7 +14,7 @@ characters = {
 		}
 	}
 	ECB_generic = {
-		name = ECB_generic
+		name = "Generic"
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/ECB/Portrait_East_Chameleon_Bay_fire_tribes.dds"

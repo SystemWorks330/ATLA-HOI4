@@ -33,7 +33,6 @@ permanent_spirits_and_modifiers = yes
 ##    #   #  # #  #   #       ###   #### 
 
 
-recruit_character = HFC_generic
 52.5.16 ={
 
 }
@@ -66,3 +65,4 @@ recruit_character = HFC_generic
 
 # Different Ideology Leaders
 recruit_character = HFC_koulin
+recruit_character = HFC_generic

@@ -34,7 +34,6 @@ permanent_spirits_and_modifiers = yes
 ##    #   #  # #  #   #       ###   #### 
 
 
-recruit_character = PFC_generic
 52.5.16 ={
 	
 }
@@ -66,3 +65,4 @@ recruit_character = PFC_generic
 }
 
 # Different Ideology Leaders
+recruit_character = PFC_generic

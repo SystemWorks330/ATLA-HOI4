@@ -1,6 +1,6 @@
 characters={
 	YII_gwo={
-		name=YII_gwo
+		name="Gwo"
 		portraits={
 			civilian={
 				large="gfx/leaders/YII/Portrait_Yi_Gwo.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	YII_generic={
-		name=YII_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/YII/Portrait_Yi_elective_chiefdom.dds"

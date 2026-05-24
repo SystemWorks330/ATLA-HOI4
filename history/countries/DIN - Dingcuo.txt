@@ -55,7 +55,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_earth_nation
+	volunteer_only
 	earth_benders_only
 	city_markets
 	construction_efforts_law
@@ -64,7 +64,6 @@ add_ideas = {
 }
 
 recruit_character = DIN_Riteka
-recruit_character = DIN_generic
 
 #set_cosmetic_tag = DIN_puppet
 
@@ -128,3 +127,4 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
+recruit_character = DIN_generic

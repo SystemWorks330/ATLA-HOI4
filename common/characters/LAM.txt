@@ -1,6 +1,6 @@
 characters={
 	LAM_fung={
-		name=LAM_fung
+		name="Fung"
 		portraits={
 			civilian={
 				large="gfx/leaders/LAM/Portrait_Laghima-Mountains_Fung.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	LAM_generic={
-		name=LAM_generic
+		name="Generic"
 		portraits={
 			civilian={
 				large="gfx/leaders/LAM/Portrait_Laghima_Mountains_colonialism.dds"

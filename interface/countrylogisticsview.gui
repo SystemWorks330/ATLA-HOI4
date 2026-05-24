@@ -155,30 +155,7 @@ guiTypes = {
 			position = { x= 442 y = 2 }
 			alwaystransparent = yes
 		}
-
-		containerWindowType = {
-			name = "resource_strip_container"
-			position = { x = 20 y = 46 }
-			size = { width = -20 height = 25 }
-
-			iconType ={
-				name = "resources_bg"
-				quadTextureSprite = "GFX_trade_filter_bg"
-				position = { x= -9999 y = 0 }
-				Orientation = "UPPER_LEFT"
-			}
-
-			gridBoxType = {
-				orientation = "CENTER_UP"
-				name = "resources_grid"
-				position = { x = -99999 y = 4 }
-				size = { width = 100% height = 100% }
-				slotsize = { width = 70 height = 31 }
-				max_slots = { x = 7 y = 1 }
-				add_horizontal = no
-				format = "UPPER_LEFT"
-			}
-		}
+		
 
 		containerWindowType = {
 			name = "fuel_info"
@@ -187,6 +164,14 @@ guiTypes = {
 			verticalScrollbar = "right_vertical_slider"
 			Orientation = LOWER_LEFT
 			clipping = yes
+			
+			
+			iconType ={
+				name ="trade_filter_bg"
+				spriteType = "GFX_trade_filter_bg"
+				position = { x= 20 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
 			
 			iconType ={
 				name ="fuel_header"
@@ -557,47 +542,6 @@ guiTypes = {
 				name ="naval_factories_usage"
 				spriteType = "GFX_logistics_fuelbar"
 				position = { x= 5 y = 24 }
-				alwaystransparent = yes
-			}
-		}
-		containerWindowType = {
-			name = "nuke"
-			position = { x = 391 y = -94 }
-			size = { width = 130 height = 70 }
-			Orientation = lower_left
-
-			background = {
-				name = "nuke_background"
-				quadTextureSprite ="GFX_mini_tooltip"
-				position = { x = 0 y = 3 }				
-			}
-			
-			instantTextboxType = {
-				name = "nuke_label"
-				position = { x=15 y=12 }
-				font = "hoi_16mbs"
-				text = "NUCLEAR_BOMB"
-				maxWidth = 80
-				maxHeight = 20
-				format = left
-				alwaystransparent = yes
-			}
-
-			iconType = {
-				name ="nuke_icon"
-				spriteType = "GFX_topbar_nuke"
-				position = { x= 89 y = 17 }
-				frame = 1
-				alwaystransparent = yes
-			}
-			
-			instantTextBoxType = {
-				name = "nuke_count"
-				font = "hoi_16mbs"
-				position = { x= 15 y = 46 }
-				maxWidth = 120
-				maxHeight = 20
-				format = left
 				alwaystransparent = yes
 			}
 		}
@@ -1474,34 +1418,25 @@ guiTypes = {
 	containerWindowType = {
 		name = "logistics_overview_resource_item"
 		position = { x=0 y=0 }
-		size = { width = 70 height = 30 }
+		size = { width = 50 height = 30 }
 		clipping = no
-
-		buttonType = {
-			name = "button"
-			quadTextureSprite ="resource_item_background"
-		}
 
 		iconType = {
 			name = "icon"
-			position = { x=4 y=2 }
+			position = { x=4 y=11 }
 			spriteType = "GFX_resources_strip"
 		}
 		
 		instantTextboxType = {
 			name = "value"
-			position = { x=35 y=7 }
+			position = { x=-1 y=15 }
 			font = "hoi_16mbs"
-			fixedsize = yes
 			text = "15"
 			maxWidth = 50
-			maxHeight = 30
-			format = left
-			orientation = "UPPER_LEFT"
-			alwaystransparent = yes
+			maxHeight = 20
+			format = right
 		}	
 	}
-	
 	
 	containerWindowType = {
 		name = "logistics_entry_resource_item"
@@ -1527,8 +1462,8 @@ guiTypes = {
 			spriteType ="GFX_fuel_logisctics_graph_entry_bg"
 		}
 
-		buttonType = {
-			name = "icon_checkbox"
+		iconType = {
+			name = "icon"
 			position = { x=7 y=7 }	
 			spriteType = "GFX_fuel_logisctics_graph_entry_color"
 		}
