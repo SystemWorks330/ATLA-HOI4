@@ -2,151 +2,323 @@ scripted_gui = {
 
 	recruit_ministers_window = {
 		context_type = player_context
-		
+
 		window_name = "recruit_ministers"
-		#parent_window_token = politics_tab
 		parent_window_name = country_politics_idea_category_entry
-		
+
 		visible = {
 			always = yes
 		}
-		
+
 		triggers = {
 			new_minister_of_personnel_button_click_enabled = {
-				check_variable = { mtth:minister_cost < political_power }
-				any_character = {
-					has_character_flag = generic_advisor
-					has_character_flag = advisor_retired
-					is_character_slot = minister_of_personnel
-				}
+				has_political_power > 5
 			}
 			new_minister_of_finance_button_click_enabled = {
-				check_variable = { mtth:minister_cost < political_power }
-				any_character = {
-					has_character_flag = generic_advisor
-					has_character_flag = advisor_retired
-					is_character_slot = minister_of_finance
-				}
+				has_political_power > 5
 			}
 			new_minister_of_culture_button_click_enabled = {
-				check_variable = { mtth:minister_cost < political_power }
-				any_character = {
-					has_character_flag = generic_advisor
-					has_character_flag = advisor_retired
-					is_character_slot = minister_of_culture
-				}
+				has_political_power > 5
 			}
 			new_minister_of_justice_button_click_enabled = {
-				check_variable = { mtth:minister_cost < political_power }
-				any_character = {
-					has_character_flag = generic_advisor
-					has_character_flag = advisor_retired
-					is_character_slot = minister_of_justice
-				}
+				has_political_power > 5
 			}
 			new_minister_of_works_button_click_enabled = {
-				check_variable = { mtth:minister_cost < political_power }
-				any_character = {
-					has_character_flag = generic_advisor
-					has_character_flag = advisor_retired
-					is_character_slot = minister_of_works
-				}
+				has_political_power > 5
 			}
 			new_minister_of_rites_button_click_enabled = {
-				check_variable = { mtth:minister_cost < political_power }
-				any_character = {
-					has_character_flag = generic_advisor
-					has_character_flag = advisor_retired
-					is_character_slot = minister_of_rites
-				}
+				has_political_power > 5
 			}
 		}
 
 		effects = {
-			new_minister_of_personnel_button_click = {
-				random_character = {
-					limit = { 
-						has_character_flag = generic_advisor
-						has_character_flag = advisor_retired
-						is_character_slot = minister_of_personnel
-					}
-					generic_minister_random_trait = yes
-					clr_character_flag = advisor_retired
-				}
-				add_political_power = mtth:minister_cost_remove
-				generic_minister_recalc = yes
-			}
-			new_minister_of_finance_button_click = {
-				random_character = {
-					limit = { 
-						has_character_flag = generic_advisor
-						has_character_flag = advisor_retired
-						is_character_slot = minister_of_finance
-					}
-					generic_minister_random_trait = yes
-					clr_character_flag = advisor_retired
-				}
-				add_political_power = mtth:minister_cost_remove
-				generic_minister_recalc = yes
-			}
-			new_minister_of_culture_button_click = {
-				random_character = {
-					limit = { 
-						has_character_flag = generic_advisor
-						has_character_flag = advisor_retired
-						is_character_slot = minister_of_culture
-					}
-					generic_minister_random_trait = yes
-					clr_character_flag = advisor_retired
-				}
-				add_political_power = mtth:minister_cost_remove
-				generic_minister_recalc = yes
-			}
-			new_minister_of_justice_button_click = {
-				random_character = {
-					limit = { 
-						has_character_flag = generic_advisor
-						has_character_flag = advisor_retired
-						is_character_slot = minister_of_justice
-					}
-					generic_minister_random_trait = yes
-					clr_character_flag = advisor_retired
-				}
-				add_political_power = mtth:minister_cost_remove
-				generic_minister_recalc = yes
-			}
-			new_minister_of_works_button_click = {
-				random_character = {
-					limit = { 
-						has_character_flag = generic_advisor
-						has_character_flag = advisor_retired
-						is_character_slot = minister_of_works
-					}
-					generic_minister_random_trait = yes
-					clr_character_flag = advisor_retired
-				}
-				add_political_power = mtth:minister_cost_remove
-				generic_minister_recalc = yes
-			}
-			new_minister_of_rites_button_click = {
-				random_character = {
-					limit = { 
-						has_character_flag = generic_advisor
-						has_character_flag = advisor_retired
-						is_character_slot = minister_of_rites
-					}
-					generic_minister_random_trait = yes
-					clr_character_flag = advisor_retired
-				}
-				add_political_power = mtth:minister_cost_remove
-				generic_minister_recalc = yes
-			}
-		}
 
-		properties = {
-			
+			new_minister_of_personnel_button_click = {
+				clear_array = minister_trait_list
+				add_to_array = { minister_trait_list = token:gifted_speaker }
+				add_to_array = { minister_trait_list = token:close_to_the_people_1 }
+				add_to_array = { minister_trait_list = token:military_organiser }
+				add_to_array = { minister_trait_list = token:administrator }
+				add_to_array = { minister_trait_list = token:lawgiver }
+				add_to_array = { minister_trait_list = token:prime_minister }
+				set_variable_to_random = {
+					var = random_trait_index
+					min = 0
+					max = minister_trait_list^num
+					integer = yes
+				}
+				set_variable_to_random = {
+					var = random_portrait_index
+					min = 1
+					max = 7
+					integer = yes
+				}
+				meta_effect = {
+					text = {
+						generate_character = {
+							token_base = generic_personnel_[NUM]
+							name = ""
+							advisor = {
+								slot = minister_of_personnel
+								idea_token = generic_personnel_[NUM]
+								traits = { [TRAIT] }
+								allowed = { always = yes }
+							}
+							portraits = {
+								army = {
+									small = "GFX_idea_generic_minister_of_personnel_[PORTRAIT]"
+								}
+							}
+						}
+					}
+					NUM = "[?random_advisor_counter]"
+					TRAIT = "[?minister_trait_list^random_trait_index.GetTokenKey]"
+					PORTRAIT = "[?random_portrait_index]"
+				}
+				add_to_variable = { random_advisor_counter = 1 }
+				add_political_power = mtth:minister_cost_remove
+			}
+
+			new_minister_of_finance_button_click = {
+				clear_array = minister_trait_list
+				add_to_array = { minister_trait_list = token:fiscal_conservative }
+				add_to_array = { minister_trait_list = token:regulation_proponent }
+				add_to_array = { minister_trait_list = token:architect }
+				add_to_array = { minister_trait_list = token:local_investor }
+				add_to_array = { minister_trait_list = token:money_wizard }
+				add_to_array = { minister_trait_list = token:national_investor }
+				add_to_array = { minister_trait_list = token:experienced_merchant }
+				add_to_array = { minister_trait_list = token:experienced_architect }
+				add_to_array = { minister_trait_list = token:thrifty_oil_baron }
+				set_variable_to_random = {
+					var = random_trait_index
+					min = 0
+					max = minister_trait_list^num
+					integer = yes
+				}
+				set_variable_to_random = {
+					var = random_portrait_index
+					min = 1
+					max = 9
+					integer = yes
+				}
+				meta_effect = {
+					text = {
+						generate_character = {
+							token_base = generic_finance_[NUM]
+							name = ""
+							advisor = {
+								slot = minister_of_finance
+								idea_token = generic_finance_[NUM]
+								traits = { [TRAIT] }
+								allowed = { always = yes }
+							}
+							portraits = {
+								army = {
+									small = "GFX_idea_generic_minister_of_finance_[PORTRAIT]"
+								}
+							}
+						}
+					}
+					NUM = "[?random_advisor_counter]"
+					TRAIT = "[?minister_trait_list^random_trait_index.GetTokenKey]"
+					PORTRAIT = "[?random_portrait_index]"
+				}
+				add_to_variable = { random_advisor_counter = 1 }
+				add_political_power = mtth:minister_cost_remove
+			}
+
+			new_minister_of_culture_button_click = {
+				clear_array = minister_trait_list
+				add_to_array = { minister_trait_list = token:authoritarian }
+				add_to_array = { minister_trait_list = token:chauvinist }
+				add_to_array = { minister_trait_list = token:multiculturalist }
+				add_to_array = { minister_trait_list = token:naturalist }
+				add_to_array = { minister_trait_list = token:pacifist }
+				add_to_array = { minister_trait_list = token:personality_cultist }
+				add_to_array = { minister_trait_list = token:royalist }
+				add_to_array = { minister_trait_list = token:extreme_royalist }
+				add_to_array = { minister_trait_list = token:unification_minister }
+				set_variable_to_random = {
+					var = random_trait_index
+					min = 0
+					max = minister_trait_list^num
+					integer = yes
+				}
+				set_variable_to_random = {
+					var = random_portrait_index
+					min = 1
+					max = 8
+					integer = yes
+				}
+				meta_effect = {
+					text = {
+						generate_character = {
+							token_base = generic_culture_[NUM]
+							name = ""
+							advisor = {
+								slot = minister_of_culture
+								idea_token = generic_culture_[NUM]
+								traits = { [TRAIT] }
+								allowed = { always = yes }
+							}
+							portraits = {
+								army = {
+									small = "GFX_idea_generic_minister_of_culture_[PORTRAIT]"
+								}
+							}
+						}
+					}
+					NUM = "[?random_advisor_counter]"
+					TRAIT = "[?minister_trait_list^random_trait_index.GetTokenKey]"
+					PORTRAIT = "[?random_portrait_index]"
+				}
+				add_to_variable = { random_advisor_counter = 1 }
+				add_political_power = mtth:minister_cost_remove
+			}
+
+			new_minister_of_justice_button_click = {
+				clear_array = minister_trait_list
+				add_to_array = { minister_trait_list = token:neutral_judge }
+				add_to_array = { minister_trait_list = token:corrupt_judge }
+				add_to_array = { minister_trait_list = token:tough_on_crime }
+				add_to_array = { minister_trait_list = token:feminist }
+				add_to_array = { minister_trait_list = token:non_bender_activist }
+				add_to_array = { minister_trait_list = token:colonial_activist }
+				add_to_array = { minister_trait_list = token:corrupt_spymaster }
+				set_variable_to_random = {
+					var = random_trait_index
+					min = 0
+					max = minister_trait_list^num
+					integer = yes
+				}
+				set_variable_to_random = {
+					var = random_portrait_index
+					min = 1
+					max = 7
+					integer = yes
+				}
+				meta_effect = {
+					text = {
+						generate_character = {
+							token_base = generic_justice_[NUM]
+							name = ""
+							advisor = {
+								slot = minister_of_justice
+								idea_token = generic_justice_[NUM]
+								traits = { [TRAIT] }
+								allowed = { always = yes }
+							}
+							portraits = {
+								army = {
+									small = "GFX_idea_generic_minister_of_justice_[PORTRAIT]"
+								}
+							}
+						}
+					}
+					NUM = "[?random_advisor_counter]"
+					TRAIT = "[?minister_trait_list^random_trait_index.GetTokenKey]"
+					PORTRAIT = "[?random_portrait_index]"
+				}
+				add_to_variable = { random_advisor_counter = 1 }
+				add_political_power = mtth:minister_cost_remove
+			}
+
+			new_minister_of_works_button_click = {
+				clear_array = minister_trait_list
+				add_to_array = { minister_trait_list = token:agrarian_reformer }
+				add_to_array = { minister_trait_list = token:cruel_supervisor }
+				add_to_array = { minister_trait_list = token:low_standards }
+				add_to_array = { minister_trait_list = token:motivated_pioneer }
+				add_to_array = { minister_trait_list = token:outsourcer }
+				add_to_array = { minister_trait_list = token:unemployment_benefits }
+				add_to_array = { minister_trait_list = token:workers_syndicat }
+				add_to_array = { minister_trait_list = token:cruel_overseer }
+				set_variable_to_random = {
+					var = random_trait_index
+					min = 0
+					max = minister_trait_list^num
+					integer = yes
+				}
+				set_variable_to_random = {
+					var = random_portrait_index
+					min = 1
+					max = 8
+					integer = yes
+				}
+				meta_effect = {
+					text = {
+						generate_character = {
+							token_base = generic_works_[NUM]
+							name = ""
+							advisor = {
+								slot = minister_of_works
+								idea_token = generic_works_[NUM]
+								traits = { [TRAIT] }
+								allowed = { always = yes }
+							}
+							portraits = {
+								army = {
+									small = "GFX_idea_generic_minister_of_works_[PORTRAIT]"
+								}
+							}
+						}
+					}
+					NUM = "[?random_advisor_counter]"
+					TRAIT = "[?minister_trait_list^random_trait_index.GetTokenKey]"
+					PORTRAIT = "[?random_portrait_index]"
+				}
+				add_to_variable = { random_advisor_counter = 1 }
+				add_political_power = mtth:minister_cost_remove
+			}
+
+			new_minister_of_rites_button_click = {
+				clear_array = minister_trait_list
+				add_to_array = { minister_trait_list = token:fanatic }
+				add_to_array = { minister_trait_list = token:jingoist }
+				add_to_array = { minister_trait_list = token:materialist }
+				add_to_array = { minister_trait_list = token:orthodox }
+				add_to_array = { minister_trait_list = token:warrior_culture }
+				add_to_array = { minister_trait_list = token:xenophobe }
+				set_variable_to_random = {
+					var = random_trait_index
+					min = 0
+					max = minister_trait_list^num
+					integer = yes
+				}
+				set_variable_to_random = {
+					var = random_portrait_index
+					min = 1
+					max = 7
+					integer = yes
+				}
+				meta_effect = {
+					text = {
+						generate_character = {
+							token_base = generic_rites_[NUM]
+							name = ""
+							advisor = {
+								slot = minister_of_rites
+								idea_token = generic_rites_[NUM]
+								traits = { [TRAIT] }
+								allowed = { always = yes }
+							}
+							portraits = {
+								army = {
+									small = "GFX_idea_generic_minister_of_rites_[PORTRAIT]"
+								}
+							}
+						}
+					}
+					NUM = "[?random_advisor_counter]"
+					TRAIT = "[?minister_trait_list^random_trait_index.GetTokenKey]"
+					PORTRAIT = "[?random_portrait_index]"
+				}
+				add_to_variable = { random_advisor_counter = 1 }
+				add_political_power = mtth:minister_cost_remove
+			}
+
 		}
-		
 	}
-	
+
 }

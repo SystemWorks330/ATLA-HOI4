@@ -68,7 +68,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_only
+	volunteer_earth_nation
 	earth_benders_only
 	local_markets
 	construction_efforts_law
@@ -79,6 +79,7 @@ add_ideas = {
 }
 
 recruit_character = ISL_gombo
+recruit_character = ISL_generic
 
 #set_cosmetic_tag = ISL_puppet
 
@@ -220,4 +221,3 @@ if = {
 }
 
 # Different Ideology Leaders
-recruit_character = ISL_generic

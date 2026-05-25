@@ -1,0 +1,17 @@
+categories = {
+	air_raids = {
+		intel_source = air
+	}
+
+	nuclear_raids = {
+		intel_source = air
+	}
+
+	paratrooper_raids = {
+		intel_source = air
+	}
+
+	land_infiltration_raids = {
+		intel_source = army
+	}
+}

@@ -1,5 +1,8 @@
 
 defender_defense_dafending = {
+	allowed = {
+		tag = EAR
+	}
 	enable = {
 		original_tag = EAR
 		controls_state = 193
@@ -51,7 +54,9 @@ defender_defense_dafending = {
 }
 
 defender_defense_dafending2 = {
-
+	allowed = {
+		tag = EAR
+	}
 	enable = {
 		original_tag = EAR
 		has_war_with = FIR
@@ -83,7 +88,9 @@ defender_defense_dafending2 = {
 }
 
 defender_defense_dafending3 = {
-
+	allowed = {
+		tag = EAR
+	}
 	enable = {
 		original_tag = EAR
 		has_war_with = FIR
@@ -110,6 +117,9 @@ defender_defense_dafending3 = {
 }
 
 EAR_unit_production = {
+	allowed = {
+		tag = EAR
+	}
 	enable = {
 		original_tag = EAR
 	}
@@ -158,6 +168,9 @@ EAR_unit_production = {
 }
 
 EAR_area_priority = {
+	allowed = {
+		tag = EAR
+	}
 	enable = {
 		original_tag = EAR
 	}
@@ -214,6 +227,7 @@ EARTH_decentralised_warfare = {
 		any_allied_country = {
 			has_capitulated = no
 		}
+		NOT = {tag = EAR}
 	}
 	abort_when_not_enabled = yes
 
@@ -224,11 +238,6 @@ EARTH_decentralised_warfare = {
 	ai_strategy = {
 		type = garrison
 		value = 90
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = garrison
-		value = 50
 	}
 
 	ai_strategy = {

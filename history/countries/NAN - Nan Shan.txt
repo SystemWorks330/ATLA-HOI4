@@ -54,7 +54,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_only
+	volunteer_earth_nation
 	earth_benders_only
 	city_markets
 	construction_efforts_law
@@ -63,6 +63,7 @@ add_ideas = {
 }
 
 recruit_character = NAN_ping
+recruit_character = NAN_generic
 
 #set_cosmetic_tag = NAN_puppet
 
@@ -129,4 +130,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = NAN_generic

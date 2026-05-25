@@ -55,7 +55,7 @@ set_popularities = {
 }
 
 add_ideas = {
-	volunteer_only
+	volunteer_earth_nation
 	earth_benders_only
 	city_markets
 	construction_efforts_law
@@ -64,6 +64,7 @@ add_ideas = {
 }
 
 recruit_character = SHE_Finuoka
+recruit_character = SHE_generic
 
 #set_cosmetic_tag = SHE_puppet
 
@@ -127,4 +128,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = SHE_generic

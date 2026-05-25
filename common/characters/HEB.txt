@@ -1,6 +1,6 @@
 characters={
 	HEB_oh={
-		name="Oh"
+		name=HEB_oh
 		portraits={
 			civilian={
 				large="gfx/leaders/HEB/Portrait_Hebai-Forest_Oh.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	HEB_generic={
-		name="Generic"
+		name=HEB_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/HEB/Portrait_Hebai_Forest_colonialism.dds"

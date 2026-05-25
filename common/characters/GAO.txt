@@ -1,6 +1,6 @@
 characters={
 	GAO_shing={
-		name="Shing"
+		name=GAO_shing
 		portraits={
 			civilian={
 				large="gfx/leaders/GAO/Portrait_Gaoling_Shing.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	GAO_lao_beifong = {
-		name = "Lao Beifong"
+		name = GAO_lao_beifong
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/GAO/Portrait_Gaoling_Lao.dds"
@@ -26,7 +26,7 @@ characters={
 		}
 	}
 	GAO_generic={
-		name="Generic"
+		name=GAO_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/GAO/Portrait_Gaoling_nationalism.dds"

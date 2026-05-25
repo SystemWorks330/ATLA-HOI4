@@ -411,6 +411,7 @@ law_change_cost = {									#### cost of changing the laws. does nothing
 	postfix = none
 }
 
+
 taxation = {										#### percentage of tax extracted from populations prosperity in country or state
 	color_type = neutral
 	value_type = percentage
@@ -1015,7 +1016,12 @@ peoples_initiative = {								#### percentage of prosperity reinvested in free c
 	postfix = none
 }
 
-
+education_laws_cost_factor = {							#### cost of education laws
+	color_type = bad
+	value_type = percentage
+	precision = 0
+	postfix = none
+}
 core_state_cost_factor = {							#### cost of coring a state
 	color_type = bad
 	value_type = percentage

@@ -30,7 +30,7 @@ spriteTypes = {
 			x = 10
 			y = 200
 		}
-		effectFile = "gfx/FX/line_graph.lua"
+		effectFile = "gfx/FX/linechart.lua"
 		horizontal = yes
 	}
 

@@ -12,7 +12,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_trade_offer_popup_win"
-		texturefile = "gfx/interface/trade_offer_popup_win.dds"
+		texturefile = "gfx/interface/tradeview/trade_offer_popup_win.dds"
 	}
 
 	spriteType = {
@@ -59,7 +59,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_trade_filter_bg"
-		texturefile = "gfx/interface/trade_filter_bg.dds"
+		texturefile = "gfx/interface/tradeview/trade_filter_bg.dds"
 	}
 
 	spriteType = {
@@ -80,7 +80,7 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_country_trade_entry_bg"
-		texturefile = "gfx/interface/country_trade_entry_bg.dds"
+		texturefile = "gfx/interface/tradeview/country_trade_entry_bg.dds"
 		noOfFrames = 3		
 	}
 

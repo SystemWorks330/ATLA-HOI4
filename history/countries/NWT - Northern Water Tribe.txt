@@ -74,7 +74,7 @@ add_ideas = {
 	local_markets
 	water_exceptional
 	construction_efforts_law
-	volunteer_only
+	volunteer_water_nation
 	family_support_4
 	tribal_education
 
@@ -94,6 +94,7 @@ recruit_character = NWT_unification_minister
 
 recruit_character = NWT_buthaka
 recruit_character = NWT_sangok
+recruit_character = NWT_generic
 
 create_faction = Water_Tribes
 add_to_faction = SWT
@@ -248,4 +249,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = NWT_generic

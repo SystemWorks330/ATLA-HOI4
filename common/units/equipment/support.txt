@@ -1,7 +1,7 @@
 equipments = {
 
 	support_equipment = {
-		year = 10
+		year = 1918
 
 		is_archetype = yes
 		picture = archetype_support_equipment
@@ -9,27 +9,26 @@ equipments = {
 		type = {
 			infantry
 			motorized
+			support
 		}
 		group_by = archetype
 		
 		interface_category = interface_category_land
 		
 		reliability = 0.8
-		maximum_speed = 1 #kmh
 
 		#Space taken in convoy
 		lend_lease_cost = 1
 
-		build_cost_ic = 5
+		build_cost_ic = 4
 		resources = {
 			aluminium = 1
-			tungsten = 1
-			iron = 1
+			steel = 2
 		}
 	}
 
 	support_equipment_1 = {
-		year = 10
+		year = 1918
 
 		archetype = support_equipment
 		priority = 20	

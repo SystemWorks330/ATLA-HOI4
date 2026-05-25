@@ -283,6 +283,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/categories/decision_category_generic.dds"
 	}
 	spriteType = {
+		name = "GFX_decision_category_refugees"
+		texturefile = "gfx/interface/decisions/categories/decision_category_refugees.dds"
+	}
+	spriteType = {
 		name = "GFX_decision_category_genocide"
 		texturefile = "gfx/interface/decisions/categories/decision_category_genocide.dds"
 	}
@@ -305,6 +309,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_category_research"
 		texturefile = "gfx/interface/decisions/categories/decision_category_research.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_fire_clans"
+		texturefile = "gfx/interface/decisions/categories/decision_category_fire_clans.dds"
 	}
 	spriteType = {
 		name = "GFX_decision_category_conquest"
@@ -367,6 +375,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_air_genocide.dds"
 	}
 	spriteType = {
+		name = "GFX_decision_cat_fire_clans"
+		texturefile = "gfx/interface/decisions/decision_cat_fire_clans.dds"
+	}
+	spriteType = {
 		name = "GFX_decision_cat_water_raids"
 		texturefile = "gfx/interface/decisions/decision_cat_water_raids.dds"
 	}
@@ -417,6 +429,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_cat_ear_defense"
 		texturefile = "gfx/interface/decisions/decision_cat_ear_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_refugees"
+		texturefile = "gfx/interface/decisions/decision_cat_refugees.dds"
 	}
 	spriteType = {
 		name = "GFX_decision_cat_troubling_signs"

@@ -34,6 +34,14 @@ spriteTypes = {
 		alwaystransparent = yes	
 	}
 	corneredTileSpriteType = {
+		name = "GFX_tiled_paper_small_bg"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//tiled_paper_bg.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"	
+	}
+	corneredTileSpriteType = {
 		name = "GFX_tiled_research_bg2"
 		size= { x=96 y=96 }
 		textureFile = "gfx/interface/tiles/tiled_research_bg2.dds"
@@ -162,6 +170,11 @@ spriteTypes = {
 		noOfFrames = 2		
 	}
 	spriteType = {
+		name = "GFX_innovation_army_folder_tab"
+		textureFile = "gfx/interface/techtree/techtree_doctrine_tab_small.dds"
+		noOfFrames = 2		
+	}
+	spriteType = {
 		name = "GFX_land_doctrine_folder_tab"
 		textureFile = "gfx/interface/techtree/techtree_landdoctrine_tab.dds"
 		noOfFrames = 2		
@@ -189,6 +202,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_navaldoctrine_tab_large"
 		textureFile = "gfx/interface/techtree/techtree_navaldoctrine_tab_large.dds"
+		noOfFrames = 2		
+	}
+		spriteType = {
+		name = "GFX_specialforcesdoctrine_tab_large"
+		textureFile = "gfx/interface/techtree/techtree_specialforcesdoctrine_tab_large.dds"
 		noOfFrames = 2		
 	}
 
@@ -681,6 +699,45 @@ spriteTypes = {
 	frameAnimatedSpriteType = {
 		name = "GFX_technology_land_doctrine_folder_currently_researching_item_bg"
 		texturefile = "gfx/interface/techtree/tech_doctrine_2_researching_anim_strip.dds"
+		noOfFrames = 9
+		loadType = "INGAME"
+		transparencecheck = yes
+		animation_rate_fps = 15
+		looping = yes
+		play_on_show = yes
+		pause_on_loop = 0.0
+	}
+
+	#### land doctrine #####
+	
+	spriteType = {
+		name = "GFX_technology_innovation_army_folder_available_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_wide_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_innovation_army_folder_unavailable_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_wide_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_innovation_army_folder_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_wide_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_industry_folder_branch_item_bg"
+		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_wide_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_technology_innovation_army_folder_researched_item_bg"
+		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_wide_bg.dds"
+	}	
+
+	frameAnimatedSpriteType = {
+		name = "GFX_technology_innovation_army_folder_currently_researching_item_bg"
+		texturefile = "gfx/interface/techtree/tech_doctrine_researching_anim_strip_wide.dds"
 		noOfFrames = 9
 		loadType = "INGAME"
 		transparencecheck = yes
@@ -1214,14 +1271,12 @@ spriteTypes = {
 		name = "GFX_technology_special_forces_folder_small_unavailable_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
 	}	
+	
 	spriteType = {
 		name = "GFX_technology_special_forces_folder_small_available_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
 	}
-	spriteType = {
-		name = "GFX_technology_special_forces_folder_small_branch_item_bg"
-		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
-	}
+
 	spriteType = {
 		name = "GFX_technology_special_forces_folder_small_researched_item_bg"
 		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
@@ -1243,14 +1298,12 @@ spriteTypes = {
 		name = "GFX_technology_fir_special_forces_folder_small_unavailable_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
 	}	
+	
 	spriteType = {
 		name = "GFX_technology_fir_special_forces_folder_small_available_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
 	}
-	spriteType = {
-		name = "GFX_technology_fir_special_forces_folder_small_branch_item_bg"
-		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
-	}
+
 	spriteType = {
 		name = "GFX_technology_fir_special_forces_folder_small_researched_item_bg"
 		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
@@ -1273,14 +1326,12 @@ spriteTypes = {
 		name = "GFX_technology_snw_special_forces_folder_small_unavailable_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
 	}	
+	
 	spriteType = {
 		name = "GFX_technology_snw_special_forces_folder_small_available_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
 	}
-	spriteType = {
-		name = "GFX_technology_snw_special_forces_folder_small_branch_item_bg"
-		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
-	}
+
 	spriteType = {
 		name = "GFX_technology_snw_special_forces_folder_small_researched_item_bg"
 		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
@@ -1303,14 +1354,12 @@ spriteTypes = {
 		name = "GFX_technology_water_special_forces_folder_small_unavailable_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
 	}	
+	
 	spriteType = {
 		name = "GFX_technology_water_special_forces_folder_small_available_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
 	}
-	spriteType = {
-		name = "GFX_technology_water_special_forces_folder_small_branch_item_bg"
-		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
-	}
+
 	spriteType = {
 		name = "GFX_technology_water_special_forces_folder_small_researched_item_bg"
 		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
@@ -1333,14 +1382,12 @@ spriteTypes = {
 		name = "GFX_technology_earth_special_forces_folder_small_unavailable_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
 	}	
+	
 	spriteType = {
 		name = "GFX_technology_earth_special_forces_folder_small_available_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
 	}
-	spriteType = {
-		name = "GFX_technology_earth_special_forces_folder_small_branch_item_bg"
-		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
-	}
+
 	spriteType = {
 		name = "GFX_technology_earth_special_forces_folder_small_researched_item_bg"
 		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"
@@ -1363,14 +1410,12 @@ spriteTypes = {
 		name = "GFX_technology_air_special_forces_folder_small_unavailable_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_unavailable_item_bg.dds"
 	}	
+	
 	spriteType = {
 		name = "GFX_technology_air_special_forces_folder_small_available_item_bg"
 		textureFile = "gfx/interface/techtree/tech_doctrine_available_item_bg.dds"
 	}
-	spriteType = {
-		name = "GFX_technology_air_special_forces_folder_small_branch_item_bg"
-		textureFile = "gfx/interface/techtree/tech_doctrine_branch_item_bg.dds"
-	}
+
 	spriteType = {
 		name = "GFX_technology_air_special_forces_folder_small_researched_item_bg"
 		textureFile = "gfx/interface/techtree/tech_landdoctrine_researched_item_bg.dds"

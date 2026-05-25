@@ -6,6 +6,43 @@ generic_debug_view = {
 			always = no
 		}
 	}
+	show_current_taxation = {
+		available = {always = yes}
+		complete_effect = {
+			calculate_countrys_taxation = yes
+		}
+	}
+	log_total_number_of_divisions = {
+		available = {
+			always = yes
+		}	
+		complete_effect = {	
+			set_temp_variable = {
+				var = d
+				value = 0 
+			}
+			every_country = {
+				add_to_temp_variable = {
+					var = d
+					value = THIS.num_divisions
+				}
+			}
+			set_temp_variable = {
+				var = e
+				value = 0
+			}
+			every_country = {
+				limit  = {
+					is_in_earth_kingdom = yes
+				}
+				add_to_temp_variable = {
+					var = e
+					value = THIS.num_divisions
+				}
+			}
+			log = "Total number of divisions: [?d], Fire Nation: [?FIR.num_divisions], Earth Kingdom: [?e]"
+		}
+	} 
 
 	fir_effect = {
 		allowed = {
@@ -19,6 +56,95 @@ generic_debug_view = {
 			FIR_victory = yes
 		}
 
+	}
+	avatars_location = {
+		allowed = {
+			always = yes
+		}
+		
+	}
+	stop_all_current_wars = {
+		allowed = {
+			always = yes
+		}
+		complete_effect = {
+			every_country = {
+				limit = {
+					has_war = yes
+				}
+				every_possible_country = {
+					limit = {
+						has_war_with = PREV
+					}
+					white_peace = PREV
+					give_military_access = PREV 
+				}
+			}
+		}
+	}
+	declare_war_immediately = {
+		allowed = {
+			always = yes
+		}
+		target_trigger = {
+			FROM = {
+				NOT = {tag = ROOT} 
+			}
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					FROM = {
+						is_in_faction = yes
+					}
+				}
+				FROM = {
+					leave_faction = yes
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_in_faction = yes
+					}
+				}
+				ROOT = {
+					leave_faction = yes
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						is_puppet = yes
+					}
+				}
+				FROM.overlord = {
+					release_puppet = FROM
+				}
+				FROM = {
+					set_autonomy = {
+						target = THIS
+						autonomy_state = autonomy_free
+					}
+				}
+			}
+			if = {
+				limit = {
+					ROOT = {
+						is_puppet = yes
+					}
+				}
+				ROOT.overlord = {
+					release_puppet = ROOT
+				}
+			}
+			ROOT = {
+				declare_war_on = {
+					target = FROM
+					type = annex_everything
+				} 
+			}
+		}
 	}
 }
 
@@ -191,9 +317,10 @@ recruitment_decision_category = {
 						state_population < 10000
 					}
 				}
-				#add_manpower = -1000
+				add_to_variable = { local_migrant_pool = -1000 }
+				# = -1000
 			}
-			#add_manpower = 1000
+			add_manpower = 1000
 		}
 
 		cost = 10
@@ -225,9 +352,10 @@ recruitment_decision_category = {
 						state_population < 20000
 					}
 				}
+				add_to_variable = { local_migrant_pool = -2000 }
 				#add_manpower = -2000
 			}
-			#add_manpower = 2000
+			add_manpower = 2000
 		}
 		cost = 20
 
@@ -258,9 +386,10 @@ recruitment_decision_category = {
 						state_population < 50000
 					}
 				}
+				add_to_variable = { local_migrant_pool = -4000 }
 				#add_manpower = -4000
 			}
-			#add_manpower = 4000
+			add_manpower = 4000
 		}
 		cost = 30
 

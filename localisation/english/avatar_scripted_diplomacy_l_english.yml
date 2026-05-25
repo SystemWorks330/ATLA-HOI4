@@ -1,7 +1,7 @@
 ﻿l_english:
  CLAIM_STATE_TITLE:0 "£claim_state_icon  Claim State"
- CLAIM_STATE_ACTION_DESC:0 "Lay Claim on a State owned by this country."
- CLAIM_STATE_WINDOW_DESC:0 "Lay Claim on a State owned by this country."
+ CLAIM_STATE_ACTION_DESC:0 "Lay claim on a state owned by this country."
+ CLAIM_STATE_WINDOW_DESC:0 "Lay claim on a state owned by this country."
  just_claim_type:0 "Just Claim"
  unjust_claim_type:0 "Unjust Claim"
  claim_state_name:0 "[THIS.GetName]"

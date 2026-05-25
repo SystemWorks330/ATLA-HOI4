@@ -60,7 +60,7 @@ set_popularities = {
 set_variable = { victory_condition = token:fractured_desert_spirit }
 
 add_ideas = {
-	volunteer_only
+	volunteer_earth_nation
 	swamp_siwong_volunteers
 	local_markets
 	construction_efforts_law
@@ -83,6 +83,7 @@ permanent_spirits_and_modifiers = yes
 ##    #   #  # #  #   #       ###   #### 
 
 
+recruit_character = MPO_generic
 52.5.16 ={
 
 	#set_cosmetic_tag = MPO_puppet
@@ -142,4 +143,3 @@ permanent_spirits_and_modifiers = yes
 recruit_character = MPO_shamo
 
 # Different Ideology Leaders
-recruit_character = MPO_generic

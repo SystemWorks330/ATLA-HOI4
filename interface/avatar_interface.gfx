@@ -10,7 +10,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/avatar/_00guide.dds"
 		noOfFrames = 2
 	}
-
+	spriteType = {
+		name = "GFX_the_revival"
+		textureFile = "gfx/interface/avatar/therevival.dds"
+		noOfFrames = 1
+	}
 	SpriteType = {
 		name = "GFX_radio_detection_medium"
 		texturefile = "gfx/interface/radio_detection.dds"

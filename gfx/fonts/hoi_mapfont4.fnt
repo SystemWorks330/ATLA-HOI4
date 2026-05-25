@@ -1,6 +1,6 @@
 info face="Herculanum" size=-84 bold=1 italic=0 charset="" unicode=1 stretchH=100 smooth=1 aa=2 padding=0,0,0,0 spacing=1,1 outline=1
 common lineHeight=81 base=66 scaleW=2048 scaleH=1024 pages=1 packed=0 alphaChnl=1 redChnl=0 greenChnl=0 blueChnl=0
-page id=0 file="hoi_mapfont4_0.dds"
+page id=0 file="hoi_mapfont4.dds"
 chars count=270
 char id=32   x=1988  y=176   width=4     height=3     xoffset=-1    yoffset=79    xadvance=24    page=0  chnl=15
 char id=33   x=544   y=188   width=14    height=52    xoffset=7     yoffset=15    xadvance=27    page=0  chnl=15

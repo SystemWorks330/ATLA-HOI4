@@ -226,6 +226,14 @@ spriteTypes = {
 		name = "GFX_idea_dragon_army"
 		texturefile = "gfx/interface/ideas/spirit/dragon_army.dds"
 	}
+	spriteType = {
+		name = "GFX_idea_FIR_colonial_administration"
+		texturefile = "gfx/interface/ideas/spirit/FIR/FIR_colonial_administration.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_banished_prince"
+		texturefile = "gfx/interface/ideas/spirit/FIR/banished_prince.dds"
+	}
 
 
 	#fir colonies
@@ -358,6 +366,14 @@ spriteTypes = {
 		name = "GFX_idea_cavalry_tradition"
 		texturefile = "gfx/interface/ideas/spirit/cavalry_tradition.dds"
 	}
+	SpriteType = {
+		name = "GFX_idea_Teka_kimonos"
+		texturefile = "gfx/interface/ideas/designer/idea_teka_kimonos.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_Ringo_kimonos"
+		texturefile = "gfx/interface/ideas/designer/idea_ringo_kimonos.dds"
+	}
 
 	### chin
 
@@ -398,6 +414,10 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_the_kyoshi_warriors"
 		texturefile = "gfx/interface/ideas/spirit/the_kyoshi_warriors.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_KYI_signed_memorandum_of_cooperation_with_ringo_kimonos_idea"
+		texturefile = "gfx/interface/ideas/spirit/KYI_signed_memorandum_of_cooperation_with_ringo_kimonos_idea.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_remote_isolation"
@@ -517,6 +537,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_idea_pacifist_detachment"
 		texturefile = "gfx/interface/ideas/spirit/pacifist_detachment.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_nomadic_lifestyle"
+		texturefile = "gfx/interface/ideas/spirit/nomadic_lifestyle.dds"
+	}
+	SpriteType = {
+		name = "GFX_idea_home_of_the_avatar"
+		texturefile = "gfx/interface/ideas/spirit/home_of_the_avatar.dds"
 	}
 	SpriteType = {
 		name = "GFX_idea_protecting_the_avatar"

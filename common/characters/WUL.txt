@@ -1,6 +1,6 @@
 characters={
 	WUL_tycho={
-		name="Tycho"
+		name=WUL_tycho
 		portraits={
 			civilian={
 				large="gfx/leaders/WUL/Portrait_Wulong_Tycho.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	WUL_generic={
-		name="Generic"
+		name=WUL_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/WUL/Portrait_Wulong_theocratic_chiefdom.dds"

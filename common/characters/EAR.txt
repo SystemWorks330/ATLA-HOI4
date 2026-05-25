@@ -1,13 +1,13 @@
 characters = {
 	EAR_zaifeng = {
-		name = "EAR_zaifeng"
+		name = EAR_zaifeng
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAR/Portrait_Earthkingdom_51.dds"
 			}
 		}
 		country_leader = {
-			desc = "51st Earthking"
+			desc = EAR_zaifeng_desc
 			ideology = constitutional_monarchy
 			traits = {
 				earthking
@@ -17,14 +17,14 @@ characters = {
 		}
 	}
 	EAR_kuei = {
-		name = "Kuei"
+		name = EAR_kuei
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Kuei.dds"
 			}
 		}
 		country_leader = {
-			desc = "52nd Earthking"
+			desc = EAR_kuei_desc
 			ideology = constitutional_monarchy
 			traits = {
 				earthking
@@ -34,29 +34,29 @@ characters = {
 		}
 	}
 	EAR_generic = {
-		name = "Generic"
+		name = EAR_generic
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAR/Portrait_Earthkingdom_colonialism.dds"
 			}
 		}
 		country_leader = {
-						ideology = colonialism
+			ideology = colonialism
 			expire = "120.4.7.1"
 			id = -1
 		}
 		country_leader = {
-						ideology = elective_chiefdom
+			ideology = elective_chiefdom
 			expire = "120.4.7.1"
 			id = -1
 		}
 		country_leader = {
-						ideology = absolute_pacifism
+			ideology = absolute_pacifism
 			expire = "120.4.7.1"
 			id = -1
 		}
 		country_leader = {
-						ideology = anarchism
+			ideology = anarchism
 			expire = "120.4.7.1"
 			id = -1
 		}
@@ -323,8 +323,6 @@ characters = {
 	#  # ##### #    #    # 
 	#  # #   # #    #    # 
 	###  #   # #    #### # 
-
-
 	EAR_dai_li_government = {
 		portraits = {
 			civilian = {
@@ -332,19 +330,17 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = "Dai Li Government"
+			desc = EAR_dai_li_government_desc
 			ideology = earth_despotism
 			traits = {
-				surveillance_state
+				shadow_king
 			}
 			expire = "130.1.1"
 			id = -1
 		}
 	}
-
-
 	EAR_quon = {
-		name = "Quon"
+		name = EAR_quon
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Daili1.dds"
@@ -396,7 +392,7 @@ characters = {
 		#		}
 	}
 	EAR_hiroshi = {
-		name = "Hiroshi"
+		name = EAR_hiroshi
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Daili2.dds"
@@ -448,7 +444,7 @@ characters = {
 		#		}
 	}
 	EAR_juno = {
-		name = "Juno"
+		name = EAR_juno
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Daili3.dds"
@@ -484,7 +480,7 @@ characters = {
 						days = 1
 						random_days = 7
 					}
-				}	
+				}
 			}
 			traits = {
 				extreme_royalist
@@ -500,7 +496,7 @@ characters = {
 		#		}
 	}
 	EAR_moku = {
-		name = "Moku"
+		name = EAR_moku
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Daili4.dds"
@@ -552,7 +548,7 @@ characters = {
 		#		}
 	}
 	EAR_saiful = {
-		name = "Saiful"
+		name = EAR_saiful
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Daili5.dds"
@@ -604,7 +600,7 @@ characters = {
 		#		}
 	}
 	EAR_cam = {
-		name = "Cam"
+		name = EAR_cam
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Daili6.dds"

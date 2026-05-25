@@ -183,7 +183,15 @@ spriteTypes = {
 		name = "GFX_header_bg"
 		texturefile = "gfx/interface/header_bg.dds"
 	}
-
+	
+	spriteType = {
+		name = "GFX_construction_header_bg"
+		texturefile = "gfx/interface/construction_header_bg.dds"
+	}
+	spriteType = {
+		name = "resource_item_background"
+		texturefile = "gfx/interface/resource_item_bg.dds"
+	}
 	spriteType = {
 		name = "GFX_resources_strip"
 		texturefile = "gfx/interface/resources_strip.dds"

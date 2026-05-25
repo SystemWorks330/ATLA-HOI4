@@ -212,6 +212,7 @@ earth_military_buildup_category = {
 		NOT = { has_country_flag = hide_mission_decisions }
 
 		has_country_flag = military_category_active
+		
 		NOT = {
 			has_country_flag = military_category_complete
 		}

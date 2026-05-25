@@ -1,6 +1,6 @@
 characters={
 	MPO_shamo={
-		name="Sha-Mo"
+		name=MPO_shamo
 		portraits={
 			civilian={
 				large="GFX_Portrait_Misty_Palm_Sha_Mo"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	MPO_generic={
-		name="Generic"
+		name=MPO_generic
 		portraits={
 			civilian={
 				large="GFX_Portrait_Misty_Palm_Generic_1"
