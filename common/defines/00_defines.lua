@@ -2054,6 +2054,7 @@ NNavy = {
 		17,	-- Mine sweepers
 		29,	-- Patrol task force
 		1,	-- Convoy escort
+		5,  -- Dominance Patrol Force
 	},
 
 	-- NOTE: you can see the effect of changing the values down below by running the command tfria with a task force selected
