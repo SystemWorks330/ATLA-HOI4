@@ -374,19 +374,6 @@ guiTypes = {
 				quadTextureSprite ="GFX_tiled_plain_bg_small"
 			}
 
-			#### separate top ui which is glitching, trying to keep this to keep ui visually the same.
-			containerWindowType = {
-				name = "deposit_item_grid"
-				position = { x = 0 y = 0 }
-				size = { width = 122 height = 190 }
-
-				background = {
-					name = "Background"
-					quadTextureSprite ="GFX_tiled_plain_bg_small"
-					alwaystransparent = yes
-				}
-			}
-
 			iconType = {
 				name = "resource_constructions"
 				position = { x = 5 y = 0 }
