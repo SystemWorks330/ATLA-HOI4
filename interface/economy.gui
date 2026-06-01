@@ -181,7 +181,7 @@ guiTypes = {
 				position = { x=-14 y=-16 }
 				spriteType ="GFX_resources_econ_bg"
 				alwaystransparent = yes
-			}							
+			}			
 
 			containerWindowType = {
 				name = "resources"
