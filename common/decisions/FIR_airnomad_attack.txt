@@ -1141,6 +1141,8 @@ air_genocide_category = {
 
 generic_debug_view = {
 	start_genocide = {
+		
+		icon = initiate_genocide
 		allowed = {
 			tag = FIR
 		}

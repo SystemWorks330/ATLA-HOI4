@@ -22,6 +22,8 @@
  start_colony_debug:0 "Activate FN Colonies"
  colony_reset_debug:0 "Reset Colonies"
  declare_war_immediately:0 "Declare War"
+ fir_effect:0 "Fire Effect"
+ log_total_number_of_divisions:0 "Log Total Number of Divisions"
 
 
  war_weariness_category:0 "§eWar Weariness§!"
