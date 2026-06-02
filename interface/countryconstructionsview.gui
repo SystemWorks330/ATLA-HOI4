@@ -356,7 +356,7 @@ guiTypes = {
 		containerWindowType = {
 			name = "possible_constructions"
 			position = { x = 428 y = 75 }
-			size = { width = 122 height = 720 }
+			size = { width = 122 height = 735 }
 			clipping = yes
 			verticalScrollbar = "right_vertical_slider"
 			vertical_scroll_step = 10
@@ -722,6 +722,118 @@ guiTypes = {
 			position = { x = 260 y = 10 }
 			quadTextureSprite ="GFX_scorched_earth"
 			pdx_tooltip = "SCORCHED_EARTH_STATE_PREVENT_REPAIRS"
+		}
+	}
+
+	containerWindowType = {
+		name = "production_railway_gun_repair_entry"
+		position = { x=0 y=0 }
+		size = { width = 400 height = 52 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_construction_entry_bg"
+			pdx_tooltip = "PRODUCTION_DRAG_N_DROP"
+		}
+
+		iconType = {
+			name = "new_glow"
+			position = { x = 0 y = 2 }
+			spriteType = "GFX_construction_line_glow"
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "relative_flag"
+			quadTextureSprite ="GFX_construction_flag"
+			position = { x= 0 y = 0 }
+			alwaystransparent = yes
+		}
+
+		instantTextboxType = {
+			name = "location"
+			position = { x = 20 y = 4 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "Maus"
+			maxWidth = 150
+			maxHeight = 40
+			format = left
+			multiline = yes
+			vertical_alignment = center
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "picture"
+			position = { x = 172 y = 5 }
+			spriteType = "GFX_buildings_railway_gun"
+		}
+
+		iconType = {
+			name = "overlay"
+			position = { x = 172 y = 5 }
+			spriteType = "GFX_building_status_overlay"
+			frame = 2
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "progress"
+			spriteType = "GFX_construction_progressbar"
+			position = { x= 249 y = 36 }
+		}
+
+		instantTextboxType = {
+			name = "queued"
+			position = { x = 192 y = 29 }
+			font = "hoi_18b"
+			text = "-"
+			maxWidth = 20
+			maxHeight = 20
+			format = right
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "repair"
+			spriteType = "GFX_building_repair"
+			position = { x= 174 y = 7 }
+		}
+
+		iconType = {
+			name = "ongoing_contruction_anim"
+			spriteType = "GFX_ongoing_contruction_anim"
+			position = { x = 254 y = 9 }
+		}
+
+		instantTextboxType = {
+			name = "factories"
+			position = { x = 254 y = 9 }
+			font = "hoi_18b"
+			text = "-"
+			maxWidth = 50
+			maxHeight = 20
+			format = center
+		}
+
+		buttonType = {
+			name = "increase_priority"
+			position = { x=318 y=14 }
+			quadTextureSprite = "GFX_arrow_up_small"
+			pdx_tooltip = "PRODUCTION_INCREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
+		}
+
+		buttonType = {
+			name = "decrease_priority"
+			position = { x=341 y=14	 }
+			quadTextureSprite = "GFX_arrow_down_small"
+			pdx_tooltip = "PRODUCTION_DECREASE_PRIORITY_LABEL"
+			pdx_tooltip_delayed = "PRODUCTION_PRIORITY_DELAYED"
+			clicksound = click_default
 		}
 	}
 
@@ -1442,14 +1554,50 @@ guiTypes = {
 				position = {x=4 y=200}
 				size = { width=236 height=296 }
 
-				iconType ={
-					name ="buy_civ_bg"
-					spriteType = "GFX_slider_202"
-					position = { x= 0 y = 10 }
-					scale = 0.75
-					Orientation = "UPPER_LEFT"
-					pdx_tooltip = "buy_civ_tooltip"
-					pdx_tooltip_delayed = "buy_civ_tooltip_delayed"
+				extendedScrollbarType = {
+					name = "buy_slider"
+					position = { x = 4 y = 16 }
+					size = { width = 142 height = 18 }
+					tileSize = { width = 12 height = 12 }
+					maxValue = 100
+					minValue = 0
+					stepSize = 1
+					startValue = 50
+					horizontal = yes
+					clickonly = yes
+
+						background = {
+							name = "Background"
+							quadTextureSprite = "GFX_slider_bg"
+							position = { x = -52 y = -13 }
+						}
+
+					slider = {
+						name = "Slider"
+						quadTextureSprite = "GFX_scroll_drager"
+						position = { x = 0 y = -2 }
+					}
+
+					track = {
+						name = "Track"
+						quadTextureSprite = "GFX_scroll_track_horisontal"
+						position = { x = 0 y = 4 }
+						alwaystransparent = yes
+					}
+
+					decreaseButton = {
+						name = "Decrease"
+						quadTextureSprite = "GFX_scroll_left"
+						position = { x = 3 y = 1 }
+						clicksound = click_scroll
+					}
+
+					increaseButton = {
+						name = "Increase"
+						quadTextureSprite = "GFX_scroll_right"
+						position = { x = -19 y = -17 }
+						clicksound = click_scroll
+					}
 				}
 
 				iconType ={
@@ -1470,15 +1618,15 @@ guiTypes = {
 				}
 
 				buttonType = {
-					name ="decrease_civ_buy"
-					spriteType = "GFX_scroll_left"
+					name ="increase_treasury_priority_button"
+					spriteType = "GFX_empty_button"
 					position = { x= 4 y = 16 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "decrease_civ_buy"
 				}
 				buttonType = {
-					name ="increase_civ_buy"
-					spriteType = "GFX_scroll_right"
+					name ="increase_civilian_capacity_priority_button"
+					spriteType = "GFX_empty_button"
 					position = { x= 130 y = 16 }
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "increase_civ_buy"
@@ -1684,12 +1832,11 @@ guiTypes = {
 			pdx_tooltip = "carpentry_extended"
 		}
 
-		buttonType = {
-			name ="cancel_construction"
+		iconType = {
+			name ="cancel_construction_icon"
 			spriteType = "GFX_cancel_conversion_button"
 			position = { x = 44 y = -20 }
 			Orientation = "UPPER_LEFT"
-			clicksound = click_default
 			pdx_tooltip = "cancel_construction"
 		}
 	}
@@ -1743,7 +1890,6 @@ guiTypes = {
 			spriteType = "GFX_constructions_bg4"
 			position = { x = 34 y = 90 }
 		}
-		}
 
 		buttonType ={
 			name ="close_window"
@@ -1753,3 +1899,4 @@ guiTypes = {
 			clicksound = click_default
 		}
 	}
+}
