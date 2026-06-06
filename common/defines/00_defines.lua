@@ -1569,6 +1569,7 @@ NNavy = {
 	COMBAT_MIN_DURATION = 8,										-- Min combat duration before we can retreat. It's a balancing variable so it's not possible to always run with our weak ships agains big flotillas.
 	COMBAT_INITIAL_DURATION = 6,									-- Number of hours that is considered the "initial phase" of naval combat, used for modifiers like surprise attack during "initial combat"
 	COMBAT_RETREAT_DECISION_CHANCE = 0.12, 							-- There is also random factor in deciding if we should retreat or not. That causes a delay in taking decision, that sooner or later will be picked. It's needed so damaged fast ships won't troll the combat.
+	CAPITAL_SHIP_COMBAT_RETREAT_MULT = 0.5,							-- Multiplier on combat retreat threshold for capital ships and carriers (they can take more punishment)
 	COMBAT_DETECTED_CONVOYS_FROM_SURFACE_DETECTION_STAT = 0.1,		-- Each 1.0 of surface_detection that ship has (equipment stat), gives x% of convoys discovered from total travelling along the route.
 	COMBAT_BASE_CRITICAL_CHANCE = 0.1,								-- Base chance for receiving a critical chance. It get's scaled down with ship reliability.
 	COMBAT_CRITICAL_DAMAGE_MULT = 5.0,								-- Multiplier for the critical damage. Scaled down with the ship reliability.
@@ -1667,6 +1668,7 @@ NNavy = {
 	NAVY_REPAIR_BASE_SEARCH_BOOST_FOR_SAME_COUNTRY = 5,				-- while searching for a naval base for repairs, your own bases gets a bonus
 	NAVY_REPAIR_BASE_PRIORITY_THRESHOLD_LOW = 2,					-- bases with a level above this value will be set to low prio	(bases between these levels will get medium prio)
 	NAVY_REPAIR_BASE_PRIORITY_THRESHOLD_HIGH = 7,					-- bases with a level above this value will be set to high prio (bases between these levels will get medium prio)
+	NAVY_REPAIR_BASE_SEARCH_NON_OPERATIONAL_STR = 0.65,				-- strength factor at or below which a fleet is considered non-operational by the AI, causing it to cancel the mission and send the fleet to repair
 
 
 	CONVOY_SPOTTING_COOLDOWN = 0.3,  -- % of travel time 
@@ -2501,6 +2503,7 @@ NAI = {
 	MINIMUM_CONVOY_TO_ASK_LEND_LEASE = 30,		-- AI will accept to lend lease convoys only if our stockpile is less than that (special case because convoy stockpile can't be negative).
 	MINIMUM_FUEL_DAYS_TO_ASK_LEND_LEASE = 2,	-- AI will accept to lend lease fuel only if the player have less fuel than this number multiply by his max daily consumption.
 	MINIMUM_FUEL_DAYS_TO_ACCEPT_LEND_LEASE = 10, -- AI will accept to lend lease fuel only if they have more fuel than this number multiply by their max daily consumption. Note that for a GiE asking to its host, we divide this number by 2.
+	LENDLEASE_CONVOY_OVERCOMMIT_PENALTY_INTERVAL = 3, -- For every N convoys the receiver is over capacity (including this lend-lease), apply -1 to AI acceptance score
 
 	DEFAULT_SUPPLY_TRUCK_BUFFER_RATIO = 1.5,	-- ai will set to truck buffer ratio to this. can be modified by wanted_supply_trucks min_wanted_supply_trucks ai strats
 	DEFAULT_SUPPLY_TRAIN_NEED_FACTOR = 1.5,     -- AI multiplies current train usage by this to determine desired nr of wanted trains. Can be modified by wanted_supply_train min_wanted_supply_trains ai strats.
@@ -2738,6 +2741,7 @@ NAI = {
 	START_TRAINING_SUPPLY_LEVEL = 0.40,                  -- ai will not start to train if supply ratio drops below this level
 	STOP_TRAINING_SUPPLY_LEVEL = 0.30,                   -- ai will not train if supply ratio drops below this level
 	STOP_TRAINING_FULLY_TRAINED_FACTOR = 0.95,           -- ai will not train if at least this ratio of divisions in the army are fully trained
+	STOP_TRAINING_ACTIVE_COMBAT_RATIO = 0.10,            -- ai halts all training when more than this share of its divisions are in active combat (reinforce instead)
 
 	BUILD_REFINERY_LACK_OF_RESOURCE_MODIFIER = 0.003,	-- How much lack of resources are worth when evaluating what to build.
 	
@@ -3126,6 +3130,7 @@ NAI = {
 	MAX_SCREEN_TASKFORCES_FOR_MINE_LAYING = 0.15, -- maximum ratio of screens forces to be used in mine laying
 	MAX_SCREEN_FORCES_FOR_INVASION_SUPPORT = 1, -- max ratio of screens forces to be used in naval invasion missions
 	MAX_CAPITAL_FORCES_FOR_INVASION_SUPPORT = 1, -- max ratio of capital forces to be used in naval invasion missions
+	AI_TASKFORCE_REQUIRED_RESERVE_RATIO = 0.2,	-- Fraction of required TF optimal composition held in reserve for reinforcement (rounded up per type)
 	MAX_PATROL_TO_STRIKE_FORCE_RATIO = 3.0,	-- maximum patrol/strike force ratio
 
 
@@ -3185,8 +3190,15 @@ NAI = {
 
 	GIE_LEND_LEASE_TO_PLAYER_EXILE_DESIRE_BONUS = 40, -- AI host is more likely to accept lend lease requests from a player.
 
+	CONVOY_DEFICIT_BUILD_BOOST_MAX = 150,				-- Cap on the convoy-deficit-driven boost added to the convoy build target. Prevents convoy panic from starving warship production when many convoys are lost at once.
 	NAVAL_BASE_RATIO_ALLOCATED_FOR_REPAIRS = 0.25,				-- ai will allocate at most this ratio of dockyards for repairs in peace time
+	AI_SHIP_SWAP_MIN_DAMAGED_SHIPS = 2,							-- minimum number of damaged ships in a taskforce before AI considers swapping them to reserves
+	AI_SHIP_SWAP_DAMAGE_THRESHOLD = 0.33,						-- per-ship strength threshold below which the AI considers a capital/carrier damaged enough to swap to reserves
+	AI_REPAIR_CANCEL_MIN_STRENGTH = 0.75,						-- AI will pull non-reserve task forces out of repair and back on mission once they reach this strength
+	AI_SURFACE_COMBAT_FUEL_RATIO = 0.70,						-- fraction of navy fuel reserved for surface combat (patrols, strike forces, dominance)
+	AI_CONVOY_DEFENSE_FUEL_RATIO = 0.15,						-- fraction of navy fuel reserved for convoy escorts (remaining goes to convoy raiding)
 	NAVAL_BASE_RATIO_ALLOCATED_FOR_REPAIRS_IN_WAR_TIME = 0.6,	-- ai will allocate at most this ratio of dockyards for repairs in war time
+	AI_NAVAL_GOALS_UPDATE_FREQUENCY_DAYS = 7;	-- Regenerate naval AI objectives this often in days (affects performance)
 
 	MAX_FUEL_CONSUMPTION_RATIO_FOR_AIR_TRAINING = 0.20,			-- ai will use at most this ratio of affordable fuel for air training
 	MAX_FUEL_CONSUMPTION_RATIO_FOR_NAVY_TRAINING = 0.20,		-- ai will use at most this ratio of affordable fuel for naval training
@@ -3232,6 +3244,7 @@ NAI = {
 	CONVOY_ESCORT_SCORE_FROM_CONVOYS = 15,                       -- score for each convoy you have in area
 	CONVOY_ESCORT_MUL_FROM_NO_CONVOYS = 0.02,                    -- score multiplier when no convoys are around
 	CONVOY_RAID_MIN_ENEMY_THREAT = 0.05,
+	STRIKE_FORCE_TARGET_RECALC_DAYS = 5,					-- Each X days, the AI will reevaluate which regions to put strike forces in (because patrol coverage will change)
 
 	RAILWAY_GUN_PRODUCTION_BASE_DIVISIONS_RATIO_PERCENT = 0,	-- Base ratio of desired railway guns to divisions for AI (5 means 5%). Can be modified by railway_guns_divisions_ratio AI strategy value
 	RAILWAY_GUN_PRODUCTION_MIN_DIVISONS = 20,					-- Minimum required number of divisions for the AI to consider producing railway guns
@@ -3268,6 +3281,8 @@ NAI = {
 	MIN_INVASION_PLAN_VALUE_TO_EXECUTE = 0.2,				-- ai will only activate invasions if plan value is above this
 	MIN_INVASION_ORG_FACTOR_TO_EXECUTE = 0.75,				-- ai will only activate invasions if average org factor is above this
 	MIN_INVASION_UNITS_READY_TO_EXECUTE = 0.9,              -- ai will only activate invasions if this ratio of assigned units are ready
+	INVASION_UNITS_READY_AT_MIN_PLAN = 0.75,                -- units ready ratio required when plan value is at minimum threshold
+	INVASION_UNITS_READY_AT_MAX_PLAN = 0.25,                -- units ready ratio required when plan value is very high (1.0+)
 	MAX_INVASION_SIZE = 24,									-- max invasion group size
 
 	MAX_PORT_STRIKE_HISTORY_TO_REMEMBER = 5000,				-- maximum port strike history to keep track (will be used to disable ports
@@ -3533,6 +3548,7 @@ NOperatives = {
 	AGENCY_OPERATIVE_RECRUITMENT_TIME = 30,			-- Number of days to wait to have operative to recruit when an operative slot first becomes available
 	BECOME_SPYMASTER_PP_COST = 50,					-- Number of political power used to become Spy Master
 	BECOME_SPYMASTER_MIN_UPGRADES = 3,				-- Number of agency upgrades you need before becoming Spy Master
+	BECOME_SPYMASTER_FI_COST = 1,					-- Faction initiative used to become Spy Master (only with faction dlc)
 	BASE_COUNTER_INTELLIGENCE_RATING = 0.0,					-- Base national counter intelligence rating for all countries
 	AGENCY_DEFENSE_EFFECT_ON_HOSTILE_ACTION_COST = 0.2,			-- Defense factor that is responsible for multiplying the cost hostile actions against our country by its level and this value
 	INTEL_NETWORK_GAIN_RATE_ON_WRONG_CONTROLLER = -10.0,			-- Amount of network strength lost in a state when it does not have the right controller anymore
