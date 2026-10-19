@@ -62,7 +62,6 @@ generic_naval_dominance = {
     objective_type = naval_dominance
 
     blocked_for = {
-        ENG FRA GER ITA JAP SOV USA
     }
 
     min_priority = 1

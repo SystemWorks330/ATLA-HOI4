@@ -6,10 +6,7 @@
 	###  #### #   # ###  #### #   # ###                                 
 
 template_airbenders = {
-	role = {
-		airbenders
-		benders_only
-	}
+	role = airbenders
 	
 	upgrade_prio = {
 		base = 1

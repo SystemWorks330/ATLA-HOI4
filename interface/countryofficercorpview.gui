@@ -355,13 +355,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
-		iconType ={
-			name ="xp_top_bg"
-			quadTextureSprite = "GFX_deployment_binding"
-			position = { x= 9 y = 45 }
-			Orientation = "UPPER_LEFT"
-			# scale = 1.25
-		}
+		
 
 		iconType ={
 			name ="army_header_bg"
@@ -397,131 +391,6 @@ guiTypes = {
 			spriteType = "GFX_trade_header"
 			position = { x=11 y=-44 }
 			orientation = "LOWER_LEFT"
-		}
-
-		instantTextboxType = {
-			name = "XP_gain"
-			position = { x = 240 y = 51 }
-			font = "hoi_18mbs"
-			text = "DAILY_EXPERIENCE_GAIN_OFFICERS"
-			maxWidth = 80
-			maxHeight = 18
-			fixedsize = yes
-			format = left
-			alwaystransparent = yes
-		}			
-			
-		containerWindowType = {
-			name = "landxp"
-			position = { x= 324 y = 48}
-			clipping = no
-			Orientation = UPPER_LEFT
-
-			iconType = {
-				name ="experience_icon"
-				spriteType = "GFX_army_experience"
-				position = { x= 0 y = 6 }
-				Orientation = "UPPER_LEFT"
-			}
-			
-			instantTextBoxType = {
-				name ="experience_value"
-				position = { x= 16 y = 3 }
-				font = "hoi_18mbs"
-				text = "999"
-				format = left
-				maxWidth = 45
-				maxHeight = 24
-				fixedsize = yes
-			}
-		}
-		
-		containerWindowType = {
-			name = "navyxp"
-			position = { x= 396 y = 48}
-			clipping = no
-			Orientation = UPPER_LEFT
-
-			iconType = {
-				name ="navy_experience_icon"
-				spriteType = "GFX_navy_experience"
-				position = { x= 0 y = 6 }
-				Orientation = "UPPER_LEFT"
-			}
-			
-			instantTextBoxType = {
-				name ="navy_experience_value"
-				position = { x= 16 y = 3 }
-				font = "hoi_18mbs"
-				text = "999"
-				format = left
-				maxWidth = 45
-				maxHeight = 24
-				fixedsize = yes
-			}
-		}
-		
-		containerWindowType = {
-			name = "airxp"
-			position = { x= 468 y = 48}
-			clipping = no
-			Orientation = UPPER_LEFT
-
-			iconType = {
-				name ="air_experience_icon"
-				spriteType = "GFX_air_experience"
-				position = { x= 0 y = 6 }
-				Orientation = "UPPER_LEFT"
-			}
-			
-			instantTextBoxType = {
-				name ="air_experience_value"
-				position = { x= 16 y = 3 }
-				font = "hoi_18mbs"
-				text = "999"
-				format = left
-				maxWidth = 45
-				maxHeight = 24
-				fixedsize = yes
-			}
-		}
-		
-		containerWindowType = {
-			name = "commandpower"
-			position = { x= 130 y = 48 }
-			clipping = no
-			# size = { width=50 height=24 }
-			Orientation = UPPER_LEFT
-
-			instantTextboxType = {
-				name = "cp_allocation"
-				position = { x = -80 y = 3 }
-				font = "hoi_18mbs"
-				text = "COMMAND_POWER_CAP_CHANGE"
-				maxWidth = 70
-				maxHeight = 18
-				fixedsize = yes
-				format = left
-				alwaystransparent = yes
-			}			
-
-			iconType = {
-				name ="command_icon"
-				spriteType = "GFX_command_power"
-				position = { x= 0 y = 2 }
-				Orientation = "UPPER_LEFT"
-			}
-			
-			instantTextBoxType = {
-				name ="command_power_value"
-				position = { x= 27 y = 3 }
-				font = "hoi_18mbs"
-				text = "999"
-				format = left
-				maxWidth = 56
-				maxHeight = 24
-				fixedsize = yes
-			}
 		}
 
 	containerWindowType = {
@@ -581,7 +450,7 @@ guiTypes = {
 	# Any containerWindowType inside "officer_core_view" with the name "X_doctrine_button" will automatically be linked to doctrine folder "X"
 	containerWindowType = {
 		name = "officer_core_view"
-		position = { x = 0 y = 139 }
+		position = { x = 0 y = 216 }
 		size = { width = 100% height = 100%% }
 		verticalScrollbar = "right_vertical_slider"
 		margin = { top = 13 left = 13 bottom = 10 right = 13 }
@@ -602,13 +471,27 @@ guiTypes = {
 		    # If you have the DLC that enables spirits, each of the sections (army, navy, air) will need to be larger in height
 		    # This defines the extra height added to each section, and thus also the offset added to the start of the next section
 		    name = "spirit_row_offset"
-		    position = { x = 0 y = 56 }
+		    position = { x = 0 y = 0 }
+		}
+		
+		containerWindowType = {
+			name = "spy_header"
+			position = { x = 0 y = 10 }
+			size = { width = 98% height = 115 }
+			margin = { top = 0 left = 0 bottom = 0 right = 0}	
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_spy_tiled_marble_bg"
+			}
+
+
 		}
 		
 		containerWindowType = {
 			name = "army_header"
-			position = { x = 0 y = 5 }
-			size = { width = 98% height = 200 }
+			position = { x = 0 y = 125 }
+			size = { width = 98% height = 240 }
 			margin = { top = 0 left = 0 bottom = 0 right = 0}
 			
 			background = {
@@ -697,8 +580,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "navy_header"
-			position = { x = 0 y = 209 }
-			size = { width = 98% height = 200 }
+			position = { x = 0 y = 369 }
+			size = { width = 98% height = 240 }
 			margin = { top = 0 left = 0 bottom = 0 right = 0}
 
 			background = {
@@ -787,8 +670,8 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "air_header"
-			position = { x = 0 y = 414 }
-			size = { width = 98% height = 200 }
+			position = { x = 0 y = 614 }
+			size = { width = 98% height = 145 }
 			margin = { top = 0 left = 0 bottom = 0 right = 0}
 
 			background = {
@@ -854,7 +737,7 @@ guiTypes = {
 		
 		containerWindowType = {
 			name = "special_forces_header"
-			position = { x = 0 y = 619 }
+			position = { x = 0 y = 759 }
 			size = { width = 98% height = 145 }
 			margin = { top = 0 left = 0 bottom = 0 right = 0}
 			
@@ -1003,9 +886,109 @@ guiTypes = {
 			size = {width=95% height=20%}
 			clipping = no
 		}
-	}
-	} # END OF countryofficercorpview
+	
+		buttonType = {
+				name = "intel_agency_button"
+				quadTextureSprite = "GFX_diplo_filter_entry"
+				position = { x=253 y=50 }
+				buttonText = "WAR_COUNCIL_ESPIONAGE_BUTTON"
+				font = "hoi_16mbs"
+				frame = 2
+				clicksound = click_close
+				oversound = ui_menu_over
+			}
 
+		buttonType = {
+				name = "commander_roster_ship"
+				quadTextureSprite = "GFX_diplo_filter_entry"
+				position = { x=382 y=50 }
+				buttonText = "COMMANDER_ROSTER_SHIP_BUTTON"
+				font = "hoi_16mbs"
+				frame = 2
+				pdx_tooltip = "COMMANDER_ROSTER_SHIP_TOOLTIP"
+				pdx_tooltip_delayed = "COMMANDER_ROSTER_SHIP_TOOLTIP_DELAYED"
+			}
+
+	}
+	
+		containerWindowType = {
+		name = "hq_ribbon"
+		position = { x = 13 y = 150 }
+		size = { width = 523 height = 62 }
+      	clipping = yes
+
+		iconType = {
+			name = "Background"
+			quadTextureSprite = "GFX_officer_corp_army_hq_bg"
+			orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "army_hq_templates_toggle_container"
+			position = { x = 10 y = 5 }
+			size = { width = 30 height = 99 }
+			
+
+			buttonType = {
+				name = "button_army_hq_templates_toggle"
+				spriteType = "GFX_army_hq_button"
+				clicksound = click_default
+				buttonText = "ARMY_HQ_TEMPLATES"
+				buttonFont = "hoi_16mbs"
+			}
+		}
+
+		iconType = {
+			name = "deployed_hq_icon"
+			spriteType = "GFX_hq_badge_bg"
+			position = { x = 210 y = 19 }
+		}
+
+		instantTextboxType = {
+			name = "deployed_counter"
+			position = { x = 230 y = 20 }
+			font = "hoi_18mbs"
+			maxWidth = 50
+			maxHeight = 20
+			format = left
+		}
+
+		containerWindowType = {
+			name = "captured_generals_container"
+			position = { x = 293 y = 0 }
+
+			buttonType = {
+				name = "button_captured_generals"
+				spriteType = "GFX_captured_commanders_button"
+			}
+
+			instantTextBoxType = {
+				name = "captured_generals_text"
+				position = { x=35 y=21 }
+				font = "hoi_16mbs"
+				text = "CAPTURED_GENERALS"
+				format = right
+				maxWidth = 160
+				maxHeight = 50
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "captured_generals_amount"
+				position = { x=45 y=36 }
+				font = "hoi_18mbs"
+				text = "99"
+				format = left
+				alwaystransparent = yes
+				text_color_code = H
+			}
+		}
+	}
+
+
+	} # END OF countryofficercorpview
     #### SPIRITS ####
 	
     containerWindowType = {

@@ -58,6 +58,7 @@ farmer_k = {								#### base farmers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 miller_k = {								#### base millers employed in a building
 	color_type = neutral
@@ -65,6 +66,7 @@ miller_k = {								#### base millers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 fisher_k = {								#### base fishers employed in a building
 	color_type = neutral
@@ -72,6 +74,7 @@ fisher_k = {								#### base fishers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 rancher_k = {								#### base ranchers employed in a building
 	color_type = neutral
@@ -79,6 +82,7 @@ rancher_k = {								#### base ranchers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 lumberjack_k = {							#### base lumber jacks employed in a building
 	color_type = neutral
@@ -86,6 +90,7 @@ lumberjack_k = {							#### base lumber jacks employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 miner_k = {									#### base miners employed in a building
 	color_type = neutral
@@ -93,6 +98,7 @@ miner_k = {									#### base miners employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 weaver_k = {								#### base weavers employed in a building
 	color_type = neutral
@@ -100,6 +106,7 @@ weaver_k = {								#### base weavers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 smith_k = {									#### base smiths employed in a building
 	color_type = neutral
@@ -107,6 +114,7 @@ smith_k = {									#### base smiths employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 smith_fake = {								#### base smiths but with no effect
 	color_type = neutral
@@ -121,6 +129,7 @@ harbour_worker_k = {						#### base harbour workers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 shopkeeper_k = {							#### base shopkeepers employed in a building
 	color_type = neutral
@@ -128,6 +137,7 @@ shopkeeper_k = {							#### base shopkeepers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 craftsman_k = {								#### base craftsman employed in a building
 	color_type = neutral
@@ -135,6 +145,7 @@ craftsman_k = {								#### base craftsman employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 craftsman_fake = {							#### base craftsmen with no effect
 	color_type = neutral
@@ -149,6 +160,7 @@ industrial_worker_k = {						#### base industrial workers employed in a building
 	precision = 2
 	postfix = none
 	category = country
+	category = state
 }
 
 building_upkeep_cost = {					#### upkeep resource cost of a building
@@ -527,6 +539,12 @@ steel_beam_factory_need = {					#### steel need of steel beam factories
 	postfix = none
 }
 
+farm_level = {								#### current farm building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
 
 farm_level_max = {							#### maximal farm building level in a state
 	color_type = neutral
@@ -534,7 +552,20 @@ farm_level_max = {							#### maximal farm building level in a state
 	precision = 0
 	postfix = none
 }
+ranch_level = {								#### current ranch building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+
 ranch_level_max = {							#### maximal ranch building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+lumber_mill_level = {						#### current lumber mill building level in a state
 	color_type = neutral
 	value_type = number
 	precision = 0
@@ -546,13 +577,31 @@ lumber_mill_level_max = {					#### maximal lumber mill  building level in a stat
 	precision = 0
 	postfix = none
 }
+quarry_level = {							#### current quarry building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
 quarry_level_max = {						#### maximal quarry building level in a state
 	color_type = neutral
 	value_type = number
 	precision = 0
 	postfix = none
 }
+mine_level = {								#### current mine building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
 mine_level_max = {							#### maximal mine building level in a state
+	color_type = neutral
+	value_type = number
+	precision = 0
+	postfix = none
+}
+fishing_stand_level = {						#### current fishing stand building level in a state
 	color_type = neutral
 	value_type = number
 	precision = 0

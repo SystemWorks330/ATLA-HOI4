@@ -192,7 +192,7 @@ music = {
 music = {
 	name = "the_plan"
 	file = "the_plan.ogg"
-	volume = 1.25
+	volume = 1.65
 }
 
 music = {
@@ -208,7 +208,7 @@ music = {
 music = {
 	name = "aang_vs_ozai"
 	file = "aang_vs_ozai.ogg"
-	volume = 0.85
+	volume = 1.65
 }
 
 music = {

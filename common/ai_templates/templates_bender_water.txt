@@ -7,9 +7,7 @@
 
 template_waterbenders = {
 
-	role = {
-		benders_only
-	}
+	role = benders_only
 	
 	upgrade_prio = {
 		base = 1

@@ -2789,7 +2789,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	custumary_law = {
+	customary_law = {
 		random = no
 		compliance_growth = -0.1
 		weekly_occupation_war_weariness = -0.2
@@ -2851,7 +2851,7 @@ leader_traits = {
 	}
 	southern_fist = {
 		random = no
-		modifier_army_sub_unit_firebender_breakthrough_factor = 0.05
+		breakthrough_factor = 0.05
 		modifier_army_sub_unit_firebender_speed_factor = 0.05
 		political_power_cost = @inst1
 		ai_will_do = {

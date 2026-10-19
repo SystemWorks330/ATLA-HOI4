@@ -1,0 +1,9 @@
+scripted_gui = {
+	war_council_resource_header_ui = {
+		context_type = player_context
+		window_name = "war_council_resources_gui"
+		parent_window_name = countryofficercorpview
+		visible = { always = yes }
+		ai_enabled = { always = no }
+	}
+}

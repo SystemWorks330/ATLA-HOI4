@@ -185,6 +185,7 @@ on_actions = {
 
 			ratio_effects_and_interface = yes
 
+			recalc_civ_buy_clamp = yes
 			money_calculation = yes
 
 			resource_storage_calculation = yes

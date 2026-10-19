@@ -1,21 +1,25 @@
 
 generic_debug_view = {
 	show_wanted_divisions = {
+		icon = default_debug
 		available = {
 			
 			always = no
 		}
 	}
 	show_current_taxation = {
+		icon = current_taxrate
 		available = {always = yes}
 		complete_effect = {
 			calculate_countrys_taxation = yes
 		}
 	}
 	log_total_number_of_divisions = {
+		icon = default_debug
 		available = {
 			always = yes
 		}	
+
 		complete_effect = {	
 			set_temp_variable = {
 				var = d
@@ -45,6 +49,7 @@ generic_debug_view = {
 	} 
 
 	fir_effect = {
+		icon = default_debug
 		allowed = {
 			tag = FIR
 		}
@@ -58,15 +63,19 @@ generic_debug_view = {
 
 	}
 	avatars_location = {
+		icon = where_avatar
 		allowed = {
 			always = yes
 		}
-		
 	}
+
 	stop_all_current_wars = {
 		allowed = {
 			always = yes
 		}
+
+		icon = no_wars
+
 		complete_effect = {
 			every_country = {
 				limit = {
@@ -86,6 +95,9 @@ generic_debug_view = {
 		allowed = {
 			always = yes
 		}
+
+		icon = instant_war
+
 		target_trigger = {
 			FROM = {
 				NOT = {tag = ROOT} 

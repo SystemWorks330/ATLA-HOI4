@@ -141,7 +141,7 @@ guiTypes = {
 			buttonType = {
 				name = "send_spies"
 				spriteType = "GFX_show_decisions"
-				position = { x= 86 y = -22 }
+				position = { x= 100 y = -30 }
 				Orientation = "UPPER_LEFT"
 				scale = 0.6
 				pdx_tooltip = "send_spies_tooltip"

@@ -314,9 +314,8 @@ spriteTypes = {
 		noOfFrames = 1
 	}
 	spriteType = {
-		name = "twitter"
-		texturefile = "gfx/interface/icon_twitter.dds"
-		noOfFrames = 1
+		name = "x"
+		texturefile = "gfx/interface/icon_x.dds"
 	}
 	spriteType = {
 		name = "youtube"
@@ -329,6 +328,10 @@ spriteTypes = {
 	spriteType = {
 		name = "instagram"
 		texturefile = "gfx//interface//icon_instagram.dds"
+	}
+	spriteType = {
+		name = "bluesky"
+		texturefile = "gfx/interface/icon_bluesky.dds"
 	}
 	spriteType = {
 		name = "homepage"
@@ -524,7 +527,11 @@ spriteTypes = {
 		texturefile = "gfx/interface/button_148x34_light.dds"
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
-
+	textSpriteType = {
+		name = "GFX_button_238x38"
+		texturefile = "gfx/interface/button_238x38.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
 	textSpriteType = {
 		name = "GFX_government_button"
 		texturefile = "gfx/interface/government_button.dds"
@@ -583,7 +590,7 @@ spriteTypes = {
 
 	textSpriteType = {
 		name = "GFX_button_94x31"
-		texturefile = "gfx/interface/button_94x31.tga"
+		texturefile = "gfx/interface/button_94x31.dds"
 		noOfFrames = 1
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
@@ -1702,14 +1709,6 @@ bitmapfonts = {
 		languages = { "l_japanese" }
 	}
 
-	bitmapfont_override = {
-		name = "tahoma_60"
-		fontfiles = {
-			"gfx/fonts/hoi_mapfont4_russian"
-		}
-		languages = { "l_russian" }
-	}
-
 	bitmapfont = {
 		name = "hoi_30"
 		fontfiles = {
@@ -1790,7 +1789,13 @@ bitmapfonts = {
 		}
 		languages = { "l_japanese" }
 	}
-
+	bitmapfont_override = {
+		name = "tahoma_60"
+		fontfiles = {
+			"gfx/fonts/hoi_mapfont4_russian"
+		}
+		languages = { "l_russian" }
+	}
 	corneredTileSpriteType = {
 		name = "SandboxFloaterBackground"
 		size= {x=190 y=310 }
@@ -1870,3 +1875,5 @@ bitmapfonts = {
 	}
 	
 }
+
+

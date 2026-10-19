@@ -1,0 +1,8 @@
+﻿l_english:
+ naval_headquarters_roster:0 "$NAVAL_HEADQUARTER_ROSTER$"
+ SHIP_CAPTAIN_CLICK_TO_GOTO:0 "§G Right-Click§! to pan to this ship."
+ SHIP_CAPTAIN_DESCRIPTION_TEXT:0 "§HShip Captains§! are the officers in charge of individual ships. When they excel in naval combat, they can be awarded honors conferring benefits. Additionally, the officer can earn stored experience and personality traits while commanding their ship, which will be applied if they are promoted to an admiral."
+ task_force_button_captain_tooltip_no_leader:0 "No ship captain assigned"
+ NAVAL_HEADQUARTER_ROSTER:0 "Headquarters"
+ NAVAL_HEADQUARTER_ROSTER_COLORED:0 "§YNaval Headquarters§!"
+ NAVAL_HEADQUARTER_ROSTER_DELAYED:0 "Click to open the §YNaval Headquarter§! roster"

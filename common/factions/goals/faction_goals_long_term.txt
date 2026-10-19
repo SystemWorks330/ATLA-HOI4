@@ -1,0 +1,90 @@
+# ATLA2 faction goals. Vanilla-country goals are intentionally omitted.
+
+faction_goal_defeating_our_enemies = {
+	name = defeating_our_enemies_goal_name
+	description = defeating_our_enemies_goal_desc
+	group = FOCUS_FILTER_ANNEXATION
+	category = long_term
+	visible = {
+		NOT = { has_country_flag = peace_winner_flag}
+	}
+	completed = {
+		custom_trigger_tooltip = {
+			tooltip = is_victor_in_pc_tt
+			has_country_flag = peace_winner_flag
+		}
+		
+	}
+	complete_effect = {
+		add_faction_power_projection = 200
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = ALL_FACTION_MEMBERS
+		every_faction_member = {
+			IF = {
+				limit = { NOT = { has_completed_goal = faction_goal_defeating_our_enemies } }
+				add_war_support = 0.1
+			}
+		}
+		custom_effect_tooltip = generic_skip_one_line_tt
+		custom_effect_tooltip = PEACE_CONFERENCE_WINNERS
+		every_faction_member = {
+			visible_when_empty = yes
+			limit = {
+				has_country_flag = peace_winner_flag
+			}
+			add_faction_initiative = 1
+		}
+	}
+}
+
+faction_goal_industrial_domination = {
+	name = industrial_domination_goal_name
+	description = industrial_domination_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = {
+		count_in_collection = {
+			collection = {
+				input = game:scope
+				operators = { faction_members }
+				name = FACTION_NAME
+			}
+			buildings = { industrial_complex arms_factory dockyard }
+			size > 100
+		}
+	}
+	completed = {
+		count_in_collection = {
+			collection = {
+				input = game:scope
+				operators = { faction_members }
+				name = FACTION_NAME
+			}
+			buildings = {  industrial_complex arms_factory dockyard }
+			size > 1000
+		}
+	}
+	complete_effect = {
+		add_faction_power_projection = 200
+		custom_effect_tooltip = generic_skip_one_line_tt
+		every_faction_member = {
+			tooltip = AT_LEAST_500_FACTORIES
+			visible_when_empty = yes 
+			limit = {
+				num_of_controlled_factories > 500
+			}
+			add_faction_initiative = 1
+		}
+	}
+	ai_will_do = {
+		base = 1
+		modifier = {
+			add = 1 # If already big it's easy to grow
+			is_major = yes
+		}
+		modifier = {
+			add = 1 # If we are already on the way
+			num_of_controlled_factories > 200
+		}
+	}
+}

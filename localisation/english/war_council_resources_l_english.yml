@@ -1,0 +1,10 @@
+﻿l_english:
+ ATLA_WAR_COUNCIL_COMMAND_POWER_LABEL:0 "CP:"
+ ATLA_WAR_COUNCIL_COMMAND_POWER:0 "[?command_power|1]"
+ ATLA_WAR_COUNCIL_COMMAND_POWER_TOOLTIP:0 "§HCommand Power§!\nCurrent: [?command_power|1Y]\nDaily gain: [?command_power_daily|2Y]"
+ ATLA_WAR_COUNCIL_ARMY_DAILY_XP:0 "[?mtth:atla_war_council_army_daily_xp|2]"
+ ATLA_WAR_COUNCIL_ARMY_DAILY_XP_TOOLTIP:0 "§HArmy Experience§!\nCurrent: [?army_experience|2Y]\nPassive daily gain: [?mtth:atla_war_council_army_daily_xp|2Y]\n\nDaily experience from advisors and national bonuses, including experience gain modifiers. Training and combat award additional experience separately."
+ ATLA_WAR_COUNCIL_NAVY_DAILY_XP:0 "[?mtth:atla_war_council_navy_daily_xp|2]"
+ ATLA_WAR_COUNCIL_NAVY_DAILY_XP_TOOLTIP:0 "§HNavy Experience§!\nCurrent: [?navy_experience|2Y]\nPassive daily gain: [?mtth:atla_war_council_navy_daily_xp|2Y]\n\nDaily experience from advisors and national bonuses, including experience gain modifiers. Training and combat award additional experience separately."
+ ATLA_WAR_COUNCIL_AIR_DAILY_XP:0 "[?mtth:atla_war_council_air_daily_xp|2]"
+ ATLA_WAR_COUNCIL_AIR_DAILY_XP_TOOLTIP:0 "§HAir Experience§!\nCurrent: [?air_experience|2Y]\nPassive daily gain: [?mtth:atla_war_council_air_daily_xp|2Y]\n\nDaily experience from advisors and national bonuses, including experience gain modifiers. Training and combat award additional experience separately."

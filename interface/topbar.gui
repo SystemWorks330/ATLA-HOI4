@@ -2,7 +2,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "topbar"
-		position = { x=-4 y=-1 }	
+		position = { x=-12 y=-1 }
 		size = { width=100%% height=100%% }
 		
 		iconType = {
@@ -76,8 +76,7 @@ guiTypes = {
 				quadTextureSprite ="GFX_musicplayer_button"
 				position = { x= -130 y = 6 }
 				Orientation = "UPPER_RIGHT"
-			}			
-				
+			}					
 		}		
 				
 		iconType = {
@@ -404,6 +403,15 @@ guiTypes = {
 			fixedsize = yes
 		}	
 
+		iconType = {
+			name ="industrial_ratio_bar"
+			spriteType = "GFX_topbar_fuel_bar" 
+			position = { x= 441 y = 20 }
+			frame = 50
+			alwaystransparent = yes
+			hide = yes
+		}
+
 		## convoy
 		
 		iconType ={
@@ -707,275 +715,7 @@ guiTypes = {
 			position = { x=204 y=70 }
 			size = { width=100%% height=30 }
 			
-			buttonType = {
-				name = "decisionview_button"
-				quadTextureSprite ="GFX_topbar_decisionview_button"
-				position = { x= -104 y = 0 }
-				Orientation = "UPPER_LEFT"
-				clicksound = decision_tab
-				oversound = ui_menu_over
-				shortcut = "shift+q"
-			}
-
-			iconType = {
-				name ="decision_view_alert_glow"
-				spriteType = "GFX_decisions_glow"	
-				position = { x =-104 y = 1 }
-				alwaystransparent = yes
-			}
-
-			iconType = {
-				name = "decisionview_amount_timeout_bg"
-				spriteType = "GFX_topbar_alert_bg"
-				position = { x = -99 y = 4}
-				alwaystransparent = yes
-				frame = 2
-			}
-	
-			instantTextBoxType = {
-				name ="decisionview_amount_timeout_items"
-				position = { x= -101 y = 4 }
-				font = "hoi_16mbs"
-				text = "999"
-				format = center
-				maxWidth = 20
-				maxHeight = 24
-				fixedsize = yes
-			}
-			
-			iconType = {
-				name = "decisionview_amount_to_take_bg"
-				spriteType = "GFX_topbar_alert_bg"
-				position = { x = -99 y = 20}
-				alwaystransparent = yes
-				frame = 1
-			}
-
-			instantTextBoxType = {
-				name ="decisionview_amount_to_take_items"
-				position = { x= -101 y = 20 }
-				font = "hoi_16mbs"
-				text = "999"
-				format = center
-				maxWidth = 20
-				maxHeight = 24
-				fixedsize = yes
-			}
-
-			buttonType = {
-				name = "intel_agency_button"
-				quadTextureSprite ="GFX_topbar_intelligence" 
-				position = { x= -49 y = 0 }
-				Orientation = "UPPER_LEFT"
-				clicksound = click_close
-				oversound = ui_menu_over
-				hide = yes
-			}
-
-			iconType = {
-				name = "intelview_ops_prepared_or_completed_bg"
-				spriteType = "GFX_topbar_alert_bg"
-				position = { x = -49 y = 4}
-				alwaystransparent = yes
-				frame = 4
-				hide = yes
-			}
-	
-			instantTextBoxType = {
-				name ="intelview_ops_prepared_or_completed_items"
-				position = { x= -51 y = 4 }
-				font = "hoi_16mbs"
-				text = "9"
-				format = center
-				maxWidth = 20
-				maxHeight = 24
-				fixedsize = yes
-				hide = yes
-			}
-			
-			iconType = {
-				name = "intelview_ops_available_bg"
-				spriteType = "GFX_topbar_alert_bg"
-				position = { x = -49 y = 20}
-				alwaystransparent = yes
-				frame = 1
-				hide = yes
-			}
-
-			instantTextBoxType = {
-				name ="intelview_ops_available_items"
-				position = { x= -51 y = 20 }
-				font = "hoi_16mbs"
-				text = "9"
-				format = center
-				maxWidth = 20
-				maxHeight = 24
-				fixedsize = yes
-				hide = yes
-			}
-
-			# Here, several buttons are put in the container "after_intel_agency_button", to be easily moved if the player don't have the DLC requiered by "intel_agency_button".
-			containerWindowType = {
-				name = "after_intel_agency_button"
-				position = { x=1 y=0 }
-				
 				buttonType = {
-					name = "technology_button"
-					quadTextureSprite ="GFX_topbar_technology"
-	#				position = { x= -104 y = 0 }
-					position = { x= -50 y = 0 }
-					Orientation = "UPPER_LEFT"
-					shortcut = "w"
-					clicksound = research_tab
-					oversound = ui_menu_over
-				}
-								
-				iconType = {
-					name = "prototype_rewards_aquired_bg"
-					spriteType = "GFX_topbar_alert_bg"
-					position = { x = -29 y = 20}
-					alwaystransparent = yes
-					frame = 1
-				}
-
-				instantTextBoxType = {
-					name ="prototype_rewards_aquired"
-					position = { x= -31 y = 20 }
-					font = "hoi_16mbs"
-					text = "999"
-					format = center
-					alwaystransparent = yes
-					maxWidth = 20
-					maxHeight = 24
-					fixedsize = yes
-				}
-				
-				buttonType = {
-					name = "diplomacy_button"
-					quadTextureSprite ="GFX_topbar_diplomacy"
-					position = { x= 5 y = 0 }
-					Orientation = "UPPER_LEFT"
-					shortcut = "e"
-					clicksound = diplomacy_tab
-					oversound = ui_menu_over
-				}
-				containerWindowType = {
-					name = "non_delivering_contracts"
-					position = { x=9 y=4 }
-
-					iconType = {
-						name = "non_delivering_contract_amount_bg"
-						spriteType = "GFX_topbar_alert_bg"
-						position = { x = 2 y = 0}
-						alwaystransparent = yes
-						frame = 2
-					}
-
-					instantTextBoxType = {
-						name ="non_delivering_contract_amount"
-						position = { x= 0 y = 0 }
-						font = "hoi_16mbs"
-						text = "999"
-						format = center
-						maxWidth = 20
-						maxHeight = 24
-						fixedsize = yes
-					}
-				}
-				
-				containerWindowType = {
-					name = "delivering_contracts"
-					position = { x=9 y=20 }
-
-					iconType = {
-						name = "ongoing_contract_amount_bg"
-						spriteType = "GFX_topbar_alert_bg"
-						position = { x = 2 y = 0}
-						alwaystransparent = yes
-						frame = 1
-					}
-
-					instantTextBoxType = {
-						name ="ongoing_contract_amount"
-						position = { x= 0 y = 0 }
-						font = "hoi_16mbs"
-						text = "999"
-						format = center
-						maxWidth = 20
-						maxHeight = 24
-						fixedsize = yes
-					}
-				}
-				
-				buttonType = {
-					name = "trade_button"
-					position = { x= 60 y = 0 }
-					quadTextureSprite ="GFX_topbar_trade_button"
-					Orientation = "UPPER_LEFT"
-					shortcut = "r"
-					clicksound = trade_tab
-					oversound = ui_menu_over
-				}	
-
-				buttonType = {
-					name = "construction_button"
-					position = { x = 115 y = 0 }
-					quadTextureSprite ="GFX_construction_button"
-					Orientation = "UPPER_LEFT"
-					shortcut = "t"
-					clicksound = economy_tab
-					oversound = ui_menu_over
-				}
-				
-				iconType = {
-					name = "production_button_glow"
-					position = { x = 167 y = -3 }
-					spriteType = "GFX_decisions_glow_yellow"
-					alwaystransparent = yes
-				}
-				
-				buttonType = {
-					name = "production_button"
-					position = { x = 170 y = 0 }
-					quadTextureSprite ="GFX_topbar_production"
-					Orientation = "UPPER_LEFT"
-					shortcut = "y"
-					clicksound = production_tab
-					oversound = ui_menu_over
-				}
-				
-				buttonType = {
-					name = "deployment_button"
-					position = { x = 225 y = 0 }
-					quadTextureSprite ="GFX_deployment_button"
-					Orientation = "UPPER_LEFT"
-					shortcut = "u"
-					clicksound = deploy_tab
-					oversound = ui_menu_over
-				}		
-				
-				buttonType = {
-					name = "logistics_button"
-					position = { x = 280 y = 0 }
-					quadTextureSprite ="GFX_ledger_button"
-					Orientation = "UPPER_LEFT"
-					shortcut = "i"
-					clicksound = logisitcs_tab
-					oversound = ui_menu_over
-				}
-				
-				buttonType = {
-					name = "officer_corp_button"
-					position = { x = 335 y = 0 }
-					quadTextureSprite ="GFX_staff_office_button"
-					Orientation = "UPPER_LEFT"
-					shortcut = "shift+e"
-					clicksound = war_council_tab
-					oversound = ui_menu_over
-				}
-			}
-
-			buttonType = {
 				name = "army_button"
 				position = { x= -252 y=14 }
 				quadTextureSprite ="GFX_armyoverview_button"
@@ -1004,9 +744,313 @@ guiTypes = {
 				clicksound = air_tab
 				oversound = ui_menu_over
 			}
-			
-		}
 
+			containerWindowType= {
+				name="faction_button_container"
+				position = { x=400 y=0 }
+				size = { width=30 height=30 }
+				
+				buttonType = {
+					name = "faction_button"
+					quadTextureSprite ="GFX_topbar_faction_empty"
+					position = { x= 0 y = -1}
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					oversound = ui_menu_over
+					shortcut = "ctrl+q"
+				}
+	
+				instantTextBoxType = {
+					name ="initiative_text"
+					position = { x= -15 y = 8 }
+					font = "hoi_16mbs"
+					text = "999"
+					format = center
+					orientation = "CENTER"
+					maxWidth = 30
+					maxHeight = 24
+					fixedsize = yes
+				}
+	
+				iconType = {
+					name = "faction_icon"
+					spriteType = "GFX_faction_logo_generic_democratic_miniature"
+					position = { x = 4 y = 3 }
+					scale = 0.7
+					alwaystransparent = yes
+				}
+			}
+
+			containerWindowType = {
+					name = "after_faction_button"
+					position = { x=5 y=0 }
+
+				buttonType = {
+					name = "decisionview_button"
+					quadTextureSprite ="GFX_topbar_decisionview_button"
+					position = { x= -104 y = 0 }
+					Orientation = "UPPER_LEFT"
+					clicksound = decision_tab
+					oversound = ui_menu_over
+					shortcut = "shift+q"
+				}
+
+				iconType = {
+					name ="decision_view_alert_glow"
+					spriteType = "GFX_decisions_glow"	
+					position = { x =-104 y = 1 }
+					alwaystransparent = yes
+				}
+
+				iconType = {
+					name = "decisionview_amount_timeout_bg"
+					spriteType = "GFX_topbar_alert_bg"
+					position = { x = -99 y = 4}
+					alwaystransparent = yes
+					frame = 2
+				}
+		
+				instantTextBoxType = {
+					name ="decisionview_amount_timeout_items"
+					position = { x= -101 y = 4 }
+					font = "hoi_16mbs"
+					text = "999"
+					format = center
+					maxWidth = 20
+					maxHeight = 24
+					fixedsize = yes
+				}
+				
+				iconType = {
+					name = "decisionview_amount_to_take_bg"
+					spriteType = "GFX_topbar_alert_bg"
+					position = { x = -99 y = 20}
+					alwaystransparent = yes
+					frame = 1
+				}
+
+				instantTextBoxType = {
+					name ="decisionview_amount_to_take_items"
+					position = { x= -101 y = 20 }
+					font = "hoi_16mbs"
+					text = "999"
+					format = center
+					maxWidth = 20
+					maxHeight = 24
+					fixedsize = yes
+				}
+
+				buttonType = {
+					name = "intel_agency_button"
+					quadTextureSprite ="GFX_topbar_intelligence" 
+					position = { x= -49 y = 0 }
+					Orientation = "UPPER_LEFT"
+					clicksound = click_close
+					oversound = ui_menu_over
+					hide = yes
+				}
+
+				iconType = {
+					name = "intelview_ops_prepared_or_completed_bg"
+					spriteType = "GFX_topbar_alert_bg"
+					position = { x = -49 y = 4}
+					alwaystransparent = yes
+					frame = 4
+				}
+		
+				instantTextBoxType = {
+					name ="intelview_ops_prepared_or_completed_items"
+					position = { x= -51 y = 4 }
+					font = "hoi_16mbs"
+					text = "9"
+					format = center
+					maxWidth = 20
+					maxHeight = 24
+					fixedsize = yes
+				}
+				
+				iconType = {
+					name = "intelview_ops_available_bg"
+					spriteType = "GFX_topbar_alert_bg"
+					position = { x = -49 y = 20}
+					alwaystransparent = yes
+					frame = 1
+				}
+
+				instantTextBoxType = {
+					name ="intelview_ops_available_items"
+					position = { x= -51 y = 20 }
+					font = "hoi_16mbs"
+					text = "9"
+					format = center
+					maxWidth = 20
+					maxHeight = 24
+					fixedsize = yes
+				}
+
+				# Here, several buttons are put in the container "after_intel_agency_button", to be easily moved if the player don't have the DLC requiered by "intel_agency_button".
+				containerWindowType = {
+					name = "after_intel_agency_button"
+					position = { x=1 y=0 }
+					
+					buttonType = {
+						name = "technology_button"
+						quadTextureSprite ="GFX_topbar_technology"
+						position = { x= -50 y = 0 }
+						Orientation = "UPPER_LEFT"
+						shortcut = "w"
+						clicksound = research_tab
+						oversound = ui_menu_over
+					}
+									
+					iconType = {
+						name = "prototype_rewards_aquired_bg"
+						spriteType = "GFX_topbar_alert_bg"
+						position = { x = -29 y = 20}
+						alwaystransparent = yes
+						frame = 1
+					}
+
+					instantTextBoxType = {
+						name ="prototype_rewards_aquired"
+						position = { x= -31 y = 20 }
+						font = "hoi_16mbs"
+						text = "999"
+						format = center
+						alwaystransparent = yes
+						maxWidth = 20
+						maxHeight = 24
+						fixedsize = yes
+					}
+					
+					buttonType = {
+						name = "diplomacy_button"
+						quadTextureSprite ="GFX_topbar_diplomacy"
+						position = { x= 5 y = 0 }
+						Orientation = "UPPER_LEFT"
+						shortcut = "e"
+						clicksound = diplomacy_tab
+						oversound = ui_menu_over
+					}
+					containerWindowType = {
+						name = "non_delivering_contracts"
+						position = { x=9 y=4 }
+
+						iconType = {
+							name = "non_delivering_contract_amount_bg"
+							spriteType = "GFX_topbar_alert_bg"
+							position = { x = 2 y = 0}
+							alwaystransparent = yes
+							frame = 2
+						}
+
+						instantTextBoxType = {
+							name ="non_delivering_contract_amount"
+							position = { x= 0 y = 0 }
+							font = "hoi_16mbs"
+							text = "999"
+							format = center
+							maxWidth = 20
+							maxHeight = 24
+							fixedsize = yes
+						}
+					}
+					
+					containerWindowType = {
+						name = "delivering_contracts"
+						position = { x=9 y=20 }
+
+						iconType = {
+							name = "ongoing_contract_amount_bg"
+							spriteType = "GFX_topbar_alert_bg"
+							position = { x = 2 y = 0}
+							alwaystransparent = yes
+							frame = 1
+						}
+
+						instantTextBoxType = {
+							name ="ongoing_contract_amount"
+							position = { x= 0 y = 0 }
+							font = "hoi_16mbs"
+							text = "999"
+							format = center
+							maxWidth = 20
+							maxHeight = 24
+							fixedsize = yes
+						}
+					}
+					
+					buttonType = {
+						name = "trade_button"
+						position = { x= 60 y = 0 }
+						quadTextureSprite ="GFX_topbar_trade_button"
+						Orientation = "UPPER_LEFT"
+						shortcut = "r"
+						clicksound = trade_tab
+						oversound = ui_menu_over
+					}	
+
+					buttonType = {
+						name = "construction_button"
+						position = { x = 115 y = 0 }
+						quadTextureSprite ="GFX_construction_button"
+						Orientation = "UPPER_LEFT"
+						shortcut = "t"
+						clicksound = economy_tab
+						oversound = ui_menu_over
+					}
+					
+					iconType = {
+						name = "production_button_glow"
+						position = { x = 167 y = -3 }
+						spriteType = "GFX_decisions_glow_yellow"
+						alwaystransparent = yes
+					}
+					
+					buttonType = {
+						name = "production_button"
+						position = { x = 170 y = 0 }
+						quadTextureSprite ="GFX_topbar_production"
+						Orientation = "UPPER_LEFT"
+						shortcut = "y"
+						clicksound = production_tab
+						oversound = ui_menu_over
+					}
+					
+					buttonType = {
+						name = "deployment_button"
+						position = { x = 225 y = 0 }
+						quadTextureSprite ="GFX_deployment_button"
+						Orientation = "UPPER_LEFT"
+						shortcut = "u"
+						clicksound = deploy_tab
+						oversound = ui_menu_over
+					}		
+					
+					buttonType = {
+						name = "logistics_button"
+						position = { x = 280 y = 0 }
+						quadTextureSprite ="GFX_ledger_button"
+						Orientation = "UPPER_LEFT"
+						shortcut = "i"
+						clicksound = logisitcs_tab
+						oversound = ui_menu_over
+					}
+					
+					
+					buttonType = {
+						name = "officer_corp_button"
+						position = { x = 335 y = 0 }
+						quadTextureSprite ="GFX_staff_office_button"
+						Orientation = "UPPER_LEFT"
+						shortcut = "shift+e"
+						clicksound = war_council_tab
+						oversound = ui_menu_over
+					}
+					}
+				}
+			}
+		
 		#iconType ={
 		#	name ="experience_value_bg"
 		#	spriteType = "GFX_topbar_xp_bg"

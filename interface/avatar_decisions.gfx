@@ -283,6 +283,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/categories/decision_category_generic.dds"
 	}
 	spriteType = {
+		name = "GFX_decision_category_refugees"
+		texturefile = "gfx/interface/decisions/categories/decision_category_refugees.dds"
+	}
+	spriteType = {
 		name = "GFX_decision_category_genocide"
 		texturefile = "gfx/interface/decisions/categories/decision_category_genocide.dds"
 	}
@@ -305,6 +309,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_category_research"
 		texturefile = "gfx/interface/decisions/categories/decision_category_research.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_fire_clans"
+		texturefile = "gfx/interface/decisions/categories/decision_category_fire_clans.dds"
 	}
 	spriteType = {
 		name = "GFX_decision_category_conquest"
@@ -367,6 +375,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/decisions/decision_cat_air_genocide.dds"
 	}
 	spriteType = {
+		name = "GFX_decision_cat_fire_clans"
+		texturefile = "gfx/interface/decisions/decision_cat_fire_clans.dds"
+	}
+	spriteType = {
 		name = "GFX_decision_cat_water_raids"
 		texturefile = "gfx/interface/decisions/decision_cat_water_raids.dds"
 	}
@@ -417,6 +429,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_decision_cat_ear_defense"
 		texturefile = "gfx/interface/decisions/decision_cat_ear_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_refugees"
+		texturefile = "gfx/interface/decisions/decision_cat_refugees.dds"
 	}
 	spriteType = {
 		name = "GFX_decision_cat_troubling_signs"
@@ -924,8 +940,40 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "population_census"
-		texturefile = "gfx/interface/decisions/decision_population_census.dds"
+		name = "no_wars"
+		texturefile = "gfx/interface/decisions/decision_no_wars.dds"
+	}
+	spriteType = {
+		name = "instant_war"
+		texturefile = "gfx/interface/decisions/decision_instant_war.dds"
+	}
+	spriteType = {
+		name = "start_hundredyears"
+		texturefile = "gfx/interface/decisions/decision_start_hundredyears.dds"
+	}
+	spriteType = {
+		name = "where_avatar"
+		texturefile = "gfx/interface/decisions/decision_where_is_avatar.dds"
+	}
+	spriteType = {
+		name = "initiate_genocide"
+		texturefile = "gfx/interface/decisions/decision_initiate_geno.dds"
+	}
+	spriteType = {
+		name = "activate_coloniesquick"
+		texturefile = "gfx/interface/decisions/decision_activate_colonies_quick.dds"
+	}
+	spriteType = {
+		name = "default_debug"
+		texturefile = "gfx/interface/decisions/decision_default_debug.dds"
+	}
+	spriteType = {
+		name = "reset_colonies"
+		texturefile = "gfx/interface/decisions/decision_reset_colonies.dds"
+	}
+	spriteType = {
+		name = "current_taxrate"
+		texturefile = "gfx/interface/decisions/decision_current_taxrate.dds"
 	}
 	spriteType = {
 		name = "patronise_enterprises"

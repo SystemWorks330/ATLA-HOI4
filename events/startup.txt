@@ -245,6 +245,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		set_variable = { global.max_local_prosperity = 0 }
 		every_state = {
 			clamp_variable = {
 				var = global.max_local_prosperity

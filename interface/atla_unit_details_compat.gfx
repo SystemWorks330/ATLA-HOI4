@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_ace_none"
+		texturefile = "gfx/aces/ace_none.dds"
+	}
+}

@@ -1,0 +1,7 @@
+# Disable vanilla faction templates that rely on removed country and ideology content.
+
+faction_template_government_of_national_defense = {
+	manifest = faction_manifest_strength_in_unity
+	icon = GFX_faction_logo_generic
+	visible = { always = no }
+}

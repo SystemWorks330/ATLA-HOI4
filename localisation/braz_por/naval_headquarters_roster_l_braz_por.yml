@@ -1,0 +1,5 @@
+﻿l_braz_por:
+ naval_headquarters_roster:0 "$NAVAL_HEADQUARTER_ROSTER$"
+ NAVAL_HEADQUARTER_ROSTER:0 "Bases de comando"
+ NAVAL_HEADQUARTER_ROSTER_COLORED:0 "§YBases de comando navais§!"
+ NAVAL_HEADQUARTER_ROSTER_DELAYED:0 "Clique para abrir a lista de §Ybases de comando navais§!"

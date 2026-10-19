@@ -63,6 +63,7 @@ add_ideas = {
 }
 
 recruit_character = NIX_paiwei
+recruit_character = NIX_generic
 
 #if = {
 #	limit = {
@@ -162,4 +163,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = NIX_generic

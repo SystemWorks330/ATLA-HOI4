@@ -1,5 +1,8 @@
 
 defender_defense_dafending = {
+	allowed = {
+		tag = EAR
+	}
 	enable = {
 		original_tag = EAR
 		controls_state = 193
@@ -51,7 +54,9 @@ defender_defense_dafending = {
 }
 
 defender_defense_dafending2 = {
-
+	allowed = {
+		tag = EAR
+	}
 	enable = {
 		original_tag = EAR
 		has_war_with = FIR
@@ -83,7 +88,9 @@ defender_defense_dafending2 = {
 }
 
 defender_defense_dafending3 = {
-
+	allowed = {
+		tag = EAR
+	}
 	enable = {
 		original_tag = EAR
 		has_war_with = FIR
@@ -110,6 +117,9 @@ defender_defense_dafending3 = {
 }
 
 EAR_unit_production = {
+	allowed = {
+		tag = EAR
+	}
 	enable = {
 		original_tag = EAR
 	}
@@ -158,6 +168,9 @@ EAR_unit_production = {
 }
 
 EAR_area_priority = {
+	allowed = {
+		tag = EAR
+	}
 	enable = {
 		original_tag = EAR
 	}

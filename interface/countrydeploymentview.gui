@@ -399,6 +399,13 @@ guiTypes = {
 			alwaystransparent = yes
 		}
 
+		iconType = {
+			name = "allow_as_hq_icon"
+			spriteType = "GFX_allow_as_hq_icon"
+			position = { x = 7 y = 10 }
+			frame = 3
+		}
+
 		instantTextboxType = {
 			name = "name"
 			position = { x = 102 y = 20 }

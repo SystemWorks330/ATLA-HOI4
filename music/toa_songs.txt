@@ -1,0 +1,74 @@
+music_station = "base_music"
+
+music = {
+	song = "argentina_civilian"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Trial of Allegiance" }
+		}
+		modifier = { factor = 1.5 has_war = no }
+	}
+}
+
+music = {
+	song = "argentina_militaristic"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Trial of Allegiance" }
+		}
+		modifier = { factor = 1.5 has_war = yes }
+	}
+}
+
+music = {
+	song = "brazil_civilian"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Trial of Allegiance" }
+		}
+		modifier = { factor = 1.5 has_war = no }
+	}
+}
+
+music = {
+	song = "brazil_militaristic"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Trial of Allegiance" }
+		}
+		modifier = { factor = 1.5 has_war = yes }
+	}
+}
+
+music = {
+	song = "chile_civilian"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Trial of Allegiance" }
+		}
+		modifier = { factor = 1.5 has_war = no }
+	}
+}
+
+music = {
+	song = "chile_militaristic"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "Trial of Allegiance" }
+		}
+		modifier = { factor = 1.5 has_war = yes }
+	}
+}
+

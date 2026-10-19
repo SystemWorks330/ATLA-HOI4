@@ -1775,8 +1775,6 @@ wages_and_taxes = {
 	multiply_variable = { civ_factory_payments = civ_buy_factor }
 	clamp_variable = { var = civ_factory_payments  min = 0 }
 
-	recalc_civ_buy_clamp = yes
-
 	subtract_from_variable = { tax_balance = civ_factory_payments }
 }
 
@@ -2967,7 +2965,7 @@ resource_state_calc = {
 		var = luxury_store_luxury_goods_gain
 		min = 0
 	}
-	multiply_variable = { localuxury_store_luxury_goods_gainl_resource = local_resource_factor }
+	multiply_variable = { luxury_store_luxury_goods_gain = local_resource_factor }
 	multiply_variable = { luxury_store_luxury_goods_gain = controller:luxury_goods_throughput }
 
 

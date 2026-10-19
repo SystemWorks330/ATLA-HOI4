@@ -5,7 +5,7 @@ faction_peace_rule_puppeting_focus = {
 		base = 0
 		modifier = {
 			add = 1
-			has_government = communism
+			has_government = earth_culture
 		}
 	}
 	peace_action_modifiers = {
@@ -34,7 +34,7 @@ faction_peace_rule_liberation_focus = {
 		base = 0
 		modifier = {
 			add = 1
-			has_government = democratic
+			has_government = pluralist_culture
 		}
 	}
 	peace_action_modifiers = {
@@ -49,13 +49,6 @@ faction_peace_rule_ideology_focus = {
 	type = peace_conference_rules
 	ai_will_do = {
 		base = 0
-		modifier = {
-			add = 2
-			OR = {
-				tag = ENG
-				tag = USA
-			}
-		}
 	}
 	peace_action_modifiers = {
 		faction_rule_modifier_encourage_force_government
@@ -71,7 +64,7 @@ faction_peace_rule_conquest_focus = {
 		base = 0
 		modifier = {
 			add = 2
-			has_government = fascism
+			has_government = fire_culture
 		}
 	}
 	peace_action_modifiers = {
@@ -88,7 +81,7 @@ faction_peace_take_claimed_focus = {
 		base = 0
 		modifier = {
 			add = 1
-			has_government = neutrality 
+			has_government = pluralist_culture 
 		}
 	}
 	peace_action_modifiers = {
@@ -98,19 +91,4 @@ faction_peace_take_claimed_focus = {
 		custom_modifier_tooltip = faction_rule_modifier_encourage_take_claimed_states_tt
 	}
 }
-faction_peace_china_focus = {
-	type = peace_conference_rules	
-	visible = { original_tag = JAP }
-	can_remove = {
-		faction_manifest_fulfillment > 0.95
-	}
-	ai_will_do = {
-		base = 0
-	}
-	peace_action_modifiers = {
-		faction_rule_modifier_encourage_chinese_states
-	}
-	modifier = {
-		custom_modifier_tooltip = faction_rule_modifier_encourage_chinese_states_tt
-	}
-}
+

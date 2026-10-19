@@ -1,0 +1,8 @@
+country_groups = {
+	schema = { any_key = yes array = country }
+	nordics = { }
+	continental_europe_1936 = { }
+	literally_china = { }
+	chinese_warlords = { }
+	islamic_world = { }
+}

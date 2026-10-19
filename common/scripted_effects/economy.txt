@@ -160,6 +160,10 @@ increase_civ_buy_effect = {
 	recalc_civ_buy_clamp = yes
 }
 recalc_civ_buy_clamp = {
+	if = {
+		limit = { NOT = { check_variable = { civ_buy_factor > -999 } } }
+		set_variable = { civ_buy_factor = 0.5 }
+	}
 	set_variable = { treasury_min = modifier@min_civil_percentage }
 	set_variable = { treasury_max = 1 }
 	subtract_from_variable = { treasury_max = modifier@min_treasury_percentage }
@@ -192,6 +196,10 @@ increase_factory_effect = {
 	recalc_increase_factory_clamp = yes
 }
 recalc_increase_factory_clamp = {
+	  if = {
+        limit = { NOT = { check_variable = { deposit_percentage > -999 } } }
+    }
+	set_variable = { deposit_percentage = 0.5 }
 	set_variable = { deposit_min = modifier@min_deposit_percentage }
 	set_variable = { deposit_max = 1 }
 	subtract_from_variable = { deposit_max = modifier@min_factory_percentage }

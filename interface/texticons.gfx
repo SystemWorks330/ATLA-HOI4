@@ -2280,13 +2280,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 		noOfFrames = 2		
 	}
-	
-	spriteType = {
-		name = "GFX_unit_super_heavy_armor_icon_small"
-		texturefile = "gfx/texticons/unit_super_heavy_armor_icon_small.dds"
-		legacy_lazy_load = no
-		noOfFrames = 2		
-	}	
 
 	spriteType = {
 		name = "GFX_unit_heavy_sp_anti_air_brigade_icon_small"
@@ -2693,6 +2686,49 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_doctrine_mastery"
 		texturefile = "gfx/texticons/doctrine_mastery_texticon.dds"
+		legacy_lazy_load = no
+	}
+		spriteType = {
+		name = "GFX_command_power"
+		texturefile = "gfx/texticons/command_power.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_infantry_equipment_text_icon"
+		texturefile = "gfx/texticons/infantry_equipment_text_icon.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_icons_mods"
+		texturefile = "gfx/texticons/icons_mods.dds"
+		legacy_lazy_load = no
+		noOfFrames=3
+	}
+	spriteType = {
+		name = "GFX_naval_escort_spirit_texticon"
+		texturefile = "gfx/interface/modifiers/MODIFIER_MISSION_CONVOY_ESCORT_EFFICIENCY.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_naval_sortie_spirit_texticon"
+		texturefile = "gfx/interface/CARRIER_SORTIE_EFFICIENCY_FACTOR.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_naval_strike_targetting_spirit_texticon"
+		texturefile = "gfx/interface/modifiers/MODIFIER_NAVAL_STRIKE_TARGETTING.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_naval_port_strike_spirit_texticon"
+		texturefile = "gfx/interface/modifiers/MODIFIER_PORT_STRIKE_BONUS.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_naval_division_cap_spirit_texticon"
+		texturefile = "gfx/interface/modifiers/MODIFIER_NAVAL_INVASION_CAPACITY.dds"
 		legacy_lazy_load = no
 	}
 }

@@ -1,0 +1,64 @@
+# Generic joining rules for ATLA2. These avoid country tags and vanilla ideologies.
+
+joining_rule_has_no_war = {
+	type = joining_rules
+	ai_will_do = { base = 0 }
+	trigger = { has_war = no }
+	modifier = { improve_relations_maintain_cost_factor = -0.1 }
+}
+
+joining_rule_has_no_offensive_war = {
+	type = joining_rules
+	ai_will_do = { base = 0 }
+	trigger = { has_offensive_war = no }
+	modifier = { defensive_war_stability_factor = 0.15 }
+}
+
+joining_rule_neighbors_only = {
+	type = joining_rules
+	ai_will_do = { base = 0 }
+	trigger = {
+		any_neighbor_country = {
+			is_in_faction_with = FROM
+		}
+	}
+	modifier = { enemy_justify_war_goal_time = 0.2 }
+}
+
+joining_rule_same_continent_only = {
+	type = joining_rules
+	ai_will_do = { base = 0 }
+	trigger = {
+		ROOT = { is_on_same_continent_as = FROM }
+	}
+	modifier = { enemy_justify_war_goal_time = 0.1 }
+}
+
+joining_rule_same_culture_only = {
+	type = joining_rules
+	ai_will_do = { base = 0 }
+	trigger = {
+		OR = {
+			AND = {
+				ROOT = { has_government = fire_culture }
+				FROM = { has_government = fire_culture }
+			}
+			AND = {
+				ROOT = { has_government = water_culture }
+				FROM = { has_government = water_culture }
+			}
+			AND = {
+				ROOT = { has_government = earth_culture }
+				FROM = { has_government = earth_culture }
+			}
+			AND = {
+				ROOT = { has_government = air_culture }
+				FROM = { has_government = air_culture }
+			}
+			AND = {
+				ROOT = { has_government = pluralist_culture }
+				FROM = { has_government = pluralist_culture }
+			}
+		}
+	}
+}

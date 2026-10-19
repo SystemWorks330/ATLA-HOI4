@@ -13,9 +13,6 @@ scripted_gui = {
 			}
 		}
 		
-		triggers = {
-			
-		}
 
 		properties = {
 

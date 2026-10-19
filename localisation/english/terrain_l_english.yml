@@ -8,7 +8,7 @@
  village_desc:0 ""
  swamp:0 "Swamp"
  ice_desert:0 "Frozen Wastes"
- wasteland:0 "Wasteland"
+ wasteland:0 "Scrubland"
  wasteland_desc:0 "§L§!"
  beach:0 "Beach"
  beach_desc:0 "§L§!"
@@ -20,7 +20,7 @@
  swamp_desc:0 "§L§!"
  savanna:0 "Savannah"
  savanna_desc:0 "§L§!"
- high_mountain:0 "High Mountain"
+ high_mountain:0 "Summit"
  high_mountain_desc:0 "§L§!"
 
  water_great_river:0 "River"

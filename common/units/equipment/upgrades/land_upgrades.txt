@@ -12,16 +12,16 @@ upgrades = {
 
 		level_requirements = {
 			5 = {
-				has_tech = engine_tech_1
+				has_tech = light_engine_tech_1
 			}
 			10 = {
-				has_tech = engine_tech_2
+				has_tech = light_engine_tech_2
 			}
 			15 = {
-				has_tech = engine_tech_3
+				has_tech = light_engine_tech_3
 			}
 			18 = { 
-				has_tech = engine_tech_4
+				has_tech = light_engine_tech_4
 			}
 		}
 
@@ -52,16 +52,16 @@ upgrades = {
 
 		level_requirements = {
 			5 = {
-				has_tech = armor_tech_1
+				has_tech = light_armor_tech_1
 			}
 			10 = {
-				has_tech = armor_tech_2
+				has_tech = light_armor_tech_2
 			}
 			15 = {
-				has_tech = armor_tech_3
+				has_tech = light_armor_tech_3
 			}
 			18 = {
-				has_tech = armor_tech_4
+				has_tech = light_armor_tech_4
 			}
 		}
 
@@ -158,5 +158,134 @@ upgrades = {
 		soft_attack = 0.03
 		maximum_speed = -0.02
 		reliability = -0.05
+	}
+
+	mass_production_land = {
+		max_level = 5
+		cost = land
+		build_cost_ic = -0.08
+		reliability = -0.03
+	}
+	lovecraft_land = {
+		max_level = 5
+		cost = land
+		build_cost_ic = 0.08
+		reliability = 0.03
+	}
+	arrow_quantity = {
+		max_level = 5
+		cost = land
+		hard_attack = 0.05
+		air_attack = 0.04
+		build_cost_ic = 0.05
+		reliability = -0.02
+	}
+	arrow_tip_upgrade = {
+		max_level = 5
+		cost = land
+		hard_attack = 0.08
+		ap_attack = 0.04
+		build_cost_ic = 0.05
+		reliability = -0.02
+	}
+	arrow_shaft_upgrade = {
+		max_level = 5
+		cost = land
+		air_attack = 0.05
+		reliability = 0.02
+		build_cost_ic = 0.04
+	}
+	bow_string_upgrade = {
+		max_level = 5
+		cost = land
+		soft_attack = 0.05
+		hard_attack = 0.05
+		reliability = -0.01
+		build_cost_ic = 0.05
+	}
+	spear_shield_upgrade = {
+		max_level = 5
+		cost = land
+		defense = 0.1
+		breakthrough = 0.1
+		reliability = -0.01
+		build_cost_ic = 0.08
+	}
+	pike_torch_upgrade = {
+		max_level = 5
+		cost = land
+		breakthrough = 0.05
+		soft_attack = 0.04
+		reliability = -0.04
+		build_cost_ic = 0.04
+	}
+	sidearm_upgrade = {
+		max_level = 5
+		cost = land
+		soft_attack = 0.04
+		defense = 0.02
+		reliability = -0.01
+		build_cost_ic = 0.04
+	}
+	shovel_upgrade = {
+		max_level = 5
+		cost = land
+		defense = 0.03
+		breakthrough = 0.03
+		reliability = -0.02
+		build_cost_ic = 0.06
+	}
+	poleturning_upgrade = {
+		max_level = 5
+		cost = land
+		soft_attack = 0.04
+		breakthrough = 0.04
+		reliability = 0.01
+		build_cost_ic = 0.04
+	}
+	blade_upgrade = {
+		max_level = 5
+		cost = land
+		soft_attack = 0.06
+		hard_attack = 0.05
+		reliability = -0.01
+		build_cost_ic = 0.05
+	}
+	armor_backpack_upgrade = {
+		max_level = 7
+		cost = land
+		maximum_speed = -0.02
+		reliability = -0.01
+		build_cost_ic = 0.05
+	}
+	armor_shirt_upgrade = {
+		max_level = 7
+		cost = land
+		defense = 0.08
+		armor_value = 0.08
+		reliability = -0.01
+		build_cost_ic = 0.06
+	}
+	armor_boot_upgrade = {
+		max_level = 5
+		cost = land
+		maximum_speed = 0.03
+		breakthrough = 0.05
+		reliability = -0.02
+		build_cost_ic = 0.05
+	}
+	camouflage_upgrade = {
+		max_level = 5
+		cost = land
+		defense = 0.05
+		reliability = 0.01
+		build_cost_ic = 0.04
+	}
+	guard_gear = {
+		max_level = 8
+		cost = land
+		defense = 0.03
+		breakthrough = 0.02
+		build_cost_ic = 0.05
 	}
 }

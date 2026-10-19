@@ -3008,6 +3008,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = early_fire_galley
+			ignore_for_layout = yes
 			research_cost_coeff = 1
 		}
 		

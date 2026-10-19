@@ -1,0 +1,3 @@
+﻿l_english:
+ SM_EVENT_SOUNDS:0 "Event Sounds"
+ SM_EVENT_SOUNDS_DESC:0 "Allow sounds and music triggered through script. Recommended to be enabled when playing with mods."

@@ -29,6 +29,9 @@ set_variable = { legitimacy_var = 120 }
 set_variable = { logistic_spirit_var = 25 }
 set_variable = { quality_spirit_var = 50 }
 set_variable = { unit_leader_spirit_var = 15 }
+set_variable = { naval_coordination_spirit_var = 25 }
+set_variable = { naval_quality_spirit_var = 10 }
+set_variable = { naval_discipline_spirit_var = 15 }
 
 
 FIR_starting_tech_12 = yes
@@ -211,7 +214,20 @@ if = {
 		}
 	}
 
+	create_equipment_variant = {
+		name = "Invasion Class"
+		type = firenation_frigate_hull_1
+		modules = {
+			fixed_ship_engine_slot = steam_engine_1
+			fixed_ship_armor_slot = light_armor_plates_1
+			fixed_ship_crew_slot = ship_firebender_crew_1
+			fixed_ship_bridge_slot = lookout_1
+			fixed_ship_artillery_slot = ship_catapult_1
+		}
+	}
+
 }
+
 
 
 bender_conscription_effect = yes
@@ -583,7 +599,6 @@ permanent_spirits_and_modifiers = yes
 		name = "Steel Armor with Backpack"
 		type = heavy_armor_equipment_6
 		upgrades = {
-			armor_backpack_upgrade = 7
 		}
 		#obsolete = yes
 	}

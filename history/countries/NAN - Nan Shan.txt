@@ -63,6 +63,7 @@ add_ideas = {
 }
 
 recruit_character = NAN_ping
+recruit_character = NAN_generic
 
 #set_cosmetic_tag = NAN_puppet
 
@@ -129,4 +130,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = NAN_generic

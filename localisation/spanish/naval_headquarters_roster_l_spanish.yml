@@ -1,0 +1,5 @@
+﻿l_spanish:
+ naval_headquarters_roster:0 "$NAVAL_HEADQUARTER_ROSTER$"
+ NAVAL_HEADQUARTER_ROSTER:0 "Cuartel general"
+ NAVAL_HEADQUARTER_ROSTER_COLORED:0 "§YCuartel general naval§!"
+ NAVAL_HEADQUARTER_ROSTER_DELAYED:0 "Haz clic para abrir la lista de §Ycuarteles generales navales§!"

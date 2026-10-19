@@ -1,0 +1,5 @@
+﻿l_french:
+ naval_headquarters_roster:0 "$NAVAL_HEADQUARTER_ROSTER$"
+ NAVAL_HEADQUARTER_ROSTER:0 "Quartier général"
+ NAVAL_HEADQUARTER_ROSTER_COLORED:0 "§YQuartier général naval§!"
+ NAVAL_HEADQUARTER_ROSTER_DELAYED:0 "Cliquer pour afficher la liste du §YQuartier général naval§!."

@@ -45,6 +45,14 @@ spriteTypes = {
 		tilingCenter = yes
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
+	corneredTileSpriteType = {
+		name = "GFX_spy_tiled_marble_bg"
+		size= { x=505 y=242 }
+		textureFile = "gfx/interface/officer_corp/officer_corp_bg_spy.dds"
+		borderSize = { x=6 y=6 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
 
 	corneredTileSpriteType = {
 		name = "GFX_tiled_button"
@@ -113,6 +121,11 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_officer_corp_theorist_icon"
 		textureFile = "gfx/interface/officer_corp/officer_corp_theorist_icon.dds"
+	}
+
+	spriteType = {
+		name = "GFX_officer_corp_bg_banner_spy"
+		textureFile = "gfx/interface/officer_corp/officer_corp_bg_banner_spy.dds"
 	}
 	
 	spriteType = {
@@ -219,6 +232,11 @@ spriteTypes = {
 		name = "GFX_officer_corp_bg_air"
 		textureFile = "gfx/interface/officer_corp/officer_corp_bg_air.dds"
 	}
+
+	spriteType = {
+		name = "GFX_officer_corp_bg_spy"
+		textureFile = "gfx/interface/officer_corp/officer_corp_bg_spy.dds"
+	}
 				
 	spriteType = {
 		name = "GFX_path_officer_corp_advisor_strip"
@@ -263,6 +281,11 @@ spriteTypes = {
 
 
 #### Spirits ####	
+
+spriteType = {
+	name = "GFX_officer_corp_spirit_background"
+	textureFile = "gfx/interface/officer_corp/spirit_background.dds"
+}
 	
 spriteType = {
 	name = "GFX_officer_corp_spirit_bg_enabled"

@@ -101,9 +101,12 @@ on_actions = {
 					}
 					add_to_temp_array = { guaranteed_saved_give = THIS.id }
 				}
-				var:global.earth_kingdom_leader = {
-					create_faction = Earth_Kingdom
-				}
+				# var:global.earth_kingdom_leader = {
+				# 	create_faction_from_template = {
+				# 		name = Earth_Kingdom
+				# 		from = ROOT
+				# 	}
+				# }
 				every_country = {
 					limit = {
 						is_in_array = { guaranteed_saved = THIS.id }

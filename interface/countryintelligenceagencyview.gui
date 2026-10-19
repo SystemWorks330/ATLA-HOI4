@@ -142,6 +142,15 @@ guiTypes = {
 					truncate = yes
 					fixedsize = yes
 				}
+
+				buttonType = {
+					name = "faction_button"
+					position = { x = 150 y = 54 }
+					quadTextureSprite ="GFX_spymaster_button"
+					buttonFont = "hoi_16mbs"
+					Orientation = "LOWER_LEFT"
+					clicksound = click_default
+				}
 				
 				instantTextboxType = {
 					name = "spymaster_button_cost"
@@ -1005,6 +1014,12 @@ guiTypes = {
 			position = { x = 58 y = -22 }
 		}
 
+		iconType = {
+			name = "faction_icon"
+			spriteType = "GFX_faction_logo_generic_democratic"
+			position = { x = 5 y = 5}
+			hide = yes
+		}
 
 		iconType = {
 			name = "civilian_factory_icon"

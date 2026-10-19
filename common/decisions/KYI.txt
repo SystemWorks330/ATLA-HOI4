@@ -47,11 +47,12 @@ KYI_industrialization_category = {
 		timeout_effect = {
 			set_country_flag = KYI_Ringo_kimonos_enabled
 		}
-		cost = 50
 		custom_cost_trigger = {
 			check_variable = {money_variable > 40 }
 		}
-
+		ai_will_do = {
+			base = 0
+		}
 	}
 	Sign_memorandum_of_cooperation_with_teka_kimonos = {
 		allowed = {tag = KYI}

@@ -64,6 +64,7 @@ add_ideas = {
 }
 
 recruit_character = LAM_fung
+recruit_character = LAM_generic
 
 #set_cosmetic_tag = LAM_puppet
 
@@ -128,4 +129,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = LAM_generic

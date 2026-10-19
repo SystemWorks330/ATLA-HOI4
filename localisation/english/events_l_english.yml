@@ -4,7 +4,7 @@
  news.2.d:0 "A wild population of bears has been discovered in the Eastern reaches of the Earth Kingdom. Considered an anomaly among wildlife, these bears have no supplementary features to speak of, instead owing their distinct look to an overwhelming 'plainness' as described by researchers. Their rarity puts them at great risk due to poaching, which has prompted conservationists to demand royal protection be placed on these fascinating creatures."
  news.2.a:0 "Just...Bear?"
 
- news.3.t:0 "The Air Nomad Genocide"
+ news.3.t:0 "The End.."
  news.3.d:0 "Utilizing the power of the Great Comet, elite firebenders invaded the four Air Temples with the ultimate goal of destroying the Avatar...As well as the entirety of the Air Nomads.\n\n[GetNorthOutcome]\n[GetEastOutcome]\n[GetSouthOutcome]\n[GetWestOutcome]"
  nat_fallen_and_cant_get_up:0 "§RThe Northern Air Temple fell. It was destroyed and every nomad in it killed!§!"
  nat_survived:0 "§GThe Northern  Air Temple defended against the attack and survived!§!"
@@ -46,8 +46,8 @@
  news.10.a:0 "North, South...Or Foggy Swamp?"
  
  news.11.t:0 "Dawn of the Phoenix Empire"
- news.11.d:0 "With the fall of Ba Sing Se to Fire Nation forces, and the subsequent subjugation of all remaining Earth Kingdom strongholds, Fire Lord [FIR.GetLeader] has seen it fit to signify the Fire Nation's total control over the world by establishing the Phoenix Empire, an all-powerful state encompassing both the Fire Islands and its colonies. The supreme leader of this empire will henceforth be known as the Phoenix King, a self-appointed title in which [FIR.GetLeader] has been lavishly coronated. \n\nThe few remaining people of the world free from Fire Nation control can do nothing but watch on with bated breath..."
- news.11.a:0 "All hail Phoenix King [FIR.GetLeader]!"
+ news.11.d:0 "With the fall of Ba Sing Se to Fire Nation forces, and the subsequent subjugation of all remaining Earth Kingdom strongholds, Fire Lord [FIR.GetName] has seen it fit to signify the Fire Nation's total control over the world by establishing the Phoenix Empire, an all-powerful state encompassing both the Fire Islands and its colonies. The supreme leader of this empire will henceforth be known as the Phoenix King, a self-appointed title in which [FIR.GetName] has been lavishly coronated. \n\nThe few remaining people of the world free from Fire Nation control can do nothing but watch on with bated breath..."
+ news.11.a:0 "All hail Phoenix King [FIR.GetName]!"
  news.11.b:0 "Is there any hope left?"
 
  #Sun Warriors Revealed
@@ -170,6 +170,46 @@
  fir_treaty.9.t:0 "Ambassador to Ba Sing Se"
  fir_treaty.9.d:0 "Rhy was captured in Ba Sing Se"
  fir_treaty.9.a:0 "This is madness"
+
+
+ # Events
+ fir_clan.1.t:0 "The Clans Awaken"
+ fir_clan.1.d:0 "The ancient houses of the Fire Nation, long suppressed under the centralised rule of Fire Lord Sozin and his successors, have begun to reassert themselves. Loyalists such as the Keohso, who remember the glory of conquest, Reformists like the Saowan, who dream of a different Fire Nation, and Isolationists such as the Sei'Naka who wish only to withdraw behind the home islands, all now demand their voices be heard.\n\nThe balance of power between them is fragile. Push too hard in any direction, and the nation may fracture."
+ fir_clan.1.a:0 "We will walk this tightrope carefully."
+ 
+ fir_clan.2.t:0 "The Clans Grow Restless"
+ fir_clan.2.d:0 "Word reaches the palace of growing tensions between the clan factions. Loyalist officers are refusing orders from Reformist-aligned commanders. Isolationist nobles have stopped attending court. The fractures in our unity are beginning to show.\n\nIf we do not act to restore balance, the nation may not hold."
+ fir_clan.2.a:0 "We must tread carefully from here."
+ 
+ fir_clan.3.t:0 "The Nation Stands on the Brink"
+ fir_clan.3.d:0 "The clan tensions have reached a breaking point. Clan militias are mobilising in the outer islands. Loyalist officers are stockpiling weapons. Reformist nobles have begun evacuating their families from the capital. Isolationist chieftains have issued open letters demanding the Fire Lord step down.\n\n§RWe are on the edge of civil war.§! There is still time — barely — to pull back."
+ fir_clan.3.a:0 "Prepare for the worst."
+ 
+ fir_clan.4.t:0 "The Clans Fracture — Civil War"
+ fir_clan.4.d:0 "It is done. The balance of power between the ancient clans has collapsed beyond repair. The old houses, those who remember a Fire Nation before Sozin's grand centralisation — have raised their banners in open revolt.\n\nClad in armour bearing the sigils of the pre-imperial clans, rebel forces seize control of several outer islands and march on the colonial ports. The Fire Nation civil war has begun.\n\nOnly one vision of our nation can survive this."
+ fir_clan.4.a:0 "Crush the rebellion. The Fire Nation will emerge stronger."
+ 
+ fir_clan.5.t:0 "The Grand Tournament Concludes"
+ fir_clan.5.d:0 "The Grand Agni Kai Tournament has drawn to a close. Clan champions from across the Fire Nation competed in honourable single combat before the Fire Lord. The crowds cheered, old rivalries were settled in fire and pride, and — for a brief moment — the clans were united in spectacle rather than conflict.\n\nBut in the end, one faction's champion stood tallest."
+ fir_clan.5.a:0 "The Loyalist champion prevailed."
+ fir_clan.5.b:0 "The Reformist champion prevailed."
+ fir_clan.5.c:0 "The Isolationist champion prevailed."
+ 
+ fir_clan.6.t:0 "Reunification: The Loyalist Victory"
+ fir_clan.6.d:0 "The Loyalist clans have emerged dominant. Under their banner, the Fire Nation returns to the path Sozin charted — strength, conquest, and the supremacy of fire. The Reformist moderates are silenced. The Isolationist cowards are dismissed.\n\nThe Fire Nation is unified once more. And it hungers."
+ fir_clan.6.a:0 "For the Fire Nation. For the Fire Lord. For Sozin's legacy."
+ 
+ fir_clan.7.t:0 "Reunification: The Reformist Victory"
+ fir_clan.7.d:0 "The Reformist clans have emerged dominant. Under their banner, the Fire Nation begins a quiet transformation — the brutal excesses of Sozin's conquest are tempered, the colonies are reformed rather than exploited, and diplomacy begins to supplement the sword.\n\nThis is not weakness. This is a Fire Nation built to last."
+ fir_clan.7.a:0 "A new Fire Nation rises. Measured. Enduring. Inevitable."
+ 
+ fir_clan.8.t:0 "Reunification: The Isolationist Victory"
+ fir_clan.8.d:0 "The Isolationist clans have emerged dominant. Under their banner, the Fire Nation turns its gaze inward. The wars slow. The colonies are gradually released or consolidated. The home islands are fortified and invested in.\n\nPerhaps the world will leave us in peace. Perhaps it will not. Either way, we will be ready."
+ fir_clan.8.a:0 "The Fire Nation endures. Behind its own walls, on its own terms."
+ 
+ fir_clan.9.t:0 "The Rebellion is Crushed"
+ fir_clan.9.d:0 "The last of the rebel clan forces have been broken. Their armies scatter, their leaders flee or kneel, and their banners are torn down across the outer islands. The Fire Nation is whole again — bruised, bloodied, but whole.\n\nNow the dominant faction will determine what the nation becomes."
+ fir_clan.9.a:0 "Let the healing begin. And the reckoning."
 
 
 
@@ -309,11 +349,11 @@
  fir_colonies.4.a:0 "Enforce our culture"
  fir_colonies.4.b:0 "Recruit locals in the Army"
  
- #air genocide
+ #air attacks
  air_gen.1.t:0 "Dai Li Proposes Plan"
  air_gen.1.d:0 "It has come to light that the Dai Li, the secret police force of the Earth Kingdom, has been working on a plan to wipe out the Air Nomads and blame it on the Fire Nation. The Dai Li Chief believes that the destruction of the Air Nomads, a peaceful and neutral nation, would be a devastating blow to the Fire Nation's reputation and would turn public opinion against them."
  air_gen.1.a:0 "End those filthy nomads."
- air_genocide_decisions:0 "Enables §HDecisions§! to prepare a genocide on the §yAir Nomads§! £air_texticon"
+ air_genocide_decisions:0 "Enables §HDecisions§! to prepare a strike against the §yAir Nomads§! £air_texticon"
  dai_li_regulation_decisions:0 "Enables §HDecisions§! to regulate the ruthless behavior of the §DDai Li§! £dai_li_texticon"
  air_gen.1.b:0 "That would be an outrageus crime!"
  air_gen.2.t:0 "Commence the Plan"
@@ -354,7 +394,7 @@
  air_gen.7.t:0 "Sozin's Ambitions"
  air_gen.7.d:0 "Years ago, Sozin made plans on expanding the Fire Nation's influence. Prior to Roku's death, Sozin's friend, Avatar Roku, stopped his plans and forced them to a halt. Twelve years have passed since Roku's death, and the new Avatar is a mere child - an airbender. Nothing much has happened since, and now the Great Comet returns, there are endless new possibilities..."
  air_gen.7.a:0 "Use the Comet against the Avatar"
- fir_air_genocide_decisions:0 "Enables §HDecisions§! to prepare a genocide on the §yAir Nomads§! £air_texticon. and to capture or kill the avatar."
+ fir_air_genocide_decisions:0 "Enables §HDecisions§! to prepare an attack on the §yAir Nomads§! £air_texticon. and to capture or kill the avatar."
  air_gen.7.b:0 "Roku was right, that's not the way to go.."
  fir_no_genocide_decisions:0 "Rumours of Sozin's old plan could've became known, but peace prevails."
  air_gen.8.t:0 "Mission against the Air Temples"
@@ -362,7 +402,16 @@
  air_gen.8.a:0 "Kill them"
  fir_genocide_description:0 "The Fire Nation attacks the air temples with [?FIR.genocide_preparation] units each"
  air_gen.8.b:0 "On a second thought..."
- fir_cold_feet_description:0 "Do not genocide Air Nomads - you risk having expansion plans ruined!"
+ fir_cold_feet_description:0 "Do not attack the Air Nomads - you risk having expansion plans ruined!"
+
+### CLANS
+ air_gen.7.b:0 "No, there is another way."
+ 
+ air_gen.11.t:0 "A Different Path for the Fire Nation"
+ air_gen.11.d:0 "We choose not to follow Sozin's path of aggression. But how we chart our own course is another question entirely.\n\nDo we honor the legacy of Avatar Roku, seeking balance in the world, contesting the Northern Water Tribe's influence, and building a legitimate empire? Or do we look inward, rebuild the Fire Nation by burning everything to the ground, and cede power to the clans."
+ air_gen.11.a:0 "We honor Roku's legacy. Balance must be maintained."
+ air_gen.11.b:0 "The Fire Nation must rediscover itself first."
+ 
  
  #earthkingdom
  earthkingdom.1.t:0 ""
@@ -385,7 +434,7 @@
  ear_treaty.2.a:0 "If it protects us, then so be it"
  ear_treaty.2.b:0 "We agree, as long as we keep some autonomy"
  ear_treaty.2.c:0 "Who do they think they are?"
- ear_treaty.2.d:0 "Our King still has [ROOT.GetLeader.GetHerHis] dignity"
+ ear_treaty.2.d:0 "Our King still has [ROOT.GetName.GetHerHis] dignity"
  ear_treaty.2.e:0 "What service could we offer?"
  ear_treaty.3.t:0 "Anti-Sozin Pact"
  ear_treaty.3.desc:0 "The recent global events have shown, that nobody is save anymore. The last nations that could stop the firenation aggression now have to stand together."
@@ -419,9 +468,9 @@
  struggles_ek.3.d:0 "We dont need them anyways"
  struggles_ek.3.a:0 "Maybe next time"
  struggles_ek.4.t:0 "[FROM.GetName] is holding a feast."
- struggles_ek.4.d:0 "We received an invitation from the Kingdom of [FROM.GetName] to join them in a great feast. Their Leader [FROM.GetLeader] [PREV.GetHerselfHimself] wishes for [ROOT.GetLeader] to be present at this unparalleled event."
- struggles_ek.4.a:0 "And [ROOT.GetLeader] will be there."
- struggles_ek.4.b:0 "That does not fit the schedule of [ROOT.GetLeader]"
+ struggles_ek.4.d:0 "We received an invitation from the Kingdom of [FROM.GetName] to join them in a great feast. Their Leader [FROM.GetLeader] [PREV.GetHerselfHimself] wishes for [ROOT.GetName] to be present at this unparalleled event."
+ struggles_ek.4.a:0 "And [ROOT.GetName] will be there."
+ struggles_ek.4.b:0 "That does not fit the schedule of [ROOT.GetName]"
  struggles_ek.5.t:0 "[FROM.GetName] joined"
  struggles_ek.5.d:0 "They celebrated the whole night"
  struggles_ek.5.a:0 "What a feast"
@@ -434,7 +483,7 @@
  struggles_ek.7.b:0 "We must keep our rule there!"
  struggles_ek.8.title:0 "[FROM.GetName] accepted our Demand"
  struggles_ek.8.desc:0 "Today, recieved an important message from [FROM.GetLeader], the leader of [FROM.GetName]. After our messanger arrived in the area, and showed [FROM.GetLeader] our demands, the citizens heard of it and became furious, and started to protest. However, exhausting negotiations, they finally accepted our demand. Long live the Kingdom of [Root.GetName]!"
- struggles_ek.8.a:0 "Hail [ROOT.GetLeader]!"
+ struggles_ek.8.a:0 "Hail [ROOT.GetName]!"
  struggles_ek.9.title:0 "[FROM.GetName] rejected our Demand"
  struggles_ek.9.desc:0 "It was a dark day when our messanger arrived in [FROM.GetName]. He asked to talk with [FROM.GetLeader], the leader, but he faced angry civilians that almost injured him. After he found [FROM.GetLeader], he began to introduce our demands. [FROM.GetLeader] silenced our messanger, and said one word: No. [FROM.GetLeader] banished our messanger, who returned home with empty hands."
  struggles_ek.9.a:0 "Our day will come!"
@@ -502,7 +551,7 @@ expand_cabbage_opinion:0 "Promote the Cabbage Corporation to Industrial Investor
  western_alliance.1.b:0 "Traitors! We will have revenge.."
  EAR_western_alliance:0 "This will lead to a §RCivil War§! within the §uEarth Kingdom§!."
  western_alliance.2.t:0 "Betrayal of Ba Sing Se"
- western_alliance.2.d:0 "A message from [FROM.GetName] arrived. They have been betrayed by Ba Sing Se, which has cooperated with the Fire Nation to steal back their old colonies. In desperation [FROM.GetName] asked our leader [ROOT.GetLeader] to lead a new alliance, the Western Alliance, against the traitors in the East."
+ western_alliance.2.d:0 "A message from [FROM.GetName] arrived. They have been betrayed by Ba Sing Se, which has cooperated with the Fire Nation to steal back their old colonies. In desperation [FROM.GetName] asked our leader [ROOT.GetName] to lead a new alliance, the Western Alliance, against the traitors in the East."
  western_alliance.2.a:0 "That is outrageous, of course we will lead them!"
  western_alliance.2.b:0 "No cooperation with traitors to the crown."
  western_alliance.3.t:0 "Betrayal of Ba Sing Se"

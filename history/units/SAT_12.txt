@@ -37,12 +37,12 @@ units = {
 air_wings = {
 	### Bison Herd ###
 	329 = { 
-		name = "Bison Herd"
 		# TODO: REMOVE THIS LATER ???
 		bison_equipment_1 = {
 			owner = "SAT" 
 			amount = 20
 		}
+		name = "Bison Herd"
 	}
 }
 

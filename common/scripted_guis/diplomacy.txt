@@ -1,8 +1,8 @@
 scripted_gui = {
 
 	claim_state_gui = {
-		context_type = diplomatic_action
-		#parent_window_token = top_bar
+		parent_window_token = diplomacy_tab
+
 		window_name = "claim_state_gui"
 
 		effects = {
@@ -150,9 +150,7 @@ scripted_gui = {
 			target_country_flag = {
 				image = [FROM.GetFlag]
 			}
-			claimer_country_flag = {
-				image = [ROOT.GetFlag]
-			}
+			
 			just_claim_type = {
 				frame = just_claim_icon
 			}

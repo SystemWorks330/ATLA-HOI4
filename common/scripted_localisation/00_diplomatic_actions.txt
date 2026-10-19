@@ -10,21 +10,6 @@
 
 
 defined_text = {
-	name = GetClaimState
-	text = {
-		trigger = {
-			set_temp_variable = { state = 0 }
-
-			#NOT = {
-			#	check_variable = { state > ROOT.claimed_states^num }
-			#}
-			#add_to_temp_variable = { state = 1 }
-		}
-		localization_key = "[?ROOT.claimed_states^state.GetName][GetClaimState]"
-	}
-}
-
-defined_text = {
 	name = GetAutonomy
 	text = {
 		trigger = {

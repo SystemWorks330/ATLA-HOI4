@@ -1,0 +1,134 @@
+music_station = "base_music"
+
+music = {
+	song = "ethiopian_highlands"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "safer_grounds"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "threat_from_red_sea"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "wildlife_surroundings"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "cittadina_irresistibile"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "fino_a_combattere"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "la_marcia_dei_soldati"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "lotta_di_vecchi_amici"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "dem_vaterland"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "der_preis_fur_die_freiheit"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "die_parade"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+
+music = {
+	song = "tag_der_heimkehr"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 0
+			NOT = { has_dlc = "By Blood Alone" }
+		}
+	}
+}
+

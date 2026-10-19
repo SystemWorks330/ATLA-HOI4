@@ -63,6 +63,7 @@ add_ideas = {
 }
 
 recruit_character = ZIN_kuei
+recruit_character = ZIN_generic
 
 #set_cosmetic_tag = ZIN_puppet
 
@@ -124,4 +125,3 @@ permanent_spirits_and_modifiers = yes
 }
 
 # Different Ideology Leaders
-recruit_character = ZIN_generic

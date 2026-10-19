@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_faction_initiative_texticon"
+		texturefile = "gfx/texticons/faction_initiative_icon_texticon.dds"
+		legacy_lazy_load = no
+	}
+}

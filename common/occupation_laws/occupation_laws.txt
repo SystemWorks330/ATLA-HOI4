@@ -104,6 +104,7 @@ rudimentary_occupation = {
 	tooltip = "rudimentary_occupation_desc"
 	icon = 3
 	default_law = yes
+	missing_garrison_law = yes
 	starting_law = yes
 	sound_effect = "Martial_Law_Interface_No_Garrison"
 

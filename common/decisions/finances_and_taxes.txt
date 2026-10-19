@@ -1676,7 +1676,9 @@ taxation_category = {
 		}
 		available = {
 			check_variable = {
-				tax_balance <= 0
+				var = tax_balance
+				value = 0
+				compare = less_than_or_equals
 				tooltip = income_deficit_check
 			}
 		}

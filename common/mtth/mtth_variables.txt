@@ -309,6 +309,16 @@ war_weariness_peanalty_2 = {
 	}
 }
 
+spirit_coordination_modifier = {
+	base = 0
+	modifier = {
+		set_temp_variable = { coordination = logistic_spirit_var }
+		multiply_temp_variable = { coordination = 0.03 }
+		subtract_from_temp_variable = { coordination = 1 }
+		
+		add = coordination
+	}
+}
 
 spirit_supply_modifier = {
 	base = 0
@@ -369,6 +379,55 @@ spirit_leader_level_modifier = {
 		multiply_temp_variable = { leader_level = 0.1 }
 		
 		add = leader_level
+	}
+}
+
+naval_spirit_invasion_division_cap = {
+	base = 0
+	modifier = {
+		set_temp_variable = { naval_spirit_value = naval_discipline_spirit_var }
+		multiply_temp_variable = { naval_spirit_value = 1.0 }
+		add = naval_spirit_value
+	}
+}
+naval_spirit_invasion_prep_speed = {
+	base = 0
+	modifier = {
+		set_temp_variable = { naval_spirit_value = naval_discipline_spirit_var }
+		multiply_temp_variable = { naval_spirit_value = 0.001 }
+		add = naval_spirit_value
+	}
+}
+naval_spirit_strike_targetting = {
+	base = 0
+	modifier = {
+		set_temp_variable = { naval_spirit_value = naval_quality_spirit_var }
+		multiply_temp_variable = { naval_spirit_value = 0.001 }
+		add = naval_spirit_value
+	}
+}
+naval_spirit_port_strike = {
+	base = 0
+	modifier = {
+		set_temp_variable = { naval_spirit_value = naval_quality_spirit_var }
+		multiply_temp_variable = { naval_spirit_value = 0.001 }
+		add = naval_spirit_value
+	}
+}
+naval_spirit_escort_efficiency = {
+	base = 0
+	modifier = {
+		set_temp_variable = { naval_spirit_value = naval_coordination_spirit_var }
+		multiply_temp_variable = { naval_spirit_value = 0.001 }
+		add = naval_spirit_value
+	}
+}
+naval_spirit_sortie_efficiency = {
+	base = 0
+	modifier = {
+		set_temp_variable = { naval_spirit_value = naval_coordination_spirit_var }
+		multiply_temp_variable = { naval_spirit_value = 0.001 }
+		add = naval_spirit_value
 	}
 }
 

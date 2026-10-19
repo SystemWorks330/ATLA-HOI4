@@ -8,7 +8,7 @@ autonomy_state = {
 	
 	is_puppet = yes
 	
-	min_freedom_level = 1.00
+	min_freedom_level = 0.99
 	
 	manpower_influence = 0.0
 	

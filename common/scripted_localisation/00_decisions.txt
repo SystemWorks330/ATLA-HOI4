@@ -44,7 +44,7 @@ defined_text = {
 				value = 0
 			}
 		}
-		localization_key = undefined
+		localization_key = unknown
 	}	
 	text = {
 		trigger = {

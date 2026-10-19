@@ -11,7 +11,7 @@ ideas = {
 				has_war = yes
 				has_war_support > 0.8
 				check_variable = {
-					current_authority
+					var = current_authority
 					value = 85
 					compare = greater_than_or_equals
 					tooltip = check_authority_tooltip

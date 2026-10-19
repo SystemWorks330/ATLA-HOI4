@@ -91,12 +91,6 @@ scripted_gui = {
 					set_building_level = {
 					    type = naval_base
 					    level = 5
-					    province = {
-					        all_provinces = yes
-					        limit_to_coastal = yes
-					        level < 5
-					        level > 0
-					    }
 					}
 				}
 			}

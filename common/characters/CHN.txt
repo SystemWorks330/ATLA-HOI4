@@ -1,20 +1,20 @@
 characters = {
 	CHN_mayor_wang = {
-		name = "Wang"
+		name = CHN_mayor_wang
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/CHN/wang.dds"
 			}
 		}
 		country_leader = {
-			desc = "Mayor of the Chin Village"
+			desc = CHN_mayor_wang_desc
 			ideology = constitutional_monarchy
 			expire = "81.1.1.1"
 			id = -1
 		}
 	}
 	CHN_xiang = {
-		name = "Xiang"
+		name = CHN_xiang
 		portraits = {
 			civilian = {
 				large = "GFX_Portrait_Xiang_young"
@@ -25,7 +25,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = "Mayor of the Chin Village"
+			desc = CHN_xiang_desc
 			ideology = constitutional_monarchy
 			expire = "78.1.1.1"
 			id = -1
@@ -50,7 +50,7 @@ characters = {
 		}
 	}
 	CHN_heir = {
-		name = "Torgo"
+		name = CHN_heir
 		portraits = {
 			civilian = {
 				large = "GFX_Portrait_Chin_heir"
@@ -61,7 +61,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			desc = "Mayor of the Chin Village"
+			desc = CHN_heir_desc
 			ideology = constitutional_monarchy
 			expire = "78.1.1.1"
 			traits = {
@@ -88,21 +88,21 @@ characters = {
 		}
 	}
 	CHN_mayor_tong = {
-		name = "Tong"
+		name = CHN_mayor_tong
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/CHN/tong.dds"
 			}
 		}
 		country_leader = {
-			desc = "Mayor of the Chin Village"
+			desc = CHN_mayor_tong_desc
 			ideology = constitutional_monarchy
 			expire = "130.1.1.1"
 			id = -1
 		}
 	}
 	CHN_generic = {
-		name = "Generic"
+		name = CHN_generic
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/CHN/Portrait_Chin_fire_tribes.dds"
@@ -145,7 +145,7 @@ characters = {
 				kingdom_advisor
 			}
 		}
-		name = "Ying_Sing"
+		name = CHN_Ying_Sing
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_communist_revolutionary_western_european_2d"
@@ -168,7 +168,7 @@ characters = {
 				freedom_politician
 			}
 		}
-		name = "Chen_Long"
+		name = CHN_Chen_Long
 		portraits = {
 			army = {
 				small = "GFX_idea_generic_communist_revolutionary_western_european_2d"
@@ -181,7 +181,7 @@ characters = {
 	#   #  #  #  #   #  #     #  #   #  # #      #      
 	#   #  ###    ###   #  ###    ###   #  #  ###    
 	CHN_Yuan = {
-		name = "Yuan"
+		name = CHN_Yuan
 		corps_commander = {
 			skill = 2
 			attack_skill = 1
@@ -207,7 +207,7 @@ characters = {
 		}
 	}
 	CHN_Qing = {
-		name = "Qing"
+		name = CHN_Qing
 		corps_commander = {
 			skill = 2
 			attack_skill = 1
@@ -232,7 +232,7 @@ characters = {
 		}
 	}
 	CHN_Li = {
-		name = "Li"
+		name = CHN_Li
 		field_marshal = {
 			skill = 2
 			attack_skill = 1

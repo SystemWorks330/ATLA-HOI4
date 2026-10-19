@@ -1,0 +1,232 @@
+
+scripted_gui = {
+
+	intelligence_show_stats_ui = {
+		context_type = player_context
+		
+		window_name = "intelligence_show_stats_gui"
+		parent_window_name = officer_core_view
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+
+		}
+
+		ai_test_interval = 8000
+		ai_test_variance = 0.1
+		
+		ai_enabled = {
+			always = yes
+		}
+		
+		ai_check = {
+			check_variable = { ai_irrationality > 0 }
+		}
+		
+		ai_max_weight_taken_per_test = 1
+		ai_weights = {
+			
+		}
+
+	}
+
+	war_council_expanded_ui = {
+		context_type = player_context
+		
+		window_name = "war_council_gui"
+		parent_window_name = officer_core_view
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			logistics_and_orga_spirit_click = {
+				army_experience = -50
+				add_to_variable = { logistic_spirit_var = 1 }
+				clamp_variable = {
+					var = logistic_spirit_var
+					max = 100
+				}
+			}
+			logistics_and_orga_spirit_shift_click = {
+				army_experience = -500
+				add_to_variable = { logistic_spirit_var = 10 }
+				clamp_variable = {
+					var = logistic_spirit_var
+					max = 100
+				}
+			}
+
+			wages_and_professionalism_spirit_click = {
+				army_experience = -50
+				add_to_variable = { quality_spirit_var = 1 }
+				clamp_variable = {
+					var = quality_spirit_var
+					max = 100
+				}
+			}
+			wages_and_professionalism_spirit_shift_click = {
+				army_experience = -500
+				add_to_variable = { quality_spirit_var = 10 }
+				clamp_variable = {
+					var = quality_spirit_var
+					max = 100
+				}
+			}
+
+			unit_leader_spirit_click = {
+				army_experience = -50
+				add_to_variable = { unit_leader_spirit_var = 1 }
+				clamp_variable = {
+					var = unit_leader_spirit_var
+					max = 100
+				}
+			}
+			unit_leader_spirit_shift_click = {
+				army_experience = -500
+				add_to_variable = { unit_leader_spirit_var = 10 }
+				clamp_variable = {
+					var = unit_leader_spirit_var
+					max = 100
+				}
+			}
+
+			coordination_spirit_click = {
+				navy_experience = -50
+				add_to_variable = { naval_coordination_spirit_var = 1 }
+				clamp_variable = { var = naval_coordination_spirit_var max = 100 }
+				force_update_dynamic_modifier = yes
+			}
+			coordination_spirit_shift_click = {
+				navy_experience = -500
+				add_to_variable = { naval_coordination_spirit_var = 10 }
+				clamp_variable = { var = naval_coordination_spirit_var max = 100 }
+				force_update_dynamic_modifier = yes
+			}
+
+			quality_spirit_click = {
+				navy_experience = -50
+				add_to_variable = { naval_quality_spirit_var = 1 }
+				clamp_variable = { var = naval_quality_spirit_var max = 100 }
+				force_update_dynamic_modifier = yes
+			}
+			quality_spirit_shift_click = {
+				navy_experience = -500
+				add_to_variable = { naval_quality_spirit_var = 10 }
+				clamp_variable = { var = naval_quality_spirit_var max = 100 }
+				force_update_dynamic_modifier = yes
+			}
+
+			discipline_spirit_click = {
+				navy_experience = -50
+				add_to_variable = { naval_discipline_spirit_var = 1 }
+				clamp_variable = { var = naval_discipline_spirit_var max = 100 }
+				force_update_dynamic_modifier = yes
+			}
+			discipline_spirit_shift_click = {
+				navy_experience = -500
+				add_to_variable = { naval_discipline_spirit_var = 10 }
+				clamp_variable = { var = naval_discipline_spirit_var max = 100 }
+				force_update_dynamic_modifier = yes
+			}
+
+		}
+
+		triggers = {
+			logistics_and_orga_spirit_click_enabled = {
+				has_army_experience > 49
+				check_variable = {
+					var = logistic_spirit_var
+					value = 100
+					compare = less_than
+				}
+			}
+			logistics_and_orga_spirit_shift_click_enabled = {
+				has_army_experience > 499
+				check_variable = {
+					var = logistic_spirit_var
+					value = 100
+					compare = less_than
+				}
+			}
+			wages_and_professionalism_spirit_click_enabled = {
+				has_army_experience > 49
+				check_variable = {
+					var = quality_spirit_var
+					value = 100
+					compare = less_than
+				}
+			}
+			wages_and_professionalism_spirit_shift_click_enabled = {
+				has_army_experience > 499
+				check_variable = {
+					var = quality_spirit_var
+					value = 100
+					compare = less_than
+				}
+			}
+			unit_leader_spirit_click_enabled = {
+				has_army_experience > 49
+				check_variable = {
+					var = unit_leader_spirit_var
+					value = 100
+					compare = less_than
+				}
+			}
+			unit_leader_spirit_shift_click_enabled = {
+				has_army_experience > 499
+				check_variable = {
+					var = unit_leader_spirit_var
+					value = 100
+					compare = less_than
+				}
+			}
+			coordination_spirit_click_enabled = {
+				has_navy_experience > 49
+				check_variable = { var = naval_coordination_spirit_var value = 100 compare = less_than }
+			}
+			coordination_spirit_shift_click_enabled = {
+				has_navy_experience > 499
+				check_variable = { var = naval_coordination_spirit_var value = 100 compare = less_than }
+			}
+			quality_spirit_click_enabled = {
+				has_navy_experience > 49
+				check_variable = { var = naval_quality_spirit_var value = 100 compare = less_than }
+			}
+			quality_spirit_shift_click_enabled = {
+				has_navy_experience > 499
+				check_variable = { var = naval_quality_spirit_var value = 100 compare = less_than }
+			}
+			discipline_spirit_click_enabled = {
+				has_navy_experience > 49
+				check_variable = { var = naval_discipline_spirit_var value = 100 compare = less_than }
+			}
+			discipline_spirit_shift_click_enabled = {
+				has_navy_experience > 499
+				check_variable = { var = naval_discipline_spirit_var value = 100 compare = less_than }
+			}
+		}
+
+		ai_test_interval = 8000
+		ai_test_variance = 0.1
+		
+		ai_enabled = {
+			always = yes
+		}
+		
+		ai_check = {
+			check_variable = { ai_irrationality > 0 }
+		}
+		
+		ai_max_weight_taken_per_test = 1
+		ai_weights = {
+			
+		}
+
+	}
+
+}

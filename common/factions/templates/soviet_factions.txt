@@ -1,0 +1,13 @@
+# Disable vanilla faction templates that rely on removed country and ideology content.
+
+faction_template_comintern = {
+	manifest = faction_manifest_strength_in_unity
+	icon = GFX_faction_logo_generic
+	visible = { always = no }
+}
+
+faction_template_fourth_international = {
+	manifest = faction_manifest_strength_in_unity
+	icon = GFX_faction_logo_generic
+	visible = { always = no }
+}

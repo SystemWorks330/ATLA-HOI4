@@ -243,7 +243,7 @@
  open_construction_info:0 "§YОткрыть окно строительства§!"
  open_construction_info_delayed:0 "§LДля точного строительства в этом регионе.§!"
 
- deposit_construction:0 "Залежи в строительстве: \n\n£farming|2 Фермы: [?ROOT.farm_deposit_construction|Y0] \n£ranch|2 Ранчо: [?ROOT.ranch_deposit_construction|Y0] \n£mine|2 Шахты: [?ROOT.mine_deposit_construction|Y0] \n£quarry|2 Карьеры: [?ROOT.quarry_deposit_construction|Y0] \n£lumberjack|2 Лесопилки: [?ROOT.lumber_mill_deposit_construction|Y0] \n£fishing|2 Рыболовные точки: [?ROOT.fishing_stand_deposit_construction|Y0]"
+deposit_construction:0 "Залежи в строительстве: \n\n£farming|2 Фермы: [?ROOT.farm_deposit_construction|Y0] \n£ranch|2 Ранчо: [?ROOT.ranch_deposit_construction|Y0] \n£mine|2 Шахты: [?ROOT.mine_deposit_construction|Y0] \n£quarry|2 Карьеры: [?ROOT.quarry_deposit_construction|Y0] \n£lumberjack|2 Лесопилки: [?ROOT.lumber_mill_deposit_construction|Y0] \n£fishing|2 Рыболовные точки: [?ROOT.fishing_stand_deposit_construction|Y0]"
  deposit_construction_ttp:0 ""
  cancel_deposit_construction:0 "Отменить все постройки на залежах"
  cancel_deposit_construction_ttp:0 ""

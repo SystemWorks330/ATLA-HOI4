@@ -1,7 +1,7 @@
 characters = {
 
 	TEJ_council = {
-		name = "Republic Council"
+		name = TEJ_council
 		portraits = {
 			civilian = {
 				large = "gfx/leaders/TEJ/Portrait_Teji_Council.dds"
@@ -18,7 +18,7 @@ characters = {
 
 
 	TEJ_generic={
-		name="Generic"
+		name=TEJ_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/CHN/Portrait_Chin_fire_tribes.dds"
@@ -65,7 +65,7 @@ characters = {
 					kingdom_advisor
 				}
 		}
-		name="Ying_Sing"
+		name=TEJ_Ying_Sing
 		portraits={
 			army={
 				small="GFX_idea_generic_communist_revolutionary_western_european_2d"
@@ -88,7 +88,7 @@ characters = {
 					freedom_politician
 				}
 		}
-		name="Chen_Long"
+		name=TEJ_Chen_Long
 		portraits={
 			army={
 				small="GFX_idea_generic_communist_revolutionary_western_european_2d"

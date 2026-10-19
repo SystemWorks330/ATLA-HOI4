@@ -1,6 +1,6 @@
 characters={
 	OMC_ukano={
-		name = "Ukano"
+		name = OMC_ukano
 		portraits={
 			civilian={
 				large="gfx/leaders/OMC/Portrait_New_Ozai_Ukano.dds"
@@ -16,7 +16,7 @@ characters={
 	}
 
 	OMC_generic={
-		name="Generic"
+		name=OMC_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/GDD/Portrait_Great_Divide_fire_tribes.dds"

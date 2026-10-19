@@ -1,0 +1,34 @@
+# Inert IDs retained for saves created before the vanilla-country goals were removed.
+
+faction_goal_control_indonesian_riches = {
+	name = atla2_removed_faction_goal_name
+	description = atla2_removed_faction_goal_desc
+	category = medium_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = yes }
+	complete_effect = { }
+	ai_will_do = { base = 0 }
+}
+
+faction_goal_control_malayan_riches = {
+	name = atla2_removed_faction_goal_name
+	description = atla2_removed_faction_goal_desc
+	category = medium_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = yes }
+	complete_effect = { }
+	ai_will_do = { base = 0 }
+}
+
+faction_goal_resource_control = {
+	name = atla2_removed_faction_goal_name
+	description = atla2_removed_faction_goal_desc
+	category = long_term
+	group = FOCUS_FILTER_INDUSTRY
+	visible = { always = no }
+	completed = { always = yes }
+	complete_effect = { }
+	ai_will_do = { base = 0 }
+}

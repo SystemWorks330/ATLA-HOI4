@@ -1,6 +1,6 @@
 characters={
 	MER_hui={
-		name="Hui"
+		name=MER_hui
 		portraits={
 			civilian={
 				large="gfx/leaders/MER/Portrait_Merchant_Galin.dds"
@@ -14,7 +14,7 @@ characters={
 		}
 	}
 	MER_generic={
-		name="Generic"
+		name=MER_generic
 		portraits={
 			civilian={
 				large="gfx/leaders/MER/Portrait_Merchant_colonialism.dds"

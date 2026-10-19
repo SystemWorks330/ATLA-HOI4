@@ -880,6 +880,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = water_light_armor_tech_1
+			ignore_for_layout = yes
 			research_cost_coeff = 1
 		}
 		allow_branch = {
@@ -4714,6 +4715,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = water_medium_plates_1
+			ignore_for_layout = yes
 			research_cost_coeff = 1
 		}
 		allow_branch = {
@@ -4753,6 +4755,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = water_medium_plates_2
+			ignore_for_layout = yes
 			research_cost_coeff = 1
 		}
 		allow_branch = {
@@ -4795,6 +4798,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = water_medium_plates_3
+			ignore_for_layout = yes
 			research_cost_coeff = 1
 		}
 		allow_branch = {
@@ -4832,6 +4836,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = water_medium_plates_4
+			ignore_for_layout = yes
 			research_cost_coeff = 1
 		}
 		allow_branch = {

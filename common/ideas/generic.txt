@@ -428,7 +428,7 @@ ideas = {
 			}
 			
 			traits = {
-				custumary_law
+				customary_law
 			}
 			ai_will_do = {
 				factor = 0.5

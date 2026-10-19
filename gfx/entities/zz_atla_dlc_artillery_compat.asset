@@ -1,0 +1,15 @@
+entity = {
+	clone = "artillery_gun_entity"
+	name = "ENG_artillery_gun_entity"
+}
+
+entity = {
+	clone = "artillery_gun_entity"
+	name = "ENG_anti_tank_gun_entity"
+}
+
+entity = {
+	clone = "artillery_gun_entity"
+	name = "JAP_anti_tank_gun_entity"
+}
+

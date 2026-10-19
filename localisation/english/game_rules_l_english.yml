@@ -7,10 +7,10 @@
  custom_diff_strong_air:0 "@SAT Strengthen the Air Nomads"
 
  RULE_GROUP_EVENT_OUTCOME:0 "AI Event Outcomes"
- GENOCIDE_AI_BEHAVIOR:0 "Air Nomad Genocide"
- RULE_OPTION_EARTHKINGDOM_AIR_GENOCIDE:0 "Earth Kingdom Attacks"
+ GENOCIDE_AI_BEHAVIOR:0 "Air Nomad Attacks"
+ RULE_OPTION_EARTHKINGDOM_AIR_GENOCIDE:0 "Earth Kingdom Invades"
  RULE_OPTION_EARTHKINGDOM_AIR_GENOCIDE_DESC:0 "The Earth Kingdom has much to gain from wiping the air nomads and blaming it on the Fire Nation."
- RULE_OPTION_FIRENATION_AIR_GENOCIDE:0 "Fire Nation Attacks"
+ RULE_OPTION_FIRENATION_AIR_GENOCIDE:0 "Fire Nation Invades"
  RULE_OPTION_FIRENATION_AIR_GENOCIDE_DESC:0 "The Fire Nation should kill the avatar and eliminate the threat he represents."
  RULE_OPTION_NO_AIR_GENOCIDE:0 "No Attack"
  RULE_OPTION_NO_AIR_GENOCIDE_DESC:0 "Why bother with the air nomads?"

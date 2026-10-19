@@ -1,0 +1,30 @@
+spriteTypes = {
+
+spriteType = {
+		name = "GFX_army_hq_template_bg"
+		textureFile = "gfx/interface/officer_corp/army_hq_template_bg.dds"
+	}
+
+spriteType = {
+		name = "GFX_officer_corp_army_hq_bg"
+		textureFile = "gfx/interface/tiles/tiled_window_transparent.dds"
+	}
+
+spriteType = {
+		name = "GFX_captured_commanders_button"
+		textureFile = "gfx/interface/officer_corp/captured_commanders_button.dds"
+	}
+
+spriteType = {
+		name = "GFX_army_hq_button"
+		textureFile = "gfx/interface/officer_corp/army_hq_button.dds"
+	}
+
+
+
+
+
+
+
+
+}

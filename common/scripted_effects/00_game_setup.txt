@@ -34,6 +34,18 @@ instant_resource_calc = {
 }
 
 permanent_spirits_and_modifiers = {
+	if = {
+		limit = { NOT = { has_variable = naval_coordination_spirit_var } }
+		set_variable = { naval_coordination_spirit_var = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = naval_quality_spirit_var } }
+		set_variable = { naval_quality_spirit_var = 0 }
+	}
+	if = {
+		limit = { NOT = { has_variable = naval_discipline_spirit_var } }
+		set_variable = { naval_discipline_spirit_var = 0 }
+	}
 	add_ideas = {
 		strategic_redeployment_blocker
 	}
@@ -50,6 +62,7 @@ permanent_spirits_and_modifiers = {
 	add_dynamic_modifier = { modifier = logistics_and_orga_spirit }
 	add_dynamic_modifier = { modifier = wages_and_professionalism_spirit }
 	add_dynamic_modifier = { modifier = unit_leader_spirit }
+	add_dynamic_modifier = { modifier = naval_command_spirit }
 	add_dynamic_modifier = { modifier = avatar_effects }
 	set_variable = { spirit_army_orga = logistic_spirit_var }
 	multiply_variable = { spirit_army_orga = 0.015 }

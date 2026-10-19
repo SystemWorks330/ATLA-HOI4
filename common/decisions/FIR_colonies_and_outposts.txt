@@ -3,6 +3,9 @@ generic_debug_view = {
 		allowed = {
 			tag = FIR
 		}
+		
+		icon = start_hundredyears
+
 		visible = {	
 			
 		}
@@ -55,6 +58,9 @@ generic_debug_view = {
 	}
 
 	start_colony_debug = {
+
+		icon = activate_coloniesquick
+
 		allowed = {
 			tag = FIR
 		}
@@ -72,6 +78,9 @@ generic_debug_view = {
 	}
 
 	colony_reset_debug = {
+
+		icon = reset_colonies
+		
 		allowed = {
 			tag = FIR
 		}

@@ -22,3 +22,14 @@ unit_leader_spirit = {
 	army_leader_start_level = mtth:spirit_leader_level_modifier
 	officer_wages = mtth:spirit_leader_cost_modifier
 }
+
+naval_command_spirit = {
+	enable = { always = yes }
+
+	naval_invasion_division_cap = mtth:naval_spirit_invasion_division_cap
+	naval_invasion_prep_speed = mtth:naval_spirit_invasion_prep_speed
+	naval_strike_targetting_factor = mtth:naval_spirit_strike_targetting
+	naval_strike_attack_factor = mtth:naval_spirit_port_strike
+	convoy_escort_efficiency = mtth:naval_spirit_escort_efficiency
+	sortie_efficiency = mtth:naval_spirit_sortie_efficiency
+}

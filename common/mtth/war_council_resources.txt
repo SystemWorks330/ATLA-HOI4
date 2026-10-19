@@ -1,0 +1,33 @@
+atla_war_council_army_daily_xp = {
+	base = 0
+	modifier = {
+		set_temp_variable = { atla_wc_xp_factor = modifier@experience_gain_army_factor }
+		add_to_temp_variable = { atla_wc_xp_factor = 1 }
+		set_temp_variable = { atla_wc_daily_xp = modifier@experience_gain_army }
+		multiply_temp_variable = { atla_wc_daily_xp = atla_wc_xp_factor }
+		add = atla_wc_daily_xp
+	}
+}
+
+atla_war_council_navy_daily_xp = {
+	base = 0
+	modifier = {
+		set_temp_variable = { atla_wc_xp_factor = modifier@experience_gain_navy_factor }
+		add_to_temp_variable = { atla_wc_xp_factor = 1 }
+		set_temp_variable = { atla_wc_daily_xp = modifier@experience_gain_navy }
+		multiply_temp_variable = { atla_wc_daily_xp = atla_wc_xp_factor }
+		add = atla_wc_daily_xp
+	}
+}
+
+atla_war_council_air_daily_xp = {
+	base = 0
+	modifier = {
+		set_temp_variable = { atla_wc_xp_factor = modifier@experience_gain_air_factor }
+		add_to_temp_variable = { atla_wc_xp_factor = 1 }
+		set_temp_variable = { atla_wc_daily_xp = modifier@experience_gain_air }
+		multiply_temp_variable = { atla_wc_daily_xp = atla_wc_xp_factor }
+		add = atla_wc_daily_xp
+	}
+}
+

@@ -37,6 +37,236 @@ guiTypes = {
 			name = "Background"
 			quadTextureSprite ="GFX_tiled_plain_bg2"
 		}
+		
+
+		#################### NEW DOCTRINES SYSTEM IN TECHNOLOGIES, EVERYTHING HERE IN WIP ####################
+		
+		containerWindowType = {
+			name = "innovation_army_folder"
+			position = { x=0 y=47 }
+			size = { width = 100%% height = 100%% }
+			margin = { top = 13 left = 13 bottom = 24 right = 25}
+			drag_scroll = { left middle }
+			verticalScrollbar = "right_vertical_slider"
+			horizontalScrollbar = "bottom_horizontal_slider"
+			scroll_wheel_factor = 60
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_window_2b_border"
+			}
+
+			containerWindowType = {
+				name = "size_filler"
+				position = { x=0 y=0 }
+				size = { width = 2100 height = 100% }
+			}
+
+			containerWindowType = {
+				name = "techtree_stripes"
+				position = { x= 0 y= 0 }
+				size = {
+					width = 3000 height = 1275
+					min = { width = 100%% height = 100%% }
+				}
+				clipping = no
+			}
+
+			iconType = {
+				name ="power_bg"
+				spriteType = "GFX_power_bg"
+				position = { x=85 y=33 }
+			}
+			iconType = {
+				name ="substance_bg"
+				spriteType = "GFX_substance_bg"
+				position = { x=575 y=33 }
+			}
+			iconType = {
+				name ="change_bg"
+				spriteType = "GFX_change_bg"
+				position = { x=1050 y=33 }
+			}
+			iconType = {
+				name ="freedom_bg"
+				spriteType = "GFX_freedom_bg"
+				position = { x=1535 y=33 }
+			}
+
+			iconType = {
+				name ="positiv_jing_bg"
+				spriteType = "GFX_positiv_jing_bg"
+				position = { x=560 y=700 }
+			}	
+			iconType = {
+				name ="neutral_jing_bg"
+				spriteType = "GFX_neutral_jing_bg"
+				position = { x=930 y=700 }
+			}
+			iconType = {
+				name ="negativ_jing_bg"
+				spriteType = "GFX_negativ_jing_bg"
+				position = { x=1305 y=700 }
+			}
+
+			iconType = {
+				name ="positiv_jing_two_bg"
+				spriteType = "GFX_positiv_jing_two_bg"
+				position = { x=330 y=1410 }
+			}	
+			iconType = {
+				name ="neutral_jing_two_bg"
+				spriteType = "GFX_neutral_jing_two_bg"
+				position = { x=810 y=1410 }
+			}
+			iconType = {
+				name ="negativ_jing_two_bg"
+				spriteType = "GFX_negativ_jing_two_bg"
+				position = { x=1295 y=1410 }
+			}
+
+			instantTextBoxType = {
+				name = "power_title"
+				position = { x = 120 y = 35 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "POWER_DOCTRINE_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "substance_title"
+				position = { x = 600 y = 35 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "SUBSTANCE_DOCTRINE_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "change_title"
+				position = { x = 1080 y = 35 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "CHANGE_DOCTRINE_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "freedom_title"
+				position = { x = 1560 y = 35 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "FREEDOM_DOCTRINE_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+
+			instantTextBoxType = {
+				name = "positiv_jing_title"
+				position = { x = 360 y = 435 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "POSITIV_JING_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "neutral_jing_title"
+				position = { x = 840 y = 435 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "NEUTRAL_JING_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+			instantTextBoxType = {
+				name = "negativ_jing_title"
+				position = { x = 1320 y = 435 }
+				textureFile = ""
+				font = "hoi_22tech"
+				borderSize = {x = 0 y = 4}
+				text = "NEGATIV_JING_LABEL"
+				maxWidth = 400
+				maxHeight = 122
+				format = center
+				Orientation = "UPPER_LEFT"
+			}
+
+			gridboxtype = {
+				name = "power_tree"
+				position = { x=80 y=130 }
+				size = { width = 478 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"				
+			}
+			gridboxtype = {
+				name = "substance_tree"
+				position = { x=80 y=130 }
+				size = { width = 478 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"				
+			}
+			gridboxtype = {
+				name = "change_tree"
+				position = { x=80 y=130 }
+				size = { width = 478 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"				
+			}
+			gridboxtype = {
+				name = "freedom_tree"
+				position = { x=80 y=130 }
+				size = { width = 478 height = 1350 }
+				slotsize = { width=60 height= 60 }
+				format = "UP"				
+			}
+
+			containerWindowType = {
+				name = "techtree_xor_item1"
+				position = { x=295 y=1155 }
+				size = { width=60 height= 60 }
+
+				iconType = {
+					name = "power"
+					position = { x=0 y=0 }
+					spriteType = "GFX_techtree_xor_right"
+				}
+				iconType = {
+					name = "owo"
+					position = { x=960 y=0 }
+					spriteType = "GFX_techtree_xor_left"
+				}
+				iconType = {
+					name = "uwu"
+					position = { x=960 y=0 }
+					spriteType = "GFX_techtree_xor_right"
+				}
+				iconType = {
+					name = "reeee"
+					position = { x=1438 y=0 }
+					spriteType = "GFX_techtree_xor_left"
+				}
+			}
+		}
 
 		containerWindowType = {
 			name = "infantry_folder"
@@ -120,10 +350,9 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 					pdx_tooltip = "armor_desc"
 				}
-
 			}
 
-			#containerWindowType = {
+		#containerWindowType = {
 			#	name = "feudalism"
 			#	position = { x=0 y=690 }
 			#	size = { width = 2250 height = 40 }
@@ -479,85 +708,7 @@ guiTypes = {
 				format = "UP"
 			}
 
-
 		}
-
-		#containerWindowType = {
-		#	name = "snw_special_forces_folder"
-		#	position = { x=0 y=47 }
-		#	size = { width = 100%% height = 100%% }
-		#	margin = { top = 13 left = 13 bottom = 24 right = 25}
-		#	drag_scroll = { left middle }
-		#	verticalScrollbar = "right_vertical_slider"
-		#	horizontalScrollbar = "bottom_horizontal_slider"
-		#	scroll_wheel_factor = 60
-#
-		#	background = {
-		#		name = "Background"
-		#		quadTextureSprite ="GFX_tiled_window_2b_border"
-		#	}
-#
-		#	containerWindowType = {
-		#		name = "techtree_stripes"
-		#		position = { x= 0 y= 0 }
-		#		size = { 
-		#			width = 1800 height = 1900
-		#			min = { width = 100%% height = 100%% }
-		#		}
-		#		clipping = no
-		#		background = {
-		#			name = "Background"
-		#			quadTextureSprite ="GFX_techtree_stripes"
-		#		}
-#
-		#		iconType = {
-		#			name ="sunwarrior_techtree_bg"
-		#			spriteType = "GFX_sunwarrior_techtree_bg"
-		#			position = { x=0 y=0 }
-		#			alwaystransparent = yes
-		#		}
-#
-		#		containerWindowType = {
-		#			name = "fire_subtitles"
-		#			position = { x = 0 y = 50 }
-		#			size = { width = 200 height = 80% }				
-		#			#orientation = center_up
-		#			#origo = center_up
-		#	
-#
-		#			instantTextBoxType = {
-		#				name = "firebender"
-		#				position = { x = 500 y = 30 }
-		#				textureFile = ""
-		#				font = "hoi_33"
-		#				borderSize = {x = 0 y = 4}
-		#				text = "FIREBENDER"
-		#				maxWidth = 290
-		#				maxHeight = 62
-		#				format = center
-		#				Orientation = "UPPER_LEFT"
-		#				pdx_tooltip = firebender_desc
-		#			}
-#
-		#		}
-		#			
-		#	}
-#
-		#	gridboxtype = {
-        #    	name = "sunbender_equipment_1_tree"
-        #    	position = { x = 640 y = 20 }
-        #    	slotsize = { width = 70 height = 70 }
-        #    	format = "UP"
-        #	}
-        #	gridboxtype = {
-        #    	name = "dragon_tech_1_tree"
-        #    	position = { x = 1040 y = 160 }
-        #    	slotsize = { width = 70 height = 70 }
-        #    	format = "UP"
-        #	}
-#
-#
-		#}
 		
 		containerWindowType = {
 			name = "air_special_forces_folder"
@@ -3053,7 +3204,6 @@ guiTypes = {
 				slotsize = { width=60 height= 60 }
 				format = "UP"
 			}
-			
 		}
 
 		
@@ -3083,6 +3233,14 @@ guiTypes = {
 				name = "support_folder_tab"
 				position = { x = 200 y = 0 }
 				quadTextureSprite = "GFX_support_folder_tab"
+				frame = 1
+				clicksound = click_default
+			}
+
+			buttonType = {
+				name = "innovation_army_folder_tab"
+				position = { x = 960 y = 0 }
+				quadTextureSprite = "GFX_innovation_army_folder_tab"
 				frame = 1
 				clicksound = click_default
 			}
@@ -3259,9 +3417,9 @@ guiTypes = {
 				name = "industry_folder_tab"
 				quadTextureSprite = "GFX_industry_folder_tab"
 				frame = 1
-				clicksound = click_default
-				
+				clicksound = click_default	
 			}
+
 			iconType = {
 				name = "highlight_industry_folder"
 				spriteType = "GFX_tutorial_research_folder_icon_glow"
@@ -3281,9 +3439,6 @@ guiTypes = {
 			#	format = center
 			#	alwaystransparent = "yes"
 			#}
-
-			
-
 		}
 
 		buttonType = {
@@ -3706,6 +3861,105 @@ guiTypes = {
 			spriteType = "GFX_design_team_icon"
 		}
 		
+	}
+
+	containerWindowType = {
+		name = "techtree_innovation_army_folder_item"
+		position = { x=-36 y=-7 }
+		size = { width = 144 height = 72 }
+		clipping = no
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=72 y=36 }
+			spriteType = "GFX_technology_medium"
+			centerposition = yes
+			alwaystransparent = yes
+		}
+
+		iconType = {
+			name = "bonus_icon"
+			position = { x=115 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = 129 y = -22 }
+
+			font = "hoi_16mbs"
+			borderSize = { x = 4 y = 4 }
+			text = "lol boat"
+			maxWidth = 50
+			maxHeight = 20
+			format = right
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=50 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_td"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_1"
+			position = { x=100 y=80 }
+			size = { width = 35 height = 26 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_td"
+				alwaystransparent = yes
+			}
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_2"
+			position = { x=141 y=55 }
+			size = { width = 35 height = 26 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+
+			iconType = {
+				name = "picture"
+				position = { x=4 y=2 }
+				spriteType = "GFX_subtech_td"
+				alwaystransparent = yes
+			}
+		}
+		iconType = {
+			name = "can_assign_design_team_icon"
+			position = { x=0 y=42 }
+			spriteType = "GFX_design_team_icon"
+		}
 	}
 
 	containerWindowType = {
@@ -4719,54 +4973,6 @@ guiTypes = {
 			position = { x=5 y=55 }
 			spriteType = "GFX_design_team_icon"
 		}
-		
-	}
-
-
-	containerWindowType = {
-		name = "techtree_artillery_folder_small_item"
-		position = { x=0 y=0 }
-		size = { width = 72 height = 72 }
-		clipping = no
-
-		background = {
-			name = "Background"
-			quadTextureSprite ="GFX_technology_unavailable_item_bg"
-		}
-				
-		gridboxtype = {
-			# contains special_project_specialization
-			name = "special_project_specialization_list"
-		}
-
-		iconType = {
-			name = "Icon"
-			position = { x=3 y=3 }
-			spriteType = "GFX_technology_medium"
-			alwaystransparent = yes
-		}
-		iconType = {
-			name = "bonus_icon"
-			position = { x=3 y=-22 }
-			spriteType = "GFX_tech_bonus"
-		}
-		instantTextBoxType = {
-			name = "bonus"
-			position = { x = 17 y = -22 }
-			textureFile = ""
-			font = "hoi_16mbs"
-			borderSize = {x = 4 y = 4}
-			text = "lol boat"
-			maxWidth = 50
-			maxHeight = 20
-			format = right
-		}
-
-		iconType = {
-			name = "can_assign_design_team_icon"
-			position = { x=0 y=42 }
-			spriteType = "GFX_design_team_icon"
-		}
 	}
 
 	containerWindowType = {
@@ -4864,6 +5070,68 @@ guiTypes = {
 		}
 
 
+	}
+
+	containerWindowType = {
+		name = "techtree_artillery_folder_small_item"
+		position = { x=0 y=0 }
+		size = { width = 120 height = 72 }
+		clipping = no
+
+		background = {
+			name = "bg"
+			quadTextureSprite ="GFX_technology_unavailable_item_bg"
+		}
+
+		iconType = {
+			name = "Icon"
+			position = { x=3 y=3 }
+			spriteType = "GFX_technology_medium"
+			alwaystransparent = yes
+		}
+		
+		iconType = {
+			name = "bonus_icon"
+			position = { x=-1 y=-22 }
+			spriteType = "GFX_tech_bonus"
+		}
+		
+		instantTextBoxType = {
+			name = "bonus"
+			position = { x = -1 y = -22 }
+			textureFile = ""
+			font = "hoi_16mbs"
+			borderSize = {x = 4 y = 4}
+			text = "lol boat"
+			maxWidth = 80
+			maxHeight = 20
+			format = center
+		}
+
+		containerWindowType = {
+			name = "sub_technology_slot_0"
+			position = { x=72 y=1 }
+			size = { width = 35 height = 26 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				spriteType ="GFX_subtechnology_unavailable_item_bg"
+			}
+			
+			iconType = {
+				name = "picture"
+				position = { x=2 y=2 }
+				spriteType = "GFX_subtech_siege"
+				alwaystransparent = yes
+			}
+		}
+
+		iconType = {
+			name = "can_assign_design_team_icon"
+			position = { x=0 y=42 }
+			spriteType = "GFX_design_team_icon"
+		}
 	}
 
 	containerWindowType = {

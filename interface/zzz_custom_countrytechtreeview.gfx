@@ -1,0 +1,100 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_techtree_details_progress_bar_frame"
+		textureFile = "gfx//interface//techtree//techtree_details_progress_bar_frame.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_techtree_details_progress_bar"
+		color = { 0.0 0.5 0.0 }
+		colortwo = { 1.0 0.0 0.0 }
+		textureFile1 = "gfx\\interface\\prod_progress_bar2.dds"
+		textureFile2 = "gfx\\interface\\prod_progress_bar2_bg.dds"
+		size = { x = 218 y = 21 }
+		effectFile = "gfx/FX/progress_startend.lua"
+	}
+
+	spriteType = {
+		name = "GFX_tech_idea_bg"
+		textureFile = "gfx//interface//add_pol_idea_button.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	spriteType = {
+		name = "GFX_wonderweapons_bg"
+		textureFile = "gfx//interface//wonderweapons_bg.dds"
+	}
+	corneredTileSpriteType = {
+		name = "GFX_tiled_research_bg"
+		size= { x=96 y=96 }
+		textureFile = "gfx//interface//tiles//tiled_research_bg.dds"
+		borderSize = { x=32 y=32 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = yes	
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_techtree_stripes"
+		size= { x=122 y=244 }
+		textureFile = "gfx//interface//techtree//techtree_stripes.dds"
+		borderSize = { x=0 y=0 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = yes
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_paper_bg2"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//tiled_paper_bg2.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"	
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_tiled_paper_w_frame_one_border"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//tiled_paper_w_frame_one_border.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"	
+	}	
+	
+	corneredTileSpriteType = {
+		name = "GFX_tiled_paper_w_frame_bg"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//tiled_paper_w_frame_bg.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"	
+	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_tiled_paper_bg"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//tiles//tiled_paper_bg.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"	
+	}
+
+	SpriteType = {
+		name = "GFX_research_top_win"
+		textureFile = "gfx//interface//research_top_win.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}	
+	
+	spriteType = {
+		name = "GFX_infantry_folder_tab"
+		textureFile = "gfx//interface//techtree//techtree_infantry_tab.dds"
+		noOfFrames = 2		
+	}
+
+	spriteType = {
+		name = "GFX_bending_doctrine_tab"
+		textureFile = "gfx//interface//techtree//techtree_landdoctrine_tab.dds"
+		noOfFrames = 2		
+	}
+}

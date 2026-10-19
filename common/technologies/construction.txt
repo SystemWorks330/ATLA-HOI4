@@ -232,6 +232,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = farm_united
+			ignore_for_layout = yes
 			research_cost_coeff = 1
 		}
 		
@@ -2811,6 +2812,7 @@ technologies = {
 		}
 		path = {
 			leads_to_tech = wall_1
+			ignore_for_layout = yes
 			research_cost_coeff = 1
 		}
 

@@ -1010,7 +1010,6 @@ script_enum_equipment_bonus_type = {
 	projectile_equipment_3
 	projectile_equipment_4
 	projectile_equipment_5
-	strat_bomber_equipment
 	jet_strat_bomber_equipment
 	strat_bomber_equipment_1
 	strat_bomber_equipment_2
