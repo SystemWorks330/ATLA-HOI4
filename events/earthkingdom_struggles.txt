@@ -669,7 +669,7 @@ country_event = {
 			limit = {
 				has_country_flag = western_alliance_leader
 			}
-			create_faction = Western_Alliance
+			create_faction_from_template = faction_template_atla_western_alliance
 			every_country = {
 				limit = {
 					has_country_flag = western_alliance

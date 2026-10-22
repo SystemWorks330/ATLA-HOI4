@@ -48,7 +48,7 @@ FIR_conquest_category = {
 		days_remove = 200
 
 		remove_effect = {
-			create_faction = Alliance_of_Fire
+			create_faction_from_template = faction_template_atla_alliance_of_fire
 		}
 
 		ai_will_do = {

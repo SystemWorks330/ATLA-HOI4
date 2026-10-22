@@ -5,7 +5,7 @@ call_to_war_rule_faction_leader_only = {
 	}
 	ai_will_do = {
 		base = 0
-		modifier = { 
+		modifier = {
 			add = 2
 			is_faction_leader = yes
 		}
@@ -14,7 +14,6 @@ call_to_war_rule_faction_leader_only = {
 		political_power_factor = -0.1
 	}
 }
-
 call_to_war_rule_major_only = {
 	type = call_to_war_rules
 	trigger = {
@@ -22,7 +21,7 @@ call_to_war_rule_major_only = {
 	}
 	ai_will_do = {
 		base = 0
-		modifier = { 
+		modifier = {
 			add = 2
 			tag = FIR
 		}
@@ -31,21 +30,17 @@ call_to_war_rule_major_only = {
 		political_power_factor = -0.05
 	}
 }
-
 call_to_war_rule_independent_only = {
 	type = call_to_war_rules
 	trigger = {
-		is_subject = no 
+		is_subject = no
 	}
 }
-
-# World Tension
-
 guarantee_threat_reduction_15 = {
 	type = call_to_war_rules
 	ai_will_do = {
 		base = 0
-		modifier = { 
+		modifier = {
 			add = 2
 		}
 	}
@@ -55,9 +50,7 @@ guarantee_threat_reduction_15 = {
 	}
 	effect = {
 	}
-	
 }
-
 guarantee_threat_reduction_40 = {
 	type = call_to_war_rules
 	ai_will_do = {
@@ -68,5 +61,26 @@ guarantee_threat_reduction_40 = {
 		stability_factor = -0.1
 	}
 	effect = {
+	}
+}
+call_to_war_defensive_only = {
+	type = call_to_war_rules
+	trigger = {
+		has_defensive_war = yes
+	}
+	modifier = {
+		defensive_war_stability_factor = 0.1
+	}
+}
+call_to_war_rule_faction_leader_offensive_only = {
+	type = call_to_war_rules
+	trigger = {
+		OR = {
+			is_faction_leader = yes
+			has_defensive_war = yes
+		}
+	}
+	modifier = {
+		defensive_war_stability_factor = 0.05
 	}
 }

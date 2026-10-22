@@ -1,1 +1,5 @@
 NDefines.NMilitary.MEDAL_AWARD_CONFIRM_PP_THRESHOLD = 200.0
+
+NDefines.NFactions.FACTION_INTELLIGENCE_ALLOWED_ADVISOR_TRAIT = {
+    "spymaster",
+}

@@ -765,7 +765,7 @@ scripted_gui = {
 					base = 100
 					modifier = {
 						check_variable = {
-							FROM.ration_balance < 0.01	#Leads to farm output boosting technologies, so prioritize if you have food shortages.
+							FROM.ration_balance < 0.01	
 						}
 						factor = 2
 					}

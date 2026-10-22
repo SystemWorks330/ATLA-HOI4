@@ -117,7 +117,7 @@ if = {
 
 }
 
-create_faction = Air_Nomads
+create_faction_from_template = faction_template_atla_air_nomads
 add_to_faction = WAT
 add_to_faction = EAT
 add_to_faction = SAT

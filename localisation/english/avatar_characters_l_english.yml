@@ -701,16 +701,16 @@ KYI_kyoshi_leader:0 "Ijuru"
 KYI_suki:0 "Suki"
 KYI_kyoshi_warrior:0 "Kyoshi Warrior"
 KYI_generic:0 "Generic"
-# Laghima Mountains
+
 LAM_fung:0 "Fung"
 LAM_generic:0 "Generic"
-# Makapu
+
 MAK_hongli:0 "Hong-Li"
 MAK_generic:0 "Generic"
 # Han Tui
 HAN_gambu:0 "Gambu"
 HAN_generic:0 "Generic"
-# Hebai Forest
+
 HEB_oh:0 "Oh"
 HEB_generic:0 "Generic"
 # Islands

@@ -172,7 +172,7 @@
  fir_treaty.9.a:0 "This is madness"
 
 
- # Events
+ 
  fir_clan.1.t:0 "The Clans Awaken"
  fir_clan.1.d:0 "The ancient houses of the Fire Nation, long suppressed under the centralised rule of Fire Lord Sozin and his successors, have begun to reassert themselves. Loyalists such as the Keohso, who remember the glory of conquest, Reformists like the Saowan, who dream of a different Fire Nation, and Isolationists such as the Sei'Naka who wish only to withdraw behind the home islands, all now demand their voices be heard.\n\nThe balance of power between them is fragile. Push too hard in any direction, and the nation may fracture."
  fir_clan.1.a:0 "We will walk this tightrope carefully."
@@ -349,7 +349,7 @@
  fir_colonies.4.a:0 "Enforce our culture"
  fir_colonies.4.b:0 "Recruit locals in the Army"
  
- #air attacks
+ 
  air_gen.1.t:0 "Dai Li Proposes Plan"
  air_gen.1.d:0 "It has come to light that the Dai Li, the secret police force of the Earth Kingdom, has been working on a plan to wipe out the Air Nomads and blame it on the Fire Nation. The Dai Li Chief believes that the destruction of the Air Nomads, a peaceful and neutral nation, would be a devastating blow to the Fire Nation's reputation and would turn public opinion against them."
  air_gen.1.a:0 "End those filthy nomads."
@@ -404,7 +404,7 @@
  air_gen.8.b:0 "On a second thought..."
  fir_cold_feet_description:0 "Do not attack the Air Nomads - you risk having expansion plans ruined!"
 
-### CLANS
+
  air_gen.7.b:0 "No, there is another way."
  
  air_gen.11.t:0 "A Different Path for the Fire Nation"

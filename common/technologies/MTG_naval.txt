@@ -303,10 +303,10 @@ technologies = {
 					factor = 0.1
 			}
 			#TODO
-			#modifier = {	#We are at war and it is going so bad that better navy won't help
+			
 
 			#}
-			#modifier = {	#We are at war and the enemies no longer have the industrial capacity to contest our navy
+			
 
 			#}
 		}

@@ -1016,7 +1016,7 @@ peoples_initiative = {								#### percentage of prosperity reinvested in free c
 	postfix = none
 }
 
-education_laws_cost_factor = {							#### cost of education laws
+education_laws_cost_factor = {							
 	color_type = bad
 	value_type = percentage
 	precision = 0

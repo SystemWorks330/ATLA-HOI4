@@ -12,14 +12,13 @@ manpower_contribution_small = {
 		}
 	}
 }
-
 manpower_contribution_medium = {
 	type = contribution_rule
 	ai_will_do = {
 		base = 0
 		modifier = {
 			add = 1
-			is_major = no 
+			is_major = no
 		}
 	}
 	available = {
@@ -31,16 +30,10 @@ manpower_contribution_medium = {
 		}
 	}
 }
-
 manpower_contribution_high = {
 	type = contribution_rule
 	ai_will_do = {
 		base = 0
-		modifier = {
-			add = 2
-			is_major = yes
-			has_war = yes
-		}
 	}
 	available = {
 		has_faction_military_unlocked = yes

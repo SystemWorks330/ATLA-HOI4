@@ -185,7 +185,7 @@ guiTypes = {
 	}
 	
 
-	### MAIN MENU PANEL (DLC Ownership), edited out
+	
 	containerWindowType = {
 		name  ="mainmenu_dlc_ownership"
 		position = { x=-9999999 y =0 }

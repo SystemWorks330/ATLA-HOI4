@@ -1,4 +1,4 @@
-# Took way too long to do
+
 
 generic_minister_random_trait = {
 

@@ -1,9 +1,14 @@
-# Minimal fallback used when a country has no faction template assigned.
-
 faction_template_generic = {
+	name = faction_template_generic
 	manifest = faction_manifest_strength_in_unity
 	can_leader_join_other_factions = yes
-	default_rules = { joining_rule_neighbors_only joining_rule_has_no_offensive_war dismissal_rule_offensive_war change_leader_rule_manpower goals_only_faction_leader }
+	default_rules = {
+		joining_rule_neighbors_only
+		joining_rule_has_no_offensive_war
+		dismissal_rule_offensive_war
+		change_leader_rule_manpower
+		goals_only_faction_leader
+	}
 	goals = {
 		faction_goal_growing_the_faction
 		faction_goal_a_large_faction
@@ -11,109 +16,129 @@ faction_template_generic = {
 		faction_goal_defeating_our_enemies
 	}
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
+	available = {
+		always = yes
+	}
 }
-
-# Disable vanilla faction templates that rely on removed country and ideology content.
-
 faction_template_generic_dominance = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_defensive_democratic = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_anti_communist = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_anti_fascist = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_regional_anti_communist = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_regional_anti_democratic = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_regional = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_world_revolution = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_industrial_focus = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_african_unity = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_pan_american = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_hipanic_alliance_faction = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_european_unity = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_european_dominance = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_european_dominance_monarchist = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_asian_dominance = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }
-
 faction_template_middle_east_dominance = {
 	manifest = faction_manifest_strength_in_unity
 	icon = GFX_faction_logo_generic
-	visible = { always = no }
+	visible = {
+		always = no
+	}
 }

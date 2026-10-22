@@ -72,5 +72,5 @@ invention_check = {
         }
     }
 
-    # (repeat NOT = { has_country_flag = all_inventions_made } for remaining blocks)
+    
 }

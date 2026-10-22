@@ -146,7 +146,7 @@ defined_text = {
 	
 }
 
-# State-scoped versions for use in state view tooltips
+
 defined_text = {
 	name = GetCulturalAdvisorState
 	text = {

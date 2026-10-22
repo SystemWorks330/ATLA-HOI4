@@ -1,8 +1,8 @@
-# reinstated_clans             - Clan system is active
-# war_clans_deliberate         - Entered via deliberate path choice
-# clan_collapse_warning_1      - First warning fired
-# clan_collapse_warning_2      - Second warning fired
-# clan_civil_war_imminent      - Final collapse, civil war event pending
+
+
+
+
+
 
 FIR_clan_category = {
 
@@ -32,7 +32,7 @@ FIR_clan_category = {
 		complete_effect = {
 			set_country_flag = reinstated_clans
 
-			# Random dominant faction at start
+			
 			random_list = {
 				33 = {
 					set_variable = { clan_loyalist_var = 60 }
@@ -66,7 +66,7 @@ FIR_clan_category = {
 	}
 
 	###########################
-	# LOYALIST DECISIONS
+	
 	###########################
 
 	FIR_empower_loyalists = {
@@ -196,7 +196,7 @@ FIR_clan_category = {
 	}
 
 	###########################
-	# REFORMIST DECISIONS
+	
 	###########################
 
 	FIR_empower_reformists = {
@@ -328,7 +328,7 @@ FIR_clan_category = {
 	}
 
 	###########################
-	# ISOLATIONIST DECISIONS
+	
 	###########################
 
 	FIR_empower_isolationists = {
@@ -460,7 +460,7 @@ FIR_clan_category = {
 	}
 
 	###########################
-	# STABILIZATION DECISIONS
+	
 	###########################
 
 	FIR_clan_appeasement = {
@@ -560,7 +560,7 @@ FIR_clan_category = {
 	}
 
 	###########################
-	# REUNIFICATION DECISION
+	
 	###########################
 
 	FIR_clan_reunification = {

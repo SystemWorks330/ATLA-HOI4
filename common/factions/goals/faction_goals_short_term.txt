@@ -1,4 +1,4 @@
-# ATLA2 faction goals. Vanilla-country goals are intentionally omitted.
+
 
 faction_goal_growing_the_faction = {
 	name = growing_the_faction
@@ -49,7 +49,7 @@ faction_goal_an_armored_fist = {
 			    operators = { faction_members }
 			    name = FACTION
 			}
-			unit = armor
+			unit_category = { category_all_tanks }
 			equipment_ratio = 0.9
 			size > 49
 		}
@@ -62,15 +62,10 @@ faction_goal_an_armored_fist = {
 				limit = { NOT = { has_completed_goal = faction_goal_an_armored_fist } }
 				army_experience = 50
 				random_character = {
-					tooltip = ONE_PANZER_GENERAL
+					tooltip = ATLA_FACTION_ARMY_COMMANDER
 					visible_when_empty = yes
 					limit = {
-						is_unit_leader = yes
-						OR = {
-							has_trait = armor_officer
-							has_trait = panzer_leader
-							has_trait = panzer_expert
-						}
+						is_army_leader = yes
 					}
 					gain_xp = 400
 					add_attack = 1
@@ -107,14 +102,13 @@ faction_goal_an_infantry_army = {
 				limit = { NOT = { has_completed_goal = faction_goal_an_infantry_army } }
 				army_experience = 50
 				random_character = {
-					tooltip = ONE_INFANTRY_GENERAL
+					tooltip = ATLA_FACTION_INFANTRY_COMMANDER
 					visible_when_empty = yes
 					limit = {
-						is_unit_leader = yes
+						is_army_leader = yes
 						OR = {
-							has_trait = infantry_officer
-							has_trait = infantry_leader
-							has_trait = infantry_expert
+							has_trait = offensive_infantry
+							has_trait = defensive_infantry
 						}
 					}
 					gain_xp = 400

@@ -56,7 +56,7 @@ air_wings = {
 			owner = "EAT"
 			amount = 20
 		}
-		# name = "Bison Herd" # The game log reports "name set without airwing first" here.
+		
 	}
 }
 

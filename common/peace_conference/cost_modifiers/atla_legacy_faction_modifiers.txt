@@ -1,0 +1,10 @@
+peace_action_modifiers = {
+	faction_rule_modifier_encourage_force_government = {
+		peace_action_type = force_government
+		enable = {
+			always = yes
+		}
+		cost_multiplier = 0.8
+		faction_modifier = yes
+	}
+}

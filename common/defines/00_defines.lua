@@ -4,7 +4,7 @@ NGame = {
 	START_DATE = "12.1.1.12",
 	END_DATE = "174.1.1.1",
 	MAP_SCALE_PIXEL_TO_KM = 0.5,					-- Yes, we did the math / 2800:5600
-	SAVE_VERSION = 30,								-- 1.15.0 (unnamed)
+	SAVE_VERSION = 30,								
 	MINOR_SAVE_VERSION = 1,                         -- Minor save version is used to identifiy different backward compatible savegame versions
 	CHECKSUM_SALT = "zwOdv5d9wm9uDSOT",				-- Data to modify generated checksum when game binaries have changed but not any content files.
 	LAG_DAYS_FOR_LOWER_SPEED = 10,					-- Days of client lag for decrease of gamespeed
@@ -1581,9 +1581,9 @@ NNavy = {
 	UNDERWAY_REPLENISHMENT_PRIORITY = 7,							-- Default convoy priority for underway replenishment
 	-- Convoy Priorities END
 	
-	NAVAL_HOMEBASE_CALCULATION_DISTANCE_CUTOFF = 1000,				-- Tuning parameter for homebase calculation. Distance to normalize against. Everything above said value will be treated as score = 0.
-	NAVAL_HOMEBASE_BUILDING_SCORE_FACTOR = 0.02,					-- Tuning parameter for homebase calculation. Multiplier for how much the level of the naval base impacts its total score.
-	NAVAL_HOMEBASE_OWNERSHIP_BONUS = 0.04,							-- Tuning parameter for homebase calculation. Adds to total score based on if the base is owned by the country doing the calculation.
+	NAVAL_HOMEBASE_CALCULATION_DISTANCE_CUTOFF = 1000,				
+	NAVAL_HOMEBASE_BUILDING_SCORE_FACTOR = 0.02,					
+	NAVAL_HOMEBASE_OWNERSHIP_BONUS = 0.04,							
 	NAVAL_MISSION_AI_RANGE_THRESHOLD_EPSILON = 0.25,				-- Epsilon tolerance for AI naval range threshold checks.
 	NAVAL_MISSION_AI_CONVOY_NORMALIZATION_TARGET = 150,				-- Number of convoys to normalize against when scoring convoy raiding missions.
 
@@ -1856,7 +1856,7 @@ NNavy = {
 		0.5,	-- low
 		0.7,	-- medium
 		0.9,	-- high
-		0.0,	-- on order (AI-managed; required by HOI4 1.19.3)
+		0.0,	
 	},
 	
 	ORG_COST_WHILE_MOVING = { -- org cost while the ships are moving
@@ -2110,7 +2110,7 @@ NNavy = {
 		17,	-- Mine sweepers
 		29,	-- Patrol task force
 		1,	-- Convoy escort
-		5,  -- Dominance Patrol Force
+		5,  
 	},
 
 	-- NOTE: you can see the effect of changing the values down below by running the command tfria with a task force selected
@@ -2176,9 +2176,9 @@ NNavy = {
 	SUBMARINE_REVEAL_BASE_CHANCE 									= 12,		-- Base factor for submarine detection. It's modified by the difference of a spotter's submarines detection vs submarine visibility. Use this variable for game balancing. setting this too low will cause bad spotting issues.
 	SUBMARINE_REVEAL_POW 											= 3.0,		-- A scaling factor that is applied to the reveal chance in order to make large differences in detection vs visibility more pronounced
 	SUBMARINE_BASE_TORPEDO_REVEAL_CHANCE 							= 0.04,		-- Chance of a submarine being revealed when it fires. 1.0 is 100%. this chance is then multiplied with modifier created by comparing firer's visibiility and target's detection
-	SUBMARINE_BASE_STEALTH_VALUE									= 100,		-- Used in the reworked submarine detection formula.
-	SUBMARINE_REVEAL_DETECTION_MULTIPLIER							= 0.075,	-- Multiplies average submarine detection in the reworked formula.
-	SUBMARINE_REVEAL_TORPEDO_FIRING_DETECTION_MULTIPLIER			= 1.1,		-- Multiplier applied to submarine detection when firing torpedoes.
+	SUBMARINE_BASE_STEALTH_VALUE									= 100,		
+	SUBMARINE_REVEAL_DETECTION_MULTIPLIER							= 0.075,	
+	SUBMARINE_REVEAL_TORPEDO_FIRING_DETECTION_MULTIPLIER			= 1.1,		
 	
 	MAX_NUM_HOURS_TO_WAIT_AT_ALLY_DOCKYARDS_FOR_REPAIRS 			= 48,		-- taskforces will wait at most this amount of hours in ally bases for repairs before switching to another base for repairs
 	
@@ -3339,7 +3339,7 @@ NAI = {
 
 	MIN_INVASION_PLAN_VALUE_TO_EXECUTE = 0.2,				-- ai will only activate invasions if plan value is above this
 	MIN_INVASION_ORG_FACTOR_TO_EXECUTE = 0.75,				-- ai will only activate invasions if average org factor is above this
-	MIN_INVASION_UNITS_READY_TO_EXECUTE = 0.9,              -- ai will only activate invasions if this ratio of assigned units are ready
+	MIN_INVASION_UNITS_READY_TO_EXECUTE = 0.9,              
 	INVASION_UNITS_READY_AT_MIN_PLAN = 0.75,                -- units ready ratio required when plan value is at minimum threshold
 	INVASION_UNITS_READY_AT_MAX_PLAN = 0.25,                -- units ready ratio required when plan value is very high (1.0+)
 	MAX_INVASION_SIZE = 24,									-- max invasion group size
@@ -3551,7 +3551,7 @@ NAI = {
 	RAIDS_CREATE_FREQUENCY_DAYS = 7,                       -- How often will AI run its raid creation logic. Lowering this number may decrease performance.
 	RAIDS_SCORE_DIFF_TO_CANCEL = 0.3,                      -- If already-created low-scoring raids are blocking higher-scoring ones from being created due to command power, this allows the AI to cancel the lower-scoring raids. If `lowerScore < <value>*higherScore`, then the lower-scoring one may be cancelled. A value of 0.0 means it will never allow cancelling lower-scoring raids, while a value of 1.0 means it will always allow cancelling lower-scoring raids.
 	RAIDS_COMMAND_POWER_CAP_TO_CREATE = 60.0,              -- The AI will only try to create new raids if the command power cap is at least this.
-	RAIDS_MIN_SUCCESS_FOR_LAUNCH = 0.65,                   -- The AI will not launch a raid if the chance of success is lower than this.
+	RAIDS_MIN_SUCCESS_FOR_LAUNCH = 0.65,                   
 	RAIDS_CANCEL_AFTER_DAYS_LAUNCHABLE = 60,               -- If a raid has been launchable for more than <this> days but not been launched (e.g. due to bad success chance), the AI will cancel the raid.
 	RAIDS_NUKE_TARGET_CUT_OFF = 10,                        -- When AI selects targets for nukes, only pick from the <x> highest-scoring targets.
 	RAIDS_UNIT_SCORE_SUCCESS_CHANCE_FACTOR = 500.0,        -- When AI selects which units to use for raids, multiply the unit success chance modifier with this.
@@ -4577,7 +4577,7 @@ NFactions = {
 	AI_FACTION_POWER_PROJECTION_VALUE = 0.01,				-- AI score per Power Projection point
 	AI_MIN_POWER_PROJECTION_SCORE = -100,					-- Min AI score for Power Projection
 	AI_MAX_POWER_PROJECTION_SCORE = 100,					-- Max AI score for Power Projection
-	FACTION_INFLUENCE_LEND_LEASE_FACTOR=0.01,				-- how much the country's contribution in the faction affects its influence
+	FACTION_INFLUENCE_LEND_LEASE_FACTOR=0.025,				-- how much the country's contribution in the faction affects its influence
 	FACTION_INFLUENCE_WAR_SCORE_FACTOR=0.1,					-- how much the country's war score affects its influence
 	FACTION_INFLUENCE_EFFECTS_FACTOR=1,						-- how much the effects affects its influence
 	FACTION_INFLUENCE_INDUSTRIAL_CAPACITY_FACTOR = 5, 			--how much the country's industry affects its influence
@@ -4590,7 +4590,6 @@ NFactions = {
 	FACTION_MANPOWER_GIVE_CONTRIBUTION_SCALAR=0.1,			-- a scalar of how much contribution you get for giving a singular recruitable population to your faction
 	FACTION_MANPOWER_RECIEVE_CONTRIBUTION_SCALAR=0.1,		-- a scalar for how much contribution it takes to get a singular recruitable population
 	FACTION_INFLUENCE_SCIENTIST_CONTRIBUTION_VALUE = 0.5,				-- how much contribution one scientists gives to you if it is working for somebody else.
-	FACTION_SCIENTIST_CONTRIBUTION_VALUE = 3,				--how much contribution one scientists gives to you if it is working for somebody else.
 	ASSIGN_FACILITY_TO_FACTION_INITIATIVE_COST = 1,		--The initiative cost of assigning a facility to a faction
 	FACTION_ASSIGN_SCIENTIST_COST = 25,						--how much political power it costs to assign a supportive scientist
 	FACTION_UNLOCK_COMMANDER_COST = 1,						--how much initiative it costs to create a new faction theater
@@ -4634,13 +4633,13 @@ NFactions = {
 	MAX_NUM_MEDIUM_TERM_GOALS = 1,						-- Maximum number of medium term goals a faction can have at any one time
 	MAX_NUM_LONG_TERM_GOALS = 1,						-- Maximum number of long term goals a faction can have at any one time
 	REPLACING_UNFINISHED_FACTION_GOAL_COST = 1,			-- The cost of replacing a goal if it is not finished
-	PASSIVE_INITIATIVE_GENERATION = 0.01,				-- How much initiative we are generating per day, scaled by manifest progress and influence%
+	PASSIVE_INITIATIVE_GENERATION = 0.015,				-- How much initiative we are generating per day, scaled by manifest progress and influence%
 	MAX_FACTION_THEATERS = 4,							-- The maximum number of faction theaters that can be created
 	
 	AI_FACTION_THEATER_TEMPLATE_SELECTION_RANDOMNESS = 1,	-- AI will pick a weighted random template from the top of the list
 	AI_FACTION_THEATER_COMMANDER_SELECTION_RANDOMNESS = 1,	-- AI will pick a weighted random template from the top of the list
 
-	FACTION_INTELLIGENCE_ALLOWED_ADVISOR_TRAIT = { 
+	FACTION_INTELLIGENCE_ALLOWED_ADVISOR_TRAIT = { -- Which advisor traits you need to have to be able to be selected as spymaster. You need to be of slottype political advisor regardless
 		"head_of_intelligence",
 		"mastermind_code_cracker",
 		"expert_code_cracker",
@@ -4670,7 +4669,9 @@ NFactions = {
 		"PHI_intelligence_bureau_chief",
 		"HUN_stalinist_agent",
 		"JAP_tokko_chief",
-		"CHI_spymaster"
+		"CHI_spymaster",
+		"AST_intelligence_director",
+		"AST_indomitable_scout"
 
 	},
 	FACTION_INTELLIGENCE_UNLOCK_COST = 1,

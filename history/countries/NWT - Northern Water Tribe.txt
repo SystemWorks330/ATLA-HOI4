@@ -96,7 +96,7 @@ recruit_character = NWT_buthaka
 recruit_character = NWT_sangok
 recruit_character = NWT_generic
 
-create_faction = Water_Tribes
+create_faction_from_template = faction_template_atla_water_tribes
 add_to_faction = SWT
 
 if = {

@@ -906,6 +906,8 @@
  DIPLOMACY_ASSUME_FACTION_LEADERSHIP_ACTION_DESC:0 "Принять на себя лидерство во фракции $FACTION|H$."
  DIPLOMACY_ASSUME_FACTION_LEADERSHIP_DESC:0 "Принять на себя лидерство во фракции $FACTION|H$."
  DIPLOMACY_ASSUME_FACTION_LEADERSHIP_COST_DESC:0 "Это будет стоить £pol_power $COST|Y$, а остальные члены фракции не смогут пытаться перехватить лидерство в течение следующих $COOLDOWN|Y$ дней."
+ DIPLOMACY_ASSUME_FACTION_LEADERSHIP_POLITICAL_POWER_COST_DESC: "Стоимость принятия лидерства: £pol_power $COST|Y$"
+ DIPLOMACY_ASSUME_FACTION_LEADERSHIP_COOLDOWN_DESC: "Другие члены альянса не смогут получить лидерство в течение $COOLDOWN|Y$ дн."
  DIPLOMACY_ASSUME_FACTION_LEADERSHIP_RECIPIENT_DESC:0 "$COUNTRY|U$ приняли на себя лидерство во фракции $FACTION$."
  DIPLOMACY_ASSUME_FACTION_LEADERSHIP_OTHERS_DESC:0 "$COUNTRY|U$ приняли на себя лидерство во фракции $FACTION$."
  DIPLOMACY_ASSUME_FACTION_LEADERSHIP_NOT_ENOUGH_MANPOWER:0 "Чтобы значительно превзойти развернутые людские ресурсы текущего лидера и его субъектов, нам и нашим субъектам нужно эффективно развернуть $NEEDED|*Y$ людских ресурсов, но у нас есть только $CURRENT|*Y$."
@@ -1483,3 +1485,4 @@
  DR_CONDITIONAL_SURRENDER_OWN_SURRENDER_LEVEL:0 "Собственный прогресс капитуляции: "
  DR_CONDITIONAL_SURRENDER_MINOR_WAR:0 "Конфликт малой державы: "
  embargo_relation_tt:0 "Эмбарго ухудшит отношения между двумя странами."
+ DIPLOMACY_MESSAGE_DECLINED_MESSAGE_LANDLOCKED_COUNTRY: "$COUNTRY|UY$ — государство без выхода к морю."

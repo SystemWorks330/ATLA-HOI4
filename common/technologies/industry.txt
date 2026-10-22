@@ -2481,26 +2481,26 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
-				# ai_will_do = 3*(m-s)
-				#Make it percentual
-				#ai_will_do = 3 * {[(m-s)/m]*100}
+				
+				
+				
+				
 				set_temp_variable = {s = THIS.wood_variable}
 				set_temp_variable = {m = THIS.wood_max}
-				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
-				subtract_from_temp_variable = { #m-s
+				set_temp_variable = {d = m} 
+				subtract_from_temp_variable = { 
 					var = m
 					value = s
 				}
-				divide_temp_variable = { # (m-s)/m
+				divide_temp_variable = { 
 					var = m
 					value = d
 				}
-				multiply_temp_variable = { # [(m-s)/m] * 100
+				multiply_temp_variable = { 
 					var = m
 					value = 100
 				}
-				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
+				multiply_temp_variable = { 
 					var = m
 					value = 3
 				}
@@ -2569,26 +2569,26 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
-				# ai_will_do = 3*(m-s)
-				#Make it percentual
-				#ai_will_do = 3 * {[(m-s)/m]*100}
+				
+				
+				
+				
 				set_temp_variable = {s = THIS.wood_variable}
 				set_temp_variable = {m = THIS.wood_max}
-				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
-				subtract_from_temp_variable = { #m-s
+				set_temp_variable = {d = m} 
+				subtract_from_temp_variable = { 
 					var = m
 					value = s
 				}
-				divide_temp_variable = { # (m-s)/m
+				divide_temp_variable = { 
 					var = m
 					value = d
 				}
-				multiply_temp_variable = { # [(m-s)/m] * 100
+				multiply_temp_variable = { 
 					var = m
 					value = 100
 				}
-				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
+				multiply_temp_variable = { 
 					var = m
 					value = 3
 				}
@@ -2656,13 +2656,13 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
-				# ai_will_do = 3*(m-s)
-				#Make it percentual
-				#ai_will_do = 3 * {[(m-s)/m]*100}
+				
+				
+				
+				
 				set_temp_variable = {s = THIS.wood_variable}
 				set_temp_variable = {m = THIS.wood_max}
-				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				set_temp_variable = {d = m} 
 				if = {
 					limit = {
 						check_variable = {d = 0}
@@ -2672,19 +2672,19 @@ technologies = {
 						value = 10000
 					}
 				}
-				subtract_from_temp_variable = { #m-s
+				subtract_from_temp_variable = { 
 					var = m
 					value = s
 				}
-				divide_temp_variable = { # (m-s)/m
+				divide_temp_variable = { 
 					var = m
 					value = d
 				}
-				multiply_temp_variable = { # [(m-s)/m] * 100
+				multiply_temp_variable = { 
 					var = m
 					value = 100
 				}
-				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
+				multiply_temp_variable = { 
 					var = m
 					value = 3
 				}
@@ -2752,13 +2752,13 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
-				# ai_will_do = 3*(m-s)
-				#Make it percentual
-				#ai_will_do = 3 * {[(m-s)/m]*100}
+				
+				
+				
+				
 				set_temp_variable = {s = THIS.wood_variable}
 				set_temp_variable = {m = THIS.wood_max}
-				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				set_temp_variable = {d = m} 
 				if = {
 					limit = {
 						check_variable = {d = 0}
@@ -2768,19 +2768,19 @@ technologies = {
 						value = 10000
 					}
 				}
-				subtract_from_temp_variable = { #m-s
+				subtract_from_temp_variable = { 
 					var = m
 					value = s
 				}
-				divide_temp_variable = { # (m-s)/m
+				divide_temp_variable = { 
 					var = m
 					value = d
 				}
-				multiply_temp_variable = { # [(m-s)/m] * 100
+				multiply_temp_variable = { 
 					var = m
 					value = 100
 				}
-				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
+				multiply_temp_variable = { 
 					var = m
 					value = 3
 				}
@@ -2845,13 +2845,13 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				#Multiply ai_will_do by 3 for each amount of wood less than maximum amount in storage
-				# ai_will_do = 3*(m-s)
-				#Make it percentual
-				#ai_will_do = 3 * {[(m-s)/m]*100}
+				
+				
+				
+				
 				set_temp_variable = {s = THIS.wood_variable}
 				set_temp_variable = {m = THIS.wood_max}
-				set_temp_variable = {d = m} #denominator placeholder so that I can divide by m later
+				set_temp_variable = {d = m} 
 				if = {
 					limit = {
 						check_variable = {d = 0}
@@ -2861,19 +2861,19 @@ technologies = {
 						value = 10000
 					}
 				}
-				subtract_from_temp_variable = { #m-s
+				subtract_from_temp_variable = { 
 					var = m
 					value = s
 				}
-				divide_temp_variable = { # (m-s)/m
+				divide_temp_variable = { 
 					var = m
 					value = d
 				}
-				multiply_temp_variable = { # [(m-s)/m] * 100
+				multiply_temp_variable = { 
 					var = m
 					value = 100
 				}
-				multiply_temp_variable = { # 3 * { [(m-s)/m] * 100 }
+				multiply_temp_variable = { 
 					var = m
 					value = 3
 				}
@@ -3937,7 +3937,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4010,7 +4010,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4095,7 +4095,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4172,7 +4172,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4255,7 +4255,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4330,7 +4330,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4415,7 +4415,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4490,7 +4490,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4573,7 +4573,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4649,7 +4649,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4730,7 +4730,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier
@@ -4806,7 +4806,7 @@ technologies = {
 				if = {
 					limit = {
 						THIS = {
-							NOT = {tag = FIR} #They're on the equator.
+							NOT = {tag = FIR} 
 							all_owned_state = {
 								has_dynamic_modifier = {
 									modifier = winter_modifier

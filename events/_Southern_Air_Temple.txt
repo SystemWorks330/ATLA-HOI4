@@ -62,8 +62,8 @@ country_event = {
 		}
 		set_global_flag = gyatso_and_aang_flee
 
-		#clr_global_flag = avatar_sat
-		#set_global_flag = avatar_unknown
+		
+		
 		clr_country_flag = COUNTRY_avatar_sat
 		set_country_flag = COUNTRY_avatar_location_unknown
 		clr_global_flag = avatar_team_gyatso

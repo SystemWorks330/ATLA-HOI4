@@ -1,4 +1,4 @@
-# Inert IDs retained for saves created before the vanilla-country goals were removed.
+
 
 faction_goal_control_indonesian_riches = {
 	name = atla2_removed_faction_goal_name

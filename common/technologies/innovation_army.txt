@@ -21,7 +21,7 @@ technologies = {
 		navy_max_range_factor = 0.05
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -66,7 +66,7 @@ technologies = {
 		shore_bombardment_bonus = 0.2
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -103,7 +103,7 @@ technologies = {
 		ships_at_battle_start = 0.25
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -146,7 +146,7 @@ technologies = {
 		army_bonus_air_superiority_factor = 0.05
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -187,7 +187,7 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.2
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -223,7 +223,7 @@ technologies = {
 		air_strategic_bomber_bombing_factor = 0.2
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -292,7 +292,7 @@ technologies = {
 		}
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -353,7 +353,7 @@ technologies = {
 		org_loss_when_moving = -0.1
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -402,7 +402,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -454,7 +454,7 @@ technologies = {
 		}
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -520,7 +520,7 @@ technologies = {
 		mines_planting_by_fleets_factor = 0.1
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -560,7 +560,7 @@ technologies = {
 		}
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -606,7 +606,7 @@ technologies = {
 		land_reinforce_rate = 0.02
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -649,7 +649,7 @@ technologies = {
 		planning_speed = 0.1
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -686,7 +686,7 @@ technologies = {
 		air_strategic_bomber_defence_factor = 0.25
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -759,7 +759,7 @@ technologies = {
 		}
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -821,7 +821,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -875,7 +875,7 @@ technologies = {
 		land_reinforce_rate = 0.05
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -925,7 +925,7 @@ technologies = {
 		shore_bombardment_bonus = 0.2
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -968,7 +968,7 @@ technologies = {
 		convoy_escort_efficiency = 0.15
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1006,7 +1006,7 @@ technologies = {
 		strike_force_movement_org_loss = -0.2
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1049,7 +1049,7 @@ technologies = {
 		convoy_escort_efficiency = 0.1
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1091,7 +1091,7 @@ technologies = {
 		convoy_escort_efficiency = 0.2
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1128,7 +1128,7 @@ technologies = {
 		convoy_escort_efficiency = 0.3
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1200,7 +1200,7 @@ technologies = {
 		}
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1260,7 +1260,7 @@ technologies = {
 		}
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1311,7 +1311,7 @@ technologies = {
 		resistance_damage_to_garrison_on_our_occupied_states = 0.4
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1363,7 +1363,7 @@ technologies = {
 		naval_speed_factor = 0.5
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1428,7 +1428,7 @@ technologies = {
 		naval_retreat_speed = 0.5
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1465,7 +1465,7 @@ technologies = {
 		convoy_raiding_efficiency_factor = 0.1
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1510,7 +1510,7 @@ technologies = {
 		}
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1553,7 +1553,7 @@ technologies = {
 		supply_consumption_factor = -0.10
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1592,7 +1592,7 @@ technologies = {
 		}
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1661,7 +1661,7 @@ technologies = {
 		org_loss_when_moving = -0.25
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1720,7 +1720,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1770,7 +1770,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1820,7 +1820,7 @@ technologies = {
 		air_superiority_efficiency = 0.2
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1862,7 +1862,7 @@ technologies = {
 		air_intercept_efficiency = 0.2
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1898,7 +1898,7 @@ technologies = {
 		air_cas_present_factor = 0.20
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1941,7 +1941,7 @@ technologies = {
 		air_mission_xp_gain_factor = 0.1
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -1982,7 +1982,7 @@ technologies = {
 		air_superiority_efficiency = 0.2
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2019,7 +2019,7 @@ technologies = {
 		air_close_air_support_org_damage_factor = 0.1
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2082,7 +2082,7 @@ technologies = {
 
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2129,7 +2129,7 @@ technologies = {
 		enable_tactic = tactic_infiltration
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2175,7 +2175,7 @@ technologies = {
 		invasion_preparation = -0.3
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2224,7 +2224,7 @@ technologies = {
 		army_morale_factor = 0.05
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2274,7 +2274,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2327,7 +2327,7 @@ technologies = {
 		enable_tactic = tactic_oblique_assault
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2387,7 +2387,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2456,7 +2456,7 @@ technologies = {
 		experience_loss_factor = -0.15
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2504,7 +2504,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2553,7 +2553,7 @@ technologies = {
 
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2615,7 +2615,7 @@ technologies = {
 		}
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2669,7 +2669,7 @@ technologies = {
 
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2717,7 +2717,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2778,7 +2778,7 @@ technologies = {
 		army_speed_factor = 0.15
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2831,7 +2831,7 @@ technologies = {
 
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2876,7 +2876,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2944,7 +2944,7 @@ technologies = {
 		dig_in_speed_factor = 0.25
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -2991,7 +2991,7 @@ technologies = {
 		enable_tactic = tactic_force_concentration
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3040,7 +3040,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3089,7 +3089,7 @@ technologies = {
 		supply_consumption_factor = -0.10
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3138,7 +3138,7 @@ technologies = {
 		land_reinforce_rate = 0.05
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3189,7 +3189,7 @@ technologies = {
 		enable_tactic = tactic_pincer_movement
 		
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3244,7 +3244,7 @@ technologies = {
 		dig_in_speed_factor = 0.15
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3299,7 +3299,7 @@ technologies = {
 		enable_tactic = tactic_field_traps
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3353,7 +3353,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3398,7 +3398,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3454,7 +3454,7 @@ technologies = {
 		enable_tactic = tactic_scattered_defense
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3504,7 +3504,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3553,7 +3553,7 @@ technologies = {
 
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3617,7 +3617,7 @@ technologies = {
 		army_morale_factor = 0.25
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3664,7 +3664,7 @@ technologies = {
 		enable_tactic = tactic_field_traps
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3713,7 +3713,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3762,7 +3762,7 @@ technologies = {
 		experience_loss_factor = -0.1
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3813,7 +3813,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3865,7 +3865,7 @@ technologies = {
 		enable_tactic = tactic_hit_and_run
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3925,7 +3925,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -3987,7 +3987,7 @@ technologies = {
 		enable_tactic = tactic_feint_retreat
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -4036,7 +4036,7 @@ technologies = {
 		dig_in_speed_factor = 0.2
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -4079,7 +4079,7 @@ technologies = {
 		army_core_defence_factor = 0.1
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -4141,7 +4141,7 @@ technologies = {
 		enable_tactic = tactic_evade_battle
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -4192,7 +4192,7 @@ technologies = {
 		planning_speed = 0.25
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -4237,7 +4237,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -4305,7 +4305,7 @@ technologies = {
 		enable_tactic = tactic_square_formation
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -4353,7 +4353,7 @@ technologies = {
 		}
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder
@@ -4401,7 +4401,7 @@ technologies = {
 
 
 		doctrine = yes
-		#research_cost = 1.5
+		
 
 		folder = {
 			name = innovation_army_folder

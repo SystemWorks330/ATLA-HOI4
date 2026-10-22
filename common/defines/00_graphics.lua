@@ -88,7 +88,7 @@ NMapMode = {
 	OCCUPATION_MAP_MODE_COUNTRY_STRIPE_ALPHA = 0.3,									-- alpha of occupied country stripes in occupation map mode
 	OPERATIVE_MAP_MODE_INVALID_COUNTRY_TARGET_TRANSPARENCY = 0.15,							-- alpha of country which cannot be targeted by the selected operative mission
 
-	COASTAL_FACILITY_OFFSET = {-1.5, 0, 1.5},					-- Offset from world position CVector3f (x, y, z). So it does not overlap with a port map icon
+	COASTAL_FACILITY_OFFSET = {-1.5, 0, 1.5},					
 
 	SUPPLY_MAP_MODE_COUNTRY_BORDER_CAMERA_DISTANCE = 1.0,
 	SUPPLY_MAP_MODE_COUNTRY_BORDER_OUTLINE_CUTOFF = 0.973,
@@ -1320,17 +1320,17 @@ NGraphics = {
 
 	RAID_UNIT_ENTITY_BASE_SCALE = 2.0,              -- Base scale of the raid unit entity used to show the progress of the raid (can be further modifier in raid script)
 	RAID_UNIT_ENTITY_OFFSET = { 0.0, 0.0, 0.0 },    -- Raid entity offset from the arrow spline position
-    RAID_CONVOY_ENTITY_START_OFFSET = 15.0,         -- Offset along the arrow where the convoy entity starts (to avoid being placed on land)
+    RAID_CONVOY_ENTITY_START_OFFSET = 15.0,         
 
-	-- The next two values specify how multi-stage animation works for raid units, which is used, for example, for some nuclear rockets.
-	-- Currently, three-stage animation is supported, in order for it to work, the unit entity must have following animation states:
-	--  "idle"			- idle animation of the first stage (looped)
-	--  "idle2_intro"	- intro animation of the second stage (not looped, goes to "idle2" when done)
-	--  "idle2"			- idle animation of the second stage (looped)
-	--  "idle3_intro"	- intro animation of the third stage (not looped, goes to "idle3" when done)
-	--  "idle3"			- idle animation of the third stage (looped)
-	RAID_UNIT_SECOND_STAGE_PROGRESS = 0.33,			-- Specifies raid progress value on [0,1] where second stage is activated
-	RAID_UNIT_THIRD_STAGE_PROGRESS = 0.66,			-- Specifies raid progress value on [0,1] where third stage is activated
+	
+	
+	
+	
+	
+	
+	
+	RAID_UNIT_SECOND_STAGE_PROGRESS = 0.33,			
+	RAID_UNIT_THIRD_STAGE_PROGRESS = 0.66,			
 
 	DEFAULT_NUDGE_FLOATING_HARBOR_DIST = 7.0,       -- Default distance of floating harbors from the coast in pixels, for nudger
 

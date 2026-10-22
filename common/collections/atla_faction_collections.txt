@@ -1,4 +1,0 @@
-faction_members = {
-	input = game:scope
-	operators = { faction_members }
-}

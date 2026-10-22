@@ -584,7 +584,7 @@ buildings = {
 				building_upkeep_cost = 3
 				max_iron_building_k = 0.5
 			}
-			#custom_modifier_tooltip = steelworks_tt
+			
 		}
 		state_modifiers = {
 			#local_resources_steel = 10

@@ -199,7 +199,7 @@ decryption_modifier_tooltip:0 "£decryption_texticon  §YДешифровка§!
 spy_modifier:0 "£spy_slots_texticon  [?modifier@operative_slot|+0]"
 spy_modifier_tooltip:0 "£spy_slots_texticon  §YДоступные шпионы§! \nШпионы: [?modifier@operative_slot|+0]"
 
-# Tooltip keys
+
 clan_balance_above_20:0 "Баланс кланов должен быть выше 20"
 clan_balance_above_30:0 "Баланс кланов должен быть выше 30"
 clan_balance_above_80:0 "Баланс кланов должен быть выше 80"
@@ -318,8 +318,8 @@ industrialist_tooltip_delayed:0 "§LБогатый высший класс, за
 clergy_tooltip:0 "§YДуховенство§! \nМнение: [?modifier@clergy_opinion|0+]\n\nЦелевой процент магов: [?mtth:clergy_bender|2+%=] \nСтоимость законов об образовании: [?mtth:clergy_law_cost|2-%]"
 clergy_tooltip_delayed:0 "§LРелигиозный институт, отвечающий за связь между мирским и духовным мирами.§!"
 
-###  alternate interest groups that could be added to replace when a condition is met
-# laborer
+
+
 # industrialist
 # clergy
 

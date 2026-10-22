@@ -1,0 +1,104 @@
+faction_template_atla_water_tribes = {
+	name = Water_Tribes
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic
+	visible = { always = no }
+	goals = {
+		faction_goal_growing_the_faction
+		faction_goal_a_large_faction
+		faction_goal_industrial_domination
+		faction_goal_defeating_our_enemies
+	}
+	default_rules = {
+		joining_rule_neighbors_only
+		joining_rule_has_no_offensive_war
+		dismissal_rule_offensive_war
+		change_leader_rule_manpower
+		goals_only_faction_leader
+	}
+}
+
+faction_template_atla_air_nomads = {
+	name = Air_Nomads
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic
+	visible = { always = no }
+	goals = {
+		faction_goal_growing_the_faction
+		faction_goal_a_large_faction
+		faction_goal_industrial_domination
+		faction_goal_defeating_our_enemies
+	}
+	default_rules = {
+		joining_rule_neighbors_only
+		joining_rule_has_no_offensive_war
+		dismissal_rule_offensive_war
+		change_leader_rule_manpower
+		goals_only_faction_leader
+	}
+}
+
+faction_template_atla_alliance_of_fire = {
+	name = Alliance_of_Fire
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic
+	visible = { always = no }
+	goals = {
+		faction_goal_growing_the_faction
+		faction_goal_a_large_faction
+		faction_goal_industrial_domination
+		faction_goal_defeating_our_enemies
+	}
+	default_rules = {
+		joining_rule_neighbors_only
+		joining_rule_has_no_offensive_war
+		dismissal_rule_offensive_war
+		change_leader_rule_manpower
+		goals_only_faction_leader
+	}
+}
+
+faction_template_atla_earth_kingdom = {
+	name = Earth_Kingdom
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic
+	visible = { always = no }
+	goals = {
+		faction_goal_growing_the_faction
+		faction_goal_a_large_faction
+		faction_goal_industrial_domination
+		faction_goal_defeating_our_enemies
+	}
+	default_rules = {
+		joining_rule_neighbors_only
+		joining_rule_has_no_offensive_war
+		dismissal_rule_offensive_war
+		change_leader_rule_manpower
+		goals_only_faction_leader
+	}
+}
+
+faction_template_atla_western_alliance = {
+	name = Western_Alliance
+	manifest = faction_manifest_strength_in_unity
+	can_leader_join_other_factions = yes
+	icon = GFX_faction_logo_generic
+	visible = { always = no }
+	goals = {
+		faction_goal_growing_the_faction
+		faction_goal_a_large_faction
+		faction_goal_industrial_domination
+		faction_goal_defeating_our_enemies
+	}
+	default_rules = {
+		joining_rule_neighbors_only
+		joining_rule_has_no_offensive_war
+		dismissal_rule_offensive_war
+		change_leader_rule_manpower
+		goals_only_faction_leader
+	}
+}

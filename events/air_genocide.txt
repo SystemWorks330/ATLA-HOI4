@@ -1134,7 +1134,7 @@ country_event = { # Yes
 			}
 		}
 	}
-	option = { # No - opens follow up
+	option = { 
 		name = air_gen.7.b
 		country_event = { id = air_gen.11 days = 1 }
 		ai_chance = {
@@ -1177,13 +1177,13 @@ country_event = {
 		}
 	}
  
-	option = { # Legacy of Roku
+	option = { 
 		name = air_gen.11.a
 		activate_decision = regret_letting_roku_die
 		ai_chance = { base = 100 }
 	}
  
-	option = { # War Clans
+	option = { 
 		name = air_gen.11.b
 		set_country_flag = war_clans_deliberate
 		ai_chance = { base = 0 }

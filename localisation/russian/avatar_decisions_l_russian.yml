@@ -441,7 +441,7 @@ print_money_for_deficit:0 "Чеканить больше монет"
  FIR_clan_category:0 "§tКланы Огня§!"
  FIR_clan_category_desc:0 "§YКланы Огня§! всегда были частью истории §OНарода Огня§!. Их следует возродить при условии, что они будут служить новому Лорду Огня, а в случае успеха получат значительную степень §1автономии§!. Мы должны заручиться поддержкой этих благородных кланов."
 
- ### firenation battle
+ 
  firenation_battle_category:0 "§eОсады и сражения§!"
  firenation_battle_category_desc:0 "Самые разрушительные и значимые события войны - это осады и сражения. Именно в них наши люди и солдаты узнают, что значит тотальная война, и именно там их сердца и разум формируются победой или поражением."
  garsai_conquest_expectations:0 "Ожидание взятия Гарсая"
@@ -479,35 +479,35 @@ print_money_for_deficit:0 "Чеканить больше монет"
  CHN_demand_subjugation:0 "Потребовать подчинения Киоши"
  CHN_demand_subjugation_desc:0 "Без Аватара Киоши, что защищала бы их, жители острова Киоши наконец ответят за преступления против нашего великого правителя."
  
- #CHN_arrest_dissidents:0 "Арестовать инакомыслящих"
- #CHN_arrest_dissidents_desc:0 "В Циньчао хватает тех, кто недоволен нашей последней позицией по Киоши, и некоторые готовы перейти к действиям в знак протеста. Мы должны арестовать этих смутьянов, пока ситуация не вышла из-под контроля."
+ 
+ 
 
- ### sun warriors
+ 
  SNW_from_the_dead_category:0 "Вернуться в мир живых"
  SNW_from_the_dead_category_desc:0 "Чтобы защищать драконов и сохранять духовную связь с магией огня, мы отрезали себя от мира и скрывались в тени. Но в эти тяжёлые времена, возможно, настало время открыть своё существование и вновь вступить в контакт с внешним миром."
  reveal_ourselves:0 "Раскрыть себя"
  reveal_ourselves_desc:0 "Чтобы сохранять духовную связь с магией огня, мы отрезали себя от мира и скрывались в тени. Но в эти тяжёлые времена, возможно, настало время открыть своё существование и вновь вступить в контакт с внешним миром."
 
- ### Eartkingdom
+ 
  THE_EARTHKINGDOM:0 "§MЦарство Земли§!"
  THE_EARTHKINGDOM_desc:0 "Сейчас §uЦарством Земли§! правит §Y[?global.earth_kingdom_leader.GetName]§!. \n\nЦарство Земли - одно из четырёх народов мира. Оно занимает большую часть континента, а также несколько прилегающих островов, оставаясь крупнейшей и самой населённой державой мира и охватывая значительную часть восточного полушария. \nКоролевство управляется монархией во главе с королём или королевой, хотя степень их власти менялась на протяжении истории. \n\nВ настоящее время в королевстве насчитывается §Y[?global.earth_kingdom^num]§! государств:"
  earth_country_name:0 "[THIS.GetName]"
  abandon_mandate_of_heaven:0 "Отказаться от Небесного мандата"
  abandon_mandate_of_heaven_desc:0 "Небесный мандат в огромной опасности из-за подлости Народа Огня. Если он падёт, всё Царство Земли обречено. Мы должны дать нашим подданным полную автономию, чтобы они могли продолжать борьбу против Народа Огня, пока мы сами на это не способны."
  ear_release_states_tt:0 "§GМы освободим все государства Царства Земли из-под нашей власти. Они смогут свободно управлять собой и сражаться с Народом Огня так, как сочтут нужным.§!§RЭто сохранит способность Царства Земли сопротивляться Народу Огня, но также уменьшит нашу власть и влияние, а ещё даст нашим подданным возможность продолжать борьбу в случае падения Небесного мандата.§!"
- ### Free Major
+ 
  free_major_suppress_puppets:0 "Правление §Y[ROOT.GetName]§!"
  free_major_suppress_puppets_desc:0 "Да направит [ROOT.GetName.GetSheHe] нашу империю к тысячелетнему существованию."
  free_major_suppress_kingdoms:0 "Королевский визит в наши королевства"
  free_major_suppress_kingdoms_desc:0 "Время от времени важно напоминать самым автономным частям королевства, кому на самом деле принадлежит их верность."
- ### Free States
+ 
  independent_dominate_neighbours:0 "Расширить влияние в [FROM.owner.GetName]"
  independent_dominate_neighbours_desc:0 "Мы можем повлиять на них, чтобы ослабить их верность [?FROM.owner:overlord.GetName]."
  independent_break_free_neighbours:0 "Освободить [FROM.owner.GetName] из-под власти [?FROM.owner:overlord.GetName]"
  independent_break_free_neighbours_desc:0 "Мы можем усилить их независимость от [?FROM.owner:overlord.GetName]."
  independent_take_over_neighbour:0 "Подчинить [FROM.owner.GetName]"
  independent_take_over_neighbour_desc:0 "[FROM.owner.GetName] значительно отдалился от [?FROM.owner:overlord.GetName]. Теперь их верность принадлежит нам."
- ### Kingdoms
+ 
  kingdom_diplomacy_to_overlord:0 "Отправить дипломата к [?overlord.GetName]"
  kingdom_diplomacy_to_overlord_desc:0 "Иногда слова значат больше силы. Нам стоит попытаться политически повлиять на [?overlord.GetName], чтобы добиться полной независимости."
  kingdom_hold_feast:0 "Устроить пир в [?capital.GetName]"
@@ -515,7 +515,7 @@ print_money_for_deficit:0 "Чеканить больше монет"
  kingdom_regional_power_demonstration:0 "Продемонстрировать силу в регионе"
  kingdom_regional_power_demonstration_desc:0 "Наша армия, безусловно, сильнейшая в этом районе. Нужно сделать так, чтобы об этом никто не забыл."
 
- ### County
+ 
  county_diplomacy_to_overlord:0 "Отправить дипломата к [?overlord.GetName]"
  county_diplomacy_to_overlord_desc:0 "Иногда слова значат больше силы. Нам стоит попытаться политически повлиять на [?overlord.GetName], чтобы добиться полной независимости."
  
@@ -530,7 +530,7 @@ print_money_for_deficit:0 "Чеканить больше монет"
  join_the_ek:0 "Присоединиться к Царству Земли"
  join_the_ek_desc:0 "Под вассалитетом Царства Земли мы обеспечим себе безопасное и процветающее будущее."
 
- ### Western Kingdom
+ 
  WESTERN_ALLIANCE:0 "Западное королевство"
  WESTERN_ALLIANCE_desc:0 "Сейчас §wЗападное королевство§! возглавляет §Y[?faction_leader.GetName]§!. \n\nЗападное королевство было создано западными государствами Царства Земли, которые решили, что руководство Ба Синг Сэ больше не отвечает их интересам. \nКоролевство действует как монархия под властью короля или королевы, пока ведёт борьбу со своим бывшим господином. После окончания войны некоторые государства могут пожелать независимости. \n\nВ настоящее время в королевстве состоит §Y[?global.western_alliance^num]§! государств:"
  western_alliance_creation:0 "Западное королевство"
@@ -623,12 +623,12 @@ print_money_for_deficit:0 "Чеканить больше монет"
  ba_sing_se_build_up_desc:0 "Война приближается, и если мы хотим победить, нам нужно начать мобилизацию наших сил."
  focus_on_defense:0 "Сосредоточиться на обороне"
  focus_on_defense_desc:0 "Пока мы не можем перенести войну на земли Народа Огня, нам придётся ждать их удара, прежде чем мы сможем их разгромить."
- #EAR_ba_sing_se_expansion:0 "Подготовка к войне"
- #EAR_ba_sing_se_expansion_desc:0 "Ба Синг Сэ - крупнейший город мира. /nХотя нашему могуществу сильно мешает мирный нрав населения, мы можем начать мобилизацию, чтобы обратить свою силу в действие."
- #field_irrigation_canals:0 "Расширение ирригации"
- #field_irrigation_canals_desc:0 "Небольшие вложения позволят нашим фермерам резко увеличить урожайность полей."
- #outer_wall_baraques_construction:0 "Встроить караульные дома во внешние стены"
- #outer_wall_baraques_construction_desc:0 "The watchmen who guard the walls typically go home for the night when their shift is done. /n/nWhile good for morale this is terrible for security, by building sleeping quarters in the walls themselves, we can ensure our guards are always at hand for when there is danger.
+ 
+ 
+ 
+ 
+ 
+ 
  
  fields_of_ba_sing_se:0 "Поля Ба Синг Сэ"
  

@@ -539,7 +539,7 @@ steel_beam_factory_need = {					#### steel need of steel beam factories
 	postfix = none
 }
 
-farm_level = {								#### current farm building level in a state
+farm_level = {								
 	color_type = neutral
 	value_type = number
 	precision = 0
@@ -552,7 +552,7 @@ farm_level_max = {							#### maximal farm building level in a state
 	precision = 0
 	postfix = none
 }
-ranch_level = {								#### current ranch building level in a state
+ranch_level = {								
 	color_type = neutral
 	value_type = number
 	precision = 0
@@ -565,7 +565,7 @@ ranch_level_max = {							#### maximal ranch building level in a state
 	precision = 0
 	postfix = none
 }
-lumber_mill_level = {						#### current lumber mill building level in a state
+lumber_mill_level = {						
 	color_type = neutral
 	value_type = number
 	precision = 0
@@ -577,7 +577,7 @@ lumber_mill_level_max = {					#### maximal lumber mill  building level in a stat
 	precision = 0
 	postfix = none
 }
-quarry_level = {							#### current quarry building level in a state
+quarry_level = {							
 	color_type = neutral
 	value_type = number
 	precision = 0
@@ -589,7 +589,7 @@ quarry_level_max = {						#### maximal quarry building level in a state
 	precision = 0
 	postfix = none
 }
-mine_level = {								#### current mine building level in a state
+mine_level = {								
 	color_type = neutral
 	value_type = number
 	precision = 0
@@ -601,7 +601,7 @@ mine_level_max = {							#### maximal mine building level in a state
 	precision = 0
 	postfix = none
 }
-fishing_stand_level = {						#### current fishing stand building level in a state
+fishing_stand_level = {						
 	color_type = neutral
 	value_type = number
 	precision = 0

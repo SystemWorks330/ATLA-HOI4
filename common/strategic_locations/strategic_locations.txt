@@ -1,14 +1,14 @@
-# Vanilla example strategic locations adjusted for the current building database.
+
 natural_harbor = {
 	naval_base = 2
 }
 
 defensive_chokepoint = {
-	# bunker = 2 # This building type is not defined in this game version.
+	
 }
 
 defensible_coastline = {
-	# coastal_bunker = 2 # This building type is not defined in this game version.
+	
 }
 
 favorable_approach = {

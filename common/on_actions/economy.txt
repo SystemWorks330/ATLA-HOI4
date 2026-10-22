@@ -40,7 +40,7 @@ on_actions = {
 				count_buildings_in_states = yes
 
 				### resource deposit construction
-				#deposit_calculations = yes
+				
 			}
 
 			if = {

@@ -330,7 +330,7 @@ recruitment_decision_category = {
 					}
 				}
 				add_to_variable = { local_migrant_pool = -1000 }
-				# = -1000
+				
 			}
 			add_manpower = 1000
 		}

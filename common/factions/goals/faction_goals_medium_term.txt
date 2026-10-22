@@ -1,4 +1,4 @@
-# ATLA2 faction goals. Vanilla-country goals are intentionally omitted.
+
 
 faction_goal_a_large_faction = {
 	name = a_large_faction_goal_name

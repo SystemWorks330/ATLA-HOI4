@@ -1,4 +1,4 @@
-# Disable vanilla faction templates that rely on removed country and ideology content.
+
 
 faction_template_comintern = {
 	manifest = faction_manifest_strength_in_unity

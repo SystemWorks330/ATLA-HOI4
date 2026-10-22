@@ -30,7 +30,7 @@ resources = {
 		convoys = 0.1
 	}
 
-	rubber = {                    	#fossile fuels
+	rubber = {                    	
 		icon_frame = 6
 		cic = 0.25
 		convoys = 0.1

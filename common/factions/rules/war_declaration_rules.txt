@@ -1,18 +1,9 @@
-
 war_declaration_rule_any_country = {
 	type = war_declaration_rules
 	ai_will_do = {
 		base = 0
 	}
 }
-
-
-###  ###  ##  #    ##  ###  ### ###       ##   ##  #  # #  # ### ###  #   #     
-#  # #   #  # #   #  # #  # #   #  #     #  # #  # #  # ## #  #  #  #  # #      
-#  # ##  #    #   #### ###  ##  ###      #    #  # #  # # ##  #  ###    #       
-#  # #   #  # #   #  # #  # #   #  #     #  # #  # #  # #  #  #  #  #   #       
-###  ###  ##  ### #  # #  # ### #  #      ##   ##   ##  #  #  #  #  #   #       
-
 war_declaration_rule_independent_countries_only = {
 	type = war_declaration_rules
 	ai_will_do = {
@@ -22,7 +13,6 @@ war_declaration_rule_independent_countries_only = {
 		is_subject = no
 	}
 }
-
 war_declaration_rule_faction_leader_only = {
 	type = war_declaration_rules
 	ai_will_do = {
@@ -36,7 +26,6 @@ war_declaration_rule_faction_leader_only = {
 		stability_factor = -0.05
 	}
 }
-
 war_declaration_rule_major_only = {
 	type = war_declaration_rules
 	ai_will_do = {
@@ -50,14 +39,6 @@ war_declaration_rule_major_only = {
 		stability_factor = -0.05
 	}
 }
-
-###  ##  ###   ##  ### ###      ##   ##  #  # #  # ### ###  #   # 
- #  #  # #  # #    #    #      #  # #  # #  # ## #  #  #  #  # #  
- #  #### ###  # ## ##   #      #    #  # #  # # ##  #  ###    #   
- #  #  # #  # #  # #    #      #  # #  # #  # #  #  #  #  #   #   
- #  #  # #  #  ##  ###  #       ##   ##   ##  #  #  #  #  #   #   
-
-
 war_declaration_generated_tension_10 = {
 	type = war_declaration_rules
 	ai_will_do = {
@@ -68,11 +49,10 @@ war_declaration_generated_tension_10 = {
 	}
 	trigger = {
 		FROM = {
-			has_added_tension_amount > 10	
+			has_added_tension_amount > 10
 		}
 	}
 }
-
 war_declaration_generated_tension_25 = {
 	type = war_declaration_rules
 	ai_will_do = {
@@ -87,15 +67,6 @@ war_declaration_generated_tension_25 = {
 		}
 	}
 }
-
-
- ## ### ### #  #  ##  ### ###  ##  #  # 
-#    #   #  #  # #  #  #   #  #  # ## # 
- #   #   #  #  # ####  #   #  #  # # ## 
-  #  #   #  #  # #  #  #   #  #  # #  # 
-##  ###  #   ##  #  #  #  ###  ##  #  # 
-
-
 war_declaration_threat_25 = {
 	type = war_declaration_rules
 	ai_will_do = {
@@ -105,7 +76,6 @@ war_declaration_threat_25 = {
 		threat > 0.25
 	}
 }
-
 war_declaration_threat_50 = {
 	type = war_declaration_rules
 	ai_will_do = {
@@ -115,7 +85,6 @@ war_declaration_threat_50 = {
 		threat > 0.5
 	}
 }
-
 war_declaration_threat_75 = {
 	type = war_declaration_rules
 	ai_will_do = {
@@ -125,16 +94,13 @@ war_declaration_threat_75 = {
 		threat > 0.75
 	}
 }
-
-
-
 generate_wargoal_threat_reduction_20 = {
 	type = war_declaration_rules
 	ai_will_do = {
 		base = 0
 		modifier = {
 			add = 1
-			has_government = pluralist_culture 
+			has_government = pluralist_culture
 		}
 	}
 	modifier = {
@@ -144,15 +110,14 @@ generate_wargoal_threat_reduction_20 = {
 	effect = {
 	}
 }
-
 generate_wargoal_threat_reduction_40 = {
 	type = war_declaration_rules
 	ai_will_do = {
 		base = 0
 		modifier = {
 			add = 1
-			has_government = pluralist_culture 
-			is_historical_focus_on = no # Don't do this on historical, it might upset too much 
+			has_government = pluralist_culture
+			is_historical_focus_on = no
 		}
 	}
 	modifier = {
@@ -162,4 +127,3 @@ generate_wargoal_threat_reduction_40 = {
 	effect = {
 	}
 }
-

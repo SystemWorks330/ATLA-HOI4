@@ -692,28 +692,28 @@ heb_quartermaster_6:0 "Юбезеки"
 HFC_koulin:0 "Коулин"
 HFC_zuji:0 "Цзудзи"
 HFC_generic:0 "Безымянный правитель"
-# Огненная колония Хань Туя
+
 KFC_qin:0 "Цинь"
 KFC_generic:0 "Безымянный правитель"
-# Остров Киоши
+
 KYI_oyaji:0 "Оядзи"
 KYI_kyoshi_leader:0 "Идзюру"
 KYI_suki:0 "Суки"
 KYI_kyoshi_warrior:0 "Воин Киоши"
 KYI_generic:0 "Безымянный правитель"
-# Горы Лагимы
+
 LAM_fung:0 "Фунг"
 LAM_generic:0 "Безымянный правитель"
-# Макапу
+
 MAK_hongli:0 "Хонг-Ли"
 MAK_generic:0 "Безымянный правитель"
-# Хан Туй
+
 HAN_gambu:0 "Гамбу"
 HAN_generic:0 "Безымянный правитель"
-# Лес Хэбай
+
 HEB_oh:0 "О"
 HEB_generic:0 "Безымянный правитель"
-# Острова
+
 ISL_gombo:0 "Гомбо"
 ISL_generic:0 "Безымянный правитель"
 # Qinchao

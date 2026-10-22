@@ -4,13 +4,13 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "countryfactionview"
-		position = { x=-606 y=78}
-		show_position = { x=-6 y =78 }
+		position = { x=-606 y=116}
+		show_position = { x=-6 y =116 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
 		size = { width=550 height=100%% }
-		margin = { top = 0 bottom = -5 }
+		margin = { top = 0 bottom = 4 }
 
 		#hide_sound = menu_close_window
 		show_sound = menu_open_window
@@ -63,7 +63,7 @@ guiTypes = {
 
 			iconType = {
 				name = "faction_icon"
-				position = { x = 60 y = 110 }
+				position = { x = 65 y = 110 } 
 				spriteType = "GFX_faction_logo_generic_democratic"
 				centerposition = yes
 			}
@@ -78,17 +78,18 @@ guiTypes = {
 
 			instantTextboxType = {
 				name = "faction_name"
-				position = { x = 120 y = 60 }
+				position = { x = 118 y = 60 } 
 				font = "hoi_24header"
 				maxWidth = 300
-				maxHeight = 20
-				fixedsize = yes
+				maxHeight = 48 				
+				fixedsize = yes 			
+				vertical_alignment = center 
 				format = left
 			}
 
 			instantTextboxType = {
 				name = "manifest_name"
-				position = { x = 120 y =100 }
+				position = { x = 120 y = 103 } 
 				font = "hoi_18mbs"
 				maxWidth = 250
 				maxHeight = 20
@@ -366,7 +367,7 @@ guiTypes = {
 							iconType ={
 								name ="long_term_icon"
 								spriteType = "GFX_faction_term_diagram_icon_small"
-								position = { x= 360 y = 0 }
+								position = { x = 375 y = 0 } 
 								frame = 3
 								alwaystransparent = yes
 							}
@@ -374,7 +375,7 @@ guiTypes = {
 							instantTextboxType = {
 								name = "long_term_header"
 
-								position = { x = 380 y = 0 }
+								position = { x = 395 y = 0 } 
 								font = "hoi_18mbs"
 								text = "LONG_TERM"
 								maxWidth = 100
@@ -1446,7 +1447,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "change_rule_window"
-		position = { x = 540 y = 80 }
+		position = { x = 540 y = 118 }
 		fade_time = 500
 		fade_type = linear
 		size = { width=520 height=590 }
@@ -1681,7 +1682,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "change_goal_window"
-		position = { x = 540 y = 80 }
+		position = { x = 540 y = 118 }
 		fade_time = 500
 		fade_type = linear
 		size = { width=520 height=626 }
@@ -2006,8 +2007,8 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "faction_list_window"
-		position = { x = 45 y = 80 }
-		show_position = { x= 545 y = 80 }
+		position = { x = 45 y = 118 }
+		show_position = { x= 545 y = 118 }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -2063,13 +2064,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_mini_bg"
 		}
 
-		iconType = {
-			name = "faction_icon"
-			spriteType = "GFX_faction_logo_generic_miniature"
-			position = { x = 5 y = 4}
-			alwaystransparent = yes
-		}
-
 		instantTextboxType = {
 			name = "name"
 			position = { x = 40 y = 10 }
@@ -2096,6 +2090,14 @@ guiTypes = {
 			font = "hoi_18mbs"
 			text = "FPP"
 			maxWidth = 80
+		}
+		
+		iconType = {
+			name = "faction_icon"
+			spriteType = "GFX_faction_logo_generic_miniature"
+			position = { x = 20 y = 21}
+			alwaystransparent = yes
+			centerposition = yes
 		}
 	}
 

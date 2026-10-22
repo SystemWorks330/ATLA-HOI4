@@ -1252,7 +1252,7 @@ factory_calculations = {
 #
 #	clamp_variable = { var = factories_bought_price  min = 0.005 }
 #
-#	divide_variable = { acquired_civil_capacities = factories_bought_price }
+
 
 	set_variable = { ic_factor = 1 }
 	add_to_variable = { ic_factor = modifier@civilian_capacity_factor }

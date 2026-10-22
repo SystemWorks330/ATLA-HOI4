@@ -1,5 +1,12 @@
 ﻿l_russian:
  FACTION_LEADER:0 "Лидер фракции: §Y$COUNTRY$§!"
+ faction_template_generic:0 "Альянс"
+ call_to_war_rule_faction_leader_offensive_only:0 "Только лидер альянса для наступательных войн"
+ call_to_war_defensive_only:0 "Всегда только оборонительные войны"
+ joining_rule_puppets_only:0 "Только собственные субъекты"
+ joining_rule_support_percentage:0 "Та же культура, что у членов альянса"
+ ATLA_FACTION_ARMY_COMMANDER:0 "§YОдин командующий армией§!:"
+ ATLA_FACTION_INFANTRY_COMMANDER:0 "§YОдин командующий армией§! с чертой §Y$offensive_infantry$§! или §Y$defensive_infantry$§!:"
  FACTION_MEMBER:0 "Член фракции: §Y$COUNTRY$§!"
  FACTION_CREATED_UNDER_MASTER_TITLE:0 "Вступили во фракцию сюзерена"
  FACTION_CREATED_UNDER_MASTER_MESSAGE:0 "Мы вместе с нашим сюзереном вступили во фракцию $FACTION|H$"

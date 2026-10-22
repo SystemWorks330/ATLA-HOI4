@@ -1,1 +1,1 @@
-# ATLA2 uses avatar_faction_manifests.txt for its custom manifesto.
+

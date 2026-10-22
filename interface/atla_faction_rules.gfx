@@ -1,0 +1,18 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_joining_rule_same_culture_only"
+		texturefile = "gfx/interface/ideas/generic_volunteer_expedition_bonus.dds"
+	}
+	spriteType = {
+		name = "GFX_dismissal_rule_ideology_not_fire_culture"
+		texturefile = "gfx/interface/ideas/idea_generic_democracy_banned.dds"
+	}
+	spriteType = {
+		name = "GFX_call_to_war_defensive_only"
+		texturefile = "gfx/interface/ideas/call_to_war_rule_faction_leader_only.dds"
+	}
+	spriteType = {
+		name = "GFX_call_to_war_rule_faction_leader_offensive_only"
+		texturefile = "gfx/interface/ideas/call_to_war_rule_faction_leader_only.dds"
+	}
+}

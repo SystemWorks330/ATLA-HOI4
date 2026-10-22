@@ -6607,7 +6607,7 @@ spriteTypes = {
 	}
 
 
-	### NEW LAND DOCTRINES #############
+	
 	SpriteType = {
 		name = "GFX_advanced_firebases_medium"
 		texturefile = "gfx/interface/technologies/advanced_firebases.dds"

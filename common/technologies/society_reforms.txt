@@ -72,7 +72,7 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				#ai_will_do = 100 - stability
+				
 				set_temp_variable = {s = THIS.stability}
 				multiply_temp_variable = {
 					var = s

@@ -1,4 +1,4 @@
-# ATLA2 faction goals. Vanilla-country goals are intentionally omitted.
+
 
 faction_goal_defeating_our_enemies = {
 	name = defeating_our_enemies_goal_name

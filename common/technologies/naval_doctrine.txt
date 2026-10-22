@@ -563,7 +563,7 @@ technologies = {
 		ai_will_do = {
 			base = 0
 			modifier = {
-				# ai_will_do = (1 - r) * 10
+				
 				set_temp_variable = {
 					r = THIS.alliance_naval_strength_ratio
 				}
