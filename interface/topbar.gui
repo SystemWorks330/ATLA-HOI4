@@ -12,6 +12,7 @@ guiTypes = {
 			Orientation = "UPPER_LEFT"
 		}
 
+		containerWindowType = {
 			name = "country_menu_tail"
 			position = { x = 560 y = 70 }
 			size = { width = 110 height = 49 }

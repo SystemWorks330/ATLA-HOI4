@@ -469,6 +469,7 @@ workers_syndicat
 working_percentage
 xenophobe
 
+chin_legacy_spirit_delayed
 chin_legacy_spirit_description
 fire_imperialism_spirit_delayed
 fire_imperialism_spirit_description
@@ -488,6 +489,7 @@ spiritless_nation_spirit_delayed
 spiritless_nation_spirit_description
 
 SAT_aang_description
+SAT_appa_description
 SAT_momo_description
 SAT_monk_gyatso_description
 SWT_katara_description
