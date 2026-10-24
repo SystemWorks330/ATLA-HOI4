@@ -787,7 +787,7 @@ scripted_gui = {
 				ai_will_do = { 
 					base = 100
 					modifier = {
-						check_variable = {THIS.resource@tungsten < 5} #textile
+						check_variable = {THIS.resource@tungsten < 5}
 						add = 20
 					}
 					modifier = {

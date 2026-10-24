@@ -10,7 +10,6 @@ guiTypes = {
 			quadTextureSprite = "GFX_deployment_binding"
 			position = { x= 9 y = 45 }
 			Orientation = "UPPER_LEFT"
-			# scale = 1.25
 		}
 
 		instantTextboxType = {
@@ -107,7 +106,6 @@ guiTypes = {
 			name = "commandpower"
 			position = { x= 130 y = 48 }
 			clipping = no
-			# size = { width=50 height=24 }
 			Orientation = UPPER_LEFT
 
 			instantTextboxType = {

@@ -173,7 +173,6 @@ technologies = {
 		}
 
 		research_cost = 2
-		#start_year = 35
 		folder = {
 			name = air_special_forces_folder
 			position = { x = -1 y = 12 }
@@ -204,7 +203,6 @@ technologies = {
 		}
 
 		research_cost = 2
-		#start_year = 35
 		folder = {
 			name = air_special_forces_folder
 			position = { x = 1 y = 12 }
@@ -357,7 +355,6 @@ technologies = {
 		}
 		
 		research_cost = 4
-		#start_year = 90
 		folder = {
 			name = air_special_forces_folder
 			position = { x = -1 y = 24 }

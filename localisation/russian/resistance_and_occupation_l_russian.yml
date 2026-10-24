@@ -230,8 +230,6 @@
  OCCUPATION_STATE_OCCUPATION_INFO:0 ""
  OCCUPATION_STATE_OCCUPATION_INFO_NO_RESISTANCE:0 ""
  
- #OCCUPATION_STATE_OCCUPATION_INFO:0 "The state has a resistance from $COUNTRY|H$"
- #OCCUPATION_STATE_OCCUPATION_INFO_NO_RESISTANCE:0 "There is no resistance in the state"
  non_core_controller:0 "Некоренной контролёр"
  non_core_controller_desc:0 "Регион, контролируемый ненекоренной страной"
  

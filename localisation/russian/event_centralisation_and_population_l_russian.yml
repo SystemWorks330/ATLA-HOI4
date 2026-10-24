@@ -1,7 +1,6 @@
 ﻿l_russian: 
 
 
- #centralisation
 
 centralisation.1.title:0 "Технологический прорыв"
 centralisation.1.desc:0 "Некоторые ученые нашей страны совершили крупный научный прорыв. Нет сомнений, что это поможет в исследованиях и изобретениях и даст нам технологическое преимущество."
@@ -59,14 +58,12 @@ centralisation.18.desc:0 ""
 centralisation.18.a:0 "Отлично"
 
 
- #population
  population.1.title:0 "Дети за работой"
  population.1.desc:0 "С ростом спроса на рабочую силу все больше родителей отправляют своих детей работать, чтобы сводить концы с концами."
  population.1.a:0 "Замечательно, значит экономика растет"
  population.1.b:0 "Это ужасно"
 
 
- #refugees
  refugee_event.1.t:0 "Беженцы в [migration_state.GetName]"
  refugee_event.1.desc:0 "Группа беженцев из [migration_origin.GetName]"
  refugee_event.1.a:0 "Они здесь желанны"

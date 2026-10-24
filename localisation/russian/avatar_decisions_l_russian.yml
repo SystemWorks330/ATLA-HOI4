@@ -138,7 +138,6 @@ print_money_for_deficit:0 "Чеканить больше монет"
  reinhabit_land:0 "Заселить [FROM.GetName] заново"
  reinhabit_land_desc:0 "[FROM.GetName] теперь необитаемая земля, но, возможно, мы могли бы отправить колонистов и объявить её своей? Финансирование экспедиции обойдётся дорого, но эти затраты могут окупиться за счёт новых земель и ресурсов."
  
- ### peasant revolt
  peasant_uprising_show_area:0 "Регионы с мятежными настроениями"
  peasant_uprising_category:0 "[GetUprisingName]"
  peasant_uprising_category_undefined:0 "Крестьянские волнения"
@@ -168,14 +167,10 @@ print_money_for_deficit:0 "Чеканить больше монет"
  peasant_uprising_appeasing_words_desc:0 "Может быть, они прислушаются к разуму."
 
  
- #token_variable_test:0 "[?give_state_name.GetName]"
- #token_variable_test_desc:0 "hello"
 
- ### politics
  political_category:0 "Политические решения"
  political_category_desc:0 "Всё, что связано с внутренней политической борьбой в стране."
 
- ### state conflict
 
  state_conflict_category:0 "Локальные конфликты"
  state_conflict_category_desc:0 "Конфликт"
@@ -187,7 +182,6 @@ print_money_for_deficit:0 "Чеканить больше монет"
  state_conflict_show_defender_desc:0 "\n£attack_texticon  §Y[?FROM.attacker.GetNameWithFlag]§! \n§W   £strenght_texticon  Сила: [?FROM.attacker_strength] \n   £pol_power Давление: [?FROM.attacker_points]§! \n\n£defense_2_texticon  §Y[?FROM.defender.GetNameWithFlag]§!: \n§W   £strenght_texticon  Сила: [?FROM.defender_strength] \n   £pol_power Давление: [?FROM.defender_points]§!"
  state_conflict_attacker_send_manpower:0 "Отправить бойцов в §Y[?FROM.GetName]§!"
 
- ### Fire Nation
  
  FIR_civil_decision_category:0 "§mДомашние острова§!"
  FIR_civil_decision_category_desc:0 "Основа успеха Народа Огня - сильные, поддерживаемые и защищённые Домашние острова. Население должно поддерживать каждое принятое решение, а взамен его оберегает мощное государство."
@@ -457,7 +451,6 @@ print_money_for_deficit:0 "Чеканить больше монет"
  retreat_from_ba_sing_se:0 "Отступить от Ба Синг Сэ"
  retreat_from_ba_sing_se_desc:0 ""
 
- ### Chin
 
  CHN_tradition_category:0 "§MВ тени Чина§!"
  CHN_tradition_category_desc:0 "Великое завоевание Царства Земли, совершённое Чином, печально завершилось в Циньчао, но и поныне многие потомки его империи продолжают хранить традиции клана Чина. Однако после десятилетий относительного мира культурные нормы Чина начали угасать, поскольку новые поколения всё слабее связаны с прошлым. Теперь существует значительная часть населения, выступающая против идеалов клана Чина и желающая отказаться от ошибочных традиций и восстановить отношения с островом Киоши."
@@ -753,7 +746,6 @@ print_money_for_deficit:0 "Чеканить больше монет"
  HAN_build_coastal_forts_desc:0 "Пришло время укрепить безопасность нашего побережья."
 
 
- ### EAR Regional Security Decisions
 
  EAR_regional_security_category:0 "Региональная безопасность"
  underground_networks:0 "Построить подземные сети"
@@ -933,7 +925,6 @@ print_money_for_deficit:0 "Чеканить больше монет"
 
  show_current_taxation:0 "Текущий уровень налогообложения: [?ROOT.taxation_efficiency_percentage]"
 
-  #formables
  formable_nations_mod_category:0 "Южные государства"
  formable_nations_mod_category_desc:0 "Народы южных государств Царства Земли сохранили заметно отличающуюся от остального континента культуру, отдалившись от более централизованных северных земель. Их отношение к земной монархии исторически колебалось, но после того как Царь Земли не сумел остановить армии Созина, доверие к короне пошатнулось, и разговоры о выходе из королевства стали звучать всё громче. "
  formable_nations_SEK:0 "Объединить Южное Царство Земли"

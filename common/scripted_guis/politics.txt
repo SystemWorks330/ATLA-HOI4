@@ -261,36 +261,55 @@ scripted_gui = {
 
 			fir_legit_bg_visible = {
 				has_government = fire_culture
+				NOT = { original_tag = KYI }
 			}
 			fir_high_legitimacy_visible = {
 				has_government = fire_culture
+				NOT = { original_tag = KYI }
 			}
 			fir_low_legitimacy_visible = {
 				has_government = fire_culture
+				NOT = { original_tag = KYI }
 			}
 
 			ear_legit_bg_visible = {
 				has_government = earth_culture
+				NOT = { original_tag = KYI }
+			}
+			kyi_legit_bg_visible = {
+				original_tag = KYI
 			}
 			ear_high_legitimacy_visible = {
 				has_government = earth_culture
+				NOT = { original_tag = KYI }
 			}
 			ear_low_legitimacy_visible = {
 				has_government = earth_culture
+				NOT = { original_tag = KYI }
+			}
+			kyi_high_legitimacy_visible = {
+				original_tag = KYI
+			}
+			kyi_low_legitimacy_visible = {
+				original_tag = KYI
 			}
 
 			water_legit_bg_visible = {
 				has_government = water_culture
+				NOT = { original_tag = KYI }
 			}
 			water_high_legitimacy_visible = {
 				has_government = water_culture
+				NOT = { original_tag = KYI }
 			}
 			water_low_legitimacy_visible = {
 				has_government = water_culture
+				NOT = { original_tag = KYI }
 			}
 
 			air_legit_bg_visible = {
 				has_government = air_culture
+				NOT = { original_tag = KYI }
 				NOT = {
 					AND = {
 						OR = {
@@ -305,6 +324,7 @@ scripted_gui = {
 			}
 			air_high_legitimacy_visible = {
 				has_government = air_culture
+				NOT = { original_tag = KYI }
 				NOT = {
 					AND = {
 						OR = {
@@ -319,6 +339,7 @@ scripted_gui = {
 			}
 			air_low_legitimacy_visible = {
 				has_government = air_culture
+				NOT = { original_tag = KYI }
 				NOT = {
 					AND = {
 						OR = {
@@ -334,6 +355,7 @@ scripted_gui = {
 
 			air_spirit_bg_visible = {
 				has_government = air_culture
+				NOT = { original_tag = KYI }
 				OR = {
 					original_tag = SAT
 					original_tag = EAT

@@ -61,7 +61,6 @@
  SCIENTIST_RECRUIT_COST_DEFAULT: "$AMOUNT|Y$ ученый (-ых): $COST|Y$ £pol_power "
  SCIENTIST_RECRUIT_COST_LAST: "$AMOUNT|Y$§Y+§! ученый (-ых): $COST|Y$ £pol_power "
 
- # Program is the view that bundles the facility building + scientist + ongoing project
  PROGRAM_STATE_NAME: "$STATE$"
  PROGRAM_SPECIALIZATION_NAME: "$SPECIALIZATION$"
  PROGRAM_SPECIALIZATION_NAME_YELLOW: "$SPECIALIZATION|Y$"
@@ -215,7 +214,6 @@
  TECHNOLOGY_RESEARCH_BREAKTHROUGH_BONUS: "Добавляет $AMOUNT|Y$§Y%§! к ежедневному прогрессу прорыва в области: "
  TECHNOLOGY_RESEARCH_BREAKTHROUGH_SPECIALIZATION: "— $SPECIALIZATION|Y$"
 
- ### SPECIALIZATIONS ###
  specialization: "Специализация (специализации)"
  inventions_mathematics: "Математика"
  inventions_mathematics_short: "Математика"
@@ -264,18 +262,8 @@
  TRIGGER_SPECIAL_PROJECT_FLAG_NOT_SET: "Не:"
  TRIGGER_SPECIAL_PROJECT_FLAG_SET: ""
 
- ########## CONTENT DESIGN LAIR ##############
- # BEWARE OF THE DOG
 
-#       / \__
-#      (    @\___
-#      /         O
-#     /   (_____/
-#    /_____/   U
 
-##########################
-### Scripted tooltips ###
-##########################
  SP_UNLOCK_BUILDING: "Открывает сооружение: $BUILDING|Y$"
  SP_UNLOCK_BUILDING_ICON_DESC: "Открывает сооружение: $BUILDING|Y$ \n\n£GFX_buildings_strip|$ICON_FRAME$ \n\n$BUILDING_DESCRIPTION$"
  SP_BUILDING_MISSING_PROJECT: "Не выполнено требование для специального проекта «$PROJECT|Y$»"
@@ -286,9 +274,6 @@
 
 
 
-##########################
-### Complexity Strings ###
-##########################
  complexity_small: "Малая"
  complexity_medium: "Средняя"
  complexity_large: "Большая"
@@ -297,9 +282,6 @@
  generic_no_effects_to_equipment_tt: "Следующее снаряжение останется без изменений: $EQUIPMENT$."
 
 
-##########################
-  ### LAND PROJECTS ###
-##########################
  sp_land_multi_charge_large_caliber_gun: "Многозарядное крупнокалиберное орудие"
  sp_land_multi_charge_large_caliber_gun_desc: "Благодаря многозарядной системе и крупному калибру это орудие способно вести обстрел на огромном расстоянии и с невероятной мощностью."
  GER_sp_land_multi_charge_large_caliber_gun: "Многозарядное крупнокалиберное орудие V3"
@@ -311,7 +293,7 @@
  sp_land_reward_multi_charge_large_caliber_gun_successful_test_firing: "Успешное огневое испытание"
  sp_land_reward_multi_charge_large_caliber_gun_breakthrough_in_propulsion_technology: "Прорыв в области сообщения силы"
  multi_charge_large_caliber_gun_small_size: "Малогабаритное многозарядное орудие"
- sp_multi_charge_large_caliber_gun_small_size_ns: "$multi_charge_large_caliber_gun_small_size$" #Hidden NS: no need for desc
+ sp_multi_charge_large_caliber_gun_small_size_ns: "$multi_charge_large_caliber_gun_small_size$"
 
  sp_land_super_heavy_railway_gun: "Сверхтяжелое железнодорожное орудие"
  JAP_sp_land_super_heavy_railway_gun: "Экспериментальная гаубица 41H"
@@ -451,9 +433,6 @@
  sp_land_reward_option_stronghold_network_collapse_02: "$sp_land_reward_option_stronghold_network_collapse_01$"
  sp_land_reward_option_stronghold_network_collapse_02_desc: "Тоннель под одним из основных бункеров неожиданно обрушился, в результате чего несколько рабочих оказались под завалами. Необходимо срочно спасти застрявших сотрудников, однако эта ситуация в любом случае скажется на ходе работ."
 
-################################
-  ### GENERIC LAND REWARDS ###
-################################
  sp_land_generic_reward_scientist_xp_1: "Новые наработки"
  sp_land_generic_reward_scientist_xp_2: "Улучшенная разработка"
  sp_land_generic_reward_scientist_xp_3: "Проницательное открытие"
@@ -502,9 +481,6 @@
 
 
 
-##########################
-  ## NUCLEAR PROJECTS ## 
-##########################
 
  sp_nuclear_reactor: "Ядерный реактор"
  sp_nuclear_reactor_desc: "Эксперименты показали, что в результате расщепления атомного ядра высвобождается большое количество энергии. Это открытие пригодится в энергетике. Или при создании бомб..."
@@ -548,11 +524,7 @@
  sp_nuclear_warheads_desc: "Если мы наладим производство компактного ядерного оружия, его можно будет размещать в боеголовках ракет разного типа — это позволит наносить удары на значительном расстоянии."
 
 
-#################################
-  ## NUCLEAR PROJECT REWARDS ## 
-#################################
 
- # Nuclear reactor
  sp_nuclear_design_choice_reward: "Проект реактора"
  sp_nuclear_design_choice_reward_desc: "Перед тем как приступить к проектированию реактора, необходимо выбрать замедлитель нейтронов. От него будет зависеть конструкция всего реактора. Мы можем использовать тяжелую воду или графит. Преимущества и недостатки есть у обоих вариантов..."
  sp_nuclear_design_choice_reward_graphite: "Очищенный графит — лучший замедлитель"
@@ -564,7 +536,6 @@
  sp_nuclear_isotope_separation_choice_reward_gaseous: "Газовые установки — вариант, проверенный временем."
  sp_nuclear_isotope_separation_choice_reward_centrifugal: "Центрифуги будут более эффективны в долгосрочной перспективе."
 
- # Generic
  sp_nuclear_scientist_xp_generic_reward: "Новые наработки"
  sp_nuclear_generic_industry_tech_reward: "Технологическое развитие"
  sp_nuclear_generic_industry_tech_reward_desc: "Во время работы над проектом наши инженеры совершили несколько открытий, которые могут пригодиться и в других областях."
@@ -592,7 +563,6 @@
  sp_nuclear_bomb_information_leak_reward_desc: "Выяснилось, что один из сотрудников проекта «[SpecialProject.GetName]» передавал информацию иностранным агентам. Делал ли он это намеренно или нет, пока что неизвестно. Кроме того, оценить ущерб для проекта, причиненный этими утечками, достаточно сложно."
  sp_nuclear_bomb_information_leak_reward_tt: "Будет получен прогресс по проекту"
  
-# Nuclear Reactor
  sp_nuclear_reactor_radioactive_leak_stabilized_reward: "Утечка радиации: всё под контролем"
  sp_nuclear_reactor_radioactive_leak_stabilized_reward_desc: "Во время работы над реактором произошла серьезная внештатная ситуация, но благодаря уверенным действиям сотрудников ущерб удалось минимизировать. Кроме того, мы получили ценные научные данные."
  sp_nuclear_reactor_minor_explosion_reward: "Небольшой взрыв: обошлось без жертв"
@@ -609,7 +579,6 @@
  sp_commercial_nuclear_reactor_concerns_reward_option_ignore: "Это полная чушь!"
 
 
- # Nuclear bombs
  sp_nuclear_bomb_test_prototype_reward: "Прототип бомбы"
  sp_nuclear_bomb_test_prototype_reward_desc: "[Character.GetName] вместе с командой построили прототип бомбы. Успешное испытание этого устройства и оценка его результатов помогут сильно ускорить ход проекта. С другой стороны, бомба у нас уже есть..."
  sp_nuclear_bomb_test_prototype_reward_test_bomb: "Провести испытания в контролируемой среде."
@@ -628,16 +597,12 @@
  sp_nuclear_bomb_design_choice_reward_gun_type: "Пушечный вариант более простой в исполнении."
  sp_nuclear_bomb_design_choice_reward_implosion: "Имплозивный вариант технически совершеннее."
 
-# Thermonuclear Bombs
  sp_thermonuclear_bomb_test_reward: "Предложение о проведении испытания"
  sp_thermonuclear_bomb_test_reward_desc: "Чтобы продолжить процесс создания термоядерной бомбы, наши ученые запросили возможность провести испытательный взрыв. Для инициирования цепной реакции нам придется предоставить им уже готовую атомную бомбу, но это значительно ускорило бы ход проекта."
  sp_thermonuclear_bomb_test_reward_option_yes: "Провести испытание."
  sp_thermonuclear_bomb_test_reward_option_no: "У нас нет лишних ресурсов."
  sp_no_nukes_available_tt: "$sp_thermonuclear_bomb_test_reward_option_no$"
 
-#########################
-  ## ROCKET PROJECTS ## 
-#########################
  sp_rockets_experimental_rockets: "Экспериментальные ракеты"
  sp_rockets_experimental_rockets_desc: "$experimental_rockets_desc$"
  sp_rockets_flying_bomb: "Летающая бомба"
@@ -722,36 +687,26 @@
  sp_rocket_interceptor_desc: "Совместив мощь ракеты с маневренностью, заключенной в небольшом корпусе, мы создадим непревзойденный самолет-перехватчик."
 
 
-################################
-  ## ROCKET PROJECT REWARDS ## 
-################################
 
- # Generic
  sp_rockets_scientist_xp_generic_reward: "Новые наработки"
  sp_rockets_scientist_xp_generic_reward_desc: "При работе над последним прототипом наши ученые узнали кое-что новое."
- #sp_rockets_scientist_xp_generic_reward_option: "That is good"
 
  sp_rockets_political_interference_generic_reward: "Вмешательство политиков"
  sp_rockets_political_interference_generic_reward_desc: "Из-за вмешательства политиков, лезущих не в свое дело, уже законченные этапы работы пришлось выполнять заново — по совершенно абсурдным причинам."
- #sp_rockets_political_interference_generic_reward_option: "Two steps forward, one step back"
 
  sp_rockets_onsite_explosion_generic_reward: "Взрыв на объекте"
  sp_rockets_onsite_explosion_generic_reward_desc: "Во время испытаний произошел мощный взрыв, значительно повредивший часть комплекса. Впрочем, благодаря этому наши ученые узнали кое-что новое."
- #sp_rockets_onsite_explosion_generic_reward_option: "At least it wasn't totally destroyed"
 
  sp_rockets_generic_major_breakthrough_reward: "Крупный прорыв"
  sp_rockets_generic_major_breakthrough_reward_desc: "На очередном этапе разработки прототипа мы совершили крупный прорыв."
- #sp_rockets_generic_major_breakthrough_reward_option: "Excellent!"
 
  sp_rockets_generic_avionics_advancements_reward: "Развитие авионики"
  sp_rockets_generic_avionics_advancements_reward_desc: "Проводя научные исследования, мы совершили новые открытия в области авионики и аэродинамики. Они пойдут на пользу нашим авиастроителям."
- #sp_rockets_generic_avionics_advancements_reward_option: "This will certainly prove useful" 
  
  sp_rockets_experimental_rockets_improved_accuracy_reward: "Улучшения точности"
  sp_rockets_experimental_rockets_stability_improvements_reward: "Улучшенная устойчивость полета ракеты"
 
 
- # Flying Bomb
  sp_rocket_design_choice_reward: "Дальность или мощность?"
  sp_rocket_design_choice_reward_desc: "Разработчики летающей бомбы просят нас определиться с приоритетами: стоит ли пожертвовать мощностью заряда ради увеличения дальности полета или же поступить наоборот?"
  sp_rocket_design_choice_reward_balanced: "Найти оптимальное сочетание параметров."
@@ -760,7 +715,6 @@
 
  sp_rockets_flying_bomb_technical_breakthrough_in_pulsejet_design_reward: "Технический прорыв при разработке пульсирующего ВРД"
  sp_rockets_flying_bomb_technical_breakthrough_in_pulsejet_design_reward_desc: "Наши инженеры смогли преодолеть серьезные трудности при разработке пульсирующего воздушно-реактивного двигателя, придающего ракете достаточную дальность и скорость полета."
- #sp_rockets_flying_bomb_technical_breakthrough_in_pulsejet_design_reward_option: "Upward and Onward!"
 
  sp_rockets_flying_bomb_launch_ramp_innovations_reward: "Инновации в области пусковых установок"
  sp_rockets_flying_bomb_launch_ramp_innovations_reward_desc: "Наши инженеры смогли серьезно улучшить конструкцию пусковых установок, необходимых для запуска ракет."
@@ -768,22 +722,17 @@
 
  sp_rockets_flying_bomb_mass_production_scaling_reward: "Наращивание массового производства"
  sp_rockets_flying_bomb_mass_production_scaling_reward_desc: "Мы добились повышения производительности. Теперь наращивать массовое производство можно будет гораздо быстрее."
- #sp_rockets_flying_bomb_mass_production_scaling_reward_option: "Most beneficial"
 
  sp_rockets_flying_bomb_engine_optimization_breakthrough_reward: "Прорыв в области оптимизации двигателя"
  sp_rockets_flying_bomb_engine_optimization_breakthrough_reward_desc: "Наши инженеры добились значительных улучшений конструкции реактивного двигателя для ракеты, сделав его надежнее и увеличив дальность полета."
- #sp_rockets_flying_bomb_engine_optimization_breakthrough_reward_option: "Some call it luck"
 
  sp_rockets_flying_bomb_technological_innovation_in_guidance_systems_reward: "Технологические инновации в области систем наведения"
  sp_rockets_flying_bomb_technological_innovation_in_guidance_systems_reward_desc: "Разработчики прототипов добились значительного повышения точности и надежности системы наведения, закрепив за собой техническое преимущество."
- #sp_rockets_flying_bomb_technological_innovation_in_guidance_systems_reward_option: "We are getting closer to achieving our goal"
 
  sp_rockets_flying_bomb_test_flight_failures_reward: "Неудачные испытательные полеты"
  sp_rockets_flying_bomb_test_flight_failures_reward_desc: "Первые испытательные полеты закончились неудачно из-за сбоя системы наведения и общей слабости конструкции. Наши ученые извлекли из этой неудачи серьезный урок, однако сейчас надо будет остановиться и как следует все обдумать."
- #sp_rockets_flying_bomb_test_flight_failures_reward_option: "They say you learn the most from your failures"
 
 
- # Ground to Air
  sp_rockets_ground_control_improvements_reward: "Доработка управления с земли"
  sp_rockets_ground_control_improvements_reward_desc: "[Character.GetName] устраняет несколько серьезных проблем, связанных с отслеживанием ракеты и управлением с земли. Скоро поражать вражеские высоколетящие самолеты станет значительно проще."
 
@@ -797,7 +746,6 @@
  sp_rockets_warhead_detonation_mechanisms_reward: "Механизмы подрыва боеголовки"
  sp_rockets_warhead_detonation_mechanisms_reward_desc: "Важнейшая задача для конструкторов — добиться того, чтобы детонация происходила в нужный момент. [Character.GetName] успешно справляется с этой задачей, и теперь мы можем взрывать боеголовки именно тогда, когда необходимо."
  sp_surface_air_missile_warhead_detonation_bonus: "Ракета «земля — воздух»: доработанный подрыв боеголовки"
- #Ballistic missile
 
  sp_rocket_wind_tunnel_choice_reward: "Инженеры просят аэродинамическую трубу"
  sp_rocket_wind_tunnel_choice_reward_desc: "Инженеры, работающие над проектом баллистической ракеты, запросили строительство сверхзвуковой аэродинамической трубы для предварительного тестирования разрабатываемых ими прототипов. Это значительно ускорит разработку и в долгосрочной перспективе сэкономит ресурсы."
@@ -831,9 +779,6 @@
  sp_rocket_launch_site_choice_reward_reject: "Найдите способ использовать текущую площадку."
  sp_rocket_launch_site_choice_reward_accept: "Нужно инвестировать в строительство новой площадки."
 
-########################
-  ## NAVAL PROJECTS ## 
-########################
  sp_naval_cruiser_submarine: "Подводный крейсер"
  sp_naval_cruiser_submarine_desc: "Подводная лодка с увеличенной дальностью хода, разработанная специально для преодоления больших расстояний без дополнительного снабжения, — отличный охотник на корабли вражеского торгового флота."
  sp_naval_cruiser_submarine_free_design: "Подводный крейсер"
@@ -918,9 +863,6 @@
  sp_naval_proximity_fuze_custom_tt: "$MODIFIER_NAVY_ANTI_AIR_ATTACK$ §G+25%§!"
 
 
-#################################
-  ## NAVAL PROTOTYPE REWARDS ###
-################################# 
  sp_naval_cruiser_submarine_unique_reward_a: "Протокол рейдов"
  sp_naval_cruiser_submarine_unique_reward_a_desc: "Условия Лондонского морского договора сейчас практически не соблюдаются, поэтому в реальности ограничения на палубное вооружение подводных лодок не действуют. Однако при выборе вооружения возникает вопрос, следует ли нам отдавать приоритет соображениям престижа или же дальности действия?"
  sp_naval_cruiser_submarine_preference_a: "Дальность для нас важнее."
@@ -1027,9 +969,6 @@
  sp_naval_proximity_fuzes_preference_a: "Изменить объемы снабжения боеприпасами"
  sp_naval_proximity_fuzes_preference_b: "Сохранить текущие объемы снабжения боеприпасами"
 
-#########################################
- ### NAVAL ADD_EQUIPMENT_BONUS ###
-########################################
 
  sp_cruiser_submarine_eq_bonus_range: "Подводный крейсер — увеличенная дальность действия"
  sp_cruiser_submarine_eq_bonus_raiding: "Подводный крейсер — эффективность перехвата"
@@ -1067,9 +1006,6 @@
  sp_modern_carrier_eq_bonus_anti_torpedo: "Современный авианосец — повышенная защита от торпед"
  sp_mega_carrier_eq_bonus_weather: "Пайкеритовый авианосец — повышенная сопротивляемость погодным условиям"
  sp_mega_carrier_eq_bonus_strength: "Пайкеритовый авианосец — усиленная конструкция"
-#########################################
- ## GENERIC NAVAL PROTOTYPE REWARDS ###
-#########################################
  sp_naval_generic_reward_scientist_xp_1: "Идеи захлестывают"
  sp_naval_generic_reward_scientist_xp_2: "Погружение в креативность"
  sp_naval_generic_reward_scientist_xp_3: "Эврика!"
@@ -1092,9 +1028,6 @@
  sp_naval_generic_reward_option_armor_tech_bonus_name: "Исследование экспериментальной корабельной брони"
  sp_naval_generic_reward_option_artillery_tech_bonus_name: "Исследование экспериментальной корабельной артиллерии"
 
-######################
-  ## AIR PROJECTS ## 
-######################
 
  sp_air_bouncing_bomb: "Прыгающая бомба"
  sp_air_bouncing_bomb_desc: "Бомба, способная прыгать по воде, — идеальное средство для уничтожения защищенных плотин. Впрочем, она пригодится и в других случаях."
@@ -1134,11 +1067,7 @@
  sp_air_helicopter_desc: "Поскольку вертолет способен висеть на месте, он может обеспечить нашим войскам важное тактическое преимущество."
 
 
-#############################
-  ## AIR PROJECT REWARDS ## 
-#############################
 
- # Generic
  sp_air_scientist_xp_generic_reward: "Новые открытия"
  sp_air_scientist_xp_generic_reward_desc: "При работе над последним прототипом наши ученые совершили несколько новых открытий."
  sp_air_scientist_xp_generic_reward_option: "Хорошо"
@@ -1159,7 +1088,6 @@
  sp_air_generic_discoveries_reward_desc: "Проводя научные исследования, наши ученые подали несколько идей, которые могут пригодиться в других обстоятельствах."
  sp_air_generic_discoveries_reward_option: "Любопытно"
 
- # Generic Expanded Rewards
  sp_air_generic_reward_scientist_xp_1: "Ценные соображения"
  sp_air_generic_reward_scientist_xp_2: "Расширенные теоретические познания"
  sp_air_generic_reward_scientist_xp_3: "Безграничные открытия"
@@ -1173,7 +1101,6 @@
  sp_air_generic_reward_test_failure_2: "Разрушительная бомба"
  sp_air_generic_reward_test_failure_3: "Творческая катастрофа"
 
- # Bouncing Bomb 
  sp_air_bouncing_bomb_backspin_mechanism_reward: "Механизм обратной раскрутки"
  sp_air_bouncing_bomb_backspin_mechanism_reward_desc: "Наши ученые изобрели остроумный способ стабилизации сброшенной бомбы: механизм начинает раскручивать ее в обратном направлении, тем самым удерживая бомбу над целью."
  sp_air_bouncing_bomb_backspin_mechanism_reward_option: "Отлично"
@@ -1190,49 +1117,42 @@
  sp_air_bouncing_bomb_type_of_explosives_reward_desc: "Заменив тротил на торпекс, мы сможем значительно уменьшить размер бомбы, не жертвуя при этом ее мощностью."
  sp_air_bouncing_bomb_type_of_explosives_reward_option: "Это будет полезно"
 
- # Earthshaker Bomb
  sp_air_earthshaker_bomb_unique_reward: "Направление разработки"
  sp_air_earthshaker_bomb_unique_reward_desc: "В ходе создания мы обнаружили, что наши наработки можно использовать для увеличения пробивной силы бомбы. Мы можем сосредоточиться на повышении точности бомбометания или повысить ее мощность."
  sp_air_earthshaker_bomb_preference_naval_targetting: "Точность важнее всего"
  sp_air_earthshaker_bomb_preference_raw_power: "Нам нужна мощность"
  sp_air_earthshaker_bomb_preference_both: "Лучше и то и другое"
 
- # Intercontinental Bomber
  sp_air_intercontinental_bomber_unique_reward: "Доставка на большие расстояния"
  sp_air_intercontinental_bomber_unique_reward_desc: "Чтобы наши бомбардировщики могли успешно атаковать другие континенты, необходимо определить, каким именно факторам уделить внимание при постройке."
  sp_air_intercontinental_bomber_preference_bombing_payload: "Увеличенная нагрузка"
  sp_air_intercontinental_bomber_preference_balanced: "Небольшие улучшения"
  sp_air_intercontinental_bomber_preference_protection: "Улучшенная защита"
 
- # Mothership
  sp_air_mothership_unique_reward: "Оптимальные характеристики самолета-матки"
  sp_air_mothership_unique_reward_desc: "Чтобы наши самолеты-матки проявляли себя наилучшим образом, можно попробовать приспособить их под определенные задачи, нарастив таким образом те или иные возможности. Осталось лишь определить, что именно требует нашего внимания."
  sp_air_mothership_preference_speed_agility: "Маневренность и скорость"
  sp_air_mothership_preference_reliability: "Надежность и безопасность"
  sp_air_mothership_preference_strength: "Прочность и мощность вооружения"
 
- # Jet Engine
  sp_air_jet_engine_unique_reward: "Приоритет в разработке"
  sp_air_jet_engine_unique_reward_desc: "Нужно определиться, для каких именно самолетов следует приспособить наши реактивные двигатели: для истребителей или для бомбардировщиков. Впрочем, можно постараться сделать их универсальными."
  sp_air_jet_engine_preference_fighter: "Истребители"
  sp_air_jet_engine_preference_compromise: "Универсальные двигатели"
  sp_air_jet_engine_preference_bomber: "Бомбардировщики"
 
- # Axial Jet Engine
  sp_air_axial_jet_engine_unique_reward: "Дежавю при разработке"
  sp_air_axial_jet_engine_unique_reward_desc: "Вот опять... Нет, не так: вот ОПЯТЬ перед нами возникла дилемма! Как нам следует поступить — сосредоточиться на одной разновидности самолетов или попробовать найти универсальный подход?"
  sp_air_axial_jet_engine_preference_fighter: "Истребители"
  sp_air_axial_jet_engine_preference_compromise: "Универсальный подход"
  sp_air_axial_jet_engine_preference_bomber: "Бомбардировщики"
 
- # Supersonic Jet
  sp_air_supersonic_jet_unique_reward: "Чрезмерная стоимость"
  sp_air_supersonic_jet_unique_reward_desc: "Мы осознали, что потенциальные затраты на сверхзвуковые реактивные самолеты получаются ошеломительными. Можно попробовать их уменьшить, оставить всё как есть, либо пойти ва-банк и перейти на самые высококачественные материалы."
  sp_air_supersonic_jet_preference_cost_reduction: "Сниженные затраты"
  sp_air_supersonic_jet_preference_compromise: "И так сойдет"
  sp_air_supersonic_jet_preference_cost_increase: "Затраты нас не пугают"
 
- # Helicopter
  sp_air_helicopter_unique_reward: "Недостаточная надежность"
  sp_air_helicopter_unique_reward_desc: "Мы боимся, что новые разработки, оказавшись в настоящем бою, слишком быстро выйдут из строя. Однако вертолеты можно будет спасти, если уделить внимание таким факторам, как..."
  sp_air_helicopter_preference_speed: "Скорость и маневренность"
@@ -1240,9 +1160,6 @@
  sp_air_helicopter_preference_protection: "Усиленная броня"
 
 
- ###########################################
-  ### AIR PROJECT EQUIPMENT BONUS NAME ###
- ########################################### 
  sp_earthshaker_bomb_naval_targetting: "Интеграция проекта «Сейсмическая бомба»: точность"
  sp_earthshaker_bomb_power: "Интеграция проекта «Сейсмическая бомба»: увеличение заряда"
  sp_earthshaker_bomb_both: "Интеграция проекта «Сейсмическая бомба»: точность и заряд"
@@ -1267,9 +1184,6 @@
  
  
 
-######################################################
- ### AIR PROJECT TECH BONUS & DESIGN BONUS NAMES ###
-######################################################
 
  sp_air_supersonic_jet_fighter_free_design: "Корпус маленького сверхзвукового самолета"
  sp_air_jet_tactical_bomber_free_design: "Корпус среднего самолета"
@@ -1278,7 +1192,6 @@
  sp_air_medium_air_tech_bonus: "Особые проекты: бонус к средним самолетам"
  sp_air_light_air_tech_bonus: "Особые проекты: бонус к легким самолетам"
 
- ###### SPECIAL PROJECT TAGS ########
 
  sp_tag_tank: "Проекты танков"
  sp_tag_artillery: "Проекты артиллерийских орудий"
@@ -1296,7 +1209,6 @@
 
 
 
- ###### TRAITS ########
 
  scientist_trait_genius: "Гений"
  scientist_trait_genius_desc: "Визионер, раздвигающий границы науки и технологии. Такой талант появляется раз в поколение."
@@ -1344,8 +1256,6 @@
  scientist_trait_nuclear_power_expert_desc: "Ведущий специалист по ядерной физике. Подкован в области деления ядра с упором на добычу энергии."
 
 
- ############# EVENTS #############
- # Nuclear Projects
  sp_nuclear_project_events.1.t: "Утечка информации"
  sp_nuclear_project_events.1.desc: "Совершенно случайно наши агенты в государстве [FROM.GetNameDef] заполучили информацию о некоем секретной проекте. Сотрудник, занятый в разработке секретного оружия, атомной бомбы, рассказал о своей работе на небольшом собрании, где присутствовал один из наших агентов."
  sp_nuclear_project_events.1.a: "Это полезная информация."
@@ -1357,7 +1267,6 @@
 
 
 
- ### OLD DEPRECATED STRINGS (Already translated)
 
  sp_land_generic_reward_scientist_xp_1_desc: "[Character.GetName] добивается нового прорыва, закрепляя за собой репутацию первопроходца в области разработок современного вооружения и значительно ускоряя ход работ. Каждое новое открытие приумножает возможности этого талантливого человека и определяет облик военной техники будущего."
  sp_land_generic_reward_option_scientist_xp: "Знание — сила!"

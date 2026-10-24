@@ -127,14 +127,12 @@ recruit_character = YFC_generic
 	add_war_support = 0.6
 	add_stability = 0.52
 	set_technology = {
-		### Inventions
 		measurements = 1
 		kinectics = 1
 		wind_manipulation = 1
 		domestication = 1
 		metaphysics = 1
 		writing = 1
-		### Support Equipment
 		tech_engineers2 = 1
 		tech_transport = 1
 		tech_field_hospital = 1

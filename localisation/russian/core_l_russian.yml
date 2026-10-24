@@ -1496,7 +1496,6 @@
  GARRISON_CONF_RESISTANCE: "Попытаться ослабить сопротивление"
  GARRISON_CONF_RAIL: "Охранять узлы снабжения и железную дорогу"
  AIR_WING_NAME_FALLBACK: "Крылья ($TYPE$): $NUMBER$"
- #AIR_WING_NAME_FALLBACK:0 "$COUNTRY$ $TYPE$ Air Wing $NUMBER$"
  AIR_WING_NAME_GER_FALLBACK: "$TYPE$: $NUMBER$"
  AIR_WING_NAME_GER_GENERIC: "$NAME$ $NR$"
  AIR_WING_NAME_USA_FALLBACK: "Крылья ($TYPE$): $NUMBER$"

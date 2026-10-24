@@ -118,7 +118,7 @@ guiTypes = {
 				position = { x=0 y=0 }
 				size = { width = 1565 height = 100% }
 			}
-###backgrounds to edit
+
 			iconType = {
 				name ="fleet_in_being_bg"
 				spriteType = "GFX_fleet_in_being_bg"

@@ -11,17 +11,17 @@
  
  industrial_complex:0 "Мануфактура"
  industrial_complex_plural:0 "Мануфактуры"
- industrial_complex_desc:0 "Это здание даёт региону небольшое количество гражданской промышленности." #\n\nCost:(£civ_factory_output -§Y10§! per existing §YManufactory§! level)
+ industrial_complex_desc:0 "Это здание даёт региону небольшое количество гражданской промышленности."
  industrial_complex_extended:0 "§YМануфактура§! \nГражданская мастерская с низкой производительностью, но высокой самостоятельностью и надёжностью. При необходимости может быть переоборудована в кузницу. \n\nМакс. уровень: §Y50§! \nПрочность: §Y6§! \nРабочих: §Y40§!\n \nПроизводство: §G+[?ROOT.manufactory_output]§! £civ_factory_output \n\nСтоимость: £civ_factory_output §Y25000§!"
 
  arms_factory:0 "£smithy|2  Кузница"
  arms_factory_plural:0 "Кузницы"
- arms_factory_desc:0 "Это здание даёт региону небольшое количество военной промышленности." # \n\nCost:(£civ_factory_output -§Y20§! per existing §YSmithy§! level)
+ arms_factory_desc:0 "Это здание даёт региону небольшое количество военной промышленности."
  arms_factory_extended:0 "§YКузница§! \nОружейная мастерская с низкой производительностью, но здесь каждое оружие изготавливается на совесть. При необходимости может быть переоборудована в мануфактуру. \n\nМакс. уровень: §Y50§! \nПрочность: §Y6§! \nРабочих: §Y40§!\n \nЕжедневный расход топлива: §R-24§! \nПроизводство: §G+[?ROOT.smithy_output]§! £mil_factory \n\nСтоимость: £civ_factory_output §Y22000§!"
 
  factory:0 "£factory|2  Фабрика"
  factory_plural:0 "Фабрики"
- factory_desc:0 "Это здание подходит для любого вида военного производства. Его можно строить только у рек или морского побережья." # \n\nCost:(£civ_factory_output -§Y500§! per existing §YFactory§! level) \n\nIt provides the state with:\n
+ factory_desc:0 "Это здание подходит для любого вида военного производства. Его можно строить только у рек или морского побережья."
  factory_extended:0 "§YФабрика§! \nМассовое производство военного снаряжения и тяжёлых материалов. \n\nМакс. уровень: §Y[?factory_level]§! \nПрочность: §Y5§! \nРабочих: §Y500§!\n \nЕжедневный расход топлива: §R-120§! \nПроизводство: §G+[?ROOT.factory_output]§! £mil_factory \n\nСтоимость: £civ_factory_output §Y60000§!"
  
  harbour:0 "£harbour|2  Гавань"
@@ -31,7 +31,7 @@
 
  dockyard:0 "£dockyard_factory|2  Верфь"
  dockyard_plural:0 "£dockyard_factory|2  Верфи"
- dockyard_desc:0 "Это здание даёт региону промышленную базу для строительства новых кораблей. Заодно это ещё и отличное место для рыболовства." # \n\nCost:(£civ_factory_output -§Y50§! per existing §YNaval Dockyard§! level)
+ dockyard_desc:0 "Это здание даёт региону промышленную базу для строительства новых кораблей. Заодно это ещё и отличное место для рыболовства."
  dockyard_extended:0 "§YВерфь§! \nКрупная верфь для развитого военного судостроения. \n\nМакс. уровень: §Y[?dockyard_level]§! \nПрочность: §Y4§! \nРабочих: §Y200§!\n\nПроизводство: §G+[?ROOT.dockyard_output]§! £dockyard_texticon \n\nСтоимость: £civ_factory_output §Y20000§!"
 
  granary:0 "Амбар"

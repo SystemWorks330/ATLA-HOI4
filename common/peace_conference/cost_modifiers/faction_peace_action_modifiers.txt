@@ -32,7 +32,6 @@ peace_action_modifiers = {
 	
 	
 	
-	# }
 
 	faction_rule_modifier_encourage_take_states = {
 		peace_action_type = take_states
@@ -52,12 +51,9 @@ peace_action_modifiers = {
 
 	
 	
-	# 	enable = { 
-	
-	# 	}
 	
 	
-	# }
+	
 
 	
 	#### extra costs 

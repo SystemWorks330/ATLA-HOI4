@@ -308,6 +308,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/legitimacy/FIR_legit_bg.dds"
 	}
 	spriteType = {
+		name = "GFX_kyi_legit_bg"
+		texturefile = "gfx/interface/legitimacy/KYI_legit_bg.dds"
+	}
+	spriteType = {
 		name = "GFX_ear_legit_bg"
 		texturefile = "gfx/interface/legitimacy/EAR_legit_bg.dds"
 	}
@@ -329,6 +333,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/legitimacy/FIR_high_legitimacy.dds"
 	}
 	spriteType = {
+		name = "GFX_kyi_high_legitimacy"
+		texturefile = "gfx/interface/legitimacy/KYI_high_legitimacy.dds"
+	}
+	spriteType = {
 		name = "GFX_ear_high_legitimacy"
 		texturefile = "gfx/interface/legitimacy/EAR_high_legitimacy.dds"
 	}
@@ -344,6 +352,10 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_fir_low_legitimacy"
 		texturefile = "gfx/interface/legitimacy/FIR_low_legitimacy.dds"
+	}
+	spriteType = {
+		name = "GFX_kyi_low_legitimacy"
+		texturefile = "gfx/interface/legitimacy/KYI_low_legitimacy.dds"
 	}
 	spriteType = {
 		name = "GFX_ear_low_legitimacy"

@@ -150,19 +150,9 @@
  NAVAL_TITLE_CUTTER:0 "Каттер"
 
 
- # Overwitten effects modifiers custom
 
   AMMUNITION_USAGE:0 ""
-  #carpentry_output:0 "Modify §YCarpentry§! resource output by: §G+1§! £economy_resources|4."
-  #masonry_output:0 "Modify §YMasonry§! resource output by: §G+1§! £economy_resources|5."
-  #steel_beam_factory_output:0 "Modify §YSteel Beam Factory§! resource output by: §G+3§! £economy_resources|6."
-  #mill_output:0 "Modify §YMill§! resource output by: §G+2§! £economy_resources|1."
-  #fishing_stand_output:0 "Modify §YFishing Stand§! resource output by: §G+1§! £economy_resources|1."
-  #smithy_output:0 "Modify §YSmithy§! output by: §G+1§! £mil_factory."
-  #smithy_output_2:0 "Modify §YSmithy§! output by: §G+1§! £resources_texticons|8  when it is leveled up."
-  #factory_output:0 "Modify §YFactory§! output by: §G+1§! £mil_factory."
 
- # Doctrines & Tactics
 
  power:0 "Power"
  power_desc:0 "The key to victory is to overwhelm the enemy with unmatched strength and vigour."
@@ -628,18 +618,14 @@
  ironclad_tactics_13:0 "Плавучая крепость"
  ironclad_tactics_13_desc:0 "Неостановимая сила И недвижимый объект."
  
- # Inventions
 
- #decadence:0 "Decadence: [?decadence|R0%]"
  decadence_tooltip:0 "Упадок со временем возникает в процветающих обществах и повышает вероятность деспотии."
  decadence_tooltip_delayed:0 "§LУ общества есть три стадии: дикость, возвышение и упадок. Великие поднимаются благодаря дикости. Правят в эпоху возвышения. Падают из-за собственного упадка.§!"
- #consciousness:0 "Conciousness: [?consciousness|Y1%]"
  consciousness_tooltip:0 "Сознательность растёт в грамотных и/или угнетённых обществах. Когда придёт время, она может породить революцию."
  consciousness_tooltip_delayed:0 "§LПросвещение - это выход человека из состояния незрелости, в котором он пребывает по собственной вине. Незрелость - это неспособность пользоваться собственным умом без руководства другого. Она является самонавязанной, когда её причина кроется не в недостатке понимания, а в отсутствии решимости и мужества пользоваться им самостоятельно.§!"
  invention_made_extended:0 "§YСовершено изобретение§! \n£research_speed_texticon  Скорость исследований: §R-20.00%§! \n£stability_texticon  Стабильность: §G+10.00%§! \n£war_support_texticon  Милитаризм: §G+10.00%§!"
  invention_made_delayed:0 "§LМы совершили новое открытие, и народ очень гордится этим. Но нам ещё предстоит найти ему практическое применение.§!"
 
- # Society Reforms
 
  reform_0:0 "Социальные роли"
  reform_0_desc:0 "Отказ от племенного образа жизни в пользу постоянных поселений позволяет обществу переходить к более сложному разделению труда и в итоге вырасти в процветающую цивилизацию."
@@ -774,7 +760,6 @@
  reform_5:0 "Индустриализация"
  reform_5_desc:0 "Усовершенствование парового двигателя превратило его из игрушки для богачей в машину, которую можно установить почти в каждый инструмент, мастерскую и транспорт, вызвав крупнейший до сих пор рост производства."
 
- # Industry
 
  INDUSTRY_TITLE:0 "ПРОМЫШЛЕННОСТЬ"
  industry_desc:0 ""
@@ -2029,7 +2014,6 @@
  tech_supply_wagons8:0 "Механизированные повозки"
  tech_supply_wagons8_desc:0 "Все враги завидуют нашим превосходным цепочкам снабжения и теперь ещё и нашим караванам."
 
- # cavalry
 
  lc_update_h_1:0 "Простая лёгкая атака"
  lc_update_h_1_desc:0 "Организованный натиск нанесёт врагу больше фронтального урона."
@@ -2147,7 +2131,6 @@
 
 
 
-### Air
  air_training_1:0 "Простая подготовка магов воздуха"
  air_training_1_short:0 "Простая подготовка магов воздуха"
  air_training_1_desc:0 "Простые, но действенные наступательные и оборонительные техники для наших магов воздуха."
@@ -2252,7 +2235,6 @@
  fire_training_7_short:0 "Продвинутые оборонительные формы"
  fire_training_7_desc:0 "Стена огня ждёт всякого, кто окажется достаточно глуп, чтобы ударить первым"
  
- ### Water
  water_training_1:0 "Простая подготовка магов воды"
  water_training_1_short:0 "Простая подготовка магов воды"
  water_training_1_desc:0 "Простые, но действенные наступательные и оборонительные приёмы для наших магов воды."
@@ -2288,7 +2270,6 @@
  water_training_7_desc:0 "Наших врагов встретит бесконечная непроницаемая стена льда."
 
 
- ### Kyoshi Warriors
  kyoshi_training_1:0 "Простая подготовка воинов Киоши"
  kyoshi_training_1_short:0 "Простая подготовка воинов Киоши"
  kyoshi_training_1_desc:0 "Простые, но действенные наступательные и оборонительные приёмы для наших воинов Киоши."
@@ -2687,7 +2668,6 @@
  maintenance_tech_6:0 "Элитная ремонтная команда"
  maintenance_tech_6_desc:0 "Лучшие из лучших ремонтных команд."
 
-##########
 
 
  

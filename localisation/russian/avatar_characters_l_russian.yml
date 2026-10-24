@@ -1,5 +1,4 @@
 ﻿l_russian:
- #Firenation
  FIR_sozin:0 "Созин"
  sozin_ttp:0 "§YСозин§! \nВозраст: [?mtth:sozin_age|Y0]"
  sozin_ttp_delayed:0 ""
@@ -76,7 +75,6 @@
 
  _description:0 "ОШИБКА: отсутствует токен"
 
- #Earthkingdom
  EAR_zaifeng:0 "Зайфэн"
  EAR_zaifeng_desc:0 "51-й Царь Земли"
  EAR_kuei:0 "Куэй"
@@ -89,7 +87,6 @@
  EAR_saiful:0 "Сайфул"
  EAR_cam:0 "Кэм"
 
- #Fujian
  FUJ_Goruta:0 "Горута"
  GAO_shing:0 "Шинг"
  GAO_lao_beifong:0 "Лао Бейфонг"
@@ -99,7 +96,6 @@
  GDD_lu:0 "Лу"
  GDD_generic:0 "Безымянный правитель"
  GFC_generic:0 "Безымянный правитель"
- #Baichuan
  BAI_Yomi:0 "Ёми"
  EBA_than:0 "Тан"
  EBA_generic:0 "Безымянный правитель"
@@ -121,7 +117,6 @@
  CHN_Qing:0 "Цин"
  CHN_Li:0 "Ли"
  
-  #Taku
  tak_minister_of_personnel_1:0 "Цзе-Тэн"
  tak_minister_of_personnel_2:0 "Тьен-Ше-Мин"
  tak_minister_of_personnel_3:0 "Кавао-Фэчжун"
@@ -170,12 +165,9 @@
  tak_head_of_intelligence_4:0 "Луд-Цев"
  tak_head_of_intelligence_5:0 "Ку-Кизун"
  tak_head_of_intelligence_6:0 "Трандэ"
- #Dawa
  DAW_Yojiku:0 "Ёдзику"
- #Dingcuo
  DIN_Riteka:0 "Ритека"
 
- #Ba Sing Se
 EAR_dai_li_government:0 "Правительство Дай Ли"
 EAR_dai_li_government_desc:0 "Правительство Дай Ли"
 ear_minister_of_personnel_1:0 "Биян"
@@ -288,7 +280,6 @@ EAT_extinct_nation_desc:0 "Исчезнувший народ"
 EAT_generic:0 "Безымянный правитель"
 EAT_hisha:0 "Хиша"
 
-#Gintong
 eba_minister_of_personnel_1:0 "Уфите"
 eba_minister_of_personnel_2:0 "Пивего"
 eba_minister_of_personnel_3:0 "Шэньфэн"
@@ -337,7 +328,6 @@ eba_quartermaster_3:0 "Доэнго"
 eba_quartermaster_4:0 "Хиута"
 eba_quartermaster_5:0 "Поутаро"
 eba_quartermaster_6:0 "Контан" 
-#Yaoping
 ecb_sung:0 "Сун"
 ecb_minister_of_personnel_1:0 "Данвэн"
 ecb_minister_of_personnel_2:0 "Гэньхон"
@@ -387,7 +377,6 @@ ecb_quartermaster_3:0 "Либет"
 ecb_quartermaster_4:0 "Джихоп"
 ecb_quartermaster_5:0 "Сефар"
 ecb_quartermaster_6:0 "Наупот"
-#Full Moon Bay
 fmb_minister_of_personnel_1:0 "Яки"
 fmb_minister_of_personnel_2:0 "Кейсок"
 fmb_minister_of_personnel_3:0 "Умдан"
@@ -436,7 +425,6 @@ fmb_quartermaster_3:0 "Мейфабо"
 fmb_quartermaster_4:0 "Фенхутиб"
 fmb_quartermaster_5:0 "Сунгеваб"
 fmb_quartermaster_6:0 "Итулки"
-#Gaoling
 gao_minister_of_personnel_1:0 "Уон"
 gao_minister_of_personnel_2:0 "Йейкан"
 gao_minister_of_personnel_3:0 "Сэнфон"
@@ -485,7 +473,6 @@ gao_quartermaster_3:0 "Онкроби"
 gao_quartermaster_4:0 "Письяцу"
 gao_quartermaster_5:0 "Куярги"
 gao_quartermaster_6:0 "Эйхирта"
-#Zheizhou
 gar_bolin:0 "Болин"
 gar_minister_of_personnel_1:0 "Мурики"
 gar_minister_of_personnel_2:0 "Тонпен"
@@ -535,7 +522,6 @@ gar_quartermaster_3:0 "Киндоре"
 gar_quartermaster_4:0 "Микуда"
 gar_quartermaster_5:0 "Чинден"
 gar_quartermaster_6:0 "Виту"
-#Great Divide
 gdd_lu:0 "Лу"
 gdd_minister_of_personnel_1:0 "Вияма"
 gdd_minister_of_personnel_2:0 "Энтруку"
@@ -585,9 +571,7 @@ gdd_quartermaster_3:0 "Милтуфи"
 gdd_quartermaster_4:0 "Анвасто"
 gdd_quartermaster_5:0 "Кинятоб"
 gdd_quartermaster_6:0 "Хидрабо"
-#Goutou
 GOU_Yahatsu:0 "Яхацу"
-# Han Tui
 han_gambu:0 "Гамбу"
 han_minister_of_personnel_1:0 "Орудо"
 han_minister_of_personnel_2:0 "Инута"
@@ -637,8 +621,6 @@ han_quartermaster_3:0 "Доризута"
 han_quartermaster_4:0 "Масеки"
 han_quartermaster_5:0 "Кийонтаро"
 han_quartermaster_6:0 "Хейдабо"
-# Hebai
-#Hebai
 heb_oh:0 "О"
 heb_minister_of_personnel_1:0 "Гуммо"
 heb_minister_of_personnel_2:0 "Юньцен"
@@ -688,7 +670,6 @@ heb_quartermaster_3:0 "Мубигис"
 heb_quartermaster_4:0 "Фуведосу"
 heb_quartermaster_5:0 "Понугета"
 heb_quartermaster_6:0 "Юбезеки"
-# Hu Xin Fire Colony
 HFC_koulin:0 "Коулин"
 HFC_zuji:0 "Цзудзи"
 HFC_generic:0 "Безымянный правитель"
@@ -716,7 +697,6 @@ HEB_generic:0 "Безымянный правитель"
 
 ISL_gombo:0 "Гомбо"
 ISL_generic:0 "Безымянный правитель"
-# Qinchao
 chn_mayor_wang:0 "Мэр Ван"
 chn_xiang:0 "Сян"
 chn_mayor_tong:0 "Мэр Тонг"
@@ -768,9 +748,7 @@ chn_quartermaster_3:0 "Хибо"
 chn_quartermaster_4:0 "Давонта"
 chn_quartermaster_5:0 "Дабероп"
 chn_quartermaster_6:0 "Фецуво"
-#Han Tui Fire Colony
 kfc_quin:0 "Квин"
-#Kyoshi Island
 kyi_minister_of_personnel_1:0 "Найфонта"
 kyi_minister_of_personnel_2:0 "Рецубо"
 kyi_minister_of_personnel_3:0 "Гиншука"
@@ -819,7 +797,6 @@ kyi_quartermaster_3:0 "Духибу"
 kyi_quartermaster_4:0 "Кицую"
 kyi_quartermaster_5:0 "Япито"
 kyi_quartermaster_6:0 "Онуги"
-#Taihua
 lam_minister_of_personnel_1:0 "Цзе"
 lam_minister_of_personnel_2:0 "Юо"
 lam_minister_of_personnel_3:0 "Ки"
@@ -868,7 +845,6 @@ lam_quartermaster_3:0 "Туфодин"
 lam_quartermaster_4:0 "Линхецу"
 lam_quartermaster_5:0 "Никюбо"
 lam_quartermaster_6:0 "Фонацу"
-#Lingnag
 mak_hongli:0 "Хунли"
 mak_minister_of_personnel_1:0 "Ю-Шан"
 mak_minister_of_personnel_2:0 "Пиньон"
@@ -918,7 +894,6 @@ mak_quartermaster_3:0 "Яньхутаро"
 mak_quartermaster_4:0 "Киватеги"
 mak_quartermaster_5:0 "Йесейко"
 mak_quartermaster_6:0 "Айтавахо"
-#Chenbao
 mer_hui:0 "Хуэй"
 mer_minister_of_personnel_1:0 "Тугока"
 mer_minister_of_personnel_2:0 "Хивени"
@@ -968,7 +943,6 @@ mer_quartermaster_3:0 "Нафуми"
 mer_quartermaster_4:0 "Кекана"
 mer_quartermaster_5:0 "Чимая"
 mer_quartermaster_6:0 "Ношира"
-#Si Wong
 mpo_minister_of_personnel_1:0 "Юко"
 mpo_minister_of_personnel_2:0 "Техиру"
 mpo_minister_of_personnel_3:0 "Айвака"
@@ -1017,7 +991,6 @@ mpo_quartermaster_3:0 "Швогери"
 mpo_quartermaster_4:0 "Нуцоба"
 mpo_quartermaster_5:0 "Пекиро"
 mpo_quartermaster_6:0 "Яси"
-#Nan Shan
 nan_ping:0 "Пин"
 nan_minister_of_personnel_1:0 "Гухао"
 nan_minister_of_personnel_2:0 "Кийода"
@@ -1067,7 +1040,6 @@ nan_quartermaster_3:0 "Темеру"
 nan_quartermaster_4:0 "Юшико"
 nan_quartermaster_5:0 "Набури"
 nan_quartermaster_6:0 "Потума"
-#Northern Air Temple
 nat_northern_monk:0 "Чойзом"
 nat_extinct_nation:0 "Исчезнувший народ"
 nat_mechanist:0 "Механист"
@@ -1119,7 +1091,6 @@ nat_quartermaster_3:0 "Миндо"
 nat_quartermaster_4:0 "Нукуфо"
 nat_quartermaster_5:0 "Бетуро"
 nat_quartermaster_6:0 "Сувита"
-#Xishaan
 ncb_hotun:0 "Хотун"
 ncb_minister_of_personnel_1:0 "Торува"
 ncb_minister_of_personnel_2:0 "Нидеко"
@@ -1170,7 +1141,6 @@ ncb_quartermaster_4:0 "Доцури"
 ncb_quartermaster_5:0 "Ботова"
 ncb_quartermaster_6:0 "Юсуко"
 
-#Hu Xin
 nix_minister_of_personnel_1:0 "Дояка"
 nix_minister_of_personnel_2:0 "Менуко"
 nix_minister_of_personnel_3:0 "Кигата"
@@ -1219,7 +1189,6 @@ nix_quartermaster_3:0 "Нодика"
 nix_quartermaster_4:0 "Уцогеми"
 nix_quartermaster_5:0 "Боюно"
 nix_quartermaster_6:0 "Нирутебо"
-#Liandu
 now_fong:0 "Фонг"
 now_minister_of_personnel_1:0 "Куцубо"
 now_minister_of_personnel_2:0 "Туёка"
@@ -1269,11 +1238,8 @@ now_quartermaster_3:0 "Шимода"
 now_quartermaster_4:0 "Нупогумо"
 now_quartermaster_5:0 "Метуриба"
 now_quartermaster_6:0 "Ямохита"
-#Northern Water Tribes
 nwt_minister_of_finance_6:0 "Карпок"
-# New Ozai
 omc_ukano:0 "Укано"
-#Omashu
 oms_iuri:0 "Иури"
 oms_bumi:0 "Буми"
 oms_minister_of_personnel_1:0 "Сайто"
@@ -1324,9 +1290,7 @@ oms_quartermaster_3:0 "Даобогу"
 oms_quartermaster_4:0 "Мабирайто"
 oms_quartermaster_5:0 "Хафукеши"
 oms_quartermaster_6:0 "Тамусеки"
-#Pirates
 pir_blackbeard:0 "Чернобород"
-#Hu Bao
 poh_rhee:0 "Ри"
 poh_minister_of_personnel_1:0 "Торука"
 poh_minister_of_personnel_2:0 "Химото"
@@ -1376,7 +1340,6 @@ poh_quartermaster_3:0 "Мидзиномэ"
 poh_quartermaster_4:0 "Секохова"
 poh_quartermaster_5:0 "Нуфомето"
 poh_quartermaster_6:0 "Бьёфу"
-# Southern Air Temple
 sat_monk_pasang:0 "Монах Пасанг"
 sat_extinct_nation:0 "Исчезнувший народ"
 sat_council:0 "Совет старейшин Южного храма воздуха"
@@ -1429,10 +1392,8 @@ sat_quartermaster_4:0 "Сутореби"
 sat_quartermaster_5:0 "Пеюнома"
 sat_quartermaster_6:0 "Моротибап"
 
-#Shendu
 SHE_Finuoka:0 "Финуока"
 
-# Sun Warriors
 snw_minister_of_personnel_1:0 "Нуа"
 snw_minister_of_personnel_2:0 "Рошинику"
 snw_minister_of_personnel_3:0 "Нефува"
@@ -1475,7 +1436,6 @@ snw_head_of_intelligence_3:0 "Веха"
 snw_head_of_intelligence_4:0 "Цуяна"
 snw_head_of_intelligence_5:0 "Рарири"
 snw_head_of_intelligence_6:0 "Ваначи"
-#Foggy Swamp
 swa_minister_of_personnel_1:0 "Нохе"
 swa_minister_of_personnel_2:0 "Майя"
 swa_minister_of_personnel_3:0 "Хаха"
@@ -1647,7 +1607,6 @@ wul_head_of_intelligence_4:0 "Юму"
 wul_head_of_intelligence_5:0 "Речисе"
 wul_head_of_intelligence_6:0 "Ани"
 
-#Xilii
 XIL_Gezaki:0 "Гезаки"
 xin_minister_of_personnel_1:0 "Сему"
 xin_minister_of_personnel_2:0 "Тою"
@@ -1779,7 +1738,6 @@ yii_head_of_intelligence_4:0 "Умикоши"
 yii_head_of_intelligence_5:0 "Мачи"
 yii_head_of_intelligence_6:0 "Нехоцу"
 
-#Yontai
 YON_Huweto:0 "Хувето"
 
 yue_minister_of_personnel_1:0 "Раа"

@@ -1,5 +1,4 @@
 ﻿l_russian:
- #upgrades
 
  mass_production_land:0 "Количество £prod_eff!"
  mass_production_land_desc:0 "Упрощённая и модульная конструкция повышает объёмы производства, поскольку такое снаряжение теперь сможет штамповать даже самый неумелый крестьянин. Однако надёжность при этом заметно страдает."
@@ -96,26 +95,9 @@
  guard_upgrade_8_tt:0 "Позволяет улучшать лёгкую пехотную броню слезоточивым газом, которые дают: \n\n£defense_texticon  Защита: §G+24%§! \n£supression_texticon  Подавление: §G+4§! \n£production_cost  Стоимость производства: §R+16§! \nСтоимость ресурсов: §Y+1§!£resources_strip|4 §Y+1§!£resources_strip|7."
 
 
- #general
  transport_equipment:0 "Повозка"
  transport_equipment_desc:0 "Деревянная повозка, способная преодолеть любую местность, если у неё есть достаточно времени. Ткань защищает груз, а трава используется, чтобы предотвратить порчу скоропортящегося содержимого."
 
- #FIR_EQUIPMENT_VERSION_1:0 "A"
- #FIR_EQUIPMENT_VERSION_2:0 "B"
- #FIR_EQUIPMENT_VERSION_3:0 "C"
- #FIR_EQUIPMENT_VERSION_4:0 "D"
- #FIR_EQUIPMENT_VERSION_5:0 "E"
- #FIR_EQUIPMENT_VERSION_6:0 "F"
- #FIR_EQUIPMENT_VERSION_7:0 "G"
- #FIR_EQUIPMENT_VERSION_8:0 "H"
- #FIR_EQUIPMENT_VERSION_9:0 "I"
- #FIR_EQUIPMENT_VERSION_10:0 "J"
- #FIR_EQUIPMENT_VERSION_11:0 "K"
- #FIR_EQUIPMENT_VERSION_12:0 "L"
- #FIR_EQUIPMENT_VERSION_13:0 "M"
- #FIR_EQUIPMENT_VERSION_14:0 "N"
- #FIR_EQUIPMENT_VERSION_15:0 "O"
- #FIR_EQUIPMENT_VERSION_16:0 "P"
 
  dragon_moose_animal:0 "Дракон-Лось"
  dragon_moose_animal_desc:0 "Большой гибрид между лосем и драконом. Стал послушным после шести лет тренировки. Большая часть обучения была сосредоточена на том, чтобы заставить его принять растительную диету."
@@ -464,7 +446,6 @@
  support_equipment_short:0 "Вспом. снар."
 support_equipment_desc:0 "Инструменты, не предназначенные для боя, которые, тем не менее, очень полезны в войне."
  
-  #firenation
  
  firebender_equipment:0 "Снаряжение огненного мага"
  firebender_equipment_short:0 "Снар. огн. мага"
@@ -520,7 +501,6 @@ support_equipment_desc:0 "Инструменты, не предназначен�
  siege_tundra_tank_equipment_1_desc:0 "На этих специализированных танках установлена грозная металлическая баллиста, предназначенная для разрушения укреплений и обрушения стен мощным тросовым механизмом. Развёртываемые упоры удерживают машину на месте во время выстрела её массивным болтом."
  tank_train_equipment_1:0 "Танк-поезд"
  tank_train_equipment_1_desc:0 "Это металлическое чудовище способно нестись с головокружительной скоростью почти по любой местности. В двух бронированных отсеках можно перевозить любую комбинацию конных и пеших солдат."
- #waternation
  
  waterbender_equipment:0 "Снаряжение водного мага"
  waterbender_equipment_short:0 "Снар. водн. мага"
@@ -538,7 +518,6 @@ support_equipment_desc:0 "Инструменты, не предназначен�
  waterbender_equipment_4_short:0 "Броня водн. мага"
  waterbender_equipment_4_desc:0 "Идеальный баланс между защитой и мобильностью."
 
- #earthnation
  
  earthbender_equipment:0 "Снаряжение мага земли"
  earthbender_equipment_short:0 "Снар. мага земли"
@@ -578,7 +557,6 @@ support_equipment_desc:0 "Инструменты, не предназначен�
  sandglider_equipment_1_short:0 "Песчаный Парус"
  sandglider_equipment_1_desc:0 "Создавая большие песчаные вихри, маги песка могут без труда приводить в движение эти деревянные суда."
 
- #airnation
  
  airbender_equipment:0 "Снаряжение мага воздуха"
  airbender_equipment_short:0 "Снар. мага воздуха"
@@ -598,7 +576,6 @@ support_equipment_desc:0 "Инструменты, не предназначен�
 
 
 
-#Kyoshi Warriors
  kyoshi_equipment:0 "Снаряжение воина Киоши"
  kyoshi_equipment_short:0 "Снаряж. воина Киоши"
  kyoshi_equipment_desc:0 "Наше боевое одеяние создано в честь наряда Аватара Киоши."
@@ -615,7 +592,6 @@ support_equipment_desc:0 "Инструменты, не предназначен�
  kyoshi_equipment_4_short:0 "Снаряж. воина Киоши IV"
  kyoshi_equipment_4_desc:0 "Мы воплотим в себе облик, стиль и дух Киоши."
 
- # cavalry
  light_cavalry_equipment:0 "Снаряжение лёгкой кавалерии"
  light_cavalry_equipment_short:0 "Лёгкая Кав. Об."
  light_cavalry_equipment_desc:0 "Седло для небольшого ездового животного."
@@ -673,7 +649,6 @@ support_equipment_desc:0 "Инструменты, не предназначен�
  heavy_cavalry_equipment_5_short:0 "Тяжёлая Кав. Об. V"
  heavy_cavalry_equipment_5_desc:0 "Облеките этого зверя сталью, превратите его в неудержимого гиганта."
 
- # air
 
  small_birb_equipment_1:0 "Вестник-Сокол"
  small_birb_equipment_1_desc:0 "Сокол, обученный переносить сообщения."
@@ -735,9 +710,7 @@ support_equipment_desc:0 "Инструменты, не предназначен�
  heavy_airship_equipment_3:0 "Тяжёлый боевой дирижабль"
  heavy_airship_equipment_3_desc:0 "Огромный дирижабль с достаточной мощью оружия, чтобы сравнять весь город."
 
- #navy
 
- #water
  watertribe_canoe_1:0 "Каноэ"
  watertribe_canoe_2:0 "Аутригер"
  watertribe_canoe_3:0 "Тяжёлое каноэ"
@@ -874,7 +847,6 @@ support_equipment_desc:0 "Инструменты, не предназначен�
  watertribe_warship_hull_4:0 "Продвинутый боевой корабль"
  watertribe_warship_hull_4_desc:0 "Железный корабль на паровой тяге с непревзойдённой бронёй, почти неуязвимый для вражеской артиллерии."
 
- #fire
 
 firenation_yacht_1:0 "Речной катер с гребным колесом"
 firenation_yacht_2:0 "Речной катер с винтовым движителем"
@@ -1014,7 +986,6 @@ empire_class_hull_1_desc:0 "Огромный линкор, способный в
 empire_class_hull_2:0 "Линкор класса Империя"
 empire_class_hull_2_desc:0 "Абсолютный зенит военно-морской инженерии Огненной Нации, этот корабль превосходит любой другой в броне и боевой мощи, само присутствие такого чудовища внушает глубокий страх врагу."
 
-#generic
 galley_ship_1:0 "Боевое каноэ"
 galley_ship_2:0 "Лёгкая галера"
 galley_ship_3:0 "Тяжёлая галера"

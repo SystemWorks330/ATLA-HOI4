@@ -887,16 +887,7 @@ guiTypes = {
 			clipping = no
 		}
 	
-		buttonType = {
-				name = "intel_agency_button"
-				quadTextureSprite = "GFX_diplo_filter_entry"
-				position = { x=253 y=50 }
-				buttonText = "WAR_COUNCIL_ESPIONAGE_BUTTON"
-				font = "hoi_16mbs"
-				frame = 2
-				clicksound = click_close
-				oversound = ui_menu_over
-			}
+
 
 		buttonType = {
 				name = "commander_roster_ship"

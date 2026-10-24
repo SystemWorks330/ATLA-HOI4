@@ -12,22 +12,46 @@ scripted_gui = {
 
 		triggers = {
 			new_minister_of_personnel_button_click_enabled = {
-				has_political_power > 5
+				check_variable = {
+					var = political_power
+					value = mtth:minister_cost
+					compare = greater_than_or_equals
+				}
 			}
 			new_minister_of_finance_button_click_enabled = {
-				has_political_power > 5
+				check_variable = {
+					var = political_power
+					value = mtth:minister_cost
+					compare = greater_than_or_equals
+				}
 			}
 			new_minister_of_culture_button_click_enabled = {
-				has_political_power > 5
+				check_variable = {
+					var = political_power
+					value = mtth:minister_cost
+					compare = greater_than_or_equals
+				}
 			}
 			new_minister_of_justice_button_click_enabled = {
-				has_political_power > 5
+				check_variable = {
+					var = political_power
+					value = mtth:minister_cost
+					compare = greater_than_or_equals
+				}
 			}
 			new_minister_of_works_button_click_enabled = {
-				has_political_power > 5
+				check_variable = {
+					var = political_power
+					value = mtth:minister_cost
+					compare = greater_than_or_equals
+				}
 			}
 			new_minister_of_rites_button_click_enabled = {
-				has_political_power > 5
+				check_variable = {
+					var = political_power
+					value = mtth:minister_cost
+					compare = greater_than_or_equals
+				}
 			}
 		}
 
@@ -77,6 +101,7 @@ scripted_gui = {
 				}
 				add_to_variable = { random_advisor_counter = 1 }
 				add_political_power = mtth:minister_cost_remove
+				add_to_variable = { generic_minster_var = 1 }
 			}
 
 			new_minister_of_finance_button_click = {
@@ -126,6 +151,7 @@ scripted_gui = {
 				}
 				add_to_variable = { random_advisor_counter = 1 }
 				add_political_power = mtth:minister_cost_remove
+				add_to_variable = { generic_minster_var = 1 }
 			}
 
 			new_minister_of_culture_button_click = {
@@ -175,6 +201,7 @@ scripted_gui = {
 				}
 				add_to_variable = { random_advisor_counter = 1 }
 				add_political_power = mtth:minister_cost_remove
+				add_to_variable = { generic_minster_var = 1 }
 			}
 
 			new_minister_of_justice_button_click = {
@@ -222,6 +249,7 @@ scripted_gui = {
 				}
 				add_to_variable = { random_advisor_counter = 1 }
 				add_political_power = mtth:minister_cost_remove
+				add_to_variable = { generic_minster_var = 1 }
 			}
 
 			new_minister_of_works_button_click = {
@@ -270,6 +298,7 @@ scripted_gui = {
 				}
 				add_to_variable = { random_advisor_counter = 1 }
 				add_political_power = mtth:minister_cost_remove
+				add_to_variable = { generic_minster_var = 1 }
 			}
 
 			new_minister_of_rites_button_click = {
@@ -316,6 +345,7 @@ scripted_gui = {
 				}
 				add_to_variable = { random_advisor_counter = 1 }
 				add_political_power = mtth:minister_cost_remove
+				add_to_variable = { generic_minster_var = 1 }
 			}
 
 		}

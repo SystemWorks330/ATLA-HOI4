@@ -1,5 +1,4 @@
 ﻿l_russian:
- #all
  news.2.t:0 "Медведи!"
  news.2.d:0 "В восточных окраинах Царства Земли была обнаружена дикая популяция медведей. Эти животные считаются настоящей аномалией местной фауны: у них нет никаких дополнительных особенностей, и, как отмечают исследователи, их отличает поразительная «обычность». Из-за своей редкости они находятся под большой угрозой со стороны браконьеров, поэтому защитники природы требуют, чтобы корона взяла этих удивительных существ под охрану."
  news.2.a:0 "Просто... медведь?"
@@ -50,13 +49,11 @@
  news.11.a:0 "Да здравствует Король Феникс [FIR.GetName]!"
  news.11.b:0 "Осталась ли хоть какая-то надежда?"
 
- #Sun Warriors Revealed
  sun.1.t:0 "Возвращение Воинов Солнца"
  sun.1.d:0 "Воины Солнца, далекая цивилизация, которую долгое время считали вымершей, неожиданно вновь открылись миру. Потомки первых магов огня, Воины Солнца утверждают, что достойные будут благословлены двумя «владыками магии огня», и это предложение уже привлекло внимание многих по всему миру."
  sun.1.a:0 "Безусловно, это сюрприз..."
  sun.1.b:0 "Мудрое решение?"
 
- #Chin
  chin.1.t:0 "День Аватара"
  chin.1.d:0 "Сегодня отмечается годовщина гибели Чина от рук Аватара Киоши, событие огромной важности для потомков клана Чин. Жители Циньчао решили почтить своего правителя и одновременно осудить Аватара, устроив праздник, во время которого по улицам проносят большие бумажные чучела Киоши и последующих Аватаров, а затем торжественно предают их огню в знак неповиновения."
  chin.1.a:0 "Долой Аватара!"
@@ -101,7 +98,6 @@
  chin.10.d:0 "Наши требования были приняты губернаторством Киоши. Они благоразумно признали нашу силу и поняли, что сопротивление бесполезно. Наши оккупационные силы уже направляются туда, чтобы разобраться с остатками поклонниц Киоши."fangirls"."
  chin.10.a:0 "Аватар Киоши не могла защищать вас вечно!"
 
- #firenation
  firenation.1.t:0 "Успех в Западном Храме Воздуха"
  firenation.1.d:0 "Западный Храм Воздуха был полностью очищен от магов воздуха. Они не были готовы к нашему наступлению, усиленному кометой, а отсутствие постоянной армии лишило их возможности организовать действенную оборону. Нескольким отставшим удалось бежать, но вечно скрываться они не смогут..."
  firenation.1.a:0 "Здесь мы закончили."
@@ -349,7 +345,6 @@
  fir_colonies.4.a:0 "Насаждать нашу культуру"
  fir_colonies.4.b:0 "Набирать местных в армию"
  
- #air genocide
  air_gen.1.t:0 "Дай Ли предлагают план"
  air_gen.1.d:0 "Стало известно, что Дай Ли, тайная полиция Царства Земли, работала над планом по уничтожению Воздушных кочевников с возложением вины на Народ Огня. Глава Дай Ли считает, что уничтожение Воздушных кочевников, мирного и нейтрального народа, станет сокрушительным ударом по репутации Народа Огня и настроит общественное мнение против него."
  air_gen.1.a:0 "Покончить с этими грязными кочевниками."
@@ -413,7 +408,6 @@
  air_gen.11.b:0 "Народу Огня сперва нужно заново обрести себя."
  
  
- #earthkingdom
  earthkingdom.1.t:0 ""
  earthkingdom.1.d:0 ""
  earthkingdom.1.a:0 ""
@@ -456,7 +450,6 @@
  ear_treaty.6.c:0 "Мы ничего не можем сделать"
 
 
- #earthkingdoms
  struggles_ek.1.t:0 "[FROM.GetName] просит принять их в Царство Земли"
  struggles_ek.1.d:0 "Принять их?"
  struggles_ek.1.a:0 "Да"
@@ -495,7 +488,6 @@
  struggles_ek.11.desc:0 ""
  struggles_ek.11.a:0 "Куда мы расширимся дальше?"
 
-#cabbagecorp
 cabbage_merchant.1.t:0 "Прибыл торговец капустой!"
 cabbage_merchant.1.d:0 "Торговец капустой по имени Цай просит профинансировать его план по созданию Капустной корпорации в вашей державе. По роду своей торговли он объездил множество мест в Царстве Земли, продавая капусту с телеги, которую раз за разом уничтожали, но, несмотря на все эти неудачи, он все еще не отказался от своей мечты."
 cabbage_merchant.1.a:0 "Поможем ему воплотить мечту!"
@@ -508,10 +500,6 @@ expand_cabbage_shops:0 "Расширить капустный рынок"
 expand_cabbage_industry:0 "Построить и открыть промышленность Капустной корпорации"
 expand_cabbage_opinion:0 "Продвигать Капустную корпорацию среди промышленных инвесторов"
 
- #struggles_ek.11.title:0 "[FROM.GetName] Demands To Become A governorship"
- #struggles_ek.11.desc:0 "The citizens of [FROM.GetName], our prefecture, started to rebel against us. It started by peacefull protests, but later it became violent as more and more of them started to demonstrate against our regime. [FROM.GetLeader], their leader, introduced us their demand: To become an official governorship, and gain more autonomy."
- #struggles_ek.11.a:0 "What else can we do than accept?"
- #struggles_ek.11.b:0 "Never!"
  struggles_ek.12.title:0 "[FROM.GetName] требует, чтобы мы стали префектурой"
  struggles_ek.12.desc:0 "Сегодня в нашу область прибыл крупный отряд магов земли из [FROM.GetName]. Их прислал их правитель, [FROM.GetLeader]. [FROM.GetLeader] утверждает, что ситуация уже не та, что была раньше, и из-за сложных обстоятельств мы должны стать префектурой и утратить часть автономии. Наш правитель, [Root.GetLeader], принял решение и ответил, что..."
  struggles_ek.12.a:0 "Мы примем их требование"
@@ -533,18 +521,7 @@ expand_cabbage_opinion:0 "Продвигать Капустную корпора
  struggles_ek.16.a:0 "Мы подчинимся"
  struggles_ek.16.b:0 "Мы их больше не боимся!"
 
- #struggles_ek.7.title:0 "[FROM.GetName] Accepted Our Demand"
- #struggles_ek.7.desc:0 "Today, recieved an important message from [FROM.GetLeader], the leader of [FROM.GetName]. After our messanger arrived in the area, and showed [FROM.GetLeader] our demands, the citizens heard of it and became furious, and started to protest. However, exhausting negotiations, they finally accepted our demand. Long live [Root.GetName]!"
- #struggles_ek.7.a:0 "Yes!"
- #struggles_ek.8.title:0 "[FROM.GetName] Rejected Our Demand"
- #struggles_ek.8.desc:0 "It was a dark day when our messanger arrived in [FROM.GetName]. He asked to talk with [FROM.GetLeader], the leader, but he faced angry civilians that almost injured him. After he found [FROM.GetLeader], he began to introduce our demands. [FROM.GetLeader] silenced our messanger, and said one word: No. [FROM.GetLeader] banished our messanger, who returned home with empty hands."
- #struggles_ek.8.a:0 "They will pay for it!"
- #struggles_ek.9.title:0 "[FROM.GetName] Demands To Become A prefecture"
- #struggles_ek.9.desc:0 "We recieved a message from the leader of our territory of [FROM.GetName]. They demand us to increase their autonomy, and turn them into a prefecture. After a lot of discussions, our leader [Root.GetLeader] made a very tough decision, and in the end [Root.GetLeader] concluded that..."
- #struggles_ek.9.a:0 "We have to accept"
- #struggles_ek.9.b:0 "We can't increase their autonomy"
 
- # western alliance
  western_alliance.1.t:0 "Предательство Ба Синг Сэ"
  western_alliance.1.d:0 "Мы всегда были верны. Наш великий союзник всегда мог на нас положиться. \n\nИ все же в неслыханном шаге Ба Синг Сэ уступил часть наших земель, которые Народ Огня незаконно заняла еще несколько десятилетий назад. \n\nЭта несправедливость никогда не будет забыта."
  western_alliance.1.a:0 "Нам остается верить, что это было необходимо.."
@@ -562,13 +539,11 @@ expand_cabbage_opinion:0 "Продвигать Капустную корпора
  western_alliance.4.d:0 "С провозглашением нашей независимости мы вступили в открытую войну с прежним господином."
  western_alliance.4.a:0 "Значит, началось. К оружию!"
 
- #western air temple
  western.1.t:0 "Атака магов огня"
  western.1.d:0 "Народ Огня высадила войска на вершине холма, окружающего Западный Храм Воздуха. Времени на эвакуацию больше нет. Мы никогда не надеялись столкнуться с таким выбором, но этот час настал. Жизнь каждого мага воздуха под угрозой, и мы должны защитить их."
  western.1.a:0 "Мы должны защищаться."
  western.1.b:0 "Возвращайтесь к Народу Огня!"
 
- #southern air temple
  southern.1.t:0 "Атака магов огня"
  southern.1.d:0 "Народ Огня высадила войска по всему хребту Патола, окружив наш Храм. Времени на эвакуацию больше нет. Мы никогда не надеялись столкнуться с таким выбором, но этот час настал. Жизнь каждого мага воздуха под угрозой, и мы должны защитить их."
  southern.1.a:0 "Мы должны защищаться."
@@ -578,19 +553,16 @@ expand_cabbage_opinion:0 "Продвигать Капустную корпора
  southern.2.a:0 "Мы обречены..."
  southern.2.b:0 "О нет!"
 
- #northern air temple
  northern.1.t:0 "Атака магов огня"
  northern.1.d:0 "Народ Огня высадила войска по всем горам Тайхуа, окружив наш Храм. Времени на эвакуацию больше нет. Мы никогда не надеялись столкнуться с таким выбором, но этот час настал. Жизнь каждого мага воздуха под угрозой, и мы должны защитить их."
  northern.1.a:0 "Мы должны защищаться."
  northern.1.b:0 "Возвращайтесь к Народу Огня!"
 
- #eastern air temple
  eastern.1.t:0 "Атака магов огня"
  eastern.1.d:0 "Огромная армия Народа Огня окружила все три моста, ведущие к Восточному Храму Воздуха. Времени на эвакуацию больше нет. Мы никогда не надеялись столкнуться с таким выбором, но этот час настал. Жизнь каждого мага воздуха под угрозой, и мы должны защитить их."
  eastern.1.a:0 "Мы должны защищаться."
  eastern.1.b:0 "Возвращайтесь к Народу Огня!"
 
- #northern watertribe
  nwt.1.t:0 "Племена восстают"
  nwt.1.d:0 "Племена остались недовольны речью."
  nwt.1.a:0 "У них нет выбора"
@@ -614,7 +586,6 @@ expand_cabbage_opinion:0 "Продвигать Капустную корпора
  nwt_treaty.2.b:0 "Это далось нам потом и кровью"
 
 
- #occupation
  occupation_mechanic.1.title:0 "Интегрировать [From.From.GetName]"
  occupation_mechanic.1.desc:0 "[From.GetName] уже очень давно оккупирует [From.From.GetName]. Жители привыкли к нашему присутствию, и формальная интеграция облегчит контроль над этой областью и создание колоний."
  occupation_mechanic.1.a:0 "Присоединяйтесь к нам, и вместе мы будем править галакти... то есть миром!"
@@ -632,7 +603,6 @@ expand_cabbage_opinion:0 "Продвигать Капустную корпора
  occupation_mechanic.5.a_fir:0 "Добро пожаловать!"
 
 
- #state conflict
  state_conflict.1.t:0 "Конфликт за область [From.From.GetName]"
  state_conflict.1.d_a:0 "Мы предъявили претензию на [From.From.GetName]"
  state_conflict.1.d_d:0 "[From.From.attacker.GetName] предъявила претензию на [From.From.GetName]"
@@ -652,7 +622,6 @@ expand_cabbage_opinion:0 "Продвигать Капустную корпора
  state_conflict.3.military:0 "Только сила все решит"
 
 
- #calendar
 
  nature.1.t:0 "Извержение вулкана"
  nature.1.d:0 "В [?global.volcano_state.GetName] произошло извержение вулкана."
@@ -670,7 +639,6 @@ expand_cabbage_opinion:0 "Продвигать Капустную корпора
  calendar_event.1.c:0 "Это плохо кончится."
 
 
- #alerts
 
  alert.1.title:0 "Морское вторжение в [From.Owner.GetName]"
  alert.1.desc:0 "[Root.GetName] вторгается на наши берега в области [This.GetName]. Мы должны остановить их, прежде чем они успеют закрепиться на побережье. Если их вторжение удастся, это может стать началом крупной военной кампании."

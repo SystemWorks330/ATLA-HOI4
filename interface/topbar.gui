@@ -7,12 +7,24 @@ guiTypes = {
 		
 		iconType = {
 			name ="background"
-			#spriteType = "GFX_topbar_background_extended"
 			spriteType = "GFX_topbar_background"
 			position = { x= 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 		}
-		
+
+			name = "country_menu_tail"
+			position = { x = 560 y = 70 }
+			size = { width = 110 height = 49 }
+			clipping = yes
+
+			iconType = {
+				name = "menu_tail_texture"
+				spriteType = "GFX_topbar_background_extended"
+				position = { x = -560 y = -70 }
+				alwaystransparent = yes
+			}
+		}
+
 		buttonType = {
 			name = "reopen_ingame_lobby"
 			quadTextureSprite ="GFX_reopen_lobby"
@@ -128,6 +140,7 @@ guiTypes = {
 			maxWidth = 52
 			maxHeight = 24
 			fixedsize = yes
+			hide = yes
 		}
 		
 		iconType ={
@@ -229,11 +242,11 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name ="experience_value"
-				position = { x=30 y=3 }
+				position = { x = 28 y = 3 }
 				font = "hoi_18mbs"
 				text = "999"
-				format = left
-				maxWidth = 45
+				format = center
+				maxWidth = 30
 				maxHeight = 24
 				fixedsize = yes
 				alwaystransparent = yes
@@ -264,11 +277,11 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name ="navy_experience_value"
-				position = { x= 30 y = 3 }
+				position = { x = 28 y = 3 }
 				font = "hoi_18mbs"
 				text = "999"
-				format = left
-				maxWidth = 46
+				format = center
+				maxWidth = 30
 				maxHeight = 24
 				fixedsize = yes
 				alwaystransparent = yes
@@ -299,11 +312,11 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name ="air_experience_value"
-				position = { x= 30 y = 3 }
+				position = { x = 28 y = 3 }
 				font = "hoi_18mbs"
 				text = "999"
-				format = left
-				maxWidth = 46
+				format = center
+				maxWidth = 30
 				maxHeight = 24
 				fixedsize = yes
 				alwaystransparent = yes
@@ -345,7 +358,7 @@ guiTypes = {
 
 		containerWindowType = {
 			name = "cp"
-			position = { x= 244 y = 38}
+			position = { x = 246 y = 38 }
 			clipping = no
 			size = { width=62 height=30 }
 			Orientation = UPPER_LEFT
@@ -367,11 +380,11 @@ guiTypes = {
 			
 			instantTextBoxType = {
 				name ="command_power_value"
-				position = { x= 42 y = 4 }
+				position = { x = 28 y = 4 }
 				font = "hoi_18mbs"
 				text = "999"
-				format = left
-				maxWidth = 40
+				format = center
+				maxWidth = 38
 				maxHeight = 24
 				fixedsize = yes
 				alwaystransparent = yes
@@ -394,11 +407,11 @@ guiTypes = {
         
 		instantTextBoxType = {
 			name ="industrial_capacity"
-			position = { x= 407 y = 9 } 
+			position = { x = 418 y = 9 } 
 			font = "hoi_18mbs"
 			text = "12/12/12"
 			format = center
-			maxWidth = 66
+			maxWidth = 42
 			maxHeight = 24
 			fixedsize = yes
 		}	
@@ -747,8 +760,8 @@ guiTypes = {
 
 			containerWindowType= {
 				name="faction_button_container"
-				position = { x=400 y=0 }
-				size = { width=30 height=30 }
+				position = { x = 455 y = 0 }
+				size = { width=30 height=43 }
 				
 				buttonType = {
 					name = "faction_button"
@@ -762,13 +775,12 @@ guiTypes = {
 	
 				instantTextBoxType = {
 					name ="initiative_text"
-					position = { x= -15 y = 8 }
+					position = { x = 0 y = 24 }
 					font = "hoi_16mbs"
 					text = "999"
 					format = center
-					orientation = "CENTER"
 					maxWidth = 30
-					maxHeight = 24
+					maxHeight = 18
 					fixedsize = yes
 				}
 	
@@ -847,7 +859,7 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 					clicksound = click_close
 					oversound = ui_menu_over
-					hide = yes
+					shortcut = "shift+w"
 				}
 
 				iconType = {
@@ -891,12 +903,12 @@ guiTypes = {
 				# Here, several buttons are put in the container "after_intel_agency_button", to be easily moved if the player don't have the DLC requiered by "intel_agency_button".
 				containerWindowType = {
 					name = "after_intel_agency_button"
-					position = { x=1 y=0 }
+					position = { x = 55 y = 0 }
 					
 					buttonType = {
 						name = "technology_button"
 						quadTextureSprite ="GFX_topbar_technology"
-						position = { x= -50 y = 0 }
+						position = { x = -49 y = 0 }
 						Orientation = "UPPER_LEFT"
 						shortcut = "w"
 						clicksound = research_tab
@@ -926,7 +938,7 @@ guiTypes = {
 					buttonType = {
 						name = "diplomacy_button"
 						quadTextureSprite ="GFX_topbar_diplomacy"
-						position = { x= 5 y = 0 }
+						position = { x = 6 y = 0 }
 						Orientation = "UPPER_LEFT"
 						shortcut = "e"
 						clicksound = diplomacy_tab
@@ -982,7 +994,7 @@ guiTypes = {
 					
 					buttonType = {
 						name = "trade_button"
-						position = { x= 60 y = 0 }
+						position = { x = 61 y = 0 }
 						quadTextureSprite ="GFX_topbar_trade_button"
 						Orientation = "UPPER_LEFT"
 						shortcut = "r"
@@ -992,7 +1004,7 @@ guiTypes = {
 
 					buttonType = {
 						name = "construction_button"
-						position = { x = 115 y = 0 }
+						position = { x = 116 y = 0 }
 						quadTextureSprite ="GFX_construction_button"
 						Orientation = "UPPER_LEFT"
 						shortcut = "t"
@@ -1002,14 +1014,14 @@ guiTypes = {
 					
 					iconType = {
 						name = "production_button_glow"
-						position = { x = 167 y = -3 }
+						position = { x = 168 y = -3 }
 						spriteType = "GFX_decisions_glow_yellow"
 						alwaystransparent = yes
 					}
 					
 					buttonType = {
 						name = "production_button"
-						position = { x = 170 y = 0 }
+						position = { x = 171 y = 0 }
 						quadTextureSprite ="GFX_topbar_production"
 						Orientation = "UPPER_LEFT"
 						shortcut = "y"
@@ -1019,7 +1031,7 @@ guiTypes = {
 					
 					buttonType = {
 						name = "deployment_button"
-						position = { x = 225 y = 0 }
+						position = { x = 226 y = 0 }
 						quadTextureSprite ="GFX_deployment_button"
 						Orientation = "UPPER_LEFT"
 						shortcut = "u"
@@ -1029,7 +1041,7 @@ guiTypes = {
 					
 					buttonType = {
 						name = "logistics_button"
-						position = { x = 280 y = 0 }
+						position = { x = 281 y = 0 }
 						quadTextureSprite ="GFX_ledger_button"
 						Orientation = "UPPER_LEFT"
 						shortcut = "i"
@@ -1040,7 +1052,7 @@ guiTypes = {
 					
 					buttonType = {
 						name = "officer_corp_button"
-						position = { x = 335 y = 0 }
+						position = { x = 336 y = 0 }
 						quadTextureSprite ="GFX_staff_office_button"
 						Orientation = "UPPER_LEFT"
 						shortcut = "shift+e"

@@ -41,6 +41,7 @@ guiTypes = {
 
 		#################### NEW DOCTRINES SYSTEM IN TECHNOLOGIES, EVERYTHING HERE IN WIP ####################
 		
+		
 		containerWindowType = {
 			name = "innovation_army_folder"
 			position = { x=0 y=47 }

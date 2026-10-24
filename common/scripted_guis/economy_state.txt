@@ -178,71 +178,47 @@ scripted_gui = {
 			}
 
 		
-		#		is_controlled_by = ROOT
 		
 		
 		
-		#		check_variable = {
 		
 		
 		
-		#		}
-		#	}
-		
-		#		is_controlled_by = ROOT
 		
 		
 		
-		#		check_variable = {
 		
 		
 		
-		#		}
-		#	}
-		
-		#		is_controlled_by = ROOT
 		
 		
 		
-		#		check_variable = {
 		
 		
 		
-		#		}
-		#	}
-		
-		#		is_controlled_by = ROOT
 		
 		
 		
-		#		check_variable = {
 		
 		
 		
-		#		}
-		#	}
-		
-		#		is_controlled_by = ROOT
 		
 		
 		
-		#		check_variable = {
 		
 		
 		
-		#		}
-		#	}
-		
-		#		is_controlled_by = ROOT
 		
 		
 		
-		#		check_variable = {
 		
 		
 		
-		#		}
-		#	}
+		
+		
+		
+		
+		
 
 
 		farm_progress_visible = {
@@ -305,23 +281,12 @@ scripted_gui = {
 				}
 			}
 		
-		#		ai_will_do = {
-		#			base = 0
-		#			modifier = {
-		#				set_temp_variable = {
-		
-		#				}
-		#				set_temp_variable = {
-		
-		#				}
 		
 		
 		
-		#				}
 		
-		#			}
-		#		}
-		#	}
+		
+		
 			send_settlers_click = {
 				ai_will_do = {
 					base = 10

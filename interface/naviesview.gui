@@ -431,9 +431,9 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "naviesview_window"
-		position = {x=-340 y=100}
+		position = {x=-340 y=120}
 		show_position = {x=0 y=120}
-		size = { width=500 height=86%% }
+		size = { width=515 height=86%% }
 		show_animation_type = decelerated
 		hide_animation_type = accelerated
 		animation_time = 300
@@ -451,8 +451,8 @@ guiTypes = {
 		containerWindowType = {
 			name = "detailed_fleet_list"
 			position = {x=0 y=0}
-			size = {width=528 height=400} # height adapted in code
-			margin = { left=0 top=0 right=22 bottom=0 }
+			size = {width=515 height=400} # height adapted in code
+			margin = { left=0 top=0 right=23 bottom=0 }
 			verticalScrollbar = "right_vertical_slider"
 			Orientation = upper_left
 			clipping = no

@@ -1,7 +1,5 @@
 ﻿l_russian:
- ### all air council localiairion
  
- ### events ###
  air_council_reward_1:0 "Расширить жилые помещения"
  air_council_reward_2:0 "Поделиться мудростью магии воздуха"
  air_council_reward_3:0 "Изучить другие техники магии"
@@ -36,7 +34,6 @@
  air_council_reward_32:0 "Морское подразделение"
  air_council_reward_33:0 "Оснащение"
  
- # council events
  AIR_council.0.t:0 "Созыв совета"
  AIR_council.0.d:0 "Воздушные кочевники веками управлялись советом. Возможно, это не идеальная форма правления, но она соответствует нашему образу жизни."
  AIR_council.0.a:0 "И мы сохраним ее"
@@ -50,7 +47,6 @@
  AIR_council.1.d:0 "[air_council_mission_4]"
  
  
- ### tooltipps ###
  army_icon_tooltip:0 "Приоритет §Yармии§! в совете"
  air_icon_tooltip:0 "Приоритет §Yавиации§! в совете"
  navy_icon_tooltip:0 "Приоритет §Yфлота§! в совете"
@@ -76,7 +72,6 @@
  mission_nr7_timeout:0 "Один член совета может утратить гармонию"
  mission_nr7_success:0 "Один член совета может обрести гармонию"
  
- ### ideas ###
  council_harsh_opposition:0 "Совет в полном разладе!"
  council_harsh_opposition_desc:0 "Члены совета §Rне могут прийти к согласию§!. Без нашего важнейшего политического института страна §Rнеизбежно пострадает§!"
  council_opposition:0 "Совет разобщен!"
@@ -88,7 +83,6 @@
  council_substancial_support:0 "Совет в гармонии!"
  council_substancial_support_desc:0 "Члены совета трудятся в §Gполной гармонии§!. Наша страна §Gпроцветает!§!"
  
- ### decisions ###
  debug_mission_generator:0 "Отладка"
  debug_mission_generator_desc:0 "тип миссии:[?AIR_mission_type]\nособая миссия:[?air_specific_mission]\nвоздушная миссия 1:[?air_mission_1]\nвероятность:[?probability]"
  

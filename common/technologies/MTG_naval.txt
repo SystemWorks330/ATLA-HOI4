@@ -302,7 +302,6 @@ technologies = {
 				}
 					factor = 0.1
 			}
-			#TODO
 			
 
 			#}

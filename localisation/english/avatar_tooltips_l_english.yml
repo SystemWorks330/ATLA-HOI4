@@ -161,12 +161,12 @@ law_level_5_ttp:0 "\nLaw Level: §YV§!"
 law_level_6_ttp:0 "\nLaw Level: §YVI§!
 
 
-NEW_MINISTER_OF_PERSONNEL:0 "Recruit a new §YMinister of Personnel§! \nCost (£pol_power ): [?mtth:minister_cost|R0]"
-NEW_MINISTER_OF_FINANCE:0 "Recruit a new §YMinister of Finance§! \nCost (£pol_power ): [?mtth:minister_cost|R0]"
-NEW_MINISTER_OF_CULTURE:0 "Recruit a new §YMinister of Culture§! \nCost (£pol_power ): [?mtth:minister_cost|R0]"
-NEW_MINISTER_OF_JUSTICE:0 "Recruit a new §YMinister of Justice§! \nCost (£pol_power ): [?mtth:minister_cost|R0]"
-NEW_MINISTER_OF_WORKS:0 "Recruit a new §YMinister of Works§! \nCost (£pol_power ): [?mtth:minister_cost|R0]"
-NEW_MINISTER_OF_RITES:0 "Recruit a new §YMinister of Rites§! \nCost (£pol_power ): [?mtth:minister_cost|R0]"
+NEW_MINISTER_OF_PERSONNEL:0 "Recruit a new §YMinister of Personnel§! \nCost (£pol_power ): [?mtth:minister_cost|R0]\nEach minister recruited increases the recruitment cost in every section by £pol_power §Y5§!."
+NEW_MINISTER_OF_FINANCE:0 "Recruit a new §YMinister of Finance§! \nCost (£pol_power ): [?mtth:minister_cost|R0]\nEach minister recruited increases the recruitment cost in every section by £pol_power §Y5§!."
+NEW_MINISTER_OF_CULTURE:0 "Recruit a new §YMinister of Culture§! \nCost (£pol_power ): [?mtth:minister_cost|R0]\nEach minister recruited increases the recruitment cost in every section by £pol_power §Y5§!."
+NEW_MINISTER_OF_JUSTICE:0 "Recruit a new §YMinister of Justice§! \nCost (£pol_power ): [?mtth:minister_cost|R0]\nEach minister recruited increases the recruitment cost in every section by £pol_power §Y5§!."
+NEW_MINISTER_OF_WORKS:0 "Recruit a new §YMinister of Works§! \nCost (£pol_power ): [?mtth:minister_cost|R0]\nEach minister recruited increases the recruitment cost in every section by £pol_power §Y5§!."
+NEW_MINISTER_OF_RITES:0 "Recruit a new §YMinister of Rites§! \nCost (£pol_power ): [?mtth:minister_cost|R0]\nEach minister recruited increases the recruitment cost in every section by £pol_power §Y5§!."
 
 
 intel_tooltip:0 "£text_infiltrate_civilian_token  Civil Intel: [?ROOT:civilian_intel@FROM|Y0%%] \n£text_infiltrate_army_token  Army Intel: [?ROOT:army_intel@FROM|Y0%%] \n£text_infiltrate_navy_token  Navy Intel: [?ROOT:navy_intel@FROM|Y0%%] \n£text_infiltrate_air_token  Air Intel: [?ROOT:air_intel@FROM|Y0%%] \n\nCypher advantage: [?mtth:cypher_advantage|+=0%]"
@@ -199,7 +199,6 @@ decryption_modifier_tooltip:0 "£decryption_texticon  §YDecryption§! \nBase va
 spy_modifier:0 "£spy_slots_texticon  [?modifier@operative_slot|+0]"
 spy_modifier_tooltip:0 "£spy_slots_texticon  §YAvailable Spies§! \nSpies: [?modifier@operative_slot|+0]"
 
-# Tooltip keys
 clan_balance_above_20:0 "Clan balance must be above 20"
 clan_balance_above_30:0 "Clan balance must be above 30"
 clan_balance_above_80:0 "Clan balance must be above 80"
@@ -229,7 +228,6 @@ clan_reformist_tournament_tt:0 "The Reformist champion prevailed. Their prestige
 clan_isolationist_tournament_tt:0 "The Isolationist champion prevailed. Their prestige grows."
  
 
-### Navy
 naval_coordination_level_text:0 "Coordination Level: [?naval_coordination_spirit_var|Y0]"
 naval_discipline_level_text:0 "Discipline Level: [?naval_discipline_spirit_var|Y0]"
 naval_quality_level_text:0 "Quality Level: [?naval_quality_spirit_var|Y0]"

@@ -52,7 +52,6 @@ on_actions = {
 				}
 
 
-				### more of these kill performance, less increase it
 
 				migrant_per_state_recalc = yes
 				#migrant_per_state_recalc = yes
@@ -108,7 +107,6 @@ on_actions = {
 					add_to_variable = { global.total_population_k = state_population_k }
 
 					
-					### migration attraction
 					set_variable = { local_migration_attraction = mtth:urbanisation_migration_attraction }
 					add_to_variable = { local_migration_attraction = mtth:workers_needed }
 					subtract_from_variable = { local_migration_attraction = mtth:workers_number }
@@ -151,7 +149,6 @@ on_actions = {
 
 						set_variable = { available_migrant_states = 0 }
 
-						#### states they can go to
 
 						for_each_scope_loop = {
 							array = available_migrant_states_array
@@ -168,7 +165,6 @@ on_actions = {
 						}
 
 
-						### actual adding of migrants
 
 						for_each_scope_loop = {
 							array = available_migrant_states_array
@@ -187,12 +183,8 @@ on_actions = {
 					round_variable = refugees_accepted_last_month
 
 
-					###### test to see if migration adds up
 
-					###  add_to_variable = { global.migrat_1 = refugees_accepted_last_month }
-					###  add_to_variable = { global.migrat_2 = migrating_population }
 
-					#### potential fluctuation here, but not everyone can survive and some are born along the way ;D
 
 					set_variable = { migration_balance = refugees_accepted_last_month }
 					subtract_from_variable = { migration_balance = migrating_population }
@@ -221,7 +213,6 @@ on_actions = {
 								check_variable = { refugees_accepted_last_month > 100 }
 								NOT = {
 
-									###   state is managing refugees
 									OR = {
 										has_dynamic_modifier = { modifier = refugee_node }
 										has_dynamic_modifier = { modifier = migration_target }

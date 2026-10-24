@@ -229,7 +229,6 @@ clan_reformist_tournament_tt:0 "Победил чемпион реформато
 clan_isolationist_tournament_tt:0 "Победил чемпион изоляционистов. Их престиж растёт."
  
 
-### Navy
 coordination_text:0 "Уровень координации:"
 discipline_text:0 "Уровень дисциплины:"
 quality_text:0 "Уровень качества:"
@@ -320,8 +319,6 @@ clergy_tooltip_delayed:0 "§LРелигиозный институт, отвеч
 
 
 
-# industrialist
-# clergy
 
 
 state_culture_tooltip:0 "§YКультура региона§! \n£fire_texticon Доминирование Огня: [?fire_pop|*Y2%] ([?fire_pop_new|%%=]) \n£earth_texticon Доминирование Земли: [?earth_pop|*Y2%] ([?earth_pop_new|%%=]) \n£water_texticon Доминирование Воды: [?water_pop|*Y2%] ([?water_pop_new|%%=]) \n£air_texticon Доминирование Воздуха: [?air_pop|*Y2%] ([?air_pop_new|%%=]) \n£pluralist_texticon Плюралистическое доминирование: [?nonbender_pop|*Y2%] ([?nonbender_pop_new|%%=]) \n\nИзменяется под влиянием:\n[]"

@@ -47,7 +47,6 @@ category_air_baloon:0"Воздушный шар"
 category_light_airship:0"Лёгкий дирижабль"
 category_heavy_airship:0"Тяжёлый дирижабль"
  
-#######################
 firebender:0"Маги огня"
 firebender_desc:0"f"
 
@@ -62,7 +61,6 @@ airbender_desc:0"a"
 
 kyoshi_warriors:0 "Воины Киоши"
 
-##############
 spearmen:0 "Копейщики"
 spearmen_desc:0 "Используются для удержания позиций и защиты тыла армии. Также могут проводить ограниченные наступления."
 swordsmen:0 "Мечники"

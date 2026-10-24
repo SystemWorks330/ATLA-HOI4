@@ -690,6 +690,15 @@ guiTypes = {
 		}
 		
 		buttonType = {
+			name = "show_ship_captains_button"
+			position = { x = -535 y = -31 }
+			quadTextureSprite = "GFX_button_261x34"
+			buttonFont = "hoi_18mbs"
+			Orientation = "LOWER_RIGHT"
+			buttonText = "UNIT_LEADER_NEW_LEADER_CAPTAIN"
+		}
+
+		buttonType = {
 			name = "close_button"
 			position = { x = -38 y = 4 }
 			quadTextureSprite ="GFX_closebutton"
@@ -1309,7 +1318,7 @@ guiTypes = {
 
 		positionType = {
 			name = "pos_roster_overview_orientation_top_left"
-			position = { x = 540 y = 80 }
+			position = { x = 543 y = 120 }
 		}
 
 		background = {
@@ -1333,7 +1342,7 @@ guiTypes = {
 		editBoxType = {
 			name = "leader_view_search"
 			position = { x = 201 y = 44 }
-			size = {x=267 y=20}
+			size = {x=120 y=20}
 			#textureFile = ""
 			font = "hoi_20b"
 			borderSize = {x = 0 y = 0}
@@ -1370,7 +1379,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sort_medals"
 			position = {x=334 y=39}
-			size = { x = 200 y = 28 } 
+			size = { x = 83 y = 28 } 
 			spriteType = "GFX_sort_up_down_button_83x29"
 			buttonText = "DIVISION_COMMANDER_MEDALS_SORT"
 			buttonFont = "hoi_16mbs"
@@ -1388,7 +1397,7 @@ guiTypes = {
 		ButtonType = {
 			name = "sort_total_exp"
 			position = {x=438 y=39}
-			size = { x = 200 y = 28 } 
+			size = { x = 100 y = 28 } 
 			spriteType = "GFX_sort_up_down_button_83x29"
 			buttonText = "DIVISION_COMMANDER_TOTAL_EXPERIENCE_SORT"
 			buttonFont = "hoi_16mbs"
@@ -1413,7 +1422,7 @@ guiTypes = {
 			gridBoxType = {
 				name = "leaders_grid"
 				position = { x = 13 y = 1 }
-				size = { width = 100%% height = 100%% }
+				size = { width = 510 height = 100%% }
 				slotsize = { width = 510 height = 98 }
 				max_slots_horizontal = 1
 				format = "UPPER_LEFT"
@@ -1476,6 +1485,13 @@ guiTypes = {
 			name = "template_button"
 			spriteType = "GFX_unit_infantry_icon_medium"
 			position = { x=-8 y=12 }
+			alwaystransparent = yes
+		}
+		
+		buttonType = {
+			name = "ship_icon_button"
+			spriteType = "GFX_navy_icon_submarine"
+			position = { x=2 y=15 }
 			alwaystransparent = yes
 		}
 		
@@ -1574,13 +1590,13 @@ guiTypes = {
 		
 		dropDownBoxType = {
 			name = "medal_dropdown" 
-			position = { x = 394 y = 6 } 
-			size = { width = 340 height = 94 }
-			clipping = yes
+			position = { x = 339 y = 8 } 
+			size = { width = 48 height = 48 }
+			clipping = no
 			
 			expandButton = {
 				name = "expand_button"
-				position = { x = -55 y = 2 }  
+				position = { x = 0 y = 0 }  
 				spriteType = "GFX_add_medal_button"
 				clicksound = click_default
 				pdx_tooltip = "GRANT_CITATION"
@@ -1588,8 +1604,8 @@ guiTypes = {
 
 			expandedWindow = {
 				name = "expanded_window"
-				position = { x=0 y= -300 }
-				show_position = { x = -400 y = 86 }
+				position = { x = -339 y = -2002 }
+				show_position = { x = -339 y = 84 }
 				show_animation_type = decelerated   
 				hide_animation_type = accelerated 
 				animation_time = 0 

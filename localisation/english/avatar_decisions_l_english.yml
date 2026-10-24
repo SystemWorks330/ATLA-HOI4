@@ -833,7 +833,6 @@ print_money_for_deficit:0 "Mint More Coins"
  bss_advisors:0 "Hire Ba Sing Se Advisors"
  bss_advisors_desc:0 "Military experts from the capital will oversee the training and deployment of our forces."
  
-### Kyoshi Island
  KYI_industrialization_category:0 "Industrialization"
  KYI_industrialization_category_desc:0 "While [KYI.GetNameDef] wishes to avoid conflict, we are defintely not above industrial expansion."
  approve_industrialization_decision:0 "Approve Yokoya Industrialization Proposal"

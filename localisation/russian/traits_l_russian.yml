@@ -1,5 +1,4 @@
 ﻿l_russian:
- ### country leader
  firelord:0 "Хозяин Огня"
  firelord_desc:0 "§LДля нас честь, что вы с нами, господин.§!"
  phoenixking:0 "Король-Феникс"
@@ -17,7 +16,6 @@
  pirate_king:0 "Бич морей"
  icon_of_resistance:0 "Символ сопротивления"
 
- # advisor and ideas
  military_organiser:0 "Военный организатор"
  military_organiser_desc:0 "Специалист в вопросах военной организации."
  prime_minister:0 "Премьер-министр"
@@ -374,7 +372,6 @@
  fir_heavy_industries_desc:0 ""
  fir_wartime_industries:0 "Военная промышленность"
  fir_wartime_industries_desc:0 ""
-  ### KYI
  ragged_kimonos:0 "Поношенные кимоно"
  ragged_kimonos_desc:0 "Хотя они не так удобны, как другие модели, эти кимоно гораздо прочнее изделий остальных производителей."
  light_kimonos:0 "Лёгкие кимоно"
@@ -457,14 +454,10 @@
  airbender_trait:0 "Маг воздуха"
  airbender_trait_desc:0 ""
  
- #firelord:0 "Firelord"
- #firelord_desc:0 "§LIt´s an honour that you joined us, Sir.§!"
  prince:0 "Принц"
  prince_desc:0 "§LДля нас честь, что вы с нами, господин.§!"
  country_leader:0 "Лидер страны"
  country_leader_desc:0 "§LДля нас честь, что вы с нами, господин.§!"
- #dragon_of_the_west:0 "The Dragon of the West"
- #dragon_of_the_west_desc:0 "§LHe is not the hero we deserve, but the hero we need.§!"
  reckless:0 "Безрассудный"
  reckless_desc:0 "§LЭтот офицер относится к принципу «вести с передовой» с излишним энтузиазмом.§!"
  stubborn:0 "Упрямый"

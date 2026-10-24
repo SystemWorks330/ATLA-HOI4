@@ -2341,7 +2341,6 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	### KYI
 	ragged_kimonos = {
 		random = no
 		income = @expenses10

@@ -24,7 +24,6 @@
 
  peasant_dynamic_modifier:0 "Крестьяне"
  
- #peasant_dynamic_modifier:0 "[GetPeasantMood]"
  integrated_peasants:0 "Интегрированные крестьяне"
  happy_peasants:0 "Довольные крестьяне"
  pleased_peasants:0 "Удовлетворенные крестьяне"
@@ -38,7 +37,6 @@
 
  nobility_dynamic_modifier:0 "Дворянство"
  
- #nobility_dynamic_modifier:0 "[GetNobilityMood]"
  integrated_nobility:0 "Интегрированное дворянство"
  happy_nobility:0 "Довольное дворянство"
  pleased_nobility:0 "Удовлетворенное дворянство"

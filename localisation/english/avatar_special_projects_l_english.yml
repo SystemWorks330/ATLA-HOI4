@@ -24,7 +24,6 @@
  SCIENTIST_RECRUIT_COST_DEFAULT: "$AMOUNT|Y$ Inventor(s): $COST|Y$ £pol_power "
  SCIENTIST_RECRUIT_COST_LAST: "$AMOUNT|Y$§Y+§! Inventor(s): $COST|Y$ £pol_power "
 
- # Program is the view that bundles the facility building + scientist + ongoing project
  PROGRAM_SCIENTIST_NAME: "[(Character?.GetName:'PROGRAM_NO_SCIENTIST_ASSIGNED)]"
  PROGRAM_NO_SCIENTIST_ASSIGNED: "Assign an Inventor to start a project"
  PROGRAM_ITEM_CLICK_TO_ASSIGN_SCIENTIST: "§GClick§! to assign an §YInventor§! to the §Y[Building.GetName]§! in §Y[State.GetName]§!"
@@ -52,7 +51,6 @@
  
  BASIC_RESEARCH_TECHNOLOGY_BONUS: "Gaining $AMOUNT|1%G$ extra bonus from inventor research"
 
- ### SPECIALIZATIONS ###
  inventions_mathematics: "Mathematics"
  inventions_mathematics_short: "Mathematics"
  inventions_physics: "Physics"
@@ -80,39 +78,20 @@
  SCIENTIST_IS_NOT_ASSIGNED_TO_A_PROJECT: "TODO: Inventor $NAME|Y$ is not assigned to a project"
 
 
- ########## CONTENT DESIGN LAIR ##############
- # BEWARE OF THE DOG
-
-#       / \__
-#      (    @\___
-#      /         O
-#     /   (_____/
-#    /_____/   U
-
-##########################
-### Scripted tooltips ###
-##########################
 
 
 
-##########################
-### Complexity Strings ###
-##########################
 
 
 
-##########################
-  ### LAND PROJECTS ###
-##########################
+
+
 
  JAP_sp_land_land_cruiser: "O-II Super-Heavy Tank Project"
 
 
 
 
-################################
-  ### GENERIC LAND REWARDS ###
-################################
 
 
 
@@ -130,76 +109,37 @@
 
 
 
-##########################
-  ## NUCLEAR PROJECTS ## 
-##########################
 
 
 
-#################################
-  ## NUCLEAR PROJECT REWARDS ## 
-#################################
 
- # Nuclear reactor
 
- # Generic
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
  
-# Nuclear Reactor
-
-
- # Nuclear bombs
-
-# Thermonuclear Bombs
-
-#########################
-  ## ROCKET PROJECTS ## 
-#########################
 
 
 
-
-
-
-################################
-  ## ROCKET PROJECT REWARDS ## 
-################################
-
- # Generic
- #sp_rockets_scientist_xp_generic_reward_option: "That is good"
-
- #sp_rockets_political_interference_generic_reward_option: "Two steps forward, one step back"
-
- #sp_rockets_onsite_explosion_generic_reward_option: "At least it wasn't totally destroyed"
-
- #sp_rockets_generic_major_breakthrough_reward_option: "Excellent!"
-
- #sp_rockets_generic_avionics_advancements_reward_option: "This will certainly prove useful" 
- 
-
-
- # Flying Bomb
-
- #sp_rockets_flying_bomb_technical_breakthrough_in_pulsejet_design_reward_option: "Upward and Onward!"
 
 
  sp_rockets_flying_bomb_mass_production_scaling_reward_desc: "We've successfully managed to to come up with production improvements, that will allow us to scale up to mass production much faster."
- #sp_rockets_flying_bomb_mass_production_scaling_reward_option: "Most beneficial"
-
- #sp_rockets_flying_bomb_engine_optimization_breakthrough_reward_option: "Some call it luck"
-
- #sp_rockets_flying_bomb_technological_innovation_in_guidance_systems_reward_option: "We are getting closer to achieving our goal"
-
- #sp_rockets_flying_bomb_test_flight_failures_reward_option: "They say you learn the most from your failures"
-
-
- # Ground to Air
-
-
-
- #Ballistic missile
 
 
 
@@ -208,9 +148,14 @@
 
 
 
-########################
-  ## NAVAL PROJECTS ## 
-########################
+
+
+
+
+
+
+
+
 
 
  
@@ -232,9 +177,6 @@
  sp_naval_proximity_fuze_custom_tt: "$MODIFIER_NAVY_ANTI_AIR_ATTACK$ §G+25%§!"
 
 
-#################################
-  ## NAVAL PROTOTYPE REWARDS ###
-################################# 
  
 
  
@@ -255,21 +197,12 @@
   
  
 
-#########################################
- ### NAVAL ADD_EQUIPMENT_BONUS ###
-########################################
 
  sp_rocket_submarine_eq_bonus_reliability: "Missile Launching Submarine - Reliablity Focus"
  sp_nuclear_missile_submarine_eq_bonus_strength: "Nuclear Missile Submarine - Enchanced Durability"
  sp_torpedo_cruiser_eq_bonus_torpedo: "Torpedo Cruiser - Enchanced Torpedo Capability"
  sp_modern_carrier_eq_bonus_light_attack: "Modern Carrier - Light Ship Detterence"
-#########################################
- ## GENERIC NAVAL PROTOTYPE REWARDS ###
-#########################################
 
-######################
-  ## AIR PROJECTS ## 
-######################
 
 
 
@@ -281,62 +214,29 @@
 
 
 
-#############################
-  ## AIR PROJECT REWARDS ## 
-#############################
-
- # Generic
 
 
 
 
 
- # Generic Expanded Rewards
-
- # Bouncing Bomb 
 
 
 
 
- # Earthshaker Bomb
+
+
  sp_air_earthshaker_bomb_unique_reward_desc: "During our development process we have realized that we can use our new findings to further enchance our bomb's destructive power. We could focus on improving bomb's precision, or focus on increasing their destructive strength."
 
- # Intercontinental Bomber
-
- # Mothership
-
- # Jet Engine
-
- # Axial Jet Engine
-
- # Supersonic Jet
-
- # Helicopter
 
 
- ###########################################
-  ### AIR PROJECT EQUIPMENT BONUS NAME ###
- ########################################### 
+
+
+
+
+
  
  
 
-######################################################
- ### AIR PROJECT TECH BONUS & DESIGN BONUS NAMES ###
-######################################################
-
-
- ###### SPECIAL PROJECT TAGS ########
-
-
-
-
- ###### TRAITS ########
-
-
-
-
- ############# EVENTS #############
- # Nuclear Projects
 
 
 
@@ -345,6 +245,15 @@
 
 
 
- ### OLD DEPRECATED STRINGS (Already translated)
+
+
+
+
+
+
+
+
+
+
 
 

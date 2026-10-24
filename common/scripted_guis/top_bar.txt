@@ -2,6 +2,7 @@ scripted_gui = {
 
 	war_exhaustion = {
 		context_type = player_context
+		parent_window_token = top_bar
 
 		window_name = "war_exhaustion_container"
 
@@ -9,6 +10,7 @@ scripted_gui = {
 
 	bars_topbar = {
 		context_type = player_context
+		parent_window_token = top_bar
 
 		window_name = "bars_topbar"
 
@@ -27,6 +29,7 @@ scripted_gui = {
 
 	money_topbar = {
 		context_type = player_context
+		parent_window_token = top_bar
 
 		window_name = "money_container"
 
@@ -43,6 +46,7 @@ scripted_gui = {
 
 	rations_topbar = {
 		context_type = player_context
+		parent_window_token = top_bar
 
 		window_name = "rations_topbar"
 
@@ -65,12 +69,14 @@ scripted_gui = {
 
 	quality_topbar = {
 		context_type = player_context
+		parent_window_token = top_bar
 
 		window_name = "quality_topbar"
 	}
 
 	bender_topbar = {
 		context_type = player_context
+		parent_window_token = top_bar
 
 		window_name = "bender_topbar"
 	}
@@ -91,6 +97,7 @@ scripted_gui = {
 
 	increase_and_decrease = {
 		context_type = player_context
+		parent_window_token = top_bar
 
 		window_name = "increase_and_decrease"
 
