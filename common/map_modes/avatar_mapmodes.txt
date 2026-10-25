@@ -422,9 +422,9 @@ scripted_map_modes = {
 				set_temp_variable = { alpha = 1 }
 
 				FROM = {
-					multiply_temp_variable = { red = forest }
-					multiply_temp_variable = { blue = forest }
-					multiply_temp_variable = { green = forest }
+					multiply_temp_variable = { red = modifier@lumber_mill_level_max }
+					multiply_temp_variable = { blue = modifier@lumber_mill_level_max }
+					multiply_temp_variable = { green = modifier@lumber_mill_level_max }
 
 					multiply_temp_variable = { red = 0.1 }
 					multiply_temp_variable = { blue = 0.1 }
@@ -461,9 +461,9 @@ scripted_map_modes = {
 				set_temp_variable = { alpha = 1 }
 
 				FROM = {
-					multiply_temp_variable = { red = field }
-					multiply_temp_variable = { blue = field }
-					multiply_temp_variable = { green = field }
+					multiply_temp_variable = { red = modifier@farm_level_max }
+					multiply_temp_variable = { blue = modifier@farm_level_max }
+					multiply_temp_variable = { green = modifier@farm_level_max }
 
 					multiply_temp_variable = { red = 0.1 }
 					multiply_temp_variable = { blue = 0.1 }
@@ -499,9 +499,9 @@ scripted_map_modes = {
 				set_temp_variable = { alpha = 1 }
 
 				FROM = {
-					multiply_temp_variable = { red = animal }
-					multiply_temp_variable = { blue = animal }
-					multiply_temp_variable = { green = animal }
+					multiply_temp_variable = { red = modifier@ranch_level_max }
+					multiply_temp_variable = { blue = modifier@ranch_level_max }
+					multiply_temp_variable = { green = modifier@ranch_level_max }
 
 					multiply_temp_variable = { red = 0.1 }
 					multiply_temp_variable = { blue = 0.1 }
@@ -537,9 +537,9 @@ scripted_map_modes = {
 				set_temp_variable = { alpha = 1 }
 
 				FROM = {
-					multiply_temp_variable = { red = mountain }
-					multiply_temp_variable = { blue = mountain }
-					multiply_temp_variable = { green = mountain }
+					multiply_temp_variable = { red = modifier@mine_level_max }
+					multiply_temp_variable = { blue = modifier@mine_level_max }
+					multiply_temp_variable = { green = modifier@mine_level_max }
 
 					multiply_temp_variable = { red = 0.1 }
 					multiply_temp_variable = { blue = 0.1 }
@@ -575,9 +575,9 @@ scripted_map_modes = {
 				set_temp_variable = { alpha = 1 }
 
 				FROM = {
-					multiply_temp_variable = { red = stonefield }
-					multiply_temp_variable = { blue = stonefield }
-					multiply_temp_variable = { green = stonefield }
+					multiply_temp_variable = { red = modifier@quarry_level_max }
+					multiply_temp_variable = { blue = modifier@quarry_level_max }
+					multiply_temp_variable = { green = modifier@quarry_level_max }
 
 					multiply_temp_variable = { red = 0.1 }
 					multiply_temp_variable = { blue = 0.1 }
@@ -613,9 +613,9 @@ scripted_map_modes = {
 				set_temp_variable = { alpha = 0.5 }
 
 				FROM = {
-					multiply_temp_variable = { red = water }
-					multiply_temp_variable = { blue = water }
-					multiply_temp_variable = { green = water }
+					multiply_temp_variable = { red = modifier@fishing_stand_level_max }
+					multiply_temp_variable = { blue = modifier@fishing_stand_level_max }
+					multiply_temp_variable = { green = modifier@fishing_stand_level_max }
 
 					multiply_temp_variable = { red = 0.1 }
 					multiply_temp_variable = { blue = 0.1 }

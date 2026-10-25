@@ -158,7 +158,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "tax_ui_window"
-		position = { x = 380 y = 120 }
+		position = { x = 344 y = 120 }
 		Orientation = UPPER_LEFT
 
 		iconType = {
@@ -184,7 +184,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "prosperity_ui_window"
-		position = { x = 480 y = 120 }
+		position = { x = 440 y = 120 }
 		Orientation = UPPER_LEFT
 
 		iconType = {
@@ -224,7 +224,7 @@ guiTypes = {
 
 	containerWindowType = {
 		name = "urbanisation_ui_window"
-		position = { x = 150 y = 120 }
+		position = { x = 140 y = 120 }
 		Orientation = UPPER_LEFT
 
 		iconType = {
