@@ -1409,6 +1409,7 @@
  NAVY_REPAIR_NOW_CANCEL:1 "§RCancel§! the repair task."
  NAVY_REPAIR_NOW_CANCEL_RETURN:0 "\nReturn and merge back with the $FLEET|H$."
  ALL_TASK_FORCES_REPAIR_NOW:0 "§HRepair now!§!\nAll the selected task forces will return to the home base for repairs.\n§GClick§! to send. They will resume their current tasks after they are fully repaired.\n§GCtrl+Click§! to send. They will stay in the naval base after that."
+ ALL_TASK_FORCES_REPAIR_NOW_DISABLED:0 "If your task forces are damaged and nearby one of your own naval bases, you can send them to the home base for repairs."
  NAVY_REPAIR_NOW:3 "§HRepair now!§!\nThe task force will return to a close by naval base for repairs.\n§GClick§! to send. It will come back to the current task after it is fully repaired.\n§GCtrl+Click§! to send. It will stay in the naval base after that."
  SHIP_REPAIR_NOW:3 "§HRepair now!§!\nThe ship will detach as a separate task force and return to a close by naval base for repairs.\nIt will come back to its current task force once it is fully repaired.\n§GClick§! to detach.\n§GShift+Click§! to mark multiple ships and detach them as one task force on releasing §GShift§!."
  SHIP_REPAIR_NOW_WITHOUT_DETACHING:0 "§HRepair now!§!\n§GClick§! to add ship to repair queue."

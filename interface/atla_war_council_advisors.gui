@@ -1,0 +1,260 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "war_minister_entry"
+		position = { x=0 y=0 }
+		size = { width=63 height=63 }
+		Orientation = upper_left
+		clipping = no
+		scale = 1
+
+		iconType = {
+			name = "idea_alert_glow"
+			position = { x=33 y=32 }
+			centerposition = yes
+			spriteType = "GFX_ongoing_generic_glow_yellow"
+			scale = 0.65
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "button"
+			position = { x=0 y=0 }
+			spriteType = "GFX_group_add_leader_bg"
+			no_clicksound = yes
+		}
+
+		iconType = {
+			name = "advisor_type_icon"
+			position = { x=43 y=44 }
+			spriteType = "GFX_chief_and_theorist_strip"
+			alwaystransparent = yes
+			centerposition = yes
+			frame = 1
+		}
+
+		iconType = {
+			name = "idea_traits"
+			position = { x=43 y=44 }
+			spriteType = "GFX_idea_traits_strip"
+			centerposition = yes
+			alwaystransparent = yes
+			frame = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "field_marshal_entry"
+		position = { x=0 y=0 }
+		size = { width=63 height=63 }
+		Orientation = upper_left
+		clipping = no
+		scale = 1
+
+		iconType = {
+			name = "idea_alert_glow"
+			position = { x=33 y=32 }
+			centerposition = yes
+			spriteType = "GFX_ongoing_generic_glow_yellow"
+			scale = 0.65
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "button"
+			position = { x=0 y=0 }
+			spriteType = "GFX_group_add_leader_bg"
+			no_clicksound = yes
+		}
+
+		iconType = {
+			name = "advisor_type_icon"
+			position = { x=43 y=44 }
+			spriteType = "GFX_chief_and_theorist_strip"
+			alwaystransparent = yes
+			centerposition = yes
+			frame = 3
+		}
+
+		iconType = {
+			name = "idea_traits"
+			position = { x=43 y=44 }
+			spriteType = "GFX_idea_traits_strip"
+			centerposition = yes
+			alwaystransparent = yes
+			frame = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "grand_admiral_entry"
+		position = { x=0 y=0 }
+		size = { width=63 height=63 }
+		Orientation = upper_left
+		clipping = no
+		scale = 1
+
+		iconType = {
+			name = "idea_alert_glow"
+			position = { x=33 y=32 }
+			centerposition = yes
+			spriteType = "GFX_ongoing_generic_glow_yellow"
+			scale = 0.65
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "button"
+			position = { x=0 y=0 }
+			spriteType = "GFX_group_add_leader_bg"
+			no_clicksound = yes
+		}
+
+		iconType = {
+			name = "advisor_type_icon"
+			position = { x=43 y=44 }
+			spriteType = "GFX_chief_and_theorist_strip"
+			alwaystransparent = yes
+			centerposition = yes
+			frame = 2
+		}
+
+		iconType = {
+			name = "idea_traits"
+			position = { x=43 y=44 }
+			spriteType = "GFX_idea_traits_strip"
+			centerposition = yes
+			alwaystransparent = yes
+			frame = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "head_of_intelligence_entry"
+		position = { x=0 y=0 }
+		size = { width=63 height=63 }
+		Orientation = upper_left
+		clipping = no
+		scale = 1
+
+		iconType = {
+			name = "idea_alert_glow"
+			position = { x=33 y=32 }
+			centerposition = yes
+			spriteType = "GFX_ongoing_generic_glow_yellow"
+			scale = 0.65
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "button"
+			position = { x=0 y=0 }
+			spriteType = "GFX_group_add_leader_bg"
+			no_clicksound = yes
+		}
+
+		iconType = {
+			name = "advisor_type_icon"
+			position = { x=43 y=44 }
+			spriteType = "GFX_chief_and_theorist_strip"
+			alwaystransparent = yes
+			centerposition = yes
+			frame = 4
+		}
+
+		iconType = {
+			name = "idea_traits"
+			position = { x=43 y=44 }
+			spriteType = "GFX_idea_traits_strip"
+			centerposition = yes
+			alwaystransparent = yes
+			frame = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "head_of_weaponry_entry"
+		position = { x=0 y=0 }
+		size = { width=63 height=63 }
+		Orientation = upper_left
+		clipping = no
+		scale = 1
+
+		iconType = {
+			name = "idea_alert_glow"
+			position = { x=33 y=32 }
+			centerposition = yes
+			spriteType = "GFX_ongoing_generic_glow_yellow"
+			scale = 0.65
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "button"
+			position = { x=0 y=0 }
+			spriteType = "GFX_group_add_leader_bg"
+			no_clicksound = yes
+		}
+
+		iconType = {
+			name = "advisor_type_icon"
+			position = { x=43 y=44 }
+			spriteType = "GFX_chief_and_theorist_strip"
+			alwaystransparent = yes
+			centerposition = yes
+			frame = 1
+		}
+
+		iconType = {
+			name = "idea_traits"
+			position = { x=43 y=44 }
+			spriteType = "GFX_idea_traits_strip"
+			centerposition = yes
+			alwaystransparent = yes
+			frame = 1
+		}
+	}
+
+	containerWindowType = {
+		name = "quartermaster_entry"
+		position = { x=0 y=0 }
+		size = { width=63 height=63 }
+		Orientation = upper_left
+		clipping = no
+		scale = 1
+
+		iconType = {
+			name = "idea_alert_glow"
+			position = { x=33 y=32 }
+			centerposition = yes
+			spriteType = "GFX_ongoing_generic_glow_yellow"
+			scale = 0.65
+			alwaystransparent = yes
+		}
+
+		buttonType = {
+			name = "button"
+			position = { x=0 y=0 }
+			spriteType = "GFX_group_add_leader_bg"
+			no_clicksound = yes
+		}
+
+		iconType = {
+			name = "advisor_type_icon"
+			position = { x=43 y=44 }
+			spriteType = "GFX_chief_and_theorist_strip"
+			alwaystransparent = yes
+			centerposition = yes
+			frame = 5
+		}
+
+		iconType = {
+			name = "idea_traits"
+			position = { x=43 y=44 }
+			spriteType = "GFX_idea_traits_strip"
+			centerposition = yes
+			alwaystransparent = yes
+			frame = 1
+		}
+	}
+}
