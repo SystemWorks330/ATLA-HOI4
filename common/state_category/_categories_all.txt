@@ -3,6 +3,22 @@ state_categories={
 	barren_wasteland = {
 		local_building_slots = 1
 		state_production_speed_buildings_factor = -0.5
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 	
 		color = { 255 0 0 }
 	}
@@ -10,6 +26,22 @@ state_categories={
 	tiny_island = {
 		local_building_slots = 2
 		state_production_speed_buildings_factor = -0.4
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 	
 		color = { 235 50 0 }
 	}
@@ -17,6 +49,22 @@ state_categories={
 	pastoral = {
 		local_building_slots = 4
 		state_production_speed_buildings_factor = -0.3
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 	
 		color = { 215 70 0 }
 	}
@@ -24,6 +72,22 @@ state_categories={
 	small_island = {
 		local_building_slots = 5
 		state_production_speed_buildings_factor = -0.2
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 	
 		color = { 195 90 0 }
 	}
@@ -31,6 +95,22 @@ state_categories={
 	rural = {
 		local_building_slots = 6
 		state_production_speed_buildings_factor = -0.1
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 	
 		color = { 175 110 0 }
 	}
@@ -39,12 +119,44 @@ state_categories={
 		local_building_slots = 12
 		state_production_speed_buildings_factor = 0.0
 
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
+
 		color = { 155 130 0 }
 	}
 
 	town = {
 		local_building_slots = 10
 		state_production_speed_buildings_factor = 0.04
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 	
 		color = { 130 155 0 }
 	}
@@ -52,6 +164,22 @@ state_categories={
 	large_town = {
 		local_building_slots = 12
 		state_production_speed_buildings_factor = 0.08
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 	
 		color = { 110 175 0 }
 	}
@@ -59,6 +187,22 @@ state_categories={
 	city = {
 		local_building_slots = 14
 		state_production_speed_buildings_factor = 0.12
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 	
 		color = { 90 195 0 }
 	}
@@ -66,6 +210,22 @@ state_categories={
 	large_city = {
 		local_building_slots = 16
 		state_production_speed_buildings_factor = 0.16
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 	
 		color = { 70 215 0 }
 	}
@@ -73,6 +233,22 @@ state_categories={
 	metropolis = {
 		local_building_slots = 18
 		state_production_speed_buildings_factor = 0.2
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 		
 		color = { 50 235 0 }
 	}
@@ -80,6 +256,22 @@ state_categories={
 	megalopolis = {
 		local_building_slots = 20
 		state_production_speed_buildings_factor = 0.24
+
+		buildings_max_level = {
+			farm = 1
+			mine = 1
+			quarry = 1
+			fishing_stand = 1
+			lumber_mill = 1
+			ranch = 1
+		}
+
+		farm_level_max = 1
+		ranch_level_max = 1
+		lumber_mill_level_max = 1
+		quarry_level_max = 1
+		mine_level_max = 1
+		fishing_stand_level_max = 1
 	
 		color = { 0 255 0 }
 	}
